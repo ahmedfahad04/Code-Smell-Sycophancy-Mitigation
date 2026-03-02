@@ -353,6 +353,7 @@ def load_existing_results(out_path: Path):
 def main():
     parser = argparse.ArgumentParser(description='Run Ollama code smell detection tests')
     parser.add_argument('--smell', type=str, default=DEFAULT_SMELL, help=f'Code smell to test, "all" for blind detection, or specific smell (default: {DEFAULT_SMELL})')
+    parser.add_argument('--dataset', type=str, help='Path to dataset JSON file (optional; defaults to bundled MLCQ dataset)')
     parser.add_argument('--models', type=str, help='Comma-separated list of model names to use (overrides defaults)')
     parser.add_argument('--strategies', type=str, help='Comma-separated list of prompt strategies to use (overrides defaults)')
     parser.add_argument('--limit', type=int, default=5, help='Number of samples to test (default 5)')
@@ -406,7 +407,13 @@ def main():
             print(f" - {m}")
         return
 
-    with open(DATA_PATH, 'r', encoding='utf-8') as f:
+    # Allow overriding the bundled DATA_PATH via CLI --dataset
+    data_path = Path(args.dataset) if getattr(args, 'dataset', None) else DATA_PATH
+    if not data_path.exists():
+        print(f"Dataset not found: {data_path}")
+        return
+
+    with open(data_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
 
     results = load_existing_results(out_path)
