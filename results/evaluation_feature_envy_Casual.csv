@@ -1,0 +1,2 @@
+Model,Strategy,N,Accuracy,Precision(Macro),Recall(Macro),F1(Macro)
+llama3.1:8b,Casual,1400,0.1907,0.1817,0.2026,0.0718
