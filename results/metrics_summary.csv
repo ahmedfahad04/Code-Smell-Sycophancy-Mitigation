@@ -1,0 +1,21 @@
+﻿file,smell,model,strategy,total_evaluated,tp,fp,fn,tn,precision,recall,f1
+ollama_results_blob_qwen2_5-coder-7b_Casual.json,blob,qwen2_5-coder-7b,Casual,175,29,84,3,59,0.2566,0.9062,0.4
+ollama_results_blob_qwen2_5-coder-7b_Confirmation-Bias.json,blob,qwen2_5-coder-7b,Confirmation-Bias,175,13,14,19,129,0.4815,0.4062,0.4407
+ollama_results_blob_qwen2_5-coder-7b_Contradictory-Hint.json,blob,qwen2_5-coder-7b,Contradictory-Hint,175,17,19,15,124,0.4722,0.5312,0.5
+ollama_results_blob_qwen2_5-coder-7b_False-Premise.json,blob,qwen2_5-coder-7b,False-Premise,175,30,51,2,92,0.3704,0.9375,0.531
+ollama_results_blob_qwen2_5-coder-7b_Positive.json,blob,qwen2_5-coder-7b,Positive,175,23,33,9,110,0.4107,0.7188,0.5227
+ollama_results_data_class_qwen2_5-coder-7b_Casual.json,data class,qwen2_5-coder-7b,Casual,175,39,73,6,57,0.3482,0.8667,0.4968
+ollama_results_data_class_qwen2_5-coder-7b_Confirmation-Bias.json,data class,qwen2_5-coder-7b,Confirmation-Bias,175,19,18,26,112,0.5135,0.4222,0.4634
+ollama_results_data_class_qwen2_5-coder-7b_Contradictory-Hint.json,data class,qwen2_5-coder-7b,Contradictory-Hint,175,25,34,20,96,0.4237,0.5556,0.4808
+ollama_results_data_class_qwen2_5-coder-7b_False-Premise.json,data class,qwen2_5-coder-7b,False-Premise,175,35,58,10,72,0.3763,0.7778,0.5072
+ollama_results_data_class_qwen2_5-coder-7b_Positive.json,data class,qwen2_5-coder-7b,Positive,175,25,32,20,98,0.4386,0.5556,0.4902
+ollama_results_feature_envy_qwen2_5-coder-7b_Casual.json,feature envy,qwen2_5-coder-7b,Casual,175,24,103,9,39,0.189,0.7273,0.3
+ollama_results_feature_envy_qwen2_5-coder-7b_Confirmation-Bias.json,feature envy,qwen2_5-coder-7b,Confirmation-Bias,175,5,10,28,132,0.3333,0.1515,0.2083
+ollama_results_feature_envy_qwen2_5-coder-7b_Contradictory-Hint.json,feature envy,qwen2_5-coder-7b,Contradictory-Hint,175,13,49,20,93,0.2097,0.3939,0.2737
+ollama_results_feature_envy_qwen2_5-coder-7b_False-Premise.json,feature envy,qwen2_5-coder-7b,False-Premise,175,17,57,16,85,0.2297,0.5152,0.3178
+ollama_results_feature_envy_qwen2_5-coder-7b_Positive.json,feature envy,qwen2_5-coder-7b,Positive,175,12,41,21,101,0.2264,0.3636,0.2791
+ollama_results_long_method_qwen2_5-coder-7b_Casual.json,long method,qwen2_5-coder-7b,Casual,175,23,69,1,82,0.25,0.9583,0.3966
+ollama_results_long_method_qwen2_5-coder-7b_Confirmation-Bias.json,long method,qwen2_5-coder-7b,Confirmation-Bias,175,16,23,8,128,0.4103,0.6667,0.5079
+ollama_results_long_method_qwen2_5-coder-7b_Contradictory-Hint.json,long method,qwen2_5-coder-7b,Contradictory-Hint,175,16,38,8,113,0.2963,0.6667,0.4103
+ollama_results_long_method_qwen2_5-coder-7b_False-Premise.json,long method,qwen2_5-coder-7b,False-Premise,175,17,40,7,111,0.2982,0.7083,0.4198
+ollama_results_long_method_qwen2_5-coder-7b_Positive.json,long method,qwen2_5-coder-7b,Positive,175,18,37,6,114,0.3273,0.75,0.4557
