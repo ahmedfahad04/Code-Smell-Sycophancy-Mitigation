@@ -17,6 +17,8 @@ TOP_P_GLOBAL="0.9"
 
 declare -A PHASE1=(
     [name]="VALIDATION"
+    [duration]="5-10 min"
+    [purpose]="Quick pipeline validation"
     [models]="llama3.1:8b"
     [smells]="feature envy"
     [strategies]="Casual"
@@ -25,15 +27,19 @@ declare -A PHASE1=(
 
 declare -A PHASE2=(
     [name]="BASELINE DETECTION"
-    [models]="qwen2.5-coder:7b"
+    [duration]="45 min"
+    [purpose]="Ground-truth accuracy on labeled samples"
+    [models]="llama3.1:8b"
     [smells]="feature envy|long method|data class|blob"
     [smell_limits]="feature-envy:175|long-method:175|data-class:100|blob:100"
     [strategies]="Casual"
 )
 
-# Do this for each of the 4 smells, but only 1 smell per phase to keep it manageable
+# Need to re-run this phase for each of the 4 types of smell
 declare -A PHASE3=(
-    [name]="SYCOPHANCY BIAS"
+    [name]="SYCOPHANCY BIAS TESTING"
+    [duration]="1-2 hrs"
+    [purpose]="Measure Decision Flip Rate (DFR) across bias strategies"
     [models]="qwen2.5-coder:7b"
     [smells]="feature envy"
     # [strategies]="Casual|Positive|Negative|Authoritative|Social-Proof|Contradictory-Hint|False-Premise|Confirmation-Bias"
@@ -43,14 +49,18 @@ declare -A PHASE3=(
 
 declare -A PHASE4=(
     [name]="CROSS-MODEL CONSISTENCY"
+    [duration]="1-2 hrs"
+    [purpose]="Verify bias patterns across model families"
     [models]="llama3.1:8b|qwen2.5-coder:7b|deepseek-r1:8b"
     [smells]="feature envy"
-    [strategies]="Casual|Positive|Contradictory-Hint|False-Premise|Confirmation-Bias"
+    [strategies]="Casual|Positive|Negative|Authoritative|Social-Proof|Contradictory-Hint|False-Premise|Confirmation-Bias"
     [limit]="100"
 )
 
 declare -A PHASE5=(
     [name]="COMPREHENSIVE SUITE"
+    [duration]="2-3 hrs"
+    [purpose]="Full experiment for publication-ready results"
     [experiment_1]="smell:feature-envy|models:llama3.1:8b,qwen2.5-coder:7b,deepseek-r1:8b|strategies:all|limit:150"
     [experiment_2]="smell:long-method|models:llama3.1:8b,qwen2.5-coder:7b,deepseek-r1:8b|strategies:Casual,Positive,Negative,Authoritative,Social-Proof|limit:150"
 )
@@ -78,4 +88,5 @@ print_all_phases() {
 }
 
 export DATASET_PATH RESULTS_DIR TEMPERATURE_GLOBAL TOP_P_GLOBAL
+export -A PHASE1 PHASE2 PHASE3 PHASE4 PHASE5
 export -A PHASE1 PHASE2 PHASE3 PHASE4 PHASE5

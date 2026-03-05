@@ -169,6 +169,7 @@ run_detection() {
     log_info "  Samples: $limit | Temp: $temperature | Top-p: $top_p"
     
     local cmd="python3 '$PARENT_DIR/ollama_code_smell_detection.py' \
+        --dataset '$DATASET_PATH' \
         --smell '$smell' \
         --models '$models' \
         --strategies '$strategies' \
