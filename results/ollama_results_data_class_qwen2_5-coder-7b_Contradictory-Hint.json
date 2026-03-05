@@ -1,0 +1,1402 @@
+[
+  {
+    "id": 529,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The `UnorderedPartitionedKVWriter` class contains several long methods such as `write`, `spill`, and `generateEventForSpill`, which can be broken down into smaller, more manageable methods. This would improve readability and maintainability."
+  },
+  {
+    "id": 534,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class primarily contains data members and a few methods that validate the data. It lacks significant business logic and does not perform any meaningful operations beyond data validation and method overriding. This suggests a potential misplacement of logic that should be in another class."
+  },
+  {
+    "id": 537,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class `RequestSecurityManagerImpl` contains both data members and significant business logic. It implements a security manager with methods that check for insecure requests and determine page security, which indicates it is not a data class."
+  },
+  {
+    "id": 539,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code does not contain only data members with getter and setter methods, nor does it lack significant business logic. It performs a conditional test and renders blocks based on the result, which is a typical behavior for a component class."
+  },
+  {
+    "id": 547,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code snippet is an abstract class that extends another class and contains a constructor. It does not contain any data members, getter and setter methods, or significant business logic. However, it is not a data class as it extends another class and has a constructor. It also does not exhibit other code smells such as feature envy, long method, or blob. Therefore, it does not have any code smells."
+  },
+  {
+    "id": 550,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class `TrimAction` contains both data members and business logic. It performs operations on the data it contains, such as trimming annotations based on certain types. Therefore, it does not exhibit the characteristics of a data class."
+  },
+  {
+    "id": 555,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class contains both data and business logic, adhering to the SOLID principles. It does not exhibit the characteristics of a data class."
+  },
+  {
+    "id": 557,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class 'SessionAttributeElement' contains both data (the 'header' field) and logic (the 'addElement' method), which is appropriate. It does not follow the characteristics of a data class as it performs a specific function related to session attributes."
+  },
+  {
+    "id": 559,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided code snippet is a simple exception class that extends another exception class and contains only a constructor. It does not contain any data members, getters, setters, or significant business logic. It is a clean and straightforward implementation that adheres to the SOLID principles and does not exhibit any code smells."
+  },
+  {
+    "id": 560,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class `DocumentTableLabelProvider` implements the `ITableLabelProvider` interface and contains methods for providing labels for a table. It includes both data (images) and logic (determining which image to return based on the data). This class does not contain only data members and lacks significant business logic or behavioral methods, but it serves a specific purpose in providing labels for a table, which is a valid use case for such a class."
+  },
+  {
+    "id": 569,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided code snippet is an interface that defines methods for a connection factory, including retrieving a transaction registry and creating a new connection. It does not contain only data members and lacks significant business logic, which is typical for an interface rather than a data class. Therefore, it does not exhibit the characteristics of a data class code smell."
+  },
+  {
+    "id": 579,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class `FileSaveEventHandler` implements the `ActionListener` interface and contains a single method `actionPerformed` which performs a specific action (saving a file and updating the status bar). It does not contain only data members with getter and setter methods, nor does it lack significant business logic or behavioral methods. Therefore, it does not exhibit the characteristics of a 'data class' and is not a 'blob'. It is a simple event handler with a clear purpose, making it a clean and well-structured class."
+  },
+  {
+    "id": 583,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class `WideLeftAnnotationSideAction` contains both data and behavior. It has a constructor, data members, and methods that operate on the data. The methods `updateSelection` and `run` demonstrate behavior related to the data, and the method `wideLeftAnnotationSide` encapsulates the logic for modifying the annotation. Therefore, this class does not exhibit the characteristics of a 'data class' and is not a 'blob'."
+  },
+  {
+    "id": 586,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided code snippet is a simple data class that extends a base class and initializes a field with a constructor. It does not contain any significant business logic or behavioral methods, but this is not necessarily a code smell if the class is designed to serve as a data container."
+  },
+  {
+    "id": 589,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter methods and lacks significant business logic. It primarily serves as a data container without meaningful operations, indicating a potential misplacement of logic."
+  },
+  {
+    "id": 593,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code does not exhibit any of the characteristics of a 'Data Class' smell. It contains both data members and significant business logic, including methods for running iterations, submitting work, and managing job execution. The class also follows SOLID principles and is not a simple container for data."
+  },
+  {
+    "id": 599,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided code snippet is an abstract class that extends `java.awt.GraphicsConfiguration` and implements methods related to creating compatible volatile images. It does not contain any data members, getters, or setters, and it does not serve as a data container. Instead, it provides functionality related to graphics configuration, which is appropriate for an abstract class in this context."
+  },
+  {
+    "id": 601,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code does not exhibit any characteristics of a 'Data Class' smell. It contains both data members and significant business logic, serving as a functional class with meaningful operations."
+  },
+  {
+    "id": 603,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided code is a Java class that contains a method to return an array of error messages for an XSLT processing library. It does not exhibit any of the smells or issues mentioned in the requirements."
+  },
+  {
+    "id": 607,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class `ExsltBase` contains utility methods for converting Node objects to string and number values. It does not contain only data members and lacks significant business logic, but rather provides functionality that is essential for its purpose. Therefore, it does not exhibit the characteristics of a 'data class' smell."
+  },
+  {
+    "id": 611,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods and lacks significant business logic. It primarily serves as a data container without meaningful operations."
+  },
+  {
+    "id": 615,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code does not exhibit any characteristics of a 'Data Class' or other code smells. It contains both data and significant business logic, implementing functionality such as connecting to a ZooKeeper instance, disconnecting, and handling node viewers. The class is well-structured and follows SOLID principles."
+  },
+  {
+    "id": 619,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code does not exhibit any of the characteristics of a 'Data Class' smell. It contains both data members and significant business logic, serving as a utility class for handling Spark versions. The class follows SOLID principles and provides meaningful operations related to Spark version management."
+  },
+  {
+    "id": 624,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code snippet is a simple exception class that extends a base class and includes a constructor. It does not contain any data members, getters, setters, or business logic. However, it is not a data class as it does not primarily serve as a data container without meaningful operations. It is a clean and straightforward implementation of an exception class."
+  },
+  {
+    "id": 642,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods and lacks significant business logic or behavioral methods. It serves primarily as a data container without meaningful operations."
+  },
+  {
+    "id": 645,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods, and lacks significant business logic. It primarily serves as a data container without meaningful operations."
+  },
+  {
+    "id": 650,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class `IncludeAllLaunchConfigurationScope` is a simple implementation of the `LaunchConfigurationScope` interface, containing only a single method that returns `true`. It does not contain any data members, getters, setters, or other significant business logic. It serves as a data container without meaningful operations, which is a characteristic of a data class. However, since the code snippet is clean and follows all SOLID principles, it does not exhibit any code smells."
+  },
+  {
+    "id": 653,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class contains both data members and methods that operate on that data, fulfilling its intended purpose as a container with associated logic."
+  },
+  {
+    "id": 657,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class `AttributesDeletedStrategy` is a simple data class that contains only data members (fields) with getter and setter methods. It lacks significant business logic or behavioral methods, serving primarily as a data container without meaningful operations. However, the code snippet provided does not exhibit any of the characteristics of a data class. It appears to be a strategy pattern implementation, which is a common design pattern that encapsulates a specific algorithm or behavior. Therefore, it does not fit the definition of a data class and does not contain any code smells."
+  },
+  {
+    "id": 661,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class `LiveSignalEnforcement` contains both data members and significant business logic. It does not serve primarily as a data container without meaningful operations, and it does not indicate possible misplacement of logic. Therefore, it does not exhibit the characteristics of a 'Data Class' code smell."
+  },
+  {
+    "id": 663,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code snippet is a simple implementation of a Function interface that extracts the key from a Map.Entry. It contains only data members (fields) with getter and setter methods, but in this case, there are no fields or setters. It lacks significant business logic or behavioral methods, but this is acceptable for a utility class like this one. It serves primarily as a data container without meaningful operations, which is its intended purpose. Therefore, it does not exhibit the characteristics of a 'data class' code smell."
+  },
+  {
+    "id": 677,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods and lacks significant business logic or behavioral methods. It serves primarily as a data container without meaningful operations."
+  },
+  {
+    "id": 681,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code snippet is a data class that contains only data members (fields) with getter and setter methods, and it serves as a data container without meaningful operations. However, it does not violate any SOLID principles and is clean."
+  },
+  {
+    "id": 689,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class `GoIntoAction` contains both data and logic that operates on that data. It does not follow the data class pattern as it includes significant business logic and behavioral methods. Therefore, it does not exhibit any of the mentioned code smells."
+  },
+  {
+    "id": 691,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class Ipam contains only data members with getter and setter methods, lacks significant business logic, and serves primarily as a data container. It does not contain meaningful operations that operate on the data, indicating a potential misplacement of logic."
+  },
+  {
+    "id": 695,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class contains both data members and methods that operate on those data members, indicating it is not a data class."
+  },
+  {
+    "id": 703,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class `SuiteInProgressInfo` contains both data (TestState) and logic (isProblem, getDescription), which is appropriate. It does not exhibit the characteristics of a data class."
+  },
+  {
+    "id": 705,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code does not contain any data members, getters, or setters. It is a factory class that creates instances of other classes, which is a typical use case for a factory pattern. Therefore, it does not exhibit the characteristics of a data class."
+  },
+  {
+    "id": 707,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class GExpressionsHelper contains methods that perform specific operations related to EClass objects, indicating that it has both data (EClass instances) and logic (methods to check relationships between classes). This class does not fit the characteristics of a data class as it contains meaningful business logic."
+  },
+  {
+    "id": 709,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code does not exhibit any of the characteristics of a data class. It contains both data members and methods that operate on those data members, adhering to the SOLID principles."
+  },
+  {
+    "id": 715,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class contains both data and logic that operates on that data. It implements an interface and provides specific functionality for ordering nodes in a graph, which is not a data container but a processing class."
+  },
+  {
+    "id": 719,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class primarily contains data members and getter/setter methods without significant business logic. It serves as a data container without meaningful operations, which indicates a potential misplacement of logic."
+  },
+  {
+    "id": 730,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods and lacks significant business logic. It serves primarily as a data container without meaningful operations."
+  },
+  {
+    "id": 732,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members and getter/setter methods, with no significant business logic or behavioral methods. It primarily serves as a data container without meaningful operations."
+  },
+  {
+    "id": 747,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods, lacks significant business logic, and serves primarily as a data container without meaningful operations. This indicates a potential data class smell."
+  },
+  {
+    "id": 759,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class `ObserveUtil` contains utility methods for handling LWM2M observations and CoAP requests. It does not contain only data members with getter and setter methods, nor does it serve primarily as a data container without meaningful operations. Instead, it performs specific tasks related to observation and request handling, which aligns with its purpose and adheres to the SOLID principles."
+  },
+  {
+    "id": 766,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code does not exhibit any of the characteristics of a data class. It contains significant business logic and operational methods, including data validation, access control, and persistence operations. The class follows SOLID principles and is structured to perform its intended functions effectively."
+  },
+  {
+    "id": 777,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code snippet does not contain any data members, getters, setters, or significant business logic. It only implements factory methods for creating different types of entities and query objects. This is a typical example of a factory class, which is not a data class and does not exhibit any of the other mentioned smells."
+  },
+  {
+    "id": 779,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided code is a static factory class that implements a TypeAdapterFactory interface. It contains only a single method that returns an instance of a TypeAdapter. This class does not contain any data members or significant business logic, and its primary purpose is to create and return a TypeAdapter. Therefore, it does not exhibit any code smells."
+  },
+  {
+    "id": 809,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The CachedReader class primarily contains data members and methods for managing readers, which is typical for a data class. However, it does have some logic for managing reader positions and returning readers, which slightly mitigates the data class smell."
+  },
+  {
+    "id": 811,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class `InstantTypeAdapter` implements both serialization and deserialization logic for `Instant` objects using a `DateTimeFormatter`. It contains data members and methods that operate on that data, fulfilling its role as a utility class for handling `Instant` objects in a specific format. Therefore, it does not exhibit any of the characteristics of a 'data class' code smell."
+  },
+  {
+    "id": 815,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided code snippet does not contain any data members with getter and setter methods, nor does it lack significant business logic or behavioral methods. It appears to be a simple extension of an existing class with additional constructors, which is a common pattern in object-oriented design."
+  },
+  {
+    "id": 820,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code snippet is a utility class for validating form data. It contains only data members (fields) with getter and setter methods, but it also includes significant business logic in the form of validation methods. Therefore, it does not fit the characteristics of a 'Data Class' and does not contain any code smells."
+  },
+  {
+    "id": 823,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class `ConstructYamlFloat` contains both data and logic that operates on that data. It is not a simple data container but rather a utility class for constructing floating-point numbers from YAML nodes. Therefore, it does not exhibit the characteristics of a data class."
+  },
+  {
+    "id": 833,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members (Hashtable) and a method to check for the presence of a type. It lacks significant business logic and is primarily a data container, which is a characteristic of a data class."
+  },
+  {
+    "id": 841,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code does not contain only data members and lacks significant business logic. It performs a specific task of resolving relative URIs in a query model, which is a meaningful operation. Therefore, it does not exhibit the characteristics of a data class."
+  },
+  {
+    "id": 842,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided code snippet is a simple class extending an abstract perspective class and does not contain any data members, getter/setter methods, or significant business logic. It is a straightforward implementation without any code smells."
+  },
+  {
+    "id": 848,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class contains business logic related to rule application and data retrieval, which is appropriate for its purpose. It does not solely serve as a data container without meaningful operations."
+  },
+  {
+    "id": 857,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class `ActorAddFeature` contains both data members and significant business logic, performing operations on the data. It does not fit the characteristics of a data class and contains meaningful methods that operate on the data."
+  },
+  {
+    "id": 863,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class contains both data members and significant business logic, including methods for JIT support, method type manipulation, and binding to objects. It does not serve primarily as a data container without meaningful operations."
+  },
+  {
+    "id": 866,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code snippet is a utility class for creating instances of various XML objects. It does not contain any data members or business logic, and its sole purpose is to provide factory methods for creating these objects. This is a common pattern in Java for creating instances of complex objects and does not indicate any code smells."
+  },
+  {
+    "id": 871,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class contains data members and implements methods that operate on that data, which is typical for a data class. It does not contain any business logic that should be elsewhere, and it serves its purpose as a data container with meaningful operations."
+  },
+  {
+    "id": 873,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code does not exhibit any of the characteristics of a 'Data Class' smell. It contains both data (e.g., `foreachArgs`) and significant business logic (e.g., `run` method handling command execution). The code also follows SOLID principles, indicating a clean and well-structured design."
+  },
+  {
+    "id": 891,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code does not contain only data members and lacks significant business logic or behavioral methods. It contains a method that performs a specific task (checking the vitality of a host), which indicates that it is not a data class and has a purposeful behavior."
+  },
+  {
+    "id": 895,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class `DatatypeGeneratorTask` contains both data members (fields) and significant business logic. It implements a specific task for generating files based on a model, which involves iterating through properties, collecting types, and writing files. This class does not serve primarily as a data container without meaningful operations."
+  },
+  {
+    "id": 897,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class contains both data and logic, specifically validation logic for lambda expressions in N4JS. It does not fit the characteristics of a data class as it performs meaningful operations."
+  },
+  {
+    "id": 940,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class `StubDescriptorJsonParser` contains both data and logic that operates on that data. It parses JSON data to build a `StubDescriptor` domain model, which includes parsing nested objects and setting attributes. This class does not contain only data members with getter and setter methods, nor does it serve primarily as a data container without meaningful operations. Therefore, it does not exhibit the characteristics of a 'Data Class' code smell."
+  },
+  {
+    "id": 945,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class primarily contains data members and simple getter/setter methods. It lacks significant business logic or behavioral methods, serving as a data container without meaningful operations."
+  },
+  {
+    "id": 947,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code snippet is a simple data class that extends another class and sets a default value for a field. It does not contain any business logic or significant behavior, and it serves primarily as a data container. Therefore, it does not exhibit any code smells."
+  },
+  {
+    "id": 953,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter methods and lacks any significant business logic or behavioral methods. It primarily serves as a data container without meaningful operations."
+  },
+  {
+    "id": 958,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code snippet is a data class that primarily serves as a container for API request parameters and does not contain significant business logic or behavioral methods. It adheres to the SOLID principles and does not exhibit any of the mentioned code smells."
+  },
+  {
+    "id": 975,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The code snippet defines constants related to tool windows, which are primarily data members without any business logic or behavioral methods. This suggests a potential data class smell."
+  },
+  {
+    "id": 977,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code does not exhibit any of the characteristics of a data class. It contains both data members and significant business logic, including creating a map view, handling feature queries, and displaying graphics. The class serves as a complete application rather than just a data container."
+  },
+  {
+    "id": 988,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class `UOfKind` primarily contains data members (fields) with getter and setter methods and lacks significant business logic or behavioral methods. It serves as a data container without meaningful operations, which is a characteristic of a data class."
+  },
+  {
+    "id": 992,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members (methods) and lacks significant business logic. It primarily serves as a data container without meaningful operations, which is a characteristic of a data class."
+  },
+  {
+    "id": 998,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class `JavadocClassFinder` contains both data members and significant business logic. It implements specific behaviors related to finding and processing Java classes and their documentation, which goes beyond merely serving as a data container."
+  },
+  {
+    "id": 1001,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members and getter/setter methods, lacking significant business logic. It primarily serves as a data container without meaningful operations."
+  },
+  {
+    "id": 1004,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class SysInfo contains only data members (fields) with getter and setter methods, and lacks significant business logic or behavioral methods. It serves primarily as a data container without meaningful operations."
+  },
+  {
+    "id": 1006,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class primarily contains data members and methods for setting those data members. It lacks significant business logic and does not perform meaningful operations beyond data manipulation."
+  },
+  {
+    "id": 1013,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class `DataSource` contains both data members and methods that operate on that data, including getter and setter methods for various properties. It also includes business logic for declaring extensions and validating properties, which indicates that it is not a simple data container but a class with significant functionality."
+  },
+  {
+    "id": 1030,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided code snippet is a static class extending another class and implementing an interface. It contains a single method that overrides a method from the interface. The class does not contain any data members or additional business logic, but this does not indicate a code smell as it is a valid implementation of an interface method."
+  },
+  {
+    "id": 1033,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class UserToken contains only data members and a method that uses this data. It lacks significant business logic and is primarily a data container. While it does have a method that operates on the data, it could be argued that this method is too specific to be part of a data class and might belong in a service or utility class."
+  },
+  {
+    "id": 1035,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members (test cases) with getter and setter methods, lacking significant business logic or behavioral methods. It serves primarily as a data container without meaningful operations, indicating possible misplacement of logic."
+  },
+  {
+    "id": 1037,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class contains both data and logic that operates on that data. It does not contain only data members with getter and setter methods, nor does it lack significant business logic or behavioral methods. It serves as a data container with meaningful operations."
+  },
+  {
+    "id": 1039,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided code snippet is a custom exception class that extends a base exception class. It contains only a constructor that initializes the exception message. This class does not contain any data members, getter/setter methods, or significant business logic. It serves as a simple data container for an exception message, which is a common and acceptable use in Java for representing specific types of errors."
+  },
+  {
+    "id": 1048,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided code snippet is a builder class for a data class, which is a common pattern in Java for creating immutable objects. It contains only data members with getter and setter methods, which is characteristic of a data class. However, it also includes logic for validation and building the object, which is appropriate for a data class. Therefore, there is no code smell detected."
+  },
+  {
+    "id": 1051,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The Constants class contains only static final fields and no methods, serving as a data container without any business logic or operations. This is a typical example of a data class."
+  },
+  {
+    "id": 1068,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code snippet is a data class that contains only data members with getter and setter methods. It does not contain any significant business logic or behavioral methods, and it serves primarily as a data container without meaningful operations. However, since the code follows all SOLID principles and is clean, it does not exhibit any code smells."
+  },
+  {
+    "id": 1070,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The code defines an interface with only data members (fields) and getter/setter methods, which is characteristic of a data class. It lacks significant business logic or behavioral methods, serving primarily as a data container."
+  },
+  {
+    "id": 1072,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code appears to be a utility class for reading data from a byte array, which is a common and straightforward task. It does not exhibit any of the smells or issues mentioned."
+  },
+  {
+    "id": 1074,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code snippet is a subclass of OperatingSystem.Unix and overrides methods to provide specific behavior for Solaris. It does not contain only data members and lacks significant business logic, but rather implements specific functionality related to the Solaris operating system. Therefore, it does not exhibit the characteristics of a 'data class' smell."
+  },
+  {
+    "id": 1076,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided code snippet does not exhibit any characteristics of a 'Data Class'. It contains business logic related to parsing XML data and extracting specific information, which goes beyond mere data storage and retrieval. The class implements methods that perform operations on the data, such as parsing attributes and updating instance variables based on XML tags. Therefore, it does not fit the criteria for a 'Data Class' smell."
+  },
+  {
+    "id": 1079,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided code snippet does not exhibit any characteristics of a 'Data Class' or other code smells. It contains both data (the `sum` variable) and logic (the method to calculate the sum of string values). The code follows the SOLID principles and is clean."
+  },
+  {
+    "id": 1081,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class is a large 'blob' of functionality, containing many different responsibilities and attributes. It lacks cohesion and could be refactored into smaller, more focused classes."
+  },
+  {
+    "id": 1084,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code defines an interface with methods related to sending REST requests and creating tasks. It does not contain only data members with getter and setter methods, nor does it serve primarily as a data container. The methods are clearly related to business logic and operations, thus it does not exhibit the characteristics of a 'data class' code smell."
+  },
+  {
+    "id": 1092,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided code is a standard implementation of the SequenceInputStream class, which is a subclass of InputStream. It contains data members, getter and setter methods, and significant business logic. It does not serve primarily as a data container without meaningful operations, nor does it indicate possible misplacement of logic. Therefore, it does not exhibit any of the characteristics of a 'Data Class' code smell."
+  },
+  {
+    "id": 1094,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code is a well-structured abstract class that implements a synchronization mechanism, which is a typical use of such a class. It contains data members and methods that operate on those data members, making it a valid implementation rather than a data class."
+  },
+  {
+    "id": 1097,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method `updateExternalSubs` is quite long and complex, handling multiple file types and operations. It could be refactored into smaller, more focused methods to improve readability and maintainability."
+  },
+  {
+    "id": 1103,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class contains only data members (fields) with getter methods and lacks significant business logic or behavioral methods. It serves as a data container for XPath constants and does not contain any operations that operate on the data. Therefore, it does not exhibit any code smells."
+  },
+  {
+    "id": 1106,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class `CertificatePolicyMap` contains both data members and methods that operate on those data members. It does not contain only data members with getter and setter methods, nor does it lack significant business logic or behavioral methods. Therefore, it does not exhibit the characteristics of a 'data class' code smell."
+  },
+  {
+    "id": 1109,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code contains both data members and methods that operate on the data, adhering to the SOLID principles. It does not exhibit characteristics of a 'Data Class' as it contains significant business logic and behavioral methods."
+  },
+  {
+    "id": 1117,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members and getter/setter methods without any significant business logic or behavioral methods. It primarily serves as a data container for attribute nodes and their properties."
+  },
+  {
+    "id": 1127,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided code snippet is a simple implementation of a View.OnClickListener that contains data (a Fragment) and a method that operates on that data. It does not contain only data members with getter and setter methods, nor does it lack significant business logic. Therefore, it does not exhibit the characteristics of a 'Data Class' code smell."
+  },
+  {
+    "id": 1135,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members (fields) with getter and setter methods, and lacks any significant business logic or behavioral methods. It serves primarily as a data container without meaningful operations, indicating a potential misplacement of logic."
+  },
+  {
+    "id": 1137,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code snippet does not contain only data members with getter and setter methods, nor does it lack significant business logic or behavioral methods. It contains a method that performs a specific calculation and does not serve primarily as a data container without meaningful operations."
+  },
+  {
+    "id": 1139,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class `Activator` contains both data and logic, including plugin initialization, configuration checks, and logging. It does not solely serve as a data container."
+  },
+  {
+    "id": 1140,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code snippet is an abstract class that extends `InputVerifier` and contains both data (originalBorder) and logic (verify and shouldYieldFocus methods). It also includes an abstract method for validation, which is typical for a data class with behavior. Therefore, it does not exhibit any of the characteristics of a 'data class' smell."
+  },
+  {
+    "id": 1149,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class contains both data members and behavioral methods, indicating it is not a data class. It performs operations such as enabling/disabling, firing events, and managing listeners, which are typical behaviors for an action class."
+  },
+  {
+    "id": 1152,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided code is a builder class for creating instances of GetInstanceRequest. It contains only data members (fields) with getter and setter methods, but it also includes significant business logic in the form of methods to build and configure the request. This class does not serve as a simple data container and does not indicate a misplacement of logic. Therefore, it does not exhibit the characteristics of a 'data class' code smell."
+  },
+  {
+    "id": 1158,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided code snippet is a builder class for a data class. It contains only data members and methods to set those members, without any significant business logic or behavioral methods. However, it does not serve as a data container without meaningful operations, as it is designed to build instances of a data class. Therefore, it does not exhibit the characteristics of a 'data class' code smell."
+  },
+  {
+    "id": 1160,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class Segment contains only a data member (segmentType) with getter and setter methods. It lacks significant business logic or behavioral methods, serving primarily as a data container without meaningful operations. This indicates a potential misplacement of logic that should be in this class."
+  },
+  {
+    "id": 1162,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class primarily contains data members with getter and setter methods and lacks significant business logic or behavioral methods. It serves as a data container without meaningful operations."
+  },
+  {
+    "id": 1167,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class `ListWorkRequestErrorsConverter` does not contain only data members and lacks significant business logic. Instead, it performs specific tasks related to converting requests and responses, which is a typical role for a utility class. Therefore, it does not exhibit the characteristics of a data class and does not contain any code smells."
+  },
+  {
+    "id": 1169,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class `DuplicatableProgressTrackingInputStream` contains both data members and methods that operate on that data. It extends a base class and implements an interface, providing functionality related to progress tracking and stream duplication. There is no indication of a data class smell as it performs meaningful operations and is not primarily a data container."
+  },
+  {
+    "id": 1175,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods and lacks significant business logic or behavioral methods. It primarily serves as a data container without meaningful operations."
+  },
+  {
+    "id": 1185,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members (body) with getter and setter methods, and lacks significant business logic or behavioral methods. It primarily serves as a data container without meaningful operations, which is a characteristic of a data class."
+  },
+  {
+    "id": 1186,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided code is an interface for a network management service, defining methods for updating various network resources. It does not contain any code that would be considered a code smell or anti-pattern."
+  },
+  {
+    "id": 1197,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code snippet defines an interface with enums and methods that do not contain significant business logic or behavioral methods. It primarily serves as a data container with methods for string representation, which is typical for an interface in Java. Therefore, it does not exhibit the characteristics of a 'data class' smell."
+  },
+  {
+    "id": 1200,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code does not exhibit any characteristics of a data class. It contains both data members and significant business logic, implementing the `Mono<Void>` interface and managing publisher subscriptions. The class follows SOLID principles and does not appear to be a misplacement of logic."
+  },
+  {
+    "id": 1205,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided code does not exhibit the characteristics of a 'Data Class' or any other code smells. It contains both data members and methods that operate on that data, adhering to the SOLID principles."
+  },
+  {
+    "id": 1215,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class contains both data members and business logic, fulfilling the requirements of a well-structured class."
+  },
+  {
+    "id": 1220,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class `HostsSupportImpl` contains only data members and logic related to retrieving a storage directory string. It does not contain any significant business logic or behavioral methods, but this is not necessarily a code smell as it follows SOLID principles and serves its purpose effectively."
+  },
+  {
+    "id": 1229,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members (package_name and package_id) with getter and setter methods, and lacks significant business logic or behavioral methods. It serves primarily as a data container without meaningful operations."
+  },
+  {
+    "id": 1230,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class 'Type' contains only a data member (getName method) and lacks significant business logic. It primarily serves as a data container without meaningful operations, indicating a potential data class smell."
+  },
+  {
+    "id": 1240,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members and getter/setter methods, with minimal business logic. It primarily serves as a data container without meaningful operations, which is characteristic of a data class."
+  },
+  {
+    "id": 1243,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code does not exhibit any of the characteristics of a data class. It contains both data and significant business logic, including form rendering, processing, and API handling. The class is well-structured and follows SOLID principles."
+  },
+  {
+    "id": 1249,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class `LocksFeatureUI` contains both data members and methods that operate on that data, as well as business logic. It does not appear to be a data class as it includes significant behavioral methods and logic for managing the UI and handling session states."
+  },
+  {
+    "id": 1252,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members (servletPath) with getter and setter methods, lacking any significant business logic. It serves primarily as a data container without meaningful operations, indicating a potential misplacement of logic."
+  },
+  {
+    "id": 1254,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class contains both data members and significant business logic. It implements a specific serialization operation, which is a clear indication of its purpose and functionality."
+  },
+  {
+    "id": 1256,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code does not exhibit any of the characteristics of a data class. It contains both data and logic, serving as a utility class with methods that operate on the data. The code follows SOLID principles and does not contain any smells."
+  },
+  {
+    "id": 1260,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members (fields) with getter and setter methods, and lacks significant business logic or behavioral methods. It primarily serves as a data container without meaningful operations."
+  },
+  {
+    "id": 1261,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter methods and lacks any significant business logic or behavioral methods. It serves primarily as a data container for constants."
+  },
+  {
+    "id": 1269,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class contains both data members and methods that operate on that data, adhering to the SOLID principles. It does not exhibit characteristics of a data class or any other code smells."
+  },
+  {
+    "id": 1273,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class 'WrongWeakHashMap' contains both data members and significant business logic. It is not a simple data container but rather a rule that performs operations on data, adhering to the SOLID principles."
+  },
+  {
+    "id": 1274,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided code appears to be a service class that handles SOAP requests and responses for configuration settings. It contains methods for getting and setting various configuration settings, which indicates that it is not a data class but rather a service class with business logic. Therefore, it does not exhibit the characteristics of a data class and is free of the specified code smells."
+  },
+  {
+    "id": 1279,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The 'Undertow' class and its nested 'Accesslog' class contain only data members with getter and setter methods, lacking significant business logic. This indicates a potential data class smell."
+  },
+  {
+    "id": 1293,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class primarily contains data members with getter and setter methods and lacks significant business logic. It serves as a data container for build definitions without meaningful operations, which is a characteristic of a data class."
+  },
+  {
+    "id": 1295,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided code is an interface with a single method, which is a typical use case for a functional interface in Java. It does not contain any data members, getters, setters, or significant business logic. It serves as a contract for implementations to determine if a full restart is required based on a changed file. Therefore, it does not exhibit any of the characteristics of a 'data class' smell."
+  },
+  {
+    "id": 1303,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided code snippet is an interface for a reactive health indicator, which contains a single method for providing health information. It does not contain any data members, getters, or setters, and it does not serve as a data container. Instead, it defines a contract for a method that returns a `Mono` of `Health`. This interface is likely part of a larger system where the actual health check logic is implemented in other classes. Therefore, it does not exhibit the characteristics of a data class and is not a code smell."
+  },
+  {
+    "id": 1304,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class `TraceableHttpServletResponse` contains data members and methods to operate on that data, which is typical for a utility class. It does not contain only data members with getter and setter methods, nor does it lack significant business logic. Therefore, it does not exhibit the characteristics of a 'data class' code smell."
+  },
+  {
+    "id": 1307,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code snippet is a data class that implements the Pageable interface. It contains only data members (fields) with getter and setter methods, and it lacks significant business logic or behavioral methods. However, it is not misplacing logic that should be in this class, as it is a standard implementation of the Pageable interface. Therefore, it does not exhibit any code smells."
+  },
+  {
+    "id": 1310,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members (fields) with getter and setter methods, and lacks significant business logic or behavioral methods. It primarily serves as a data container without meaningful operations, indicating possible misplacement of logic."
+  },
+  {
+    "id": 1315,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided code is a method for a class named `AdActivityEvent` that extends `AbstractActivityEvent`. It does not exhibit any of the characteristics of the listed smells or have a severity level that justifies a higher rating."
+  },
+  {
+    "id": 1317,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code snippet provided is an interface for a CertPinManager, which contains a single method for checking certificate chain pinning. It does not contain only data members and lacks significant business logic or behavioral methods. However, it is an interface and not a class, so it does not fit the definition of a data class. Therefore, there is no code smell detected."
+  },
+  {
+    "id": 1320,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods and lacks significant business logic or behavioral methods. It primarily serves as a data container without meaningful operations."
+  },
+  {
+    "id": 1325,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The code snippet defines an interface with only one method, which appears to be a getter. It lacks any significant business logic or behavioral methods, indicating it may be a data class. However, since it's an interface, it doesn't contain data members, so it's not a 'blob'. It also doesn't exhibit feature envy or long methods."
+  },
+  {
+    "id": 1331,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class primarily contains data members with getter and setter methods and lacks significant business logic. It serves as a data container for Gerrit options, which could indicate a potential misplacement of logic."
+  },
+  {
+    "id": 1338,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code snippet is a clean implementation of the SOLID principles. It is a simple implementation of the IInstructionTranslator interface with a single method that delegates the translation logic to another method. There are no data members, getters, or setters, and it does not contain any business logic or behavioral methods. Therefore, it does not exhibit any code smells."
+  },
+  {
+    "id": 1348,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided code snippet is a simple implementation of a BytecodeClassLoader, which extends the ClassLoader class. It contains only data members (fields) and methods for loading classes from bytecode. This class does not contain significant business logic or behavioral methods, but it serves a specific purpose of loading classes dynamically. It does not indicate any misplacement of logic and is a typical utility class. Therefore, it does not exhibit any code smells."
+  },
+  {
+    "id": 1355,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members and utility methods. It lacks significant business logic and serves primarily as a data container without meaningful operations."
+  },
+  {
+    "id": 1357,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class 'Event' contains only data members and no significant business logic. It primarily serves as a data container without meaningful operations, which is a characteristic of a data class."
+  },
+  {
+    "id": 1358,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class `ArrowType` contains both data members and significant business logic, including methods for type checking and resolution. It does not serve primarily as a data container without meaningful operations."
+  },
+  {
+    "id": 1361,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class 'SplitRulesetNodes' contains both data members and significant business logic. It implements a specific behavior by overriding methods and performing operations on CSS nodes, which indicates it is not a simple data container."
+  },
+  {
+    "id": 1371,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members (fields) with getter and setter methods, and lacks significant business logic or behavioral methods. It primarily serves as a data container without meaningful operations."
+  },
+  {
+    "id": 1373,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class `CondSetOp` contains data members and a method that operates on that data. It does not contain only data members with getter and setter methods, nor does it lack significant business logic or behavioral methods. Therefore, it does not exhibit the characteristics of a 'Data Class' code smell."
+  },
+  {
+    "id": 1379,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class contains data members and methods that operate on that data, adhering to the principles of encapsulation and behavior definition. It does not serve as a mere data container without meaningful operations."
+  },
+  {
+    "id": 1384,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members (id, firstName, lastName) with getter and setter methods, and lacks any significant business logic or behavioral methods. It primarily serves as a data container without meaningful operations."
+  },
+  {
+    "id": 1396,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class contains both data members and logic that operates on that data. It does not serve primarily as a data container without meaningful operations."
+  },
+  {
+    "id": 1400,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided code snippet is a class that substitutes methods from the `java.lang.Object` class. It does not contain only data members and lacks significant business logic. Instead, it provides implementations for fundamental methods like `getClass`, `hashCode`, `toString`, `wait`, `notify`, and `notifyAll`. These methods are essential for the functionality of objects in Java and do not indicate a data class smell. The code is clean and follows the SOLID principles."
+  },
+  {
+    "id": 1404,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code snippet appears to be a well-structured factory pattern with various subclasses handling different types of parameter setters. It does not contain data members or simple getters/setters, and it includes significant business logic related to creating and managing query parameter setters. Therefore, it does not exhibit the characteristics of a data class or any other code smells."
+  },
+  {
+    "id": 1408,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class `HttpExchangeTracer` contains both data members and methods that operate on that data. It includes business logic for tracing HTTP exchanges, such as filtering headers and setting trace properties. Therefore, it does not exhibit the characteristics of a data class."
+  },
+  {
+    "id": 1410,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only a constructor and no significant business logic or behavioral methods, indicating it primarily serves as a data container without meaningful operations."
+  },
+  {
+    "id": 1414,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Invalid output: severity=data class, smell=data class"
+  },
+  {
+    "id": 1418,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only a constructor and no significant business logic or behavioral methods, indicating it may be serving as a data container without meaningful operations."
+  },
+  {
+    "id": 1427,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Invalid output: severity=data class, smell=data class"
+  },
+  {
+    "id": 1436,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only a constructor and no significant business logic or behavioral methods, indicating it may be serving as a data container without meaningful operations."
+  },
+  {
+    "id": 1440,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods and lacks significant business logic. It primarily serves as a data container without meaningful operations, which is a characteristic of a data class."
+  },
+  {
+    "id": 1442,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods, and lacks significant business logic. It primarily serves as a data container without meaningful operations, which indicates a potential data class smell."
+  },
+  {
+    "id": 1444,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided code snippet is a data class that contains only data members (fields) with getter and setter methods. It lacks significant business logic or behavioral methods and serves primarily as a data container without meaningful operations. However, the class is designed to be used in a specific context (LIR instruction for AMD64 architecture) and contains necessary logic for emitting code, which is appropriate for its purpose."
+  },
+  {
+    "id": 1459,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class `PushCommand` contains data members and methods to manipulate that data, which is typical for a command pattern. It does not serve as a data container without meaningful operations, nor does it exhibit any of the other code smells mentioned."
+  },
+  {
+    "id": 1461,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class `BaseObject` contains only data members (`type`) and getter methods, with no significant business logic. It serves primarily as a data container without meaningful operations, indicating a potential data class smell."
+  },
+  {
+    "id": 1464,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The class contains a single method that is quite long, spanning over 100 lines. This indicates that the method may be doing too much and could be refactored into smaller, more focused methods."
+  },
+  {
+    "id": 1470,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided code snippet does not exhibit the characteristics of a data class. It contains both data members (methods) and business logic, and does not primarily serve as a data container without meaningful operations."
+  },
+  {
+    "id": 1473,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class primarily contains data members with getter and setter methods and lacks significant business logic. It serves as a data container without meaningful operations, which is characteristic of a data class."
+  },
+  {
+    "id": 1476,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members (fields) with getter and setter methods and lacks significant business logic or behavioral methods. It primarily serves as a data container without meaningful operations."
+  }
+]
