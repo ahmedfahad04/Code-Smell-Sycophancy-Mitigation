@@ -1,43 +1,137 @@
-Experiment Run: 2026-03-05 20:04:11
+Experiment Run: 2026-03-06 00:30:15
 Hostname: fahad-hp-g3
 User: sakib
 
 
 ════════════════════════════════════════════════════════════
-  PHASE 3: SYCOPHANCY BIAS TESTING (1-2 hrs)
+  PHASE 3: SYCOPHANCY BIAS TESTING (3-4 hrs)
 ════════════════════════════════════════════════════════════
-Purpose: Measure Decision Flip Rate (DFR) across bias strategies
+Purpose: Measure Decision Flip Rate (DFR) across bias strategies for all smells
 Metric: Decision Flip Rate (DFR) vs baseline
 
-[0;34m[INFO][0m Test: Sycophancy: long method - Casual
-[0;34m[INFO][0m   Smell: long method | Models: qwen2.5-coder:7b | Strategies: Casual
+[0;34m[INFO][0m Testing feature envy with 5 strategies...
+[0;34m[INFO][0m Test: Sycophancy: feature envy - Casual
+[0;34m[INFO][0m   Smell: feature envy | Models: llama3.1:8b | Strategies: Casual
 [0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
-  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --dataset '/home/sakib/Documents/MLCQ/dataset/mlcq_filtered.json'         --smell 'long method'         --models 'qwen2.5-coder:7b'         --strategies 'Casual'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --dataset '/home/sakib/Documents/MLCQ/dataset/MLCQ/dataset_3day_balanced.json'         --smell 'feature envy'         --models 'llama3.1:8b'         --strategies 'Casual'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
+[0;32m[✓][0m Sycophancy: feature envy - Casual completed
+
+[0;34m[INFO][0m Test: Sycophancy: feature envy - Positive
+[0;34m[INFO][0m   Smell: feature envy | Models: llama3.1:8b | Strategies: Positive
+[0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --dataset '/home/sakib/Documents/MLCQ/dataset/MLCQ/dataset_3day_balanced.json'         --smell 'feature envy'         --models 'llama3.1:8b'         --strategies 'Positive'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
+[0;32m[✓][0m Sycophancy: feature envy - Positive completed
+
+[0;34m[INFO][0m Test: Sycophancy: feature envy - Contradictory-Hint
+[0;34m[INFO][0m   Smell: feature envy | Models: llama3.1:8b | Strategies: Contradictory-Hint
+[0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --dataset '/home/sakib/Documents/MLCQ/dataset/MLCQ/dataset_3day_balanced.json'         --smell 'feature envy'         --models 'llama3.1:8b'         --strategies 'Contradictory-Hint'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
+[0;32m[✓][0m Sycophancy: feature envy - Contradictory-Hint completed
+
+[0;34m[INFO][0m Test: Sycophancy: feature envy - False-Premise
+[0;34m[INFO][0m   Smell: feature envy | Models: llama3.1:8b | Strategies: False-Premise
+[0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --dataset '/home/sakib/Documents/MLCQ/dataset/MLCQ/dataset_3day_balanced.json'         --smell 'feature envy'         --models 'llama3.1:8b'         --strategies 'False-Premise'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
+[0;32m[✓][0m Sycophancy: feature envy - False-Premise completed
+
+[0;34m[INFO][0m Test: Sycophancy: feature envy - Confirmation-Bias
+[0;34m[INFO][0m   Smell: feature envy | Models: llama3.1:8b | Strategies: Confirmation-Bias
+[0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --dataset '/home/sakib/Documents/MLCQ/dataset/MLCQ/dataset_3day_balanced.json'         --smell 'feature envy'         --models 'llama3.1:8b'         --strategies 'Confirmation-Bias'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
+[0;32m[✓][0m Sycophancy: feature envy - Confirmation-Bias completed
+
+[0;34m[INFO][0m Testing long method with 5 strategies...
+[0;34m[INFO][0m Test: Sycophancy: long method - Casual
+[0;34m[INFO][0m   Smell: long method | Models: llama3.1:8b | Strategies: Casual
+[0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --dataset '/home/sakib/Documents/MLCQ/dataset/MLCQ/dataset_3day_balanced.json'         --smell 'long method'         --models 'llama3.1:8b'         --strategies 'Casual'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
 [0;32m[✓][0m Sycophancy: long method - Casual completed
 
 [0;34m[INFO][0m Test: Sycophancy: long method - Positive
-[0;34m[INFO][0m   Smell: long method | Models: qwen2.5-coder:7b | Strategies: Positive
+[0;34m[INFO][0m   Smell: long method | Models: llama3.1:8b | Strategies: Positive
 [0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
-  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --dataset '/home/sakib/Documents/MLCQ/dataset/mlcq_filtered.json'         --smell 'long method'         --models 'qwen2.5-coder:7b'         --strategies 'Positive'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --dataset '/home/sakib/Documents/MLCQ/dataset/MLCQ/dataset_3day_balanced.json'         --smell 'long method'         --models 'llama3.1:8b'         --strategies 'Positive'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
 [0;32m[✓][0m Sycophancy: long method - Positive completed
 
 [0;34m[INFO][0m Test: Sycophancy: long method - Contradictory-Hint
-[0;34m[INFO][0m   Smell: long method | Models: qwen2.5-coder:7b | Strategies: Contradictory-Hint
+[0;34m[INFO][0m   Smell: long method | Models: llama3.1:8b | Strategies: Contradictory-Hint
 [0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
-  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --dataset '/home/sakib/Documents/MLCQ/dataset/mlcq_filtered.json'         --smell 'long method'         --models 'qwen2.5-coder:7b'         --strategies 'Contradictory-Hint'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --dataset '/home/sakib/Documents/MLCQ/dataset/MLCQ/dataset_3day_balanced.json'         --smell 'long method'         --models 'llama3.1:8b'         --strategies 'Contradictory-Hint'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
 [0;32m[✓][0m Sycophancy: long method - Contradictory-Hint completed
 
 [0;34m[INFO][0m Test: Sycophancy: long method - False-Premise
-[0;34m[INFO][0m   Smell: long method | Models: qwen2.5-coder:7b | Strategies: False-Premise
+[0;34m[INFO][0m   Smell: long method | Models: llama3.1:8b | Strategies: False-Premise
 [0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
-  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --dataset '/home/sakib/Documents/MLCQ/dataset/mlcq_filtered.json'         --smell 'long method'         --models 'qwen2.5-coder:7b'         --strategies 'False-Premise'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --dataset '/home/sakib/Documents/MLCQ/dataset/MLCQ/dataset_3day_balanced.json'         --smell 'long method'         --models 'llama3.1:8b'         --strategies 'False-Premise'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
 [0;32m[✓][0m Sycophancy: long method - False-Premise completed
 
 [0;34m[INFO][0m Test: Sycophancy: long method - Confirmation-Bias
-[0;34m[INFO][0m   Smell: long method | Models: qwen2.5-coder:7b | Strategies: Confirmation-Bias
+[0;34m[INFO][0m   Smell: long method | Models: llama3.1:8b | Strategies: Confirmation-Bias
 [0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
-  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --dataset '/home/sakib/Documents/MLCQ/dataset/mlcq_filtered.json'         --smell 'long method'         --models 'qwen2.5-coder:7b'         --strategies 'Confirmation-Bias'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --dataset '/home/sakib/Documents/MLCQ/dataset/MLCQ/dataset_3day_balanced.json'         --smell 'long method'         --models 'llama3.1:8b'         --strategies 'Confirmation-Bias'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
 [0;32m[✓][0m Sycophancy: long method - Confirmation-Bias completed
+
+[0;34m[INFO][0m Testing data class with 5 strategies...
+[0;34m[INFO][0m Test: Sycophancy: data class - Casual
+[0;34m[INFO][0m   Smell: data class | Models: llama3.1:8b | Strategies: Casual
+[0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --dataset '/home/sakib/Documents/MLCQ/dataset/MLCQ/dataset_3day_balanced.json'         --smell 'data class'         --models 'llama3.1:8b'         --strategies 'Casual'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
+[0;32m[✓][0m Sycophancy: data class - Casual completed
+
+[0;34m[INFO][0m Test: Sycophancy: data class - Positive
+[0;34m[INFO][0m   Smell: data class | Models: llama3.1:8b | Strategies: Positive
+[0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --dataset '/home/sakib/Documents/MLCQ/dataset/MLCQ/dataset_3day_balanced.json'         --smell 'data class'         --models 'llama3.1:8b'         --strategies 'Positive'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
+[0;32m[✓][0m Sycophancy: data class - Positive completed
+
+[0;34m[INFO][0m Test: Sycophancy: data class - Contradictory-Hint
+[0;34m[INFO][0m   Smell: data class | Models: llama3.1:8b | Strategies: Contradictory-Hint
+[0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --dataset '/home/sakib/Documents/MLCQ/dataset/MLCQ/dataset_3day_balanced.json'         --smell 'data class'         --models 'llama3.1:8b'         --strategies 'Contradictory-Hint'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
+[0;32m[✓][0m Sycophancy: data class - Contradictory-Hint completed
+
+[0;34m[INFO][0m Test: Sycophancy: data class - False-Premise
+[0;34m[INFO][0m   Smell: data class | Models: llama3.1:8b | Strategies: False-Premise
+[0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --dataset '/home/sakib/Documents/MLCQ/dataset/MLCQ/dataset_3day_balanced.json'         --smell 'data class'         --models 'llama3.1:8b'         --strategies 'False-Premise'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
+[0;32m[✓][0m Sycophancy: data class - False-Premise completed
+
+[0;34m[INFO][0m Test: Sycophancy: data class - Confirmation-Bias
+[0;34m[INFO][0m   Smell: data class | Models: llama3.1:8b | Strategies: Confirmation-Bias
+[0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --dataset '/home/sakib/Documents/MLCQ/dataset/MLCQ/dataset_3day_balanced.json'         --smell 'data class'         --models 'llama3.1:8b'         --strategies 'Confirmation-Bias'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
+[0;32m[✓][0m Sycophancy: data class - Confirmation-Bias completed
+
+[0;34m[INFO][0m Testing blob with 5 strategies...
+[0;34m[INFO][0m Test: Sycophancy: blob - Casual
+[0;34m[INFO][0m   Smell: blob | Models: llama3.1:8b | Strategies: Casual
+[0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --dataset '/home/sakib/Documents/MLCQ/dataset/MLCQ/dataset_3day_balanced.json'         --smell 'blob'         --models 'llama3.1:8b'         --strategies 'Casual'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
+[0;32m[✓][0m Sycophancy: blob - Casual completed
+
+[0;34m[INFO][0m Test: Sycophancy: blob - Positive
+[0;34m[INFO][0m   Smell: blob | Models: llama3.1:8b | Strategies: Positive
+[0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --dataset '/home/sakib/Documents/MLCQ/dataset/MLCQ/dataset_3day_balanced.json'         --smell 'blob'         --models 'llama3.1:8b'         --strategies 'Positive'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
+[0;32m[✓][0m Sycophancy: blob - Positive completed
+
+[0;34m[INFO][0m Test: Sycophancy: blob - Contradictory-Hint
+[0;34m[INFO][0m   Smell: blob | Models: llama3.1:8b | Strategies: Contradictory-Hint
+[0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --dataset '/home/sakib/Documents/MLCQ/dataset/MLCQ/dataset_3day_balanced.json'         --smell 'blob'         --models 'llama3.1:8b'         --strategies 'Contradictory-Hint'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
+[0;32m[✓][0m Sycophancy: blob - Contradictory-Hint completed
+
+[0;34m[INFO][0m Test: Sycophancy: blob - False-Premise
+[0;34m[INFO][0m   Smell: blob | Models: llama3.1:8b | Strategies: False-Premise
+[0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --dataset '/home/sakib/Documents/MLCQ/dataset/MLCQ/dataset_3day_balanced.json'         --smell 'blob'         --models 'llama3.1:8b'         --strategies 'False-Premise'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
+[0;32m[✓][0m Sycophancy: blob - False-Premise completed
+
+[0;34m[INFO][0m Test: Sycophancy: blob - Confirmation-Bias
+[0;34m[INFO][0m   Smell: blob | Models: llama3.1:8b | Strategies: Confirmation-Bias
+[0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --dataset '/home/sakib/Documents/MLCQ/dataset/MLCQ/dataset_3day_balanced.json'         --smell 'blob'         --models 'llama3.1:8b'         --strategies 'Confirmation-Bias'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
+[0;32m[✓][0m Sycophancy: blob - Confirmation-Bias completed
 
 [0;32m[✓][0m Phase 3 complete!
 
@@ -47,5 +141,5 @@ Metric: Decision Flip Rate (DFR) vs baseline
 ════════════════════════════════════════════════════════════
 Results saved to: /home/sakib/Documents/MLCQ/results
 Log file: /home/sakib/Documents/MLCQ/results/experiment_log.txt
-Timestamp: 2026-03-05 20:45:44
+Timestamp: 2026-03-06 01:23:04
 

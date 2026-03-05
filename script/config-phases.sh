@@ -3,7 +3,7 @@
 # Edit values below to control experiment phases
 
 # DATASET: 206 samples (13.8% of 1,495 raw) - balanced, representative subset
-DATASET_PATH="/home/sakib/Documents/MLCQ/dataset/mlcq_filtered.json"
+DATASET_PATH="/home/sakib/Documents/MLCQ/dataset/MLCQ/dataset_3day_balanced.json"
 RESULTS_DIR="/home/sakib/Documents/MLCQ/results"
 TEMPERATURE_GLOBAL="0.3"
 TOP_P_GLOBAL="0.9"
@@ -35,14 +35,13 @@ declare -A PHASE2=(
     [strategies]="Casual"
 )
 
-#! Need to re-run this phase for each of the 4 types of smell
+#! Sycophancy bias testing for all 4 code smells
 declare -A PHASE3=(
     [name]="SYCOPHANCY BIAS TESTING"
-    [duration]="1-2 hrs"
-    [purpose]="Measure Decision Flip Rate (DFR) across bias strategies"
-    [models]="qwen2.5-coder:7b"
-    [smells]="long method"
-    # [strategies]="Casual|Positive|Negative|Authoritative|Social-Proof|Contradictory-Hint|False-Premise|Confirmation-Bias"
+    [duration]="3-4 hrs"
+    [purpose]="Measure Decision Flip Rate (DFR) across bias strategies for all smells"
+    [models]="llama3.1:8b"
+    [smells]="feature envy|long method|data class|blob"
     [strategies]="Casual|Positive|Contradictory-Hint|False-Premise|Confirmation-Bias"
     [limit]="175"
 )
@@ -82,11 +81,10 @@ list_models() {
 print_all_phases() {
     echo "Phase 1: VALIDATION (5-10 min)      - 1 model, 1 smell, 1 strategy"
     echo "Phase 2: BASELINE (45 min)          - All 4 smells baseline accuracy"
-    echo "Phase 3: SYCOPHANCY (1-2 hrs)       - 8 strategies, 1 smell"
-    echo "Phase 4: CROSS-MODEL (1-2 hrs)      - 3 models, 8 strategies"
-    echo "Phase 5: COMPREHENSIVE (2-3 hrs)    - Feature + Long Method, 3 models"
+    echo "Phase 3: SYCOPHANCY (3-4 hrs)       - All 4 smells × 5 strategies"
+    echo "Phase 4: CROSS-MODEL (1-2 hrs)      - 3 models × 8 strategies, 1 smell"
+    echo "Phase 5: COMPREHENSIVE (2-3 hrs)    - Feature Envy + Long Method, 3 models"
 }
 
 export DATASET_PATH RESULTS_DIR TEMPERATURE_GLOBAL TOP_P_GLOBAL
-export -A PHASE1 PHASE2 PHASE3 PHASE4 PHASE5
 export -A PHASE1 PHASE2 PHASE3 PHASE4 PHASE5

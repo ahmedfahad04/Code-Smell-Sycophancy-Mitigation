@@ -1,0 +1,818 @@
+[
+  {
+    "id": 553,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "major",
+    "reasoning": "The method accesses and relies heavily on the data and functions of another class (knownMappings) rather than its own, indicating a possible misplacement of the method. This behavior is characteristic of the 'Feature Envy' code smell."
+  },
+  {
+    "id": 575,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method setPerUserTestWhileIdle accesses and relies heavily on the data of another class (perUserTestWhileIdle), suggesting it might be better placed in the other class. This is a characteristic of the 'Feature Envy' code smell."
+  },
+  {
+    "id": 622,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "major",
+    "reasoning": "The method is heavily relying on the data and functions of the LogIterator class, suggesting it might be better placed in the LogIterator class. It is performing operations on another class's attributes or methods, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 637,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method 'stacks' is accessing and relying on the data and functions of other classes ('getConnectionContext', 'getRootV2', 'getTokenProvider') rather than its own, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 641,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `replaceSubstitution` accesses and relies heavily on the `Pattern` class's `matcher` method, suggesting it might be better placed in the `Pattern` class or have a closer relationship with it."
+  },
+  {
+    "id": 679,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method getSiblingIndexWithClassName accesses and relies heavily on the data and functions of another class (Element), rather than its own. It displays interest in the members of the Element class, suggesting it might be better placed in the Element class."
+  },
+  {
+    "id": 697,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `replaceWith` accesses and relies heavily on the data and functions of other classes (`checkNotRemoved`, `notPermittedOnRootElement`, `requireNonNull`, `insertAfter`, `getNextSibling`, `remove`), suggesting it might be better placed in the other class. However, the method's primary responsibility is to replace an element with a new one, which is a reasonable operation within its own class."
+  },
+  {
+    "id": 713,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method rule__MdCategory__Group_4_0__1__Impl() accesses and relies heavily on the data and functions of another class (MdCategory) rather than its own, suggesting it might be better placed in the MdCategory class."
+  },
+  {
+    "id": 723,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method get() relies heavily on the data and functions of another class (getSingleCredentials()) rather than its own, suggesting it might be better placed in the other class. This indicates a possible misplacement of the method, characteristic of the 'Feature Envy' code smell."
+  },
+  {
+    "id": 742,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `resolveGenericRef` accesses and relies heavily on the data and functions of `GenericRef` class, rather than its own, suggesting it might be better placed in the `GenericRef` class."
+  },
+  {
+    "id": 755,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method format() accesses and relies heavily on the data and functions of another class (String), rather than its own class. This suggests that the method might be better placed in the String class."
+  },
+  {
+    "id": 761,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method onKapuaEvent is accessing and relying heavily on the data and functions of another class (ServiceEvent), rather than its own. This suggests it might be better placed in the ServiceEvent class."
+  },
+  {
+    "id": 769,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method is accessing and relying heavily on the data and functions of other classes, such as 'alias', 'ciphers', 'keyStore', 'protocol', 'sslManagerOpts', 'trustStore', indicating it might be better placed in the other class."
+  },
+  {
+    "id": 773,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `writeVersion` accesses and relies heavily on the `JsonWriter` class, suggesting it might be better placed in the `JsonWriter` class. This is a minor case of 'Feature Envy' as the method is not entirely focused on its own class's data and functions."
+  },
+  {
+    "id": 783,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "major",
+    "reasoning": "The method checkDeviceListLength() is accessing and relying heavily on the data and functions of another class (DeviceListResultImpl), rather than its own. This suggests it might be better placed in the DeviceListResultImpl class or closely related to it."
+  },
+  {
+    "id": 805,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method is accessing and relying heavily on the data and functions of another class (com.google.protobuf.CodedInputStream), suggesting it might be better placed in the other class. The method is performing operations on another class's attributes or methods, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 812,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "major",
+    "reasoning": "The method `getPageEncodingFromDirective` accesses and relies heavily on the `Attributes` class, rather than its own data and functions. This indicates a possible misplacement of the method, as it displays more interest in the members of the `Attributes` class."
+  },
+  {
+    "id": 855,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method getApplicationToRun() accesses and relies heavily on the data and functions of other classes, such as Platform and IConfigurationElement, rather than its own. This suggests that the method might be better placed in the other class, indicating a possible 'Feature Envy' code smell."
+  },
+  {
+    "id": 879,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method executeUrl() accesses and relies heavily on the data and functions of another class (prepareProxyParams()) rather than its own, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 979,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The constructor UsagesNode accesses and relies heavily on the data and functions of other classes, such as NodeFactory, PromiseProvider, TreeStyles, and JavaResources, rather than its own. This indicates that the method might be better placed in one of these classes."
+  },
+  {
+    "id": 996,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method `shouldParseContainerAtom` is a simple, self-contained function that performs a specific operation and does not display interest in the members of other classes. It only relies on its own class's data and functions."
+  },
+  {
+    "id": 1017,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method setCommentCount accesses and relies on the data and functions of another class (GphotoCommentCount) rather than its own, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1021,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method readNullTerminatedString accesses and relies heavily on the data and functions of the class's internal state (data, position, limit), rather than its own. This suggests it might be better placed in the class that manages these attributes."
+  },
+  {
+    "id": 1059,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method readJson() accesses and relies heavily on the HttpServletRequest class, which suggests it might be better placed in the HttpServletRequest class. This could be a sign of Feature Envy, where the method is more interested in the members of another class than its own."
+  },
+  {
+    "id": 1062,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The constructor is properly initializing the object's attributes and performing calculations based on its own data, adhering to the principle of encapsulation. It does not exhibit characteristics of Feature Envy, as it is focused on its own class's data and operations."
+  },
+  {
+    "id": 1067,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "This method is accessing and relying heavily on the data and functions of other classes (e.g., config, sslConfig, registry) rather than its own. It displays interest in the members of other classes, suggesting it might be better placed in the other class."
+  },
+  {
+    "id": 1113,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `runFunctions` accesses and relies heavily on the `CommandHandler` class, suggesting it might be better placed in the `CommandHandler` class. This is a minor case of feature envy as the method is not entirely focused on its own class's data and functions."
+  },
+  {
+    "id": 1120,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method sendRestRequest accesses and relies heavily on the data and functions of the _restClient object rather than its own, suggesting it might be better placed in the _restClient class. This indicates a possible misplacement of the method."
+  },
+  {
+    "id": 1123,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method updateState() accesses and relies heavily on the data and functions of other classes (e.g., X509CertImpl, BasicChecker, PolicyChecker, ConstraintsChecker), indicating that it might be better placed in the respective classes or refactored to reduce dependencies."
+  },
+  {
+    "id": 1132,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method is an override of a superclass method, and it simply delegates the operation to the superclass, indicating no code smell. The method's purpose is clear and focused on its own class's functionality."
+  },
+  {
+    "id": 1143,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method is accessing and relying heavily on the data and functions of another class (com.oracle.bmc.Region), indicating it might be better placed in that class. Although it's not a major issue, it's a sign of a potential misplacement of the method."
+  },
+  {
+    "id": 1165,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method is a simple setter for the 'definedTags' field and does not exhibit any characteristics of a code smell. It focuses on the data within its own class and does not display interest in the members of other classes."
+  },
+  {
+    "id": 1189,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method is heavily relying on the data and functions of other classes, such as CreatePreauthenticatedRequestConverter, which suggests it might be better placed in the other class. The method is performing operations on another class's attributes or methods, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1190,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "major",
+    "reasoning": "This method relies heavily on the data and functions of other classes, such as GenerateAutonomousDatabaseWalletConverter and client, rather than its own. It displays more interest in the members of these other classes, suggesting it might be better placed in the other class."
+  },
+  {
+    "id": 1209,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method getActiveNetwork() is focused on its own class's data and functions, and it doesn't access or rely heavily on other classes' data and functions."
+  },
+  {
+    "id": 1217,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method nativeGetPointerCoords() is accessing and relying heavily on the data and functions of the NativeInput class, rather than its own class. This suggests it might be better placed in the NativeInput class, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1226,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method dumpStack() accesses and relies heavily on the members of the ThreadInfo class, suggesting it might be better placed in the ThreadInfo class. This indicates a possible misplacement of the method, which is a characteristic of the Feature Envy code smell."
+  },
+  {
+    "id": 1300,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `notifyConflict()` accesses and relies heavily on the `ShellUtils` class and `UIHelpers` class, rather than its own class, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1319,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "major",
+    "reasoning": "The method test() accesses and relies heavily on the data and functions of other classes (AnnotationUtils and AnnotatedElementUtils), indicating it might be better placed in those classes. It also performs operations on their attributes or methods, suggesting a possible misplacement of the method."
+  },
+  {
+    "id": 1329,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method is accessing and relying on the 'requestField' method of the same class, but it's also iterating over a list of fields and adding them to the request, which could be a sign that it's trying to do too much. However, the method is not accessing or relying heavily on data and functions of another class, so it's not a major issue."
+  },
+  {
+    "id": 1337,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method vmExecutablePath(Vm) is accessing and relying heavily on the data and functions of another class (Vm), rather than its own. This suggests it might be better placed in the Vm class, but the code is still understandable in its current location."
+  },
+  {
+    "id": 1347,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method onFailure() accesses and relies heavily on the data and functions of other classes, such as HSCompilableTruffleAST and JNIEnv, rather than its own. This suggests it might be better placed in the other class, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1363,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method is accessing and relying on the data and functions of another class (customPdxSerializers), which suggests it might be better placed in the other class. However, the impact is minor as the method is still within its own class and not overly complex."
+  },
+  {
+    "id": 1364,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "major",
+    "reasoning": "The method is accessing and relying on the data of another class (description), rather than its own, indicating a possible misplacement of the method. This behavior is characteristic of the 'Feature Envy' code smell."
+  },
+  {
+    "id": 1366,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The constructor of the ZeroNullConversionOp class is initializing its own properties (result and input) and calling the constructor of its superclass, indicating it is focusing on its own data and functions."
+  },
+  {
+    "id": 1374,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The close() method accesses and relies heavily on the data and functions of the HSObject class, specifically the invalidate() method, rather than its own data and functions. This suggests that the method might be better placed in the HSObject class or that there's a need for refactoring to reduce coupling between classes."
+  },
+  {
+    "id": 1386,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code snippet is a simple, self-contained method that doesn't access or rely heavily on other classes' data and functions, and its focus is on its own class's logic."
+  },
+  {
+    "id": 1389,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `emitFloatConvert` accesses and relies heavily on the data and functions of another class (`getLIRGen()`), rather than its own. This indicates a possible misplacement of the method."
+  },
+  {
+    "id": 1495,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method relies heavily on the data and functions of the 'SockJsService' class, rather than its own. This suggests that the method might be better placed in the 'SockJsService' class."
+  },
+  {
+    "id": 1500,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "major",
+    "reasoning": "The method is accessing and relying heavily on the data and functions of another class (EntityManagerFactory) rather than its own, suggesting it might be better placed in the other class. This is a clear indication of the Feature Envy code smell."
+  },
+  {
+    "id": 1509,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method is simple, short, and only returns a field of the class, indicating no code smell. It does not access or rely on data and functions of other classes."
+  },
+  {
+    "id": 1534,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "major",
+    "reasoning": "The method formatElement accesses and relies heavily on the data and functions of other classes (FormatProcessorXML and CleanupProcessorXML), suggesting it might be better placed in those classes. This indicates a possible misplacement of the method, which is a characteristic of the 'Feature Envy' code smell."
+  },
+  {
+    "id": 1543,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `newlineWithIndent` accesses and relies on the `addNewlineWithIndent` method of another class, indicating it might be better placed in the other class. This suggests a possible misplacement of the method."
+  },
+  {
+    "id": 1555,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method getArrayComponentTypeSimpleName() is accessing and relying on the data of another class (getSimpleName()) rather than its own, indicating a possible misplacement of the method. However, the severity is minor as the method is relatively simple and focused on a specific task."
+  },
+  {
+    "id": 1558,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method is accessing and relying on the data of another class (Unpooled) rather than its own, indicating it might be better placed in the other class. The method is performing operations on another class's attributes or methods, suggesting a possible misplacement of the method."
+  },
+  {
+    "id": 1640,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method removeHealthMonitor() accesses and relies heavily on the data and functions of the HealthMonitor class, rather than its own. This suggests it might be better placed in the HealthMonitor class or tightly coupled with it."
+  },
+  {
+    "id": 1664,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method supplierFromDimensionSelector accesses and relies heavily on the data and functions of the DimensionSelector class, suggesting it might be better placed in the DimensionSelector class. This method is not focused on its own class's data and functions."
+  },
+  {
+    "id": 1753,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method getScope() is accessing and relying heavily on the data and functions of another class, specifically the AbstractScope class, rather than its own. This suggests that the method might be better placed in the AbstractScope class."
+  },
+  {
+    "id": 1756,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method rule__MandatoryModel__Group__2() accesses and relies heavily on the data and functions of other classes, such as rule__MandatoryModel__Group__2__Impl and rule__MandatoryModel__Group__3, rather than its own. This suggests it might be better placed in the other class, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1768,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method eIsSet(int featureID) is accessing and relying on the data of another class (elements) rather than its own, indicating a possible misplacement of the method. The method is also performing operations on another class's attribute (elements.isEmpty())."
+  },
+  {
+    "id": 1801,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code snippet is a simple Spring MVC controller method that adds a model attribute and returns a view. It does not exhibit any characteristics of the Feature Envy code smell, as it only accesses and relies on its own class's data and functions."
+  },
+  {
+    "id": 1840,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method doAggressiveInner(LazyClassGen gen) accesses and relies heavily on the data and functions of LazyClassGen class, rather than its own. This indicates that the method might be better placed in the LazyClassGen class, which is a characteristic of the 'Feature Envy' code smell."
+  },
+  {
+    "id": 1878,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method is accessing and relying heavily on the data and functions of another class (DisruptorReference and DisruptorEndpoint), indicating it might be better placed in the other class. This is a minor issue as the method is not overly complex, but it does display interest in the members of other classes."
+  },
+  {
+    "id": 1890,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The constructor accesses and relies heavily on the data and functions of the Object class and the ObjectHelper class, rather than its own class. This suggests it might be better placed in the Object or ObjectHelper class."
+  },
+  {
+    "id": 1908,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code snippet is a static method that delegates the parsing operation to another class's method (GeneratedMessageLite.parseFrom), but it doesn't access or rely heavily on the data and functions of another class. This is a typical use case for a static factory method in Java."
+  },
+  {
+    "id": 1930,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `printAllExcludes` accesses and relies heavily on the `ExcludeRule` class, suggesting it might be better placed in the `ExcludeRule` class. This is an indication of the 'Feature Envy' code smell."
+  },
+  {
+    "id": 1932,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method accesses and relies on the data from another class (AlertResourceProvider), suggesting it might be better placed in that class. This indicates a possible misplacement of the method, characteristic of the 'Feature Envy' code smell."
+  },
+  {
+    "id": 1952,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method listZookeeper() is accessing and relying heavily on the data and functions of MetadataTableUtil class, rather than its own class. This suggests that the method might be better placed in the MetadataTableUtil class."
+  },
+  {
+    "id": 1954,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The constructor is initializing the object's properties with the provided parameters, which is a normal and expected behavior. There is no indication of the constructor relying on other classes or performing operations on their attributes."
+  },
+  {
+    "id": 1994,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method connected() accesses and relies heavily on the data and functions of the SocketChannel class, such as channel.socket().getRemoteSocketAddress().toString() and channel.socket().setSoLinger(true, 0);, rather than its own class attributes."
+  },
+  {
+    "id": 2016,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method checkValue() accesses and relies on the data of the Object class, which is not its own class, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 2042,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method getUserDetails() accesses and relies heavily on the data and functions of the StringTokenizer class rather than its own, indicating a possible misplacement of the method. The method is performing operations on another class's attributes or methods, suggesting it might be better placed in the StringTokenizer class."
+  },
+  {
+    "id": 2043,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method init() accesses and relies heavily on the data and functions of another class (DbProperties) rather than its own, suggesting it might be better placed in the DbProperties class. This is a minor instance of Feature Envy as the method is not overly complex or performance-critical."
+  },
+  {
+    "id": 2072,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The constructor is initializing the properties of the class itself, indicating no external dependencies or misplacement of responsibilities."
+  },
+  {
+    "id": 2082,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The equals method is accessing and relying on the data of another class (deleteAll_args), indicating it might be better placed in the other class. This method is not focusing on its own class's data and functions."
+  },
+  {
+    "id": 2106,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The constructor is accessing and relying heavily on the data of another class (List<ZkJoinedNodeEvtData> joinedNodes), suggesting it might be better placed in the other class. This is a minor smell because the constructor is not performing any complex operations on the data."
+  },
+  {
+    "id": 2152,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "major",
+    "reasoning": "The method fastCheckPrecisionScale accesses and relies heavily on the data and functions of another class FastHiveDecimalImpl, rather than its own. This indicates that the method might be better placed in the other class, violating the principle that a method should focus on its own class's data and functions."
+  },
+  {
+    "id": 2158,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method is accessing and relying on the data and methods of another class (RecordIdentifier) rather than its own, indicating a possible misplacement of the method. The method is also performing operations on another class's attributes or methods."
+  },
+  {
+    "id": 2162,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "This method is accessing and relying on the data of another class (arg1Column, arg2Column, arg3Column) rather than its own, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 2175,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method is accessing and relying heavily on the data and functions of another class (MapJoinWalkerCtx), suggesting it might be better placed in the MapJoinWalkerCtx class. This is a minor issue as it's not a significant impact on the code's maintainability."
+  },
+  {
+    "id": 2184,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method applies a timestamp format using DruidExpressions, which suggests it's relying heavily on another class's data and functions. This indicates a possible misplacement of the method, as it's displaying more interest in the members of DruidExpressions."
+  },
+  {
+    "id": 2186,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method nextKeyValue() accesses and relies heavily on the data and functions of another class (queryResultsIterator), rather than its own. This suggests it might be better placed in the other class."
+  },
+  {
+    "id": 2191,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method `getParamCount` only accesses and relies on the data of another class (`HplsqlParser.Expr_func_paramsContext ctx`), but it does not perform any operations on it. It simply returns the size of the `func_param()` list, which is a straightforward and focused operation."
+  },
+  {
+    "id": 2196,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method read() accesses and relies heavily on the data and functions of the WMTrigger struct, rather than its own class. This suggests that the method might be better placed in the WMTrigger class, as it is closely related to its data and operations."
+  },
+  {
+    "id": 2238,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method pushFrame accesses and relies heavily on the data and functions of another class (OrdsSegmentTermsEnumFrame) rather than its own, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 2242,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "major",
+    "reasoning": "The method r_prelude() accesses and relies heavily on the data and functions of other classes, such as in_grouping() and eq_s(), indicating it might be better placed in the other class. It also performs operations on attributes or methods of other classes, suggesting a possible misplacement of the method."
+  },
+  {
+    "id": 2254,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "major",
+    "reasoning": "The method accesses and relies heavily on the data and functions of other classes, such as `remainingTokens`, `input`, `termAtt`, `posAtt`, and `encoder`, rather than its own, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 2396,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `stripNamespace` accesses and relies heavily on the `StringUtil` class's methods, suggesting it might be better placed in the `StringUtil` class or be a static method within the same class."
+  },
+  {
+    "id": 2400,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method parse() accesses and relies heavily on the data and functions of another class (DataOutput), indicating it might be better placed in the DataOutput class. However, the severity is minor since the method is not overly complex and the reliance on another class is not excessive."
+  },
+  {
+    "id": 2437,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `getClient` accesses and relies heavily on the `KubernetesClientRegistry` class, suggesting it might be better placed in that class. However, the method's purpose is to manage the client instance, which is a valid concern for the class itself, hence the minor severity."
+  },
+  {
+    "id": 2457,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method visit() accesses and relies heavily on the data and functions of another class (validator) rather than its own, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 2524,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method is accessing and relying heavily on the data and functions of other classes, such as 'type', 'resultCode', 'path', 'name', 'children', 'context', 'stat', 'data', 'watchedEvent', 'aclList', and 'opResults', which are not its own. This suggests it might be better placed in the other class, but in this case, it's a simple getter method for the class's own attributes."
+  },
+  {
+    "id": 2529,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "This method accesses and relies heavily on the data and functions of another class (underlying) rather than its own, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 2590,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method getAllColos() relies heavily on the data and functions of the DeploymentUtil class, suggesting it might be better placed in the DeploymentUtil class. This is a minor case of feature envy as the method is not excessively complex."
+  },
+  {
+    "id": 2626,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `initializeDocument` accesses and relies heavily on the data and functions of the `SourceMetadataUtil` class, rather than its own class. This suggests that the method might be better placed in the `SourceMetadataUtil` class or that the class has a strong dependency on it."
+  },
+  {
+    "id": 2669,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "major",
+    "reasoning": "The method is accessing and relying heavily on the data and functions of another class (FOPGVTFontFamily) rather than its own, suggesting it might be better placed in the other class."
+  },
+  {
+    "id": 2674,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method `forEachIntByte` is focused on the data and functions within its own class, iterating over its own `keys` and `values` arrays, and applying a given function to each pair. It does not display interest in the members of other classes, suggesting it is correctly placed in its own class."
+  },
+  {
+    "id": 2729,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method getPayload() is accessing and relying heavily on the delegate object's methods, indicating it might be better placed in the delegate class. This suggests a possible misplacement of the method."
+  },
+  {
+    "id": 2782,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method setupHeaders() accesses and relies heavily on the data and functions of other classes (e.g., BindingMessageInfo, MessageInfo, SoapBindingConfiguration), indicating it might be better placed in the other class or refactored to reduce its reliance on external classes."
+  },
+  {
+    "id": 2808,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method create() accesses and relies heavily on the data and functions of another class (CountMinSketch), suggesting it might be better placed in the CountMinSketch class. This indicates a possible misplacement of the method, which is a characteristic of the Feature Envy code smell."
+  },
+  {
+    "id": 2834,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method retrySetNullParamValue accesses and relies heavily on the data and functions of other classes, such as setString, setBigDecimal, setDate, etc., rather than its own. This suggests that the method might be better placed in the other classes, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 2844,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method 'crawl' accesses and relies heavily on the data and functions of another class, such as 'ingestStatus', 'loadAndValidateActions', and 'setupIngester', rather than its own. This suggests that the method might be better placed in the other class, indicating a possible case of 'Feature Envy'."
+  }
+]

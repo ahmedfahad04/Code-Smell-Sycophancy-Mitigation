@@ -1,0 +1,818 @@
+[
+  {
+    "id": 553,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "major",
+    "reasoning": "The method accesses and relies heavily on the data and functions of another class, specifically 'knownMappings' and 'getPropertiesMapping(itemType)', indicating it might be better placed in the other class."
+  },
+  {
+    "id": 575,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method setPerUserTestWhileIdle accesses and relies heavily on the data of another class (perUserTestWhileIdle), rather than its own. This suggests it might be better placed in the class that perUserTestWhileIdle belongs to."
+  },
+  {
+    "id": 622,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method is accessing and relying heavily on the data and functions of another class (LogIterator) rather than its own, indicating a possible misplacement of the method. The method is also performing operations on another class's attributes or methods, which is a characteristic of the Feature Envy code smell."
+  },
+  {
+    "id": 637,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method 'stacks()' accesses and relies heavily on the data and functions of other classes, specifically 'getConnectionContext()', 'getRootV2()', and 'getTokenProvider()', rather than its own. This suggests that the method might be better placed in the class that owns these methods."
+  },
+  {
+    "id": 641,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `replaceSubstitution` accesses and relies heavily on the `Pattern` class's data and functions, suggesting it might be better placed in the `Pattern` class or tightly coupled with it."
+  },
+  {
+    "id": 679,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method getSiblingIndexWithClassName() accesses and relies heavily on the data and functions of another class (Element), rather than its own. This suggests it might be better placed in the Element class."
+  },
+  {
+    "id": 697,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method replaceWith() accesses and relies heavily on the data and functions of another class (Element), suggesting it might be better placed in the Element class. This is a minor issue as the method is still contained within its own class, but it's not ideal."
+  },
+  {
+    "id": 713,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method rule__MdCategory__Group_4_0__1__Impl() accesses and relies heavily on the data and functions of another class (MdCategory), suggesting it might be better placed in the MdCategory class."
+  },
+  {
+    "id": 723,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method get() accesses and relies heavily on the data and functions of another class (getSingleCredentials()) rather than its own, suggesting it might be better placed in the other class."
+  },
+  {
+    "id": 742,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "major",
+    "reasoning": "The method `resolveGenericRef` accesses and relies heavily on the data and functions of another class (`GenericRef`), suggesting it might be better placed in the `GenericRef` class. This is a strong indication of a 'Feature Envy' code smell."
+  },
+  {
+    "id": 755,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `format` accesses and relies heavily on the data and functions of the `arguments` array, which is not its own class, suggesting it might be better placed in the class that owns the array or in a utility class."
+  },
+  {
+    "id": 761,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The onKapuaEvent method accesses and relies heavily on the data and functions of the ServiceEvent class, rather than its own class. This suggests it might be better placed in the ServiceEvent class or refactored to reduce its reliance on external data."
+  },
+  {
+    "id": 769,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method is accessing and relying heavily on the data and functions of other classes, such as `alias`, `ciphers`, `keyStore`, `protocol`, `sslManagerOpts`, `trustStore`, rather than its own. This indicates that the method might be better placed in the other class."
+  },
+  {
+    "id": 773,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method writeVersion() accesses and relies heavily on the data and functions of another class (JsonWriter), suggesting it might be better placed in the JsonWriter class. This is a characteristic of the 'Feature Envy' code smell."
+  },
+  {
+    "id": 783,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method checkDeviceListLength accesses and relies heavily on the data and functions of the DeviceListResultImpl class, suggesting it might be better placed in that class."
+  },
+  {
+    "id": 805,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `mergeFrom` accesses and relies heavily on the data and functions of other classes, such as `com.google.protobuf.CodedInputStream` and `com.google.protobuf.UnknownFieldSet.Builder`, rather than its own class. This indicates that the method might be better placed in the other class, which is a characteristic of the 'Feature Envy' code smell."
+  },
+  {
+    "id": 812,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method is accessing and relying heavily on the data and functions of another class, specifically the Attributes class, rather than its own. This suggests that the method might be better placed in the Attributes class."
+  },
+  {
+    "id": 855,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method getApplicationToRun() is accessing and relying heavily on the data and functions of the Platform class, specifically the getExtensionRegistry() and getExtension() methods, rather than its own class's data and functions. This suggests that the method might be better placed in the Platform class or that the Platform class needs to provide more functionality to the calling class."
+  },
+  {
+    "id": 879,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method is accessing and relying heavily on the data and functions of another class (ProxyParams), which suggests it might be better placed in the ProxyParams class. This is a minor issue because the method is not overly complex, but it does display feature envy characteristics."
+  },
+  {
+    "id": 979,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The constructor of UsagesNode accesses and relies heavily on the data and functions of other classes, such as NodeFactory, PromiseProvider, TreeStyles, and JavaResources, rather than its own. This suggests that the method might be better placed in the other class or that the class itself is not well-designed."
+  },
+  {
+    "id": 996,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method shouldParseContainerAtom() is accessing and relying on the data of another class (Atom) rather than its own, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1017,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method setCommentCount() accesses and relies heavily on the data and functions of another class (GphotoCommentCount), suggesting it might be better placed in the GphotoCommentCount class."
+  },
+  {
+    "id": 1021,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method readNullTerminatedString() accesses and relies heavily on the data and functions of another class (Util) rather than its own, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1059,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method readJson accesses and relies heavily on the HttpServletRequest class rather than its own data and functions, suggesting it might be better placed in the HttpServletRequest class or closely related to it."
+  },
+  {
+    "id": 1062,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method is accessing and relying heavily on the data and functions of the Operation class, suggesting it might be better placed in the Operation class. This is a characteristic of the 'Feature Envy' code smell."
+  },
+  {
+    "id": 1067,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The constructor is accessing and relying heavily on the data and functions of other classes, such as NetworkConfig, SSLConfig, and MetricRegistry, rather than its own. This suggests that the method might be better placed in the other class, indicating a possible 'Feature Envy' code smell."
+  },
+  {
+    "id": 1113,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method runFunctions accesses and relies heavily on the data and functions of the CommandHandler class, suggesting it might be better placed in the CommandHandler class. This is a minor issue as the method is not overly complex, but it does display interest in the members of another class."
+  },
+  {
+    "id": 1120,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method sendRestRequest is accessing and relying heavily on the data and functions of another class (RestClient), rather than its own, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1123,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "major",
+    "reasoning": "The method updateState() accesses and relies heavily on the data and functions of other classes, such as X509CertImpl, PKIX, BasicChecker, RevocationChecker, PolicyChecker, and ConstraintsChecker, rather than its own. This indicates that the method might be better placed in the other class, violating the principle of a method focusing on its own class's data and functions."
+  },
+  {
+    "id": 1132,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method is accessing and relying on the data and functions of the superclass, rather than its own class, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1143,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The setRegion method accesses and relies heavily on the data and functions of the com.oracle.bmc.Region class, rather than its own class. This suggests that the method might be better placed in the com.oracle.bmc.Region class."
+  },
+  {
+    "id": 1165,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method definedTags accesses and relies heavily on the data of another class (java.util.Map), rather than its own class. This suggests it might be better placed in the Map class or its own class has a more intimate relationship with it."
+  },
+  {
+    "id": 1189,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method is accessing and relying heavily on the data and functions of another class (CreatePreauthenticatedRequestConverter) rather than its own, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1190,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "major",
+    "reasoning": "The method is heavily relying on the data and functions of other classes, such as GenerateAutonomousDatabaseWalletConverter and client, rather than its own. This indicates that the method might be better placed in the other class, thus violating the principle of a method focusing on its own class's data and functions."
+  },
+  {
+    "id": 1209,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method getActiveNetwork() is accessing and relying heavily on the data and functions of another class (netIdToNetwork and getActiveNetworkInfo()), indicating it might be better placed in the other class."
+  },
+  {
+    "id": 1217,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method nativeGetPointerCoords() accesses and relies heavily on the data and functions of another class (NativeInput.MotionEvent), suggesting it might be better placed in the other class. This indicates a possible misplacement of the method."
+  },
+  {
+    "id": 1226,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method dumpStack() accesses and relies heavily on the data and functions of another class (DebugInfoCollector, RuntimeCCTNodeProcessor) rather than its own, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1300,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `notifyConflict()` accesses and relies heavily on the `ShellUtils` class and `UIHelpers` class, indicating it might be better placed in one of these classes. This suggests a possible misplacement of the method, characteristic of the 'Feature Envy' code smell."
+  },
+  {
+    "id": 1319,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "major",
+    "reasoning": "The method test() accesses and relies heavily on the data and functions of other classes, specifically AnnotationUtils and AnnotatedElementUtils, rather than its own class, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1329,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method requestFields() is accessing and relying heavily on the data and functions of another class (this.requestField()) rather than its own, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1337,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method vmExecutablePath(Vm vm) accesses and relies heavily on the data and functions of the Vm class, suggesting it might be better placed in the Vm class itself. This is an indication of the 'Feature Envy' code smell."
+  },
+  {
+    "id": 1347,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method accesses and relies heavily on the data and functions of the HSCompilableTruffleAST class, indicating it might be better placed in that class. The method is also performing operations on the attributes or methods of the HSCompilableTruffleAST class, suggesting a possible misplacement of the method."
+  },
+  {
+    "id": 1363,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method is accessing and relying heavily on the data and functions of another class (PdxSerializerResolvers), rather than its own, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1364,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "This method is accessing and relying on the data of another class (description), rather than its own. It suggests that the method might be better placed in the class that owns the description attribute."
+  },
+  {
+    "id": 1366,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The constructor is accessing and relying on the data and functions of another class (AllocatableValue), rather than its own. This suggests it might be better placed in the AllocatableValue class."
+  },
+  {
+    "id": 1374,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The close() method accesses and relies heavily on the data and functions of the HSObject class, specifically the invalidate() method, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1386,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method getOptionClass() accesses and relies heavily on the data and functions of the OptionDescriptor class, suggesting it might be better placed in the OptionDescriptor class."
+  },
+  {
+    "id": 1389,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method emitFloatConvert() accesses and relies heavily on the data and functions of another class (LIRGen), rather than its own, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1495,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method handleRequest() accesses and relies heavily on the data and functions of ServerHttpRequest and ServerHttpResponse classes, rather than its own. This indicates a possible misplacement of the method, suggesting it might be better placed in the other class."
+  },
+  {
+    "id": 1500,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "major",
+    "reasoning": "The method is accessing and relying heavily on the data and functions of other classes, such as EntityManagerFactory, TransactionSynchronizationManager, and EntityManager, rather than its own class. This suggests that the method might be better placed in the other class, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1509,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method getFactoryMethodMetadata() is a simple getter method that directly returns an instance variable, indicating no code smell."
+  },
+  {
+    "id": 1534,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "major",
+    "reasoning": "The method formatElement() accesses and relies heavily on the data and functions of other classes (FormatProcessorXML and CleanupProcessorXML) rather than its own, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1543,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method accesses and relies on the 'addNewlineWithIndent' method of another class, indicating it might be better placed in that class. This suggests a 'Feature Envy' code smell, as the method is more interested in the members of another class than its own."
+  },
+  {
+    "id": 1555,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method getArrayComponentTypeSimpleName() accesses and relies heavily on the data of another class (getSimpleName()) rather than its own, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1558,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method is accessing and relying on the data and functions of another class (Unpooled) rather than its own, indicating it might be better placed in the other class."
+  },
+  {
+    "id": 1640,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method removeHealthMonitor() accesses and relies heavily on the data and functions of another class (HealthMonitor), suggesting it might be better placed in the HealthMonitor class."
+  },
+  {
+    "id": 1664,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method supplierFromDimensionSelector accesses and relies heavily on the data and functions of the DimensionSelector class, indicating it might be better placed within that class. This is a minor issue as the method is static and only used for testing purposes."
+  },
+  {
+    "id": 1753,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method getScope() accesses and relies heavily on the data and functions of another class, specifically AbstractScope, rather than its own. This indicates that the method might be better placed in the AbstractScope class."
+  },
+  {
+    "id": 1756,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method rule__MandatoryModel__Group__2() accesses and relies heavily on the data and functions of other classes (rule__MandatoryModel__Group__2__Impl and rule__MandatoryModel__Group__3), suggesting it might be better placed in the other class."
+  },
+  {
+    "id": 1768,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method eIsSet(int featureID) is accessing and relying on the data of another class (elements) rather than its own, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1801,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method is simple and only accesses its own class's attributes, not displaying any interest in other classes' members."
+  },
+  {
+    "id": 1840,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method doAggressiveInner(LazyClassGen gen) accesses and relies heavily on the data and functions of LazyClassGen rather than its own, suggesting it might be better placed in the LazyClassGen class."
+  },
+  {
+    "id": 1878,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "major",
+    "reasoning": "The createEndpoint method accesses and relies heavily on the data and functions of the DisruptorReference and DisruptorEndpoint classes, indicating it might be better placed in those classes. This is a clear example of feature envy, where the method is more interested in the members of other classes than its own."
+  },
+  {
+    "id": 1890,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The constructor is accessing and relying on the data of another class (Object pojo), suggesting it might be better placed in the other class."
+  },
+  {
+    "id": 1908,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `parseFrom` is accessing and relying heavily on the `DEFAULT_INSTANCE` and `com.google.protobuf.GeneratedMessageLite.parseFrom` methods, which are not its own, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1930,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `printAllExcludes` accesses and relies heavily on the data and functions of the `ExcludeRule` class, suggesting it might be better placed in the `ExcludeRule` class. This indicates a possible misplacement of the method."
+  },
+  {
+    "id": 1932,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method addRequiredAlertProperties accesses and relies heavily on the data and functions of AlertResourceProvider rather than its own class, suggesting it might be better placed in the AlertResourceProvider class."
+  },
+  {
+    "id": 1952,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The `listZookeeper` method accesses and relies heavily on the data and functions of `MetadataTableUtil` class, rather than its own, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1954,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The constructor of the RemoteAmbariCluster class accesses and relies on the streamProvider of another class, AmbariStreamProvider, rather than its own data and functions. This suggests that the method might be better placed in the AmbariStreamProvider class."
+  },
+  {
+    "id": 1994,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method connected() accesses and relies heavily on the data and functions of the SocketChannel class, suggesting it might be better placed in the SocketChannel class or its own class should be refactored to encapsulate its own data and functions."
+  },
+  {
+    "id": 2016,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method checkValue() is accessing and relying on the data type of the Object value, which is not its own class's data. This suggests it might be better placed in a class that is responsible for handling the Object type."
+  },
+  {
+    "id": 2042,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `getUserDetails` accesses and relies heavily on the data and functions of `NameValuePair` and `StringTokenizer` rather than its own class, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 2043,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method init() is accessing and relying heavily on the data and functions of another class (DbProperties) rather than its own, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 2072,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided code snippet is a constructor for the AuthenticationKey class, which is properly initializing its attributes. There is no indication of a code smell in this code."
+  },
+  {
+    "id": 2082,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The equals method is accessing and relying on the members of the deleteAll_args class, suggesting it might be better placed in that class. This indicates a possible misplacement of the method, characteristic of the Feature Envy code smell."
+  },
+  {
+    "id": 2106,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The constructor is accessing and relying heavily on the data and functions of another class (List<ZkJoinedNodeEvtData> joinedNodes), suggesting it might be better placed in the other class. This indicates a possible misplacement of the method."
+  },
+  {
+    "id": 2152,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "major",
+    "reasoning": "The method fastCheckPrecisionScale() is accessing and relying heavily on the data and functions of another class (FastHiveDecimalImpl), indicating it might be better placed in the other class."
+  },
+  {
+    "id": 2158,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method is accessing and relying heavily on the data and functions of another class (RecordIdentifier), suggesting it might be better placed in the other class."
+  },
+  {
+    "id": 2162,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "This constructor accesses and relies on the data of another class (arg1Column, arg2Column, arg3Column) rather than its own, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 2175,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method is accessing and relying heavily on the data and functions of another class (MapJoinWalkerCtx), suggesting it might be better placed in the other class. The method is performing operations on another class's attributes or methods, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 2184,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "major",
+    "reasoning": "The method applyTimestampFormat accesses and relies heavily on the data and functions of the DruidExpressions class, rather than its own class, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 2186,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method nextKeyValue() accesses and relies on the data and functions of another class (queryResultsIterator), suggesting it might be better placed in the other class. This indicates a possible misplacement of the method."
+  },
+  {
+    "id": 2191,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method getParamCount accesses and relies heavily on the data and functions of another class (HplsqlParser.Expr_func_paramsContext ctx), suggesting it might be better placed in the other class."
+  },
+  {
+    "id": 2196,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "major",
+    "reasoning": "The method read() accesses and relies heavily on the data and functions of the WMTrigger struct, rather than its own class, indicating a possible misplacement of the method. This is a characteristic of the 'Feature Envy' code smell."
+  },
+  {
+    "id": 2238,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `pushFrame` accesses and relies heavily on the data and functions of another class `OrdsSegmentTermsEnumFrame` rather than its own, indicating it might be better placed in the other class."
+  },
+  {
+    "id": 2242,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "major",
+    "reasoning": "The method r_prelude() accesses and relies heavily on the data and functions of other classes, such as in_grouping(), eq_s(), and slice_from(), indicating it might be better placed in the other class."
+  },
+  {
+    "id": 2254,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "major",
+    "reasoning": "The method `incrementToken()` accesses and relies heavily on the data and functions of other classes, such as `remainingTokens`, `input`, `termAtt`, `posAtt`, and `encoder`, indicating that it might be better placed in the other class. This is a characteristic of the 'Feature Envy' code smell, where a method displays more interest in the members of other classes than its own."
+  },
+  {
+    "id": 2396,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method stripNamespace() accesses and relies heavily on the data and functions of the StringUtil class, rather than its own class. This suggests that it might be better placed in the StringUtil class."
+  },
+  {
+    "id": 2400,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method parse() accesses and relies heavily on the data and functions of another class, DataOutput, rather than its own, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 2437,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `getClient` accesses and relies heavily on the `KubernetesClientRegistry` class, which suggests it might be better placed in that class. This is a minor issue as it does not significantly impact the code's maintainability or performance."
+  },
+  {
+    "id": 2457,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method visit() accesses and relies heavily on the data and functions of the SqlCall and SqlIdentifier classes, suggesting it might be better placed in those classes. This indicates a possible misplacement of the method, which is a characteristic of the 'Feature Envy' code smell."
+  },
+  {
+    "id": 2524,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method is accessing and relying heavily on the data and functions of other classes, such as 'type', 'resultCode', 'path', 'name', 'children', 'context', 'stat', 'data', 'watchedEvent', 'aclList', and 'opResults', rather than its own. This indicates that the method might be better placed in the other classes."
+  },
+  {
+    "id": 2529,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method getIdentity() accesses and relies heavily on the data and functions of the underlying class, suggesting it might be better placed in the underlying class. This is a minor smell as the method is not overly complex, but it does display interest in the members of another class."
+  },
+  {
+    "id": 2590,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method getAllColos() accesses and relies heavily on the data and functions of the DeploymentUtil class, rather than its own class, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 2626,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `initializeDocument` accesses and relies heavily on the data and functions of the `SourceMetadataUtil` class, suggesting it might be better placed in that class or its methods refactored to reduce reliance on external classes."
+  },
+  {
+    "id": 2669,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method is accessing and relying heavily on the data and functions of another class (FOPGVTFontFamily), rather than its own, suggesting it might be better placed in the other class."
+  },
+  {
+    "id": 2674,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `forEachIntByte` accesses and relies on the data of another class (`keys[i]` and `values[i]`), suggesting it might be better placed in the class that owns these attributes."
+  },
+  {
+    "id": 2729,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method getPayload() is accessing and relying heavily on the delegate object's methods, indicating it might be better placed in the delegate class. This is a minor instance of Feature Envy as the method is not overly complex and the code is still readable."
+  },
+  {
+    "id": 2782,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method setupHeaders() accesses and relies heavily on the data and functions of other classes (BindingMessageInfo, MessageInfo, SoapBindingConfiguration), indicating it might be better placed in the other class. It performs operations on attributes or methods of these classes, suggesting a possible misplacement of the method."
+  },
+  {
+    "id": 2808,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The create method heavily relies on the data and functions of the CountMinSketch class, suggesting it might be better placed in the CountMinSketch class. The method is not focused on its own class's data and functions."
+  },
+  {
+    "id": 2834,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method retrySetNullParamValue accesses and relies heavily on the data and functions of other classes, such as setString, setBigDecimal, setDate, etc., rather than its own. This suggests it might be better placed in the other class, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 2844,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "False-Premise",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method crawl() accesses and relies heavily on the data and functions of other classes, such as loadAndValidateActions(), setupIngester(), and handleFile(), rather than its own. This suggests that the method might be better placed in the other classes, indicating a possible misplacement of the method."
+  }
+]

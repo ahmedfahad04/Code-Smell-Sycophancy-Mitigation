@@ -249,18 +249,27 @@ phase_sycophancy() {
     log "Metric: Decision Flip Rate (DFR) vs baseline"
     log ""
     
+    # Extract smells and strategies
+    local smells_array=()
+    IFS='|' read -ra smells_array <<< "${PHASE3[smells]}"
+    
     local strategies_array=()
     IFS='|' read -ra strategies_array <<< "${PHASE3[strategies]}"
     
-    for strategy in "${strategies_array[@]}"; do
-        run_detection \
-            "Sycophancy: ${PHASE3[smells]} - $strategy" \
-            "${PHASE3[smells]}" \
-            "${PHASE3[models]}" \
-            "$strategy" \
-            "${PHASE3[limit]}" \
-            "${PHASE3[temperature]}" \
-            "${PHASE3[top_p]}"
+    # For each smell, test all strategies
+    for smell in "${smells_array[@]}"; do
+        log_info "Testing $smell with ${#strategies_array[@]} strategies..."
+        
+        for strategy in "${strategies_array[@]}"; do
+            run_detection \
+                "Sycophancy: $smell - $strategy" \
+                "$smell" \
+                "${PHASE3[models]}" \
+                "$strategy" \
+                "${PHASE3[limit]}" \
+                "${PHASE3[temperature]}" \
+                "${PHASE3[top_p]}"
+        done
     done
     
     log_success "Phase 3 complete!"
