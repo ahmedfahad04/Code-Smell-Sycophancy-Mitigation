@@ -1,4 +1,4 @@
-Experiment Run: 2026-03-05 18:56:09
+Experiment Run: 2026-03-05 20:04:11
 Hostname: fahad-hp-g3
 User: sakib
 
@@ -9,35 +9,35 @@ User: sakib
 Purpose: Measure Decision Flip Rate (DFR) across bias strategies
 Metric: Decision Flip Rate (DFR) vs baseline
 
-[0;34m[INFO][0m Test: Sycophancy: data class - Casual
-[0;34m[INFO][0m   Smell: data class | Models: qwen2.5-coder:7b | Strategies: Casual
+[0;34m[INFO][0m Test: Sycophancy: long method - Casual
+[0;34m[INFO][0m   Smell: long method | Models: qwen2.5-coder:7b | Strategies: Casual
 [0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
-  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --dataset '/home/sakib/Documents/MLCQ/dataset/mlcq_filtered.json'         --smell 'data class'         --models 'qwen2.5-coder:7b'         --strategies 'Casual'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
-[0;32m[✓][0m Sycophancy: data class - Casual completed
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --dataset '/home/sakib/Documents/MLCQ/dataset/mlcq_filtered.json'         --smell 'long method'         --models 'qwen2.5-coder:7b'         --strategies 'Casual'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
+[0;32m[✓][0m Sycophancy: long method - Casual completed
 
-[0;34m[INFO][0m Test: Sycophancy: data class - Positive
-[0;34m[INFO][0m   Smell: data class | Models: qwen2.5-coder:7b | Strategies: Positive
+[0;34m[INFO][0m Test: Sycophancy: long method - Positive
+[0;34m[INFO][0m   Smell: long method | Models: qwen2.5-coder:7b | Strategies: Positive
 [0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
-  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --dataset '/home/sakib/Documents/MLCQ/dataset/mlcq_filtered.json'         --smell 'data class'         --models 'qwen2.5-coder:7b'         --strategies 'Positive'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
-[0;32m[✓][0m Sycophancy: data class - Positive completed
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --dataset '/home/sakib/Documents/MLCQ/dataset/mlcq_filtered.json'         --smell 'long method'         --models 'qwen2.5-coder:7b'         --strategies 'Positive'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
+[0;32m[✓][0m Sycophancy: long method - Positive completed
 
-[0;34m[INFO][0m Test: Sycophancy: data class - Contradictory-Hint
-[0;34m[INFO][0m   Smell: data class | Models: qwen2.5-coder:7b | Strategies: Contradictory-Hint
+[0;34m[INFO][0m Test: Sycophancy: long method - Contradictory-Hint
+[0;34m[INFO][0m   Smell: long method | Models: qwen2.5-coder:7b | Strategies: Contradictory-Hint
 [0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
-  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --dataset '/home/sakib/Documents/MLCQ/dataset/mlcq_filtered.json'         --smell 'data class'         --models 'qwen2.5-coder:7b'         --strategies 'Contradictory-Hint'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
-[0;32m[✓][0m Sycophancy: data class - Contradictory-Hint completed
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --dataset '/home/sakib/Documents/MLCQ/dataset/mlcq_filtered.json'         --smell 'long method'         --models 'qwen2.5-coder:7b'         --strategies 'Contradictory-Hint'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
+[0;32m[✓][0m Sycophancy: long method - Contradictory-Hint completed
 
-[0;34m[INFO][0m Test: Sycophancy: data class - False-Premise
-[0;34m[INFO][0m   Smell: data class | Models: qwen2.5-coder:7b | Strategies: False-Premise
+[0;34m[INFO][0m Test: Sycophancy: long method - False-Premise
+[0;34m[INFO][0m   Smell: long method | Models: qwen2.5-coder:7b | Strategies: False-Premise
 [0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
-  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --dataset '/home/sakib/Documents/MLCQ/dataset/mlcq_filtered.json'         --smell 'data class'         --models 'qwen2.5-coder:7b'         --strategies 'False-Premise'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
-[0;32m[✓][0m Sycophancy: data class - False-Premise completed
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --dataset '/home/sakib/Documents/MLCQ/dataset/mlcq_filtered.json'         --smell 'long method'         --models 'qwen2.5-coder:7b'         --strategies 'False-Premise'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
+[0;32m[✓][0m Sycophancy: long method - False-Premise completed
 
-[0;34m[INFO][0m Test: Sycophancy: data class - Confirmation-Bias
-[0;34m[INFO][0m   Smell: data class | Models: qwen2.5-coder:7b | Strategies: Confirmation-Bias
+[0;34m[INFO][0m Test: Sycophancy: long method - Confirmation-Bias
+[0;34m[INFO][0m   Smell: long method | Models: qwen2.5-coder:7b | Strategies: Confirmation-Bias
 [0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
-  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --dataset '/home/sakib/Documents/MLCQ/dataset/mlcq_filtered.json'         --smell 'data class'         --models 'qwen2.5-coder:7b'         --strategies 'Confirmation-Bias'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
-[0;32m[✓][0m Sycophancy: data class - Confirmation-Bias completed
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --dataset '/home/sakib/Documents/MLCQ/dataset/mlcq_filtered.json'         --smell 'long method'         --models 'qwen2.5-coder:7b'         --strategies 'Confirmation-Bias'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
+[0;32m[✓][0m Sycophancy: long method - Confirmation-Bias completed
 
 [0;32m[✓][0m Phase 3 complete!
 
@@ -47,5 +47,5 @@ Metric: Decision Flip Rate (DFR) vs baseline
 ════════════════════════════════════════════════════════════
 Results saved to: /home/sakib/Documents/MLCQ/results
 Log file: /home/sakib/Documents/MLCQ/results/experiment_log.txt
-Timestamp: 2026-03-05 19:59:49
+Timestamp: 2026-03-05 20:45:44
 
