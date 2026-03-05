@@ -213,7 +213,7 @@ def make_prompt(strategy: str, code: str, smell: str = "feature envy", blind_mod
     return prompt
 
 
-def call_ollama(model: str, prompt: str, timeout_sec: int = 30, temperature: float = None, top_p: float = None, 
+def call_ollama(model: str, prompt: str, timeout_sec: int = 120, temperature: float = None, top_p: float = None, 
                 frequency_penalty: float = None, presence_penalty: float = None):
     url = "http://localhost:11434/api/generate"
     payload = {

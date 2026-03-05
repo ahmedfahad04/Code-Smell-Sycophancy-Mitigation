@@ -38,7 +38,6 @@ def raw_url_from_link(link, headers):
         return final_url.replace("https://github.com/", "https://raw.githubusercontent.com/").replace("/blob/", "/")
     return None
 
-
 def fetch_code_snippet(repo_url, commit_hash, file_path, start_line, end_line, request_count, link=None):
 
     if request_count > 4500:
@@ -83,7 +82,6 @@ def fetch_code_snippet(repo_url, commit_hash, file_path, start_line, end_line, r
     print(f"Failed to fetch code from {raw_url} (status code: {response.status_code})")
     return None, request_count + 1 
     
-
 def process_csv_and_save_to_json(csv_file, json_file, batch_size=50):
     
     request_count = 0
@@ -161,8 +159,7 @@ def process_csv_and_save_to_json(csv_file, json_file, batch_size=50):
         if failed_data:
             save_json_data(failed_json_file, failed_data)
         print(f"Completed processing. Data saved to {json_file}")
-    
-    
+       
 def save_json_data(json_file, json_data):
 
     try:

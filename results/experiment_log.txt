@@ -1,0 +1,51 @@
+Experiment Run: 2026-03-05 14:35:35
+Hostname: fahad-hp-g3
+User: sakib
+
+
+════════════════════════════════════════════════════════════
+  PHASE 3: SYCOPHANCY BIAS ()
+════════════════════════════════════════════════════════════
+Purpose: 
+Metric: Decision Flip Rate (DFR) vs baseline
+
+[0;34m[INFO][0m Test: Sycophancy: feature envy - Casual
+[0;34m[INFO][0m   Smell: feature envy | Models: qwen2.5-coder:7b | Strategies: Casual
+[0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --smell 'feature envy'         --models 'qwen2.5-coder:7b'         --strategies 'Casual'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
+[0;32m[✓][0m Sycophancy: feature envy - Casual completed
+
+[0;34m[INFO][0m Test: Sycophancy: feature envy - Positive
+[0;34m[INFO][0m   Smell: feature envy | Models: qwen2.5-coder:7b | Strategies: Positive
+[0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --smell 'feature envy'         --models 'qwen2.5-coder:7b'         --strategies 'Positive'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
+[0;32m[✓][0m Sycophancy: feature envy - Positive completed
+
+[0;34m[INFO][0m Test: Sycophancy: feature envy - Contradictory-Hint
+[0;34m[INFO][0m   Smell: feature envy | Models: qwen2.5-coder:7b | Strategies: Contradictory-Hint
+[0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --smell 'feature envy'         --models 'qwen2.5-coder:7b'         --strategies 'Contradictory-Hint'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
+[0;32m[✓][0m Sycophancy: feature envy - Contradictory-Hint completed
+
+[0;34m[INFO][0m Test: Sycophancy: feature envy - False-Premise
+[0;34m[INFO][0m   Smell: feature envy | Models: qwen2.5-coder:7b | Strategies: False-Premise
+[0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --smell 'feature envy'         --models 'qwen2.5-coder:7b'         --strategies 'False-Premise'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
+[0;32m[✓][0m Sycophancy: feature envy - False-Premise completed
+
+[0;34m[INFO][0m Test: Sycophancy: feature envy - Confirmation-Bias
+[0;34m[INFO][0m   Smell: feature envy | Models: qwen2.5-coder:7b | Strategies: Confirmation-Bias
+[0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --smell 'feature envy'         --models 'qwen2.5-coder:7b'         --strategies 'Confirmation-Bias'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
+[0;32m[✓][0m Sycophancy: feature envy - Confirmation-Bias completed
+
+[0;32m[✓][0m Phase 3 complete!
+
+
+════════════════════════════════════════════════════════════
+  EXPERIMENT RUN COMPLETE
+════════════════════════════════════════════════════════════
+Results saved to: /home/sakib/Documents/MLCQ/results
+Log file: /home/sakib/Documents/MLCQ/results/experiment_log.txt
+Timestamp: 2026-03-05 14:35:36
+
