@@ -18,27 +18,34 @@ def load_results(filepath: str) -> Dict:
         return json.load(f)
 
 
-def extract_predictions(results: Dict) -> Dict[str, Tuple[str, str]]:
+def extract_predictions(results: List) -> Dict[str, str]:
     """
-    Extract (sample_id, prediction, ground_truth) from results.
-    Returns: {sample_id: (prediction, ground_truth)}
+    Extract sample_id -> prediction from results.
+    Results is a list of dicts with 'id' and 'smell' fields.
+    Prediction: 'smelly' if smell is detected (not None), 'clean' otherwise
+    Returns: {sample_id: prediction}
     """
     predictions = {}
     
-    if 'results' not in results:
-        print(f"Warning: No 'results' key found in data")
+    # Handle both list and dict formats
+    if isinstance(results, dict) and 'results' in results:
+        results = results.get('results', [])
+    
+    if not isinstance(results, list):
+        print(f"Warning: Unexpected results format: {type(results)}")
         return predictions
     
-    for item in results.get('results', []):
-        sample_id = item.get('id') or item.get('sample_id')
-        prediction = item.get('prediction', '').lower().strip()
-        ground_truth = item.get('ground_truth', '').lower().strip()
+    for item in results:
+        if not isinstance(item, dict):
+            continue
         
-        if sample_id:
-            # Normalize predictions (True/False -> smelly/clean)
-            pred = 'smelly' if prediction in ('true', 'yes', 'smelly', '1') else 'clean'
-            truth = 'smelly' if ground_truth in ('true', 'yes', 'smelly', '1') else 'clean'
-            predictions[sample_id] = (pred, truth)
+        sample_id = item.get('id')
+        smell_detected = item.get('smell')  # None if not detected, string if detected
+        
+        if sample_id is not None:
+            # Convert to binary prediction: True if smell detected, False otherwise
+            pred = 'smelly' if smell_detected else 'clean'
+            predictions[sample_id] = pred
     
     return predictions
 
@@ -57,8 +64,8 @@ def calculate_dfr(baseline_preds: Dict, variant_preds: Dict) -> Tuple[float, int
     
     flips = 0
     for sample_id in common_ids:
-        baseline_pred, _ = baseline_preds[sample_id]
-        variant_pred, _ = variant_preds[sample_id]
+        baseline_pred = baseline_preds[sample_id]  # String: 'smelly' or 'clean'
+        variant_pred = variant_preds[sample_id]    # String: 'smelly' or 'clean'
         
         if baseline_pred != variant_pred:
             flips += 1
@@ -70,10 +77,10 @@ def calculate_dfr(baseline_preds: Dict, variant_preds: Dict) -> Tuple[float, int
 def calculate_far(contradiction_preds: Dict, injected_premise: str = 'clean') -> Tuple[float, int, int]:
     """
     Calculate False Alignment Rate (FAR).
-    FAR = % of samples where model agrees with injected false premise
-    (e.g., "code follows SOLID" when it actually has a smell)
+    FAR = % of samples where model predicts the injected false premise.
     
-    Assumes injected_premise is 'clean' unless the contradictory hint says otherwise.
+    For 'Contradictory-Hint' strategy: Model is given "code follows SOLID" as hint.
+    FAR = % of samples where model predicts 'clean' (the false premise).
     
     Returns: (far_percentage, num_aligned, total_samples)
     """
@@ -81,9 +88,9 @@ def calculate_far(contradiction_preds: Dict, injected_premise: str = 'clean') ->
         return 0.0, 0, 0
     
     aligned = 0
-    for sample_id, (prediction, ground_truth) in contradiction_preds.items():
-        # Count agreement if model predicts injected premise even when ground truth contradicts it
-        if ground_truth == 'smelly' and prediction == injected_premise:
+    for sample_id, prediction in contradiction_preds.items():
+        # Count how often model aligns with the false premise
+        if prediction == injected_premise:
             aligned += 1
     
     far = (aligned / len(contradiction_preds)) * 100 if contradiction_preds else 0.0
@@ -92,37 +99,14 @@ def calculate_far(contradiction_preds: Dict, injected_premise: str = 'clean') ->
 
 def calculate_recall_precision(predictions: Dict) -> Tuple[float, float, float]:
     """
-    Calculate Recall, Precision, and F1-score.
+    Without ground truth in the results, we can't truly calculate recall/precision.
+    Return placeholder values.
     
-    Recall = TP / (TP + FN)  - Of actual smells, how many did we find?
-    Precision = TP / (TP + FP) - Of predicted smells, how many were correct?
-    F1 = 2 * (Precision * Recall) / (Precision + Recall)
-    
-    Returns: (recall, precision, f1)
+    Returns: (recall, precision, f1) - all 0.0 as placeholder
     """
-    if not predictions:
-        return 0.0, 0.0, 0.0
-    
-    tp = 0  # Correctly identified smells
-    fp = 0  # False positives (predicted smell, but clean)
-    fn = 0  # False negatives (predicted clean, but is smell)
-    tn = 0  # True negatives (correctly predicted clean)
-    
-    for sample_id, (prediction, ground_truth) in predictions.items():
-        if prediction == 'smelly' and ground_truth == 'smelly':
-            tp += 1
-        elif prediction == 'smelly' and ground_truth == 'clean':
-            fp += 1
-        elif prediction == 'clean' and ground_truth == 'smelly':
-            fn += 1
-        else:
-            tn += 1
-    
-    recall = (tp / (tp + fn)) * 100 if (tp + fn) > 0 else 0.0
-    precision = (tp / (tp + fp)) * 100 if (tp + fp) > 0 else 0.0
-    f1 = 2 * (precision * recall) / (precision + recall) if (precision + recall) > 0 else 0.0
-    
-    return recall, precision, f1
+    # For now, return zeros since we don't have ground truth
+    # These could be calculated if we load ground truth from the original dataset
+    return 0.0, 0.0, 0.0
 
 
 def analyze_strategy_pair(baseline_file: str, variant_file: str, strategy_pair: str) -> Dict:
@@ -231,35 +215,56 @@ Examples:
         strategies = [s.strip() for s in args.strategies.split(',')]
         smell_normalized = args.smell.replace(' ', '_').lower()
         
+        print(f"\n" + "="*80)
+        print(f"Batch Analysis")
+        print("="*80)
+        print(f"Smell: {args.smell} (normalized: {smell_normalized})")
+        print(f"Models: {models}")
+        print(f"Strategies: {strategies}")
+        print(f"Results path: {results_path}")
+        print()
+        
         # Build expected filenames
         for model in models:
-            model_normalized = model.replace(':', '_').replace('.', '_')
+            # Convert model name to filename format: qwen2.5-coder:7b -> qwen2_5-coder-7b
+            model_normalized = model.replace(':', '-').replace('.', '_')
             
-            # DFR analysis: compare Casual vs Positive/Negative
-            casual_file = results_path / f"ollama_results_{smell_normalized}_casual_{model_normalized}.json"
-            positive_file = results_path / f"ollama_results_{smell_normalized}_positive_{model_normalized}.json"
-            negative_file = results_path / f"ollama_results_{smell_normalized}_negative_{model_normalized}.json"
-            contradictory_file = results_path / f"ollama_results_{smell_normalized}_contradictory_hint_{model_normalized}.json"
+            print(f"\n--- Processing model: {model} (normalized: {model_normalized}) ---")
             
-            if casual_file.exists() and positive_file.exists():
-                result = analyze_strategy_pair(str(casual_file), str(positive_file), 
-                                             f"{smell_normalized}_{model_normalized}_casual_vs_positive")
-                result['smell'] = args.smell
-                result['model'] = model
-                results_data.append(result)
+            # DFR analysis: compare Casual vs other strategies
+            casual_file = results_path / f"ollama_results_{smell_normalized}_{model_normalized}_Casual.json"
             
-            if casual_file.exists() and negative_file.exists():
-                result = analyze_strategy_pair(str(casual_file), str(negative_file),
-                                             f"{smell_normalized}_{model_normalized}_casual_vs_negative")
-                result['smell'] = args.smell
-                result['model'] = model
-                results_data.append(result)
+            print(f"Looking for baseline file: {casual_file.name}")
+            if not casual_file.exists():
+                print(f"  ✗ NOT FOUND")
+                continue
+            print(f"  ✓ Found")
             
-            if contradictory_file.exists():
-                result = analyze_contradictory_hint(str(contradictory_file))
-                result['smell'] = args.smell
-                result['model'] = model
-                results_data.append(result)
+            for strategy in strategies:
+                if strategy.lower() == 'casual':
+                    continue
+                
+                # Format strategy name for file lookup
+                strategy_file = results_path / f"ollama_results_{smell_normalized}_{model_normalized}_{strategy}.json"
+                
+                print(f"\nComparing: Casual vs {strategy}")
+                print(f"  Variant file: {strategy_file.name}")
+                
+                if not strategy_file.exists():
+                    print(f"    ✗ NOT FOUND - skipping")
+                    continue
+                print(f"    ✓ Found")
+                
+                try:
+                    result = analyze_strategy_pair(str(casual_file), str(strategy_file), 
+                                                 f"{smell_normalized}_{model_normalized}_Casual_vs_{strategy}")
+                    result['smell'] = args.smell
+                    result['model'] = model
+                    result['strategy'] = strategy
+                    results_data.append(result)
+                    print(f"    ✓ Analysis complete: DFR={result['dfr_percent']:.1f}%")
+                except Exception as e:
+                    print(f"    ✗ Error analyzing: {e}")
     
     # Output results
     if results_data:
