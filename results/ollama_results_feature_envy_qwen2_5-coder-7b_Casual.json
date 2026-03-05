@@ -1,0 +1,1402 @@
+[
+  {
+    "id": 533,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `writeLength` accesses data and performs operations on attributes from another class (`mapId`, `compressedLength`, `uncompressedLength`, `forReduce`). It suggests that this method might be better placed in a class that manages these attributes, indicating a feature envy smell."
+  },
+  {
+    "id": 553,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `getPropertyMapping` accesses and relies heavily on the data and functions of another class (`knownMappings` and `mappings`). It also performs operations on another class's attributes, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 564,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method `DynamicExpression` is focused on its own data and functions, creating an `AstDynamicExpression` and handling parsing logic. It does not access or rely heavily on the data and functions of another class, nor does it perform operations on another class's attributes or methods. Therefore, it does not exhibit the characteristics of a 'feature envy' code smell."
+  },
+  {
+    "id": 566,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `adjustRelativePath` relies heavily on the `File` class and its methods (`isAbsolute`, `exists`), which suggests it might be better placed in the `File` class or a utility class dedicated to file path adjustments. This indicates a feature envy smell as the method focuses more on another class's attributes and methods than its own."
+  },
+  {
+    "id": 570,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The `equals` method is correctly implemented according to the best practices for comparing objects. It accesses its own fields and does not rely heavily on another class's data or functions. Therefore, it does not exhibit the 'feature envy' code smell."
+  },
+  {
+    "id": 573,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `endAccess` accesses and relies on the `manager` object, which is an instance of `ClusterManagerBase`. This suggests that the method might be better suited in the `ClusterManagerBase` class, as it focuses more on the data and functions of another class rather than its own."
+  },
+  {
+    "id": 575,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `setPerUserTestWhileIdle` accesses and relies heavily on the data and functions of another class (`Map<String, Boolean>`), rather than its own. It performs operations on the `Map`'s attributes, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 577,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `getText` accesses and relies heavily on the data and functions of another class (presumably a class that handles text processing), rather than its own. It extracts a substring based on specific tags, indicating a potential misplacement of the method within a class that is more focused on text manipulation."
+  },
+  {
+    "id": 581,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method 'init' creates an instance of 'Introspector' and passes 'this.log' to it. This indicates that the method is more interested in the 'log' member of another class rather than its own, suggesting a potential feature envy smell."
+  },
+  {
+    "id": 613,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `validateToken` accesses and relies heavily on the data and functions of the `org.apache.shiro.SecurityUtils` class, which is not its own. This suggests that the method might be better placed in the `org.apache.shiro.SecurityUtils` class or another class that is more closely related to security operations."
+  },
+  {
+    "id": 617,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method setProperty accesses and relies heavily on the data and functions of another class (System and internalProperties), rather than its own. It performs operations on another class's attributes or methods, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 622,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The constructor method accesses and relies heavily on data and functions from the LogIterator class, which suggests it might be better placed in that class. The method performs operations on LogIterator's attributes and methods, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 637,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method 'stacks' accesses data and functions from other classes (getConnectionContext, getRootV2, getTokenProvider) rather than its own class. This suggests that the method might be better placed in one of those classes, indicating a feature envy code smell."
+  },
+  {
+    "id": 641,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method `replaceSubstitution` is focused on its own class and does not exhibit any characteristics of feature envy. It operates on its own data and performs operations relevant to its own functionality."
+  },
+  {
+    "id": 667,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method `equals` is correctly implemented and focuses on the data and functions within its own class (`StatusMessage`). It does not access or rely heavily on the data and functions of another class, nor does it display more interest in the members of another class. Therefore, it does not exhibit the characteristics of a 'feature envy' code smell."
+  },
+  {
+    "id": 679,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `getSiblingIndexWithClassName` accesses and relies heavily on the `Element` class, specifically its `getPreviousSibling` and `hasClassName` methods. This suggests that the method might be better placed within the `Element` class, as it focuses more on the `Element`'s attributes and methods rather than its own."
+  },
+  {
+    "id": 683,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The toString method accesses and relies heavily on the data of the ExecInfo class, which is typical for a data class. While not a major code smell, it suggests that the method might be better placed in a utility class or a separate class that handles string representation."
+  },
+  {
+    "id": 693,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code snippet is a typical implementation of the equals method, which is focused on the data and functions within its own class. It does not exhibit characteristics of feature envy, as it does not rely heavily on the data and functions of another class."
+  },
+  {
+    "id": 697,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method 'replaceWith' accesses and relies heavily on the data and functions of another class (Element and NewElement) rather than its own. It performs operations on another class's attributes or methods, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 711,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided code snippet is a method implementation for a parser rule in ANTLR, which is typical for grammar processing. It does not exhibit any characteristics of feature envy, as it focuses on its own class's responsibilities and does not access or rely heavily on another class's data and functions."
+  },
+  {
+    "id": 713,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method `rule__MdCategory__Group_4_0__1__Impl` is focused on the data and functions within its own class, `MdCategory`. It does not access or rely heavily on the data and functions of another class, nor does it display more interest in the members of another class. Therefore, it does not exhibit the characteristics of a 'Feature Envy' code smell."
+  },
+  {
+    "id": 723,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method 'get' relies heavily on the data and functions of another class (likely 'CredentialsResult'), accessing its members and performing operations on it. This suggests that the method might be better placed in the 'CredentialsResult' class."
+  },
+  {
+    "id": 738,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The toString method accesses data from another class (presumably _info and _callback) rather than its own class. This suggests that the method might be better placed in the class that owns these data members."
+  },
+  {
+    "id": 742,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `resolveGenericRef` accesses and relies heavily on the data and functions of the `GenericRef` class, indicating a potential feature envy smell. It performs operations on `GenericRef`'s attributes and methods, suggesting it might be better placed in the `GenericRef` class."
+  },
+  {
+    "id": 755,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method 'format' accesses and relies heavily on the data and functions of another class (presumably a utility class for string formatting), rather than its own. It performs operations on another class's attributes or methods, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 757,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method 'updated' accesses and relies heavily on the data and functions of another class (presumably 'Cloud Publisher'), as indicated by the call to 'doUpdate(properties)'. This suggests that the method might be better placed in the 'Cloud Publisher' class."
+  },
+  {
+    "id": 761,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method onKapuaEvent accesses and relies heavily on the data and functions of another class (ServiceEvent) rather than its own. It performs operations on another class's attributes (service and operation), indicating a possible misplacement of the method."
+  },
+  {
+    "id": 765,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method `hashCode` is correctly implemented to focus on its own class's data (`this.threads`). It does not access or rely heavily on the data and functions of another class, nor does it perform operations on another class's attributes or methods. Therefore, it does not exhibit the characteristics of a 'feature envy' code smell."
+  },
+  {
+    "id": 769,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The `hashCode` method is correctly implemented to calculate the hash code based on the properties of the current class. It does not access or rely heavily on the data and functions of another class, nor does it perform operations on another class's attributes or methods. Therefore, it does not exhibit any code smells."
+  },
+  {
+    "id": 773,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method 'writeVersion' accesses and relies heavily on the 'JsonWriter' class, specifically its methods for handling null values and setting serialization properties. This suggests that the method might be better suited in the 'JsonWriter' class rather than the current class."
+  },
+  {
+    "id": 783,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `checkDeviceListLength` accesses data and methods from another class (`DeviceListResultImpl`) rather than its own. It checks the size of a device list, which is a responsibility of the `DeviceListResultImpl` class, indicating a potential feature envy smell."
+  },
+  {
+    "id": 805,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `mergeFrom` accesses and relies heavily on data and functions of another class (`com.google.protobuf.CodedInputStream`), rather than its own class. It performs operations on another class's attributes, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 812,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `getPageEncodingFromDirective` accesses and relies heavily on the data and functions of the `Attributes` class rather than its own. It extracts and processes data from the `Attributes` class, suggesting it might be better placed in that class."
+  },
+  {
+    "id": 819,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `getLoggerLevel` accesses and relies heavily on the data and functions of another class (`Logger` or `Object`), rather than its own. It performs operations on another class's attributes or methods, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 827,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The constructor accesses and relies heavily on the data and functions of the ArrayCache class, specifically the getByteArray method. This suggests that the RangeDecoderFromBuffer class might be better suited to handle the logic related to array caching, potentially leading to a feature envy code smell."
+  },
+  {
+    "id": 830,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `getFragments` accesses and relies heavily on the `packageAdmin` object, which is not a member of its own class. This suggests that the method might be better placed in the class that contains the `packageAdmin` object, indicating a feature envy code smell."
+  },
+  {
+    "id": 852,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `getName` accesses and relies heavily on the data and methods of the `lower` and `upper` objects, rather than its own. It performs operations on these other objects' attributes, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 855,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `getApplicationToRun` accesses and relies heavily on the data and functions of other classes such as `Platform`, `IExtension`, and `IConfigurationElement`. It also performs operations on these classes' attributes and methods, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 874,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method `initializeEvent` is focused on the data and functions within its own class (`BundleEvent`). It does not access or rely heavily on the data and functions of another class, nor does it perform operations on another class's attributes or methods. Therefore, it does not exhibit the characteristics of a 'Feature Envy' code smell."
+  },
+  {
+    "id": 877,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method 'addVariableOnClasspath' accesses and relies heavily on the data and functions of another class (possibly 'LibraryTree' or 'LibrariesTab'), rather than its own. It also performs operations on another class's attributes or methods, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 879,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method 'executeUrl' relies heavily on the 'proxyParams' object, which is created within the method and passed as a parameter. This suggests that the method might be better suited in a class that handles proxy settings, rather than in a class that deals with URL execution."
+  },
+  {
+    "id": 882,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `getSensorType` accesses and relies heavily on the data and functions of another class (`DeviceSensorValue`), rather than its own class. This suggests that the method might be better placed in the `DeviceSensorValue` class, indicating a feature envy code smell."
+  },
+  {
+    "id": 921,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method `mT__66` is a simple token matching method that does not access or rely heavily on the data and functions of another class. It performs a specific operation (matching the string 'if') within its own class, adhering to the principle of focusing on its own data and functions."
+  },
+  {
+    "id": 933,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `specialStateTransition` accesses and relies heavily on the `TokenStream` object passed as a parameter rather than its own data and functions. This indicates a potential feature envy smell as the method should ideally focus on its own class's data and methods."
+  },
+  {
+    "id": 938,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method myCacheKey accesses and relies heavily on the data and functions of another class (presumably a class with methods getChromosome(), getId(), getStartIndex(), and getEndIndex()). It constructs a cache key based on these external data points, indicating a potential misplacement of the method."
+  },
+  {
+    "id": 955,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The toString method is accessing and relying heavily on the data and functions of another class (JsonAttribute) rather than its own. It is performing operations on another class's attributes, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 979,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided code snippet is a constructor for a class named 'UsagesNode'. It injects dependencies using the @Inject annotation and initializes instance variables. There is no evidence of a method accessing and relying heavily on the data and functions of another class, nor is there any indication that the method is misplaced. Therefore, it does not exhibit any of the characteristics of a 'Feature Envy' code smell."
+  },
+  {
+    "id": 996,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `shouldParseContainerAtom` accesses the `Atom.TYPE_*` constants from another class (`Atom`). While it is not a severe case of feature envy, it indicates that the method might be better suited in the `Atom` class as it primarily deals with its data. This could lead to a more cohesive design where the `Atom` class is responsible for its own data and related operations."
+  },
+  {
+    "id": 1017,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method setCommentCount is accessing and modifying the data of another class (GphotoCommentCount) rather than its own. It suggests that this method might be better placed in the GphotoCommentCount class."
+  },
+  {
+    "id": 1019,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method `joinLongs` is focused on its own data and functions, performing operations on the `tokens` array and using the `delimiter` parameter to join the elements. It does not exhibit characteristics of feature envy, as it is not accessing or relying heavily on the data and functions of another class. Therefore, it does not contain any code smells."
+  },
+  {
+    "id": 1021,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `readNullTerminatedString` accesses and relies heavily on the data and functions of another class (likely `Util`), rather than its own. It demonstrates more interest in the members of another class, suggesting it might be better placed in the `Util` class. Additionally, the method performs operations on another class's attributes or methods, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1023,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `verifyAllParameters` accesses the `parameterValueMap` from another class (presumably the class containing this method) and relies on it to perform its operations. This suggests that the method might be better placed in the class that owns `parameterValueMap`, as it is more interested in the data and functions of that class."
+  },
+  {
+    "id": 1043,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `computeAndDisplayPin` accesses and relies heavily on the data and functions of the `AccountDb` class, such as `getType`, `getSecret`, and `incrementCounter`. This suggests that the method might be better placed in the `AccountDb` class."
+  },
+  {
+    "id": 1047,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method 'computeBreaks' heavily relies on the 'commentsHelper' object for operations that could be performed within its own class. This suggests a potential 'feature envy' smell as the method shows more interest in the 'commentsHelper' class than its own."
+  },
+  {
+    "id": 1052,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The constructor method is accessing and relying heavily on the data and functions of the 'configFactory' class, which suggests it might be better placed in that class. This indicates a possible misplacement of the method."
+  },
+  {
+    "id": 1054,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `provideRead` accesses and relies heavily on parameters from another class, particularly the `headers` parameter, which suggests it might be better placed in a class that manages HTTP headers. This indicates a potential feature envy smell."
+  },
+  {
+    "id": 1059,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method 'readJson' accesses data and performs operations on the 'HttpServletRequest' object, which is not its primary responsibility. This suggests a potential 'feature envy' smell as the method might be better suited in the 'HttpServletRequest' class or a utility class dedicated to handling HTTP requests."
+  },
+  {
+    "id": 1062,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The constructor method is accessing and relying heavily on the parameters passed to it rather than its own class. It is performing operations on the parameters and setting instance variables, which suggests it might be better placed in a class that is more focused on handling operations and their statistics."
+  },
+  {
+    "id": 1067,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The constructor accesses and relies heavily on the data and functions of the NetworkConfig, SSLConfig, MetricRegistry, and ArrayList<Port> classes rather than its own. This suggests that some of these responsibilities might be better placed in those classes."
+  },
+  {
+    "id": 1088,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code snippet is a constructor for a custom exception class. It initializes the instance variables with the provided parameters and does not exhibit any characteristics of the 'feature envy' code smell. The method is focused on its own class's data and functions, making it appropriate for its current location."
+  },
+  {
+    "id": 1091,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method `createTask` is focused on its own data and functions, accessing and utilizing parameters specific to its own context. It does not exhibit characteristics of feature envy, as it is not showing more interest in the members of another class. The method is also not a blob or data class, as it is performing a specific task within its own class."
+  },
+  {
+    "id": 1113,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method 'runFunctions' accesses and relies heavily on the data and functions of another class 'CommandHandler' rather than its own. It performs operations on another class's attributes or methods, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1115,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided code snippet is a method from the `ConcurrentHashMap` class, which is a part of the Java standard library. It overrides the `computeIfAbsent` method to throw an `UnsupportedOperationException`. This method does not exhibit any characteristics of the 'Feature Envy' code smell as it is focused on its own class and does not rely heavily on the data and functions of another class. It is a standard utility method for handling concurrent maps."
+  },
+  {
+    "id": 1120,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `sendRestRequest` accesses and relies heavily on the `_restClient` object, which is not part of its own class. This suggests that the method might be better placed in the class that owns `_restClient`, indicating a feature envy code smell."
+  },
+  {
+    "id": 1123,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `updateState` accesses and relies heavily on the data and functions of the `cert` object, which is not its own. It performs operations on the `cert` object's attributes and methods, indicating a possible misplacement of the method. This suggests a 'feature envy' code smell."
+  },
+  {
+    "id": 1130,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method `supportsSubqueriesInQuantifieds` is a simple override that does not access or rely heavily on the data and functions of another class. It performs a straightforward check and returns a boolean value, which is typical for such methods. There is no indication of feature envy or any other code smell in this snippet."
+  },
+  {
+    "id": 1132,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method 'addReqParam' accesses a method from the superclass 'super.addReqParam', which suggests it might be better placed in the superclass or the subclass is trying to access functionality that belongs to the superclass. This indicates a potential feature envy smell."
+  },
+  {
+    "id": 1143,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method setRegion relies heavily on the functionality of the com.oracle.bmc.Region class, specifically its fromRegionId and formatDefaultRegionEndpoint methods. This suggests that the method might be better placed in the com.oracle.bmc.Region class or in a utility class that handles region-related operations."
+  },
+  {
+    "id": 1144,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method tcpOptions is focused on its own class, setting a property and adding to a set. It does not access or rely heavily on the data and functions of another class, nor does it perform operations on another class's attributes or methods. Therefore, it does not exhibit any code smells."
+  },
+  {
+    "id": 1156,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `doPaginateWithRecordPaginator` accesses and relies heavily on the `IdentityClient` class for its operations, rather than focusing on its own data and functions. This suggests that the method might be better placed in the `IdentityClient` class."
+  },
+  {
+    "id": 1165,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method `definedTags` is focused on its own class's data and function, setting the `definedTags` property and marking it as explicitly set. It does not exhibit characteristics of feature envy, as it is not accessing or relying heavily on another class's data and functions."
+  },
+  {
+    "id": 1173,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method 'nodePoolId' is focused on its own class and does not access or rely heavily on the data and functions of another class. It simply sets a value and adds it to a set, which are typical responsibilities for a method in its own class."
+  },
+  {
+    "id": 1178,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method `cfBackupHandle` is focused on its own class's data and function, setting the `cfBackupHandle` attribute and adding it to the `__explicitlySet__` collection. It does not access or rely heavily on the data and functions of another class, nor does it perform operations on another class's attributes or methods. Therefore, it does not exhibit any code smells."
+  },
+  {
+    "id": 1180,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method `build` is focused on its own class `GetRouteTableRequest` and does not access or rely heavily on the data and functions of another class. It simply sets an invocation callback and returns the request object, which is a typical use case for a builder pattern method."
+  },
+  {
+    "id": 1182,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method 'severe' accesses and relies heavily on the data and functions of another class (logger), rather than its own. It performs operations on another class's attributes (logger.logp), indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1189,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `createPreauthenticatedRequest` heavily relies on the data and functions of the `CreatePreauthenticatedRequestConverter` class, which suggests it might be better placed in that class. It also performs operations on the `client` and `request` objects, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1190,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `generateAutonomousDatabaseWallet` heavily relies on the data and functions of other classes (`GenerateAutonomousDatabaseWalletConverter`, `client`, `handler`), suggesting it might be better placed in one of those classes. It performs operations on these classes' attributes and methods, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1199,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method 'init' accesses and relies heavily on the data and functions of another class ('interfaceClass' and 'interfaceInstance') rather than its own. It performs operations on another class's attributes, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1202,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method 'sslContext' is focused on its own class, setting the 'sslContext' attribute and returning the builder instance. It does not access or rely heavily on the data and functions of another class, nor does it display more interest in another class's members. Therefore, it does not exhibit the characteristics of a 'feature envy' code smell."
+  },
+  {
+    "id": 1209,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `getActiveNetwork` accesses data and methods from another class (`netIdToNetwork` and `getActiveNetworkInfo`). This indicates a potential feature envy smell as the method might be better suited in the class that manages `netIdToNetwork` and `getActiveNetworkInfo`."
+  },
+  {
+    "id": 1210,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method 'finishActivity' accesses and relies heavily on the 'controller' object, which is not a member of its own class. It also performs operations on the 'activity' object, indicating a potential misplacement of the method. This suggests a 'feature envy' code smell."
+  },
+  {
+    "id": 1212,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `deleteJobAsync` accesses and relies heavily on the data and functions of another class (`createRequestAsync`), rather than its own. This suggests that the method might be better placed in the class where `createRequestAsync` is defined, indicating a possible feature envy code smell."
+  },
+  {
+    "id": 1217,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `nativeGetPointerCoords` accesses and relies heavily on the data and functions of the `NativeInput.MotionEvent` class rather than its own. It performs operations on the attributes and methods of `NativeInput.MotionEvent`, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1226,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `dumpStack` accesses and relies heavily on the data and functions of the `ThreadInfo` class rather than its own. It performs operations on `ThreadInfo`'s attributes and methods, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1237,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided code snippet is a constructor for a class that initializes its own fields with the provided parameters. It does not exhibit any characteristics of feature envy, as it is focused on its own data and does not rely heavily on the data and functions of another class. It is a straightforward constructor, which is a common practice and does not indicate any code smells."
+  },
+  {
+    "id": 1238,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method 'crop' accesses and relies heavily on the 'CropRegion' class rather than its own. It performs operations on the 'CropRegion' class's attributes, suggesting it might be better placed in the 'CropRegion' class."
+  },
+  {
+    "id": 1245,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `verifyVMInstall` accesses and relies heavily on the data and functions of the `IGrailsInstall` class, rather than its own. It performs operations on the `IGrailsInstall` object, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1247,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method `createClass` does not access or rely heavily on the data and functions of another class. It simply calls a superclass method and assigns a value to a class variable. There is no indication of feature envy or any other code smells."
+  },
+  {
+    "id": 1250,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method 'schedule' accesses and relies heavily on the 'Job' class, setting its rule and priority. This suggests that the method might be better placed within the 'Job' class itself, as it is closely related to the operations being performed on the 'Job' object."
+  },
+  {
+    "id": 1258,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `canRetryRequestIfRefreshableAuthTokenUsed` accesses and relies heavily on the `authenticationDetailsProvider` object, which is not its own. It checks if the provider is an instance of `RefreshableOnNotAuthenticatedProvider` and performs an operation on it. This suggests that the method might be better placed in the `authenticationDetailsProvider` class."
+  },
+  {
+    "id": 1284,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code snippet is a constructor for a class that initializes its own fields. It does not access or rely heavily on the data and functions of another class, nor does it perform operations on another class's attributes or methods. Therefore, it does not exhibit the characteristics of a 'feature envy' code smell."
+  },
+  {
+    "id": 1288,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method 'addConstantSet' accesses and relies heavily on the 'metadata' object, which suggests it might be better placed in the 'metadata' class. It performs operations on another class's attributes, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1297,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method `rabbitMessagingTemplate` is a simple factory method that creates an instance of `RabbitMessagingTemplate` using the provided `RabbitTemplate`. It does not access or rely heavily on the data and functions of another class, nor does it display more interest in the members of another class. Therefore, it does not exhibit the characteristics of a 'feature envy' code smell."
+  },
+  {
+    "id": 1299,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `formatQueryString` heavily relies on the `projectUri`, `isCompatibleMode`, `ArtifactID`, and `collectionId` from other classes, rather than focusing on its own data and functions. This suggests that the method might be better placed in one of those classes."
+  },
+  {
+    "id": 1300,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `notifyConflict` accesses the `Shell` from another class (`ShellUtils`) and performs an operation (opening a warning dialog) that is not directly related to its own class. This suggests that the method might be better placed in the class that manages the UI or the connection conflict handling."
+  },
+  {
+    "id": 1319,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method 'test' accesses and relies heavily on the data and functions of the 'AnnotationUtils' and 'AnnotatedElementUtils' classes, rather than focusing on its own class. It also performs operations on the attributes of these other classes, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1329,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `requestFields` accesses and relies heavily on the data and functions of another class (`APIRequestGetAppInstalledGroups`), specifically the `requestField` method. This suggests that the method might be better placed in the `APIRequestGetAppInstalledGroups` class, indicating a feature envy code smell."
+  },
+  {
+    "id": 1334,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided code snippet is a constructor for a class named TestHttpServletRequest. It initializes the instance variables and calls a method named decodeParams(). The method decodeParams() is not shown, but based on the context, it is likely responsible for processing the queryString. The constructor itself does not exhibit any characteristics of feature envy, as it is focused on initializing the class's own data members. Therefore, no code smell is detected."
+  },
+  {
+    "id": 1337,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method vmExecutablePath accesses and relies heavily on the data and functions of the Vm class rather than its own. It performs operations on the Vm's attributes and methods, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1347,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method 'onFailure' accesses and relies heavily on the data and functions of another class (HSCompilableTruffleAST and HotSpotToSVMScope), rather than its own. This suggests that the method might be better placed in one of those classes."
+  },
+  {
+    "id": 1363,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `resolveCustomPdxSerializer` accesses and relies heavily on the data and functions of another class (`pdxSerializerResolvers`), rather than its own class. This suggests that the method might be better placed in the class that provides `pdxSerializerResolvers`."
+  },
+  {
+    "id": 1364,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The toString method accesses the description field of another class (presumably a class that implements or contains the toString method). This suggests that the method might be better placed in the class that contains the description field, indicating a feature envy code smell."
+  },
+  {
+    "id": 1366,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided code snippet is a constructor for a class named `ZeroNullConversionOp`. It initializes the instance variables `result` and `input` with the values passed as parameters. This method does not access or rely heavily on the data and functions of another class, nor does it perform operations on another class's attributes or methods. Therefore, it does not exhibit any of the characteristics of a 'feature envy' code smell."
+  },
+  {
+    "id": 1374,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method 'close' heavily relies on the data and functions of other classes such as 'HSObject', 'parent', 'topScope', and 'HotSpotToSVMEntryPoints'. It accesses and modifies the state of these classes, indicating a potential feature envy smell."
+  },
+  {
+    "id": 1382,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method 'lookup' accesses and relies heavily on the data and functions of the 'cache' and 'engine' objects rather than its own. It also performs operations on the 'cache' and 'engine' attributes, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1386,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `getOptionClass` accesses the `getOptionKey` method of the `OptionDescriptor` class, which is not part of its own class. This suggests that the method might be better placed in the `OptionDescriptor` class, indicating a feature envy code smell."
+  },
+  {
+    "id": 1389,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `emitFloatConvert` accesses and relies heavily on the data and functions of another class (`AArch64FloatConvertOp`), rather than its own. It performs operations on another class's attributes or methods, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1405,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `isReference` accesses and relies heavily on the data and functions of another class (`ElementUtils`), particularly its methods `typeEquals`, `getLanguageType`, `getParameter`, and `getReferenceType`. This suggests that the method might be better placed in the `ElementUtils` class, as it focuses more on the data and functions of that class rather than its own."
+  },
+  {
+    "id": 1438,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `getNameAndSignature` accesses data and performs operations on the `method` object, which is not part of its own class. This suggests a potential misplacement of the method, as it should ideally focus on its own data and functions."
+  },
+  {
+    "id": 1446,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method mT__60 does not access or rely heavily on the data and functions of another class. It simply matches a specific string and does not exhibit any characteristics of feature envy."
+  },
+  {
+    "id": 1457,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `performBuild` heavily relies on the `YarnContainerFactoryBean` class to set its properties and perform operations, rather than focusing on its own data and functions. This suggests that the method might be better placed in the `YarnContainerFactoryBean` class."
+  },
+  {
+    "id": 1468,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method 'run' does not access or rely heavily on the data and functions of another class. It performs operations on its own data and does not show any signs of feature envy."
+  },
+  {
+    "id": 1478,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `toString` accesses and relies heavily on the `variables` list and its elements, which are not part of its own class. It also modifies the `type` based on the `appended` parameter, indicating a potential misplacement of the method."
+  },
+  {
+    "id": 1479,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided code snippet does not exhibit any of the characteristics of a 'Feature Envy' code smell. It is a simple method that creates a lambda function and invokes it, which is a common and acceptable practice in Java."
+  },
+  {
+    "id": 1491,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method 'getValue' accesses and relies on the data and functions of another class (ExpressionUtils) rather than its own. It performs an operation on another class's method, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1494,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method 'hasNext' accesses and relies heavily on the data and functions of another class ('it'), rather than its own. It performs operations on another class's attributes or methods, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1495,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method handleRequest accesses and relies heavily on the data and functions of another class (SockJsService), rather than its own. It performs operations on another class's attributes or methods, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1500,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `invoke` accesses and relies heavily on the data and functions of the `EntityManager` class, rather than its own class. It performs operations on `EntityManager` attributes and methods, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1506,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The constructor accesses and relies heavily on the data and functions of the ClassUtils class rather than its own. It uses ClassUtils methods to format the error message, indicating a potential misplacement of the method."
+  },
+  {
+    "id": 1509,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method 'getFactoryMethodMetadata' is a simple accessor method that returns a member variable of its own class. It does not access or rely heavily on the data and functions of another class, nor does it perform operations on another class's attributes or methods. Therefore, it does not exhibit any code smells."
+  },
+  {
+    "id": 1513,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method accesses and relies heavily on the data and functions of the `requestContext` class, particularly its `getErrors` and `getModelObject` methods. This suggests that the method might be better placed in the `requestContext` class."
+  },
+  {
+    "id": 1517,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `create` in the class is accessing and relying heavily on the data and functions of another class (`Signer` and `HeaderParameters`) rather than its own. It is performing operations on another class's attributes or methods, which suggests a possible misplacement of the method."
+  },
+  {
+    "id": 1524,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `getParentOfClass` accesses and relies heavily on the data and functions of the `IModelElement` class rather than its own. It performs operations on another class's attributes or methods, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1528,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method 'run' accesses and relies heavily on the data and functions of the 'Class' and 'Method' classes, rather than its own. It performs operations on another class's attributes or methods, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1534,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method 'formatElement' creates instances of 'FormatProcessorXML' and 'CleanupProcessorXML' and configures their preferences and methods. This indicates that the method is more interested in the members of these classes rather than its own, suggesting a potential feature envy smell."
+  },
+  {
+    "id": 1540,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `toCiphertext` accesses the `VaultTransitContext` class to conditionally modify a `Ciphertext` object. This suggests that the method might be better suited in the `VaultTransitContext` class, as it relies heavily on its data and functions."
+  },
+  {
+    "id": 1543,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method `newlineWithIndent` is focused on its own class and does not access or rely heavily on the data and functions of another class. It performs a specific task within its own class and does not exhibit the characteristics of feature envy."
+  },
+  {
+    "id": 1555,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `getArrayComponentTypeSimpleName` accesses the `typeName` parameter, which belongs to another class (presumably a class that handles type names). It also uses a method `getSimpleName` which is likely defined in another class. This suggests that the method might be better suited in a class that deals with type names or similar operations, rather than the current class."
+  },
+  {
+    "id": 1558,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method setHeader accesses and relies heavily on the data and functions of another class (Unpooled), rather than its own. It also performs operations on another class's attributes, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1561,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The toString method accesses and relies heavily on the data and functions of its own class, which is typical behavior for a toString method. It does not exhibit characteristics of feature envy, as it is focused on its own class's data. However, it could be considered a minor code smell due to the repetitive nature of appending class attributes to a StringBuilder."
+  },
+  {
+    "id": 1577,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `isTrustAliasMissing` accesses data and functionality from the `ComputeState` class, which it should ideally manage itself. This suggests a potential feature envy smell as the method seems more interested in the `ComputeState` class's members than its own."
+  },
+  {
+    "id": 1584,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The constructor accesses and relies heavily on the data and functions of the MetricSearch and MetricValidator classes, rather than focusing on its own data and functions. This suggests that the constructor might be better placed in one of those classes."
+  },
+  {
+    "id": 1590,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `onManagementStarting` accesses and relies heavily on the data and functions of other classes such as `getConfig`, `getParent`, and `getShellEnvironment`, rather than focusing on its own class's data and functions. This suggests a potential misplacement of the method."
+  },
+  {
+    "id": 1594,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `get` accesses and relies heavily on the data and functions of other classes such as `Utils`, `logFoundEnvVar`, and `logFoundSystemProperty`, rather than focusing on its own class's data and functions. This suggests a potential misplacement of the method."
+  },
+  {
+    "id": 1610,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `withTimestampSpec` accesses and relies heavily on the `getDimensionsSpec` method from another class, indicating a potential misplacement of the method. It focuses more on the data and functions of another class rather than its own."
+  },
+  {
+    "id": 1613,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method 'containsDownEntity' accesses the 'isViableSeed' method from another class, indicating a potential feature envy. It should ideally be placed in the class where 'isViableSeed' is defined."
+  },
+  {
+    "id": 1615,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `processInterfaces` accesses and relies heavily on the `SourceClass` and `ConfigurationClass` rather than its own. It performs operations on the `SourceClass`'s attributes and methods, suggesting it might be better placed in the `SourceClass` or `ConfigurationClass`. This indicates a possible misplacement of the method."
+  },
+  {
+    "id": 1618,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `gzip` relies heavily on the `ByteSink` class, creating a new anonymous class that extends `ByteSink` just to override the `openStream` method. This suggests that the method might be better placed in the `ByteSink` class, as it is focused on the functionality of another class rather than its own."
+  },
+  {
+    "id": 1628,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method 'handleChunk' accesses and relies heavily on the data and functions of the 'BytesFullResponseHolder' class rather than its own. It performs operations on another class's attributes, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1640,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `removeHealthMonitor` accesses and relies heavily on the data and functions of another class (`HealthMonitor`), rather than its own class. It performs operations on another class's attributes or methods, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1646,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method 'write' is performing its primary responsibility, which is to write a struct using a protocol, without showing signs of feature envy or any other code smells."
+  },
+  {
+    "id": 1648,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `read` accesses and relies heavily on the data and functions of the `Digest` class rather than its own. It performs operations on the `Digest` class's attributes, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1664,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `supplierFromDimensionSelector` accesses and relies heavily on the `DimensionSelector` class, which suggests it might be better placed in the `DimensionSelector` class. It performs operations on the `DimensionSelector`'s attributes, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1666,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `createReferenceCountedWriter` primarily focuses on creating a file and wrapping it in a `ReferenceCountedWriter`, which involves operations on the `logFilePath` parameter. This suggests that the method might be better suited in a class that deals with file operations, rather than being in a class that is not directly related to file handling."
+  },
+  {
+    "id": 1674,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `read` is accessing and relying heavily on the data and functions of the `FetchRuleKeyLogsRequest` class, which is not its own. It reads fields from the protocol and sets them in the struct, indicating a potential misplacement of the method."
+  },
+  {
+    "id": 1735,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided code snippet is a method definition for a parser rule in ANTLR (Another Tool for Language Recognition). It does not exhibit any characteristics of a 'Feature Envy' code smell as it is focused on its own class and does not access or rely heavily on the data and functions of another class."
+  },
+  {
+    "id": 1744,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `sequence_Fragment1_FragmentCaller` accesses data and methods from the `transientValues`, `errorAcceptor`, `diagnosticProvider`, and `accessGrammar` classes, which are not part of its own class. This indicates a feature envy smell as the method should ideally belong to one of these classes."
+  },
+  {
+    "id": 1753,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `getScope` accesses and relies heavily on the data and functions of another class (`EObjectDescription`), suggesting it might be better placed in that class. It performs operations on another class's attributes or methods, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1756,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided code snippet appears to be a method within a parser or grammar rule implementation, focusing on the structure and flow of a language grammar rather than accessing or modifying the data and functions of another class. It does not exhibit characteristics of feature envy, as it is not primarily concerned with the data or methods of another class."
+  },
+  {
+    "id": 1762,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided code snippet is a method from a parser generated by ANTLR, which is a common tool for generating parsers and lexers from context-free grammars. The method `rule__XShortClosure__Group_0__0__Impl()` is part of the generated code and is not intended to be analyzed for code smells as it is not part of the application codebase. It is a technical implementation detail of the parser."
+  },
+  {
+    "id": 1768,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method eIsSet accesses the 'elements' attribute of another class (Amodel), which suggests it might be better placed in that class. It focuses on the data and function of another class rather than its own."
+  },
+  {
+    "id": 1774,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method 'sequence' accesses and relies heavily on the data and functions of the 'ISerializationContext' class rather than its own. It performs operations on the 'ISerializationContext' attributes and methods, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1801,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method 'home' is focused on its own class and does not rely heavily on the data and functions of another class. It simply adds an attribute to the model and returns a view name, which is typical for a controller method in a Spring application."
+  },
+  {
+    "id": 1829,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method `equals` is correctly implemented within the `ThrowsPattern` class, focusing on the data and functions of its own class. It does not access or rely heavily on the data and functions of another class, nor does it perform operations on another class's attributes or methods. Therefore, it does not exhibit the characteristics of a 'feature envy' code smell."
+  },
+  {
+    "id": 1840,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `doAggressiveInner` accesses and relies heavily on the data and functions of another class (`LazyClassGen`), indicating a possible misplacement of the method. It performs operations on another class's attributes and methods, suggesting it might be better placed in the `LazyClassGen` class."
+  },
+  {
+    "id": 1842,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method m39 accesses and increments the instance variables of another class (C22) rather than its own. This suggests that the method might be better placed in the C22 class, indicating a feature envy smell."
+  },
+  {
+    "id": 1850,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `getWorkflowDefinitionFactory` accesses and relies heavily on the `configuration` object, which is not its own. It creates instances of `WorkflowTypeRegistrationOptions` and `DataConverter` based on the configuration, indicating that the method might be better placed in the `configuration` class."
+  },
+  {
+    "id": 1869,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method configureFormat is accessing and modifying the data of another class (FixedWidthFormat), but it is doing so within the context of its own class. This does not indicate feature envy as the method is performing operations relevant to its own class."
+  },
+  {
+    "id": 1878,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `createEndpoint` accesses and relies heavily on the data and functions of another class (`DisruptorEndpoint`), suggesting it might be better placed in that class. It performs operations on another class's attributes or methods, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1882,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The constructor of AllRedisProcessorsCreator is performing operations on the methods and attributes of other classes (e.g., ConnectionRedisProcessorsCreator, HashesRedisProcessorsCreator, etc.). This suggests that the method might be better placed in one of these classes, indicating a feature envy code smell."
+  },
+  {
+    "id": 1885,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `createEndpoint` accesses and relies heavily on the data and functions of another class (`BeanValidatorEndpoint`), rather than its own. It sets properties on an instance of `BeanValidatorEndpoint` and returns it, indicating a potential misplacement of the method."
+  },
+  {
+    "id": 1890,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The constructor accesses and relies heavily on the data and functions of the 'pojo' and 'methodName' parameters rather than its own. It also performs operations on the 'pojo' and 'methodName' attributes, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1892,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method `NamedThreadFactory` is focused on initializing the properties of the class and does not exhibit characteristics of feature envy, data class, or any other code smells. It is a constructor that sets up the necessary attributes for a `ThreadFactory` instance."
+  },
+  {
+    "id": 1894,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method `toString` is a standard utility method that is commonly used to provide a string representation of an object. It does not access or rely heavily on the data and functions of another class, nor does it perform operations on another class's attributes or methods. Therefore, it does not exhibit any of the characteristics of a 'feature envy' code smell."
+  },
+  {
+    "id": 1906,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method getUlong56 accesses and relies heavily on the data and functions of another class (likely a buffer or similar data structure), rather than its own. It performs operations on another class's attributes, indicating a possible misplacement of the method."
+  },
+  {
+    "id": 1908,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method `parseFrom` is a static method that delegates the parsing logic to a method in the superclass `GeneratedMessageLite`. It does not access or rely heavily on the data and functions of another class, nor does it display more interest in the members of other classes. Therefore, it does not exhibit the characteristics of a 'feature envy' code smell."
+  },
+  {
+    "id": 1930,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `printAllExcludes` heavily relies on the `ModuleDescriptor` class, accessing its methods and attributes extensively. It would be more appropriate for this method to be placed within the `ModuleDescriptor` class itself, as it primarily deals with the data and operations related to `ExcludeRule` objects."
+  },
+  {
+    "id": 1932,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `addRequiredAlertProperties` accesses data from `AlertResourceProvider` and modifies the input set, indicating it may belong in the `AlertResourceProvider` class rather than its current location."
+  },
+  {
+    "id": 1934,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method `setTmfeIsSet` is a simple setter method that operates on its own class's attribute without accessing or relying heavily on another class's data and functions. It does not exhibit characteristics of feature envy."
+  },
+  {
+    "id": 1939,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method 'repeat' is a utility method that performs a specific task (repeating a string a certain number of times) and does not rely on the data or methods of another class. It is self-contained and follows the single responsibility principle."
+  },
+  {
+    "id": 1952,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `listZookeeper` accesses and relies heavily on the data and functions of the `ServerContext` class, particularly `MetadataTableUtil`. It should focus on its own data and functions, indicating a potential feature envy smell."
+  },
+  {
+    "id": 1954,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The code snippet is a constructor for a class, which is a common and acceptable practice. It initializes the instance variables with the provided parameters and does not exhibit any characteristics of feature envy, data class, or other code smells."
+  },
+  {
+    "id": 1968,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method `getProcessor` is focused on creating an instance of a class that implements `ArgumentProcessor`, which is its own responsibility. It does not access or rely heavily on the data and functions of another class, nor does it perform operations on another class's attributes or methods. Therefore, it does not exhibit the characteristics of a 'feature envy' code smell."
+  },
+  {
+    "id": 1994,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method 'connected' accesses and configures the 'channel' object, which is not its own, but rather belongs to another class. This suggests that the method might be better placed in the class that manages the 'channel' object. Additionally, the method performs multiple operations on the 'channel' object, which indicates a possible misplacement of the method."
+  },
+  {
+    "id": 2003,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method 'read' in the class is accessing and relying heavily on the data and functions of the 'cancelCompaction_args' class rather than its own. It is performing operations on the attributes of 'cancelCompaction_args', which suggests a possible misplacement of the method."
+  }
+]

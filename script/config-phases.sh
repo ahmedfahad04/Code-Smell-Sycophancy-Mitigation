@@ -35,13 +35,13 @@ declare -A PHASE2=(
     [strategies]="Casual"
 )
 
-# Need to re-run this phase for each of the 4 types of smell
+#! Need to re-run this phase for each of the 4 types of smell
 declare -A PHASE3=(
     [name]="SYCOPHANCY BIAS TESTING"
     [duration]="1-2 hrs"
     [purpose]="Measure Decision Flip Rate (DFR) across bias strategies"
     [models]="qwen2.5-coder:7b"
-    [smells]="feature envy"
+    [smells]="blob"
     # [strategies]="Casual|Positive|Negative|Authoritative|Social-Proof|Contradictory-Hint|False-Premise|Confirmation-Bias"
     [strategies]="Casual|Positive|Contradictory-Hint|False-Premise|Confirmation-Bias"
     [limit]="175"
