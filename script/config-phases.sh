@@ -41,7 +41,7 @@ declare -A PHASE3=(
     [duration]="3-4 hrs"
     [purpose]="Measure Decision Flip Rate (DFR) across bias strategies for all smells"
     [models]="llama3.1:8b"
-    [smells]="blob"
+    [smells]="feature envy|long method"
     [strategies]="Casual|Positive|Contradictory-Hint|False-Premise|Confirmation-Bias"
     [limit]="175"
 )
