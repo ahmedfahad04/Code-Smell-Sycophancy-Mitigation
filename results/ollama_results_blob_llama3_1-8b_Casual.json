@@ -3,1400 +3,1400 @@
     "id": 528,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method `UnorderedPartitionedKVWriter` has a large number of lines of code, which can make it difficult to understand and maintain. This method appears to be responsible for handling various aspects of the shuffle process, including spill handling, event generation, and buffer management."
   },
   {
     "id": 535,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class has multiple constructors and methods handling different functionalities, such as policy management and parser handling, indicating a potential 'blob' code smell. However, the class does not have an extremely large number of methods and attributes, which is why the severity is minor."
   },
   {
     "id": 536,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class RequestSecurityManagerImpl has a large number of methods and attributes, managing multiple, unrelated functionalities, such as checking for insecure requests, redirecting, and checking page security, which violates the Single Responsibility Principle (SRP). This makes the class difficult to maintain and extend."
   },
   {
     "id": 538,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class AbstractConditional has multiple unrelated functionalities, such as handling informal parameters, conditional rendering, and template management, making it a prime example of a God Class (Blob) code smell. This class accumulates too many responsibilities, violating the Single Responsibility Principle (SRP)."
   },
   {
     "id": 546,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class ElementPropertyChangedEvent has a single responsibility, but it extends another class (ElementPropertyEvent) which might indicate a potential for accumulating responsibilities, characteristic of a 'blob' code smell. However, without more context, it's difficult to assess the full scope of responsibilities."
   },
   {
     "id": 551,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class TrimAction has a large number of methods and attributes, managing multiple, unrelated functionalities, such as type trimming, annotation management, and type list handling, making it difficult to maintain and extend."
   },
   {
     "id": 554,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class MailChimpServiceImpl has a large number of methods and attributes, managing multiple, unrelated functionalities within a single class, making it difficult to maintain and extend."
   },
   {
     "id": 556,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class has multiple responsibilities, managing session attributes and logging, which is a characteristic of a God Class (Blob). Although it's not extremely large, it still accumulates two distinct functionalities, making it a minor code smell."
   },
   {
     "id": 558,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class ChannelConfigException has a single responsibility, but it extends another class, which might indicate a potential for accumulating responsibilities. However, the code snippet is relatively simple and does not exhibit the full characteristics of a 'blob' code smell."
   },
   {
     "id": 561,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "This class has multiple unrelated functionalities, such as image creation, event handling, and data processing, which violates the Single Responsibility Principle. It also has a large number of methods and attributes, making it difficult to maintain and extend."
   },
   {
     "id": 568,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The interface has two distinct responsibilities: managing a transaction registry and creating database connections. This indicates a potential 'blob' code smell, as the interface is accumulating multiple, unrelated functionalities."
   },
   {
     "id": 578,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "This class accumulates multiple responsibilities, managing the save event and displaying a status bar message, which violates the Single Responsibility Principle (SRP). Although it's not extremely large, it still exhibits characteristics of a God Class/Blob."
   },
   {
     "id": 582,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class WideLeftAnnotationSideAction has multiple unrelated functionalities, such as managing the editor, updating the selection, and widening the annotation, which violates the Single Responsibility Principle (SRP). This accumulation of responsibilities makes the class difficult to maintain and extend."
   },
   {
     "id": 587,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The ErrorFrame class has a single responsibility, but it extends VinciFrame and adds a method, which could be a sign of accumulating responsibilities. However, the code snippet is quite simple and does not exhibit the full characteristics of a God Class."
   },
   {
     "id": 588,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The interface has multiple unrelated functionalities, such as getting node id, edge type, and direction, which is a characteristic of a God Class (Blob). This interface is managing multiple, unrelated functionalities within a single interface, making it difficult to maintain and extend."
   },
   {
     "id": 592,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The JobSchedulerService class has a large number of attributes and methods, managing multiple, unrelated functionalities, such as scheduling, job execution, and metrics tracking, which is a clear indication of a God Class or Blob code smell."
   },
   {
     "id": 598,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class has two methods with different parameters, but both are related to creating volatile images, which indicates a single responsibility. However, the class is abstract and has only two methods, which is not a significant accumulation of responsibilities."
   },
   {
     "id": 600,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class ShortArrayFSImpl has a large number of methods (9) and attributes, managing multiple, unrelated functionalities such as getting and setting array values, copying from and to arrays, and converting to and from strings, which indicates a high accumulation of responsibilities and poor cohesion."
   },
   {
     "id": 602,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class ErrorMessages_zh has a large number of methods and attributes, managing multiple, unrelated functionalities, and has poor cohesion and high dependency on other classes, making it difficult to maintain and extend."
   },
   {
     "id": 606,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The ExsltBase class has multiple unrelated functionalities, such as string conversion and number parsing, making it a God Class (Blob) with poor cohesion and high dependency on other classes."
   },
   {
     "id": 614,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class has a large number of methods and attributes, managing multiple, unrelated functionalities, such as connecting to ZooKeeper, displaying tree viewers, and handling node viewers, which violates the Single Responsibility Principle."
   },
   {
     "id": 618,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The SparkVersion class has a large number of methods and attributes, managing multiple, unrelated functionalities such as version comparison, string parsing, and logging, which violates the Single Responsibility Principle (SRP)."
   },
   {
     "id": 625,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The StopException class has a single responsibility, but it extends ServerCommandException, which might indicate a tight coupling and a potential for accumulating more responsibilities in the future."
   },
   {
     "id": 643,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The ErrorDataException class has multiple responsibilities, including managing error codes and RPC data packages, which is a characteristic of a God Class (Blob). This makes it difficult to maintain and extend, violating the Single Responsibility Principle (SRP)."
   },
   {
     "id": 644,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class _ApplicationInstancesResponse has multiple responsibilities, including managing a map of instances and providing a deserialization mechanism, which is a characteristic of a God Class (Blob). The class has a large number of attributes and methods, making it difficult to maintain and extend."
   },
   {
     "id": 651,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "This class has a single method and is a subclass of LaunchConfigurationScope, but it still accumulates a specific responsibility (determining entry inclusion) within a single class, which is a characteristic of a God Class (Blob). The class has a limited scope, but it's still a minor instance of the blob smell."
   },
   {
     "id": 652,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class DimsDataList has a large number of methods and attributes, managing multiple, unrelated functionalities, and violating the Single Responsibility Principle (SRP). This indicates a 'God Class' or 'Blob' code smell."
   },
   {
     "id": 656,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class AttributesDeletedStrategy has a single responsibility, but it has a limited number of methods and attributes, making it not a severe case of the 'blob' code smell."
   },
   {
     "id": 660,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class LiveSignalEnforcement has a large number of methods and attributes, managing multiple, unrelated functionalities, which is a characteristic of a God Class (Blob). The class has a high dependency on other classes, making it difficult to maintain and extend."
   },
   {
     "id": 662,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class accumulates multiple responsibilities, having a single method, but it's still a candidate for a 'blob' due to its static implementation and the fact that it's a utility class. It's not a severe case, but it's worth considering refactoring for better maintainability."
   },
   {
     "id": 676,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The provided interface has multiple getters and setters for different attributes, which is a characteristic of a data class. However, it does not accumulate too many responsibilities, so it's not a major code smell."
   },
   {
     "id": 680,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The MachineStoppedEvent class has multiple responsibilities, including managing a machine object and dispatching events, which violates the Single Responsibility Principle (SRP). Although it's not extremely large, it still accumulates more than one responsibility."
   },
   {
     "id": 688,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class GoIntoAction has multiple responsibilities, including managing the project explorer's goIntoActivated state, handling the action event, and checking node support for goInto. This accumulation of responsibilities violates the Single Responsibility Principle (SRP)."
   },
   {
     "id": 690,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The Ipam class has a large number of attributes and methods, managing multiple, unrelated functionalities such as configuration, options, and equality checks, making it a prime example of a God Class or Blob."
   },
   {
     "id": 694,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The ConstantPartitioner class has multiple responsibilities, including managing document length, handling document changes, and computing partitioning, which violates the Single Responsibility Principle. It also has a large number of methods and attributes, making it difficult to maintain and extend."
   },
   {
     "id": 702,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class SuiteInProgressInfo has a single responsibility, but it has a few methods and attributes that could be extracted into separate classes, improving cohesion and reducing dependencies."
   },
   {
     "id": 704,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class MetaDataFactoryImpl has a large number of methods and attributes, managing multiple, unrelated functionalities, and has a high dependency on other classes, making it difficult to maintain and extend."
   },
   {
     "id": 706,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class GExpressionsHelper has multiple unrelated functionalities, specifically the methods eClassIsSuperTypeOf and classEquals, indicating a potential 'blob' code smell. However, the methods are relatively short and focused on a specific task, hence the severity is minor."
   },
   {
     "id": 708,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The DimensionPart class has a large number of methods and attributes, managing multiple unrelated functionalities, and has poor cohesion, making it difficult to maintain and extend."
   },
   {
     "id": 714,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The NodeOrderer class has a large number of methods and attributes, managing multiple, unrelated functionalities, such as node ordering and intermediate processing configuration, which violates the Single Responsibility Principle (SRP)."
   },
   {
     "id": 718,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class has multiple unrelated functionalities, such as managing shared secrets, private keys, and certificates, which violates the Single Responsibility Principle (SRP). It also has a large number of methods and attributes, making it difficult to maintain and extend."
   },
   {
     "id": 731,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The Build class has a single responsibility, managing project version, but it has two methods and an attribute, which is a sign of accumulating responsibilities. However, the responsibility is well-defined and contained within a single class, making it a minor case of the 'blob' code smell."
   },
   {
     "id": 733,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The Subchannel class has a large number of attributes (numRods, rodDiameter, pitch) and methods (getters, setters, equals, clone, hashCode, accept), indicating a high accumulation of responsibilities, which is a characteristic of a God Class (Blob) code smell."
   },
   {
     "id": 746,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class has multiple attributes (topic, clientId, captured) and getter/setter methods, indicating a single class handling multiple, unrelated functionalities. This violates the Single Responsibility Principle (SRP) and is a characteristic of a 'God Class' or 'Blob'."
   },
   {
     "id": 758,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class ObserveUtil has a large number of methods and attributes, managing multiple, unrelated functionalities, such as creating LWM2M observations, creating CoAP observe request contexts, and validating Californium observations, which indicates a God Class (Blob) code smell."
   },
   {
     "id": 767,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class CredentialServiceImpl has a large number of methods (11) and attributes, managing multiple functionalities such as creating, updating, finding, and deleting credentials, which indicates a high concentration of responsibilities and a potential violation of the Single Responsibility Principle (SRP)."
   },
   {
     "id": 776,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The JobExecutionFactoryImpl class has multiple unrelated functionalities, such as creating entities, creators, queries, and list results, which violates the Single Responsibility Principle (SRP). This accumulation of responsibilities makes the class a 'God Class' or 'Blob'."
   },
   {
     "id": 778,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The Factory class has a single method with a limited responsibility, but it's implementing an interface with a generic method, which might indicate a potential for accumulating more responsibilities. However, the current implementation is relatively simple and focused, making it a minor case of the 'blob' smell."
   },
   {
     "id": 808,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The CachedReader class has multiple unrelated functionalities, such as managing a file, handling image streams, and maintaining a list of reader positions, which violates the Single Responsibility Principle (SRP). It also has a large number of methods and attributes, making it difficult to maintain and extend."
   },
   {
     "id": 810,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class has multiple responsibilities, implementing both JsonSerializer and JsonDeserializer interfaces, and managing a DateTimeFormatter instance, which is a sign of accumulating too many responsibilities."
   },
   {
     "id": 814,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class TripAlarmNode has two constructors with different parameters, which may indicate that it is accumulating too many responsibilities. However, the number of methods and attributes is not excessively large, so the severity is minor."
   },
   {
     "id": 821,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The FormDataValidator class accumulates multiple responsibilities, managing validation across multiple methods and attributes, violating the Single Responsibility Principle (SRP). This makes it difficult to maintain and extend, characteristic of a 'God Class' or 'Blob' code smell."
   },
   {
     "id": 822,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class has multiple unrelated functionalities, such as handling special values like infinity and NaN, and parsing time values, which makes it difficult to maintain and extend. It also has a large number of methods and attributes, violating the Single Responsibility Principle (SRP)."
   },
   {
     "id": 832,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The TypeList class accumulates multiple responsibilities, such as type name storage and lookup, which is a characteristic of a God Class (Blob). It also has a large number of attributes and methods, making it difficult to maintain and extend."
   },
   {
     "id": 840,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The BaseDeclProcessor class has multiple unrelated functionalities, such as resolving relative URIs, processing query models, and handling different types of operations, which violates the Single Responsibility Principle (SRP). This complexity makes it difficult to maintain and extend the class."
   },
   {
     "id": 843,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class has a single responsibility, extending an AbstractPerspective, and does not exhibit characteristics of a God Class (Blob) such as multiple unrelated functionalities or a large number of methods and attributes."
   },
   {
     "id": 851,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class has multiple unrelated functionalities, such as filtering rules and retrieving actions and imports, which violates the Single Responsibility Principle (SRP). It also has a large number of methods, indicating a high accumulation of responsibilities."
   },
   {
     "id": 856,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class has a large number of methods (e.g., link, add, buildDefaultShape, buildExternallyDefinedShape) and attributes, managing multiple, unrelated functionalities, which is a characteristic of a God Class (Blob). The class also exhibits poor cohesion and high dependency on other classes, making it difficult to maintain and extend."
   },
   {
     "id": 862,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class IndirectHandle has a large number of methods and attributes, managing multiple, unrelated functionalities, which is a characteristic of a God Class (Blob) code smell. It has a high dependency on other classes and poor cohesion, making it difficult to maintain and extend."
   },
   {
     "id": 867,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The ObjectFactory class accumulates too many responsibilities, managing the creation of multiple, unrelated LWM2M objects and their components, violating the Single Responsibility Principle."
   },
   {
     "id": 870,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The ByteArrayAudioStream class has multiple unrelated functionalities, such as managing a ByteArrayInputStream, implementing AudioFormat and InputStream interfaces, and providing a cloned stream, which violates the Single Responsibility Principle (SRP). This accumulation of responsibilities makes the class difficult to maintain and extend."
   },
   {
     "id": 872,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class ForeachCommand has a large number of methods and attributes, managing multiple, unrelated functionalities such as parsing commands, executing commands, and handling user input, which is a clear indication of a God Class (Blob) code smell."
   },
   {
     "id": 890,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The Ping class has multiple unrelated functionalities, such as regular ping and socket connection, which violates the Single Responsibility Principle (SRP). This complexity makes it difficult to maintain and extend the class."
   },
   {
     "id": 894,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class DatatypeGeneratorTask has a large number of methods and attributes, managing multiple, unrelated functionalities, such as generating entities and enums, which violates the Single Responsibility Principle (SRP). This complexity makes it difficult to maintain and extend the class."
   },
   {
     "id": 896,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class N4JSLambdaValidator has multiple unrelated functionalities, such as registering validators and checking top-level lambda functions, which violates the Single Responsibility Principle (SRP). This accumulation of responsibilities makes it difficult to maintain and extend the class."
   },
   {
     "id": 941,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class StubDescriptorJsonParser has a large number of methods and attributes, managing multiple, unrelated functionalities, such as parsing different types of descriptors, which violates the Single Responsibility Principle (SRP). This complexity makes it difficult to maintain and extend the class."
   },
   {
     "id": 944,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class has a large number of methods and attributes, managing multiple, unrelated functionalities within a single class, which is a characteristic of a God Class (Blob) code smell. The class also has a high dependency on other classes, making it difficult to maintain and extend."
   },
   {
     "id": 946,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class `WigFile` has a simple constructor and a single method call, indicating a low complexity and no indication of accumulating responsibilities or managing unrelated functionalities."
   },
   {
     "id": 952,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The WafFolderContent class has multiple responsibilities, managing the root folder, sub folders, and files, which is a characteristic of a God Class (Blob). This class has a large number of attributes and methods, making it difficult to maintain and extend."
   },
   {
     "id": 959,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class has a large number of methods and attributes, managing multiple, unrelated functionalities, such as setting parameters, requesting fields, and executing requests, which is a clear indication of a God Class or Blob."
   },
   {
     "id": 974,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The interface ToolWindows has multiple unrelated functionalities (e.g., TOOL_WINDOWS and CONTRIBUTE_TOOL_WIDOWS) and a limited number of methods, indicating a potential 'blob' code smell."
   },
   {
     "id": 976,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class has multiple unrelated functionalities, such as creating a map, handling graphics overlays, and managing list views, which indicates a high accumulation of responsibilities. This makes it difficult to maintain and extend the code, violating the Single Responsibility Principle."
   },
   {
     "id": 989,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class UOfKind has multiple responsibilities, including managing a set of allowed kinds, inlining expressions, and accepting visitors, which indicates a 'blob' code smell. The class has several abstract methods and overrides, but they are all related to the expression it wraps, suggesting a single responsibility principle violation."
   },
   {
     "id": 993,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class FakeMediaClockRenderer has multiple responsibilities, implementing both FakeRenderer and MediaClock interfaces, and managing its own media clock. This accumulation of responsibilities is a characteristic of the 'blob' code smell."
   },
   {
     "id": 999,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class JavadocClassFinder has multiple unrelated functionalities, such as managing the context, handling package documentation, and overriding methods from the ClassFinder class, which violates the Single Responsibility Principle (SRP). This accumulation of responsibilities makes the class difficult to maintain and extend."
   },
   {
     "id": 1000,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class has a large number of methods and attributes, managing multiple, unrelated functionalities within a single class, and has poor cohesion and high dependency on other classes, making it difficult to maintain and extend."
   },
   {
     "id": 1005,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class SysInfo has two attributes and a constructor, which is a simple implementation. However, the class name suggests it's a system information class, which could potentially accumulate more responsibilities in the future, making it a minor 'blob' code smell."
   },
   {
     "id": 1007,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The Builder class has a large number of methods and attributes, managing multiple, unrelated functionalities, such as module path management, archive handling, and configuration building, which violates the Single Responsibility Principle (SRP). This complexity makes it difficult to maintain and extend the class."
   },
   {
     "id": 1012,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class has multiple unrelated functionalities, such as managing properties, table IDs, and table names, which makes it difficult to maintain and extend. It also has a large number of methods and attributes, violating the Single Responsibility Principle (SRP)."
   },
   {
     "id": 1031,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class C2 has a single method get, but it extends and implements other classes, indicating a potential accumulation of responsibilities. However, the method itself is not overly complex, which is why the severity is minor."
   },
   {
     "id": 1032,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The UserToken class has multiple responsibilities, including storing and retrieving a token, and generating an authorization header, which violates the Single Responsibility Principle. Although it's not extremely large, it still accumulates too many functionalities within a single class."
   },
   {
     "id": 1034,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class `TestShard` has a large number of methods (over 100) and is responsible for managing multiple, unrelated functionalities, which is a clear indication of a God Class (Blob) code smell. This makes the class difficult to maintain and extend, violating the Single Responsibility Principle (SRP)."
   },
   {
     "id": 1036,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The ItemTypeDescription class accumulates multiple responsibilities, such as managing item type names, attributes, and extensions, which is a characteristic of a God Class or Blob. It also has a large number of methods and attributes, making it difficult to maintain and extend."
   },
   {
     "id": 1038,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class has a single responsibility, extending an exception class with a custom message, and does not accumulate multiple functionalities or attributes."
   },
   {
     "id": 1049,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class has a large number of methods and attributes, managing multiple unrelated functionalities, and violating the Single Responsibility Principle (SRP). It accumulates too many responsibilities, making it difficult to maintain and extend."
   },
   {
     "id": 1050,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class 'Constants' has a large number of attributes and constants, managing multiple, unrelated functionalities, which is a characteristic of a 'God Class' or 'Blob' code smell. This makes it difficult to maintain and extend the class, violating the Single Responsibility Principle (SRP)."
   },
   {
     "id": 1069,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class has multiple unrelated functionalities, such as managing keys, truncated status, and marker, which are not cohesive and make it difficult to maintain and extend. It violates the Single Responsibility Principle (SRP) by having too many responsibilities."
   },
   {
     "id": 1071,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The FooFooType interface has multiple responsibilities, including managing properties and providing a creation method, which is a characteristic of a God Class (Blob). However, the code is relatively simple and does not exhibit extreme complexity, making the severity minor."
   },
   {
     "id": 1073,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The code contains a method with a large number of lines (readLine() has 24 lines), which can be a sign of a long method. This can make the code harder to understand and maintain."
   },
   {
     "id": 1075,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The Solaris class has multiple responsibilities, including getting the family name, OS prefix, and architecture, which can be considered a 'blob' due to its accumulation of unrelated functionalities. However, the code is relatively concise and does not exhibit extreme complexity, thus the severity is minor."
   },
   {
     "id": 1077,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class BDMVSAXHandler has a large number of attributes and methods that manage multiple, unrelated functionalities, such as parsing XML tags, handling thumbnail sizes, and storing metadata. This accumulation of responsibilities violates the Single Responsibility Principle (SRP) and makes the class difficult to maintain and extend."
   },
   {
     "id": 1078,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class FuncSum has a single method, but it accumulates multiple responsibilities such as iterating over nodes, parsing strings, and returning a result, which is a characteristic of a 'blob' code smell. However, the code is relatively concise and focused on a specific task, which limits the severity to minor."
   },
   {
     "id": 1080,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The provided code has a method named 'setEstimatedBandwidth' with a long name, but more importantly, the class 'sage.media.format.ContainerFormat' is used within this method, which indicates a potential 'feature envy' smell. However, the most significant issue is the sheer length of the method, which contains over 300 lines of code, making it difficult to maintain and understand."
   },
   {
     "id": 1085,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The interface ParSeqRestliClient has multiple unrelated functionalities, such as sending requests, creating tasks, and retrieving metrics, which violates the Single Responsibility Principle (SRP). This makes it difficult to maintain and extend, characteristic of a 'God Class' or 'Blob' code smell."
   },
   {
     "id": 1093,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The SequenceInputStream class has multiple responsibilities, including managing multiple input streams, reading data, and handling errors, which is a characteristic of a 'blob' code smell. The class has a large number of methods and attributes, making it difficult to maintain and extend."
   },
   {
     "id": 1095,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The Sync class has a large number of methods and attributes, managing multiple, unrelated functionalities, which is a characteristic of a God Class (Blob) code smell. This class accumulates too many responsibilities, violating the Single Responsibility Principle (SRP)."
   },
   {
     "id": 1096,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The provided code has a method named 'updateExternalSubs' with a large number of lines (around 200 lines), which is a sign of a long method. This can make the code harder to understand and maintain."
   },
   {
     "id": 1102,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class accumulates multiple, unrelated constants for XPath data types, violating the Single Responsibility Principle (SRP) and exhibiting characteristics of a God Class (Blob). This makes it difficult to maintain and extend, as changes to one constant may inadvertently affect others."
   },
   {
     "id": 1107,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The CertificatePolicyMap class has multiple responsibilities, such as managing CertificatePolicyId's, encoding and decoding, and providing a printable representation, which is a characteristic of a 'blob' code smell. The class has a moderate number of methods and attributes, but its primary issue is its lack of a single, well-defined responsibility."
   },
   {
     "id": 1108,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class has a large number of methods and attributes, managing multiple, unrelated functionalities, and has high dependency on other classes, making it difficult to maintain and extend."
   },
   {
     "id": 1116,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class AttList has a large number of methods and attributes, managing multiple, unrelated functionalities, such as attribute lookup, namespace management, and DOM helper interactions, making it a clear example of a God Class (Blob)."
   },
   {
     "id": 1126,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class has a single responsibility, handling a specific event, but it's a nested class within another class, which could be a sign of a God Class. However, the code snippet is relatively small and focused, so the severity is minor."
   },
   {
     "id": 1134,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class has a single responsibility, managing a 'template' string, but it has two methods, which is a minor indication of a 'blob' code smell. However, the class is relatively simple and focused, so the severity is minor."
   },
   {
     "id": 1136,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The LaunchCommandHandler class has multiple unrelated functionalities, such as calculating the command line length, modifying launch arguments, and constructing launch commands, which violates the Single Responsibility Principle (SRP). This accumulation of responsibilities makes the class difficult to maintain and extend."
   },
   {
     "id": 1138,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The Activator class has multiple unrelated functionalities, such as managing plugin lifecycle, handling HDInsight loader initialization, and logging, which violates the Single Responsibility Principle (SRP). This accumulation of responsibilities makes the class difficult to maintain and extend."
   },
   {
     "id": 1141,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The InputValidator class has multiple responsibilities, including managing borders, tooltips, and focus, which makes it a 'God Class' or 'Blob'. It also has a large number of methods and attributes, violating the Single Responsibility Principle (SRP)."
   },
   {
     "id": 1148,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The NodeAction class has multiple unrelated functionalities, such as managing listeners, firing events, and handling node associations, which makes it difficult to maintain and extend. This class accumulates too many responsibilities, violating the Single Responsibility Principle (SRP)."
   },
   {
     "id": 1153,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The Builder class has multiple unrelated functionalities, such as setting invocation callbacks and copying values from another instance, which violates the Single Responsibility Principle (SRP). It also has a large number of methods and attributes, making it a prime candidate for the 'God Class (Blob)' code smell."
   },
   {
     "id": 1159,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The Builder class has multiple responsibilities, as indicated by the copy method, which populates the builder with values from the given instance, suggesting a 'blob' code smell. However, the class is not excessively large or complex, which is why the severity is minor."
   },
   {
     "id": 1161,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class Segment has a single responsibility, which is to hold and provide the segment type value. It has a simple constructor and a getter method, indicating a clean and focused design."
   },
   {
     "id": 1163,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class Builder has a large number of methods and attributes, managing multiple, unrelated functionalities within a single class, violating the Single Responsibility Principle (SRP). This indicates a 'God Class' or 'Blob' code smell, which can make the code difficult to maintain and extend."
   },
   {
     "id": 1166,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class ListWorkRequestErrorsConverter has multiple unrelated functionalities, such as request interception, response transformation, and validation, which violates the Single Responsibility Principle (SRP). This complexity makes it difficult to maintain and extend the class."
   },
   {
     "id": 1168,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class DuplicatableProgressTrackingInputStream has a single responsibility, but it has a large number of dependencies and manages multiple functionalities, such as progress tracking and duplicating input streams, which is a characteristic of a 'blob' code smell."
   },
   {
     "id": 1174,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class has a large number of attributes and methods, managing multiple, unrelated functionalities, such as announcement details, services, affected regions, and lifecycle state, which indicates a high accumulation of responsibilities."
   },
   {
     "id": 1184,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class accumulates multiple responsibilities, such as building request parameters and managing the body, which is a characteristic of a God Class or Blob. However, the code is relatively simple and does not exhibit extreme complexity or tight coupling, making the severity minor."
   },
   {
     "id": 1187,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The provided code snippet contains multiple methods with long names and complex logic, indicating a high likelihood of the long method smell. This can lead to code maintainability issues and make it harder to understand the code's functionality."
   },
   {
     "id": 1196,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The CompilationIdentifier interface has multiple responsibilities, including providing a unique identifier, handling verbosity levels, and creating string representations, which makes it a candidate for the 'Blob' code smell. Although it's an interface, its methods and attributes suggest a single class trying to manage multiple functionalities."
   },
   {
     "id": 1201,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class MonoWhen has multiple responsibilities, including managing multiple sources, handling errors, and coordinating subscriptions, indicating a high degree of complexity and a potential violation of the Single Responsibility Principle (SRP). The class has a large number of methods and attributes, further contributing to its 'blob' characteristics."
   },
   {
     "id": 1204,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The Connection interface has a large number of methods (24) and attributes, managing multiple, unrelated functionalities such as connection properties, channel management, and exception handling, which indicates a 'blob' code smell. This excessive complexity makes it difficult to maintain and extend the class."
   },
   {
     "id": 1214,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class DefaultSdk has a large number of attributes (5) and methods (7), and it manages multiple, unrelated functionalities such as getting Android version, checking if the Java version is supported, and downloading dependencies, which violates the Single Responsibility Principle (SRP). This complexity makes it difficult to maintain and extend the class."
   },
   {
     "id": 1221,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class HostsSupportImpl has multiple unrelated functionalities, such as managing a storage directory string, which is a characteristic of a God Class (Blob). It also has a large number of attributes and methods, making it difficult to maintain and extend."
   },
   {
     "id": 1228,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class has multiple attributes (package_name and package_id) and a constructor, accumulating responsibilities, which is a characteristic of a 'blob' code smell. However, it does not have a large number of methods, so the severity is minor."
   },
   {
     "id": 1231,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided interface Type has a single method, getName(), indicating a clear and focused responsibility. It does not accumulate multiple responsibilities or manage unrelated functionalities, making it not a 'God Class (Blob)' code smell."
   },
   {
     "id": 1241,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class TestConfiguration has multiple unrelated functionalities, such as managing test suites, adding test cases, and activating tests, which violates the Single Responsibility Principle (SRP). It also has a large number of methods and attributes, indicating a high accumulation of responsibilities."
   },
   {
     "id": 1242,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The SignupController class has multiple unrelated functionalities, such as rendering a signup form, processing form submissions, and handling API requests, which is a characteristic of a God Class or Blob. This class also has a large number of methods and attributes, making it difficult to maintain and extend."
   },
   {
     "id": 1248,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class LocksFeatureUI has a large number of methods and attributes, managing multiple, unrelated functionalities such as UI initialization, data refresh, and session state handling, which violates the Single Responsibility Principle (SRP)."
   },
   {
     "id": 1253,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class JPASerializeComplex has multiple unrelated functionalities, such as serialization, property determination, and content type management, which makes it difficult to maintain and extend. It also has a large number of methods and attributes, violating the Single Responsibility Principle (SRP)."
   },
   {
     "id": 1255,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class GrailsProcessStackTracer has multiple unrelated functionalities, such as process management, execution of system commands, and thread handling, which makes it a 'blob' with high complexity and difficulty in maintenance."
   },
   {
     "id": 1259,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class _BuildAgentUpdate_Flag has a large number of static fields and methods, managing multiple, unrelated functionalities, such as flag creation and instance mapping, which is a characteristic of a God Class (Blob). This makes it difficult to maintain and extend, violating the Single Responsibility Principle (SRP)."
   },
   {
     "id": 1262,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The ServletConstants class has multiple unrelated functionalities, such as defining HTML page headers, servlet locations, and authentication headers, which is a characteristic of a God Class (Blob). This class is accumulating too many responsibilities, violating the Single Responsibility Principle (SRP)."
   },
   {
     "id": 1268,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class has multiple unrelated functionalities, such as managing tree viewer, handling double clicks, and providing content, which makes it difficult to maintain and extend. It also has a large number of methods and attributes, violating the Single Responsibility Principle."
   },
   {
     "id": 1272,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class WrongWeakHashMap has a large number of methods and attributes, managing multiple, unrelated functionalities, such as scanning WeakHashMap instances, preparing the rule, and generating HTML descriptions, which is a clear indication of a God Class (Blob) code smell."
   },
   {
     "id": 1275,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class has a large number of methods (12) and attributes (2), managing multiple, unrelated functionalities, such as getting and setting configuration settings, which is a clear indication of a God Class (Blob). The class also has a high dependency on other classes, making it difficult to maintain and extend."
   },
   {
     "id": 1278,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The Undertow class has a large number of attributes and methods, managing multiple, unrelated functionalities, such as configuration settings and access log properties, which violates the Single Responsibility Principle (SRP). This makes it difficult to maintain and extend the class."
   },
   {
     "id": 1292,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class has multiple responsibilities, including managing an array of updates and serializing itself to XML, which is a clear indication of a God Class or Blob. The class has a large number of methods and attributes, and it is difficult to maintain and extend due to its poor cohesion and high dependency on other classes."
   },
   {
     "id": 1294,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided interface has a single method and no attributes, adhering to the Single Responsibility Principle (SRP) and not exhibiting characteristics of a God Class (Blob). It appears to be a well-defined and focused interface."
   },
   {
     "id": 1302,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided code snippet is an interface with a single method, which does not accumulate multiple responsibilities or manage unrelated functionalities, thus not exhibiting characteristics of a 'God Class (Blob)' code smell."
   },
   {
     "id": 1305,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class has multiple responsibilities, such as managing the HttpServletResponse delegate and extracting headers, which makes it a candidate for the 'blob' code smell. This class has a large number of methods and attributes, violating the Single Responsibility Principle (SRP)."
   },
   {
     "id": 1306,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The CountPageable class has multiple methods and attributes, managing multiple functionalities within a single class, which is a characteristic of a 'blob' code smell. However, the class is relatively small and focused on a specific responsibility, making the severity minor."
   },
   {
     "id": 1311,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The ServletEndpointDiscoverer class has multiple responsibilities, including endpoint exposure, creation, and operation management, which is a characteristic of a 'blob' code smell. This class also has a large number of methods and attributes, further indicating a 'blob' code smell."
   },
   {
     "id": 1314,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The provided code contains a long method, specifically the APIRequestGet class, which has a large number of methods (over 30) that perform specific tasks. This can make the code harder to maintain and understand, as each method needs to be examined separately."
   },
   {
     "id": 1316,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The interface has a single method, but it's managing a specific responsibility related to certificate chain pinning, which could be considered a single responsibility. However, the method signature and the responsibility it encapsulates are somewhat complex, which might be a sign of a minor code smell."
   },
   {
     "id": 1321,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class CompiledForeachRangeArgs has multiple responsibilities, managing the start, end, and step of a loop, as well as initialization statements, indicating a potential 'blob' code smell. However, the class is abstract and generated by AutoValue, suggesting a design choice rather than a severe code smell."
   },
   {
     "id": 1324,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The UnknownTypeRef interface has a single method, but it's an extension of TypeRef and seems to be overriding a method, which might indicate a larger responsibility. However, the code snippet itself does not exhibit a 'blob' characteristic, but it's an interface, and interfaces in general tend to have a single responsibility, so the severity is minor."
   },
   {
     "id": 1330,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The GerritOptions class has multiple unrelated functionalities, such as validating Gerrit Change-ids, creating Gerrit APIs, and handling credentials, which indicates a God Class (Blob) code smell. This class is accumulating too many responsibilities, making it difficult to maintain and extend."
   },
   {
     "id": 1339,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The StfdTranslator class has a single method, but it delegates its responsibility to another class (UnknownGenerator), which indicates a potential 'blob' code smell. However, the responsibility of the class is still somewhat contained, which is why the severity is minor."
   },
   {
     "id": 1349,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The BytecodeClassLoader class has a single responsibility, which is loading classes from bytecode, but it has two methods, which could be considered a minor code smell. However, the class itself is relatively simple and focused on a single task, so the severity is minor."
   },
   {
     "id": 1354,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The AbstractJudgment class has multiple injected dependencies and a static method, indicating it accumulates responsibilities and manages unrelated functionalities, characteristic of a 'Blob' code smell."
   },
   {
     "id": 1356,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The Event class has multiple responsibilities, managing different types of events and handling exceptions, which is a characteristic of a 'blob' code smell. Although it's not extremely large, it still accumulates too many responsibilities, making it a minor code smell."
   },
   {
     "id": 1359,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class has a large number of methods (11) and attributes (6), indicating a high level of complexity and a potential violation of the Single Responsibility Principle (SRP)."
   },
   {
     "id": 1360,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class SplitRulesetNodes has multiple unrelated functionalities, such as managing the visit controller, handling CSS rulesets, and executing a compiler pass, which makes it difficult to maintain and extend. It also has a large number of methods and attributes, violating the Single Responsibility Principle (SRP)."
   },
   {
     "id": 1370,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class CDeleteBookmarkAction has multiple responsibilities, managing the action's title, provider, and rows, which is a sign of a 'blob' code smell. Although it only has a few methods, its complexity and dependencies make it difficult to maintain and extend."
   },
   {
     "id": 1372,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The CondSetOp class has multiple responsibilities, managing a condition flag and emitting code for a specific operation, which is a characteristic of a 'blob' code smell. Although it's not extremely large, it still accumulates more than a single responsibility, making it a minor code smell."
   },
   {
     "id": 1378,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class AMD64DecrementingSafepointCheckOp has a single method emitCode, but it is managing a specific functionality related to decrementing a safepoint check, which is a single responsibility. However, it has a dependency on other classes and options, making it a minor case of the 'blob' code smell."
   },
   {
     "id": 1383,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The Customer388 class has multiple responsibilities, such as storing data and providing a toString method, which is a characteristic of a God Class or Blob. However, the class is relatively simple and does not exhibit extreme complexity, making the severity minor."
   },
   {
     "id": 1395,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class AMD64IndirectCallOp has multiple unrelated functionalities, such as managing a metaspace method, emitting code, and verifying the instruction, which violates the Single Responsibility Principle (SRP). This accumulation of responsibilities makes the class a 'God Class' or 'Blob'."
   },
   {
     "id": 1399,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "This class has multiple unrelated functionalities, such as method overriding, and a large number of methods and attributes, violating the Single Responsibility Principle (SRP)."
   },
   {
     "id": 1403,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class has a large number of methods and attributes, managing multiple, unrelated functionalities, which is a characteristic of a God Class (Blob). The class also has a high dependency on other classes, making it difficult to maintain and extend."
   },
   {
     "id": 1407,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class HttpExchangeTracer has a large number of methods and attributes, managing multiple, unrelated functionalities, such as tracing, filtering, and post-processing, which indicates a 'blob' code smell. This complexity makes it difficult to maintain and extend the class, violating the Single Responsibility Principle (SRP)."
   },
   {
     "id": 1409,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The class has a single constructor and no methods or attributes, indicating it does not accumulate responsibilities or manage multiple functionalities."
   },
   {
     "id": 1413,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class has a single responsibility, but its name and the presence of a constructor with a dependency suggest it may be accumulating responsibilities or managing multiple functionalities in the future. However, without more context, it's difficult to assess its current state accurately."
   },
   {
     "id": 1417,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class has a single method and no attributes, but it's a service class with a repository dependency, which might indicate a 'blob' code smell. However, without more context, it's difficult to determine the full scope of its responsibilities."
   },
   {
     "id": 1428,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class has a single method, but its name and the presence of a repository suggest it's intended to manage customer data, accumulating a single responsibility. However, the lack of methods and attributes makes it a minor case of the 'blob' smell."
   },
   {
     "id": 1435,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class has a single responsibility, but its name and the presence of a constructor suggest it might be accumulating responsibilities, although it's currently empty. This could be a precursor to a 'blob' code smell if more methods and attributes are added in the future."
   },
   {
     "id": 1439,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class Customer1953 has a large number of responsibilities, including managing entity data, providing a constructor, and overriding the toString method, which is a characteristic of a 'blob' code smell. However, it does not have a large number of methods, so the severity is minor."
   },
   {
     "id": 1441,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The BindableSolrParameter class accumulates multiple responsibilities, including managing an index, value, and boost, which could be separate classes. However, the class is not overly complex, and the responsibilities are somewhat related, making it a minor instance of the 'blob' code smell."
   },
   {
     "id": 1443,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class ConstShuffleBytesOp has multiple responsibilities, managing the result, source, and selector, which are unrelated functionalities. It also has a large number of attributes and methods, indicating a potential 'God Class' (Blob) code smell."
   },
   {
     "id": 1460,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The PushCommand class has multiple responsibilities, including managing direction, upsert, and values, which are unrelated functionalities. It also has a large number of methods and attributes, violating the Single Responsibility Principle (SRP)."
   },
   {
     "id": 1462,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class has multiple responsibilities, such as managing type identifiers, providing constructors, and offering a getter method, which contributes to its complexity and potential for maintenance issues."
   },
   {
     "id": 1463,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The provided code has a method with a large number of lines, exceeding the typical 10-20 lines per method. This can indicate a need for refactoring to improve maintainability and readability."
   },
   {
     "id": 1469,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class Z has multiple methods with different access modifiers and return types, indicating it may be accumulating too many responsibilities. However, the methods are relatively simple, so the severity is minor."
   },
   {
     "id": 1474,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class CollectionJson has a large number of methods and attributes, managing multiple, unrelated functionalities such as handling links, items, queries, template, and error, which is a characteristic of a God Class (Blob). This class violates the Single Responsibility Principle (SRP) and has poor cohesion, making it difficult to maintain and extend."
   },
   {
     "id": 1475,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The RewriteResult class accumulates multiple responsibilities, including data storage (bytes and bits), and a complex method (summarize) that performs multiple operations, violating the Single Responsibility Principle (SRP). This makes it difficult to maintain and extend."
   },
   {
     "id": 1484,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "This interface is a simple abstraction for a SessionFactoryLocator, it does not accumulate multiple responsibilities, and its purpose is clear and well-defined."
   },
   {
     "id": 1488,
     "model": "llama3.1:8b",
     "prompt_strategy": "Casual",
-    "smell": null,
-    "severity": null,
-    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class has multiple unrelated functionalities, such as retry handling and recovery callback management, which is a clear indication of a God Class or Blob. The class has a large number of methods and attributes, making it difficult to maintain and extend."
   }
 ]

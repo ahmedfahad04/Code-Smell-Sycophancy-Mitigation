@@ -1,0 +1,1402 @@
+[
+  {
+    "id": 532,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method has multiple responsibilities, calculating mapIdLength and then adding sizes for multiple variables, making it hard to understand and maintain. It also has a high complexity due to the repeated use of WritableUtils.getVIntSize."
+  },
+  {
+    "id": 552,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method has multiple responsibilities, including retrieving a mapping from a cache, handling cache misses, and recursively calling itself. Its complexity and length make it hard to understand and maintain."
+  },
+  {
+    "id": 565,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method DynamicExpression is excessively long with multiple tasks and responsibilities, making it hard to understand and maintain. It also has high complexity due to nested structures and exception handling."
+  },
+  {
+    "id": 567,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has multiple responsibilities, including path validation, absolute path conversion, and file existence check, making it hard to understand and maintain. Although it's not excessively long, its complexity due to nested structures and multiple tasks makes it a minor code smell."
+  },
+  {
+    "id": 571,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The equals method is excessively long with multiple checks and conditional statements, making it hard to understand and maintain. It performs multiple tasks, such as comparing class types, instance variables, and their equality, which is a clear indication of a Long Method code smell."
+  },
+  {
+    "id": 572,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has multiple responsibilities, including calling the superclass method and handling a specific condition, making it slightly complex and hard to understand."
+  },
+  {
+    "id": 574,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method performs multiple tasks, including initialization check, map creation or clearing, and data transfer, making it complex and hard to understand. Although it's not excessively long, its single responsibility is not clearly defined, making it a minor instance of the 'long method' code smell."
+  },
+  {
+    "id": 576,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing a specific task, extracting text between HTML tags, but it has a moderate level of complexity due to the conditional statement and string manipulation."
+  },
+  {
+    "id": 580,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing two tasks: calling the superclass's init method and initializing the introspector, which makes it slightly complex and not focused on a single responsibility."
+  },
+  {
+    "id": 608,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method hasAttribute is long because it performs a single task, but it does so in a way that could be considered excessive due to the error handling and the return statement, which could be extracted into a separate method for better clarity."
+  },
+  {
+    "id": 612,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method has multiple responsibilities, including signature validation, expiration time validation, and user authentication checks, making it hard to understand and maintain. It also has a high complexity due to nested conditionals and multiple return statements."
+  },
+  {
+    "id": 616,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing two distinct tasks: setting a system property and setting an internal property, which makes it slightly complex and harder to understand. However, it's not excessively long or convoluted, hence the minor severity."
+  },
+  {
+    "id": 623,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is excessively long with multiple tasks and responsibilities, making it hard to understand and maintain. It contains high complexity due to nested structures and multiple conditionals."
+  },
+  {
+    "id": 636,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "Although the method is short, it still has a single responsibility, but it might be considered minor because it's not excessively long or complex, but it's still a method with a single responsibility that could be extracted as a separate method for better understanding and maintainability."
+  },
+  {
+    "id": 640,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has multiple responsibilities, replacing a single occurrence and replacing all occurrences, which is a sign of a long method. However, the code is still relatively concise and easy to understand, hence the minor severity."
+  },
+  {
+    "id": 666,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing multiple tasks (comparing object references, checking instance type, and comparing properties) and has a moderate level of complexity due to conditional statements, but it is not excessively long."
+  },
+  {
+    "id": 678,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method performs a single task but has a while loop and conditional checks, making it slightly complex and hard to understand. However, it is not excessively long or convoluted, hence the minor severity."
+  },
+  {
+    "id": 682,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing multiple tasks, such as concatenating strings, which makes it hard to understand and maintain. It has a moderate complexity due to the number of lines and nested structures."
+  },
+  {
+    "id": 692,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing multiple tasks, specifically comparing object references, checking instance types, and comparing field values, which is a characteristic of a 'long method'. Although it's not excessively long, it's still performing multiple responsibilities."
+  },
+  {
+    "id": 696,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is performing multiple tasks, including checking, inserting, removing, and returning an element, which makes it hard to understand and maintain. It also has a high complexity due to the multiple responsibilities and conditional checks."
+  },
+  {
+    "id": 710,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method has multiple responsibilities, including calling actions and restoring stack size, which makes it hard to understand and maintain. It also has a high complexity due to nested structures."
+  },
+  {
+    "id": 712,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method has multiple responsibilities and is excessively long with many lines of code, making it hard to understand and maintain."
+  },
+  {
+    "id": 722,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method has multiple responsibilities, handling data retrieval and result handling, which makes it complex and hard to understand. It also has a high number of lines of code, making it a candidate for the 'Long Method' code smell."
+  },
+  {
+    "id": 739,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing a single task, but it's still a bit long due to the use of String.format and the inclusion of super.toString(). It's not excessively long, but it could be improved for better readability."
+  },
+  {
+    "id": 743,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method has multiple conditional checks and recursive calls, making it complex and hard to understand, with a total of 16 lines of code."
+  },
+  {
+    "id": 754,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing multiple tasks, specifically string replacement, and has a while loop with a nested while loop, indicating a high complexity. This makes it hard to understand and maintain."
+  },
+  {
+    "id": 756,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing a single task, but it has two log statements and calls another method, making it slightly complex and potentially hard to understand. However, it's not excessively long or complex, hence minor severity."
+  },
+  {
+    "id": 760,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method performs multiple tasks (logging, conditional checks, and calling another method) which makes it hard to understand and maintain. Although it's not excessively long, it has multiple responsibilities, which is a characteristic of the 'long method' code smell."
+  },
+  {
+    "id": 764,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing multiple tasks, including calculating the hash code and handling null threads, which is a characteristic of a long method. Although the method is not excessively long, it still has a moderate level of complexity due to the conditional statement."
+  },
+  {
+    "id": 768,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "This method is excessively long with multiple lines of code and performs multiple tasks, making it hard to understand and maintain."
+  },
+  {
+    "id": 772,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method performs two distinct tasks: handling null values and writing integer values, which contributes to its length and complexity. Although it's not excessively long, it's still a candidate for refactoring to improve maintainability and readability."
+  },
+  {
+    "id": 782,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing two tasks: asserting the existence of 'DeviceList' and checking its size, which could be separated into two distinct methods for better maintainability and readability."
+  },
+  {
+    "id": 804,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method has multiple tasks and responsibilities, including parsing unknown fields, reading various types of data, and updating the object's state. Its complexity and length make it hard to understand and maintain."
+  },
+  {
+    "id": 813,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has multiple responsibilities, such as extracting a value from attributes and parsing a content type to extract an encoding, which makes it complex and hard to understand. Although it is not excessively long, it still performs multiple tasks, making it a minor case of the 'long method' code smell."
+  },
+  {
+    "id": 818,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method has multiple tasks, including obtaining a logger, checking its existence, and retrieving its log level, making it excessively long and complex."
+  },
+  {
+    "id": 826,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has multiple responsibilities, such as getting a byte array from the cache and setting the position, which can be separated into distinct methods for better maintainability and readability."
+  },
+  {
+    "id": 831,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is short but has a conditional statement, which might indicate a minor code smell. However, it's not excessively long or complex, so it's not a major issue."
+  },
+  {
+    "id": 853,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method performs multiple tasks, such as handling different cases for lowerResult and upperResult, making it hard to understand and maintain. It also has a moderate level of complexity due to nested conditionals."
+  },
+  {
+    "id": 854,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method has multiple tasks such as finding the configured application, searching for a 3.0 extension, and checking the grammar of the extension, making it excessively long and complex to understand."
+  },
+  {
+    "id": 875,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing multiple tasks (creating different types of BundleEvent instances) and has a moderate level of complexity due to the switch statement, making it slightly hard to understand and maintain."
+  },
+  {
+    "id": 876,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing multiple tasks such as logging, activating a tab, selecting an item, and calling another method, which makes it hard to understand and maintain. Although it's not excessively long, it still has multiple responsibilities."
+  },
+  {
+    "id": 878,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method has multiple parameters and calls another method (prepareProxyParams) which indicates it's performing multiple tasks and has high complexity."
+  },
+  {
+    "id": 883,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method performs multiple tasks, such as retrieving a DeviceSensorValue and accessing its sensor type, making it slightly complex and hard to understand."
+  },
+  {
+    "id": 920,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method has multiple tasks or responsibilities, including token matching and state updates, which makes it hard to understand and maintain. It also has a high complexity due to its single responsibility and nested structures."
+  },
+  {
+    "id": 932,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method has multiple tasks and responsibilities, including handling different states, input processing, and error handling, making it excessively long and complex."
+  },
+  {
+    "id": 939,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method performs multiple tasks, including input validation and string concatenation, making it excessively long and complex to understand."
+  },
+  {
+    "id": 954,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing a single task, but it's a bit long due to the loop and conditional statements, making it hard to understand at a glance."
+  },
+  {
+    "id": 978,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The constructor has multiple parameters, which could be indicative of a long method, but in this case, it's a constructor with a reasonable number of dependencies. However, the constructor is still performing a single task, which is initialization, so it's not a major issue."
+  },
+  {
+    "id": 997,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing a single task, but it has multiple responsibilities due to its length and complexity, making it hard to understand and maintain. Although it's not excessively long, its complexity and multiple responsibilities classify it as a minor 'long method' code smell."
+  },
+  {
+    "id": 1016,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing two tasks: setting an extension and removing an extension, which could be simplified into two separate methods. Although it's not excessively long, it's still performing multiple tasks, making it a minor code smell."
+  },
+  {
+    "id": 1018,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing a single task, but it has multiple lines of code and a nested conditional statement, making it slightly complex and hard to understand."
+  },
+  {
+    "id": 1020,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing multiple tasks, such as handling edge cases, calculating string length, and updating the position, making it hard to understand and maintain. Although it is not excessively long, its complexity due to nested structures and multiple responsibilities justifies a minor severity level."
+  },
+  {
+    "id": 1022,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has a single responsibility, but it still performs multiple iterations over the map, which could be a sign of potential complexity. However, the method is not excessively long, and its complexity is relatively low."
+  },
+  {
+    "id": 1042,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method has multiple responsibilities, including computing and displaying the pin, updating the user data, and handling different OTP types. It also has a complex structure with nested conditionals and multiple tasks, making it hard to understand and maintain."
+  },
+  {
+    "id": 1046,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method computeBreaks has multiple responsibilities, including text rewriting and state updates, making it complex and hard to understand. Although it's not excessively long, its single responsibility is compromised, indicating a minor code smell."
+  },
+  {
+    "id": 1053,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing multiple tasks, including calling another constructor, which is a sign of a long method. Although it's not excessively long, it's still performing multiple responsibilities, making it hard to understand and maintain."
+  },
+  {
+    "id": 1055,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is excessively long with 27 lines of code and performs multiple tasks, making it hard to understand and maintain. It also has high complexity due to nested structures and multiple conditional statements."
+  },
+  {
+    "id": 1058,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method performs two tasks: reading the JSON from the request and converting it to a map. Although it's not excessively long, it has a single responsibility and could be considered a minor code smell."
+  },
+  {
+    "id": 1063,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method has multiple responsibilities, such as initializing fields, calculating average latency, and handling timestamp calculations, making it excessively long and complex."
+  },
+  {
+    "id": 1066,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is excessively long with multiple tasks such as initializing variables, creating objects, and validating ports, making it hard to understand and maintain."
+  },
+  {
+    "id": 1089,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method is short and focused on a single responsibility, it does not perform multiple tasks or have high complexity."
+  },
+  {
+    "id": 1090,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing a conditional check and branching to two different methods, indicating that it has multiple responsibilities. Although it is not excessively long, it still has a moderate level of complexity due to the conditional check."
+  },
+  {
+    "id": 1112,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has multiple responsibilities, including calling another method, and has a limited number of lines, but its focus on a single task is somewhat compromised by its parameters and method calls."
+  },
+  {
+    "id": 1114,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is very short and doesn't perform multiple tasks, but it's still a method and could be considered 'long' due to its single responsibility, although it's a very simple one. However, considering the context, it's more accurate to classify it as minor."
+  },
+  {
+    "id": 1121,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has multiple responsibilities, including checking if the rest client is null and delegating the request to it, which makes it slightly complex and hard to understand."
+  },
+  {
+    "id": 1122,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method updateState is excessively long with multiple tasks and responsibilities, making it hard to understand and maintain. It performs tasks such as updating subject DN, public key, subject key identifier, and policy state variables, among others."
+  },
+  {
+    "id": 1131,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method is short and focused on a single responsibility, making it easy to understand and maintain."
+  },
+  {
+    "id": 1133,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "Although the method is not excessively long, it still performs a single task, which is to delegate to its superclass, but could be simplified further."
+  },
+  {
+    "id": 1142,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method performs multiple tasks, including converting regionId to lowercase, checking if it's a valid region, and setting the endpoint. Although it's not excessively long, it has multiple responsibilities, which makes it hard to understand and maintain."
+  },
+  {
+    "id": 1145,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "This method is performing multiple tasks, such as setting a property and adding to a collection, which contributes to its complexity and length."
+  },
+  {
+    "id": 1157,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method has multiple responsibilities, including building a request object, iterating over a record iterator, and printing user information, which makes it hard to understand and maintain. The method also has a high complexity due to its length and nested structures."
+  },
+  {
+    "id": 1164,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing a single task, but it has multiple lines of code and is setting an instance variable, which could be considered a minor code smell."
+  },
+  {
+    "id": 1172,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing multiple tasks, setting the 'nodePoolId' property and adding it to the '__explicitlySet__' collection, which can be considered a minor code smell due to its single responsibility but slightly complex behavior."
+  },
+  {
+    "id": 1179,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing multiple tasks, setting a property and adding an explicit set value, which is a characteristic of a 'long method'. However, the method is not excessively long with too many lines of code, which is why the severity is minor."
+  },
+  {
+    "id": 1181,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing two tasks: building the request without invocation callback and then setting the invocation callback, which is a sign of multiple responsibilities. Although it's not excessively long, it's still a minor code smell due to its dual responsibility."
+  },
+  {
+    "id": 1183,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing multiple tasks, including checking if severe logging is enabled and logging the message, which contributes to its length and complexity."
+  },
+  {
+    "id": 1188,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method has multiple tasks, including request conversion, invocation, and error handling, making it hard to understand and maintain. Its complexity is high due to nested structures and conditional logic."
+  },
+  {
+    "id": 1191,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "This method is excessively long with 44 lines of code, performing multiple tasks, and having high complexity due to nested structures, making it hard to understand and maintain."
+  },
+  {
+    "id": 1198,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has multiple responsibilities, initializing the interface instance and creating a service description, which is a characteristic of a 'long method'. Although it's not excessively long, its single responsibility is still somewhat ambiguous."
+  },
+  {
+    "id": 1203,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing a single task, but it has a conditional statement (Objects.requireNonNull) and a method call (sslContext), which could be considered a minor code smell due to its brevity and simplicity."
+  },
+  {
+    "id": 1208,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is short but has a conditional statement and a method call, which can make it slightly harder to understand and maintain. However, it's not excessively long or complex, hence the minor severity."
+  },
+  {
+    "id": 1211,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method has multiple responsibilities, including checking the controller, finishing the activity, and handling different lifecycle stages, making it hard to understand and maintain. It also has a nested switch statement, contributing to its complexity."
+  },
+  {
+    "id": 1213,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing a single task, but its name and structure suggest it could be simplified or broken down further, making it harder to understand and maintain."
+  },
+  {
+    "id": 1216,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method has multiple tasks, such as getting a native motion event, validating indices and history positions, and converting native pointer coordinates, making it excessively long and complex."
+  },
+  {
+    "id": 1227,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing multiple tasks, such as collecting debug information and formatting a string, which contributes to its length and complexity."
+  },
+  {
+    "id": 1236,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided code snippet is a simple constructor method with a single responsibility, initializing the object's properties. It does not exhibit any characteristics of a 'Long Method' code smell."
+  },
+  {
+    "id": 1239,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing two tasks: checking if the value is null and appending the value to the query builder, which is a slight indicator of multiple responsibilities. However, the method is not excessively long and the complexity is relatively low."
+  },
+  {
+    "id": 1244,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing multiple tasks, such as verifying the Java install and the Grails install, which makes it hard to understand and maintain. Although it's not excessively long, its complexity due to nested responsibilities makes it a minor code smell."
+  },
+  {
+    "id": 1246,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is short but has a single responsibility which is to call the superclass method, it could be further simplified or broken down into smaller methods for better readability and maintainability."
+  },
+  {
+    "id": 1251,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method performs multiple tasks such as setting the rule, priority, and scheduling the job, making it slightly complex and hard to understand."
+  },
+  {
+    "id": 1257,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing multiple tasks: checking the status code, checking the authentication provider, and refreshing the token. Although it's not excessively long, it's still performing multiple responsibilities, making it a minor code smell."
+  },
+  {
+    "id": 1263,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is excessively long with 73 lines of code, performing multiple tasks and having high complexity due to nested structures, making it hard to understand and maintain."
+  },
+  {
+    "id": 1285,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing multiple tasks such as input validation and object initialization, which is a characteristic of a 'long method'. Although it's not excessively long, it's still a minor code smell due to its single responsibility."
+  },
+  {
+    "id": 1289,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has multiple parameters and performs a single task, which is adding a constant set to metadata. Although it's not excessively long, it still has a high number of parameters, making it hard to understand and maintain."
+  },
+  {
+    "id": 1296,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing a single task, but it's still a bit long with only 3 lines of code, and it's hard to understand its purpose without additional context."
+  },
+  {
+    "id": 1298,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has multiple tasks, such as handling project URI, artifact ID, and query string arguments, which makes it complex and hard to understand. It also has a high number of lines of code, contributing to its length."
+  },
+  {
+    "id": 1301,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has a single responsibility, but it performs a UI-related task and has a moderate level of complexity due to the nested Runnable structure. The method is not excessively long, but it could be improved by breaking it down into smaller, more focused methods."
+  },
+  {
+    "id": 1318,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is excessively long with multiple tasks, performing attribute retrieval and filtering, and has high complexity due to nested structures."
+  },
+  {
+    "id": 1328,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing multiple tasks, adding multiple fields to the request, which is a characteristic of a 'long method' code smell. Although it's not excessively long, it's still performing a single responsibility, which is a minor code smell."
+  },
+  {
+    "id": 1335,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has multiple responsibilities, including initialization of instance variables and calling another method (decodeParams()), which makes it slightly complex and harder to understand."
+  },
+  {
+    "id": 1336,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is excessively long with multiple nested loops and conditionals, making it hard to understand and maintain. It performs multiple tasks, such as searching for executable files and throwing an exception if not found."
+  },
+  {
+    "id": 1346,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing multiple tasks, including creating a JString, calling a method, and handling different parameters, making it complex and difficult to understand. Although it's not excessively long, its complexity and multiple responsibilities justify a minor severity level."
+  },
+  {
+    "id": 1362,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing multiple tasks, such as iterating over a stream, mapping, filtering, and finding the first non-null result, which makes it hard to understand and maintain. Although it's not excessively long, its complexity due to nested structures makes it a candidate for refactoring."
+  },
+  {
+    "id": 1365,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing a single task, but it's not clear if it's the most concise way to do so, as it's simply delegating to another method without any additional logic."
+  },
+  {
+    "id": 1367,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided code snippet is a constructor for a class, and it only initializes instance variables, which is a concise and straightforward operation."
+  },
+  {
+    "id": 1375,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method has multiple responsibilities, including invalidating objects, handling scope management, and logging, making it excessively long and complex."
+  },
+  {
+    "id": 1381,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method has multiple responsibilities, including checking the cache, ensuring the service is created, and handling exceptions, making it complex and hard to understand. Its length and nested structures contribute to its high complexity."
+  },
+  {
+    "id": 1385,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing a simple conditional check and returning a value, which is a single responsibility, but it could be further simplified or extracted into a separate method for clarity and maintainability."
+  },
+  {
+    "id": 1390,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method has multiple responsibilities, including determining the result kind, creating a new variable, and appending an operation to the LIRGen, making it excessively long and complex."
+  },
+  {
+    "id": 1406,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing two different checks based on the cached language status, which indicates it's handling multiple responsibilities. Although it's not excessively long, it's still a candidate for refactoring to improve readability and maintainability."
+  },
+  {
+    "id": 1437,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing multiple tasks, such as retrieving class name and method signature, and concatenating them into a string, which is a characteristic of a long method."
+  },
+  {
+    "id": 1445,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method mT__60 has multiple lines of code and performs a specific task, which is to match the string 'kwp3' and update the parser state. Its complexity and length make it hard to understand and maintain."
+  },
+  {
+    "id": 1458,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is performing multiple tasks, including creating a factory bean, setting properties, and returning a container object, which makes it hard to understand and maintain. It also has a high complexity due to its length and nested structures."
+  },
+  {
+    "id": 1467,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method performs multiple tasks, including data transformation and size calculation, which is a sign of a long method. Although the code is concise, it still has a single responsibility, making it a minor case of the long method smell."
+  },
+  {
+    "id": 1477,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is excessively long with multiple tasks and has high complexity due to nested structures, making it hard to understand and maintain."
+  },
+  {
+    "id": 1480,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is excessively long with only a few lines of code, performing multiple tasks such as function creation and method invocation, making it hard to understand and maintain."
+  },
+  {
+    "id": 1492,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method performs a single task, but its length and complexity are relatively high due to the use of a nested library function, making it slightly harder to understand and maintain."
+  },
+  {
+    "id": 1493,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is excessively long with multiple tasks, performing iteration and conditional checks, making it hard to understand and maintain. It also has high complexity due to nested structures."
+  },
+  {
+    "id": 1496,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method has multiple responsibilities, including creating ServerHttpRequest and ServerHttpResponse objects, handling the request, and catching exceptions, making it hard to understand and maintain. The method is also excessively long with 7 lines of code."
+  },
+  {
+    "id": 1499,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method has multiple responsibilities, including handling different method invocations, transaction management, and proxy creation, making it excessively long and complex to understand."
+  },
+  {
+    "id": 1505,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing multiple tasks, such as constructing the exception message and initializing instance variables, which contributes to its complexity and length."
+  },
+  {
+    "id": 1510,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method is short and only performs a single task, which is to return a field. It does not exhibit the characteristics of a 'long method'."
+  },
+  {
+    "id": 1514,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method has multiple tasks and responsibilities, including determining the name of the object and property, retrieving errors, and handling different cases for the expression. The method's complexity and length make it hard to understand and maintain."
+  },
+  {
+    "id": 1518,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing multiple tasks, such as creating a map, putting values, creating a HeaderParameters object, and returning a JwtHeader object, which contributes to its complexity and length."
+  },
+  {
+    "id": 1523,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has multiple responsibilities, such as traversing the parent hierarchy and checking the class type, which makes it hard to understand and maintain. Although it's not extremely long, its complexity due to nested structures (while loop) justifies a minor severity level."
+  },
+  {
+    "id": 1527,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing multiple tasks, such as retrieving methods and formatting them, which contributes to its length and complexity."
+  },
+  {
+    "id": 1533,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing two distinct tasks: formatting the model and cleaning up the model, which are two separate responsibilities. This makes the method hard to understand and maintain."
+  },
+  {
+    "id": 1539,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing two tasks: creating a Ciphertext object and adding context to it, which is a single responsibility but has a minor complexity due to the conditional statement."
+  },
+  {
+    "id": 1544,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has a single responsibility, but it's still quite long and could be broken down into smaller, more manageable pieces. It has a clear and simple structure, but its length makes it slightly harder to understand and maintain."
+  },
+  {
+    "id": 1556,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method performs two tasks: extracting the substring and calling another method, which is a sign of a method with multiple responsibilities. Although the code is not excessively long, it has a moderate level of complexity due to the conditional statement."
+  },
+  {
+    "id": 1557,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has multiple responsibilities, setting an argument and a field, which can be separated into two distinct methods for better readability and maintainability."
+  },
+  {
+    "id": 1562,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing multiple tasks, such as string concatenation and returning a string, which makes it complex and hard to understand. However, it is not excessively long, so the severity is minor."
+  },
+  {
+    "id": 1578,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing two tasks: comparing the URI scheme and checking the trust alias, which could be extracted into separate methods for better clarity and maintainability."
+  },
+  {
+    "id": 1583,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has multiple responsibilities, including setting properties and logging a message, which makes it hard to understand and maintain. Although it's not excessively long, its complexity due to conditional logging makes it a minor code smell."
+  },
+  {
+    "id": 1589,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has multiple responsibilities, including setting exchange and virtual host names, and retrieving machine and shell environment information. Although it is not excessively long, it still performs multiple tasks, making it a minor instance of the 'long method' code smell."
+  },
+  {
+    "id": 1593,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is excessively long with multiple tasks and responsibilities, making it hard to understand and maintain. It performs multiple tasks such as building a key, retrieving a property, checking for environment variables, and logging, which is a clear indication of a Long Method code smell."
+  },
+  {
+    "id": 1609,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing multiple tasks, creating a new object and calling another method, which makes it slightly complex and hard to understand. However, the code is still relatively short and easy to follow, hence the minor severity."
+  },
+  {
+    "id": 1614,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method containsDownEntity is performing a single task, but it has a conditional statement and a loop, making it slightly complex and hard to understand. However, the complexity is not extremely high, hence the minor severity."
+  },
+  {
+    "id": 1616,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method has multiple tasks, such as iterating over interfaces, retrieving method metadata, and adding bean methods, making it hard to understand and maintain. Its length and complexity exceed the ideal single responsibility and conciseness standards."
+  },
+  {
+    "id": 1617,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is excessively long with multiple responsibilities, performing data compression and handling retries, making it hard to understand and maintain. It also has a high complexity due to the nested StreamUtils.retryCopy call."
+  },
+  {
+    "id": 1627,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing multiple tasks, such as checking if the holder is null, adding a chunk to the holder, and returning the response, which indicates it has multiple responsibilities. Although it's not excessively long, it's still a candidate for refactoring to improve maintainability and readability."
+  },
+  {
+    "id": 1639,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing multiple tasks such as stopping the health monitor and removing it from the map, which is a sign of a long method. Although it's not excessively long, it's still a candidate for refactoring to improve maintainability and readability."
+  },
+  {
+    "id": 1645,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing multiple tasks such as validation and writing to the protocol, which is a sign of a long method. Although it's not excessively long, its single responsibility is unclear, making it a minor case of the long method smell."
+  },
+  {
+    "id": 1647,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is performing multiple tasks, such as reading different fields from the protocol, and has a high complexity due to nested conditionals, making it hard to understand and maintain."
+  },
+  {
+    "id": 1663,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has multiple responsibilities, such as checking for null selector, handling a specific case for singly-valued rows, and returning a supplier object, which makes it hard to understand and maintain."
+  },
+  {
+    "id": 1665,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has multiple tasks (creating directories, handling exceptions, and creating a writer), which contributes to its complexity and length. Although it's not extremely long, it's still performing multiple responsibilities, making it a minor case of the 'long method' code smell."
+  },
+  {
+    "id": 1673,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is excessively long with multiple tasks and responsibilities, making it hard to understand and maintain. It also has high complexity due to nested structures and conditionals."
+  },
+  {
+    "id": 1736,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method has multiple responsibilities and performs multiple tasks, including pushing a follow, checking for failed state, and handling exceptions, making it hard to understand and maintain."
+  },
+  {
+    "id": 1743,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method has multiple responsibilities, checking for transient values and then performing a sequence feeder operation, which makes it hard to understand and maintain. The method is also excessively long with many lines of code."
+  },
+  {
+    "id": 1754,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method has multiple responsibilities and performs different tasks, such as creating a custom scope and handling different references, which makes it hard to understand and maintain."
+  },
+  {
+    "id": 1755,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method has multiple tasks, performing two separate rules (rule__MandatoryModel__Group__2__Impl and rule__MandatoryModel__Group__3) and handling exceptions, making it complex and hard to understand."
+  },
+  {
+    "id": 1761,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method has multiple nested structures (loops, conditionals) and performs a single task, which is a sign of high complexity and a potential code smell. The method is also excessively long with many lines of code, making it hard to understand and maintain."
+  },
+  {
+    "id": 1767,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has multiple responsibilities (checking for null and emptiness) and has a conditional structure, making it slightly complex and hard to understand."
+  },
+  {
+    "id": 1773,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is excessively long with multiple conditional statements and function calls, making it hard to understand and maintain. It also performs multiple tasks, such as handling different classes and checking for errors, which is a sign of a long method."
+  },
+  {
+    "id": 1802,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing a single task, but it's still a bit long due to the explicit return statement and the single responsibility of adding an attribute to the model. However, it's not excessively long or complex, so it's considered a minor issue."
+  },
+  {
+    "id": 1830,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method performs multiple tasks, including type checking and comparison of object properties, which makes it slightly complex and hard to understand. However, it's not excessively long or convoluted, hence the minor severity."
+  },
+  {
+    "id": 1839,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method has multiple responsibilities, including generating an inner interface, adding methods to it, and handling a specific condition. Its complexity and length make it hard to understand and maintain."
+  },
+  {
+    "id": 1841,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method has 10 lines of code, performing a single task, incrementing multiple variables, which is a characteristic of a 'long method'. It is hard to understand and maintain due to its excessive length."
+  },
+  {
+    "id": 1849,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing multiple tasks, such as retrieving configuration options and creating a factory, which contributes to its complexity and length."
+  },
+  {
+    "id": 1870,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing two tasks: calling the superclass method and setting the padding, which could be separated into two distinct methods for clarity and maintainability."
+  },
+  {
+    "id": 1877,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method has a large number of lines of code and performs multiple tasks, including parameter validation, creating a Disruptor reference, and configuring an endpoint, making it hard to understand and maintain."
+  },
+  {
+    "id": 1881,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method has multiple responsibilities, creating and adding multiple processors to the collection, which makes it hard to understand and maintain. The method is also excessively long with 10 lines of code, performing multiple tasks."
+  },
+  {
+    "id": 1886,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has a single responsibility, but it's performing multiple tasks, such as creating an endpoint, setting its properties, and returning it, which makes it slightly complex and hard to understand."
+  },
+  {
+    "id": 1889,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has multiple lines of code and performs a single task, which is initializing the parent class with a custom message, but it could be broken down into smaller methods for better readability and maintainability."
+  },
+  {
+    "id": 1891,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing multiple tasks, such as setting instance variables and handling security, which is a sign of a method with multiple responsibilities. Although it's not extremely long, it's still a bit complex and could be broken down into smaller, more focused methods."
+  },
+  {
+    "id": 1893,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing multiple tasks, such as concatenating strings and accessing object properties, which contributes to its length and complexity."
+  },
+  {
+    "id": 1905,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is excessively long with multiple tasks, performing byte array operations and throwing an exception, making it hard to understand and maintain."
+  },
+  {
+    "id": 1907,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is excessively long with only one line of code, but it's calling another method with multiple responsibilities. This suggests that the method is performing multiple tasks or having multiple responsibilities, which is a characteristic of a 'long method' code smell."
+  },
+  {
+    "id": 1929,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method has multiple responsibilities, including iterating over exclude rules, formatting output, and handling different configuration scenarios, making it hard to understand and maintain. The method is also excessively long with 14 lines of code, contributing to its high complexity."
+  },
+  {
+    "id": 1931,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has multiple responsibilities by adding three different alert properties, which could be extracted into separate methods for better maintainability and understandability."
+  },
+  {
+    "id": 1933,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is short, but it still performs a single task, which is setting the tmfe value based on the input. However, the method could be further simplified by removing the conditional statement."
+  },
+  {
+    "id": 1940,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing a single task, but it has a moderate number of lines of code and a simple loop, which could be a sign of a potential issue if the method grows in complexity."
+  },
+  {
+    "id": 1951,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is excessively long with multiple tasks, including data collection and printing, making it hard to understand and maintain. It also has high complexity due to nested structures."
+  },
+  {
+    "id": 1953,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided constructor is short and focused on a single responsibility, setting the properties of the RemoteAmbariCluster object. It does not exhibit characteristics of a code smell such as excessive length or complexity."
+  },
+  {
+    "id": 1967,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Positive",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing a single task, but it has a nested structure and a try-catch block, which makes it slightly complex and hard to understand. However, it's not excessively long, so it's considered a minor code smell."
+  }
+]
