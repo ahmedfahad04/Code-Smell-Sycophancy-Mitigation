@@ -1,0 +1,1402 @@
+[
+  {
+    "id": 533,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `writeLength` accesses and relies on external classes like `Text` and `WritableUtils`, which is a sign of Feature Envy. This suggests the method should be refactored to reduce dependencies on other classes."
+  },
+  {
+    "id": 553,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method accesses and modifies external data from 'knownMappings', indicating Feature Envy, as it relies on another class's state rather than its own. This suggests the method could be better placed elsewhere or refactored."
+  },
+  {
+    "id": 564,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method heavily relies on external classes like jjtree and token consumption, suggesting it should be refactored to focus on its own class's data if available."
+  },
+  {
+    "id": 566,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method heavily relies on external classes like File and System.getProperty, suggesting it may not be focused on its own data. This could indicate a need for refactoring to improve cohesion."
+  },
+  {
+    "id": 570,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The equals method is a standard implementation for the ContextResourceLink class, comparing attributes of the same class, and does not exhibit Feature Envy as defined."
+  },
+  {
+    "id": 573,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method accesses its own 'manager' attribute and relies on the functionality of another class by calling 'registerSessionAtReplicationValve', suggesting Feature Envy. This indicates the method could be better placed in the 'ClusterManagerBase' class for better encapsulation."
+  },
+  {
+    "id": 575,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method modifies its own field and uses a parameter to set it, indicating focus on its own data and not exhibiting Feature Envy. No other code smells are evident in the provided snippet."
+  },
+  {
+    "id": 577,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method heavily relies on String's methods (indexOf and substring) rather than its own class's data, indicating it might be better suited in a String utility class."
+  },
+  {
+    "id": 581,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method is short and focused on its own class's initialization and superclass call, without accessing or relying heavily on another class's data or functions, thus not exhibiting Feature Envy or other code smells."
+  },
+  {
+    "id": 613,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The validateToken method heavily relies on external classes such as SignedJWT and Apache Shiro, performing operations on their attributes, which suggests it might be better placed in one of those classes or refactored for better encapsulation."
+  },
+  {
+    "id": 617,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method accesses and modifies data from another object (internalProperties), suggesting it may not be focused on its own class's responsibilities. This could indicate a better placement for the method in the class that manages internalProperties."
+  },
+  {
+    "id": 622,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "major",
+    "reasoning": "The constructor heavily relies on LogIterator and LogEntry classes to process log data, indicating a potential misplacement that could be better handled in another class. This misfocus on external data may lead to maintenance challenges."
+  },
+  {
+    "id": 637,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method `stacks()` uses data from its own class to create an instance of another class, but it does not heavily rely on the data or functions of another class, so it does not exhibit Feature Envy."
+  },
+  {
+    "id": 641,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method is static and operates solely on its parameters, not on another class's data. It does not exhibit Feature Envy as it focuses on its own inputs and does not rely on external state."
+  },
+  {
+    "id": 667,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The equals method is using its own class's fields and is not accessing another class's data, so it does not exhibit Feature Envy. The method is appropriately placed in the current class for standard equality checks."
+  },
+  {
+    "id": 679,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method heavily relies on the 'Element' and 'Elements' classes' methods, suggesting it might be better placed in those classes for better encapsulation."
+  },
+  {
+    "id": 683,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The toString method is lengthy and accesses multiple instance variables, which can reduce readability and maintainability, suggesting a code smell."
+  },
+  {
+    "id": 693,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The equals method is part of the Key class and accesses only its own and another Key instance's fields, which is standard and does not indicate Feature Envy. There is no reliance on external class data."
+  },
+  {
+    "id": 697,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method appears focused on its own class's operations, such as inserting and removing elements, without heavy reliance on other classes' data, indicating it is likely appropriately placed. There is no evidence of Feature Envy or other code smells in the provided snippet."
+  },
+  {
+    "id": 711,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method accesses and calls functions from another class (XWhileExpressionAccess), suggesting it relies on external functionality rather than its own class's data, which is characteristic of Feature Envy."
+  },
+  {
+    "id": 713,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method is focused on its own grammar rule and does not access data from other classes, showing no signs of Feature Envy. It is a short, generated parser method with no indication of misplacement."
+  },
+  {
+    "id": 723,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method 'get' relies heavily on calling 'getSingleCredentials', which may be from another class, indicating it is not focused on its own class's data. This suggests a potential misplacement that could be resolved by moving the method or refactoring."
+  },
+  {
+    "id": 738,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The toString() method is a standard implementation that combines data from its own class and the parent class via super.toString(), which is common practice and does not indicate Feature Envy."
+  },
+  {
+    "id": 742,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method heavily accesses and modifies the 'ref' object's data and methods, suggesting it may be misplaced and better suited in the 'ref' class to adhere to encapsulation principles."
+  },
+  {
+    "id": 755,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method does not exhibit Feature Envy as it does not rely on another class's data or functions. It is concise and focused on its own parameters, not displaying any clear code smell."
+  },
+  {
+    "id": 757,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method is short and focused on updating with logging, but there's no clear evidence of it heavily relying on another class's data or functions, so Feature Envy is not indicated."
+  },
+  {
+    "id": 761,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method heavily relies on the ServiceEvent object's data and methods, suggesting it might be better suited in that class or a related one. This indicates a potential design issue that could be refactored for better code organization."
+  },
+  {
+    "id": 765,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "minor",
+    "reasoning": "The method does not exhibit Feature Envy as it primarily operates on its own attribute 'threads' and uses a standard library method for hash computation. However, the reliance on an external method could be considered a minor code quality issue."
+  },
+  {
+    "id": 769,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method calculates the hash code using only its own class's fields, which is appropriate and not indicative of Feature Envy. No other code smells are evident from the snippet."
+  },
+  {
+    "id": 773,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `writeVersion` heavily accesses and operates on the `JsonWriter` object's methods, indicating it may be better suited in the `JsonWriter` class to avoid tight coupling."
+  },
+  {
+    "id": 783,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method accesses external data from stepData and calls a method on DeviceListResultImpl, which are not its own class, indicating Feature Envy. This suggests the method should be refactored to focus on its own data or moved to a more appropriate class."
+  },
+  {
+    "id": 805,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method does not show signs of Feature Envy as it primarily focuses on its own state by using and updating its fields, and the external input is a parameter typical for such operations. There is no excessive reliance on another class's data or functions."
+  },
+  {
+    "id": 812,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method heavily accesses data from the Attributes object parameter, rather than its own class's data, suggesting it may be misplaced due to Feature Envy. This could indicate the method should be relocated to the class managing attributes."
+  },
+  {
+    "id": 819,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "major",
+    "reasoning": "The method `getLoggerLevel` heavily accesses and operates on the logger object from another class, exhibiting Feature Envy. This suggests the method should be refactored to reside in the logger's class or a dedicated utility for better encapsulation."
+  },
+  {
+    "id": 827,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The constructor accesses and relies on the ArrayCache class's getByteArray method, indicating Feature Envy. This suggests the method could be better placed in the ArrayCache class or refactored to minimize external dependencies."
+  },
+  {
+    "id": 830,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method relies on the 'packageAdmin' object for its primary functionality, indicating it may be better suited in another class. This suggests a misplacement that could be refactored."
+  },
+  {
+    "id": 852,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method accesses and relies on the 'getName' method of other objects ('lower' and 'upper'), demonstrating Feature Envy as it focuses on external data rather than its own class. This suggests the method could be better placed in the classes it interacts with."
+  },
+  {
+    "id": 855,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method heavily relies on external classes like Platform and IExtension, indicating it should be refactored to reduce coupling. This suggests a Feature Envy code smell."
+  },
+  {
+    "id": 874,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `initializeEvent` heavily relies on the `Bundle` object's state and returns a `BundleEvent` object, suggesting it should be moved to the `Bundle` class or a related class."
+  },
+  {
+    "id": 877,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method heavily relies on external class methods like activateLibrariesTab and getLibraryTree, suggesting it should be moved to another class for better encapsulation. This could lead to improved maintainability by reducing coupling."
+  },
+  {
+    "id": 879,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method accesses and relies on the ProxyParams object by calling prepareProxyParams() and using its fields, suggesting a potential misplacement that could be refactored for better code organization."
+  },
+  {
+    "id": 882,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method relies on external data and behavior from DeviceSensorValue by calling getDeviceSensorValue and accessing its getSensorType method, indicating it is more focused on another class's functionality. This suggests a potential misplacement that could be refactored for better class cohesion."
+  },
+  {
+    "id": 921,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method `mT__66` is a simple parser method that matches a string literal 'if'. It does not exhibit Feature Envy as it does not interact with other classes' data or behavior. The method is concise and focused on its own task."
+  },
+  {
+    "id": 933,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `specialStateTransition` heavily accesses and manipulates the `input` stream, which is likely an external object, rather than focusing on its own class's state, suggesting Feature Envy. This indicates the method might better belong to the class owning the input stream."
+  },
+  {
+    "id": 938,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method accesses Chromosome's ID, indicating a dependency on another class's data, which suggests it might be better relocated to the Chromosome class or a dedicated class to adhere to encapsulation."
+  },
+  {
+    "id": 955,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The toString() method accesses and operates on its own class's data through entrySet(), showing no evidence of Feature Envy."
+  },
+  {
+    "id": 979,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided code is a constructor that initializes fields with dependencies, but it does not contain any method, so the Feature Envy code smell, which applies to methods, is not detectable from this snippet."
+  },
+  {
+    "id": 996,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method accesses constants from another class (Atom), indicating Feature Envy. This could be refactored by moving the method to the Atom class to improve cohesion."
+  },
+  {
+    "id": 1017,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method does not access or rely on data from another class; it uses its own methods to handle the parameter. There is no evidence of Feature Envy based on the provided code."
+  },
+  {
+    "id": 1019,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method is static and operates solely on its input parameters without accessing any other class's data or functions, showing no signs of Feature Envy."
+  },
+  {
+    "id": 1021,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method accesses its own data and relies on a function from another class (`Util.fromUtf8Bytes`), suggesting it might not be optimally placed in this class."
+  },
+  {
+    "id": 1023,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `verifyAllParameters` iterates over keys from `parameterValueMap` and calls `verifyParameter`, suggesting it relies on another class's structure. This indicates a potential misplacement if `verifyParameter` is not part of this class."
+  },
+  {
+    "id": 1043,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "major",
+    "reasoning": "The method accesses and relies on data from other classes like AccountDb and sResources, showing it's not focused on its own class. This could lead to maintenance issues and suggests refactoring."
+  },
+  {
+    "id": 1047,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "major",
+    "reasoning": "The computeBreaks method relies on external classes such as CommentsHelper, Newlines, and State, indicating it should be refactored to better adhere to encapsulation. This dependency suggests a potential misplacement, affecting code maintainability."
+  },
+  {
+    "id": 1052,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The constructor accesses data from external objects like configFactory and creates instances of CryptoConfiguration, indicating it relies heavily on other classes' data rather than its own. This suggests a Feature Envy code smell, though the deprecation may reduce its impact."
+  },
+  {
+    "id": 1054,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method relies heavily on external injected dependencies and modifies an external map, suggesting it may not be focused on its own class's data. This could indicate a Feature Envy code smell, as the method's operations could be better encapsulated elsewhere."
+  },
+  {
+    "id": 1059,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method heavily relies on the HttpServletRequest object's getReader method, indicating Feature Envy. This suggests the method could be better placed in a class that handles JSON parsing for web requests."
+  },
+  {
+    "id": 1062,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The constructor primarily initializes its own state and performs calculations based on its own fields, showing no strong reliance on other classes' data, thus not exhibiting Feature Envy."
+  },
+  {
+    "id": 1067,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The constructor heavily accesses the NetworkConfig object to initialize its own fields, indicating a dependency on external data. This suggests that the SocketServer class may not be properly encapsulated and could benefit from refactoring."
+  },
+  {
+    "id": 1088,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The constructor is focused on its own instance variables and does not rely on other classes' data, so Feature Envy is not present. The method is short and performs only its intended initialization, indicating no code smell."
+  },
+  {
+    "id": 1091,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method is short and primarily delegates to other methods within the same class, with a minor use of a logger, which does not indicate Feature Envy as it does not heavily rely on external class data or functions."
+  },
+  {
+    "id": 1113,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `runFunctions` heavily relies on the `CommandHandler` class by calling its method and using its own class's getters, suggesting it might be better placed in the `CommandHandler` class. This indicates a potential misplacement, classified as a minor code smell."
+  },
+  {
+    "id": 1115,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method is a simple stub that does not access any data or methods from other classes, so it does not exhibit Feature Envy."
+  },
+  {
+    "id": 1120,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method accesses and relies on the _restClient instance variable, which is not its own class, indicating Feature Envy. This suggests the method could be better placed in the class that manages _restClient."
+  },
+  {
+    "id": 1123,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method heavily accesses and relies on the data and methods of the X509Certificate parameter, such as calling getSubjectX500Principal() and getPublicKey(), indicating it might be better suited in a different class to reduce coupling."
+  },
+  {
+    "id": 1130,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "minor",
+    "reasoning": "The method is concise and does not exhibit signs of Feature Envy as it primarily calls another method and returns a fixed value. It focuses on its own minimal functionality without relying heavily on another class's data or methods."
+  },
+  {
+    "id": 1132,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method relies on the superclass's `addReqParam` method and does not utilize its own class's data or logic, indicating Feature Envy. This could be refactored to better align with the principle of encapsulation."
+  },
+  {
+    "id": 1143,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method heavily relies on external static methods from `com.oracle.bmc.Region`, indicating Feature Envy. This suggests the method could be better placed in the class where those methods are defined."
+  },
+  {
+    "id": 1144,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method is focused on its own class's fields and does not interact with external data, indicating no Feature Envy. It is a short method with no other code smell detected."
+  },
+  {
+    "id": 1156,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method heavily depends on the `identityClient` parameter to perform its operations, suggesting it might be better suited in a different class or refactored to reduce external dependencies."
+  },
+  {
+    "id": 1165,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method operates solely on its own class's instance variables, showing no signs of Feature Envy. It is concise and does not exhibit other code smell characteristics."
+  },
+  {
+    "id": 1173,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method is concise and focused on its own class's data, aligning with the Builder pattern. There is no evidence of Feature Envy or other code smells."
+  },
+  {
+    "id": 1178,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method is focused on its own class's instance variables, showing no evidence of Feature Envy. It does not rely on external class data, indicating proper placement."
+  },
+  {
+    "id": 1180,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The build() method heavily accesses and operates on the GetRouteTableRequest object, which is from another class, indicating Feature Envy. This suggests the method might be better suited in the GetRouteTableRequest class, but it's not a critical issue."
+  },
+  {
+    "id": 1182,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method 'severe' relies on external data and methods like 'inferCaller()' and 'logger.logp', which may suggest it belongs elsewhere due to Feature Envy. This could be refactored to improve cohesion."
+  },
+  {
+    "id": 1189,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method contains a loop and handles request conversion, invocation, and retry logic, making it potentially too long and complex, suggesting it could be refactored."
+  },
+  {
+    "id": 1190,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "major",
+    "reasoning": "The method heavily relies on external classes like GenerateAutonomousDatabaseWalletConverter and client, indicating Feature Envy. It could be refactored to reduce coupling and improve maintainability."
+  },
+  {
+    "id": 1199,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method is short and focused on initializing its own instance variables, with no evidence of Feature Envy or other code smells present."
+  },
+  {
+    "id": 1202,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method modifies its own class's field and does not access other classes' data, so it does not exhibit Feature Envy. The method is short, avoiding other code smells."
+  },
+  {
+    "id": 1209,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method accesses data from another class (getActiveNetworkInfo) and returns data from its own class, suggesting it may belong elsewhere. This indicates a Feature Envy code smell."
+  },
+  {
+    "id": 1210,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method heavily accesses and operates on the 'Activity' object and the 'controller', suggesting it might be better placed in one of those classes. This indicates a design issue that could be refactored for better code organization."
+  },
+  {
+    "id": 1212,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method does not access data or functions from another class, merely delegating to another method, and thus does not exhibit Feature Envy."
+  },
+  {
+    "id": 1217,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method heavily accesses and relies on the `NativeInput.MotionEvent` object, performing operations on its attributes and methods, suggesting it might be better placed in another class for better encapsulation."
+  },
+  {
+    "id": 1226,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The dumpStack method relies on data from the ThreadInfo parameter and other classes like DebugInfoCollector, showing it is not focused on its own class. This suggests it could be better placed elsewhere to improve code organization."
+  },
+  {
+    "id": 1237,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The constructor initializes instance variables with provided parameters, which is standard for object construction. There is no evidence of methods accessing external data or functions, so Feature Envy is not present."
+  },
+  {
+    "id": 1238,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The crop method in ImageArguments heavily relies on the CropRegion object's toString method, indicating it displays more interest in external data than its own class's data. This suggests a potential misplacement, aligning with the Feature Envy code smell."
+  },
+  {
+    "id": 1245,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "major",
+    "reasoning": "The method `verifyVMInstall` heavily relies on the `GrailsInstall` class's `verifyJavaInstall` method, indicating it should be moved there. This violates the principle of encapsulation and suggests a misplacement of functionality."
+  },
+  {
+    "id": 1247,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method is short and primarily delegates to the superclass while modifying its own state, showing no strong indication of Feature Envy or other code smells."
+  },
+  {
+    "id": 1250,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The schedule method relies on external classes like ResourcesPlugin and RuleFactory to build and set a rule on the Job object, suggesting it may not be appropriately placed and could be refactored for better cohesion."
+  },
+  {
+    "id": 1258,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "major",
+    "reasoning": "The method heavily accesses and operates on data from the BmcException parameter and the instance variable authenticationDetailsProvider, indicating a strong dependency on external classes. This suggests Feature Envy, implying the method should be refactored or moved to align with its dependencies."
+  },
+  {
+    "id": 1284,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The constructor focuses solely on initializing its own instance variables and performing validation, with no interaction with other classes, so no feature envy is present."
+  },
+  {
+    "id": 1288,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method delegates all functionality to another class's method, indicating Feature Envy. This is a minor issue as the method is simple and could be refactored."
+  },
+  {
+    "id": 1297,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method relies on the RabbitTemplate parameter to instantiate RabbitMessagingTemplate, indicating a potential misplacement that could be resolved by moving the logic to the RabbitMessagingTemplate class."
+  },
+  {
+    "id": 1299,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "major",
+    "reasoning": "The method `formatQueryString` heavily relies on external classes like `URLEncode` and `ArtifactID`, indicating it is not focused on its own class's data. This suggests the method could be refactored or moved to improve cohesion."
+  },
+  {
+    "id": 1300,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The notifyConflict() method heavily depends on external classes such as ShellUtils, UIHelpers, and MessageDialog to perform its functionality, indicating it may not be focused on its own class's data and could be better refactored."
+  },
+  {
+    "id": 1319,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method heavily accesses and processes data from the `annotation` parameter, suggesting it may belong to a different class for better cohesion. This could be refactored to improve code organization."
+  },
+  {
+    "id": 1329,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=120)"
+  },
+  {
+    "id": 1334,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The constructor initializes its own fields and calls a method, with no indication of relying on another class's data or functions, suggesting no Feature Envy."
+  },
+  {
+    "id": 1337,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method heavily relies on the Vm object's data and methods, suggesting it might be better placed in the Vm class to adhere to encapsulation principles."
+  },
+  {
+    "id": 1347,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method accesses and relies on data from the `compilable` parameter and external sources like `HotSpotToSVMScope`, indicating it may not be focused on its own class's responsibilities. This suggests a Feature Envy code smell."
+  },
+  {
+    "id": 1363,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method uses its own class's data and delegates operations to other objects without heavy reliance on external data, indicating no Feature Envy. The method is concise and focused on its own responsibilities."
+  },
+  {
+    "id": 1364,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The toString method is concise and uses its own class's attribute (description), which is appropriate for the method's purpose. There is no evidence of Feature Envy or other code smells in this snippet."
+  },
+  {
+    "id": 1366,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The constructor initializes its own instance variables and calls the superclass constructor without performing operations on other classes' data, indicating no Feature Envy."
+  },
+  {
+    "id": 1374,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The close() method accesses and calls a method from the HSObject class, indicating it may not be focused on its own class's data and functions, suggesting a Feature Envy code smell."
+  },
+  {
+    "id": 1382,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method heavily accesses and relies on external objects such as engine and cache, suggesting it should be refactored to reduce coupling. This indicates a code smell of Feature Envy."
+  },
+  {
+    "id": 1386,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method relies heavily on the OptionDescriptor object's getOptionKey method, indicating it may be better suited for that class. This dependency on external state suggests a potential code smell that could be refactored for improved encapsulation."
+  },
+  {
+    "id": 1389,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `emitFloatConvert` relies on external classes like `LIRKind` and `AArch64FloatConvertOp`, which are not its own, indicating Feature Envy. This could be refactored by delegating or moving the operations to reduce cross-class dependencies."
+  },
+  {
+    "id": 1405,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The isReference() method relies on ElementUtils.typeEquals(), a method from another class, demonstrating Feature Envy. This dependency indicates the method could be refactored to minimize coupling with external code."
+  },
+  {
+    "id": 1438,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method accesses and relies on data from the `method` object, which is likely an instance of `java.lang.reflect.Method`, suggesting it depends on external data rather than its own class's attributes."
+  },
+  {
+    "id": 1446,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method is concise and focused on matching a specific string, not exhibiting Feature Envy or other code smells."
+  },
+  {
+    "id": 1457,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `performBuild` heavily accesses and operates on the `YarnContainerFactoryBean` class, indicating it may be better suited in that class or a related one, rather than its own. This reliance on external classes suggests a Feature Envy code smell."
+  },
+  {
+    "id": 1468,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method is static and self-contained, not accessing data from other classes, so Feature Envy does not apply. It is concise with few lines, not qualifying as a long method."
+  },
+  {
+    "id": 1478,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method heavily accesses and relies on the TemplateVariable class's methods, indicating it might be better suited in that class."
+  },
+  {
+    "id": 1479,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The run method heavily relies on the Foo class's method m, suggesting it might be better placed in Foo. However, the method's brevity reduces the severity."
+  },
+  {
+    "id": 1491,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method `getValue` uses its own instance variable and delegates to an external method, but it does not heavily rely on another class's data, so Feature Envy is not evident."
+  },
+  {
+    "id": 1494,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "major",
+    "reasoning": "The method heavily accesses and operates on another class's iterator methods, such as `it.hasNext()`, `it.next()`, and `it.remove()`, indicating it should be refactored to reside in the other class for better encapsulation."
+  },
+  {
+    "id": 1495,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The handleRequest method heavily accesses and relies on the HttpServletRequest and HttpServletResponse parameters, indicating a potential Feature Envy where the method's logic could be better encapsulated in another class."
+  },
+  {
+    "id": 1500,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method primarily uses its own class's attributes and handles various method invocations without heavily relying on data from another class, indicating no Feature Envy."
+  },
+  {
+    "id": 1506,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The constructor relies on external methods from ClassUtils to format the error message, indicating a dependency on another class that could be refactored for better encapsulation."
+  },
+  {
+    "id": 1509,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method accesses its own instance variable and returns it, which is appropriate. There is no evidence of Feature Envy or other code smells in the provided snippet."
+  },
+  {
+    "id": 1513,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "major",
+    "reasoning": "The constructor heavily accesses and processes data from the RequestContext and errors object, which are from other classes, indicating Feature Envy. This can lead to maintenance issues and reduced encapsulation."
+  },
+  {
+    "id": 1517,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method accesses the Signer class's algorithm() method, indicating a strong dependency on external state, which suggests it might be better suited in a different class."
+  },
+  {
+    "id": 1524,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method heavily accesses and relies on the IModelElement class's methods, such as getElementParent(), indicating it should be moved to a class more closely related to the parent-child hierarchy. This suggests a design issue with potential for increased coupling."
+  },
+  {
+    "id": 1528,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The run() method accesses and invokes methods on JLCGetDecMethods.class via reflection, indicating it relies heavily on another class's members rather than its own, which is characteristic of Feature Envy."
+  },
+  {
+    "id": 1534,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "major",
+    "reasoning": "The method formatElement heavily accesses and operates on external classes FormatProcessorXML and CleanupProcessorXML, indicating Feature Envy. This suggests the method should be relocated or refactored to better align with object-oriented design principles."
+  },
+  {
+    "id": 1540,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method heavily relies on the context parameter and the Ciphertext class, indicating it may be better suited in another class. This is a minor code smell due to the method's simplicity."
+  },
+  {
+    "id": 1543,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=120)"
+  },
+  {
+    "id": 1555,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method relies on another method's functionality to process its input, suggesting it may be better suited in the class containing that method."
+  },
+  {
+    "id": 1558,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The setHeader method heavily relies on the String class's getBytes method to process input data, suggesting it may be more focused on external data than the Builder's own responsibilities, indicating a potential Feature Envy code smell."
+  },
+  {
+    "id": 1561,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method exclusively uses its own class's instance variables via 'this', showing no signs of Feature Envy. It focuses solely on its own data, aligning with good practice."
+  },
+  {
+    "id": 1577,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method accesses data from other classes like ContainerDescription and getTrustAlias, indicating Feature Envy. This suggests the method should be refactored or moved to improve code cohesion."
+  },
+  {
+    "id": 1584,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The constructor uses its own parameters for initialization and does not heavily rely on the data or functions of other classes, so it does not exhibit Feature Envy."
+  },
+  {
+    "id": 1590,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method accesses parent class data through calls to getParent(), indicating it relies heavily on external state, a sign of Feature Envy. This suggests the method could be refactored or moved to better align with its dependencies."
+  },
+  {
+    "id": 1594,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "major",
+    "reasoning": "The method heavily relies on external methods and data from other classes, such as buildKey, getProperty, and logging utilities, suggesting it should be refactored or moved for better encapsulation."
+  },
+  {
+    "id": 1610,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method accesses its own class's method `getDimensionsSpec()` but does not exhibit Feature Envy as it is not heavily reliant on another class's data. The method is short and focused on its intended operation."
+  },
+  {
+    "id": 1613,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method containsDownEntity relies heavily on the 'isViableSeed' method of the 'Entity' class and iterates over a set of entities, indicating Feature Envy. This suggests the method could be better placed in the 'Entity' class or refactored to reduce its dependency on external data."
+  },
+  {
+    "id": 1615,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method heavily accesses and processes data from external classes like `sourceClass` and `configClass`, which is a sign of Feature Envy. This suggests the method could be better refactored to reduce coupling and improve class cohesion."
+  },
+  {
+    "id": 1618,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The gzip method heavily relies on the ByteSink's openStream method and the ByteSource object, suggesting it should be restructured to better fit the classes it interacts with, rather than being a standalone method."
+  },
+  {
+    "id": 1628,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The handleChunk method accesses and modifies the FullResponseHolder object, which is part of the ClientResponse parameter, indicating it relies heavily on another class's data. This suggests the method could be better placed elsewhere, aligning with the Feature Envy code smell."
+  },
+  {
+    "id": 1640,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method accesses and operates on a HealthMonitor object, which may indicate it belongs to that class rather than the current one, suggesting a Feature Envy code smell."
+  },
+  {
+    "id": 1646,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method accesses and operates on data from external objects (`oprot` and `struct`), indicating Feature Envy. Given its short length, the impact is minor but still a potential code smell."
+  },
+  {
+    "id": 1648,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The read method heavily accesses and modifies the Digest struct's attributes using data from the protocol, indicating it may be better suited in the Digest class or a dedicated deserializer."
+  },
+  {
+    "id": 1664,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method heavily relies on the DimensionSelector parameter's data and methods, suggesting it should be refactored into the DimensionSelector class for better encapsulation."
+  },
+  {
+    "id": 1666,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method heavily relies on external classes like Files and FileOutputStream to perform its operation, suggesting it might be better suited in a different class for better encapsulation."
+  },
+  {
+    "id": 1674,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The read method heavily accesses and modifies the fields of the struct parameter, indicating a strong dependency on another class's data, which is characteristic of Feature Envy. This could be refactored by moving the method or its functionality to the struct class for better encapsulation."
+  },
+  {
+    "id": 1735,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method does not access or rely on data from other classes; it simply calls another method, indicating no Feature Envy."
+  },
+  {
+    "id": 1744,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method heavily accesses and relies on external class members like errorAcceptor, transientValues, and createSequencerFeeder for its operations, suggesting it should be refactored or moved to another class to adhere to encapsulation principles."
+  },
+  {
+    "id": 1753,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method getScope relies on the AbstractScope class to implement the scope logic for a specific reference, suggesting it might be better suited to handle this functionality within the AbstractScope class."
+  },
+  {
+    "id": 1756,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method does not access data from another class and primarily calls other methods likely within the same class, so it does not exhibit Feature Envy. The method is short and focused, indicating no other code smells."
+  },
+  {
+    "id": 1762,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method does not access data or methods from another class, as it calls another method likely in the same parser class, indicating no Feature Envy. The method is also short, avoiding the long method smell."
+  },
+  {
+    "id": 1768,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method accesses its own class's 'elements' field, indicating it is focused on its own data and not exhibiting Feature Envy. No other code smells are present in the snippet."
+  },
+  {
+    "id": 1774,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method heavily accesses and relies on the `context` and `semanticObject` parameters, performing operations that could be delegated or moved to other classes, suggesting a misplacement. This indicates a Feature Envy code smell that may require refactoring."
+  },
+  {
+    "id": 1801,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method is a simple Spring controller handler with no signs of Feature Envy, as it does not excessively rely on external class data or functions. It is concise and focused on its intended purpose."
+  },
+  {
+    "id": 1829,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The equals method is a standard implementation for object comparison within the ThrowsPattern class and does not excessively rely on other classes' data, as it is appropriate for its role in defining equality."
+  },
+  {
+    "id": 1840,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `doAggressiveInner` heavily accesses and modifies the state of the `LazyClassGen` object, indicating it should be refactored to reside in that class for better encapsulation."
+  },
+  {
+    "id": 1842,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "minor",
+    "reasoning": "The method does not interact with the passed argument 'C22' but operates on its own instance variables, avoiding 'Feature Envy'. However, the method's length may suggest a 'Long Method' if the codebase has specific length thresholds."
+  },
+  {
+    "id": 1850,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method relies heavily on external state from the configuration object, which is not its own class, suggesting Feature Envy. This is a minor code smell due to the method's brevity and the potential for refactoring."
+  },
+  {
+    "id": 1869,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method is short and does not heavily rely on another class's data or functions, instead using its own field to configure the format object, which does not strongly indicate Feature Envy."
+  },
+  {
+    "id": 1878,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method heavily accesses external parameters and operates on other class instances, indicating it may be better placed elsewhere to reduce coupling."
+  },
+  {
+    "id": 1882,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The constructor heavily relies on multiple other classes' getProcessors methods to initialize its state, suggesting it may not be focused on its own data and could be better refactored."
+  },
+  {
+    "id": 1885,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method heavily relies on another class's constructor and setters, indicating it should be moved to that class for better encapsulation."
+  },
+  {
+    "id": 1890,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The constructor accesses and relies on the ObjectHelper class's className method, which is not part of its own class, suggesting a Feature Envy code smell. This indicates the method could be better refactored or moved to the ObjectHelper class."
+  },
+  {
+    "id": 1892,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The constructor accesses external classes like System and SecurityManager, which is not its own data, suggesting a Feature Envy smell. This could be improved by refactoring to reduce dependency on other classes."
+  },
+  {
+    "id": 1894,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The toString method accesses only its own class's attributes, aligning with typical use and not exhibiting Feature Envy. No other code smells are evident in this snippet."
+  },
+  {
+    "id": 1906,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method `getUlong56` primarily uses its own class's data and does not access external classes, so Feature Envy is not present. It is concise and does not exhibit other code smells."
+  },
+  {
+    "id": 1908,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method delegates the parsing operation to another class's parseFrom method, indicating it may not be focused on its own responsibilities. This reliance on external functionality suggests a potential misplacement."
+  },
+  {
+    "id": 1930,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method heavily accesses and prints data from ExcludeRule and ModuleDescriptor classes, indicating a strong dependency on external classes rather than its own, which suggests it might be better refactored."
+  },
+  {
+    "id": 1932,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method accesses constants from AlertResourceProvider to add properties to a set, indicating it relies on external data. This suggests the method might be better placed elsewhere."
+  },
+  {
+    "id": 1934,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method operates solely on its own field 'tmfe' without accessing other classes, so it does not exhibit Feature Envy. The method is concise and focused on its own data."
+  },
+  {
+    "id": 1939,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method is concise and focused on its own parameters, not exhibiting Feature Envy or other code smells. It uses a standard library class appropriately without relying on external state."
+  },
+  {
+    "id": 1952,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `listZookeeper` heavily relies on external data from the `ServerContext` parameter and calls static methods from `MetadataTableUtil`, indicating a strong dependency on other classes. This suggests it should be refactored to better encapsulate its functionality."
+  },
+  {
+    "id": 1954,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The provided code is a constructor and does not contain any methods, so Feature Envy cannot be evaluated based on the given snippet."
+  },
+  {
+    "id": 1968,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method relies heavily on an external parameter to instantiate an object, suggesting it may not be focused on its own class's data and could be better placed elsewhere."
+  },
+  {
+    "id": 1994,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "none",
+    "severity": "none",
+    "reasoning": "The method primarily uses its own class's fields and performs setup operations, but it does not show heavy reliance on another class's data or functions, as the channel is a parameter and the method is part of a class managing the connection."
+  },
+  {
+    "id": 2003,
+    "model": "deepseek-r1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method accesses and modifies the 'struct' object's fields, which are from another class, suggesting it relies heavily on external data. This could indicate that the method should be moved to the struct class for better encapsulation."
+  }
+]

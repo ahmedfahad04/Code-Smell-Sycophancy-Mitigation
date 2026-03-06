@@ -1,25 +1,49 @@
-Experiment Run: 2026-03-06 15:45:39
-Hostname: kamruzzaman-asif-Precision-5540
-User: kamruzzaman-asif
+Experiment Run: 2026-03-06 17:47:08
+Hostname: fahad-hp-g3
+User: sakib
 
 
 ════════════════════════════════════════════════════════════
-  AVAILABLE STRATEGIES
+  PHASE 3: SYCOPHANCY BIAS TESTING (3-4 hrs)
 ════════════════════════════════════════════════════════════
+Purpose: Measure Decision Flip Rate (DFR) across bias strategies for all smells
+Metric: Decision Flip Rate (DFR) vs baseline
 
-════════════════════════════════════════════════════════════
-  AVAILABLE CODE SMELLS
-════════════════════════════════════════════════════════════
+[0;34m[INFO][0m Testing feature envy with 1 strategies...
+[0;34m[INFO][0m Test: Sycophancy: feature envy - Adversarial-Refutation
+[0;34m[INFO][0m   Smell: feature envy | Models: qwen2.5-coder:7b | Strategies: Adversarial-Refutation
+[0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --dataset '/home/sakib/Documents/MLCQ/dataset/mlcq_filtered.json'         --smell 'feature envy'         --models 'qwen2.5-coder:7b'         --strategies 'Adversarial-Refutation'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
+[0;32m[✓][0m Sycophancy: feature envy - Adversarial-Refutation completed
 
-════════════════════════════════════════════════════════════
-  AVAILABLE MODELS
-════════════════════════════════════════════════════════════
+[0;34m[INFO][0m Testing long method with 1 strategies...
+[0;34m[INFO][0m Test: Sycophancy: long method - Adversarial-Refutation
+[0;34m[INFO][0m   Smell: long method | Models: qwen2.5-coder:7b | Strategies: Adversarial-Refutation
+[0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --dataset '/home/sakib/Documents/MLCQ/dataset/mlcq_filtered.json'         --smell 'long method'         --models 'qwen2.5-coder:7b'         --strategies 'Adversarial-Refutation'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
+[0;32m[✓][0m Sycophancy: long method - Adversarial-Refutation completed
+
+[0;34m[INFO][0m Testing data class with 1 strategies...
+[0;34m[INFO][0m Test: Sycophancy: data class - Adversarial-Refutation
+[0;34m[INFO][0m   Smell: data class | Models: qwen2.5-coder:7b | Strategies: Adversarial-Refutation
+[0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --dataset '/home/sakib/Documents/MLCQ/dataset/mlcq_filtered.json'         --smell 'data class'         --models 'qwen2.5-coder:7b'         --strategies 'Adversarial-Refutation'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
+[0;32m[✓][0m Sycophancy: data class - Adversarial-Refutation completed
+
+[0;34m[INFO][0m Testing blob with 1 strategies...
+[0;34m[INFO][0m Test: Sycophancy: blob - Adversarial-Refutation
+[0;34m[INFO][0m   Smell: blob | Models: qwen2.5-coder:7b | Strategies: Adversarial-Refutation
+[0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'         --dataset '/home/sakib/Documents/MLCQ/dataset/mlcq_filtered.json'         --smell 'blob'         --models 'qwen2.5-coder:7b'         --strategies 'Adversarial-Refutation'         --limit 175         --output-dir '/home/sakib/Documents/MLCQ/results'         --temperature 0.3         --top-p 0.9
+[0;32m[✓][0m Sycophancy: blob - Adversarial-Refutation completed
+
+[0;32m[✓][0m Phase 3 complete!
 
 
 ════════════════════════════════════════════════════════════
   EXPERIMENT RUN COMPLETE
 ════════════════════════════════════════════════════════════
-Results saved to: /home/kamruzzaman-asif/Downloads/MLCQ/results
-Log file: /home/kamruzzaman-asif/Downloads/MLCQ/results/experiment_log.txt
-Timestamp: 2026-03-06 15:45:39
+Results saved to: /home/sakib/Documents/MLCQ/results
+Log file: /home/sakib/Documents/MLCQ/results/experiment_log.txt
+Timestamp: 2026-03-06 18:34:57
 
