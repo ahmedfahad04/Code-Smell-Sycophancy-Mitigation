@@ -1,4 +1,4 @@
-Experiment Run: 2026-03-06 17:47:08
+Experiment Run: 2026-03-07 00:50:20
 Hostname: fahad-hp-g3
 User: sakib
 
@@ -45,5 +45,5 @@ Metric: Decision Flip Rate (DFR) vs baseline
 ════════════════════════════════════════════════════════════
 Results saved to: /home/sakib/Documents/MLCQ/results
 Log file: /home/sakib/Documents/MLCQ/results/experiment_log.txt
-Timestamp: 2026-03-06 18:34:57
+Timestamp: 2026-03-07 01:37:57
 
