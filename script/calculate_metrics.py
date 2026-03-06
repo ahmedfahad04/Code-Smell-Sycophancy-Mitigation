@@ -21,6 +21,7 @@ from collections import defaultdict
 
 # Known filename components for robust parsing
 KNOWN_STRATEGIES = [
+    'Adversarial-Refutation',
     'Confirmation-Bias',
     'Contradictory-Hint',
     'False-Premise',

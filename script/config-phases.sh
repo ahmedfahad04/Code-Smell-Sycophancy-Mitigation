@@ -15,7 +15,7 @@ TOP_P_GLOBAL="0.9"
 # EXPERIMENT VARIANTS:
 # Phase 1 (5-10 min):  Quick validation with 1 model, 1 smell, 1 strategy
 # Phase 2 (45 min):    Baseline accuracy on all 4 smells, 1 model, Casual strategy
-# Phase 3 (1-2 hrs):   Single model tests bias with 8 strategies on 1 smell
+# Phase 3 (1-2 hrs):   Single model tests bias with 6 strategies on selected smells
 # Phase 4 (1-2 hrs):   3 models test same bias/smell combo for cross-model validation
 # Phase 5 (2-3 hrs):   Comprehensive: Feature Envy + Long Method, 3 models, all strategies
 
@@ -46,7 +46,7 @@ declare -A PHASE3=(
     [purpose]="Measure Decision Flip Rate (DFR) across bias strategies for all smells"
     [models]="llama3.1:8b"
     [smells]="feature envy|long method"
-    [strategies]="Casual|Positive|Contradictory-Hint|False-Premise|Confirmation-Bias"
+    [strategies]="Casual|Positive|Contradictory-Hint|False-Premise|Confirmation-Bias|Adversarial-Refutation"
     [limit]="175"
 )
 
@@ -56,7 +56,7 @@ declare -A PHASE4=(
     [purpose]="Verify bias patterns across model families"
     [models]="llama3.1:8b|qwen2.5-coder:7b|deepseek-r1:8b"
     [smells]="feature envy"
-    [strategies]="Casual|Positive|Negative|Authoritative|Social-Proof|Contradictory-Hint|False-Premise|Confirmation-Bias"
+    [strategies]="Casual|Positive|Negative|Authoritative|Social-Proof|Contradictory-Hint|False-Premise|Confirmation-Bias|Adversarial-Refutation"
     [limit]="100"
 )
 
@@ -71,7 +71,7 @@ declare -A PHASE5=(
 # Quick reference: Strategies, Code Smells, Models
 list_strategies() {
     echo "  • Casual | Positive | Negative | Authoritative"
-    echo "  • Social-Proof | Contradictory-Hint | False-Premise | Confirmation-Bias"
+    echo "  • Social-Proof | Contradictory-Hint | False-Premise | Confirmation-Bias | Adversarial-Refutation"
 }
 
 list_smells() {
@@ -85,8 +85,8 @@ list_models() {
 print_all_phases() {
     echo "Phase 1: VALIDATION (5-10 min)      - 1 model, 1 smell, 1 strategy"
     echo "Phase 2: BASELINE (45 min)          - All 4 smells baseline accuracy"
-    echo "Phase 3: SYCOPHANCY (3-4 hrs)       - All 4 smells × 5 strategies"
-    echo "Phase 4: CROSS-MODEL (1-2 hrs)      - 3 models × 8 strategies, 1 smell"
+    echo "Phase 3: SYCOPHANCY (3-4 hrs)       - Selected smells × 6 strategies"
+    echo "Phase 4: CROSS-MODEL (1-2 hrs)      - 3 models × 9 strategies, 1 smell"
     echo "Phase 5: COMPREHENSIVE (2-3 hrs)    - Feature Envy + Long Method, 3 models"
 }
 
