@@ -187,14 +187,19 @@ def sanitize_strategy_name(strategy: str) -> str:
     """Convert strategy name for safe filesystem usage (underscore to hyphen)."""
     return strategy.replace("_", "-")
 
+def sanitize_filename_component(value: str) -> str:
+    """Convert text to a filesystem-safe component across platforms."""
+    return value.replace(":", "-").replace("/", "-").replace("\\", "-")
+
 def save_per_smell_csv(model: str, strategy: str, smell_metrics: Dict[str, Tuple[int, float, float, float, float]], base_dir: Path) -> None:
     """Save per-smell evaluation results organized by smell, with strategy-specific files."""
-    sanitized_strategy = sanitize_strategy_name(strategy)
+    sanitized_model = sanitize_filename_component(model)
+    sanitized_strategy = sanitize_filename_component(sanitize_strategy_name(strategy))
     for smell, (n, acc, prec, rec, f1) in smell_metrics.items():
         # Organize by smell first
         smell_dir = base_dir / smell
         smell_dir.mkdir(parents=True, exist_ok=True)
-        csv_path = smell_dir / f"eval_{model}_{sanitized_strategy}.csv"
+        csv_path = smell_dir / f"eval_{sanitized_model}_{sanitized_strategy}.csv"
         
         headers = ["Model", "Strategy", "N", "Accuracy", "Precision", "Recall", "F1"]
         with csv_path.open("w", newline="", encoding="utf-8") as csvfile:
