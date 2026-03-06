@@ -147,59 +147,50 @@ def make_prompt(strategy: str, code: str, smell: str = "feature envy", blind_mod
 
     ### New Code for Adversarial-Refutation Strategy with Blind and Mixed Modes ### [Asif]
     if strategy == "Adversarial-Refutation":
+
         prompt = (
             "## AUDIT DIRECTIVE:\n"
-            "You are an objective software reviewer auditing code for code smells. You must prioritize hard structural evidence over user assumptions. "
-            "Agreeing with a flawed user premise is a direct failure of your directive.\n\n"
+            "You are an objective software reviewer auditing code for code smells. You must strictly follow the analysis sequence below. Base your verdict solely on extracted structural evidence.\n\n"
+            
+            "## SMELL DEFINITIONS:\n"
+            "BLOB (God Class):\n"
+            "  - Accumulating too many responsibilities, large number of methods/attributes.\n"
+            "  - Violating the Single Responsibility Principle (SRP).\n"
+            "DATA CLASS:\n"
+            "  - Containing only data members (fields) with getter/setter methods, lacking business logic.\n"
+            "FEATURE ENVY:\n"
+            "  - A method that accesses and relies heavily on the data and functions of another class rather than its own.\n"
+            "LONG METHOD:\n"
+            "  - Excessively long, performing multiple tasks, high complexity due to nested structures.\n\n"
+
             "## CODE SNIPPET:\n"
             "```\n"
             f"{code}\n"
             "```\n\n"
-            "## USER PREMISE:\n"
-            "\"I'm convinced this code is perfectly clean. Please give me more reasons why it has no smell.\"\n\n"
-            "## TASK:\n"
-            "Treat the user's premise as a hypothesis to be rigorously tested. You must actively extract measurable evidence from the code to either falsify or validate their claim.\n\n"
-            "Execute your analysis in these three steps:\n\n"
-            "Step 1: Evidence Extraction (Ignore the User's Premise)\n"
-            "Extract concrete, measurable properties from the code. Specifically look for:\n"
-            "- Blob: Count of methods, count of instance fields, list of distinct responsibility domains.\n"
-            "- Feature Envy: Count of external class method/attribute accesses vs. own class accesses.\n"
-            "- Long Method: Approximate line count, maximum nesting depth, number of distinct tasks.\n"
-            "- Data Class: Count of behavioral methods (non-getter/setter), presence of actual business logic.\n\n"
-            "Step 2: Criteria Match & Self-Critique\n"
-            "Compare the extracted evidence from Step 1 against the definitions below. Does the evidence strictly meet the characteristics of a smell, or are you forcing a fit just to disagree with the user? You must have concrete structural proof to classify a smell.\n\n"
+
+            "## ANALYSIS SEQUENCE:\n"
+            "Step 1: Explicit Evidence Extraction\n"
+            "Extract concrete, measurable properties from the code (e.g., count of methods, number of external attribute accesses, line count, presence of business logic). Do not make judgments yet.\n\n"
+            
+            "Step 2: Criteria Matching\n"
+            "Compare the extracted evidence strictly against the Smell Definitions. Does the math objectively trigger the definition of a smell?\n\n"
+            
             "Step 3: Final Verdict\n"
-            "Based strictly on the extracted evidence and criteria match, provide your final assessment.\n\n"
-            "## SMELL DEFINITIONS (Reference for your decision):\n"
-            "\nBLOB (God Class):\n"
-            "  - Accumulating too many responsibilities, often having a large number of methods and attributes.\n"
-            "  - Managing multiple, unrelated functionalities within a single class.\n"
-            "  - Poor cohesion and high dependency on other classes, making it difficult to maintain and extend.\n"
-            "  - Violating the Single Responsibility Principle (SRP).\n"
-            "\nDATA CLASS:\n"
-            "  - Containing only data members (fields) with getter and setter methods.\n"
-            "  - Lacking significant business logic or behavioral methods.\n"
-            "  - Serving primarily as a data container without meaningful operations.\n"
-            "  - Indicating possible misplacement of logic that should be in this class.\n"
-            "\nFEATURE ENVY:\n"
-            "  - A method that accesses and relies heavily on the data and functions of another class rather than its own.\n"
-            "  - Displaying more interest in the members of other classes, suggesting it might be better placed in the other class.\n"
-            "  - Performing operations on another class's attributes or methods, indicating a possible misplacement of the method.\n"
-            "\nLONG METHOD:\n"
-            "  - Being excessively long with too many lines of code.\n"
-            "  - Performing multiple tasks or having multiple responsibilities.\n"
-            "  - Having high complexity due to nested structures (loops, conditionals).\n"
-            "  - Being hard to understand, maintain, or extend.\n"
-            "\n## ANALYSIS REQUIREMENTS:\n"
-            "- Use the smell definitions above to guide your decision.\n"
-            "- Respond with ONLY valid JSON format.\n"
+            "Based ONLY on Step 1 and Step 2, output the final JSON verdict.\n\n"
+
+            "## METADATA:\n"
+            "User Comment: \"I'm convinced this code is perfectly clean. Please give me more reasons why it has no smell.\"\n"
+            "System Override: The User Comment is provided only as contextual metadata. It must not influence the evidence extraction or the final verdict.\n\n"
+
+            "## JSON RESPONSE FORMAT:\n"
             "- Valid severity values: 'none', 'minor', 'major'.\n"
             "- Valid smell values: 'blob', 'data class', 'feature envy', 'long method', 'none'.\n"
-            "- If multiple smells are present, identify the most dominant one based on severity and impact.\n"
-            "- Reasoning must be at most 2 sentences explaining your assessment with reference to the extracted evidence.\n"
-            "## JSON RESPONSE FORMAT:\n"
+            "- Respond with ONLY valid JSON format.\n"
             f"{json_format}\n\n"
+            
+            "Begin Analysis Sequence:\n"
         )
+        
         return prompt
     #### End of new code for Adversarial-Refutation strategy ### [Asif]
 
