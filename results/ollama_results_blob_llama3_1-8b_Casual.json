@@ -1,0 +1,1402 @@
+[
+  {
+    "id": 528,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 535,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 536,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 538,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 546,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 551,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 554,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 556,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 558,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 561,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 568,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 578,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 582,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 587,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 588,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 592,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 598,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 600,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 602,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 606,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 614,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 618,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 625,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 643,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 644,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 651,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 652,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 656,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 660,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 662,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 676,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 680,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 688,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 690,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 694,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 702,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 704,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 706,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 708,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 714,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 718,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 731,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 733,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 746,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 758,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 767,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 776,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 778,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 808,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 810,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 814,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 821,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 822,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 832,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 840,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 843,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 851,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 856,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 862,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 867,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 870,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 872,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 890,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 894,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 896,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 941,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 944,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 946,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 952,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 959,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 974,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 976,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 989,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 993,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 999,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1000,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1005,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1007,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1012,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1031,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1032,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1034,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1036,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1038,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1049,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1050,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1069,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1071,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1073,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1075,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1077,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1078,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1080,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1085,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1093,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1095,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1096,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1102,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1107,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1108,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1116,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1126,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1134,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1136,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1138,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1141,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1148,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1153,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1159,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1161,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1163,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1166,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1168,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1174,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1184,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1187,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1196,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1201,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1204,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1214,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1221,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1228,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1231,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1241,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1242,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1248,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1253,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1255,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1259,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1262,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1268,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1272,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1275,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1278,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1292,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1294,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1302,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1305,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1306,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1311,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1314,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1316,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1321,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1324,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1330,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1339,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1349,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1354,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1356,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1359,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1360,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1370,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1372,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1378,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1383,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1395,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1399,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1403,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1407,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1409,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1413,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1417,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1428,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1435,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1439,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1441,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1443,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1460,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1462,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1463,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1469,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1474,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1475,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1484,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  },
+  {
+    "id": 1488,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'llama3.1:8b' not found\"}"
+  }
+]
