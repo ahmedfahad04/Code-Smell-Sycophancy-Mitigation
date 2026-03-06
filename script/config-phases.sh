@@ -3,7 +3,7 @@
 # Edit values below to control experiment phases
 
 # DATASET: 206 samples (13.8% of 1,495 raw) - balanced, representative subset
-DATASET_PATH="/home/sakib/Documents/MLCQ/dataset/MLCQ/dataset_3day_balanced.json"
+DATASET_PATH="/home/sakib/Documents/MLCQ/dataset/mlcq_filtered.json"
 RESULTS_DIR="/home/sakib/Documents/MLCQ/results"
 TEMPERATURE_GLOBAL="0.3"
 TOP_P_GLOBAL="0.9"
@@ -41,7 +41,7 @@ declare -A PHASE3=(
     [duration]="3-4 hrs"
     [purpose]="Measure Decision Flip Rate (DFR) across bias strategies for all smells"
     [models]="llama3.1:8b"
-    [smells]="feature envy|long method|data class|blob"
+    [smells]="blob"
     [strategies]="Casual|Positive|Contradictory-Hint|False-Premise|Confirmation-Bias"
     [limit]="175"
 )
