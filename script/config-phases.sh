@@ -2,9 +2,13 @@
 # MLCQ Sycophancy Bias Study - Configuration
 # Edit values below to control experiment phases
 
+# Resolve project root relative to this config file
+CONFIG_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(dirname "$CONFIG_DIR")"
+
 # DATASET: 206 samples (13.8% of 1,495 raw) - balanced, representative subset
-DATASET_PATH="/home/sakib/Documents/MLCQ/dataset/mlcq_filtered.json"
-RESULTS_DIR="/home/sakib/Documents/MLCQ/results"
+DATASET_PATH="$PROJECT_ROOT/dataset/mlcq_filtered.json"
+RESULTS_DIR="$PROJECT_ROOT/results"
 TEMPERATURE_GLOBAL="0.3"
 TOP_P_GLOBAL="0.9"
 
