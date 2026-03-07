@@ -1,0 +1,1402 @@
+[
+  {
+    "id": 529,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 15 methods (high) and 12 instance fields (high), indicating significant complexity. It also has 3 distinct responsibility domains, suggesting it handles multiple tasks. The class accesses external classes and objects, and has own class accesses, which is typical for a well-structured class. The cognitive complexity estimate is high, further supporting the presence of significant logic. Therefore, the evidence strongly indicates that this class is not a data class."
+  },
+  {
+    "id": 534,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 537,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 12 instance fields and 15 methods, indicating a significant amount of data and behavior. It has distinct responsibility domains related to security checks and link creation. The evidence strongly supports that this class is not a simple data container but rather a complex component with significant logic."
+  },
+  {
+    "id": 539,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 12 instance fields and 15 methods, indicating significant complexity. It has 3 distinct responsibility domains: conditional testing, rendering, and parameter handling. The class accesses external objects (ComponentResources, Block), and it performs significant logic in its methods. The cognitive complexity is high, as it involves conditional rendering and parameter handling. Therefore, this class does not fit the definition of a data class."
+  },
+  {
+    "id": 547,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only one method (constructor) and no instance fields. It lacks any significant business logic or behavioral methods, serving primarily as a data container. This indicates a possible misplacement of logic that should be in this class. The evidence strongly suggests that this class is a data class."
+  },
+  {
+    "id": 550,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 12 instance fields and 15 methods, indicating a significant amount of data and logic. It has 3 distinct responsibility domains (data management, logic execution, and type handling). The class accesses external classes and objects, and it has a moderate nesting depth. The cognitive complexity is high due to the presence of multiple methods and the logic within them. This evidence strongly indicates that the class is not a data class but rather a domain model with significant business logic."
+  },
+  {
+    "id": 555,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 15 methods and 12 instance fields, indicating a significant amount of data and behavior. It has multiple distinct responsibility domains related to handling MailChimp API requests and processing user data. The class also accesses external classes and objects for HTTP requests and date formatting. While it does contain some logic, it is primarily focused on data manipulation and API interactions, which suggests it may be a data class with some business logic mixed in."
+  },
+  {
+    "id": 557,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The code snippet contains only one method (addElement) and one instance field (header). It lacks significant business logic or behavioral methods, serving primarily as a data container without meaningful operations. The external class/object accesses are minimal, and the own class accesses are limited to accessing the header field and the request object. The evidence strongly indicates that this class is a data class."
+  },
+  {
+    "id": 559,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "Method count=1 (low) + Instance field count=1 (low) + Distinct responsibility domains=1 (low) + External class/object accesses=0 (none) + Own class accesses=0 (none) + Approximate line count=4 (low) + Nesting depth=1 (low) + Number of distinct tasks=1 (low) + Cognitive complexity estimate=1 (low). The class contains only data members with a constructor and no significant business logic or behavioral methods, indicating it is a data class."
+  },
+  {
+    "id": 560,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains multiple instance fields (4) and has a method count of 10, indicating significant data storage. It lacks any significant business logic or behavioral methods, serving primarily as a data container. The class has a distinct responsibility domain related to providing labels for table columns, but this logic is limited to determining image icons based on data properties. The cognitive complexity is moderate due to conditional logic, but the primary function is data storage and retrieval, not processing or business logic."
+  },
+  {
+    "id": 569,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains multiple methods (3) and fields (2), indicating it has some complexity beyond just being a data container. However, the primary responsibility of the class is to manage connections and transaction registries, which suggests it should contain some business logic. The absence of significant business logic and the presence of multiple methods and fields indicate this class may be a candidate for a data class smell."
+  },
+  {
+    "id": 579,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class contains only one method (actionPerformed) and one instance field (main). It lacks significant business logic and serves primarily as a data container without meaningful operations. The evidence strongly indicates that this class is a data class."
+  },
+  {
+    "id": 583,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 15 methods and 12 instance fields, indicating significant complexity. It has three distinct responsibility domains: initialization, selection update, and annotation modification. The class accesses external classes and objects, and it contains a mix of data storage and business logic. Therefore, it does not fit the definition of a data class."
+  },
+  {
+    "id": 586,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only one method (constructor) and one instance field (fadd). It lacks significant business logic or behavioral methods. The primary function of this class is to serve as a data container for an error message. This aligns with the definition of a 'data class' as it contains only data members with getter and setter methods and lacks meaningful operations."
+  },
+  {
+    "id": 589,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 593,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 15 methods and 12 instance fields, indicating significant complexity. It has at least three distinct responsibility domains: job scheduling, job execution, and lifecycle management. The class accesses external objects such as `JobAccessor`, `JobFactory`, `MetricsFactory`, and `JobListener`, and it also accesses its own fields and methods. The code is approximately 500 lines long, with a moderate nesting depth. There are multiple distinct tasks performed within the class, such as acquiring and releasing semaphores, submitting jobs, and handling job execution results. The cognitive complexity is high due to the presence of nested loops, conditional statements, and method calls. This evidence strongly indicates that the class is not a simple data container but rather a complex entity with significant business logic."
+  },
+  {
+    "id": 599,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The code snippet contains only two methods (createCompatibleVolatileImage) and no instance fields. It lacks significant business logic or behavioral methods, serving primarily as a data container without meaningful operations. Therefore, it does not clearly satisfy the definition of a 'data class' and does not exhibit any of the characteristics typically associated with this smell."
+  },
+  {
+    "id": 601,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 603,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 12 instance fields and 1 method, indicating a high concentration of data without significant business logic. It serves primarily as a data container, lacking any meaningful operations or behavioral methods, which is a clear characteristic of a data class."
+  },
+  {
+    "id": 607,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class ExsltBase contains only one method (toNumber) and no instance fields, indicating it primarily serves as a data container. It lacks significant business logic or behavioral methods, and the single method is focused on converting node values to numbers, which is a behavior rather than data storage. This suggests that the logic should be in a separate class, making this a clear example of a data class."
+  },
+  {
+    "id": 611,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only one method (write) and no instance fields, indicating it serves primarily as a data container without meaningful operations. The lack of any business logic or behavioral methods, combined with the presence of a single method, strongly suggests this is a data class."
+  },
+  {
+    "id": 615,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 619,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 624,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class contains only one method (constructor) and one field (home). It lacks significant business logic or behavioral methods. The class serves primarily as a data container without meaningful operations. There is no strong evidence to classify this as a data class."
+  },
+  {
+    "id": 642,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 12 instance fields with getter and setter methods, indicating it primarily serves as a data container. It lacks significant business logic or behavioral methods, and there are no methods that operate on the data. This strongly suggests the class is a data class."
+  },
+  {
+    "id": 645,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The code snippet contains only a single method (getInstances) and a single instance field (instances). It lacks significant business logic or behavioral methods, serving primarily as a data container. There is no indication of misplacement of logic. The evidence strongly suggests that this class is a data class."
+  },
+  {
+    "id": 650,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class contains only one method (isEntryIncluded) and no instance fields, indicating it primarily serves as a data container without significant business logic. The method count is low (1), and there are no external or own class accesses, further supporting the data class characterization."
+  },
+  {
+    "id": 653,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 15 methods and 12 instance fields, indicating significant complexity. It has three distinct responsibility domains: data management, logic, and external interactions. The class accesses external objects and has nested methods, suggesting it performs multiple tasks. The cognitive complexity is high due to the combination of data handling and logic. This evidence strongly indicates that the class is not a simple data container but rather a complex entity with significant business logic, contradicting the 'data class' definition."
+  },
+  {
+    "id": 657,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class has a method count of 1 (applyEvent), instance field count of 0, and only one distinct responsibility domain. It does not contain any external or own class accesses, and its line count is minimal. The cognitive complexity is low. While it does not contain significant business logic, the lack of data members and the absence of external or own class accesses suggest that this class is not a data class in the traditional sense. Therefore, the evidence does not clearly satisfy the definition of a data class."
+  },
+  {
+    "id": 661,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 15 methods (high), 12 instance fields (high), and spans multiple responsibility domains (e.g., signal enforcement, message handling, event handling). It also accesses external classes and objects extensively, indicating complex behavior beyond mere data storage."
+  },
+  {
+    "id": 663,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only one method (valueOf) and one instance field (serialVersionUID). It lacks significant business logic and serves primarily as a data container. The method is straightforward and does not perform any complex operations. The class has a low cognitive complexity and a simple structure, which are indicative of a data class."
+  },
+  {
+    "id": 677,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The code snippet contains only data members with getter and setter methods, totaling 4 fields and 4 methods. It lacks any significant business logic or behavioral methods, serving primarily as a data container. There are no external or own class accesses, and the cognitive complexity is low. The evidence strongly indicates that this class is a data class."
+  },
+  {
+    "id": 681,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "Methods=1 (low) + Fields=1 (low) + 1 domain = weak evidence = major"
+  },
+  {
+    "id": 689,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 691,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 695,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 703,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "Methods=2 (low) + Fields=1 (low) + 1 domain = weak evidence = major"
+  },
+  {
+    "id": 705,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 20 methods (including getters and setters) and 12 instance fields, indicating significant complexity. It has multiple distinct responsibility domains related to creating various metadata objects and handling data types. The evidence strongly suggests that this class is not just a data container but also performs substantial business logic, thus not fitting the 'data class' definition."
+  },
+  {
+    "id": 707,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only one method (eClassIsSuperTypeOf) and two fields (eClass and otherEClass), which are typical characteristics of a data class. The method primarily checks if one EClass is a supertype of another based on their names and package names. There is no significant business logic or behavioral methods, and the class serves primarily as a data container. The evidence strongly indicates that this class is a data class."
+  },
+  {
+    "id": 709,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class `DimensionPart` contains only data members (fields) with getter and setter methods, and lacks significant business logic or behavioral methods. It serves primarily as a data container without meaningful operations, indicating a potential misplacement of logic. The method count is high (15), instance field count is high (12), and it has multiple distinct responsibility domains. This strong evidence satisfies the definition of a data class, leading to a major severity assessment."
+  },
+  {
+    "id": 715,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 15 methods (high) and 12 instance fields (high), indicating significant complexity. It has 3 distinct responsibility domains (layout configuration, node ordering, and processing), which suggests it is not a simple data container. The class accesses external objects (TGraph, TNode, TEdge) and performs substantial logic, such as finding roots, ordering levels, and processing nodes. Therefore, the evidence strongly indicates that this class is not a data class."
+  },
+  {
+    "id": 719,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "This class contains 15 methods (high) and 12 instance fields (high), indicating a significant amount of data handling. It has 3 distinct responsibility domains (data storage, validation, and creation logic), which is consistent with a data class. The class also has a moderate nesting depth and a cognitive complexity estimate that suggests it's not a simple data container. The presence of multiple getter and setter methods, along with business logic methods like `isAppropriateForCreating` and `isAppropriateForValidating`, further indicates that this class is not just a data container."
+  },
+  {
+    "id": 730,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "This class contains only one instance field (version) and two trivial getter and setter methods. It lacks any significant business logic or behavioral methods, serving primarily as a data container. The method count is 2 (one getter and one setter), which is low. The instance field count is 1, which is also low. There are no distinct responsibility domains present, and the class does not access any external classes or objects. The cognitive complexity is minimal. Therefore, the evidence strongly suggests that this class is a data class."
+  },
+  {
+    "id": 732,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 15 methods (high), 12 instance fields (high), and serves primarily as a data container without meaningful operations. It lacks significant business logic or behavioral methods, which are characteristics of a data class."
+  },
+  {
+    "id": 747,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods (2 instance fields, 3 methods). It lacks significant business logic or behavioral methods, serving primarily as a data container. The evidence strongly indicates that this class is a data class."
+  },
+  {
+    "id": 759,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 766,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 15 methods (high), 12 instance fields (high), and operates across multiple responsibility domains (e.g., credential creation, update, deletion, querying). It also accesses external classes and objects extensively. The high method count and field count, combined with the multiple domains, indicate that this class is not a simple data container but rather a complex entity with significant business logic. Therefore, it does not fit the definition of a 'data class' and is flagged as major."
+  },
+  {
+    "id": 777,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The code snippet contains only a few methods (4) and no instance fields. It primarily serves as a factory for creating objects and does not contain significant business logic. The evidence does not clearly indicate the presence of a data class smell."
+  },
+  {
+    "id": 779,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The code snippet contains only one method (create) and no instance fields. It does not serve as a data container but rather as a factory to create a specific type adapter. There is no significant business logic or behavioral methods, and it does not exhibit the characteristics of a data class as defined."
+  },
+  {
+    "id": 809,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "Methods=3 (low) + Fields=4 (low) + 1 domain = weak evidence = minor"
+  },
+  {
+    "id": 811,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only data members (fields) with getter and setter methods, and lacks significant business logic or behavioral methods. It serves primarily as a data container without meaningful operations, which is a clear indication of the 'data class' code smell. The method count (2) and instance field count (1) are low, but the lack of business logic and the presence of a single responsibility domain (serialization/deserialization) strongly indicate that this class is a data class."
+  },
+  {
+    "id": 815,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members (fields) with getter and setter methods (2 instance fields). It lacks significant business logic or behavioral methods, serving primarily as a data container without meaningful operations. The method count is low (2), and the instance field count is also low (2). This evidence suggests a minor data class smell."
+  },
+  {
+    "id": 820,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 823,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only one method (construct) and no instance fields, indicating it is primarily a data container. It lacks significant business logic or behavioral methods, serving only as a data processor. This strongly suggests a data class smell."
+  },
+  {
+    "id": 833,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only data members (fields) with getter and setter methods, lacks significant business logic or behavioral methods, and serves primarily as a data container without meaningful operations. It has a single method (contains) that performs a simple lookup, which does not indicate any complex logic. The class has a moderate number of fields (1 instance field) and methods (3), but the absence of any business logic or significant operations strongly indicates a data class smell."
+  },
+  {
+    "id": 841,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 15 methods and 12 instance fields, indicating significant complexity and a wide range of responsibilities. It also has 3 distinct responsibility domains (query processing, URI resolution, and visitor pattern). The presence of multiple methods and fields, along with distinct domains, strongly suggests that this class is not a simple data container but rather a complex component with significant business logic."
+  },
+  {
+    "id": 842,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The code snippet contains only one method (the constructor) and one instance field. It lacks any significant business logic or behavioral methods, serving primarily as a data container. There is no evidence of external or own class accesses, and the cognitive complexity is minimal. Therefore, the evidence does not clearly satisfy the definition of a data class."
+  },
+  {
+    "id": 848,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 12 instance fields and 4 methods, which indicates a high level of data storage. It lacks any significant business logic or behavioral methods, serving primarily as a data container. The class has a single responsibility domain, which further supports the data class smell."
+  },
+  {
+    "id": 857,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 15 methods and 12 instance fields, indicating significant complexity. It has multiple responsibility domains such as linking, adding, and building shapes, which suggests it is not purely a data container. The evidence strongly indicates that this class is not a data class."
+  },
+  {
+    "id": 863,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains multiple methods (15) and fields (12), indicating it has significant complexity. It has distinct responsibility domains related to method handling and binding, external class/object accesses, and own class accesses. The cognitive complexity is high, and the class performs complex operations such as method binding and devirtualization. This evidence strongly indicates that the class is not a data class but rather a complex business logic class."
+  },
+  {
+    "id": 866,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The code snippet contains only methods for creating instances of various classes, with no data members or significant business logic. This indicates that the class is primarily a data container without meaningful operations, which aligns with the definition of a 'data class' code smell."
+  },
+  {
+    "id": 871,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members (fields) with getter and setter methods, and lacks significant business logic or behavioral methods. It primarily serves as a data container without meaningful operations. The method count is 10 (low), instance field count is 3 (low), and it has only one distinct responsibility domain. The external class/object accesses are minimal, and the own class accesses are moderate. The cognitive complexity is low. Therefore, the evidence strongly indicates that this class is a data class."
+  },
+  {
+    "id": 873,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 15 methods and 12 instance fields, indicating significant complexity. It has 3 distinct responsibility domains: command parsing, argument substitution, and user input handling. The class accesses external classes (CommandParser, BufferedReader) and has a moderate nesting depth. The cognitive complexity is high due to the multiple conditional checks and nested loops. This evidence strongly indicates that the class is not a simple data container but rather a complex entity with significant business logic."
+  },
+  {
+    "id": 891,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The code snippet contains only one method (checkVitality) and no instance fields. It performs a specific task related to checking the vitality of a host, which is a clear indication of business logic. Therefore, this code does not fit the definition of a 'data class' and does not contain significant data class characteristics."
+  },
+  {
+    "id": 895,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 15 methods and 12 instance fields, indicating a significant amount of data and behavior. However, the primary responsibility of the class is to generate code based on data models, which suggests it is more of a behavioral class rather than a data class. The presence of distinct responsibility domains (code generation logic) and external class/object accesses (e.g., `IFileTemplate`, `IGeneratedWriter`) indicates that the class is not purely a data container."
+  },
+  {
+    "id": 897,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains multiple methods (4) and fields (1), indicating it has some complexity beyond just data storage. However, it primarily serves as a validator with specific business logic, which is a clear indication of a data class smell."
+  },
+  {
+    "id": 940,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 15 methods and 12 instance fields, indicating significant complexity. It has 4 distinct responsibility domains (StubDescriptor, DialogDescriptor, InterceptorDescriptor, SequenceDescriptor) and performs substantial parsing and validation logic. Therefore, it does not fit the definition of a data class."
+  },
+  {
+    "id": 945,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "This class contains 15 methods (high) and 12 instance fields (high), indicating significant complexity. It has 3 distinct responsibility domains: data storage, attribute manipulation, and directive handling. The class also accesses external classes/objects for parsing and writing, which is typical for a data class. The cognitive complexity is high due to the numerous methods and conditional logic. Therefore, this class exhibits strong characteristics of a data class."
+  },
+  {
+    "id": 947,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "Methods=1 (low) + Fields=1 (low) + 1 domain = weak evidence = minor"
+  },
+  {
+    "id": 953,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "This class contains only data members (fields) with getter and setter methods, and lacks significant business logic or behavioral methods. It serves primarily as a data container without meaningful operations, which is a clear indication of a data class."
+  },
+  {
+    "id": 958,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "This class contains 15 methods (high) and 12 instance fields (high), indicating a significant amount of data handling. It also has 3 distinct responsibility domains (API request handling, parameter setting, and response parsing), which is more than what would be expected for a simple data container. The class accesses external classes and objects (APIContext, ResponseWrapper, Page), demonstrating that it performs more than just data storage. The cognitive complexity is also high due to the number of methods and responsibilities. Therefore, this class exhibits strong characteristics of a data class code smell."
+  },
+  {
+    "id": 975,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The code snippet contains only two string constants (fields) and no methods. It lacks significant business logic or behavioral methods, serving primarily as a data container. This is a clear indication of a data class. The evidence strongly supports this classification."
+  },
+  {
+    "id": 977,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "This class contains 15 methods, 12 instance fields, and operates across 3 distinct responsibility domains, indicating significant business logic. It also accesses external classes and objects extensively. The cognitive complexity is high, and the class performs multiple tasks, including data retrieval, logic processing, and UI interactions. Therefore, this class does not exhibit the characteristics of a 'data class' and should not be classified as such."
+  },
+  {
+    "id": 988,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "Methods=1 (inline) + Fields=2 (expression, allowed) + 1 domain (expression manipulation) = strong BLOB evidence = major"
+  },
+  {
+    "id": 992,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only one method (getMediaClock) and no instance fields. It serves as a simple wrapper for the MediaClock interface, lacking significant business logic. This suggests it may be a candidate for refactoring to a more appropriate design."
+  },
+  {
+    "id": 998,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains multiple instance fields (12) and a significant number of methods (15), indicating it has both data and behavior. It also has distinct responsibility domains (e.g., managing package files, setting document paths), which contradicts the definition of a data class. The evidence strongly indicates that this class is not a data class but rather a business logic class."
+  },
+  {
+    "id": 1001,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "This class contains 12 instance fields and 15 methods, indicating a significant amount of functionality. It also has 3 distinct responsibility domains (data handling, parsing, and execution). The class accesses external classes and objects for operations, and it has a moderate nesting depth and cognitive complexity. Therefore, this class does not fit the definition of a data class."
+  },
+  {
+    "id": 1004,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members (fields) with getter and setter methods (1 method, 2 fields). It lacks significant business logic or behavioral methods, and serves primarily as a data container without meaningful operations. The evidence strongly indicates that this class is a data class."
+  },
+  {
+    "id": 1006,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1013,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1030,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The code snippet provided does not contain any instance fields or getter/setter methods, which are characteristic of a data class. It only contains a constructor and a method that returns a string. Therefore, there is no evidence to suggest that this code has a data class smell."
+  },
+  {
+    "id": 1033,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class UserToken contains only one method (getValue) and one field (token), which are typical characteristics of a data class. It lacks significant business logic or behavioral methods, serving primarily as a data container. The evidence strongly indicates that this class is a data class."
+  },
+  {
+    "id": 1035,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 100 methods, which is a high number of operations. It has no instance fields, indicating it is not serving as a data container. The class accesses only other classes without performing any significant business logic, which is indicative of a data class smell."
+  },
+  {
+    "id": 1037,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1039,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The code snippet contains only one method (the constructor) and one field (the error message). It lacks significant business logic or behavioral methods, and serves primarily as a data container without meaningful operations. The evidence strongly indicates that this class is a data class."
+  },
+  {
+    "id": 1048,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "This code snippet is a clear example of a data class. It contains 15 methods (high), 12 instance fields (high), and serves primarily as a data container without meaningful operations. There are no behavioral methods or significant business logic. The class is focused solely on encapsulating data with getter and setter methods, which is a hallmark of a data class."
+  },
+  {
+    "id": 1051,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "This class contains only data members (fields) with no getter and setter methods. It lacks any significant business logic or behavioral methods, serving primarily as a data container. The method count is 0, instance field count is 12, and there are no distinct responsibility domains present. This indicates a strong likelihood of a data class smell."
+  },
+  {
+    "id": 1068,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1070,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "Methods=2 (low) + Fields=2 (low) + 1 domain = weak evidence = minor"
+  },
+  {
+    "id": 1072,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1074,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only one method (getArch) and no instance fields, which is a strong indicator of a data class. It lacks significant business logic and serves primarily as a data container. The method is responsible for determining the architecture based on the system property, which is a small amount of logic. Therefore, the evidence strongly suggests this class is a data class with minor complexity."
+  },
+  {
+    "id": 1076,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 12 instance fields and 1 method, indicating a high level of data storage. It lacks any significant business logic or behavioral methods, serving primarily as a data container. The class has multiple responsibility domains (handling title, description, and thumbnail), which further supports the data class smell."
+  },
+  {
+    "id": 1079,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "Methods=1 (low) + Fields=0 (low) + 1 domain = strong BLOB evidence = major"
+  },
+  {
+    "id": 1081,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 15 methods and 12 instance fields, indicating a significant amount of data and operations. It has 3 distinct responsibility domains (transcoding, segment management, and data handling). The class accesses external objects (e.g., files, streams) and has a moderate level of cognitive complexity. The evidence strongly suggests that this class is not a simple data container but rather a complex entity with significant business logic."
+  },
+  {
+    "id": 1084,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The interface contains multiple methods and fields, indicating it has significant responsibilities beyond just data storage. It defines methods for sending requests and creating tasks, which suggests it is involved in business logic. The presence of multiple methods and a mix of data and behavior indicates it is not a simple data container."
+  },
+  {
+    "id": 1092,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 15 methods and 12 fields, indicating a significant amount of functionality. It has three distinct responsibility domains: initialization, reading, and closing. The class accesses external classes and objects, performs operations, and contains meaningful logic. Therefore, it does not fit the definition of a 'data class' and has a major code smell."
+  },
+  {
+    "id": 1094,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 15 methods (high) and 12 instance fields (high), indicating a significant amount of data and behavior. It also has 3 distinct responsibility domains (e.g., locking mechanisms, condition objects, and read/write operations), which suggests a more complex structure than a simple data container. The presence of both data and significant business logic strongly indicates that this class is not a data class."
+  },
+  {
+    "id": 1097,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 15 methods and 12 instance fields, indicating a significant amount of data handling. It has 3 distinct responsibility domains, suggesting complex behavior. The class accesses external classes and objects, and it has a moderate nesting depth and cognitive complexity. These measurements strongly indicate that the class is not merely a data container but also performs significant operations, thus not fitting the definition of a data class."
+  },
+  {
+    "id": 1103,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only data members (fields) with no getter and setter methods, and lacks significant business logic or behavioral methods. It serves primarily as a data container without meaningful operations, which is a clear indication of a data class code smell."
+  },
+  {
+    "id": 1106,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only data members (fields) with getter and setter methods (12 fields, 2 methods), lacks significant business logic or behavioral methods, and serves primarily as a data container without meaningful operations. It has a strong BLOB (Big Object) smell as indicated by the high number of fields and methods, and the absence of any logic or behavior."
+  },
+  {
+    "id": 1109,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1117,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 15 methods (high) and 12 instance fields (high), indicating significant complexity and data handling. It also has 3 distinct responsibility domains (methods related to attribute retrieval and manipulation), suggesting it serves as a data container with minimal business logic. This evidence strongly indicates a 'data class' smell."
+  },
+  {
+    "id": 1127,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only one method (onClick) and one instance field (fragment), which are typical characteristics of a data class. It lacks significant business logic and serves primarily as a data container without meaningful operations. The evidence strongly indicates that this class is a data class."
+  },
+  {
+    "id": 1135,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only one instance field (template) and two trivial getter and setter methods. It lacks any significant business logic or behavioral methods, serving primarily as a data container. The method count is low (2 methods), and the instance field count is also low (1 field). This evidence suggests a minor data class smell."
+  },
+  {
+    "id": 1137,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only data members (fields) with getter and setter methods (e.g., encoding, vmArgs, noDebug, cwd, console). It lacks significant business logic or behavioral methods. The primary responsibility of this class is to serve as a data container without meaningful operations, which is a clear indicator of the 'data class' code smell."
+  },
+  {
+    "id": 1139,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1140,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 4 instance fields (originalBorder, error, jComponent, component) and 3 methods (verify, shouldYieldFocus, validate). It primarily serves as a data container with minimal logic, lacking significant business logic or behavioral methods. This indicates a strong likelihood of a data class smell."
+  },
+  {
+    "id": 1149,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1152,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The Builder class contains 12 instance fields and 15 methods, indicating significant complexity. It also has distinct responsibility domains related to setting up a request and copying values. The class accesses external objects (com.oracle.bmc.util.internal.Consumer and javax.ws.rs.client.Invocation.Builder) and performs operations such as setting and copying values, which are typical behaviors for a data class."
+  },
+  {
+    "id": 1158,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The Builder class contains only a single method (copy) and no instance fields. It primarily serves as a data container for copying values from one instance to another. This indicates a lack of significant business logic or behavioral methods, which is a characteristic of a data class."
+  },
+  {
+    "id": 1160,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class Segment contains only one instance field (segmentType) and one method (getSegmentType()). It does not contain any significant business logic or behavioral methods, and its primary purpose is to serve as a data container. There is no evidence of external or own class accesses, and the cognitive complexity is low. Therefore, the evidence does not clearly satisfy the definition of a 'data class' and does not warrant a severity rating."
+  },
+  {
+    "id": 1162,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The code contains 15 methods (high) and 12 instance fields (high), indicating a significant amount of data handling. It also spans across 3 distinct responsibility domains (e.g., destination, protocol options), suggesting a complex data structure. The presence of multiple builder methods and a copy method further supports the data container nature of this class. The cognitive complexity is high due to the numerous fields and methods, and the class does not contain significant business logic or behavioral methods, making it a clear example of a data class."
+  },
+  {
+    "id": 1167,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1169,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class DuplicatableProgressTrackingInputStream contains multiple methods (12) and instance fields (4), indicating it has a complex structure. It also has distinct responsibility domains related to progress tracking and duplication, which suggests it is not merely a data container. The class accesses external classes and objects, and it has a cognitive complexity that is not trivial. Therefore, the evidence strongly indicates that this class is not a data class."
+  },
+  {
+    "id": 1175,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1185,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only one instance field (body) and two methods (a constructor and a setter). It lacks significant business logic or behavioral methods, serving primarily as a data container. This indicates a possible misplacement of logic that should be in this class. The evidence strongly suggests that this is a data class."
+  },
+  {
+    "id": 1186,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 15 methods (high) and 12 instance fields (high), indicating significant complexity. It has 3 distinct responsibility domains (networking, security, and virtual circuits), which suggests it is not a simple data container. The class accesses external classes and objects, and it has its own methods that operate on the data, which is inconsistent with the definition of a data class."
+  },
+  {
+    "id": 1197,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The code contains only one method (toString) and one field (INVALID_COMPILATION_ID), which indicates a lack of significant business logic or behavioral methods. It serves primarily as a data container without meaningful operations, fitting the definition of a data class. The high method count and the presence of multiple responsibility domains suggest a complex structure, further supporting the severity of this smell."
+  },
+  {
+    "id": 1200,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 15 methods and 12 instance fields, indicating a high level of complexity. It has multiple responsibility domains, including data management, subscription handling, and error signaling. The class also accesses external objects and has nested structures, which are typical of classes with significant logic. Therefore, it does not fit the definition of a data class."
+  },
+  {
+    "id": 1205,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1215,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 12 instance fields and 15 methods, indicating significant complexity beyond mere data storage. It has distinct responsibility domains such as dependency resolution, version checks, and path retrieval. The evidence strongly suggests that this class is not a simple data container but rather a complex entity with substantial logic."
+  },
+  {
+    "id": 1220,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only one method (getStorageDirectoryString) and one instance field (hostsStorageDirectoryString). It lacks significant business logic and serves primarily as a data container. The method is synchronized and performs a simple calculation to return a string, which is typical for a data class. The evidence strongly indicates that this class is a data class."
+  },
+  {
+    "id": 1229,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members (package_name and package_id) and lacks any significant business logic or behavioral methods. It serves primarily as a data container without meaningful operations. The method count is 1 (the constructor), and the instance field count is 2. The class has a single responsibility domain related to package data. There is no external or own class access, and the cognitive complexity is low. This evidence suggests a minor data class smell."
+  },
+  {
+    "id": 1230,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The code snippet contains only one method (getName) and no instance fields, indicating that it is primarily a data container without significant business logic. Therefore, it does not clearly satisfy the definition of a data class."
+  },
+  {
+    "id": 1240,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 12 instance fields and 15 methods, indicating a significant amount of data and behavior. It also has 3 distinct responsibility domains: data storage, test suite creation, and activation logic. The presence of a nested class 'Activation' and abstract methods like 'activate' and 'createHarness' suggests that while it does contain some logic, it is not primarily focused on behavior but rather on data storage and minimal operations. This evidence strongly indicates that the class is a data class."
+  },
+  {
+    "id": 1243,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1249,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 12 instance fields and 15 methods, indicating significant complexity. It has multiple responsibility domains (UI, data handling, session management), external class/object accesses, and a nesting depth of 3. The presence of both data and significant logic operations suggests it is not a purely data class."
+  },
+  {
+    "id": 1252,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "Methods=2 (low) + Fields=1 (low) + 1 domain = weak evidence = minor"
+  },
+  {
+    "id": 1254,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1256,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 15 methods and 12 instance fields, indicating a significant amount of data and behavior. It has three distinct responsibility domains: fetching process output, identifying Grails processes, and executing commands. The class accesses external objects (e.g., `ProcessBuilder`, `InputStream`) and performs meaningful operations. Therefore, it does not fit the definition of a data class."
+  },
+  {
+    "id": 1260,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members (fields) with no significant business logic or behavioral methods. It serves primarily as a data container without meaningful operations. The method count is low (1 constructor), and the instance field count is moderate (11 fields). The distinct responsibility domain is clear (flag management), and there are no external or own class accesses that suggest additional logic. The cognitive complexity is low, and the nesting depth is minimal. This evidence strongly indicates a data class smell."
+  },
+  {
+    "id": 1261,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members (fields) with no getter and setter methods. It lacks significant business logic or behavioral methods. The evidence strongly indicates that this class is primarily a data container without meaningful operations, fitting the definition of a 'data class'."
+  },
+  {
+    "id": 1269,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 15 methods (high) and 12 instance fields (high), indicating significant complexity. It has 3 distinct responsibility domains: managing project data, handling query items, and providing UI components. The class accesses external classes and objects for operations like creating UI, handling events, and accessing project data. This complexity and the presence of multiple responsibilities suggest that the class is not a simple data container but rather a complex component with significant logic."
+  },
+  {
+    "id": 1273,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "This class contains 12 instance fields and 15 methods, indicating a high level of complexity. It also has 3 distinct responsibility domains: managing the WeakHashMap, accessing its fields, and processing entries. The class accesses external classes and objects, and it has a moderate nesting depth. The number of distinct tasks and cognitive complexity suggest that this class is not primarily a data container but rather a complex logic processor. Therefore, it does not meet the criteria of a 'data class' as defined."
+  },
+  {
+    "id": 1274,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 15 methods (high) and 12 instance fields (high), indicating it is a complex data container. It lacks significant business logic or behavioral methods, serving primarily as a data container without meaningful operations. This strongly indicates a data class smell."
+  },
+  {
+    "id": 1279,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "This class contains 15 methods (including getters and setters) and 12 instance fields, indicating a high level of complexity. It has distinct responsibility domains such as configuration settings and access log properties. The presence of multiple fields and methods suggests that this class is not merely a data container but also performs some operations, which contradicts the data class definition."
+  },
+  {
+    "id": 1293,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members (fields) with getter and setter methods, totaling 1 instance field. It also lacks significant business logic or behavioral methods. The evidence strongly indicates that this class is primarily a data container without meaningful operations, fitting the definition of a 'data class'."
+  },
+  {
+    "id": 1295,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The code snippet contains only one method (isRestartRequired) and no instance fields. It serves as a functional interface with a single responsibility, which does not indicate a data class. The method is clearly defined and serves a specific purpose, indicating that it does not lack significant business logic."
+  },
+  {
+    "id": 1303,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The code snippet contains only one method (health()) and no instance fields. It lacks significant business logic or behavioral methods. The class serves primarily as a data container without meaningful operations. Therefore, it does not clearly satisfy the definition of a 'data class' and does not have any evidence of being a data class."
+  },
+  {
+    "id": 1304,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only data members (fields) with getter methods, lacks significant business logic or behavioral methods, and serves primarily as a data container without meaningful operations. It has a high method count (3 methods) and a moderate number of instance fields (1 field), indicating a complex data structure. The class does not perform any operations on the data, which is a clear indication of a data class smell."
+  },
+  {
+    "id": 1307,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "This class contains only data members (fields) with getter and setter methods, totaling 12 fields. It lacks significant business logic or behavioral methods, serving primarily as a data container without meaningful operations. The class has a high method count (15) and multiple distinct responsibility domains (data handling, pagination logic), indicating a complex structure that goes beyond a simple data container."
+  },
+  {
+    "id": 1310,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 12 instance fields and 15 methods, indicating a significant amount of data and logic. It has 3 distinct responsibility domains (endpoint discovery, operation creation, and filtering). The class accesses external classes and objects, and it has a moderate nesting depth. The cognitive complexity is high due to the number of methods and responsibilities. This evidence strongly indicates that the class is a data class, serving primarily as a container without meaningful operations."
+  },
+  {
+    "id": 1315,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 15 methods (high) and 12 instance fields (high), indicating substantial complexity. It also has 3 distinct responsibility domains, suggesting a lack of cohesion. The class accesses external classes and objects, and has own class accesses, which is typical for a data class. The cognitive complexity estimate is high, further supporting the presence of significant logic. Therefore, this class exhibits strong evidence of being a data class."
+  },
+  {
+    "id": 1317,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The code snippet provided is an interface with a single method that does not contain any data members or additional logic. It serves as a contract for a behavior rather than a data container, which does not align with the characteristics of a data class."
+  },
+  {
+    "id": 1320,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods (2 methods, 3 fields). It lacks significant business logic or behavioral methods, serving primarily as a data container. The evidence strongly indicates that this class is a data class."
+  },
+  {
+    "id": 1325,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The code snippet contains only one method and no instance fields, indicating a very simple data container. There is no significant business logic or behavioral methods, and it serves primarily as a data container without meaningful operations. Therefore, the evidence does not clearly satisfy the definition of a 'data class' smell."
+  },
+  {
+    "id": 1331,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "This class contains 12 instance fields and 15 methods, indicating a significant amount of data and logic. It also has 3 distinct responsibility domains: handling Gerrit options, validating parameters, and creating Gerrit API transports. The class accesses external classes and objects, performs operations, and contains nested logic. Therefore, it does not fit the definition of a 'data class' and has strong evidence of being a major code smell."
+  },
+  {
+    "id": 1338,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class StfdTranslator has only one method (translate) and no instance fields. It does not contain any business logic or behavioral methods, and its primary function is to serve as a data container for translation instructions. There is no evidence of significant complexity or multiple responsibility domains, and the class does not access external or own classes in a way that suggests it should contain more logic. Therefore, the evidence does not clearly satisfy the definition of a data class."
+  },
+  {
+    "id": 1348,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The code snippet contains only one method (loadClass) and one field (bytecode). It lacks significant business logic or behavioral methods, serving primarily as a data container without meaningful operations. This indicates a strong likelihood of a data class smell."
+  },
+  {
+    "id": 1355,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The code snippet contains only one method (unknown()) and one static method (unknown()). It has no instance fields, indicating that it does not serve as a data container. There is no significant business logic or behavioral methods, and it lacks any distinct responsibility domains. The evidence strongly suggests that this class is a data class with minimal functionality."
+  },
+  {
+    "id": 1357,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members (fields) with no significant business logic or behavioral methods. It serves primarily as a data container without meaningful operations, which is a clear indicator of a data class. The method count is low (2), instance field count is moderate (4), and it lacks distinct responsibility domains. The cognitive complexity is also low, as it primarily holds data and does not perform complex operations."
+  },
+  {
+    "id": 1358,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1361,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "Methods=1 (low) + Fields=2 (low) + 1 domain = weak evidence = major"
+  },
+  {
+    "id": 1371,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class CDeleteBookmarkAction contains only data members (fields) with no significant business logic or behavioral methods. It serves primarily as a data container without meaningful operations, clearly indicating a data class smell. The method count is 1 (actionPerformed), instance field count is 3 (m_actionProvider, m_rows), and it lacks any distinct responsibility domains or external class/object accesses. The cognitive complexity is low, further supporting the classification as a data class."
+  },
+  {
+    "id": 1373,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "Methods=1 (low) + Fields=2 (low) + 1 domain = weak evidence = major"
+  },
+  {
+    "id": 1379,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only one method (emitCode) and one instance field (TYPE), which are clearly data members. It lacks any significant business logic or behavioral methods. The class serves primarily as a data container without meaningful operations, indicating a strong data class smell."
+  },
+  {
+    "id": 1384,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The code contains only 2 instance fields (id, firstName, lastName) and 1 constructor. It has no significant business logic or behavioral methods, and it serves primarily as a data container. There is no indication of misplacement of logic. The method count is low (2), and the instance field count is also low (3). Therefore, there is no strong evidence to classify this as a data class."
+  },
+  {
+    "id": 1396,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 12 instance fields and only one method, which is a typical characteristic of a data class. It lacks significant business logic or behavioral methods, serving primarily as a data container. The class has a high cognitive complexity due to the use of multiple registers and assertions, but this does not negate its primary role as a data container."
+  },
+  {
+    "id": 1400,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains multiple methods (5), indicating a higher cognitive complexity. It also accesses external classes (MonitorSupport) and has distinct responsibility domains (getClass, hashCode, toString, wait, notify, notifyAll), which suggests it is not a simple data container."
+  },
+  {
+    "id": 1404,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The code contains 15 methods and 12 instance fields, indicating significant complexity and responsibilities. It has three distinct responsibility domains: creating parameter setters, handling SpEL expressions, and managing parameter bindings. The class accesses external classes and objects for operations like creating expressions and evaluating them. The cognitive complexity is high due to the numerous methods and conditional logic. This evidence strongly indicates that the class is not a simple data container but rather a complex entity with significant business logic."
+  },
+  {
+    "id": 1408,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1410,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The code snippet contains only one method (the constructor) and no instance fields. It lacks any significant business logic or behavioral methods, serving primarily as a data container without meaningful operations. The evidence strongly indicates that this class is a data class."
+  },
+  {
+    "id": 1414,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class contains no methods (0), only one instance field (Customer53Repository), and serves as a data container without any business logic. This strongly indicates a data class smell. The lack of methods and the single field make it clear that this class is primarily for data storage without any meaningful operations."
+  },
+  {
+    "id": 1418,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class has only one constructor and no methods or fields. It does not contain any business logic or significant operations, indicating it is primarily a data container. There is no evidence of misplacement of logic. The evidence is weak, and the class does not clearly satisfy the definition of a data class."
+  },
+  {
+    "id": 1427,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only one constructor method and no other methods or fields. It serves as a simple data container without any business logic, which is characteristic of a data class. The evidence strongly indicates that this class is a data class."
+  },
+  {
+    "id": 1436,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The code snippet contains only one method (the constructor) and no instance fields. It lacks any significant business logic or behavioral methods, and appears to be a simple data container. There is no evidence of multiple responsibility domains, external or own class accesses, or any other characteristics that would indicate a data class smell."
+  },
+  {
+    "id": 1440,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members (fields) with getter and setter methods, and lacks significant business logic or behavioral methods. It serves primarily as a data container without meaningful operations, indicating a possible misplacement of logic. The method count is 4 (including the constructor and toString method), which is low, and the instance field count is 3, which is also low. The class does not have any distinct responsibility domains or external class/object accesses. The cognitive complexity estimate is low, as the class is simple and straightforward. Therefore, the evidence suggests a minor 'data class' smell."
+  },
+  {
+    "id": 1442,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods, lacks significant business logic, and serves primarily as a data container. It has 2 instance fields and 2 methods, indicating a simple data structure. The evidence strongly suggests this is a data class."
+  },
+  {
+    "id": 1444,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "This class contains only data members (result, source, selector) and lacks any significant business logic or behavioral methods. It serves primarily as a data container without meaningful operations, which is a clear indication of the 'data class' code smell. The method count is low (1 method), and the instance field count is moderate (3 fields). The class does not perform any operations on the data it contains, further supporting the data class characterization."
+  },
+  {
+    "id": 1459,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 12 instance fields and 15 methods, indicating a high level of complexity. It has multiple distinct responsibility domains (data storage, value manipulation, key assignment, and conditional logic), external class/object accesses, and own class accesses. The cognitive complexity estimate is high due to the numerous methods and conditional logic. This evidence strongly suggests that the class is not a simple data container but rather a complex entity with significant business logic."
+  },
+  {
+    "id": 1461,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The code snippet contains only two instance fields (type) and two methods (constructor and getType). It lacks any significant business logic or behavioral methods, and serves primarily as a data container. The evidence strongly indicates that this class is a data class."
+  },
+  {
+    "id": 1464,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "This class contains 15 methods and 12 instance fields, indicating a high level of complexity. It has multiple distinct responsibility domains, external class/object accesses, and a cognitive complexity estimate. The class serves as a data container with significant business logic, which contradicts the definition of a data class."
+  },
+  {
+    "id": 1470,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The code snippet contains only one method (publicMethod) and one default method (defaultMethod), along with a private method (privateMethod) and a protected method (protectedMethod). There are no instance fields present. The class does not serve as a data container but rather contains methods that perform specific operations. The evidence does not clearly indicate that this class is a data class as defined."
+  },
+  {
+    "id": 1473,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1476,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 12 instance fields and 1 method, indicating a high level of data storage. It lacks significant business logic or behavioral methods, serving primarily as a data container. The presence of multiple distinct responsibility domains (e.g., reflective operations, method invocations) suggests that the logic should be separated from the data storage."
+  }
+]

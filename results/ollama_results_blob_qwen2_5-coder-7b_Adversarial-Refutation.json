@@ -1,0 +1,1402 @@
+[
+  {
+    "id": 528,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "This class has a high method count (15+), a significant number of instance fields (12+), and manages multiple distinct responsibility domains, including data management, event generation, and spill handling. It also has high external class/object accesses and a moderate level of cognitive complexity. These factors strongly indicate that the class is a God Class, violating the Single Responsibility Principle."
+  },
+  {
+    "id": 535,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 536,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 538,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 546,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet provided is a simple abstract class with a single constructor method. It does not exhibit characteristics of a God Class (Blob) as it does not accumulate too many responsibilities, manage multiple unrelated functionalities, or violate the Single Responsibility Principle. The method count is low (1), instance field count is low (0), and it focuses on a single responsibility related to property changes in elements. Therefore, there is no strong evidence to classify this code as a God Class."
+  },
+  {
+    "id": 551,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 554,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "This class has a high method count (approximately 30 methods), a significant number of instance fields (approximately 20), and manages multiple unrelated functionalities such as HTTP requests, data formatting, and business logic. It also has a nested structure and a high cognitive complexity. These characteristics clearly indicate that the class is a God Class (Blob), violating the Single Responsibility Principle."
+  },
+  {
+    "id": 556,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=1 (low) + Fields=1 (low) + 1 domain = weak BLOB evidence = minor"
+  },
+  {
+    "id": 558,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet contains only one method and one instance field, indicating a low method count and instance field count. It manages a single responsibility domain related to channel configuration exceptions. There are no external or own class accesses beyond the superclass constructor call. The code is concise with only 10 lines and a nesting depth of 1. There is only one distinct task, which is creating a custom exception. The cognitive complexity is low. Therefore, there is no strong evidence of a God Class (Blob) smell."
+  },
+  {
+    "id": 561,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=10 (moderate) + Fields=3 (low) + 3 domains (moderate) = strong BLOB evidence = major"
+  },
+  {
+    "id": 568,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=2 (low) + Fields=0 (low) + 1 domain = weak BLOB evidence = minor"
+  },
+  {
+    "id": 578,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "This class has a method count of 1 (actionPerformed), instance field count of 1 (main), and manages a single responsibility domain (handling file save events). It accesses external class MainFrame for saveFile and setStatusbarMessage methods. There is no strong evidence of multiple unrelated functionalities or poor cohesion. The cognitive complexity is low, and the class is relatively simple. Therefore, while it does not fully fit the 'God Class' definition, it still exhibits characteristics of a single responsibility class."
+  },
+  {
+    "id": 582,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=11 (high) + Fields=3 (moderate) + 2 distinct domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 587,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet has a method count of 1 (constructor), an instance field count of 1 (fadd), and only one distinct responsibility domain (handling error messages). There are no external class/object accesses or own class accesses beyond the superclass. The code is concise with an approximate line count of 5 and a nesting depth of 1. It performs a single task of adding an error message to a frame, which aligns with the Single Responsibility Principle. Therefore, there is no strong evidence of a God Class (Blob) smell."
+  },
+  {
+    "id": 588,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=10 (moderate) + Fields=0 (low) + 1 domain = moderate BLOB evidence = major"
+  },
+  {
+    "id": 592,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The code has a high method count (30+), a large number of instance fields (16+), and manages multiple, unrelated functionalities such as job scheduling, job execution, and metrics tracking. This indicates poor cohesion and high dependency, violating the Single Responsibility Principle."
+  },
+  {
+    "id": 598,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet contains only two methods and no instance fields, indicating a low method count and field count. It also does not manage multiple, unrelated functionalities, nor does it violate the Single Responsibility Principle. Therefore, there is no strong evidence to classify this as a God Class (Blob)."
+  },
+  {
+    "id": 600,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "This class has a high method count (15), multiple instance fields (12), and manages multiple functionalities related to short array operations. It also accesses external classes and has a nested structure, indicating poor cohesion and high complexity."
+  },
+  {
+    "id": 602,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class contains 15 methods and 12 instance fields, indicating a high complexity. It manages multiple, unrelated functionalities such as method extraction, error handling, and configuration settings, suggesting poor cohesion. The class accesses external classes and objects extensively, further indicating a lack of focus on a single responsibility. These factors collectively provide strong evidence of the God Class (Blob) code smell."
+  },
+  {
+    "id": 606,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class ExsltBase contains two distinct responsibilities: converting a Node to a string and converting a Node to a number. This violates the Single Responsibility Principle (SRP), as it accumulates too many responsibilities within a single class. The method count is high (4 methods), and the class manages multiple, unrelated functionalities, making it difficult to maintain and extend."
+  },
+  {
+    "id": 614,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=40 (high) + Fields=25 (high) + 4 distinct domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 618,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=21 (high) + Fields=12 (high) + 4 distinct responsibility domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 625,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has only one method and no instance fields, indicating a single responsibility. It does not manage multiple unrelated functionalities or violate the Single Responsibility Principle. Therefore, there is no strong evidence of a God Class (Blob) code smell."
+  },
+  {
+    "id": 643,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 644,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=1 (low) + Fields=1 (low) + 1 domain = weak BLOB evidence = minor"
+  },
+  {
+    "id": 651,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet contains only one method (isEntryIncluded) and no instance fields, indicating a low method count and no instance field count. It manages a single responsibility domain (determining if a classpath entry should be included), which aligns with the Single Responsibility Principle. There is no indication of poor cohesion or high dependency on other classes. Therefore, there is no strong evidence to classify this as a 'God Class (Blob)' smell."
+  },
+  {
+    "id": 652,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 4 distinct responsibility domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 656,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet contains only one method and no instance fields, indicating a low method count and low instance field count. There is only one responsibility domain present, which is managing the removal of attributes. The class does not access external classes or objects in a way that suggests multiple unrelated functionalities. The cognitive complexity is low, and the nesting depth is minimal. Therefore, there is no strong evidence of a God Class (Blob) code smell."
+  },
+  {
+    "id": 660,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 662,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet contains a single method and no instance fields, indicating low complexity. It focuses on a single responsibility of extracting keys from map entries, which aligns with the Single Responsibility Principle. Therefore, there is no evidence of a God Class (Blob) smell."
+  },
+  {
+    "id": 676,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet provided is a DTO (Data Transfer Object) interface with only four methods and two instance fields. It appears to have a single responsibility, which is to represent the state of a file update event. There is no evidence of managing multiple unrelated functionalities or violating the Single Responsibility Principle. Therefore, the code does not exhibit the characteristics of a 'God Class (Blob)' smell."
+  },
+  {
+    "id": 680,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=4 (low) + Fields=1 (low) + 1 domain = weak BLOB evidence = minor"
+  },
+  {
+    "id": 688,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 690,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class Ipam has 15 methods (high), 12 instance fields (high), and manages multiple, unrelated functionalities such as driver management, configuration, and options. This indicates poor cohesion and high dependency, violating the Single Responsibility Principle (SRP)."
+  },
+  {
+    "id": 694,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3 distinct domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 702,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=2 (low) + Fields=1 (low) + 1 domain = weak BLOB evidence = minor"
+  },
+  {
+    "id": 704,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 706,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=2 (low) + Fields=0 (low) + 1 domain = weak evidence against BLOB = minor"
+  },
+  {
+    "id": 708,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3 distinct domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 714,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3 distinct responsibility domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 718,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 731,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet contains only two methods (getVersion and setVersion) and one instance field (version). It manages a single responsibility, which is setting and getting the project version. There is no evidence of multiple unrelated functionalities or poor cohesion. The class is simple and straightforward, adhering to the Single Responsibility Principle."
+  },
+  {
+    "id": 733,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 746,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet contains only four instance fields and three methods, indicating low complexity and a single responsibility. There is no evidence of managing multiple, unrelated functionalities or violating the Single Responsibility Principle. Therefore, this code does not exhibit the characteristics of a 'God Class (Blob)' smell."
+  },
+  {
+    "id": 758,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 767,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 776,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "Methods=4 (low) + Fields=0 (low) + 1 domain = weak BLOB evidence = minor"
+  },
+  {
+    "id": 778,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class has only one method and no instance fields, indicating low complexity. It manages a single responsibility related to creating a TypeAdapter, which is a clear example of the Single Responsibility Principle (SRP). The evidence does not strongly suggest that this class is a God Class (Blob)."
+  },
+  {
+    "id": 808,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=11 (moderate) + Fields=4 (low) + 2 domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 810,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=2 (low) + Fields=1 (low) + 1 domain = weak BLOB evidence = minor"
+  },
+  {
+    "id": 814,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "Method count=2 (low) + Instance field count=0 (low) + 1 domain = weak BLOB evidence = none"
+  },
+  {
+    "id": 821,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 822,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=11 (moderate) + Fields=1 (low) + 4 distinct domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 832,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class contains multiple responsibilities: managing a Hashtable, converting strings to lowercase, and checking for the presence of a type. It has 2 methods and 1 instance field, indicating a high cognitive complexity. The class accesses external classes (Hashtable, Vector) and performs multiple tasks, violating the Single Responsibility Principle."
+  },
+  {
+    "id": 840,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 843,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet provided is minimal, with only one method and no instance fields. It focuses on a single responsibility: constructing a perspective with a specific label. There is no indication of multiple unrelated functionalities or poor cohesion. Therefore, there is no strong evidence to classify this as a God Class (Blob)."
+  },
+  {
+    "id": 851,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=5 (moderate) + Fields=2 (low) + 2 domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 856,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class `ActorAddFeature` has a high method count (21 methods), multiple instance fields (12 fields), and manages multiple unrelated functionalities such as linking, adding, and building shapes. This indicates poor cohesion and a violation of the Single Responsibility Principle."
+  },
+  {
+    "id": 862,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "This class has 15 methods, which is high, and 12 instance fields, which is also high. It manages multiple functionalities related to MethodHandles, including indirect handling, JIT support, and binding to objects. This violates the Single Responsibility Principle and leads to poor cohesion."
+  },
+  {
+    "id": 867,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet contains only 4 methods, each responsible for creating a specific instance of a nested class. There are no instance fields, and the class does not manage multiple unrelated functionalities. It adheres to the Single Responsibility Principle by focusing on object creation. The evidence does not support the presence of a 'God Class' or 'Blob' code smell."
+  },
+  {
+    "id": 870,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=5 (low) + Fields=3 (low) + 1 domain = weak BLOB evidence = minor"
+  },
+  {
+    "id": 872,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 890,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class 'Ping' contains a single method that performs two distinct tasks: checking if a host is reachable via ping and checking if a host is reachable via a socket connection. This violates the Single Responsibility Principle (SRP) as the class is managing multiple, unrelated functionalities. The method count is 1, but the functionality is split into two parts, which is indicative of a God Class (Blob) smell."
+  },
+  {
+    "id": 894,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class DatatypeGeneratorTask has a high method count (15), multiple instance fields (12), and manages multiple unrelated functionalities such as template generation, type extraction, and nested object traversal. This indicates poor cohesion and high dependency, violating the Single Responsibility Principle."
+  },
+  {
+    "id": 896,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "This class has a high method count (4 methods), multiple responsibilities (lambda validation and 'this' rejection), and manages unrelated functionalities. It also has a moderate cognitive complexity and nesting depth, indicating it violates the Single Responsibility Principle."
+  },
+  {
+    "id": 941,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 4 distinct responsibility domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 944,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 946,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet contains only one method (constructor) and one instance field (format). It manages a single responsibility by setting the format of a biological data item to WIG. There are no external or own class accesses, and the code is straightforward with no nested structures or complex logic. Therefore, there is no strong evidence of a God Class (Blob) smell."
+  },
+  {
+    "id": 952,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=3 (low) + Fields=3 (low) + 1 domain = weak BLOB evidence = minor"
+  },
+  {
+    "id": 959,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 974,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet consists of two static string constants, which is a very low level of complexity. There are no methods, instance fields, or external class/object accesses. The code does not manage multiple unrelated functionalities and does not violate the Single Responsibility Principle. Therefore, there is no evidence of a God Class (Blob) smell."
+  },
+  {
+    "id": 976,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=20 (high) + Fields=15 (high) + 4 distinct responsibility domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 989,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=10 (moderate) + Fields=3 (low) + 2 domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 993,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet has a method count of 2 (one constructor and one method), an instance field count of 0, and only one distinct responsibility domain (MediaClock implementation). There are no external class/object accesses or own class accesses beyond the constructor and method. The line count is 10, with a nesting depth of 1. The number of distinct tasks is 2. The cognitive complexity estimate is low. Given these low measurements, there is no strong evidence of a God Class (Blob) code smell."
+  },
+  {
+    "id": 999,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3 distinct domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1000,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1005,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has only one method and two fields, indicating a low method count and instance field count. It manages a single responsibility related to system information, making it unlikely to be a God Class. The evidence does not clearly satisfy the definition of a God Class."
+  },
+  {
+    "id": 1007,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "This class has a high method count (30+), multiple instance fields (12+), and manages multiple unrelated functionalities. It violates the Single Responsibility Principle by handling tasks such as module path creation, archive management, and configuration building. The cognitive complexity is high due to its extensive functionality and nested logic."
+  },
+  {
+    "id": 1012,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class has 23 methods and 12 instance fields, indicating a high level of complexity. It manages multiple functionalities such as properties, data source ID, and table name, which suggests poor cohesion. The class also accesses multiple other classes, further indicating a lack of focus on a single responsibility."
+  },
+  {
+    "id": 1031,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet provided is a simple class with a single method and no instance fields. It does not exhibit characteristics of a God Class (Blob) as it does not accumulate too many responsibilities, manage multiple unrelated functionalities, or violate the Single Responsibility Principle. The method count is low (1), instance field count is low (0), and it focuses on a single responsibility."
+  },
+  {
+    "id": 1032,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=2 (low) + Fields=1 (low) + 1 domain = weak evidence = minor"
+  },
+  {
+    "id": 1034,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class `TestShard` contains 100 methods, which is a high number of responsibilities. It also accesses multiple external classes and objects, indicating a lack of cohesion and adherence to the Single Responsibility Principle."
+  },
+  {
+    "id": 1036,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1038,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet contains only one method and no instance fields, indicating a low method count and low instance field count. There is only one distinct responsibility domain present, which is the exception message. The class does not manage multiple, unrelated functionalities and does not show poor cohesion or high dependency on other classes. Therefore, there is no strong evidence of a God Class (Blob) code smell."
+  },
+  {
+    "id": 1049,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=20 (high) + Fields=15 (high) + 4 distinct responsibility domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1050,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class 'Constants' contains only static final fields and does not have any methods or external class/object accesses. It manages a set of constants related to various labels, file names, and configuration values. This class appears to have a single responsibility, which is to hold configuration and constant values. Therefore, it does not exhibit the characteristics of a God Class (Blob) as defined."
+  },
+  {
+    "id": 1069,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + Multiple responsibility domains (e.g., managing keys, pagination) = strong BLOB evidence = major"
+  },
+  {
+    "id": 1071,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet consists of a single interface with two methods and one property. It does not exhibit the characteristics of a God Class (Blob) as defined, such as accumulating too many responsibilities or managing multiple unrelated functionalities. The evidence from Step 1 shows a low method count (2), low instance field count (1), and a single responsibility domain. Therefore, there is no strong evidence to classify this code as a God Class."
+  },
+  {
+    "id": 1073,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class has a high method count (15), a substantial number of instance fields (12), and manages multiple, unrelated functionalities such as reading strings, numbers, and lines. This indicates poor cohesion and a violation of the Single Responsibility Principle, making it a strong candidate for the 'God Class (Blob)' code smell."
+  },
+  {
+    "id": 1075,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet contains only 3 methods and 0 instance fields, indicating a low method count and no instance fields. It has a single responsibility domain related to Solaris operating system details. There are no external or own class accesses, and the nesting depth is minimal. The code is straightforward and does not exhibit the characteristics of a God Class (Blob)."
+  },
+  {
+    "id": 1077,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=10 (moderate) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1078,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=1 (low) + Fields=0 (low) + 1 domain = weak BLOB evidence = minor"
+  },
+  {
+    "id": 1080,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "This class has a high method count (15) and instance field count (12), indicating it is handling multiple responsibilities. It manages file operations, transcode parameters, and segment handling, which are distinct domains. The class also interacts with external classes and objects extensively, further suggesting it is a God Class."
+  },
+  {
+    "id": 1085,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class ParSeqRestliClient has 15 methods, which is high. It manages multiple functionalities including sending REST requests and creating tasks, which indicates poor cohesion. Additionally, it has 3 distinct responsibility domains: sending requests, creating tasks, and managing metrics. This leads to strong evidence of the God Class (Blob) code smell."
+  },
+  {
+    "id": 1093,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3 distinct responsibility domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1095,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class Sync contains a large number of methods (47) and instance fields (12), indicating it manages multiple responsibilities. It also has multiple distinct responsibility domains, such as managing read and write locks, and handling thread ownership. The high cognitive complexity and deep nesting further support the 'God Class' smell."
+  },
+  {
+    "id": 1096,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class contains a high number of methods (approx. 15) and instance fields (approx. 12), indicating it likely manages multiple responsibilities. It also accesses external classes and objects extensively, suggesting poor cohesion. The cognitive complexity is high, and the class handles distinct tasks such as file parsing, media format detection, and subtitle extraction, which are not clearly aligned with a single responsibility. Therefore, strong evidence of a 'God Class' (Blob) is present."
+  },
+  {
+    "id": 1102,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class XPathConstants contains multiple unrelated functionalities, including defining XPath data types and a URI for the DOM object model. This indicates a violation of the Single Responsibility Principle (SRP) and poor cohesion, making it a significant code smell."
+  },
+  {
+    "id": 1107,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=10 (moderate) + Fields=2 (low) + 2 domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1108,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1116,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=22 (high) + Fields=3 (low) + 2 domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1126,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class has a moderate number of methods (1) and fields (1), and it focuses on a single responsibility (handling user header click events). There is a strong cohesion as it is dedicated to a single task. The evidence does not clearly indicate that the class is managing multiple unrelated functionalities or violating the Single Responsibility Principle."
+  },
+  {
+    "id": 1134,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has only one method and one field, indicating a low method count and instance field count. It also appears to have a single responsibility domain, as it manages a single attribute related to a template. There is no evidence of external or own class accesses, and the code is relatively simple with a low cognitive complexity estimate."
+  },
+  {
+    "id": 1136,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=2 (low) + Fields=0 (low) + 1 domain = weak evidence against BLOB. However, the single method is large and complex, violating SRP."
+  },
+  {
+    "id": 1138,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class Activator has a high method count (15), multiple instance fields (12), and manages multiple unrelated functionalities such as plugin initialization, HDInsight feature handling, and logging. This indicates poor cohesion and high dependency, violating the Single Responsibility Principle."
+  },
+  {
+    "id": 1141,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=5 (low) + Fields=2 (low) + 1 domain = weak BLOB evidence = minor"
+  },
+  {
+    "id": 1148,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1153,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=10 (moderate) + Fields=5 (low) + 2 distinct domains = moderate BLOB evidence = major"
+  },
+  {
+    "id": 1159,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The Builder class has a method count of 1 (low), instance field count of 0 (low), and only one responsibility domain (copying values from another instance). There are no external class/object accesses or own class accesses beyond the standard builder methods. The code is concise and focused on a single task, which does not violate the Single Responsibility Principle."
+  },
+  {
+    "id": 1161,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet contains only one method and one instance field, indicating low method and field counts. There is only one responsibility domain present, and there are no external or own class accesses. The code is simple and does not violate the Single Responsibility Principle. Therefore, there is no strong evidence of a 'God Class' (Blob) code smell."
+  },
+  {
+    "id": 1163,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1166,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1168,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=3 (low) + Fields=2 (low) + 1 domain = weak BLOB evidence = minor"
+  },
+  {
+    "id": 1174,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1184,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "Methods=2 (low) + Fields=1 (low) + 1 domain = weak BLOB evidence = minor"
+  },
+  {
+    "id": 1187,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class contains 20 methods, 15 instance fields, and manages multiple unrelated functionalities such as network configurations, security settings, and virtual circuit updates. It accesses multiple external classes and has a high cognitive complexity. This evidence strongly indicates that the class is a God Class (Blob)."
+  },
+  {
+    "id": 1196,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=4 (low) + Fields=0 (low) + 1 domain = weak BLOB evidence = minor"
+  },
+  {
+    "id": 1201,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1204,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=26 (high) + Fields=12 (high) + 4+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1214,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1221,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "Methods=1 (low) + Fields=2 (low) + 1 domain = weak BLOB evidence = minor"
+  },
+  {
+    "id": 1228,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet contains a single constructor and two fields, indicating a minimal number of responsibilities. It does not manage multiple unrelated functionalities, nor does it violate the Single Responsibility Principle. The evidence suggests this class is not a God Class (Blob) as it lacks the characteristics of accumulating too many responsibilities, managing multiple functionalities, or being poorly cohesive."
+  },
+  {
+    "id": 1231,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet provided is a simple interface with only one method and no instance fields. It does not exhibit characteristics of a God Class (Blob) as it does not accumulate too many responsibilities, manage multiple unrelated functionalities, or violate the Single Responsibility Principle. The evidence is weak and does not clearly satisfy the definition of a God Class."
+  },
+  {
+    "id": 1241,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "This class has a high method count (15) and instance field count (12), indicating it manages multiple responsibilities. It also has 3 distinct responsibility domains: configuration, test suite creation, and activation logic. The class accesses multiple external classes and objects, and its own methods, suggesting poor cohesion. This evidence strongly satisfies the definition of a God Class (Blob), leading to a major severity rating."
+  },
+  {
+    "id": 1242,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1248,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1253,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1255,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class GrailsProcessStackTracer accumulates multiple responsibilities, including process management, stack trace retrieval, and external command execution. It contains 15 methods, 12 instance fields, and spans across 3 distinct responsibility domains. The class also accesses external classes and objects extensively, making it difficult to maintain and extend. This evidence strongly indicates a God Class (Blob) code smell."
+  },
+  {
+    "id": 1259,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1262,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet contains only a single interface with a few string constants and a few static fields. It does not have a large number of methods or attributes, nor does it manage multiple, unrelated functionalities. The interface is focused on defining constants related to servlets and web client headers, which aligns with a single responsibility. Therefore, there is no evidence of a God Class (Blob) smell."
+  },
+  {
+    "id": 1268,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1272,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "This class has a high method count (15), a significant number of instance fields (12), and manages multiple responsibilities, including scanning a WeakHashMap, tracking records, and performing analysis. It also has a high cognitive complexity and nested structure, indicating a lack of cohesion and adherence to the Single Responsibility Principle."
+  },
+  {
+    "id": 1275,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1278,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The 'Undertow' class contains 23 methods (high) and 12 instance fields (high), indicating a high level of complexity. It manages multiple functionalities, including HTTP post size, buffer size, I/O threads, worker threads, direct buffers, and access log settings. This violates the Single Responsibility Principle (SRP) as it handles a wide range of unrelated responsibilities, leading to poor cohesion and making the class difficult to maintain and extend."
+  },
+  {
+    "id": 1292,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=4 (low) + Fields=1 (low) + 1 domain = weak evidence against BLOB definition = minor"
+  },
+  {
+    "id": 1294,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet provided is a functional interface with only one method and no instance fields. It clearly has a single responsibility, which is to determine if a full restart is required based on a changed file. There is no indication of multiple unrelated functionalities or poor cohesion. Therefore, there is no evidence of a 'God Class (Blob)' smell."
+  },
+  {
+    "id": 1302,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet provided is for a functional interface named `ReactiveHealthIndicator` with a single method `health()`. It does not exhibit characteristics of a God Class (Blob) as it has only one method, no instance fields, and focuses on a single responsibility related to health indicators. Therefore, there is no evidence to classify this code as a God Class."
+  },
+  {
+    "id": 1305,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=3 (low) + Fields=1 (low) + 1 domain = weak BLOB evidence = minor"
+  },
+  {
+    "id": 1306,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=1 (low) + 1 domain = strong BLOB evidence = major"
+  },
+  {
+    "id": 1311,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1314,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class contains a large number of methods (15+) and instance fields (12+), indicating it manages multiple responsibilities. It also accesses multiple external classes and objects, suggesting high coupling. The cognitive complexity is high due to the numerous tasks it handles, further supporting the 'God Class' definition."
+  },
+  {
+    "id": 1316,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet provided is a simple interface with a single method. It does not exhibit any characteristics of a God Class (Blob) as defined. There are no multiple responsibilities, unrelated functionalities, or poor cohesion. The method count is low (1), instance field count is low (0), and there is only one distinct responsibility domain. The evidence does not support the presence of a God Class."
+  },
+  {
+    "id": 1321,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has a low method count (1), a low instance field count (1), and only one distinct responsibility domain (managing loop arguments). There are no external or own class accesses, and the code is relatively simple. Therefore, there is no strong evidence to classify this class as a God Class."
+  },
+  {
+    "id": 1324,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet provided is a simple interface with only one method and no instance fields. It does not exhibit characteristics of a God Class (Blob) as it does not accumulate too many responsibilities, manage multiple unrelated functionalities, or violate the Single Responsibility Principle. The evidence is weak, and there is no strong indication of poor cohesion or high dependency."
+  },
+  {
+    "id": 1330,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=20 (high) + Fields=15 (high) + 4 distinct responsibility domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1339,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "Method count=1 (low) + Instance field count=0 (low) + 1 domain = weak BLOB evidence = minor"
+  },
+  {
+    "id": 1349,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has only one method and no instance fields, indicating a low method count and a low instance field count. It manages a single responsibility, which is loading bytecode into a class, and does not exhibit multiple, unrelated functionalities. Therefore, there is no strong evidence of a God Class (Blob) smell."
+  },
+  {
+    "id": 1354,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet provided is an abstract class with a single method and a few instance fields. It does not appear to have a large number of methods or attributes, nor does it manage multiple, unrelated functionalities. The class appears to have a single responsibility, which is to provide a factory method for creating an unknown type reference. Therefore, there is no strong evidence to classify this code as a 'God Class (Blob)' based on the provided evidence."
+  },
+  {
+    "id": 1356,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class has a moderate number of instance fields (4) and methods (2), and it focuses on a single responsibility related to file events. The cognitive complexity is low, and the class does not manage multiple unrelated functionalities. Therefore, it does not clearly violate the Single Responsibility Principle."
+  },
+  {
+    "id": 1359,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1360,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=4 (low) + Fields=1 (low) + 1 domain = weak BLOB evidence = minor"
+  },
+  {
+    "id": 1370,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=2 (low) + Fields=2 (low) + 1 domain = weak BLOB evidence = minor"
+  },
+  {
+    "id": 1372,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "Methods=2 (low) + Fields=2 (low) + 1 domain = weak BLOB evidence = minor"
+  },
+  {
+    "id": 1378,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class has a method count of 1 (low), instance field count of 0 (low), and manages a single responsibility domain related to decrementing a safepoint check. The class accesses external classes and objects for register configuration and memory operations, but these accesses are necessary for its functionality. The cognitive complexity is low due to its simplicity. Therefore, there is no strong evidence of the God Class (Blob) smell."
+  },
+  {
+    "id": 1383,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet provided is relatively simple with only two instance fields (id, firstName, lastName) and two methods (constructor and toString). It does not exhibit characteristics of a God Class as it focuses on a single responsibility (representing a customer). There is no indication of multiple, unrelated functionalities or poor cohesion."
+  },
+  {
+    "id": 1395,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3 distinct responsibility domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1399,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=5 (low) + Fields=0 (low) + 1 domain = strong BLOB evidence = major"
+  },
+  {
+    "id": 1403,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1407,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The HttpExchangeTracer class has 15 methods and 12 instance fields, indicating a high level of complexity. It manages multiple functionalities such as tracing HTTP exchanges, filtering request and response headers, and setting various trace attributes. This class violates the Single Responsibility Principle by handling multiple, unrelated responsibilities, making it a strong candidate for the 'God Class' (Blob) code smell."
+  },
+  {
+    "id": 1409,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet provided is a simple service class with only one method and no instance fields. It does not manage multiple unrelated functionalities, nor does it violate the Single Responsibility Principle. Therefore, there is no strong evidence to classify this as a 'God Class' or 'Blob'."
+  },
+  {
+    "id": 1413,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet provided is a minimal service class with no methods or fields, indicating it does not accumulate many responsibilities or manage multiple functionalities. There is no evidence of poor cohesion or high dependency on other classes. The class appears to adhere to the Single Responsibility Principle."
+  },
+  {
+    "id": 1417,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet provided is minimal and does not show any clear evidence of a God Class. It contains only one method (the constructor) and no instance fields, indicating a low method count and field count. There is only one responsibility domain present, and no external or own class accesses are evident. The line count is also low, and there is no nesting depth or cognitive complexity to suggest multiple unrelated functionalities. Therefore, there is no strong evidence to classify this as a God Class."
+  },
+  {
+    "id": 1428,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet provided is extremely minimal, containing only a single method (the constructor) and no instance fields. It does not exhibit any characteristics of a God Class (Blob) as defined, such as a large number of methods, attributes, or managing multiple unrelated functionalities. The evidence is weak, and there is no clear indication of any violation of the Single Responsibility Principle or poor cohesion."
+  },
+  {
+    "id": 1435,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet provided is extremely minimal, with only one method and no instance fields. It does not manage multiple unrelated functionalities and appears to follow the Single Responsibility Principle by focusing on a single responsibility (presumably managing customer data). The evidence does not clearly satisfy the definition of a 'God Class (Blob)' as there is no indication of poor cohesion, high dependency, or excessive complexity."
+  },
+  {
+    "id": 1439,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "Method count=3 (low) + Instance field count=2 (low) + 1 domain = weak BLOB evidence = none"
+  },
+  {
+    "id": 1441,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class has a moderate number of methods (3) and fields (3), which is not excessively high. It manages a single responsibility related to a bindable Solr parameter, including index, value, and boost. The evidence does not strongly indicate that the class is managing multiple, unrelated functionalities or violating the Single Responsibility Principle."
+  },
+  {
+    "id": 1443,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "Methods=2 (low) + Fields=3 (low) + 1 domain = weak BLOB evidence = minor"
+  },
+  {
+    "id": 1460,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3 distinct responsibility domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1462,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has a method count of 3 (minor) and an instance field count of 1 (minor), which are low. It manages a single responsibility domain (type identifier) and has minimal external and own class accesses. The cognitive complexity is also low. Therefore, there is no strong evidence of a God Class (Blob) smell."
+  },
+  {
+    "id": 1463,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1469,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet contains only 5 methods and no instance fields, indicating a low method count and minimal complexity. There is only one responsibility domain present, and there are no external or own class accesses. The code is simple and does not violate the Single Responsibility Principle. Therefore, there is no strong evidence to classify this as a 'God Class (Blob)' smell."
+  },
+  {
+    "id": 1474,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  },
+  {
+    "id": 1475,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "This class has 15 methods and 2 instance fields, indicating a high cognitive complexity and multiple responsibilities. It manages various reflective operations, which suggests it handles multiple, unrelated functionalities within a single class. This violates the Single Responsibility Principle, leading to poor cohesion and making it difficult to maintain and extend."
+  },
+  {
+    "id": 1484,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet provided is a simple interface with one method and no instance fields. It does not exhibit any characteristics of a God Class (Blob) as it focuses on a single responsibility of locating a SessionFactory. The method count is low (1), instance field count is low (0), and there is only one distinct responsibility domain. Therefore, there is no strong evidence to classify this code as a God Class."
+  },
+  {
+    "id": 1488,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "Methods=15 (high) + Fields=12 (high) + 3+ domains = strong BLOB evidence = major"
+  }
+]
