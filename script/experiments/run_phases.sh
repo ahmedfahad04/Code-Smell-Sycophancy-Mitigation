@@ -71,8 +71,16 @@ COMMANDS:
 
 INFORMATION:
     config         Show current phase configuration
-    info           Show strategies, smells, models available
+    info           Show strategies, smells, models, AR comments available
     status         Check experiment prerequisites
+
+CONFIGURATION:
+    Edit config-phases.sh to adjust phase parameters:
+    - For Adversarial-Refutation strategy, set [ar_comments] field
+    - Format: pipe-separated list (e.g., "Casual|Positive|Confirmation-Bias")
+    - Each run will use exactly ONE comment; multiple entries = multiple runs
+    - Available: Casual, Positive, Negative, Authoritative, Social-Proof,
+                 Contradictory-Hint, False-Premise, Confirmation-Bias
 
 EXAMPLES:
     ./run_experiments.sh validate           # Test pipeline
@@ -80,6 +88,7 @@ EXAMPLES:
     ./run_experiments.sh quick              # Validation + Baseline
     ./run_experiments.sh all                # Complete study
     ./run_experiments.sh config             # View configuration
+    ./run_experiments.sh info               # Show all available options
 
 EOF
 }
@@ -100,6 +109,9 @@ show_info() {
     echo ""
     log_section "AVAILABLE MODELS"
     list_models
+    echo ""
+    log_section "AVAILABLE USER COMMENTS (for Adversarial-Refutation)"
+    list_ar_comments
 }
 
 # Check prerequisites
@@ -154,7 +166,7 @@ check_status() {
     fi
 }
 
-# Run a detection test
+# Run a detection test (with support for Adversarial-Refutation comment cycling)
 run_detection() {
     local name=$1
     local smell=$2
@@ -163,28 +175,62 @@ run_detection() {
     local limit=$5
     local temperature=${6:-$TEMPERATURE_GLOBAL}
     local top_p=${7:-$TOP_P_GLOBAL}
+    local ar_comments=${8:-""}  # Optional: AR comments (pipe-separated)
     
     log_info "Test: $name"
     log_info "  Smell: $smell | Models: $models | Strategies: $strategies"
     log_info "  Samples: $limit | Temp: $temperature | Top-p: $top_p"
     
-    local cmd="python3 '$PARENT_DIR/ollama_code_smell_detection.py' \
-        --dataset '$DATASET_PATH' \
-        --smell '$smell' \
-        --models '$models' \
-        --strategies '$strategies' \
-        --limit $limit \
-        --output-dir '$RESULTS_DIR' \
-        --temperature $temperature \
-        --top-p $top_p"
-    
-    echo "  Command: $cmd" >> "$LOG_FILE"
-    
-    if eval "$cmd"; then
-        log_success "$name completed"
+    # Check if Adversarial-Refutation is in strategies and we have AR comments
+    if [[ "$strategies" == *"Adversarial-Refutation"* ]] && [[ -n "$ar_comments" ]]; then
+        # Split ar_comments by pipe and run once per comment
+        local ar_comments_array=()
+        IFS='|' read -ra ar_comments_array <<< "$ar_comments"
+        
+        log_info "  Running Adversarial-Refutation with ${#ar_comments_array[@]} user comments:"
+        for comment in "${ar_comments_array[@]}"; do
+            log_info "    - $comment"
+            
+            local cmd="python3 '$PARENT_DIR/ollama_code_smell_detection.py' \
+                --dataset '$DATASET_PATH' \
+                --smell '$smell' \
+                --models '$models' \
+                --strategies 'Adversarial-Refutation' \
+                --ar-comment '$comment' \
+                --limit $limit \
+                --output-dir '$RESULTS_DIR' \
+                --temperature $temperature \
+                --top-p $top_p"
+            
+            echo "  Command: $cmd" >> "$LOG_FILE"
+            
+            if eval "$cmd"; then
+                log_success "  ✓ AR with comment '$comment' completed"
+            else
+                log_error "  ✗ AR with comment '$comment' failed (exit code: $?)"
+                log_error "  Continuing to next comment..."
+            fi
+        done
     else
-        log_error "$name failed (exit code: $?)"
-        log_error "Continuing to next test..."
+        # Standard (non-AR) execution
+        local cmd="python3 '$PARENT_DIR/ollama_code_smell_detection.py' \
+            --dataset '$DATASET_PATH' \
+            --smell '$smell' \
+            --models '$models' \
+            --strategies '$strategies' \
+            --limit $limit \
+            --output-dir '$RESULTS_DIR' \
+            --temperature $temperature \
+            --top-p $top_p"
+        
+        echo "  Command: $cmd" >> "$LOG_FILE"
+        
+        if eval "$cmd"; then
+            log_success "$name completed"
+        else
+            log_error "$name failed (exit code: $?)"
+            log_error "Continuing to next test..."
+        fi
     fi
     
     log ""
@@ -256,6 +302,9 @@ phase_sycophancy() {
     local strategies_array=()
     IFS='|' read -ra strategies_array <<< "${PHASE3[strategies]}"
     
+    # Get AR comments if defined
+    local ar_comments="${PHASE3[ar_comments]:-}"
+    
     # For each smell, test all strategies
     for smell in "${smells_array[@]}"; do
         log_info "Testing $smell with ${#strategies_array[@]} strategies..."
@@ -268,7 +317,8 @@ phase_sycophancy() {
                 "$strategy" \
                 "${PHASE3[limit]}" \
                 "${PHASE3[temperature]}" \
-                "${PHASE3[top_p]}"
+                "${PHASE3[top_p]}" \
+                "$ar_comments"
         done
     done
     
@@ -283,6 +333,9 @@ phase_crossmodel() {
     local models_array=()
     IFS='|' read -ra models_array <<< "${PHASE4[models]}"
     
+    # Get AR comments if defined
+    local ar_comments="${PHASE4[ar_comments]:-}"
+    
     for model in "${models_array[@]}"; do
         run_detection \
             "Cross-Model: $model - All Strategies" \
@@ -291,7 +344,8 @@ phase_crossmodel() {
             "${PHASE4[strategies]}" \
             "${PHASE4[limit]}" \
             "${PHASE4[temperature]}" \
-            "${PHASE4[top_p]}"
+            "${PHASE4[top_p]}" \
+            "$ar_comments"
     done
     
     log_success "Phase 4 complete!"

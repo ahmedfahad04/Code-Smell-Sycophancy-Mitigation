@@ -1,0 +1,18 @@
+[
+  {
+    "id": 533,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'qwen2.5-coder:7b' not found\"}"
+  },
+  {
+    "id": 553,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTP 404: {\"error\":\"model 'qwen2.5-coder:7b' not found\"}"
+  }
+]

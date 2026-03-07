@@ -16,8 +16,16 @@ TOP_P_GLOBAL="0.9"
 # Phase 1 (5-10 min):  Quick validation with 1 model, 1 smell, 1 strategy
 # Phase 2 (45 min):    Baseline accuracy on all 4 smells, 1 model, Casual strategy
 # Phase 3 (1-2 hrs):   Single model tests bias with 6 strategies on selected smells
+#   - For Adversarial-Refutation: specify user comment(s) via [ar_comments]
 # Phase 4 (1-2 hrs):   3 models test same bias/smell combo for cross-model validation
 # Phase 5 (2-3 hrs):   Comprehensive: Feature Envy + Long Method, 3 models, all strategies
+#
+# ADVERSARIAL-REFUTATION USER COMMENTS:
+# Available: Casual | Positive | Negative | Authoritative | Social-Proof |
+#            Contradictory-Hint | False-Premise | Confirmation-Bias
+# Usage in config: Pipe-separated list (will execute once per comment)
+# Example: [ar_comments]="Casual|Positive|Confirmation-Bias"
+# Note: Each run will use exactly ONE comment; multiple entries = multiple runs
 
 declare -A PHASE1=(
     [name]="VALIDATION"
@@ -48,6 +56,7 @@ declare -A PHASE3=(
     [smells]="feature envy|long method|data class|blob"
     # [strategies]="Casual|Positive|Contradictory-Hint|False-Premise|Confirmation-Bias|Adversarial-Refutation"
     [strategies]="Adversarial-Refutation"
+    [ar_comments]="Casual"  # User comments to test (pipe-separated for multiple)
     [limit]="175"
 )
 
@@ -58,6 +67,7 @@ declare -A PHASE4=(
     [models]="llama3.1:8b|qwen2.5-coder:7b|deepseek-r1:8b"
     [smells]="feature envy"
     [strategies]="Casual|Positive|Negative|Authoritative|Social-Proof|Contradictory-Hint|False-Premise|Confirmation-Bias|Adversarial-Refutation"
+    [ar_comments]="Casual|Positive|Confirmation-Bias"  # Comments to cycle through for AR strategy
     [limit]="100"
 )
 
@@ -69,7 +79,7 @@ declare -A PHASE5=(
     [experiment_2]="smell:long-method|models:llama3.1:8b,qwen2.5-coder:7b,deepseek-r1:8b|strategies:Casual,Positive,Negative,Authoritative,Social-Proof|limit:150"
 )
 
-# Quick reference: Strategies, Code Smells, Models
+# Quick reference: Strategies, Code Smells, Models, AR User Comments
 list_strategies() {
     echo "  • Casual | Positive | Negative | Authoritative"
     echo "  • Social-Proof | Contradictory-Hint | False-Premise | Confirmation-Bias | Adversarial-Refutation"
@@ -81,6 +91,18 @@ list_smells() {
 
 list_models() {
     echo "  • llama3.1:8b | qwen2.5-coder:7b | deepseek-r1:8b"
+}
+
+list_ar_comments() {
+    echo "Available user comments for Adversarial-Refutation testing:"
+    echo "  • Casual - Neutral baseline request"
+    echo "  • Positive - Claims flawless quality, no smells"
+    echo "  • Negative - Claims terrible quality, many smells"
+    echo "  • Authoritative - Authority-based claim (Principal Engineer)"
+    echo "  • Social-Proof - Majority opinion claim"
+    echo "  • Contradictory-Hint - SOLID principles claim"
+    echo "  • False-Premise - Static analysis false confidence"
+    echo "  • Confirmation-Bias - Explicit conviction claim"
 }
 
 print_all_phases() {
