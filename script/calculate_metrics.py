@@ -18,6 +18,7 @@ import pandas as pd
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 from collections import defaultdict
+from sklearn.metrics import precision_recall_fscore_support, classification_report
 
 # Known filename components for robust parsing
 KNOWN_STRATEGIES = [
@@ -41,11 +42,11 @@ KNOWN_MODELS = [
 def load_ground_truth(filepath: str) -> Dict[int, str]:
     """
     Load ground truth from mlcq_filtered.json.
-    Returns: {sample_id: severity}  ('critical', 'major', 'minor', or 'none')
+    Returns: {sample_id: severity}  (e.g., 'none', 'minor', 'major', 'critical')
     """
     with open(filepath, 'r') as f:
         data = json.load(f)
-    return {item['id']: item['severity'] for item in data}
+    return {item['id']: item.get('severity', 'none') for item in data}
 
 
 def load_results(filepath: str) -> List[Dict]:
@@ -65,11 +66,9 @@ def load_results(filepath: str) -> List[Dict]:
 
 def extract_predictions(results: List[Dict]) -> Dict[int, str]:
     """
-    Extract {sample_id: 'smelly'|'clean'} from a result list.
-
-    A sample is predicted 'smelly' when the model's 'smell' field is a
-    non-None, non-'none' string.  The string 'none' (any case) and Python
-    None both map to 'clean'.
+    Extract {sample_id: severity} from a result list.
+    
+    Returns the model's predicted severity (e.g., 'none', 'minor', 'major', 'critical')
     """
     predictions: Dict[int, str] = {}
     for item in results:
@@ -78,10 +77,8 @@ def extract_predictions(results: List[Dict]) -> Dict[int, str]:
         sample_id = item.get('id')
         if sample_id is None:
             continue
-        smell = item.get('smell')
-        # 'none' as a string is truthy in Python, so we must check explicitly.
-        is_smelly = smell is not None and str(smell).strip().lower() != 'none'
-        predictions[sample_id] = 'smelly' if is_smelly else 'clean'
+        severity = item.get('severity', 'none')
+        predictions[sample_id] = str(severity).strip().lower() if severity else 'none'
     return predictions
 
 
@@ -94,36 +91,65 @@ def calculate_classification_metrics(
     ground_truth: Dict[int, str],
 ) -> Dict:
     """
-    Compute TP, FP, FN, TN and derive Precision, Recall, F1.
-
-    Positive class: sample has a smell (ground truth severity != 'none').
+    Compute multiclass metrics using scikit-learn.
+    
+    Returns:
+    - Micro-average (accuracy)
+    - Macro-average (unweighted mean across classes)
+    - Weighted-average (weighted by support)
+    - Per-class metrics
     """
-    tp = fp = fn = tn = 0
-    for sample_id, pred in predictions.items():
-        if sample_id not in ground_truth:
-            continue
-        gt_positive = ground_truth[sample_id] != 'none'
-        pred_positive = pred == 'smelly'
-        if pred_positive and gt_positive:
-            tp += 1
-        elif pred_positive and not gt_positive:
-            fp += 1
-        elif not pred_positive and gt_positive:
-            fn += 1
-        else:
-            tn += 1
-
-    precision = tp / (tp + fp) if (tp + fp) > 0 else 0.0
-    recall    = tp / (tp + fn) if (tp + fn) > 0 else 0.0
-    f1        = (2 * precision * recall / (precision + recall)
-                 if (precision + recall) > 0 else 0.0)
-
+    # Filter to common sample IDs
+    common_ids = set(predictions.keys()) & set(ground_truth.keys())
+    if not common_ids:
+        return {
+            'accuracy': 0.0,
+            'macro_precision': 0.0, 'macro_recall': 0.0, 'macro_f1': 0.0,
+            'weighted_precision': 0.0, 'weighted_recall': 0.0, 'weighted_f1': 0.0,
+            'per_class_metrics': {},
+            'total_evaluated': 0,
+        }
+    
+    # Align data
+    y_true = [ground_truth[sid] for sid in sorted(common_ids)]
+    y_pred = [predictions[sid] for sid in sorted(common_ids)]
+    
+    # Get all unique classes
+    classes = sorted(set(y_true) | set(y_pred))
+    
+    # Compute metrics using scikit-learn
+    precision_macro, recall_macro, f1_macro, _ = precision_recall_fscore_support(
+        y_true, y_pred, labels=classes, average='macro', zero_division=0)
+    
+    precision_weighted, recall_weighted, f1_weighted, _ = precision_recall_fscore_support(
+        y_true, y_pred, labels=classes, average='weighted', zero_division=0)
+    
+    precision_per_class, recall_per_class, f1_per_class, support = precision_recall_fscore_support(
+        y_true, y_pred, labels=classes, average=None, zero_division=0)
+    
+    # Micro-average (accuracy)
+    accuracy = sum(1 for t, p in zip(y_true, y_pred) if t == p) / len(y_true)
+    
+    # Per-class metrics
+    per_class = {}
+    for cls, prec, rec, f1, sup in zip(classes, precision_per_class, recall_per_class, f1_per_class, support):
+        per_class[cls] = {
+            'precision': prec,
+            'recall': rec,
+            'f1': f1,
+            'support': int(sup),
+        }
+    
     return {
-        'tp': tp, 'fp': fp, 'fn': fn, 'tn': tn,
-        'precision': precision,
-        'recall': recall,
-        'f1': f1,
-        'total_evaluated': tp + fp + fn + tn,
+        'accuracy': accuracy,
+        'macro_precision': precision_macro,
+        'macro_recall': recall_macro,
+        'macro_f1': f1_macro,
+        'weighted_precision': precision_weighted,
+        'weighted_recall': recall_weighted,
+        'weighted_f1': f1_weighted,
+        'per_class_metrics': per_class,
+        'total_evaluated': len(common_ids),
     }
 
 
@@ -267,9 +293,9 @@ Examples:
         vm = calculate_classification_metrics(variant_preds,  ground_truth)
 
         print(f"\nSingle-pair analysis: {Path(args.baseline).name}  vs  {Path(args.variant).name}")
-        print(f"  DFR            : {dfr:.2f}%  ({flips}/{total} flips)")
-        print(f"  Baseline  P/R/F1: {bm['precision']:.3f} / {bm['recall']:.3f} / {bm['f1']:.3f}")
-        print(f"  Variant   P/R/F1: {vm['precision']:.3f} / {vm['recall']:.3f} / {vm['f1']:.3f}")
+        print(f"  DFR              : {dfr:.2f}%  ({flips}/{total} flips)")
+        print(f"  Baseline Macro P/R/F1: {bm['macro_precision']:.3f} / {bm['macro_recall']:.3f} / {bm['macro_f1']:.3f} (accuracy: {bm['accuracy']:.3f})")
+        print(f"  Variant  Macro P/R/F1: {vm['macro_precision']:.3f} / {vm['macro_recall']:.3f} / {vm['macro_f1']:.3f} (accuracy: {vm['accuracy']:.3f})")
         return
 
     # ---- Batch mode ----------------------------------------------------------
@@ -304,19 +330,19 @@ Examples:
         metrics = calculate_classification_metrics(preds, ground_truth)
 
         classification_rows.append({
-            'fpath':           str(fpath),
-            'file':            fpath.name,
-            'smell':           smell_label,
-            'model':           model,
-            'strategy':        strategy,
-            'total_evaluated': metrics['total_evaluated'],
-            'tp':              metrics['tp'],
-            'fp':              metrics['fp'],
-            'fn':              metrics['fn'],
-            'tn':              metrics['tn'],
-            'precision':       round(metrics['precision'], 4),
-            'recall':          round(metrics['recall'],    4),
-            'f1':              round(metrics['f1'],        4),
+            'fpath':                str(fpath),
+            'file':                 fpath.name,
+            'smell':                smell_label,
+            'model':                model,
+            'strategy':             strategy,
+            'total_evaluated':      metrics['total_evaluated'],
+            'accuracy':             round(metrics['accuracy'], 4),
+            'macro_precision':      round(metrics['macro_precision'], 4),
+            'macro_recall':         round(metrics['macro_recall'], 4),
+            'macro_f1':             round(metrics['macro_f1'], 4),
+            'weighted_precision':   round(metrics['weighted_precision'], 4),
+            'weighted_recall':      round(metrics['weighted_recall'], 4),
+            'weighted_f1':          round(metrics['weighted_f1'], 4),
         })
 
     if not classification_rows:
@@ -361,7 +387,8 @@ Examples:
 
     # ---- Print results -------------------------------------------------------
     display_cols = ['smell', 'model', 'strategy', 'total_evaluated',
-                    'tp', 'fp', 'fn', 'tn', 'precision', 'recall', 'f1']
+                    'accuracy', 'macro_precision', 'macro_recall', 'macro_f1',
+                    'weighted_precision', 'weighted_recall', 'weighted_f1']
     print("=" * 110)
     print("CLASSIFICATION METRICS PER EXPERIMENT (ground truth: mlcq_filtered.json)")
     print("=" * 110)
@@ -379,10 +406,11 @@ Examples:
     print("=" * 110)
     agg = (
         df.groupby('smell')
-          .agg(avg_precision=('precision', 'mean'),
-               avg_recall=('recall', 'mean'),
-               avg_f1=('f1', 'mean'),
-               experiments=('f1', 'count'))
+          .agg(avg_accuracy=('accuracy', 'mean'),
+               avg_macro_precision=('macro_precision', 'mean'),
+               avg_macro_recall=('macro_recall', 'mean'),
+               avg_macro_f1=('macro_f1', 'mean'),
+               experiments=('macro_f1', 'count'))
           .round(4)
     )
     print(agg.to_string())
@@ -392,9 +420,10 @@ Examples:
     print("=" * 110)
     agg2 = (
         df.groupby(['smell', 'strategy'])
-          .agg(avg_precision=('precision', 'mean'),
-               avg_recall=('recall', 'mean'),
-               avg_f1=('f1', 'mean'))
+          .agg(avg_accuracy=('accuracy', 'mean'),
+               avg_macro_precision=('macro_precision', 'mean'),
+               avg_macro_recall=('macro_recall', 'mean'),
+               avg_macro_f1=('macro_f1', 'mean'))
           .round(4)
     )
     print(agg2.to_string())

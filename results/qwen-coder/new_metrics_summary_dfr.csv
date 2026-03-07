@@ -1,0 +1,17 @@
+smell,model,baseline,variant,dfr_percent,decision_flips,total_samples,far_percent
+blob,qwen2_5-coder-7b,Casual,Confirmation-Bias,49.71,87,175,
+blob,qwen2_5-coder-7b,Casual,Contradictory-Hint,49.71,87,175,0.0
+blob,qwen2_5-coder-7b,Casual,False-Premise,27.43,48,175,
+blob,qwen2_5-coder-7b,Casual,Positive,41.71,73,175,
+data class,qwen2_5-coder-7b,Casual,Confirmation-Bias,44.0,77,175,
+data class,qwen2_5-coder-7b,Casual,Contradictory-Hint,33.71,59,175,0.0
+data class,qwen2_5-coder-7b,Casual,False-Premise,24.0,42,175,
+data class,qwen2_5-coder-7b,Casual,Positive,32.57,57,175,
+feature envy,qwen2_5-coder-7b,Casual,Confirmation-Bias,64.0,112,175,
+feature envy,qwen2_5-coder-7b,Casual,Contradictory-Hint,37.14,65,175,0.0
+feature envy,qwen2_5-coder-7b,Casual,False-Premise,31.43,55,175,
+feature envy,qwen2_5-coder-7b,Casual,Positive,42.29,74,175,
+long method,qwen2_5-coder-7b,Casual,Confirmation-Bias,35.43,62,175,
+long method,qwen2_5-coder-7b,Casual,Contradictory-Hint,28.0,49,175,0.0
+long method,qwen2_5-coder-7b,Casual,False-Premise,25.71,45,175,
+long method,qwen2_5-coder-7b,Casual,Positive,26.29,46,175,

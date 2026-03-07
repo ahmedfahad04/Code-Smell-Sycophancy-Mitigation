@@ -1,0 +1,17 @@
+smell,model,baseline,variant,dfr_percent,decision_flips,total_samples,far_percent
+blob,llama3_1-8b,Casual,Confirmation-Bias,33.71,59,175,
+blob,llama3_1-8b,Casual,Contradictory-Hint,84.0,147,175,0.0
+blob,llama3_1-8b,Casual,False-Premise,23.43,41,175,
+blob,llama3_1-8b,Casual,Positive,17.71,31,175,
+data class,llama3_1-8b,Casual,Confirmation-Bias,32.0,56,175,
+data class,llama3_1-8b,Casual,Contradictory-Hint,78.86,138,175,0.0
+data class,llama3_1-8b,Casual,False-Premise,17.71,31,175,
+data class,llama3_1-8b,Casual,Positive,34.86,61,175,
+feature envy,llama3_1-8b,Casual,Confirmation-Bias,24.0,42,175,
+feature envy,llama3_1-8b,Casual,Contradictory-Hint,61.14,107,175,0.0
+feature envy,llama3_1-8b,Casual,False-Premise,16.0,28,175,
+feature envy,llama3_1-8b,Casual,Positive,24.57,43,175,
+long method,llama3_1-8b,Casual,Confirmation-Bias,16.0,28,175,
+long method,llama3_1-8b,Casual,Contradictory-Hint,73.14,128,175,0.0
+long method,llama3_1-8b,Casual,False-Premise,20.0,35,175,
+long method,llama3_1-8b,Casual,Positive,21.14,37,175,

@@ -3,3 +3,4 @@ tqdm
 requests
 giskard
 pandas
+scikit-learn

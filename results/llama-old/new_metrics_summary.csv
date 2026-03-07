@@ -1,0 +1,11 @@
+file,smell,model,strategy,total_evaluated,accuracy,macro_precision,macro_recall,macro_f1,weighted_precision,weighted_recall,weighted_f1
+ollama_results_feature_envy_llama3_1-8b_Casual.json,feature envy,llama3_1-8b,Casual,102,0.0784,0.0706,0.2436,0.0886,0.0328,0.0784,0.0392
+ollama_results_feature_envy_llama3_1-8b_Confirmation-Bias.json,feature envy,llama3_1-8b,Confirmation-Bias,102,0.1863,0.268,0.2677,0.1185,0.7511,0.1863,0.2344
+ollama_results_feature_envy_llama3_1-8b_Contradictory-Hint.json,feature envy,llama3_1-8b,Contradictory-Hint,102,0.4118,0.3175,0.2777,0.228,0.7453,0.4118,0.5105
+ollama_results_feature_envy_llama3_1-8b_False-Premise.json,feature envy,llama3_1-8b,False-Premise,102,0.0882,0.2197,0.253,0.0775,0.5524,0.0882,0.0638
+ollama_results_feature_envy_llama3_1-8b_Positive.json,feature envy,llama3_1-8b,Positive,102,0.1471,0.0835,0.3782,0.1317,0.0381,0.1471,0.0589
+ollama_results_long_method_llama3_1-8b_Casual.json,long method,llama3_1-8b,Casual,104,0.2308,0.3518,0.4051,0.2053,0.8426,0.2308,0.2369
+ollama_results_long_method_llama3_1-8b_Confirmation-Bias.json,long method,llama3_1-8b,Confirmation-Bias,104,0.2788,0.3365,0.3607,0.2279,0.7965,0.2788,0.3211
+ollama_results_long_method_llama3_1-8b_Contradictory-Hint.json,long method,llama3_1-8b,Contradictory-Hint,104,0.6731,0.3853,0.4485,0.391,0.794,0.6731,0.7188
+ollama_results_long_method_llama3_1-8b_False-Premise.json,long method,llama3_1-8b,False-Premise,104,0.2212,0.3346,0.3426,0.2069,0.7739,0.2212,0.2385
+ollama_results_long_method_llama3_1-8b_Positive.json,long method,llama3_1-8b,Positive,104,0.1635,0.3208,0.384,0.1337,0.8278,0.1635,0.1038
