@@ -1,0 +1,1402 @@
+[
+  {
+    "id": 528,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code does not exhibit any structural issues that would classify it as a blob. It has a reasonable method count, is not overly nested, and does not have an excessive number of external dependencies."
+  },
+  {
+    "id": 535,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has a moderate number of methods (5), which is not excessive. It focuses on parsing metadata and handling different policies, which aligns with a single responsibility. The class does not manage multiple, unrelated functionalities and has a clear separation of concerns."
+  },
+  {
+    "id": 536,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class has a moderate number of methods (5) and attributes (5), which is not excessive. However, it manages multiple functionalities related to request security, which could be better distributed across smaller classes."
+  },
+  {
+    "id": 538,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has a single method (`test`) and a few parameters, focusing on a single responsibility related to conditional rendering. It does not manage multiple unrelated functionalities and has a clear separation of concerns."
+  },
+  {
+    "id": 546,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has only one method and no external dependencies, indicating it does not accumulate too many responsibilities or manage multiple unrelated functionalities."
+  },
+  {
+    "id": 551,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class 'TrimAction' has 11 methods and manages multiple functionalities related to trimming annotations. While it does not violate the Single Responsibility Principle, it could be refactored to have smaller, more focused classes."
+  },
+  {
+    "id": 554,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code does not meet the threshold for being classified as a blob. It has a reasonable number of methods (23), moderate nesting depth, and a manageable number of external dependencies. The code follows a structured design pattern, with clear separation of concerns and a well-defined interface for external interaction."
+  },
+  {
+    "id": 556,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class 'SessionAttributeElement' has only one method and one attribute, which indicates it has a single responsibility and does not accumulate too many responsibilities. It also does not manage multiple, unrelated functionalities within a single class. Therefore, it does not meet the criteria for a 'God Class (Blob)' code smell."
+  },
+  {
+    "id": 558,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet consists of a single class with minimal functionality, containing only one constructor. It does not accumulate many responsibilities, manage multiple unrelated functionalities, or violate the Single Responsibility Principle. Therefore, it does not meet the criteria for a 'blob' code smell."
+  },
+  {
+    "id": 561,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has a single method (`getColumnImage`) that handles multiple responsibilities related to image selection based on document data. However, it does not manage multiple unrelated functionalities and is relatively simple in structure."
+  },
+  {
+    "id": 568,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet consists of an interface with two methods. It does not exhibit characteristics of a God Class (Blob) as it is focused on a single responsibility related to connection factory operations and transaction management. It does not accumulate too many responsibilities, manage multiple unrelated functionalities, or violate the Single Responsibility Principle."
+  },
+  {
+    "id": 578,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has only one method and one attribute, which are directly related to its responsibility of handling file save events. It does not manage multiple unrelated functionalities and is focused on a single responsibility."
+  },
+  {
+    "id": 582,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has a single method that performs the primary function, and it does not manage multiple unrelated functionalities. It adheres to the Single Responsibility Principle."
+  },
+  {
+    "id": 587,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet contains a single method and a single attribute, indicating a minimal level of complexity and responsibility. It does not exhibit any of the characteristics of a God Class (Blob) as defined."
+  },
+  {
+    "id": 588,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The interface 'SearchByEdgeType' contains only 6 methods and does not exhibit any of the characteristics of a God Class (Blob). It is focused on defining search parameters for edges and does not manage multiple, unrelated functionalities."
+  },
+  {
+    "id": 592,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The JobSchedulerService class has a large number of responsibilities, managing multiple functionalities including job scheduling, job execution, and metrics tracking. It contains over 30 methods and attributes, violating the Single Responsibility Principle."
+  },
+  {
+    "id": 598,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has only two methods, which are specific to the creation of compatible volatile images. There is no indication of multiple, unrelated functionalities or poor cohesion."
+  },
+  {
+    "id": 600,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class ShortArrayFSImpl has 16 methods, which is a significant number for a single class. It also implements the ShortArrayFS interface and extends CommonAuxArrayFSImpl, indicating it manages multiple functionalities. This suggests a violation of the Single Responsibility Principle."
+  },
+  {
+    "id": 602,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code does not meet the threshold for being classified as a blob based on the provided metrics."
+  },
+  {
+    "id": 606,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class ExsltBase has only two methods, toString and toNumber, which are both focused on converting Node values to string and numeric representations, respectively. There are no indications of multiple, unrelated functionalities or poor cohesion."
+  },
+  {
+    "id": 614,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class 'ZooInspectorPanel' contains 26 methods and manages multiple unrelated functionalities such as handling toolbar actions, connecting and disconnecting, and managing node viewers. This indicates a violation of the Single Responsibility Principle and poor cohesion."
+  },
+  {
+    "id": 618,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has a single responsibility of handling Spark version information and does not accumulate multiple unrelated functionalities."
+  },
+  {
+    "id": 625,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class StopException has only one method and no attributes, indicating a single responsibility and low complexity."
+  },
+  {
+    "id": 643,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class has a moderate number of methods (13), which is not excessively high. It also has a single responsibility related to error data handling, which aligns with the Single Responsibility Principle. The class is not overly complex or managing multiple unrelated functionalities."
+  },
+  {
+    "id": 644,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class _ApplicationInstancesResponse has only one method and one attribute, which indicates it has a single responsibility and does not manage multiple unrelated functionalities."
+  },
+  {
+    "id": 651,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet contains a single method and does not exhibit any of the characteristics of a God Class (Blob). It is focused on a single responsibility and does not manage multiple, unrelated functionalities."
+  },
+  {
+    "id": 652,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code contains 45 methods, which is above the average for a single class, indicating potential complexity. However, the methods are primarily getters, setters, and utility functions, which do not necessarily indicate a code smell. The class also has 140 lines of code, which is not excessively long. There are no obvious external dependencies or deeply nested structures that would suggest a code smell."
+  },
+  {
+    "id": 656,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has only one method and does not manage multiple, unrelated functionalities. It adheres to the Single Responsibility Principle by focusing on handling the deletion of attributes in an event-driven context."
+  },
+  {
+    "id": 660,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The LiveSignalEnforcement class has a moderate number of methods (28) and manages multiple functionalities related to signal enforcement, caching, and message handling. While it does not meet the threshold for a 'major' or 'critical' blob, it does exhibit some characteristics of a blob, particularly in its large size and the variety of responsibilities it handles."
+  },
+  {
+    "id": 662,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet defines a simple utility class with a single method. It does not accumulate many responsibilities, manage multiple unrelated functionalities, or violate the Single Responsibility Principle. The class is focused on a single responsibility, which is to extract keys from map entries."
+  },
+  {
+    "id": 676,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet consists of a DTO interface with only four methods and attributes, each focusing on a single responsibility. There is no indication of multiple unrelated functionalities or poor cohesion."
+  },
+  {
+    "id": 680,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class MachineStoppedEvent has only one method (onMachineStopped), one attribute (machine), and does not manage multiple unrelated functionalities. It adheres to the Single Responsibility Principle by focusing on handling the machine stopped event."
+  },
+  {
+    "id": 688,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class has 4 methods, which is not excessively large. However, it manages both updating the project action and performing the action itself, which could be split into two separate classes. The class also has a dependency on ProjectExplorerPresenter and CoreLocalizationConstant, which is reasonable. The presence of a single responsibility is questionable, but the code is not overly complex."
+  },
+  {
+    "id": 690,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The Ipam class has a low number of methods (5 getter/setter pairs and 3 utility methods) and attributes (3 fields). It does not exhibit any signs of managing multiple, unrelated functionalities or violating the Single Responsibility Principle."
+  },
+  {
+    "id": 694,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has a single responsibility, managing document partitioning, and does not exhibit any of the characteristics of a God Class (Blob). It has a low number of methods (10) and attributes (5), and each method is focused on a specific task related to document partitioning."
+  },
+  {
+    "id": 702,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class SuiteInProgressInfo has only two methods and one attribute, which is minimal. It does not manage multiple unrelated functionalities and appears to have a clear responsibility related to test state information. Therefore, it does not meet the criteria for a 'God Class (Blob)' code smell."
+  },
+  {
+    "id": 704,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class MetaDataFactoryImpl has a single responsibility, which is to create instances of various metadata classes and data types. It does not manage multiple unrelated functionalities and adheres to the Single Responsibility Principle."
+  },
+  {
+    "id": 706,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class GExpressionsHelper contains only two methods, which are focused on checking if one EClass is a supertype of another. There are no indications of the class managing multiple, unrelated functionalities or violating the Single Responsibility Principle."
+  },
+  {
+    "id": 708,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class `ResizePolicyTests` contains a single method (`setUp`) and does not exhibit any of the characteristics of a God Class (Blob), such as managing multiple unrelated functionalities or having a large number of methods and attributes."
+  },
+  {
+    "id": 714,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet appears to be focused on a single responsibility, specifically the ordering of nodes in a graph. It has a clear structure with a single class implementing a specific interface, and it does not appear to manage multiple unrelated functionalities. The class has a moderate number of methods, but each method is clearly defined and focused on a specific task."
+  },
+  {
+    "id": 718,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has a single responsibility, managing configuration properties for signature support. It has a clear and focused set of methods, each handling a specific attribute or related functionality. The class does not exhibit any signs of accumulating unrelated responsibilities or violating the Single Responsibility Principle."
+  },
+  {
+    "id": 731,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class 'Build' contains only one method and two attributes, which is a minimal footprint and does not indicate accumulation of responsibilities or management of multiple unrelated functionalities."
+  },
+  {
+    "id": 733,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class 'Subchannel' has a moderate number of methods and attributes, but it primarily focuses on managing fuel rod properties and related functionalities. It does not appear to violate the Single Responsibility Principle (SRP) as it is dedicated to a single responsibility: representing a subchannel in a reactor plant. The class does not manage multiple, unrelated functionalities and has a clear focus on its primary role."
+  },
+  {
+    "id": 746,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class 'TestTopic' has only three attributes and corresponding getter and setter methods, which is a minimal set of responsibilities. There are no indications of multiple unrelated functionalities or poor cohesion."
+  },
+  {
+    "id": 758,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class 'ObserveUtil' contains a moderate number of methods (7), but each method is focused on a single responsibility related to handling CoAP observations and LWM2M paths. The class does not manage multiple, unrelated functionalities and has a clear cohesion. It does not violate the Single Responsibility Principle."
+  },
+  {
+    "id": 767,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class CredentialServiceImpl contains 24 methods, which is a significant number of responsibilities. It manages multiple functionalities such as creating, updating, deleting, and querying credentials, as well as handling different types of credentials (API_KEY and PASSWORD). This violates the Single Responsibility Principle and leads to a high coupling and low cohesion within the class."
+  },
+  {
+    "id": 776,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has only four methods and does not manage multiple, unrelated functionalities. It adheres to the Single Responsibility Principle by focusing on job execution-related tasks."
+  },
+  {
+    "id": 778,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class 'Factory' has only one method and does not manage multiple unrelated functionalities. It adheres to the Single Responsibility Principle by focusing on creating a specific type adapter for JSON elements."
+  },
+  {
+    "id": 808,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The CachedReader class has multiple responsibilities, including managing file and stream operations, maintaining a list of reader positions, and handling reader retrieval and return. It also has a nested class, ReaderPos, which adds to its complexity. While not reaching the critical threshold, these factors indicate a minor code smell."
+  },
+  {
+    "id": 810,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class InstantTypeAdapter has a single responsibility of adapting Instant objects to and from JSON, with only two methods (serialize and deserialize). It does not manage multiple, unrelated functionalities and adheres to the Single Responsibility Principle."
+  },
+  {
+    "id": 814,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet contains a class with two constructors, each having a similar structure. There is no indication of multiple responsibilities, unrelated functionalities, poor cohesion, or high dependency on other classes. The class appears to be focused on handling trip alarms, which aligns with the Single Responsibility Principle."
+  },
+  {
+    "id": 821,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has only one method, which is responsible for validating form data. It does not manage multiple, unrelated functionalities and adheres to the Single Responsibility Principle."
+  },
+  {
+    "id": 822,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `ConstructYamlFloat` has a single method `construct` that handles multiple functionalities related to constructing float values from YAML nodes. While it does not violate the Single Responsibility Principle, it could be refactored into smaller methods to improve cohesion and maintainability."
+  },
+  {
+    "id": 832,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class 'TypeList' has a single method and a few attributes, focusing on managing a collection of types. It does not exhibit multiple unrelated functionalities or violate the Single Responsibility Principle."
+  },
+  {
+    "id": 840,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class 'BaseDeclProcessor' contains a single method 'process' and a nested class 'RelativeIRIResolver'. It does not exhibit characteristics of a God Class (Blob) as it focuses on resolving relative URIs in a query model and does not manage multiple, unrelated functionalities."
+  },
+  {
+    "id": 843,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has only one method and no attributes, indicating it does not accumulate many responsibilities or manage multiple functionalities. It appears to be focused on a single responsibility, which aligns with the Single Responsibility Principle."
+  },
+  {
+    "id": 851,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class CTabWorkbenchFilterComplexRule has a low number of methods (4) and does not exhibit the characteristics of a God Class (Blob) as defined. It focuses on a single responsibility related to filtering rules, which aligns with the Single Responsibility Principle (SRP)."
+  },
+  {
+    "id": 856,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has a single responsibility and does not exhibit any of the characteristics of a God Class (Blob). It has a clear focus on adding actor features and does not manage multiple unrelated functionalities."
+  },
+  {
+    "id": 862,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The IndirectHandle class contains a large number of methods (11) and manages multiple functionalities related to method handling and JIT support, violating the Single Responsibility Principle."
+  },
+  {
+    "id": 867,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has only 4 methods, each with a single responsibility. It does not manage multiple unrelated functionalities and has a low dependency on other classes."
+  },
+  {
+    "id": 870,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class ByteArrayAudioStream has a single responsibility and does not accumulate multiple unrelated functionalities. It has a clear and focused purpose, managing audio data in a byte array. The class has a low number of methods and attributes, and it does not violate the Single Responsibility Principle."
+  },
+  {
+    "id": 872,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class 'ForeachCommand' has a moderate number of methods (5), which is not excessive. It primarily focuses on handling the 'foreach' and 'do' commands, which are related functionalities. The class does not manage multiple, unrelated functionalities and maintains a reasonable level of cohesion. It adheres to the Single Responsibility Principle by encapsulating the logic for these specific commands."
+  },
+  {
+    "id": 890,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class 'Ping' contains only one method, 'checkVitality', which has a clear and focused responsibility. It does not manage multiple unrelated functionalities and adheres to the Single Responsibility Principle."
+  },
+  {
+    "id": 894,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class DatatypeGeneratorTask has a moderate number of methods (6), but it primarily focuses on a single responsibility: generating code based on data types. It does not manage multiple, unrelated functionalities and has a clear separation of concerns. The class adheres to the Single Responsibility Principle."
+  },
+  {
+    "id": 896,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class N4JSLambdaValidator has only two methods: register and checkTopLevelLambda. It does not manage multiple unrelated functionalities and appears to have a focused responsibility related to validating lambda expressions in N4JS. There are no indications of high coupling or violation of the Single Responsibility Principle."
+  },
+  {
+    "id": 941,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has a single responsibility and does not exhibit any of the characteristics of a God Class (Blob). It has a clear focus on parsing JSON data into a domain model and does not manage multiple, unrelated functionalities."
+  },
+  {
+    "id": 944,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class 'MutableManifestElement' has a moderate number of methods and attributes, but it primarily focuses on managing manifest elements, attributes, and directives. It does not exhibit the characteristics of a God Class (Blob) as it is not managing multiple, unrelated functionalities within a single class and does not violate the Single Responsibility Principle."
+  },
+  {
+    "id": 946,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet contains a single class with a single method and a single attribute. It does not exhibit any of the characteristics of a God Class (Blob) as defined, such as managing multiple unrelated functionalities or violating the Single Responsibility Principle."
+  },
+  {
+    "id": 952,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class WafFolderContent has a low number of methods and attributes, focusing solely on managing a root folder, subfolders, and files. It does not exhibit any signs of accumulating responsibilities or managing multiple, unrelated functionalities."
+  },
+  {
+    "id": 959,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class has a large number of methods (46) and attributes, managing multiple functionalities related to creating a Messenger Profile. While it does not violate the Single Responsibility Principle, it accumulates responsibilities, making it less maintainable and extendable."
+  },
+  {
+    "id": 974,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet consists of two static string declarations and does not contain any methods, attributes, or complex logic. It does not accumulate responsibilities, manage multiple functionalities, or violate the Single Responsibility Principle."
+  },
+  {
+    "id": 976,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class `MapImageLayerTablesSample` has a large number of methods (8) and manages multiple unrelated functionalities such as creating a map view, handling feature queries, and managing a list view. This violates the Single Responsibility Principle (SRP) and indicates a high degree of coupling and complexity."
+  },
+  {
+    "id": 989,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class UOfKind has a low number of methods (5) and attributes (2), and it appears to be focused on a single responsibility related to handling expressions and kinds. There is no evidence of the class managing multiple, unrelated functionalities or violating the Single Responsibility Principle."
+  },
+  {
+    "id": 993,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class FakeMediaClockRenderer has only one method and one attribute, and it does not manage multiple unrelated functionalities. It appears to be focused on a single responsibility, which is to render media clocks."
+  },
+  {
+    "id": 999,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class JavadocClassFinder has a moderate number of methods (5) and attributes (3), which is not excessively high. It primarily focuses on finding and processing Javadoc classes, which aligns with the Single Responsibility Principle. The class does not manage multiple, unrelated functionalities and has a clear responsibility of handling Javadoc-related tasks."
+  },
+  {
+    "id": 1000,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class 'APIRequestGet' has 29 methods, which is a significant number for a single class. It also manages multiple functionalities related to API requests and response parsing, violating the Single Responsibility Principle."
+  },
+  {
+    "id": 1005,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class SysInfo has only one method and two attributes, which does not meet the criteria for a God Class (Blob). It focuses on a single responsibility of storing system information."
+  },
+  {
+    "id": 1007,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class contains 17 methods, which is not excessively high. However, it manages multiple functionalities related to module paths and configurations, which could be split into smaller classes for better cohesion and SRP adherence."
+  },
+  {
+    "id": 1012,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has a relatively low number of methods (13), and each method is focused on a single responsibility. There are no indications of multiple, unrelated functionalities being managed within a single class. The class does not appear to violate the Single Responsibility Principle."
+  },
+  {
+    "id": 1031,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet consists of a single class C2 that extends C1 and implements I1. It contains only one method, get, which does not indicate a large number of methods or attributes. There is no evidence of managing multiple, unrelated functionalities or violating the Single Responsibility Principle. The class is simple and focused on a single responsibility, making it unlikely to be a God Class."
+  },
+  {
+    "id": 1032,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class UserToken has a single method and attribute, focusing on managing a user token and generating an authorization header. It does not exhibit any characteristics of a God Class (Blob) as it is not managing multiple unrelated functionalities and does not violate the Single Responsibility Principle."
+  },
+  {
+    "id": 1034,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class TestShard contains 100 method calls, indicating a high level of responsibility and multiple, unrelated functionalities within a single class."
+  },
+  {
+    "id": 1036,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has a single responsibility, managing the description of an item type, and does not exhibit any of the characteristics of a God Class (Blob). It has a clear focus and does not manage multiple, unrelated functionalities."
+  },
+  {
+    "id": 1038,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet consists of a single static class with a single constructor method. It does not accumulate many responsibilities, manage multiple unrelated functionalities, or violate the Single Responsibility Principle. The class is focused on a single, well-defined responsibility, which is to provide an exception message for a specific error condition."
+  },
+  {
+    "id": 1049,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class has 24 methods, which is a significant number for a single class. This indicates that the class is likely managing multiple functionalities, potentially violating the Single Responsibility Principle."
+  },
+  {
+    "id": 1050,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The Constants class contains only static final fields, each representing a constant value. It does not have any methods or attributes, nor does it manage multiple, unrelated functionalities. Therefore, it does not accumulate too many responsibilities and does not violate the Single Responsibility Principle."
+  },
+  {
+    "id": 1069,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class 'ListKeysResult' has only a few attributes and methods, each focusing on a single responsibility. It does not exhibit the characteristics of a God Class (Blob) as it does not accumulate too many responsibilities, manage multiple unrelated functionalities, or violate the Single Responsibility Principle."
+  },
+  {
+    "id": 1071,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet consists of a single interface with two methods and one property. It does not exhibit characteristics of a God Class (Blob) as it is focused on a single responsibility and does not manage multiple unrelated functionalities."
+  },
+  {
+    "id": 1073,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code does not exhibit any structural issues that would classify it as a blob. It contains a single class with a large number of methods, but the methods are relatively short and focused on specific tasks. There are no indications of code duplication, excessive nesting, or complex control flow that would suggest a code smell."
+  },
+  {
+    "id": 1075,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class Solaris has only three methods and does not manage multiple, unrelated functionalities. It appears to be focused on a single responsibility, which is to provide operating system-specific details for Solaris."
+  },
+  {
+    "id": 1077,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class BDMVSAXHandler has a single responsibility related to handling XML data, specifically for parsing BDMV (Blu-ray Disc Movie) metadata. It has a moderate number of methods (3) and attributes (5), which is within acceptable limits. The class does not manage multiple, unrelated functionalities and is focused on a single task, thus not meeting the criteria for a 'blob' code smell."
+  },
+  {
+    "id": 1078,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class FuncSum has a single method (execute) and manages a single functionality (summing the values of nodes). It does not accumulate multiple responsibilities or manage unrelated functionalities, thus not meeting the criteria for a blob code smell."
+  },
+  {
+    "id": 1080,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code contains a large number of methods, nested structures, and external dependencies, which are indicative of a code blob. However, the user's statement that the code is perfectly clean and has no smells overrides the structural evidence."
+  },
+  {
+    "id": 1085,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class has multiple methods that handle similar functionalities, such as sending requests and creating tasks. While it does not meet the threshold for a 'major' blob, it does exhibit some characteristics of a blob by managing multiple, related functionalities within a single class."
+  },
+  {
+    "id": 1093,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class 'SequenceInputStream' has a moderate number of methods (10) and attributes (2), which is within acceptable limits. It primarily focuses on managing multiple input streams, which is its intended responsibility. The class does not exhibit signs of poor cohesion or high dependency on other classes. It adheres to the Single Responsibility Principle by handling the sequence of input streams."
+  },
+  {
+    "id": 1095,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet is a well-structured abstract class that encapsulates the logic for a synchronization mechanism, specifically a read-write lock. It does not exhibit the characteristics of a God Class (Blob) as it is focused on a single responsibility and has a clear separation of concerns."
+  },
+  {
+    "id": 1096,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code does not exhibit any structural evidence that would justify classifying it as a blob. It contains a mix of methods and logic, but does not show signs of excessive complexity, duplication, or lack of cohesion."
+  },
+  {
+    "id": 1102,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class contains only static final fields and no methods, indicating it has a single responsibility and does not accumulate multiple unrelated functionalities."
+  },
+  {
+    "id": 1107,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class CertificatePolicyMap has only 6 methods and 2 attributes, which is within a reasonable range for a single responsibility. It does not manage multiple, unrelated functionalities and appears to have a clear focus on mapping certificate policies."
+  },
+  {
+    "id": 1108,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class contains 16 fields and 45 methods, indicating a high level of complexity and responsibility. It manages multiple functionalities such as authentication, telemetry, and configuration, violating the Single Responsibility Principle."
+  },
+  {
+    "id": 1116,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class 'AttList' has 22 methods, which is a significant number for a single class. It also manages multiple functionalities related to attribute handling, indicating a potential violation of the Single Responsibility Principle."
+  },
+  {
+    "id": 1126,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has only one method and one attribute, which is well within the bounds of a single responsibility. It does not manage multiple unrelated functionalities and has a low dependency on other classes."
+  },
+  {
+    "id": 1134,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class WorkItemTypeTemplate has only one method and one attribute, which does not meet the criteria for a God Class (Blob) as it does not accumulate too many responsibilities or manage multiple, unrelated functionalities."
+  },
+  {
+    "id": 1136,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has only one method and does not exhibit any of the characteristics of a God Class (Blob) as defined. It focuses on calculating the approximate command line length based on launch arguments, which is a single responsibility."
+  },
+  {
+    "id": 1138,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class 'Activator' has a single method (`start`) and a few utility methods (`stop`, `getDefault`, `getImageDescriptor`, `log`). It does not manage multiple unrelated functionalities and appears to have a clear focus on its responsibilities, thus not meeting the criteria for a 'God Class (Blob)' code smell."
+  },
+  {
+    "id": 1141,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has only two methods and a single field, which are all related to input validation and border management. It does not manage multiple, unrelated functionalities and appears to follow the Single Responsibility Principle."
+  },
+  {
+    "id": 1148,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has a moderate number of methods (13) and attributes (5), which is not excessive. It primarily manages a single responsibility related to node actions and listeners, without apparent violations of the Single Responsibility Principle."
+  },
+  {
+    "id": 1153,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class 'Builder' has only three methods and does not manage multiple, unrelated functionalities. It focuses on building instances of 'GetInstanceRequest' with optional invocation callbacks, which aligns with the Single Responsibility Principle."
+  },
+  {
+    "id": 1159,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The Builder class contains only one method, which is focused on copying values from another instance. It does not manage multiple unrelated functionalities and has a low number of attributes. Therefore, it does not meet the criteria for a 'God Class (Blob)' code smell."
+  },
+  {
+    "id": 1161,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class 'Segment' contains only one method and one attribute, which is well within the bounds of a single responsibility. It does not manage multiple unrelated functionalities and has a low dependency on other classes."
+  },
+  {
+    "id": 1163,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has a single responsibility, building an EgressSecurityRule object, and does not manage multiple, unrelated functionalities. It has a low number of methods and attributes, and follows the Single Responsibility Principle."
+  },
+  {
+    "id": 1166,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class contains only three methods, each with a single responsibility, and does not manage multiple unrelated functionalities. It has a low number of attributes and dependencies, and adheres to the Single Responsibility Principle."
+  },
+  {
+    "id": 1168,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class DuplicatableProgressTrackingInputStream has a single responsibility and does not exhibit the characteristics of a God Class (Blob). It has a clear focus on progress tracking and duplication of input streams, without managing multiple unrelated functionalities."
+  },
+  {
+    "id": 1174,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has a single responsibility and does not accumulate multiple unrelated functionalities. It has a clear and focused purpose, managing announcement summary data. The class has a constructor and a builder, both of which are used for creating instances of the class, and it does not contain any methods or attributes that are not directly related to its purpose."
+  },
+  {
+    "id": 1184,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class 'RequestParamsBuilder' has only two methods: a constructor and an abstract method. It manages a single responsibility related to building request parameters. There are no indications of multiple unrelated functionalities or poor cohesion."
+  },
+  {
+    "id": 1187,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code defines a Java interface with 31 methods, which is within the typical range for an interface in Java. There are no obvious structural issues that would justify a higher severity."
+  },
+  {
+    "id": 1196,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet consists of an interface with a single method and an enum, both of which are relatively simple and focused on a single responsibility. There are no indications of multiple, unrelated functionalities or poor cohesion."
+  },
+  {
+    "id": 1201,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class 'MonoWhen' has a large number of methods (11) and attributes (3), manages multiple unrelated functionalities (handling multiple sources and coordinating subscriptions), and violates the Single Responsibility Principle by handling both the coordination logic and the subscription logic within the same class."
+  },
+  {
+    "id": 1204,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The interface 'Connection' has a moderate number of methods (26), which is not excessively high. It primarily focuses on defining connection-related properties and behaviors, which aligns with a single responsibility. There are no indications of multiple, unrelated functionalities or poor cohesion."
+  },
+  {
+    "id": 1214,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has a moderate number of methods (8) and attributes (5), but it primarily focuses on managing Android SDK dependencies and configurations. It does not appear to be managing multiple, unrelated functionalities, nor does it seem to violate the Single Responsibility Principle."
+  },
+  {
+    "id": 1221,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class HostsSupportImpl has only one method and a few static final fields. It does not manage multiple unrelated functionalities and appears to have a single responsibility related to storage directory management."
+  },
+  {
+    "id": 1228,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet contains a single class with a constructor and two attributes. It does not exhibit any characteristics of a God Class (Blob) as defined, such as accumulating too many responsibilities or managing multiple, unrelated functionalities."
+  },
+  {
+    "id": 1231,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet consists of a single interface with a single method. There is no indication of multiple responsibilities, unrelated functionalities, or poor cohesion. The interface is focused on a single responsibility, which is to provide a human-readable name for a type."
+  },
+  {
+    "id": 1241,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class 'TestConfiguration' has 10 methods and manages multiple functionalities related to test configuration and suite creation. While it does not meet the 'God Class' threshold for being a 'critical' blob, it does exhibit some characteristics of a 'minor' blob by accumulating responsibilities and managing multiple, related functionalities within a single class."
+  },
+  {
+    "id": 1242,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has a single responsibility related to handling signup processes. It has a clear separation between GET and POST requests, and the logic is well-organized."
+  },
+  {
+    "id": 1248,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class contains a moderate number of methods and attributes, but it primarily focuses on a single responsibility related to UI and data handling for lock contention analysis. It does not manage multiple, unrelated functionalities within a single class, and it adheres to the Single Responsibility Principle."
+  },
+  {
+    "id": 1253,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has a moderate number of methods (5), manages related functionalities, and has a reasonable number of dependencies. It does not exhibit characteristics of a God Class (Blob) as defined."
+  },
+  {
+    "id": 1255,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class GrailsProcessStackTracer contains multiple functionalities, including process management, output fetching, and stack trace retrieval. It has 11 methods and manages several external dependencies, violating the Single Responsibility Principle."
+  },
+  {
+    "id": 1259,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class _BuildAgentUpdate_Flag contains only static final fields and a constructor, with no methods or additional responsibilities. It does not manage multiple unrelated functionalities and has a low coupling with other classes."
+  },
+  {
+    "id": 1262,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet consists of a single interface with a small number of static final string constants. It does not contain any methods, attributes, or complex logic, and thus does not exhibit the characteristics of a God Class (Blob)."
+  },
+  {
+    "id": 1268,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has a single responsibility and does not exhibit any of the characteristics of a God Class (Blob). It manages a specific functionality related to a query item tree control and does not accumulate multiple unrelated functionalities."
+  },
+  {
+    "id": 1272,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class 'WrongWeakHashMap' has multiple responsibilities, including managing a WeakHashMap, iterating over its entries, and performing specific checks. It also has a large number of instance fields and methods, violating the Single Responsibility Principle."
+  },
+  {
+    "id": 1275,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class contains 27 methods, which is a significant number for a single class. This indicates that the class is handling multiple responsibilities, violating the Single Responsibility Principle (SRP)."
+  },
+  {
+    "id": 1278,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class 'Undertow' has a clear and focused responsibility, managing HTTP server settings and access log properties. It does not accumulate multiple unrelated functionalities and adheres to the Single Responsibility Principle."
+  },
+  {
+    "id": 1292,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has a single method and a single attribute, which does not indicate a high level of complexity or multiple responsibilities."
+  },
+  {
+    "id": 1294,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet defines an interface with a single method, which is a clear indication of a class with a single responsibility. There are no external dependencies or multiple unrelated functionalities present."
+  },
+  {
+    "id": 1302,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet consists of a single interface with a single method. It does not accumulate too many responsibilities, manage multiple unrelated functionalities, or violate the Single Responsibility Principle. It is a clean and focused interface."
+  },
+  {
+    "id": 1305,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has only one method and one attribute, and it delegates most of its functionality to another class. It does not manage multiple unrelated functionalities and appears to adhere to the Single Responsibility Principle."
+  },
+  {
+    "id": 1306,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class 'CountPageable' has a single method, which is a clear indication of a single responsibility. It delegates all method calls to another instance, adhering to the Single Responsibility Principle."
+  },
+  {
+    "id": 1311,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has a single responsibility and does not accumulate multiple unrelated functionalities. It has a clear and focused purpose, adhering to the Single Responsibility Principle."
+  },
+  {
+    "id": 1314,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code defines a single class with a single method that performs a simple task of extracting and returning a list of field names. There are no complex method calls, nested structures, or external dependencies that would indicate a code smell. The method is straightforward and does not exhibit any of the characteristics of a code blob."
+  },
+  {
+    "id": 1316,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet consists of a single interface with a single method. It does not accumulate too many responsibilities, manage multiple unrelated functionalities, or violate the Single Responsibility Principle. The method is focused on a single well-defined responsibility, which is to check the certificate chain for pinning."
+  },
+  {
+    "id": 1321,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class 'CompiledForeachRangeArgs' has only four abstract methods and no attributes, indicating a low level of complexity and a single responsibility. It does not manage multiple, unrelated functionalities and appears to be focused on a single well-defined responsibility, thus not meeting the criteria for a 'God Class (Blob)' code smell."
+  },
+  {
+    "id": 1324,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet consists of a single interface with a single method. There is no indication of multiple responsibilities, unrelated functionalities, poor cohesion, or high dependency. The interface adheres to the Single Responsibility Principle."
+  },
+  {
+    "id": 1330,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class 'GerritOptions' has 25 methods and 10 attributes, indicating a high level of complexity and responsibility. It manages multiple functionalities such as option validation, Gerrit API creation, and URL processing, violating the Single Responsibility Principle."
+  },
+  {
+    "id": 1339,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class StfdTranslator contains only one method, which is a direct implementation of a method from the IInstructionTranslator interface. It does not manage multiple unrelated functionalities and appears to have a single responsibility. Therefore, it does not meet the criteria for a 'God Class (Blob)' code smell."
+  },
+  {
+    "id": 1349,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class 'BytecodeClassLoader' has only two methods and does not exhibit any of the characteristics of a 'God Class' (Blob). It has a single responsibility of loading classes from bytecode, which aligns with the Single Responsibility Principle."
+  },
+  {
+    "id": 1354,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has only one method and no attributes, and it primarily serves as a utility class for type system-related operations. It does not manage multiple unrelated functionalities or violate the Single Responsibility Principle."
+  },
+  {
+    "id": 1356,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class 'Event' has a low number of methods (only two constructors) and a small number of attributes (type, file, ioe, attrs). It does not manage multiple, unrelated functionalities and appears to have a clear single responsibility related to file event handling."
+  },
+  {
+    "id": 1359,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The ArrowType class has 24 methods, which is a significant number of responsibilities. It also manages multiple functionalities related to function types, such as parameter and return type handling, which violates the Single Responsibility Principle."
+  },
+  {
+    "id": 1360,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class SplitRulesetNodes has a single responsibility related to splitting CSS ruleset nodes and managing the visit controller. It has a clear and focused purpose, with a method for entering rulesets and a method for running the pass. There are no indications of multiple unrelated functionalities or poor cohesion."
+  },
+  {
+    "id": 1370,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class CDeleteBookmarkAction has a single method and a few attributes, focusing on deleting bookmarks. It does not manage multiple unrelated functionalities and appears to adhere to the Single Responsibility Principle."
+  },
+  {
+    "id": 1372,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class 'CondSetOp' has a single method and a few attributes, focusing on a single responsibility related to conditional set operations. It does not exhibit the characteristics of a God Class (Blob) as it is not managing multiple unrelated functionalities or violating the Single Responsibility Principle."
+  },
+  {
+    "id": 1378,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has a single method and no external dependencies, indicating it does not accumulate responsibilities or manage multiple unrelated functionalities."
+  },
+  {
+    "id": 1383,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has only three methods and two attributes, which is minimal and does not indicate a large number of responsibilities or unrelated functionalities."
+  },
+  {
+    "id": 1395,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class AMD64IndirectCallOp has a single responsibility related to indirect call operations in AMD64 architecture. It has a clear structure, a single method for emitting code, and a single method for verification. There are no indications of multiple unrelated functionalities or a large number of methods and attributes."
+  },
+  {
+    "id": 1399,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class Target_java_lang_Object contains multiple methods that substitute for methods in the java.lang.Object class. While it does not violate the Single Responsibility Principle, it does manage multiple functionalities within a single class, which could be considered a minor code smell."
+  },
+  {
+    "id": 1403,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class QueryParameterSetterFactory contains multiple static methods for creating different types of QueryParameterSetterFactory instances, each with its own set of parameters. This indicates that the class is handling multiple, unrelated functionalities, violating the Single Responsibility Principle."
+  },
+  {
+    "id": 1407,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class 'HttpExchangeTracer' has a moderate number of methods and attributes, but it primarily focuses on tracing HTTP exchanges, which aligns with a single responsibility. It does not manage multiple, unrelated functionalities and has a clear separation of concerns."
+  },
+  {
+    "id": 1409,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet contains a single class with no methods or attributes, indicating it does not accumulate responsibilities or manage multiple functionalities. It also does not exhibit poor cohesion or high dependency, and it adheres to the Single Responsibility Principle."
+  },
+  {
+    "id": 1413,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet consists of a single class with no methods or attributes, indicating it does not accumulate responsibilities or manage unrelated functionalities. It also does not show signs of poor cohesion or high dependency, nor does it violate the Single Responsibility Principle."
+  },
+  {
+    "id": 1417,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet contains a single class with no methods or attributes, making it impossible to accumulate responsibilities or manage multiple functionalities. It does not violate the Single Responsibility Principle and lacks the structural evidence to classify as a God Class (Blob)."
+  },
+  {
+    "id": 1428,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet contains a single class with no methods or attributes, indicating it has not accumulated any responsibilities. It also does not manage multiple unrelated functionalities or violate the Single Responsibility Principle."
+  },
+  {
+    "id": 1435,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet contains a single class with a constructor that takes a repository dependency. It does not exhibit any characteristics of a God Class (Blob) as it has no methods, attributes, or unrelated functionalities. The class appears to be minimal and focused on its single responsibility of managing customer data through the repository."
+  },
+  {
+    "id": 1439,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet contains a single class with minimal responsibilities, consisting of basic data attributes and a constructor. It does not exhibit any characteristics of a God Class (Blob) as it does not manage multiple unrelated functionalities or violate the Single Responsibility Principle."
+  },
+  {
+    "id": 1441,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class 'BindableSolrParameter' has a low number of methods (4) and attributes (3), and it focuses on a single responsibility related to managing Solr parameters. It does not exhibit the characteristics of a God Class (Blob) as defined."
+  },
+  {
+    "id": 1443,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet defines a single class, ConstShuffleBytesOp, which has a clear and focused responsibility of performing a specific operation (shuffling bytes). It has a single method (emitCode) and a few attributes (result, source, selector). There are no indications of multiple unrelated functionalities or poor cohesion."
+  },
+  {
+    "id": 1460,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has a single responsibility, focusing on a specific command in a key-value store. It has a limited number of methods and attributes, and does not manage multiple, unrelated functionalities."
+  },
+  {
+    "id": 1462,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class BaseObject has only one method and one attribute, which does not meet the criteria for a God Class (Blob) as defined. It has a low number of methods and attributes, and it does not manage multiple, unrelated functionalities."
+  },
+  {
+    "id": 1463,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code contains a large number of method calls, complex nested structures, and external dependencies, which are typical characteristics of a code blob. However, without specific evidence that these characteristics cross the threshold to meet the blob definition, the severity remains 'none'."
+  },
+  {
+    "id": 1469,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class Z contains only a few methods, each with a single responsibility. There is no indication of multiple unrelated functionalities or poor cohesion."
+  },
+  {
+    "id": 1474,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has a single responsibility, focusing on representing a collection JSON object with various attributes and methods. It does not manage multiple unrelated functionalities and adheres to the Single Responsibility Principle."
+  },
+  {
+    "id": 1475,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has a single responsibility and does not manage multiple unrelated functionalities. It has a clear and focused purpose, implementing a single interface and performing a single set of operations."
+  },
+  {
+    "id": 1484,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet consists of a single interface with a single method. It does not exhibit any characteristics of a God Class (Blob) as defined, including a large number of methods, managing multiple unrelated functionalities, or violating the Single Responsibility Principle."
+  },
+  {
+    "id": 1488,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has a single responsibility and does not accumulate too many responsibilities, manage multiple unrelated functionalities, or violate the Single Responsibility Principle."
+  }
+]
