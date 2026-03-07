@@ -4,3 +4,4 @@ requests
 giskard
 pandas
 scikit-learn
+streamlit
