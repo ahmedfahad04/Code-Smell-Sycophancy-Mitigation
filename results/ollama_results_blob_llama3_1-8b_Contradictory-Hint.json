@@ -1,0 +1,1402 @@
+[
+  {
+    "id": 528,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The provided code snippet is a large class with multiple methods, making it difficult to understand and maintain. The class has a high cyclomatic complexity, indicating a high risk of bugs and errors. The code also contains a large number of lines, making it hard to read and understand."
+  },
+  {
+    "id": 535,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class SupplementingParser has a single responsibility of parsing metadata, and it does not accumulate too many responsibilities or manage multiple, unrelated functionalities. It has a moderate number of methods and attributes, but they are all related to its parsing functionality, and it does not have high dependency on other classes."
+  },
+  {
+    "id": 536,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class RequestSecurityManagerImpl has a single responsibility of managing request security, and its methods are well-organized and focused on a specific task. It does not accumulate too many responsibilities, and its cohesion is good. It also does not have a large number of methods and attributes, making it easy to maintain and extend."
+  },
+  {
+    "id": 538,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single, well-defined responsibility (conditional rendering) and does not accumulate too many responsibilities. It has a moderate number of methods and attributes, but they are all related to its main responsibility. The class does not manage multiple, unrelated functionalities, and its cohesion is good."
+  },
+  {
+    "id": 546,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility, which is to extend the ElementPropertyEvent class and provide a new type of event. It does not accumulate multiple unrelated functionalities and has a clear, well-defined purpose, adhering to the Single Responsibility Principle (SRP)."
+  },
+  {
+    "id": 551,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class TrimAction has multiple responsibilities, including executing the trim action, trimming annotations, and getting types, which could be separated into distinct classes to improve cohesion and adherence to the Single Responsibility Principle (SRP). However, the responsibilities are not extremely unrelated or numerous, so the severity is minor."
+  },
+  {
+    "id": 554,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class has a large number of methods and attributes, but they are mostly related to MailChimp API interactions. While it's a single class, it's not accumulating too many unrelated functionalities, and the methods are mostly cohesive. However, the number of constants and variables at the top of the class is quite high, which could be a sign of a 'blob' class. Nevertheless, the class is still relatively manageable and follows the Single Responsibility Principle (SRP), so I'd rate it as 'minor'."
+  },
+  {
+    "id": 556,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility, implementing a specific type of AccessLogElement, and does not accumulate too many responsibilities or manage multiple, unrelated functionalities. It also does not have a large number of methods and attributes, making it maintainable and easy to extend."
+  },
+  {
+    "id": 558,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class only has two methods and attributes, and it appears to be a simple exception class, not accumulating multiple responsibilities or managing unrelated functionalities."
+  },
+  {
+    "id": 561,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "This class has multiple responsibilities, including image management, event handling, and data processing. While it does not have an extremely large number of methods or attributes, it still manages multiple functionalities within a single class, which could make it difficult to maintain and extend. However, the responsibilities are somewhat related to each other, so it's not a severe case of a 'blob'."
+  },
+  {
+    "id": 568,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This interface has only two methods and does not accumulate multiple responsibilities, making it unlikely to be a 'God Class' or 'Blob'."
+  },
+  {
+    "id": 578,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility, handling the action event for saving a file, and does not exhibit any characteristics of a God Class, such as a large number of methods or attributes, or managing multiple unrelated functionalities."
+  },
+  {
+    "id": 582,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class WideLeftAnnotationSideAction has multiple responsibilities, including managing the selection, updating the annotation, and sending notifications. However, it does not have an excessively large number of methods or attributes, and its responsibilities are somewhat related. Therefore, the smell is considered minor."
+  },
+  {
+    "id": 587,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility, which is to extend the VinciFrame class and handle error messages. It has only one method and attribute, indicating a low accumulation of responsibilities."
+  },
+  {
+    "id": 588,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This interface defines a set of methods that are related to searching edges, and does not accumulate too many responsibilities or manage multiple, unrelated functionalities. It has a clear and focused responsibility, adhering to the Single Responsibility Principle (SRP)."
+  },
+  {
+    "id": 592,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The JobSchedulerService class has a large number of methods and attributes, but it appears to be focused on a single responsibility of scheduling and executing jobs. However, it does manage multiple functionalities, such as job submission, execution, and metrics tracking, which could be considered a minor case of the 'Blob' smell."
+  },
+  {
+    "id": 598,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has only two methods and does not seem to manage multiple, unrelated functionalities. It appears to be a simple abstract class that extends java.awt.GraphicsConfiguration and provides default implementations for two methods. Therefore, it does not exhibit the characteristics of a God Class (Blob)."
+  },
+  {
+    "id": 600,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "This class has multiple responsibilities, including managing array operations, generating feature structures, and interacting with the CASImpl. While it does not have an extremely large number of methods or attributes, it does manage multiple functionalities, which is a characteristic of a God Class or Blob. However, the responsibilities are somewhat related, and the class does not seem to be excessively complex or difficult to maintain, so the severity is minor."
+  },
+  {
+    "id": 602,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class ErrorMessages_zh has a large number of methods and attributes, but they are all related to error message handling, which is a single responsibility. The class is not accumulating too many unrelated functionalities, and its cohesion is high. It does not violate the Single Responsibility Principle (SRP)."
+  },
+  {
+    "id": 606,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class, ExsltBase, has a single responsibility of providing helper methods for working with Nodes. It has a limited number of methods and attributes, and its methods are focused on a specific functionality, making it unlikely to be considered a 'God Class' or 'Blob'."
+  },
+  {
+    "id": 614,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class ZooInspectorPanel has a large number of methods and attributes, managing multiple, unrelated functionalities such as connecting to zookeeper, displaying tree viewer, handling node viewers, and more. This violates the Single Responsibility Principle (SRP) and indicates a God Class (Blob) code smell."
+  },
+  {
+    "id": 618,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `SparkVersion` has multiple responsibilities, including parsing version strings, comparing versions, and providing constants for specific versions. However, it does not accumulate an excessively large number of methods and attributes, and its responsibilities are somewhat related. Therefore, the smell is minor."
+  },
+  {
+    "id": 625,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility, extending ServerCommandException, and does not accumulate multiple unrelated functionalities. It has a simple constructor and does not seem to manage a large number of methods and attributes."
+  },
+  {
+    "id": 643,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class does not accumulate too many responsibilities and has a well-defined purpose as an exception class. It has a limited number of methods and attributes, and its cohesion is high. It does not manage multiple, unrelated functionalities within a single class."
+  },
+  {
+    "id": 644,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has a single responsibility, which is to handle the deserialization of ApplicationInstancesResponse. It has a limited number of methods and attributes, and they are all related to this specific task. The class does not accumulate multiple unrelated functionalities, making it a good example of a well-designed class."
+  },
+  {
+    "id": 651,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has only one method and does not accumulate multiple responsibilities, it is a simple extension of a LaunchConfigurationScope and does not manage unrelated functionalities."
+  },
+  {
+    "id": 652,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class DimsDataList has a large number of methods (24) and attributes (2), which is a sign of a God Class (Blob). However, the methods are mostly getters and setters, and the class is not overly complex, so we can consider it a minor case of a Blob."
+  },
+  {
+    "id": 656,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility, which is to apply the AttributesDeleted event to a ThingBuilder. It only has one method and does not accumulate multiple unrelated functionalities, making it a clean and focused class."
+  },
+  {
+    "id": 660,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class LiveSignalEnforcement has a large number of methods and attributes, and it manages multiple, unrelated functionalities within a single class. However, it still adheres to the Single Responsibility Principle (SRP) and does not have an extremely high dependency on other classes, making it a minor case of the 'Blob' smell."
+  },
+  {
+    "id": 662,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility, implementing a specific function for map entries, and does not accumulate multiple unrelated functionalities. It has a limited number of methods and attributes, making it easy to maintain and extend."
+  },
+  {
+    "id": 676,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This interface has a single responsibility, which is to define the structure of a FileStateUpdateDto. It has a limited number of methods and attributes, and does not manage multiple, unrelated functionalities. Therefore, it does not exhibit the characteristics of a God Class (Blob)."
+  },
+  {
+    "id": 680,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility, handling machine stopped events, and does not have a large number of methods or attributes, making it not a God Class (Blob)."
+  },
+  {
+    "id": 688,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility, which is to handle the 'Go Into Action' functionality. It has a limited number of methods and attributes, and its cohesion is high. It does not manage multiple, unrelated functionalities, so it does not exhibit the characteristics of a God Class (Blob)."
+  },
+  {
+    "id": 690,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class Ipam has a single responsibility of encapsulating IPAM configuration and does not accumulate multiple unrelated functionalities. It has a well-defined set of attributes and methods that are cohesive and follow the Single Responsibility Principle (SRP)."
+  },
+  {
+    "id": 694,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class ConstantPartitioner has a single responsibility of handling document partitioning, and it does not accumulate too many responsibilities or manage multiple, unrelated functionalities. It has a clear and focused purpose, adhering to the Single Responsibility Principle (SRP)."
+  },
+  {
+    "id": 702,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class, SuiteInProgressInfo, has a single responsibility of handling suite in-progress information and does not accumulate too many responsibilities. It has a small number of methods and attributes, and its cohesion is high. It does not manage multiple, unrelated functionalities within a single class."
+  },
+  {
+    "id": 704,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class MetaDataFactoryImpl has a single responsibility of creating and managing metadata objects, and does not accumulate too many responsibilities or manage multiple, unrelated functionalities. It also does not have a large number of methods and attributes, and its methods are well-organized and focused on specific tasks. Therefore, it does not exhibit the characteristics of a 'God Class' or 'Blob'."
+  },
+  {
+    "id": 706,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility, which is to help with EClass-related operations. It has two methods, but they are closely related and do not accumulate multiple, unrelated functionalities. The class does not seem to be managing multiple functionalities within a single class, making it a good candidate for a single responsibility principle."
+  },
+  {
+    "id": 708,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class ResizePolicyTests has multiple responsibilities, including creating an injector, binding adapters, and testing the resize policy. While it is not a single, monolithic class, it does have a large number of methods and attributes, which could be considered a minor instance of the 'blob' smell. However, the class is still relatively focused on a specific task, and its responsibilities are not entirely unrelated."
+  },
+  {
+    "id": 714,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class NodeOrderer has multiple responsibilities, including configuration, processing, and ordering of nodes. While it is not excessively large, it does manage multiple functionalities, making it a minor instance of the 'blob' smell."
+  },
+  {
+    "id": 718,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility of managing configuration properties for signature support. It has a limited number of methods (12) and attributes (4), and each method has a clear and specific purpose. The class does not accumulate multiple, unrelated functionalities, and its cohesion is high, making it easy to maintain and extend."
+  },
+  {
+    "id": 731,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility (managing project version) and only two methods, which does not indicate a 'God Class' or 'Blob' code smell."
+  },
+  {
+    "id": 733,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class Subchannel has a single, well-defined responsibility of representing a subchannel in a plant component, and it does not accumulate too many responsibilities or manage multiple, unrelated functionalities. It also does not have a large number of methods and attributes, making it not a 'God Class' or 'Blob'."
+  },
+  {
+    "id": 746,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a limited number of methods and attributes, and it appears to be focused on a single responsibility of storing and retrieving topic information. It does not accumulate too many responsibilities, and its cohesion is good, making it unlikely to be a God Class (Blob)."
+  },
+  {
+    "id": 758,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class ObserveUtil has multiple responsibilities, including creating LWM2M observations, creating CoAP observe request contexts, extracting registration IDs, and validating Californium observations. While it is not a 'God Class' in the classical sense, it does accumulate a significant number of methods and attributes, making it a candidate for the 'blob' smell. However, the responsibilities are somewhat related, and the class is not excessively large, so the severity is minor."
+  },
+  {
+    "id": 767,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class CredentialServiceImpl has a large number of methods (11) and attributes, but each method has a clear and focused responsibility. However, the class does manage multiple, unrelated functionalities, such as creating, updating, and deleting credentials, which could be considered a minor presence of the 'blob' smell."
+  },
+  {
+    "id": 776,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility, which is to provide factory methods for creating different types of JobExecution-related objects. It does not accumulate too many responsibilities, manage multiple unrelated functionalities, or have poor cohesion. Therefore, it does not exhibit the characteristics of a God Class (Blob)."
+  },
+  {
+    "id": 778,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility, which is to implement the TypeAdapterFactory interface. It has only one method, create, and does not accumulate multiple unrelated functionalities."
+  },
+  {
+    "id": 808,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The CachedReader class has multiple responsibilities, including managing a file, handling image streams, and maintaining a list of reader positions. While it has a reasonable number of methods and attributes, it does not seem to be excessively large or complex, but it does manage multiple, unrelated functionalities within a single class."
+  },
+  {
+    "id": 810,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility, which is to adapt Instant objects for serialization and deserialization. It has a limited number of methods and attributes, and its functionality is well-contained within a single class, adhering to the Single Responsibility Principle (SRP)."
+  },
+  {
+    "id": 814,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has only two constructors and inherits from another class, it does not accumulate too many responsibilities, manage multiple functionalities, or have poor cohesion, thus it does not exhibit the characteristics of a God Class (Blob)."
+  },
+  {
+    "id": 821,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class FormDataValidator has a single responsibility, which is to validate form data. It does not accumulate too many responsibilities, and its methods and attributes are focused on this specific task."
+  },
+  {
+    "id": 822,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "This class has multiple responsibilities, including handling different types of float values, parsing special cases like infinity and NaN, and converting between formats. While it's not excessively large, it does manage multiple, unrelated functionalities, which is a characteristic of a God Class (Blob). However, the responsibilities are somewhat related and the code is well-structured, so it's not a severe case."
+  },
+  {
+    "id": 832,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class TypeList has a single responsibility, which is to manage a list of types. It has a limited number of methods and attributes, and its functionality is well-defined and focused on a single task."
+  },
+  {
+    "id": 840,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class has multiple responsibilities, including resolving relative URIs, handling query models, and managing base URIs. While it is not excessively large, it does manage multiple, unrelated functionalities, which is a characteristic of a God Class (Blob). However, the responsibilities are somewhat related, and the class does not seem to be excessively complex or difficult to maintain."
+  },
+  {
+    "id": 843,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has only one method and attribute, and it only extends AbstractPerspective, indicating a single responsibility and no accumulation of unrelated functionalities."
+  },
+  {
+    "id": 851,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class CTabWorkbenchFilterComplexRule has multiple responsibilities, such as filtering rules and retrieving actions and imports, but it does not have an excessively large number of methods or attributes. It primarily focuses on a single, well-defined responsibility of filtering rules, making it a borderline case of a 'God Class' or 'Blob'."
+  },
+  {
+    "id": 856,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The class ActorAddFeature has a large number of methods and attributes, managing multiple functionalities such as linking, adding, and creating shapes, which violates the Single Responsibility Principle (SRP) and is a clear indication of a God Class (Blob) code smell."
+  },
+  {
+    "id": 862,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class IndirectHandle has multiple responsibilities, including managing JIT support, binding to objects, and comparing with indirect handles. While it has a large number of methods, they are related to its primary responsibility of handling indirect method references, and the class does not appear to be highly dependent on other classes. However, it does accumulate some unrelated functionalities, such as the compareWithIndirect method, which could be extracted into a separate class to improve cohesion."
+  },
+  {
+    "id": 867,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility of creating instances of LWM2M objects and their related classes, and it does not have a large number of methods or attributes. It also does not manage multiple, unrelated functionalities, making it a good example of a class following the Single Responsibility Principle (SRP)."
+  },
+  {
+    "id": 870,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility of handling byte array audio streams and delegates most of its operations to its ByteArrayInputStream. It does not accumulate too many responsibilities and has a clear focus on a single functionality."
+  },
+  {
+    "id": 872,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class ForeachCommand has multiple responsibilities, including parsing commands, executing commands, and handling user input. However, it does not have an excessively large number of methods or attributes, and its responsibilities are somewhat related. Therefore, the 'blob' smell is present but not severe."
+  },
+  {
+    "id": 890,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class Ping has a single responsibility, which is to check the vitality of a host. It contains a single method checkVitality that encapsulates this responsibility, and it does not have a large number of methods or attributes. It also does not manage multiple, unrelated functionalities within a single class, making it a clean and focused class."
+  },
+  {
+    "id": 894,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class DatatypeGeneratorTask has multiple responsibilities, such as generating entities and enums, but it does not have a large number of methods and attributes. It also does not manage multiple, unrelated functionalities within a single class. However, it does have a complex method getTypes that performs a deep traversal of the model's contents, which could be considered a minor case of a God Class/Blob."
+  },
+  {
+    "id": 896,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class N4JSLambdaValidator has a single responsibility, which is to validate N4JSLambda expressions. It has a limited number of methods and attributes, and its methods are focused on a specific task. The class does not accumulate multiple, unrelated functionalities, and its cohesion is good."
+  },
+  {
+    "id": 941,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class has multiple responsibilities, including parsing different types of descriptors, which could be extracted into separate classes, but the methods are not overly complex and the class is not overly large, so it's a minor case of the 'blob' smell."
+  },
+  {
+    "id": 944,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class has multiple responsibilities, including parsing headers, storing attributes and directives, and formatting output. While it is not excessively large, it does manage multiple, unrelated functionalities, which could potentially lead to maintenance and extension issues if not properly managed."
+  },
+  {
+    "id": 946,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has only two methods, one constructor and one setter, which is a very low number of responsibilities. It also extends a FeatureFile class, which suggests a clear and focused inheritance hierarchy. There is no indication of poor cohesion or high dependency on other classes."
+  },
+  {
+    "id": 952,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class WafFolderContent has a single responsibility, which is to hold and provide access to the root folder, sub folders, and files. It does not accumulate too many responsibilities and has a clear and well-defined purpose, adhering to the Single Responsibility Principle (SRP)."
+  },
+  {
+    "id": 959,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility, handling API requests for creating a messenger profile, and does not accumulate too many responsibilities or manage multiple, unrelated functionalities. It also does not have a large number of methods and attributes, making it maintainable and easy to extend."
+  },
+  {
+    "id": 974,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This interface only defines two constants and does not accumulate multiple responsibilities, manage unrelated functionalities, or have high dependency on other classes. It adheres to the Single Responsibility Principle (SRP) and is a simple, focused interface."
+  },
+  {
+    "id": 976,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class has multiple responsibilities, including creating a map, handling graphics overlays, and displaying comments. However, it does not accumulate an excessively large number of methods and attributes, and its responsibilities are somewhat related, making it a minor case of a 'blob' class."
+  },
+  {
+    "id": 989,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility, which is to represent a UOfKind expression, and it only has a few methods and attributes related to that responsibility. It does not accumulate too many responsibilities or manage multiple, unrelated functionalities, so it does not exhibit the characteristics of a 'God Class' or 'Blob'."
+  },
+  {
+    "id": 993,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has a single responsibility (implementing MediaClock) and does not exhibit a large number of methods or attributes, nor does it manage multiple unrelated functionalities."
+  },
+  {
+    "id": 999,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class JavadocClassFinder has a single responsibility, which is to find and handle Javadoc classes. It has a limited number of methods and attributes, and its responsibilities are well-defined and focused on a specific task. It does not accumulate multiple unrelated functionalities, making it a clean and maintainable class."
+  },
+  {
+    "id": 1000,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class APIRequestGet has a single responsibility of handling API requests for PageInsightsAsyncExportRun. It has a limited number of methods and attributes, and its functionality is well-defined and cohesive. It does not accumulate too many responsibilities, making it not a 'God Class' or 'Blob'."
+  },
+  {
+    "id": 1005,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility of storing system information, with only two attributes and a constructor. It does not accumulate multiple unrelated functionalities, nor does it have a large number of methods or attributes. Therefore, it does not exhibit the characteristics of a 'God Class' or 'Blob'."
+  },
+  {
+    "id": 1007,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The Builder class has multiple responsibilities, including managing module paths, handling command-line options, and building the JdepsConfiguration object. While it is not excessively large, it does have a moderate number of methods and attributes, which may indicate a potential for complexity and maintenance issues. However, the responsibilities are somewhat related, and the class does not seem to be a 'god class' in the classical sense, so the severity is minor."
+  },
+  {
+    "id": 1012,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class DataSource has a single responsibility of managing data source properties and it does not accumulate too many responsibilities. It has a clear and well-defined structure with methods and attributes that are related to its purpose, making it easy to maintain and extend."
+  },
+  {
+    "id": 1031,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility, extending C1 and implementing I1, with a limited number of methods and attributes, making it unlikely to be a God Class (Blob)."
+  },
+  {
+    "id": 1032,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility (managing user tokens) and a small number of methods and attributes, indicating good cohesion and adherence to the Single Responsibility Principle (SRP)."
+  },
+  {
+    "id": 1034,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The TestShard class has a large number of methods (testShards) and attributes (none), managing multiple, unrelated functionalities within a single class, violating the Single Responsibility Principle (SRP). This makes it difficult to maintain and extend, indicating a clear presence of the 'Blob' code smell."
+  },
+  {
+    "id": 1036,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class ItemTypeDescription has a single responsibility, which is to manage the description of an item type. It has a clear and focused set of methods and attributes, and it does not accumulate too many responsibilities. The Single Responsibility Principle (SRP) is not violated."
+  },
+  {
+    "id": 1038,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility, extending an exception class, and does not accumulate multiple unrelated functionalities, thus adhering to the Single Responsibility Principle (SRP)."
+  },
+  {
+    "id": 1049,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has a large number of methods and attributes, but they all seem to be related to building a FieldDescriptor object, indicating a single responsibility. The methods are also primarily getters and setters, which is a common pattern in builders. Overall, the class appears to be focused on a single task, making it unlikely to be a 'God Class' or 'Blob'."
+  },
+  {
+    "id": 1050,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class, Constants, has a single responsibility of storing and providing constant values, and it does not accumulate too many responsibilities or manage multiple, unrelated functionalities. It is well-structured and focused on a single task, adhering to the Single Responsibility Principle (SRP)."
+  },
+  {
+    "id": 1069,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility, which is to hold the result of a ListKeys operation. It has a well-defined structure with clear getters and setters, and it does not have a large number of methods or attributes. It also does not manage multiple, unrelated functionalities within a single class."
+  },
+  {
+    "id": 1071,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This interface has a single responsibility and only defines methods and properties related to 'FooFooType'. It does not accumulate multiple unrelated functionalities, and its cohesion is high."
+  },
+  {
+    "id": 1073,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The provided code is a large class with multiple methods, which can be a sign of a 'blob' smell. This smell is minor because the class is not extremely large and the methods are not extremely complex, but it can still be improved by breaking it down into smaller, more focused classes or methods."
+  },
+  {
+    "id": 1075,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility, extending the OperatingSystem.Unix class and providing specific implementations for Solaris. It has a limited number of methods and attributes, and its functionality is well-contained, adhering to the Single Responsibility Principle."
+  },
+  {
+    "id": 1077,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "This class has multiple responsibilities, such as handling XML parsing, extracting metadata, and managing file paths. While it's not extremely large, it has several methods and attributes that could be extracted into separate classes to improve cohesion and adherence to the Single Responsibility Principle."
+  },
+  {
+    "id": 1078,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single, well-defined responsibility (executing a function to sum values) and does not accumulate multiple, unrelated functionalities. It has a moderate number of methods and attributes, but they are all related to the single responsibility of the class."
+  },
+  {
+    "id": 1080,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The provided code is a large class with multiple responsibilities, including video transcoding, file I/O, and synchronization. This is indicative of a code smell known as a 'blob', where a single class is attempting to do too much and is likely to be difficult to maintain and extend."
+  },
+  {
+    "id": 1085,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The interface ParSeqRestliClient has multiple methods, but they are all related to making REST requests and returning responses. Each method has a clear and specific responsibility, and there is no accumulation of unrelated functionalities. The interface adheres to the Single Responsibility Principle (SRP) and does not exhibit the characteristics of a God Class (Blob)."
+  },
+  {
+    "id": 1093,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class SequenceInputStream has multiple responsibilities, such as managing multiple input streams, reading data from them, and handling exceptions. However, each of these responsibilities is well-defined and focused on a specific task, and the class does not accumulate too many unrelated functionalities. The class also does not have a large number of methods and attributes, and its cohesion is relatively high."
+  },
+  {
+    "id": 1095,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class has a large number of methods and attributes, but they are all related to synchronization and locking, which suggests a single responsibility. However, the sheer number of methods and attributes does make it a candidate for refactoring into smaller, more focused classes."
+  },
+  {
+    "id": 1096,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The code snippet provided is a large method with multiple responsibilities, including file parsing, subtitle extraction, and container format modification. This is an example of a 'blob' smell, where a single method is performing too many unrelated tasks, making it difficult to understand, maintain, and test. Refactoring this method into smaller, more focused methods would improve the code's overall structure and maintainability."
+  },
+  {
+    "id": 1102,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class only contains a small number of static constants and does not appear to be managing multiple, unrelated functionalities. It is focused on a single responsibility, which is to define XPath constants, and does not exhibit the characteristics of a God Class or Blob."
+  },
+  {
+    "id": 1107,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class CertificatePolicyMap has a single responsibility of managing CertificatePolicyId's and does not accumulate too many responsibilities, making it not a 'God Class' or 'Blob'. It has a clear and well-defined purpose and does not violate the Single Responsibility Principle."
+  },
+  {
+    "id": 1108,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class AbstractAzureMojo has a large number of properties and methods, but they are all related to Azure authentication and telemetry configuration. The class is well-structured and follows the Single Responsibility Principle (SRP), with each method having a clear and focused responsibility. The presence of multiple unrelated functionalities is not evident, and the class does not seem to be accumulating too many responsibilities."
+  },
+  {
+    "id": 1116,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The AttList class has a large number of methods and attributes, but they are all related to attribute management, suggesting a focused responsibility. However, the class does handle multiple functionalities, such as getting attribute values and types, and managing namespace processing, which could be considered a minor instance of the 'blob' smell."
+  },
+  {
+    "id": 1126,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility, handling a specific click event, and does not accumulate multiple unrelated functionalities. It has a limited number of methods and attributes, making it maintainable and easy to extend."
+  },
+  {
+    "id": 1134,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility, managing a template, and does not have a large number of methods or attributes, making it unlikely to be a God Class."
+  },
+  {
+    "id": 1136,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class LaunchCommandHandler has multiple responsibilities, such as calculating command line length, modifying launch arguments, and constructing launch commands. While it's not excessively large, it still accumulates too many responsibilities, making it a minor instance of the 'Blob' code smell."
+  },
+  {
+    "id": 1138,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The Activator class has multiple responsibilities, including managing plugin lifecycle, initializing HDInsight loader, and handling feature enablement. While it's not excessively large, it does manage multiple unrelated functionalities, making it a borderline case for the 'Blob' smell. However, it does not significantly impact readability or maintainability, so I've assigned a severity of 'minor'."
+  },
+  {
+    "id": 1141,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "This class has multiple responsibilities, including setting tooltips and borders, which could be extracted into separate classes to improve cohesion. However, it is not a severe case of a God Class, as it is still relatively focused on a single responsibility of input validation."
+  },
+  {
+    "id": 1148,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class NodeAction has a single responsibility of managing node actions, and its methods and attributes are cohesive and focused on this responsibility. It does not accumulate multiple unrelated functionalities, and its dependency on other classes is not high. Therefore, it does not exhibit the characteristics of a God Class (Blob)."
+  },
+  {
+    "id": 1153,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class Builder has a single responsibility, which is to build instances of GetInstanceRequest. It has a limited number of methods (3) and attributes (1), and its methods are focused on a specific task, making it unlikely to be a God Class (Blob)."
+  },
+  {
+    "id": 1159,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility, which is to build an object, and it has a limited number of methods and attributes. It does not manage multiple, unrelated functionalities and does not have high dependency on other classes."
+  },
+  {
+    "id": 1161,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility, which is to represent a segment with a specific type, and it has a limited number of methods and attributes. It does not accumulate multiple, unrelated functionalities, and its cohesion is high. Therefore, the 'blob' smell is absent in this code."
+  },
+  {
+    "id": 1163,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The Builder class has a single responsibility, which is to construct an EgressSecurityRule object. It has a limited number of methods and attributes, and they are all related to the construction of the object. There is no indication of poor cohesion or high dependency on other classes."
+  },
+  {
+    "id": 1166,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class ListWorkRequestErrorsConverter has a single responsibility, which is to handle the conversion of requests and responses for the ListWorkRequestErrors operation. It does not accumulate too many responsibilities, and its methods and attributes are focused on a specific task. Therefore, it does not exhibit the characteristics of a God Class (Blob)."
+  },
+  {
+    "id": 1168,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility (duplicating progress tracking input streams) and does not appear to be managing multiple, unrelated functionalities. It has a limited number of methods and attributes, and does not seem to be violating the Single Responsibility Principle (SRP)."
+  },
+  {
+    "id": 1174,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class AnnouncementSummary has a single responsibility of encapsulating announcement data, and its methods and attributes are well-organized and focused on this responsibility. It does not accumulate too many unrelated functionalities, and its dependencies are manageable. Therefore, it does not exhibit the characteristics of a God Class (Blob)."
+  },
+  {
+    "id": 1184,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility, which is building request parameters, and it has a limited number of methods and attributes. It does not manage multiple, unrelated functionalities and does not violate the Single Responsibility Principle."
+  },
+  {
+    "id": 1187,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The code has a large number of similar methods in the `update*` family, which could be an indication of a larger design issue, such as a God object or a lack of modularity. This could make the code harder to maintain and understand."
+  },
+  {
+    "id": 1196,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The provided code snippet does not exhibit the characteristics of a God Class (Blob) as it has a single, well-defined responsibility and does not accumulate multiple, unrelated functionalities. It appears to be a simple interface with a few methods and attributes, adhering to the Single Responsibility Principle (SRP)."
+  },
+  {
+    "id": 1201,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class MonoWhen has multiple responsibilities, including managing multiple sources, handling errors, and coordinating subscriptions. However, it does not have an excessively large number of methods or attributes, and its responsibilities are somewhat related. Therefore, the presence of the 'blob' smell is considered minor."
+  },
+  {
+    "id": 1204,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The provided interface Connection has a large number of methods, but they are all related to the connection's properties and behavior. Each method has a clear and specific responsibility, and there is no indication of a 'blob' of unrelated functionalities. The interface adheres to the Single Responsibility Principle (SRP) and does not accumulate too many responsibilities."
+  },
+  {
+    "id": 1214,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class DefaultSdk has a single responsibility of managing Android SDK dependencies and has a moderate number of methods and attributes. However, it does not accumulate too many unrelated functionalities and has a clear cohesion. It adheres to the Single Responsibility Principle (SRP) and does not exhibit the characteristics of a God Class (Blob)."
+  },
+  {
+    "id": 1221,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility, which is managing hosts storage directory string. It has a limited number of methods and attributes, and its functionality is well-defined and focused on a single task."
+  },
+  {
+    "id": 1228,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility, which is to hold dynamic package entry information, and it does not have a large number of methods or attributes. It also does not manage multiple, unrelated functionalities, making it a clean and focused class."
+  },
+  {
+    "id": 1231,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This interface has only one method and no attributes, indicating a clear separation of concerns and adherence to the Single Responsibility Principle (SRP). It does not accumulate multiple responsibilities or manage unrelated functionalities, thus not exhibiting characteristics of a 'God Class' or 'Blob' code smell."
+  },
+  {
+    "id": 1241,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class TestConfiguration has multiple responsibilities, including managing test suites, adding test cases, and activating tests. While it's not extremely large, it has a noticeable number of methods and attributes, and its responsibilities are somewhat related but not extremely cohesive. However, it's not a severe case of a God Class, so I'm assigning a minor severity level."
+  },
+  {
+    "id": 1242,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class `SignupController` has a single responsibility of handling signup functionality, and it does not accumulate too many responsibilities. It delegates to a `SignupHelper` class for actual signup logic, which is a good separation of concerns."
+  },
+  {
+    "id": 1248,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class has multiple responsibilities, including managing UI components, handling session state changes, and refreshing data. While it does not have an extremely large number of methods or attributes, it still violates the Single Responsibility Principle (SRP) and has some dependencies on other classes. However, the responsibilities are somewhat related to each other, and the class is not extremely complex, so the severity is minor."
+  },
+  {
+    "id": 1253,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class has multiple responsibilities, including serialization, metadata management, and utility functions, but it does not have an excessively large number of methods or attributes. However, it does manage multiple, unrelated functionalities within a single class, which is a characteristic of a God Class or Blob. While it does not severely degrade code quality, it does affect maintainability and extensibility."
+  },
+  {
+    "id": 1255,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The GrailsProcessStackTracer class has multiple responsibilities, including process management, output fetching, and stack trace collection. While it's not excessively large, it does manage multiple, unrelated functionalities, which could make it difficult to maintain and extend. However, the responsibilities are somewhat related, and the class is not overly complex, so the smell is considered minor."
+  },
+  {
+    "id": 1259,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility, which is to represent a flag with different values. It has a limited number of methods and attributes, and it does not manage multiple, unrelated functionalities. The class is well-structured and follows the Single Responsibility Principle (SRP)."
+  },
+  {
+    "id": 1262,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This interface contains constants and does not accumulate too many responsibilities. It has a single, well-defined responsibility of providing constants for the servlet."
+  },
+  {
+    "id": 1268,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class QueryItemTreeControl has a large number of methods and attributes, but it appears to be focused on a single responsibility of managing a tree view of query items. While it does have some unrelated functionalities, such as adding a context menu and handling double-click events, these can be considered as supporting functions for its main responsibility. Therefore, the severity of the 'blob' smell is minor."
+  },
+  {
+    "id": 1272,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class WrongWeakHashMap has multiple responsibilities, such as scanning WeakHashMap instances, managing field accesses, and formatting output. While it's not excessively large, it does manage multiple unrelated functionalities, which could be extracted into separate classes to improve cohesion and adherence to the Single Responsibility Principle (SRP)."
+  },
+  {
+    "id": 1275,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class has a large number of methods (11) and attributes (2), which indicates a potential accumulation of responsibilities. However, the methods are mostly related to SOAP service operations, and the class does not seem to have a complex or convoluted logic. Therefore, the severity level is minor, as it does not significantly impact readability or maintainability."
+  },
+  {
+    "id": 1278,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class Undertow has multiple responsibilities, including configuration settings for Undertow, but it does not have an excessively large number of methods or attributes. The presence of a nested class Accesslog for access log properties adds to the complexity, but it is still manageable. Overall, the class is not overly bloated, but it does have some accumulated responsibilities."
+  },
+  {
+    "id": 1292,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility, which is to represent the 'updates' element in a web service. It has a limited number of methods and attributes, and its cohesion is high, making it unlikely to be a 'God Class' or 'Blob'."
+  },
+  {
+    "id": 1294,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This interface has a single responsibility, which is to determine if a full restart is required. It has only one method, isRestartRequired, and no attributes. It does not accumulate too many responsibilities or manage multiple, unrelated functionalities."
+  },
+  {
+    "id": 1302,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This interface has only one method and does not accumulate multiple responsibilities, making it a clean and focused interface."
+  },
+  {
+    "id": 1305,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility, which is to implement the TraceableResponse interface and delegate methods to the HttpServletResponse. It does not accumulate too many responsibilities, manage unrelated functionalities, or have poor cohesion, so it does not exhibit the characteristics of a 'God Class (Blob)' code smell."
+  },
+  {
+    "id": 1306,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class, CountPageable, appears to be a simple adapter class that delegates methods from a Pageable delegate. It has a limited number of methods and does not seem to accumulate multiple, unrelated functionalities, thus it does not exhibit the characteristics of a God Class (Blob)."
+  },
+  {
+    "id": 1311,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility, which is to discover and manage Servlet endpoints. It has a limited number of methods and attributes, and its cohesion is high. It does not manage multiple, unrelated functionalities, and its dependency on other classes is low."
+  },
+  {
+    "id": 1314,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The code has a high number of repetitive methods (e.g., requestNameNewField, requestNameOldField, etc.) that perform similar operations, making it harder to maintain and understand. This is an example of a 'Blob' code smell."
+  },
+  {
+    "id": 1316,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This interface has a single method, indicating a clear separation of concerns and adherence to the Single Responsibility Principle (SRP). It does not accumulate multiple responsibilities or manage unrelated functionalities, making it unlikely to be a 'God Class' or 'Blob'."
+  },
+  {
+    "id": 1321,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility, which is to define the structure of CompiledForeachRangeArgs. It has a small number of abstract methods, each with a clear and well-defined purpose, and does not appear to manage multiple, unrelated functionalities."
+  },
+  {
+    "id": 1324,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This interface has a single method and does not accumulate multiple responsibilities, making it unlikely to be a God Class (Blob)."
+  },
+  {
+    "id": 1330,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility and does not accumulate too many responsibilities. It has a clear and well-defined structure, and its methods are focused on a specific task. The class also adheres to the Single Responsibility Principle (SRP), making it unlikely to be a 'God Class' or 'Blob'."
+  },
+  {
+    "id": 1339,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single method with a single responsibility, translating instructions, and does not accumulate multiple unrelated functionalities or attributes, thus it does not exhibit the characteristics of a God Class (Blob)."
+  },
+  {
+    "id": 1349,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility, which is loading classes from bytecode. It has a limited number of methods and attributes, and its functionality is well-contained within its own scope."
+  },
+  {
+    "id": 1354,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a small number of methods and attributes, and its responsibilities appear to be related to judgment functionality. It does not seem to manage multiple, unrelated functionalities, and its cohesion is relatively high."
+  },
+  {
+    "id": 1356,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility, which is to represent an event in the context of file system traversal. It has a limited number of attributes and methods, and its structure is clear and well-defined, indicating a lack of the 'blob' smell."
+  },
+  {
+    "id": 1359,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class ArrowType has multiple responsibilities, including parameter and return type management, subtyping, and equality checks. While it is not excessively large, it does manage multiple, unrelated functionalities, which is a characteristic of a God Class (Blob). However, the responsibilities are somewhat related to type management, and the class does not seem to be excessively complex or difficult to maintain, so the severity is minor."
+  },
+  {
+    "id": 1360,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class SplitRulesetNodes has a single responsibility of handling CSS ruleset nodes, and it does not accumulate too many responsibilities or manage multiple, unrelated functionalities. It has a clear and well-defined purpose, and its methods and attributes are focused on this specific task, adhering to the Single Responsibility Principle (SRP)."
+  },
+  {
+    "id": 1370,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility, which is to create and execute an action for deleting bookmarks. It has a limited number of methods and attributes, and its cohesion is high. It does not seem to manage multiple, unrelated functionalities, so it does not exhibit the characteristics of a 'God Class' or 'Blob'."
+  },
+  {
+    "id": 1372,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class, CondSetOp, has a single responsibility of setting a condition flag and has a limited number of methods and attributes, indicating a low likelihood of being a God Class (Blob)."
+  },
+  {
+    "id": 1378,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class AMD64DecrementingSafepointCheckOp has a single responsibility, which is to emit code for a specific operation. It has a limited number of methods and attributes, and its functionality is well-defined and focused on a single task, making it unlikely to be considered a 'God Class' or 'Blob'."
+  },
+  {
+    "id": 1383,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility (representing a customer entity) and does not accumulate multiple unrelated functionalities. It has a limited number of methods and attributes, and its cohesion is high."
+  },
+  {
+    "id": 1395,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class, AMD64IndirectCallOp, appears to have a single, well-defined responsibility of handling indirect calls on the AMD64 architecture. It has a limited number of methods and attributes, and its responsibilities are cohesive and focused on a specific functionality. Therefore, it does not exhibit the characteristics of a God Class (Blob) code smell."
+  },
+  {
+    "id": 1399,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility, which is to provide substitute implementations for the methods of the Object class. It does not accumulate multiple unrelated functionalities and has a clear and well-defined purpose, adhering to the Single Responsibility Principle (SRP)."
+  },
+  {
+    "id": 1403,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class QueryParameterSetterFactory has a single, well-defined responsibility of creating QueryParameterSetter instances, and its methods are logically grouped and focused on a specific task. It does not accumulate too many responsibilities or manage multiple, unrelated functionalities, making it unlikely to be a 'God Class' or 'Blob'."
+  },
+  {
+    "id": 1407,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class HttpExchangeTracer has multiple responsibilities, including tracing HTTP exchanges, filtering requests and responses, and managing includes. While it is not excessively large, it does have a significant number of methods and attributes, and its responsibilities are somewhat related but not strongly cohesive. However, the class does not seem to be severely impacted by the presence of this smell, and its maintainability is still relatively good."
+  },
+  {
+    "id": 1409,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has only one method and no attributes, indicating a single responsibility and no accumulation of unrelated functionalities."
+  },
+  {
+    "id": 1413,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has only one method (constructor) and no attributes, indicating a single responsibility and no accumulation of unrelated functionalities."
+  },
+  {
+    "id": 1417,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has no methods or attributes, and it does not manage multiple functionalities. It appears to be a simple service class with a single responsibility, which is to inject a repository."
+  },
+  {
+    "id": 1428,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility (Customer261Service) and a very small number of methods and attributes, indicating a low likelihood of accumulating too many responsibilities."
+  },
+  {
+    "id": 1435,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has only one method and no attributes, indicating a single responsibility and no accumulation of unrelated functionalities."
+  },
+  {
+    "id": 1439,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility, which is to represent a Customer entity, and it has a limited number of methods and attributes. It does not manage multiple, unrelated functionalities and does not violate the Single Responsibility Principle (SRP)."
+  },
+  {
+    "id": 1441,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility of encapsulating a Solr parameter and its associated values, with a limited number of methods and attributes. It does not manage multiple, unrelated functionalities, and its cohesion is high. Therefore, it adheres to the Single Responsibility Principle (SRP) and does not exhibit the characteristics of a 'God Class' or 'Blob'."
+  },
+  {
+    "id": 1443,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class ConstShuffleBytesOp has a single responsibility, which is to represent a specific instruction in the AMD64 LIR. It has a limited number of methods and attributes, and its functionality is well-defined and focused on a single task. It does not accumulate too many responsibilities, manage multiple unrelated functionalities, or have high dependency on other classes, making it compliant with the Single Responsibility Principle (SRP)."
+  },
+  {
+    "id": 1460,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class PushCommand has a single responsibility of handling push commands, and it does not accumulate too many responsibilities or manage multiple, unrelated functionalities. It has a clear and well-defined structure, and its methods are focused on a single task, making it compliant with the Single Responsibility Principle (SRP)."
+  },
+  {
+    "id": 1462,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class has a single responsibility of representing a base object with a type identifier, and it has a limited number of methods and attributes. It does not manage multiple, unrelated functionalities and does not violate the Single Responsibility Principle."
+  },
+  {
+    "id": 1463,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The provided code snippet is a Java class with a large number of methods and fields, which may indicate a code smell known as a 'blob'. This is because the class appears to be handling a wide range of tasks, including exception handling, bytecode execution, and memory management, which can make it difficult to understand and maintain. A more modular design, where each class or method has a single responsibility, would be more desirable."
+  },
+  {
+    "id": 1469,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a small number of methods and attributes, and they all seem to be related to a specific responsibility, indicating a lack of the 'blob' code smell."
+  },
+  {
+    "id": 1474,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This class has a single responsibility of representing a Collection JSON object and its associated data. It has a moderate number of methods and attributes, but they are all related to the same functionality. The class does not accumulate too many responsibilities, and its cohesion is good, making it unlikely to be a 'God Class' or 'Blob'."
+  },
+  {
+    "id": 1475,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class RewriteResult has a single responsibility, which is to represent the result of rewriting. It has a limited number of methods and attributes, and its complexity is manageable. The presence of a large number of bitwise operations and a single method summarize() does not significantly impact readability or maintainability."
+  },
+  {
+    "id": 1484,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "This interface has a single responsibility, which is to locate a SessionFactory, and does not have a large number of methods or attributes. It does not manage multiple, unrelated functionalities and has a clear and well-defined purpose."
+  },
+  {
+    "id": 1488,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class has multiple responsibilities, including managing a retry template, handling recovery callbacks, and generating retry states. However, it does not have an excessively large number of methods or attributes, and its responsibilities are somewhat related to each other. Therefore, the smell is considered minor."
+  }
+]

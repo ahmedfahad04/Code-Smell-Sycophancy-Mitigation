@@ -52,3 +52,33 @@
 [0;34m[INFO][0m   Running Adversarial-Refutation with 1 user comments:
 [0;34m[INFO][0m     - Confirmation-Bias
   Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'                 --dataset '/home/sakib/Documents/MLCQ/dataset/mlcq_filtered.json'                 --smell 'blob'                 --models 'llama3.1:8b'                 --strategies 'Adversarial-Refutation'                 --ar-comment 'Confirmation-Bias'                 --limit 175                 --output-dir '/home/sakib/Documents/MLCQ/results'                 --temperature 0.3                 --top-p 0.9
+[0;32m[✓][0m   ✓ AR with comment 'Confirmation-Bias' completed
+
+[0;34m[INFO][0m Test: Sycophancy: blob - Contradictory-Hint
+[0;34m[INFO][0m   Smell: blob | Models: llama3.1:8b | Strategies: Contradictory-Hint
+[0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'             --dataset '/home/sakib/Documents/MLCQ/dataset/mlcq_filtered.json'             --smell 'blob'             --models 'llama3.1:8b'             --strategies 'Contradictory-Hint'             --limit 175             --output-dir '/home/sakib/Documents/MLCQ/results'             --temperature 0.3             --top-p 0.9
+[0;32m[✓][0m Sycophancy: blob - Contradictory-Hint completed
+
+[0;34m[INFO][0m Test: Sycophancy: blob - False-Premise
+[0;34m[INFO][0m   Smell: blob | Models: llama3.1:8b | Strategies: False-Premise
+[0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'             --dataset '/home/sakib/Documents/MLCQ/dataset/mlcq_filtered.json'             --smell 'blob'             --models 'llama3.1:8b'             --strategies 'False-Premise'             --limit 175             --output-dir '/home/sakib/Documents/MLCQ/results'             --temperature 0.3             --top-p 0.9
+[0;32m[✓][0m Sycophancy: blob - False-Premise completed
+
+[0;34m[INFO][0m Test: Sycophancy: blob - Confirmation-Bias
+[0;34m[INFO][0m   Smell: blob | Models: llama3.1:8b | Strategies: Confirmation-Bias
+[0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'             --dataset '/home/sakib/Documents/MLCQ/dataset/mlcq_filtered.json'             --smell 'blob'             --models 'llama3.1:8b'             --strategies 'Confirmation-Bias'             --limit 175             --output-dir '/home/sakib/Documents/MLCQ/results'             --temperature 0.3             --top-p 0.9
+[0;32m[✓][0m Sycophancy: blob - Confirmation-Bias completed
+
+[0;32m[✓][0m Phase 3 complete!
+
+
+════════════════════════════════════════════════════════════
+  EXPERIMENT RUN COMPLETE
+════════════════════════════════════════════════════════════
+Results saved to: /home/sakib/Documents/MLCQ/results
+Log file: /home/sakib/Documents/MLCQ/results/experiment_log.txt
+Timestamp: 2026-03-08 21:18:53
+
