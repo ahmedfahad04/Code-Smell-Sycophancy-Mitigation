@@ -1,0 +1,1402 @@
+[
+  {
+    "id": 532,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method 'writeLength' is concise and performs a single task of calculating the length of a data structure. It does not contain nested structures or perform multiple unrelated tasks, thus not qualifying as a long method."
+  },
+  {
+    "id": 552,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method getPropertyMapping is relatively concise and focuses on a single responsibility, which is to retrieve a property mapping. It has a nested structure but is not excessively long or complex. Therefore, it does not significantly impact readability or maintainability."
+  },
+  {
+    "id": 565,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method `DynamicExpression` contains 13 lines of code and handles the parsing of a dynamic expression, which is a single responsibility. While it could be argued that it could be split into smaller methods for better readability, the current implementation is not excessively long or complex enough to be classified as a major code smell."
+  },
+  {
+    "id": 567,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method `adjustRelativePath` is relatively short and focuses on a single responsibility, which is adjusting a relative path to an absolute path. It does not exhibit signs of excessive complexity or multiple responsibilities that would classify it as a major or critical long method smell."
+  },
+  {
+    "id": 571,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise and only contains a few lines of code, performing a single responsibility (comparing two objects for equality). It does not exhibit any characteristics of a long method."
+  },
+  {
+    "id": 572,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise, performing a single task of calling a method on the manager if it is an instance of ClusterManagerBase. It does not meet the criteria for being a long method."
+  },
+  {
+    "id": 574,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method setPerUserTestWhileIdle is relatively short and focuses on a single responsibility, which is to set the per-user test while idle based on the provided map. It does not exhibit the characteristics of a long method."
+  },
+  {
+    "id": 576,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise, performing a single responsibility of extracting text between specific tags. It does not meet the criteria for a 'Long Method' as it is short, readable, and focused on a single task."
+  },
+  {
+    "id": 580,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method 'init' is very short, containing only two lines of code. It initializes a member variable and calls a superclass method. This method does not perform multiple tasks or have high complexity, and it is easy to understand and maintain."
+  },
+  {
+    "id": 608,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method 'hasAttribute' is extremely short, containing only two lines of code. It does not perform multiple tasks or have nested structures, making it a simple and concise method. Therefore, it does not exhibit the 'Long Method' code smell."
+  },
+  {
+    "id": 612,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method `validateToken` contains 13 lines of code and performs several tasks: parsing the token, validating the signature, checking expiration, and comparing user identities. While it is not excessively long, it could be refactored into smaller methods for better readability and maintainability."
+  },
+  {
+    "id": 616,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise, performing only two tasks: setting a system property if isExternalProperty is true, and setting an internal property. It does not exhibit characteristics of a long method."
+  },
+  {
+    "id": 623,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is relatively long, containing over 100 lines of code. However, it primarily focuses on processing log entries and categorizing them into different types, which is a single responsibility. The complexity is manageable, and the method is not excessively nested or difficult to understand."
+  },
+  {
+    "id": 636,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is very short and only contains a single line of code, which clearly indicates that it does not have a long method smell."
+  },
+  {
+    "id": 640,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise, performing a single responsibility of replacing substrings in a string based on a pattern. It does not contain nested structures or perform multiple tasks, making it easy to understand and maintain."
+  },
+  {
+    "id": 666,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise and performs a single responsibility by comparing two StatusMessage objects. It does not contain nested structures or perform multiple tasks, making it easy to understand and maintain."
+  },
+  {
+    "id": 678,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is relatively short with 5 lines of code. It focuses on a single responsibility: finding the index of the previous sibling with a specific class name. While it could be considered minor, it does not significantly impact readability or maintainability."
+  },
+  {
+    "id": 682,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise and only contains a single responsibility, which is generating a string representation of an object. It does not meet the criteria for a 'Long Method' as defined."
+  },
+  {
+    "id": 692,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method 'equals' is concise, performing a single responsibility and having a low complexity. It does not meet the criteria for a 'Long Method' code smell."
+  },
+  {
+    "id": 696,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method `replaceWith` contains 6 lines of code and performs multiple responsibilities such as checking conditions, inserting a new element, and removing the current element. While it is not excessively long, it does handle multiple tasks, which could be refactored into smaller methods for better readability and maintainability."
+  },
+  {
+    "id": 710,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is very short, consisting of only a few lines of code. It does not perform multiple tasks or have high complexity, making it easy to understand and maintain."
+  },
+  {
+    "id": 712,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise, performing a single task of assigning a label to an MdCategory. It does not exhibit characteristics of being excessively long, complex, or having multiple responsibilities."
+  },
+  {
+    "id": 722,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise and performs a single responsibility of handling the retrieval of credentials and returning the appropriate result. It does not exhibit any characteristics of a long method."
+  },
+  {
+    "id": 739,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is very short with only one line of code. It does not perform multiple tasks or have high complexity. It is concise and easy to understand."
+  },
+  {
+    "id": 743,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method `resolveGenericRef` is relatively concise and focuses on a single responsibility, which is to resolve generic references. While it does have some nested structures, it does not significantly impact readability or maintainability."
+  },
+  {
+    "id": 754,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is relatively short and focused on a single responsibility, which is replacing placeholders in a string with arguments. While it could be considered minor due to its simplicity, it could be refactored for better readability by breaking it into smaller methods."
+  },
+  {
+    "id": 756,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method 'updated' is relatively short with only three lines of code. It logs a message, calls another method, and logs another message. While it could be argued that the method could be split into two smaller methods for better readability, the current implementation is not excessively long or complex enough to be classified as a major code smell."
+  },
+  {
+    "id": 760,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is relatively short and focuses on handling a single type of event. It checks for nullity, logs information, and conditionally calls another method based on event details. While it could be refactored to separate concerns further, it does not currently exhibit the severe characteristics of a long method."
+  },
+  {
+    "id": 764,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is very short, containing only a single line of code. It calculates the hash code for an object, which is a single responsibility. There are no nested structures or multiple tasks, making it easy to understand and maintain."
+  },
+  {
+    "id": 768,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise, performing a single task (calculating the hash code) and has a manageable number of lines. It does not exhibit characteristics of a long method."
+  },
+  {
+    "id": 772,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is relatively short and performs a clear, single responsibility. It checks if the value is null and handles it accordingly, which is a straightforward task. The method does not exhibit excessive complexity or multiple responsibilities, making it a minor code smell."
+  },
+  {
+    "id": 782,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise, performing a single responsibility (checking the length of a device list) and has only two assertions. It does not meet the criteria for a long method."
+  },
+  {
+    "id": 804,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is relatively long but performs a specific task of merging fields from a CodedInputStream. It handles multiple cases based on the tag, which is a common pattern for parsing protocols. While it could be refactored to reduce its length, it does not significantly impact readability or maintainability."
+  },
+  {
+    "id": 813,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is relatively short and performs a clear, single responsibility of extracting the page encoding from a directive. It has a moderate level of complexity due to the conditional checks but is not excessively long or nested."
+  },
+  {
+    "id": 818,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is relatively concise and performs a single task of retrieving the logger level. It has a moderate level of complexity due to conditional logic and platform-specific code, but it does not significantly impact readability or maintainability."
+  },
+  {
+    "id": 826,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is very short and only contains a few lines of code. It initializes a buffer and sets a position, which are two distinct responsibilities. It does not exhibit any of the characteristics of a long method."
+  },
+  {
+    "id": 831,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is very short and straightforward, performing a single task without any nested structures or multiple responsibilities."
+  },
+  {
+    "id": 853,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method `getName` is relatively short with only 11 lines of code. It performs a single task of merging or returning names from two objects. While it could be refactored to reduce nesting, the current implementation is not excessively long or complex enough to be classified as a major code smell."
+  },
+  {
+    "id": 854,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is relatively long but does not exhibit extreme complexity or multiple responsibilities that would justify a 'major' severity. It performs a single task of determining and launching an application, which is its primary responsibility."
+  },
+  {
+    "id": 875,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method `initializeEvent` is concise and performs a single responsibility, creating a `BundleEvent` based on the bundle's state. It does not meet the criteria for a 'Long Method' as it is short, readable, and focused on a single task."
+  },
+  {
+    "id": 876,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is relatively short with only 4 lines of code. It performs a single task of adding a variable to the classpath and logs the action. While it could be argued that the method could be split into smaller ones for better readability, the current implementation is concise and does not significantly impact readability or maintainability."
+  },
+  {
+    "id": 878,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise and performs a single responsibility by delegating proxy preparation to another method, thus adhering to the Single Responsibility Principle."
+  },
+  {
+    "id": 883,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise, performing a single responsibility of retrieving the sensor type based on the sensor index. It does not have multiple tasks, nested structures, or high complexity."
+  },
+  {
+    "id": 920,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method 'mT__66' is very short, containing only a single line of code and a simple match operation. It does not perform multiple tasks, have high complexity, or significantly impact readability or maintainability."
+  },
+  {
+    "id": 932,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method `specialStateTransition` contains repetitive code blocks that perform similar tasks, which could be refactored into smaller methods. However, the method is not excessively long and does not have a high complexity, making it a minor code smell."
+  },
+  {
+    "id": 939,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is relatively short with only 10 lines of code. It performs a single responsibility of generating a cache key, which is concise and easy to understand. While it could be slightly refactored to separate the validation logic, it does not significantly impact readability or maintainability."
+  },
+  {
+    "id": 954,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise, performing a single responsibility of converting a map to a JSON string. It does not exceed the recommended length and is easy to understand."
+  },
+  {
+    "id": 978,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The provided code snippet is a constructor, which is typically concise and focused on initialization. It does not contain multiple tasks or nested structures, and its purpose is clear and straightforward. Therefore, it does not exhibit the characteristics of a 'Long Method' code smell."
+  },
+  {
+    "id": 997,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method `shouldParseContainerAtom` is very short and only contains a few lines of code. It checks if an atom matches any of a small set of predefined values and returns a boolean result. This method does not exhibit any characteristics of a long method, such as being excessively long, performing multiple tasks, or having high complexity. Therefore, it does not contain the 'Long Method' code smell."
+  },
+  {
+    "id": 1016,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method 'setCommentCount' is very short, containing only 5 lines of code. It performs a single responsibility: setting or removing a comment count extension based on the provided value. This method does not exhibit any characteristics of a long method."
+  },
+  {
+    "id": 1018,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method 'joinLongs' is concise, performs a single responsibility (joining longs with a delimiter), and is easy to understand. It does not meet the criteria for a long method."
+  },
+  {
+    "id": 1020,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise and performs a single responsibility by reading a null-terminated string. It is not excessively long or complex."
+  },
+  {
+    "id": 1022,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method 'verifyAllParameters' is concise, performing a single responsibility by iterating over a map and calling 'verifyParameter' for each key. It does not contain nested structures or perform multiple tasks, thus it does not exhibit the characteristics of a long method."
+  },
+  {
+    "id": 1042,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is not excessively long, but it performs multiple tasks related to computing and displaying a PIN. It could be refactored into smaller methods for better readability and maintainability."
+  },
+  {
+    "id": 1046,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is relatively short and performs a single task, rewriting text and updating state. It does not exhibit excessive complexity or multiple responsibilities that would classify it as a major or critical long method."
+  },
+  {
+    "id": 1053,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is very short with only one line of code. It does not perform multiple tasks or have high complexity. It is concise and easy to understand."
+  },
+  {
+    "id": 1055,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is relatively long but performs a single responsibility of providing a request supplier for a read operation. It is not excessively complex or hard to understand."
+  },
+  {
+    "id": 1058,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method 'readJson' is concise, performing a single responsibility of reading JSON from an HTTP request and converting it to a map. It does not contain nested structures or perform multiple tasks, thus not exhibiting the characteristics of a long method."
+  },
+  {
+    "id": 1063,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is relatively concise and performs a clear set of tasks related to initializing an OperationStats object. It is not excessively long and focuses on a single responsibility, making it easy to understand and maintain."
+  },
+  {
+    "id": 1066,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method initializes multiple fields and performs several tasks, but it is relatively concise and does not significantly impact readability or maintainability."
+  },
+  {
+    "id": 1089,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is very short and only contains a single conditional check and two assignments. It does not exhibit characteristics of a long method."
+  },
+  {
+    "id": 1090,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise and performs a single responsibility by delegating based on a condition. It does not meet the criteria for being a long method."
+  },
+  {
+    "id": 1112,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method 'runFunctions' is concise, performing a single responsibility of running a command with return code checks. It does not meet the criteria for a 'Long Method' as it is short, focused, and easy to understand."
+  },
+  {
+    "id": 1114,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is very short (one line) and does not perform multiple tasks or have high complexity. It simply throws an exception, which is a single responsibility."
+  },
+  {
+    "id": 1121,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is very short, containing only a few lines of code and performing a single responsibility. It does not exhibit any characteristics of a long method code smell."
+  },
+  {
+    "id": 1122,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method `updateState` contains 20 lines of code and performs multiple tasks related to updating certificate state. While it is not excessively long, it could be refactored into smaller methods for better readability and maintainability."
+  },
+  {
+    "id": 1131,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is very short with only two lines of code. It does not perform multiple tasks or have high complexity. It is straightforward and easy to understand."
+  },
+  {
+    "id": 1133,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is very short (2 lines) and performs a single responsibility by adding a request parameter. It does not exhibit any characteristics of a long method."
+  },
+  {
+    "id": 1142,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method setRegion is relatively short and performs a clear, single responsibility of setting the region. It is not excessively long and does not contain nested structures that would significantly increase complexity."
+  },
+  {
+    "id": 1145,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method 'tcpOptions' is very short, contains only one line of code, and focuses on a single responsibility. It does not exhibit characteristics of a long method."
+  },
+  {
+    "id": 1157,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method `doPaginateWithRecordPaginator` is concise and performs a single task of paginating and printing users. It does not meet the criteria for being a 'Long Method' as it is short, focused, and easy to understand."
+  },
+  {
+    "id": 1164,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method 'definedTags' is very short, containing only 4 lines of code. It performs a single responsibility by setting the 'definedTags' property and marking it as explicitly set. This method does not exhibit any characteristics of a long method, such as excessive length, multiple responsibilities, or high complexity."
+  },
+  {
+    "id": 1172,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is very short, only containing 4 lines of code. It sets a value and adds it to a set, then returns the builder. This method does not perform multiple tasks or have high complexity. It is concise and easy to understand."
+  },
+  {
+    "id": 1179,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method 'cfBackupHandle' is very short, contains only a few lines of code, and focuses on a single responsibility. It does not exhibit any characteristics of a long method code smell."
+  },
+  {
+    "id": 1181,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method 'build' is very short, containing only three lines of code. It does not perform multiple tasks or have high complexity. It is concise and easy to understand."
+  },
+  {
+    "id": 1183,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method 'severe' is concise and performs a single responsibility by logging a severe message. It does not exceed the recommended length or complexity for a method."
+  },
+  {
+    "id": 1188,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is relatively concise with 25 lines of code. It performs a single task of creating a preauthenticated request, which is its primary responsibility. While it does contain a loop for retries, this is a common pattern in network operations to handle transient failures. The method is easy to understand and maintain."
+  },
+  {
+    "id": 1191,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is relatively long but performs a single responsibility clearly. It has a defined purpose and does not exhibit high complexity or multiple responsibilities."
+  },
+  {
+    "id": 1198,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method 'init' is very short with only two lines of code and focuses on a single responsibility, initializing the interface instance and service description. It does not exhibit any characteristics of a long method."
+  },
+  {
+    "id": 1203,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is very short and only contains a single line of code. It does not perform multiple tasks or have high complexity. It is concise and easy to understand."
+  },
+  {
+    "id": 1208,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise, performing a single responsibility of retrieving the active network. It does not contain nested structures or perform multiple tasks, thus not exhibiting the 'Long Method' code smell."
+  },
+  {
+    "id": 1211,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is relatively concise and performs a single responsibility of finishing an activity and handling its lifecycle stage. It is not excessively long and is easy to understand."
+  },
+  {
+    "id": 1213,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method 'deleteJobAsync' is concise, performing a single responsibility of deleting a job asynchronously. It has a low complexity and is easy to understand."
+  },
+  {
+    "id": 1216,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method `nativeGetPointerCoords` is relatively concise and performs a single responsibility, validating input and retrieving pointer coordinates. While it is not extremely long, it does contain multiple conditional checks and nested structures, which could be refactored for clarity."
+  },
+  {
+    "id": 1227,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method `dumpStack` is relatively concise and performs a single task of generating a stack dump for a thread. It has a moderate length and complexity, making it easy to understand and maintain."
+  },
+  {
+    "id": 1236,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The provided code snippet is a constructor with only two lines of code. It initializes the instance variables and calls the superclass constructor. This method is concise and does not exhibit any characteristics of a long method."
+  },
+  {
+    "id": 1239,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method 'crop' is concise, performing a single responsibility of cropping an image with a given region. It does not exceed the recommended length and complexity, making it easy to understand and maintain."
+  },
+  {
+    "id": 1244,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise and performs a single responsibility, verifying the Java installation for a Grails project. It does not meet the criteria for a long method."
+  },
+  {
+    "id": 1246,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is very short with only two lines of code. It does not perform multiple tasks or have high complexity. It is simple and easy to understand."
+  },
+  {
+    "id": 1251,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method 'schedule' is very short, containing only three lines of code. It performs a single responsibility by setting the rule, priority, and scheduling the job. This method does not exhibit any characteristics of a 'Long Method' code smell."
+  },
+  {
+    "id": 1257,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise and performs a single responsibility, checking if a request can be retried using a refreshable authentication token. It does not meet the criteria for a long method."
+  },
+  {
+    "id": 1263,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method `updateStack` is relatively long and complex, performing multiple tasks such as request interception, conversion, and handling. However, it does not significantly impact readability or maintainability and is not excessively long."
+  },
+  {
+    "id": 1285,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise with only a few lines of code and performs a single responsibility, which is to initialize the UsernamePasswordCredentials object with a username and password. It does not exhibit any characteristics of a long method."
+  },
+  {
+    "id": 1289,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method addConstantSet is concise, performing a single responsibility by adding a constant set to metadata. It does not exhibit characteristics of a long method."
+  },
+  {
+    "id": 1296,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise, performing a single responsibility of creating and returning a RabbitMessagingTemplate instance. It does not contain nested structures or perform multiple tasks, thus not exhibiting the characteristics of a long method."
+  },
+  {
+    "id": 1298,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is relatively long, containing 21 lines of code. It performs multiple tasks such as formatting a query string based on project URI and arguments, which could be split into smaller methods for better readability and maintainability."
+  },
+  {
+    "id": 1301,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method notifyConflict is concise, performing a single responsibility of displaying a warning dialog. It does not meet the criteria for being a long method."
+  },
+  {
+    "id": 1318,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is relatively concise and focuses on a single responsibility, checking for a specific attribute in an annotation and applying a filter. It does not contain excessive nested structures or perform multiple unrelated tasks."
+  },
+  {
+    "id": 1328,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise, performing a single task of iterating over a list of fields and calling another method for each field. It does not meet the criteria for being a long method."
+  },
+  {
+    "id": 1335,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is very short with only 5 lines of code and focuses on a single responsibility, which is initializing the object and decoding parameters. It does not exhibit characteristics of a long method."
+  },
+  {
+    "id": 1336,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method vmExecutablePath is relatively concise and performs a single task of finding the executable path for a virtual machine. It has a moderate level of complexity due to nested loops but does not significantly impact readability or maintainability."
+  },
+  {
+    "id": 1346,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise and performs a single responsibility, handling the failure of a compilable Truffle AST. It does not contain nested structures or perform multiple tasks, thus not exhibiting the characteristics of a long method code smell."
+  },
+  {
+    "id": 1362,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise, performing a single responsibility of resolving a custom PDX serializer for a given property. It does not contain nested structures or perform multiple tasks, thus not exhibiting the characteristics of a long method."
+  },
+  {
+    "id": 1365,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is very short (one line) and does not perform multiple tasks or have high complexity. It simply returns a string representation of the description object, which is a single responsibility."
+  },
+  {
+    "id": 1367,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The provided code snippet is a constructor for a class, which is typically concise and focused on initialization. It does not exhibit characteristics of a long method such as excessive lines of code, multiple responsibilities, or high complexity. Therefore, it does not contain the 'Long Method' code smell."
+  },
+  {
+    "id": 1375,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method 'close' contains 11 lines of code and performs multiple tasks related to invalidating objects, handling scope, and tracing. While it is not excessively long, it could be refactored into smaller methods for better readability and maintainability."
+  },
+  {
+    "id": 1381,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method `lookup` is relatively concise with 10 lines of code. It performs a single responsibility of looking up a service class and handling exceptions if required. While it could be slightly refactored for better readability, it does not significantly impact maintainability or readability."
+  },
+  {
+    "id": 1385,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is very short with only two lines of code and performs a single responsibility, which is to determine the option class based on the option key type. It does not exhibit any characteristics of a long method."
+  },
+  {
+    "id": 1390,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise and performs a single responsibility, converting a float value based on the operation provided. It does not exhibit characteristics of a long method."
+  },
+  {
+    "id": 1406,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is quite short with only 5 lines of code. It clearly focuses on a single responsibility, which is determining if a reference is present based on certain conditions. Therefore, it does not exhibit the characteristics of a long method."
+  },
+  {
+    "id": 1437,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method `getNameAndSignature` is concise, performing a single responsibility by combining the class name, method name, and method signature into a single string. It does not contain nested structures or perform multiple tasks, thus it does not exhibit the characteristics of a long method."
+  },
+  {
+    "id": 1445,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method 'mT__60' is very short, containing only a single line of code that performs a simple match operation. It does not exhibit any characteristics of a long method, such as excessive length, multiple responsibilities, or high complexity. Therefore, it does not contain the 'Long Method' code smell."
+  },
+  {
+    "id": 1458,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is relatively short with only 10 lines of code. It performs a single responsibility of creating and configuring a YarnContainer. While it could be slightly refactored for better readability, it does not significantly impact maintainability or readability."
+  },
+  {
+    "id": 1467,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is very short (3 lines) and performs a single task (mapping integers and returning their size). It does not meet the criteria for a 'Long Method' code smell."
+  },
+  {
+    "id": 1477,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is relatively concise and performs a single responsibility of generating a string representation of variables. It has a moderate level of complexity due to conditional logic and nested structures, but it is not excessively long or difficult to understand."
+  },
+  {
+    "id": 1480,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is very short and simple, performing a single task. It does not meet the criteria for a long method."
+  },
+  {
+    "id": 1492,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is very short, containing only one line of code. It does not perform multiple tasks or have high complexity. Therefore, it does not exhibit the characteristics of a long method code smell."
+  },
+  {
+    "id": 1493,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method hasNext() contains a while loop and conditional logic, which could be considered slightly complex. However, it is relatively concise and focuses on a single responsibility, so it does not significantly impact readability or maintainability."
+  },
+  {
+    "id": 1496,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise, performing a single responsibility of handling a SockJS request. It does not contain nested structures or perform multiple tasks, thus it does not exhibit the characteristics of a long method code smell."
+  },
+  {
+    "id": 1499,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is long but it primarily handles different method invocations on an EntityManager, which is a single responsibility. It could be refactored into smaller methods for better readability, but it does not significantly impact maintainability or readability."
+  },
+  {
+    "id": 1505,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise and performs a single task, which is to initialize the exception with a message and the value and required type. It does not contain nested structures or perform multiple responsibilities, making it easy to understand and maintain."
+  },
+  {
+    "id": 1510,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is very short and only contains a single line of code, which returns a field. It does not perform multiple tasks or have high complexity. Therefore, it does not exhibit the characteristics of a 'Long Method' code smell."
+  },
+  {
+    "id": 1514,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is relatively long but performs a clear and single responsibility. It handles both cases with and without a BindingResult, which are distinct responsibilities. The method's complexity is manageable, and it is easy to understand the flow of logic."
+  },
+  {
+    "id": 1518,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise with only 3 lines of code and performs a single responsibility of creating a JwtHeader. It does not exhibit any characteristics of a long method."
+  },
+  {
+    "id": 1523,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise, performing a single responsibility of finding the parent of a given class type. It has a clear structure and is easy to understand."
+  },
+  {
+    "id": 1527,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is relatively short with only a few lines of code. It performs a single task of retrieving and formatting methods, which aligns with the single responsibility principle. However, it could be considered minor because it might be beneficial to break it down further for clarity, especially if the `format` method is complex."
+  },
+  {
+    "id": 1533,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method `formatElement` performs two distinct tasks: formatting and cleaning the model. While it is not excessively long, it does handle multiple responsibilities, which is a characteristic of the 'Long Method' code smell."
+  },
+  {
+    "id": 1539,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise with only two lines of code and performs a single responsibility, which is to create a Ciphertext object. It does not meet the criteria for a 'Long Method' code smell."
+  },
+  {
+    "id": 1544,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method 'newlineWithIndent' is relatively short with only two lines of code. It performs a single responsibility of creating a string with a newline and indentation. While it could be argued that it could be broken down further, it does not significantly impact readability or maintainability."
+  },
+  {
+    "id": 1556,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise with only 4 lines of code and performs a single responsibility, which is to extract the simple name of the component type from a given type name. It does not exhibit any characteristics of a long method."
+  },
+  {
+    "id": 1557,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise and performs a single responsibility by setting a header. It does not meet the criteria for a long method."
+  },
+  {
+    "id": 1562,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise and performs a single responsibility by building a string representation of an object. It does not exceed the recommended length and is easy to understand."
+  },
+  {
+    "id": 1578,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise with only 4 lines of code and performs a single responsibility: checking if the trust alias is missing for a given compute state. It does not exhibit characteristics of a long method."
+  },
+  {
+    "id": 1583,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise and performs a single responsibility, initializing the class with necessary dependencies and logging the redirection status. It does not meet the criteria for a long method."
+  },
+  {
+    "id": 1589,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is relatively short with only 9 lines of code. It performs a few tasks related to setting up RabbitMQ configurations and machine locations, which is within the acceptable range for a single method."
+  },
+  {
+    "id": 1593,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is relatively concise and performs a single responsibility of retrieving a property value. It has a moderate level of complexity due to conditional checks and method calls, but it does not significantly impact readability or maintainability."
+  },
+  {
+    "id": 1609,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is very short and performs a single responsibility by creating a new instance of TimeAndDimsParseSpec with the provided TimestampSpec and the current dimensions spec. It does not contain nested structures or perform multiple tasks, thus it does not exhibit the characteristics of a long method."
+  },
+  {
+    "id": 1614,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method containsDownEntity is concise with only 4 lines of code and focuses on a single responsibility, which is to check if any entity in the set is not viable. It does not exhibit any characteristics of a long method."
+  },
+  {
+    "id": 1616,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is relatively concise and focused on processing interfaces, but it could be broken down into smaller methods for better readability and maintainability."
+  },
+  {
+    "id": 1617,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise, performs a single task (gzip compression), and does not exhibit high complexity or nested structures. It is straightforward to understand and maintain."
+  },
+  {
+    "id": 1627,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise and performs a single responsibility by adding a chunk to a response holder. It does not meet the criteria for a long method."
+  },
+  {
+    "id": 1639,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method 'removeHealthMonitor' is concise, performing a single responsibility of removing a health monitor. It has a straightforward logic and does not exhibit any of the characteristics of a 'Long Method' code smell."
+  },
+  {
+    "id": 1645,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is very short, containing only a few lines of code. It performs a single task, which is to write a struct to a protocol. There is no indication of multiple responsibilities or high complexity. Therefore, it does not exhibit the characteristics of a 'Long Method' code smell."
+  },
+  {
+    "id": 1647,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise and performs a single responsibility, reading fields from a Thrift protocol and setting them in a struct. It does not meet the criteria for a long method."
+  },
+  {
+    "id": 1663,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise, performing a single task of creating a supplier based on a dimension selector. It does not meet the criteria for a long method."
+  },
+  {
+    "id": 1665,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is relatively short and performs a single task of creating a `ReferenceCountedWriter` with proper error handling. It does not significantly impact readability or maintainability."
+  },
+  {
+    "id": 1673,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method 'read' is relatively concise and straightforward, handling the deserialization of a struct with a few fields. It does not exhibit excessive length or multiple responsibilities that would classify it as a major long method smell."
+  },
+  {
+    "id": 1736,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is very short, containing only one rule invocation and a few state management operations. It does not perform multiple tasks or have high complexity, thus not exhibiting the characteristics of a long method."
+  },
+  {
+    "id": 1743,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is relatively concise and performs a clear, single responsibility related to error checking and feeding values into a sequencer. It does not significantly impact readability or maintainability."
+  },
+  {
+    "id": 1754,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method `getScope` contains nested structures and performs multiple tasks, but it is relatively concise and does not significantly impact readability or maintainability."
+  },
+  {
+    "id": 1755,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise with only two method calls and does not exhibit any of the characteristics of a long method."
+  },
+  {
+    "id": 1761,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise and focuses on a single responsibility, performing a single task. It does not exhibit characteristics of a long method."
+  },
+  {
+    "id": 1767,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise, performing a single task of checking if the 'elements' list is not null and not empty. It does not meet the criteria for a long method as it is brief and focused."
+  },
+  {
+    "id": 1773,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is relatively short and focuses on handling different types of EObjects based on their class. It does not perform multiple tasks or have high complexity. However, it could be refactored to further improve readability by extracting some logic into separate methods."
+  },
+  {
+    "id": 1802,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is very short, contains only two lines of code, and focuses on a single responsibility (handling the home page request). It does not exhibit any characteristics of a long method."
+  },
+  {
+    "id": 1830,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise and performs a single responsibility, checking if two ThrowsPattern objects are equal. It has only two lines of code and does not exhibit any of the characteristics of a long method."
+  },
+  {
+    "id": 1839,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method `doAggressiveInner` is relatively short and performs a single task of generating an inner interface. It does not contain nested structures or perform multiple responsibilities that would significantly impact readability or maintainability."
+  },
+  {
+    "id": 1841,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method m39 is very short, containing only 10 lines of code. It increments 10 integer variables, which is a simple task. There is no indication of multiple responsibilities or high complexity. Therefore, it does not exhibit the characteristics of a long method code smell."
+  },
+  {
+    "id": 1849,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise and performs a single responsibility by creating a new instance of CamelWorkflowDefinitionFactory. It does not contain nested structures or perform multiple tasks, thus it does not exhibit the characteristics of a long method code smell."
+  },
+  {
+    "id": 1870,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is very short and only contains a single conditional statement. It does not perform multiple tasks or have high complexity, making it a clean and concise method."
+  },
+  {
+    "id": 1877,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is relatively long and performs multiple checks and configurations, which could be refactored into smaller methods for better readability and maintainability."
+  },
+  {
+    "id": 1881,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is relatively short with 11 lines of code, which is manageable. It performs a single responsibility by initializing a map with various Redis processors. While it could be argued that it could be split into multiple methods for each processor type, the current implementation is not excessively long or complex."
+  },
+  {
+    "id": 1886,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise with only three lines of code and performs a single responsibility. It does not exhibit any characteristics of a long method."
+  },
+  {
+    "id": 1889,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The code snippet is concise and performs a single responsibility, initializing the exception message and setting instance variables. It does not meet the criteria for a long method."
+  },
+  {
+    "id": 1891,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise and performs a single responsibility, setting up a thread factory with a name and daemon status. It does not exhibit characteristics of a long method."
+  },
+  {
+    "id": 1893,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise and only contains a single responsibility, which is generating a string representation of an object. It does not exceed the recommended length or perform multiple unrelated tasks."
+  },
+  {
+    "id": 1905,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method `getUlong56` is relatively short with only 11 lines of code. It performs a specific task of reading 8 bytes from a buffer and converting them into a long value, which is within the acceptable range for a single method. Therefore, it does not meet the criteria for a 'Long Method' code smell."
+  },
+  {
+    "id": 1907,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is very short and simple, performing a single task without any nested structures or multiple responsibilities. It is a straightforward call to a generated method, making it easy to understand and maintain."
+  },
+  {
+    "id": 1929,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is relatively concise and performs a single task of printing exclude rules. It has a moderate length and complexity, but it is not excessively long or complex enough to be classified as a major smell."
+  },
+  {
+    "id": 1931,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method 'addRequiredAlertProperties' contains only three lines of code and performs a single responsibility of adding required alert properties to a set. It does not meet the criteria for a 'Long Method' as defined."
+  },
+  {
+    "id": 1933,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is extremely short, containing only three lines of code. It does not perform multiple tasks or have high complexity. It clearly focuses on a single responsibility, which is setting the `tmfe` field to null if the input value is false. Therefore, it does not exhibit the characteristics of a 'Long Method' code smell."
+  },
+  {
+    "id": 1940,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method 'repeat' is concise, has a single responsibility, and is easy to understand. It performs a single task of repeating a string a specified number of times without any nested structures or multiple responsibilities."
+  },
+  {
+    "id": 1951,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is relatively concise and performs a single task of listing volumes referenced in zookeeper. It has a moderate length and does not exhibit high complexity or multiple responsibilities that would classify it as a major code smell."
+  },
+  {
+    "id": 1953,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is very short and only initializes a few fields. It does not perform multiple tasks or have high complexity. It is concise and easy to understand."
+  },
+  {
+    "id": 1967,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise, performing a single responsibility of instantiating an ArgumentProcessor. It does not meet the criteria for being a long method."
+  }
+]

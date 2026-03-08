@@ -1,0 +1,1402 @@
+[
+  {
+    "id": 528,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The code is a large, monolithic class with many methods and fields, making it difficult to understand and maintain. It contains a mix of business logic, data structures, and utility methods, which should be separated into smaller, more focused classes."
+  },
+  {
+    "id": 535,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The SupplementingParser class has a moderate number of methods and attributes, but it primarily focuses on parsing and handling metadata, which aligns with the Single Responsibility Principle. However, it could be refactored to separate concerns further, such as moving metadata handling into a dedicated class."
+  },
+  {
+    "id": 536,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class RequestSecurityManagerImpl manages multiple functionalities related to request security, such as checking for insecure component event requests, page render requests, and page security. While it does handle related tasks, it is not excessively large or complex, and its responsibilities are somewhat cohesive. Therefore, it does not meet the criteria for a 'God Class' or 'Blob' code smell."
+  },
+  {
+    "id": 538,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `AbstractConditional` has a moderate number of methods and attributes, but it primarily focuses on conditional rendering logic, which is a single responsibility. The methods are well-defined and related to the conditional rendering functionality. While it could be argued that it could be split into smaller classes for better cohesion, the current structure does not significantly violate the Single Responsibility Principle."
+  },
+  {
+    "id": 546,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet does not exhibit the characteristics of a God Class (Blob). It is a simple abstract class with a single constructor that extends another class. It does not accumulate many responsibilities, manage multiple unrelated functionalities, or violate the Single Responsibility Principle."
+  },
+  {
+    "id": 551,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class TrimAction has a moderate number of methods and attributes, but it primarily focuses on a single responsibility related to trimming annotations. It does not violate the Single Responsibility Principle and does not manage multiple, unrelated functionalities. The class is relatively well-cohesive and has a low dependency on other classes."
+  },
+  {
+    "id": 554,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `MailChimpServiceImpl` manages multiple functionalities related to interacting with the MailChimp API, such as adding, removing, and updating subscribers. While it does handle a significant amount of logic, the responsibilities are somewhat cohesive and focused on MailChimp integration. The class could be slightly refactored to separate concerns further, but it does not violate the Single Responsibility Principle to the extent that it would be classified as a major or critical code smell."
+  },
+  {
+    "id": 556,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class `SessionAttributeElement` is relatively simple and focused on a single responsibility, which is to add a session attribute to an access log. It does not accumulate many responsibilities, manage multiple unrelated functionalities, or violate the Single Responsibility Principle."
+  },
+  {
+    "id": 558,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet is a simple exception class that extends another exception class and has a single constructor. It does not accumulate many responsibilities, manage multiple unrelated functionalities, or violate the Single Responsibility Principle. Therefore, it does not exhibit the characteristics of a God Class (Blob) code smell."
+  },
+  {
+    "id": 561,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `DocumentTableLabelProvider` implements the `ITableLabelProvider` interface and contains methods for handling label images and text, which are related to displaying data in a table. While it does manage multiple functionalities, it is still focused on a single responsibility of providing labels for a table. The methods are clearly grouped by their functionality, and the class does not appear to be overly complex or tightly coupled with other classes."
+  },
+  {
+    "id": 568,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The provided code snippet is an interface with two methods: `getTransactionRegistry` and `createConnection`. It does not exhibit characteristics of a God Class as it is focused on defining the behavior for a connection factory, which aligns with the Single Responsibility Principle."
+  },
+  {
+    "id": 578,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class `FileSaveEventHandler` is responsible for handling the file save action and updating the status bar, which aligns with the Single Responsibility Principle. It does not accumulate too many responsibilities and does not manage multiple, unrelated functionalities. Therefore, it does not exhibit the God Class (Blob) code smell."
+  },
+  {
+    "id": 582,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `WideLeftAnnotationSideAction` has a moderate level of complexity with multiple responsibilities. It manages the action of widening annotations and updating the document, which could be split into separate classes for better cohesion and maintainability."
+  },
+  {
+    "id": 587,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The ErrorFrame class is very simple, with only one method and one attribute. It does not exhibit the characteristics of a God Class (Blob) as it focuses on a single responsibility: handling error messages in a VinciFrame."
+  },
+  {
+    "id": 588,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The interface `SearchByEdgeType` is relatively small and focused on defining search criteria for edges, which aligns with the Single Responsibility Principle. It does not appear to be managing multiple unrelated functionalities or accumulating too many responsibilities."
+  },
+  {
+    "id": 592,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `JobSchedulerService` manages multiple functionalities such as job scheduling, execution, and metrics tracking. While it does have a large number of methods and attributes, it primarily focuses on a single responsibility: managing job scheduling. The class could be slightly refactored to separate concerns further, but it does not violate the Single Responsibility Principle significantly."
+  },
+  {
+    "id": 598,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The provided code snippet is an abstract class with a minimal number of methods. It does not exhibit characteristics of a God Class (Blob) as it focuses on a single responsibility related to graphics configuration. Therefore, it does not contain the Target code smell."
+  },
+  {
+    "id": 600,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class ShortArrayFSImpl implements multiple methods related to handling short arrays, which is a single responsibility. However, it also contains nested classes and additional methods that could be extracted into separate classes, potentially reducing its complexity and improving maintainability."
+  },
+  {
+    "id": 602,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The code is a large block of text without clear structure or organization, making it difficult to understand and maintain."
+  },
+  {
+    "id": 606,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class ExsltBase contains two static methods, toString and toNumber, which are related to handling Node values but do not appear to be tightly coupled with other functionalities. However, the class could be considered a minor blob due to its simplicity and the fact that it does not manage multiple, unrelated functionalities."
+  },
+  {
+    "id": 614,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `ZooInspectorPanel` manages multiple functionalities including UI components, connection logic, and event handling. While it does not have an extremely high number of methods or attributes, it does handle a variety of tasks, which could be split into smaller, more focused classes."
+  },
+  {
+    "id": 618,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `SparkVersion` manages multiple functionalities related to Spark version handling, such as parsing version strings, comparing versions, and determining support for certain features. While it does have a large number of methods, it primarily focuses on version management, which is a single responsibility. The methods are logically grouped and the class is not overly complex or difficult to understand."
+  },
+  {
+    "id": 625,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet defines a simple exception class with a single constructor, which does not exhibit the characteristics of a God Class. It is focused on a single responsibility and does not manage multiple unrelated functionalities."
+  },
+  {
+    "id": 643,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `ErrorDataException` manages multiple functionalities related to error handling and data packaging, which is a common practice. However, it does not exhibit severe issues that would classify it as a 'God Class' (Blob). It has a clear focus on error handling and data management, which aligns with the Single Responsibility Principle (SRP). Therefore, it is classified as a minor code smell."
+  },
+  {
+    "id": 644,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `_ApplicationInstancesResponse` contains a nested static class `ApplicationInstancesResponseDeserializer` which is responsible for deserializing JSON data. While this is a common pattern, the class itself is relatively simple and does not exhibit the extreme complexity or multiple unrelated functionalities that would classify it as a 'God Class' or 'Blob'. It manages a single responsibility related to deserialization, which is a clear violation of the Single Responsibility Principle. However, the impact is minor as the class is self-contained and does not significantly affect the overall maintainability or readability of the codebase."
+  },
+  {
+    "id": 651,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet is minimal and focuses on a single responsibility, which is to include all launch configuration scopes. It does not accumulate many responsibilities, manage multiple unrelated functionalities, or violate the Single Responsibility Principle."
+  },
+  {
+    "id": 652,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `DimsDataList` contains a mix of functionalities including data management, axis handling, and serialization, which could be separated into smaller classes. However, the impact is minor as the class is not excessively large or complex."
+  },
+  {
+    "id": 656,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet is concise and focused on handling the 'AttributesDeleted' event by removing all attributes from a thing. It does not exhibit the characteristics of a God Class (Blob) as it is small, cohesive, and adheres to the Single Responsibility Principle."
+  },
+  {
+    "id": 660,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The LiveSignalEnforcement class has a moderate level of complexity with multiple responsibilities, including handling different types of signals, enforcing policies, and managing caches. While it does not exhibit severe issues, it could be refactored to improve cohesion and adhere more closely to the Single Responsibility Principle."
+  },
+  {
+    "id": 662,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet is a simple implementation of a Function interface with a single method. It does not exhibit the characteristics of a God Class (Blob) as it is focused on a single responsibility and does not manage multiple unrelated functionalities."
+  },
+  {
+    "id": 676,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The provided code snippet is an interface with a DTO (Data Transfer Object) pattern, which is designed to transfer data between layers of an application. It contains a minimal number of methods and attributes, each with a clear and specific purpose. This does not indicate a God Class (Blob) code smell as it adheres to the Single Responsibility Principle by focusing on transferring file state update information."
+  },
+  {
+    "id": 680,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The MachineStoppedEvent class has a single responsibility, which is to handle the event of a machine being stopped. It has a clear structure with a single method for dispatching the event and a single attribute for storing the machine instance. Therefore, it does not exhibit the characteristics of a God Class (Blob)."
+  },
+  {
+    "id": 688,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `GoIntoAction` manages both updating the project action and performing the action itself, which could be split into two separate classes to improve cohesion and adhere to the Single Responsibility Principle."
+  },
+  {
+    "id": 690,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The Ipam class manages multiple attributes (driver, config, options) and provides methods to get, set, and chain these attributes. While it does not violate the Single Responsibility Principle, it does accumulate responsibilities related to IP address management, which could be split into smaller classes for better cohesion and maintainability."
+  },
+  {
+    "id": 694,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class ConstantPartitioner has a moderate number of methods and attributes, primarily focused on document partitioning. It does not manage multiple, unrelated functionalities and appears to adhere to the Single Responsibility Principle. However, it could be refactored to have more focused classes for better maintainability."
+  },
+  {
+    "id": 702,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet does not exhibit the characteristics of a God Class (Blob). It is a simple class with a single responsibility, focusing on managing the state of a test suite in progress. It has a clear and focused purpose, with only two methods and one attribute."
+  },
+  {
+    "id": 704,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class MetaDataFactoryImpl has a moderate number of methods and attributes, primarily focused on creating instances of various metadata-related classes and handling data type conversions. While it does manage multiple functionalities, it is relatively self-contained and does not appear to violate the Single Responsibility Principle severely."
+  },
+  {
+    "id": 706,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class GExpressionsHelper contains only two methods, both of which are related to checking the relationship between EClass objects. It does not accumulate multiple responsibilities or manage unrelated functionalities, making it a simple and focused class."
+  },
+  {
+    "id": 708,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class ResizePolicyTests contains a nested class DimensionPart that manages visual properties and content, which could be separated into different classes. Additionally, the class has a mix of test methods and setup logic, which could be refactored into separate classes or methods."
+  },
+  {
+    "id": 714,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `NodeOrderer` contains a mix of responsibilities related to graph processing and node ordering. While it does not have an extremely high number of methods or attributes, it does manage multiple functionalities within a single class, which could be improved by breaking it down into smaller, more focused classes."
+  },
+  {
+    "id": 718,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class SignatureSupportingConfigProperties manages multiple, related functionalities related to configuration properties for signature support. It does not violate the Single Responsibility Principle as it is focused on a specific set of responsibilities. However, it could be refactored into smaller classes if the number of properties and methods grows significantly."
+  },
+  {
+    "id": 731,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The provided code snippet is a simple class with a single responsibility (holding a project version). It does not accumulate multiple responsibilities, manage unrelated functionalities, or violate the Single Responsibility Principle. Therefore, it does not exhibit the God Class (Blob) code smell."
+  },
+  {
+    "id": 733,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The Subchannel class has a moderate number of methods and attributes, primarily focused on managing fuel rod properties and related functionalities. While it does handle multiple aspects of a subchannel, it is not extremely complex or sprawling, making it less severe than a critical blob."
+  },
+  {
+    "id": 746,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class TestTopic has a minimal number of attributes and methods, focusing on a single responsibility (storing and retrieving topic-related data). It does not exhibit the characteristics of a God Class, such as managing multiple unrelated functionalities or violating the Single Responsibility Principle."
+  },
+  {
+    "id": 758,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `ObserveUtil` contains several methods related to handling CoAP requests and observations, which is a single responsibility. However, it could be more modular by extracting some methods into separate classes or interfaces to improve cohesion and maintainability."
+  },
+  {
+    "id": 767,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class CredentialServiceImpl contains a mix of methods related to credential management, including creation, update, deletion, and querying. While it does not have an extremely high number of methods or attributes, it does handle multiple functionalities, which could be refactored into smaller, more focused classes to improve maintainability."
+  },
+  {
+    "id": 776,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet shows a class with a single responsibility, implementing a factory interface for JobExecution. It does not exhibit the characteristics of a God Class (Blob) as it focuses on a single, well-defined responsibility and does not manage multiple, unrelated functionalities."
+  },
+  {
+    "id": 778,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet is a simple implementation of a TypeAdapterFactory for Gson, focusing on creating a specific type adapter. It does not exhibit characteristics of a God Class as it is concise, focused on a single responsibility, and does not manage multiple unrelated functionalities."
+  },
+  {
+    "id": 808,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The CachedReader class manages multiple functionalities including file and stream handling, reader position management, and caching. While it does have multiple methods and attributes, it primarily focuses on managing a specific type of reader and its associated data, which aligns with the Single Responsibility Principle. The class is not overly complex and does not exhibit strong signs of a god class."
+  },
+  {
+    "id": 810,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class `InstantTypeAdapter` is designed to handle serialization and deserialization of `Instant` objects using a `DateTimeFormatter`. It has a clear and focused responsibility, adhering to the Single Responsibility Principle (SRP). The class does not accumulate unrelated functionalities and is relatively simple with only two methods and a single attribute. Therefore, it does not exhibit the characteristics of a God Class (Blob)."
+  },
+  {
+    "id": 814,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet provided does not exhibit the characteristics of a God Class (Blob). It is a simple class with a constructor that extends and implements specific interfaces, focusing on a single responsibility related to TripAlarmNode. There are no indications of multiple unrelated functionalities or poor cohesion."
+  },
+  {
+    "id": 821,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `FormDataValidator` implements a validation logic that iterates over methods of the target object and applies annotations-based validation. While it does manage multiple functionalities, it is relatively focused on validation and does not appear to violate the Single Responsibility Principle severely. It could be improved by extracting specific validation logic into separate classes, but it does not currently exhibit a major code smell."
+  },
+  {
+    "id": 822,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `ConstructYamlFloat` contains a single method `construct` that handles multiple functionalities related to constructing floating-point numbers from YAML nodes. While it does not violate the Single Responsibility Principle as it is focused on a specific task, it could be refactored into smaller methods to improve readability and maintainability."
+  },
+  {
+    "id": 832,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class TypeList has a single responsibility of managing a list of types and checking for their presence. It does not accumulate multiple unrelated functionalities and is relatively simple in structure."
+  },
+  {
+    "id": 840,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `BaseDeclProcessor` contains a method `process` that handles multiple functionalities related to resolving relative URIs and processing query models. While it does not violate the Single Responsibility Principle, it could be refactored to separate concerns, such as moving URI resolution logic to a separate class."
+  },
+  {
+    "id": 843,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The provided code snippet is a simple class that extends an abstract class and sets a title. It does not contain any methods or attributes, and its functionality is limited to initializing a perspective with a specific title. Therefore, it does not exhibit the characteristics of a God Class (Blob) code smell."
+  },
+  {
+    "id": 851,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `CTabWorkbenchFilterComplexRule` has a moderate number of methods and does not appear to manage multiple, unrelated functionalities. However, it does handle related but distinct responsibilities, which is not a severe violation of the Single Responsibility Principle."
+  },
+  {
+    "id": 856,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `ActorAddFeature` contains multiple methods and handles various functionalities related to adding actors, such as linking, adding, and building shapes. While it does manage multiple responsibilities, it is not excessively large or complex, and the functionalities are somewhat related to the primary responsibility of adding actors. Therefore, it is classified as a minor code smell."
+  },
+  {
+    "id": 862,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `IndirectHandle` contains a mix of methods related to method handling, JIT support, and binding, which suggests it may be handling multiple responsibilities. However, the number of methods and their focus are not extremely high, and the class does not appear to be managing unrelated functionalities excessively. Therefore, it is classified as a minor blob smell."
+  },
+  {
+    "id": 867,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet is a simple factory class for creating instances of various LWM2M-related objects. It does not accumulate many responsibilities, manage multiple unrelated functionalities, or violate the Single Responsibility Principle. Therefore, it does not exhibit the God Class (Blob) code smell."
+  },
+  {
+    "id": 870,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class `ByteArrayAudioStream` is designed to handle audio data in a byte array, providing methods for getting the audio format, reading data, closing the stream, getting the length of the data, and cloning the stream. It appears to have a single responsibility related to managing audio data in a byte array, which is consistent with the Single Responsibility Principle (SRP). Therefore, it does not exhibit the characteristics of a God Class (Blob)."
+  },
+  {
+    "id": 872,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The `ForeachCommand` class handles two distinct functionalities: managing a list of elements and repeating commands on those elements. While it does have multiple methods, the primary responsibility is clearly defined, and the class does not exhibit severe issues that would classify it as a 'God Class.'"
+  },
+  {
+    "id": 890,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class 'Ping' contains a single method that handles both checking the reachability of a host on a default port and attempting to open a socket on a specified port. While it does perform multiple tasks, these tasks are closely related to network operations and are likely necessary for the class's purpose. The method is straightforward and does not exhibit extreme complexity or a large number of unrelated functionalities."
+  },
+  {
+    "id": 894,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class DatatypeGeneratorTask has a moderate number of methods and attributes, but it focuses on a single responsibility related to code generation. It does not manage multiple, unrelated functionalities and maintains a reasonable level of cohesion. Therefore, it does not meet the criteria for a 'God Class' code smell."
+  },
+  {
+    "id": 896,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class N4JSLambdaValidator has a relatively small number of methods and attributes, and it appears to be focused on validating top-level lambda functions. However, it does manage multiple functionalities related to lambda validation, which could be split into smaller classes for better cohesion and maintainability."
+  },
+  {
+    "id": 941,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `StubDescriptorJsonParser` manages multiple functionalities related to parsing JSON data into domain models. While it does not violate the Single Responsibility Principle by focusing on a single responsibility, it does accumulate several methods and attributes, which could be refactored into smaller, more focused classes for better maintainability."
+  },
+  {
+    "id": 944,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `MutableManifestElement` manages multiple functionalities related to manifest elements, including parsing, setting, and writing attributes and directives. While it does handle a significant amount of logic, it is relatively focused on a single domain and does not appear to violate the Single Responsibility Principle severely."
+  },
+  {
+    "id": 946,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet does not exhibit the characteristics of a God Class (Blob). It is a simple class with a single method and attribute, focusing on a single responsibility (setting the format of a biological data item). Therefore, it does not accumulate too many responsibilities, manage multiple unrelated functionalities, or violate the Single Responsibility Principle."
+  },
+  {
+    "id": 952,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class WafFolderContent has a clear and focused responsibility, managing a root folder, sub folders, and files. It does not accumulate too many responsibilities or manage multiple, unrelated functionalities. Therefore, it does not exhibit the God Class (Blob) code smell."
+  },
+  {
+    "id": 959,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `APIRequestCreateMessengerProfile` manages multiple functionalities related to creating a Messenger profile, such as setting parameters and handling responses. While it does have a large number of methods, these methods are all related to a single responsibility, making the class cohesive and manageable."
+  },
+  {
+    "id": 974,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet is an interface with a couple of string constants. It does not contain any methods or attributes, nor does it manage multiple unrelated functionalities. Therefore, it does not exhibit the characteristics of a God Class (Blob) code smell."
+  },
+  {
+    "id": 976,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `MapImageLayerTablesSample` manages multiple functionalities related to a map application, including creating a map, adding layers, handling user interactions, and displaying related features. While it does handle several tasks, it is not excessively complex and maintains a relatively clear focus on its primary responsibilities."
+  },
+  {
+    "id": 989,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class UOfKind appears to be focused on a single responsibility, specifically handling the 'ofKind' operation. It has a clear single purpose and does not exhibit the characteristics of a God Class."
+  },
+  {
+    "id": 993,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet is minimal and does not exhibit characteristics of a God Class. It is a simple abstract class implementing an interface and overriding a method, which is a typical use case and does not violate the Single Responsibility Principle."
+  },
+  {
+    "id": 999,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `JavadocClassFinder` manages multiple functionalities related to finding and processing Javadoc classes, which is a reasonable amount of responsibility for a single class. It does not violate the Single Responsibility Principle and is not excessively complex."
+  },
+  {
+    "id": 1000,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `APIRequestGet` manages multiple functionalities related to making API requests and handling responses, which is typical for such a class. However, it could be refactored to separate concerns further, such as separating the logic for making requests from the logic for parsing responses, to improve cohesion and maintainability."
+  },
+  {
+    "id": 1005,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The SysInfo class is minimal, containing only two attributes and a constructor. It does not exhibit the characteristics of a God Class (Blob) as it is focused on a single responsibility and does not manage multiple unrelated functionalities."
+  },
+  {
+    "id": 1007,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The Builder class contains a mix of responsibilities, including managing module paths, handling options, and constructing the final configuration. While it does not violate the Single Responsibility Principle, it could be refactored to separate concerns into smaller classes."
+  },
+  {
+    "id": 1012,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The DataSource class manages multiple functionalities related to data source properties, IDs, and names. While it does not have an extremely high number of methods or attributes, it does handle several different aspects of data source management, which could be considered a minor code smell due to potential complexity and difficulty in maintaining or extending the class."
+  },
+  {
+    "id": 1031,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet provided is a simple class definition that does not exhibit the characteristics of a God Class. It has a single method and does not manage multiple unrelated functionalities. Therefore, it does not violate the Single Responsibility Principle and is not a God Class."
+  },
+  {
+    "id": 1032,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class UserToken has a single responsibility, which is to represent a user token and provide an authorization header. It does not accumulate multiple responsibilities, manage unrelated functionalities, or violate the Single Responsibility Principle. Therefore, it does not exhibit the God Class (Blob) code smell."
+  },
+  {
+    "id": 1034,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `TestShard` contains a large number of test method calls, indicating it may be managing multiple, unrelated functionalities. However, since these are all test cases, it's more of a testing smell rather than a design smell. It's not severe enough to be classified as 'major' or 'critical', but it does indicate a potential issue with the testing strategy."
+  },
+  {
+    "id": 1036,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `ItemTypeDescription` manages multiple functionalities related to item type descriptions and attributes. While it does not exhibit extreme bloat, it does handle several responsibilities, which could be better distributed across multiple classes to improve cohesion and maintainability."
+  },
+  {
+    "id": 1038,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet is a simple exception class with a single constructor method. It does not accumulate responsibilities, manage multiple functionalities, or violate the Single Responsibility Principle. Therefore, it does not exhibit the characteristics of a God Class (Blob) code smell."
+  },
+  {
+    "id": 1049,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet appears to be a builder pattern for constructing `FieldDescriptor` objects. It has a clear focus on building and configuring `FieldDescriptor` instances, and it does not exhibit the characteristics of a God Class. Each method has a specific responsibility, and the class is designed to manage the construction of a single type of object. Therefore, it does not violate the Single Responsibility Principle."
+  },
+  {
+    "id": 1050,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The Constants class contains only static final fields, each representing a constant value. It does not have any methods or complex logic, and it focuses on a single responsibility of holding configuration and constant values. Therefore, it does not exhibit the characteristics of a God Class (Blob)."
+  },
+  {
+    "id": 1069,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class `ListKeysResult` appears to be a simple data transfer object (DTO) with a few attributes and corresponding getter, setter, and utility methods. It does not appear to violate the Single Responsibility Principle or manage multiple, unrelated functionalities, making it unlikely to be a God Class."
+  },
+  {
+    "id": 1071,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The provided code snippet is an interface with a single method and property, which does not indicate a God Class or any other significant code smell. It is a simple and focused interface, adhering to the Single Responsibility Principle."
+  },
+  {
+    "id": 1073,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class contains a large number of methods that perform specific tasks, but it lacks clear separation of concerns and does not follow the Single Responsibility Principle. This makes the class difficult to understand, maintain, and test."
+  },
+  {
+    "id": 1075,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet is a small, focused class that extends a base class and overrides a few methods. It does not exhibit characteristics of a God Class, such as accumulating many responsibilities or managing multiple unrelated functionalities. Therefore, it does not contain the God Class code smell."
+  },
+  {
+    "id": 1077,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `BDMVSAXHandler` manages multiple functionalities related to parsing XML data, handling different tags, and extracting specific information. While it does accumulate some responsibilities, it is relatively focused on a single task (XML parsing and data extraction) and does not exhibit severe issues that would classify it as a major or critical blob."
+  },
+  {
+    "id": 1078,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `FuncSum` appears to be a simple utility class performing a single responsibility (summing values from nodes), which is a minor code smell. It does not exhibit the extreme complexity or multiple unrelated functionalities that would classify it as a major or critical blob."
+  },
+  {
+    "id": 1080,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The code is a large, monolithic class with many responsibilities, including managing a transcoder process, handling file I/O, and managing segmented output. This makes the code difficult to understand, maintain, and test."
+  },
+  {
+    "id": 1085,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `ParSeqRestliClient` has multiple methods related to sending REST requests and creating tasks, which suggests it manages multiple functionalities. However, it does not appear to be excessively large or complex, and the methods are related to its primary responsibility of handling REST requests. Therefore, it is classified as a minor blob smell."
+  },
+  {
+    "id": 1093,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The SequenceInputStream class is designed to handle multiple input streams, which is its primary responsibility. It does not exhibit characteristics of a God Class as it focuses on managing and sequentially reading from multiple input streams without accumulating unrelated functionalities."
+  },
+  {
+    "id": 1095,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The Sync class contains a mix of methods and attributes related to managing read and write locks, which is a common responsibility for a synchronization mechanism. While it does handle multiple functionalities, the core functionality is focused on lock management, making it less of a 'God Class' and more of a utility class for synchronization."
+  },
+  {
+    "id": 1096,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The code is a large, monolithic function that performs multiple tasks, including file parsing, format detection, and subtitle handling. It lacks modularity and readability, making it difficult to maintain and extend."
+  },
+  {
+    "id": 1102,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class XPathConstants contains only static final fields and does not have any methods or complex logic, making it a simple utility class that does not violate the Single Responsibility Principle or accumulate multiple responsibilities."
+  },
+  {
+    "id": 1107,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class CertificatePolicyMap has a clear and focused responsibility related to managing certificate policy mappings. It has a single responsibility and does not exhibit the characteristics of a God Class (Blob)."
+  },
+  {
+    "id": 1108,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class `AbstractAzureMojo` appears to be designed with a single responsibility, focusing on Azure-related operations and telemetry. It does not exhibit the characteristics of a God Class (Blob) by accumulating too many unrelated functionalities or managing multiple responsibilities."
+  },
+  {
+    "id": 1116,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `AttList` contains a moderate number of methods and attributes, primarily focused on managing attributes. While it does not violate the Single Responsibility Principle, it could be refactored to separate concerns, such as moving namespace handling to a separate utility class."
+  },
+  {
+    "id": 1126,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet is a small, focused class that implements a single responsibility. It does not accumulate many responsibilities, manage multiple unrelated functionalities, or violate the Single Responsibility Principle. Therefore, it does not exhibit the characteristics of a God Class (Blob) code smell."
+  },
+  {
+    "id": 1134,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The WorkItemTypeTemplate class has a single responsibility, managing a template string, and does not exhibit any of the characteristics of a God Class (Blob). It has a minimal number of methods and attributes, and there is no indication of poor cohesion or high dependency on other classes."
+  },
+  {
+    "id": 1136,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The LaunchCommandHandler class has a single method that performs multiple tasks related to constructing and calculating the length of a launch command. While it does not accumulate an excessive number of methods or attributes, it could be refactored to separate concerns and improve cohesion."
+  },
+  {
+    "id": 1138,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `Activator` manages the lifecycle of a plugin, handles initialization and shutdown, and includes logging functionality. While it does have multiple responsibilities, these are all related to the plugin's lifecycle and basic utility functions. The class is not excessively large or complex, and the responsibilities are clearly defined."
+  },
+  {
+    "id": 1141,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `InputValidator` has a relatively small number of methods and attributes, and it primarily focuses on validating input components. While it does manage multiple functionalities (validation, border changes, tooltip updates), these are all related to the core responsibility of input validation. Therefore, it does not significantly violate the Single Responsibility Principle and is not classified as a 'God Class.'"
+  },
+  {
+    "id": 1148,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The NodeAction class manages multiple functionalities such as handling node actions, listeners, and enabling/disabling. While it does not violate SRP, it could be refactored into smaller classes for better cohesion and maintainability."
+  },
+  {
+    "id": 1153,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet provided is a static inner class named Builder, which is used for constructing instances of GetInstanceRequest. It contains methods for setting the invocation callback and copying values from another instance. This class is focused on a single responsibility, which is building the GetInstanceRequest object. It does not accumulate too many responsibilities or manage multiple, unrelated functionalities. Therefore, it does not exhibit the God Class (Blob) code smell."
+  },
+  {
+    "id": 1159,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The provided code snippet is a static nested class named 'Builder' within a larger class. It contains a single method, 'copy', which is responsible for copying values from one instance to another. This method does not accumulate many responsibilities or manage multiple unrelated functionalities. It is concise and focused on a single task, which aligns with the Single Responsibility Principle (SRP). Therefore, it does not exhibit the characteristics of a God Class (Blob) code smell."
+  },
+  {
+    "id": 1161,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet represents a simple class with a single responsibility (holding and retrieving the segment type). It does not accumulate too many responsibilities, manage multiple unrelated functionalities, or violate the Single Responsibility Principle. Therefore, it does not exhibit the 'God Class (Blob)' code smell."
+  },
+  {
+    "id": 1163,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The provided code snippet is a builder class for an `EgressSecurityRule` object. It is focused on constructing and configuring an instance of `EgressSecurityRule` and does not manage multiple unrelated functionalities. It adheres to the Single Responsibility Principle by handling the construction of a single class. Therefore, it does not exhibit the characteristics of a God Class (Blob)."
+  },
+  {
+    "id": 1166,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `ListWorkRequestErrorsConverter` contains methods for intercepting requests, creating invocation builders, and transforming responses. While it does handle multiple functionalities, these functionalities are related to a single operation (converting requests and responses for a specific API endpoint). The class does not appear to be excessively large or complex, and its responsibilities are clearly defined within the context of the API it interacts with."
+  },
+  {
+    "id": 1168,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class DuplicatableProgressTrackingInputStream appears to be focused on a single responsibility, which is to track progress and duplicate streams. It has a clear and specific purpose, and there is no indication of it accumulating multiple unrelated functionalities or violating the Single Responsibility Principle."
+  },
+  {
+    "id": 1174,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `AnnouncementSummary` contains a large number of attributes and methods, which could indicate a potential God Class smell. However, the class is primarily focused on representing announcement summary data, which is a single responsibility. The presence of multiple attributes and methods does not significantly impact readability or maintainability in this context."
+  },
+  {
+    "id": 1184,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The provided code snippet is an abstract class named `RequestParamsBuilder` that is designed to build request parameters. It has a single responsibility of managing the body of the request and providing a method to build the request parameters. The class does not accumulate multiple unrelated functionalities and is focused on a single well-defined responsibility. Therefore, it does not exhibit the characteristics of a God Class (Blob) code smell."
+  },
+  {
+    "id": 1187,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The code snippet appears to be a Java interface for a network management service, with methods for updating various network resources. The interface is well-defined and follows standard Java conventions, but it lacks documentation and comments, which could make it harder for other developers to understand the purpose and usage of each method. Additionally, the interface could benefit from breaking down larger methods into smaller, more focused ones to improve readability and maintainability."
+  },
+  {
+    "id": 1196,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet does not exhibit the characteristics of a God Class (Blob). It is an interface with a small number of methods and attributes, focusing on a single responsibility related to compilation identifiers. It does not manage multiple, unrelated functionalities and adheres to the Single Responsibility Principle."
+  },
+  {
+    "id": 1201,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `MonoWhen` contains multiple responsibilities, including managing multiple sources, coordinating subscriptions, and handling errors. While it does not violate the Single Responsibility Principle, it could be refactored to separate these concerns into smaller, more focused classes."
+  },
+  {
+    "id": 1204,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The interface `Connection` contains a mix of methods related to connection properties, channel management, and connection lifecycle, which could be considered a minor code smell as it does not significantly violate the Single Responsibility Principle but could be refactored for better cohesion."
+  },
+  {
+    "id": 1214,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class `DefaultSdk` appears to be focused on managing Android SDK dependencies and versions, which is a single responsibility. It does not seem to accumulate unrelated functionalities or violate the Single Responsibility Principle."
+  },
+  {
+    "id": 1221,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class HostsSupportImpl has a single responsibility related to managing the storage directory for hosts, and it does not exhibit the characteristics of a God Class. It has a small number of methods and attributes, and it focuses on a single well-defined responsibility."
+  },
+  {
+    "id": 1228,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet provided is a simple class with a constructor and two attributes. It does not exhibit any characteristics of a God Class (Blob) as it is focused on a single responsibility and does not accumulate many methods or manage multiple unrelated functionalities."
+  },
+  {
+    "id": 1231,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The provided code snippet is an interface with a single method, which is a clear indication of a well-defined responsibility. It does not accumulate multiple responsibilities or manage unrelated functionalities, thus avoiding the God Class code smell."
+  },
+  {
+    "id": 1241,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `TestConfiguration` manages multiple functionalities, including managing test suites, handling download URLs, and providing lifecycle methods. While it does not accumulate an extremely large number of methods or attributes, it does handle a variety of responsibilities, which could be split into smaller classes to improve cohesion and maintainability."
+  },
+  {
+    "id": 1242,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The `SignupController` class handles both GET and POST requests for the signup process, which includes rendering forms and processing form submissions. While it delegates some responsibilities to `SignupHelper`, it still manages multiple functionalities within a single class, which could be improved by splitting it into smaller, more focused classes."
+  },
+  {
+    "id": 1248,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class LocksFeatureUI manages multiple functionalities, including UI initialization, toolbar management, and data refresh. While it does not violate the Single Responsibility Principle, it could be refactored to separate concerns into smaller, more focused classes."
+  },
+  {
+    "id": 1253,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `JPASerializeComplex` manages multiple functionalities related to serialization and handling OData requests, which is a common behavior for such classes. However, it does not appear to be excessively large or complex, and it follows the Single Responsibility Principle by handling serialization tasks."
+  },
+  {
+    "id": 1255,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The GrailsProcessStackTracer class has a moderate level of complexity, containing multiple methods and responsibilities such as fetching output, getting process IDs, and executing commands. However, it does not exhibit severe issues that would classify it as a 'God Class'. The class is relatively focused on process management and stack trace retrieval, which aligns with the Single Responsibility Principle."
+  },
+  {
+    "id": 1259,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class _BuildAgentUpdate_Flag has a clear and focused responsibility of representing different flags for build agent updates. It does not accumulate multiple unrelated functionalities and maintains a high level of cohesion."
+  },
+  {
+    "id": 1262,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet appears to be a simple interface defining constants, which does not exhibit the characteristics of a God Class. It is focused on a single responsibility, which is to provide constants for a web application. Therefore, it does not violate the Single Responsibility Principle."
+  },
+  {
+    "id": 1268,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `QueryItemTreeControl` manages multiple functionalities, including handling project data, managing tree viewers, and providing UI components. While it does have a significant amount of functionality, it does not appear to be overwhelming or violating the Single Responsibility Principle as it is focused on a specific UI component."
+  },
+  {
+    "id": 1272,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `WrongWeakHashMap` contains a nested class `WHMRecord` and manages multiple functionalities related to analyzing `WeakHashMap` instances. While it does have a significant number of methods and attributes, it primarily focuses on a single responsibility, which is the analysis of `WeakHashMap` instances. The class does not violate the Single Responsibility Principle and is not excessively complex."
+  },
+  {
+    "id": 1275,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `_ConfigurationSettingsServiceSoapService` contains a large number of methods, each corresponding to a specific configuration setting. While it does manage multiple functionalities, these functionalities are clearly related to configuration settings and do not violate the Single Responsibility Principle. The class is not excessively large or complex, making it manageable and maintainable."
+  },
+  {
+    "id": 1278,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The 'Undertow' class manages multiple configuration properties and nested 'Accesslog' class, which could be separated into different classes to improve cohesion and maintainability."
+  },
+  {
+    "id": 1292,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class `_BuildWebServiceSoap_UpdateBuildDefinitions` appears to be focused on a single responsibility, which is updating build definitions. It has a clear purpose and does not seem to manage multiple, unrelated functionalities. The class has a single method for writing itself as an XML element, which further supports its focus on a single responsibility. Therefore, it does not exhibit the characteristics of a God Class (Blob)."
+  },
+  {
+    "id": 1294,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The provided code snippet is an interface with a single method, which is a clear indication of a class with a single responsibility. It does not exhibit any characteristics of a God Class."
+  },
+  {
+    "id": 1302,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet provided is an interface for a reactive health indicator, which is a single responsibility. It does not accumulate too many responsibilities, manage multiple unrelated functionalities, or violate the Single Responsibility Principle."
+  },
+  {
+    "id": 1305,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class TraceableHttpServletResponse is relatively simple and focused on delegating and extracting headers from an HttpServletResponse object. It does not exhibit characteristics of a God Class, such as accumulating many responsibilities or managing multiple unrelated functionalities."
+  },
+  {
+    "id": 1306,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet provided is a simple implementation of the `Pageable` interface, delegating most of its methods to another `Pageable` instance. It does not accumulate many responsibilities or manage multiple unrelated functionalities. Therefore, it does not exhibit the characteristics of a God Class (Blob) code smell."
+  },
+  {
+    "id": 1311,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class ServletEndpointDiscoverer appears to be focused on discovering and managing servlet endpoints, which is a single responsibility. It does not appear to be managing multiple, unrelated functionalities and does not violate the Single Responsibility Principle."
+  },
+  {
+    "id": 1314,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The code is a large block of text without clear structure or organization, making it difficult to read and understand."
+  },
+  {
+    "id": 1316,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet provided is an interface with a single method, which is a clear indication that it adheres to the Single Responsibility Principle (SRP). It is designed to handle a specific responsibility related to certificate pinning, making it a well-defined and focused class. Therefore, it does not exhibit the characteristics of a God Class (Blob)."
+  },
+  {
+    "id": 1321,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet defines a simple data class with a few attributes and methods, each serving a distinct purpose. It does not exhibit characteristics of a God Class as it is focused on a single responsibility and does not manage multiple unrelated functionalities."
+  },
+  {
+    "id": 1324,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet provided is an interface with a single method, which is a typical and acceptable design for an interface. It does not exhibit the characteristics of a God Class (Blob) as it focuses on a single responsibility and does not manage multiple, unrelated functionalities."
+  },
+  {
+    "id": 1330,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `GerritOptions` contains a mix of configuration options, validators, and utility methods. While it does not violate the Single Responsibility Principle (SRP) strictly, it does accumulate functionalities related to Gerrit operations, which could be split into smaller, more focused classes."
+  },
+  {
+    "id": 1339,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet is minimal and focuses on a single responsibility, implementing the `translate` method for the `StfdTranslator` class. It does not exhibit characteristics of a God Class such as accumulating multiple responsibilities or managing unrelated functionalities."
+  },
+  {
+    "id": 1349,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The provided code snippet is a simple implementation of a custom class loader that extends `ClassLoader`. It has only two methods and a constructor, each with a clear and focused responsibility. There is no indication of multiple, unrelated functionalities or poor cohesion, making it a clean and well-defined class."
+  },
+  {
+    "id": 1354,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The provided code snippet is an abstract class with a single method and multiple injected dependencies. It does not exhibit the characteristics of a God Class (Blob) as it is focused on a single responsibility related to type system operations. Therefore, it does not violate the Single Responsibility Principle."
+  },
+  {
+    "id": 1356,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class Event has a minor blob smell as it manages multiple, slightly related functionalities (handling different types of events and file attributes). However, it still adheres to the Single Responsibility Principle by focusing on event handling rather than being overly complex."
+  },
+  {
+    "id": 1359,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The `ArrowType` class has a moderate number of methods and attributes, but it primarily focuses on handling function types and their subtyping, which is a single responsibility. While it could be argued that it could be split into smaller classes, the current design is not significantly impacting readability or maintainability."
+  },
+  {
+    "id": 1360,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `SplitRulesetNodes` has a moderate number of methods and is primarily focused on modifying CSS rulesets, which is its single responsibility. However, it could be refactored to separate concerns further, such as moving the logic for creating new rulesets into a separate utility class."
+  },
+  {
+    "id": 1370,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class CDeleteBookmarkAction has a clear and focused responsibility of deleting bookmarks. It has a single method for the action and a few attributes to manage the provider and rows. This class does not exhibit the characteristics of a God Class (Blob) as it adheres to the Single Responsibility Principle."
+  },
+  {
+    "id": 1372,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet is concise and focused on a single responsibility, which is to handle conditional set operations. It has a clear structure, a single method for emitting code, and a few attributes. There is no indication of multiple unrelated functionalities or poor cohesion."
+  },
+  {
+    "id": 1378,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class AMD64DecrementingSafepointCheckOp has a single method and a few attributes, focusing on a specific responsibility related to decrementing a safepoint check in an AMD64 architecture. It does not exhibit the characteristics of a God Class by managing multiple unrelated functionalities or violating the Single Responsibility Principle."
+  },
+  {
+    "id": 1383,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The provided code snippet for the Customer388 class is minimal and focuses on a single responsibility, which is to represent a customer entity. It has a constructor, an ID, and basic attributes. There are no indications of accumulated responsibilities, multiple unrelated functionalities, or poor cohesion. Therefore, it does not exhibit the God Class (Blob) code smell."
+  },
+  {
+    "id": 1395,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class AMD64IndirectCallOp has a moderate number of methods and attributes, primarily focused on handling indirect calls in AMD64 architecture. However, it does manage multiple functionalities related to method calls and verification, which could be distributed across different classes to improve cohesion and adhere more closely to the Single Responsibility Principle."
+  },
+  {
+    "id": 1399,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class Target_java_lang_Object contains several methods that are related to the Object class, such as getClass, hashCode, toString, wait, notify, and notifyAll. While it does manage multiple functionalities, these functionalities are all related to the core behavior of the Object class and are not spread across unrelated functionalities. Therefore, it does not significantly violate the Single Responsibility Principle and can be considered a minor blob."
+  },
+  {
+    "id": 1403,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class `QueryParameterSetterFactory` does not exhibit the characteristics of a God Class (Blob). It is an abstract class with a clear focus on creating different types of `QueryParameterSetterFactory` instances based on the input parameters. Each subclass (`BasicQueryParameterSetterFactory`, `CriteriaQueryParameterSetterFactory`, `ExpressionBasedQueryParameterSetterFactory`) has a specific responsibility, adhering to the Single Responsibility Principle."
+  },
+  {
+    "id": 1407,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `HttpExchangeTracer` manages both the creation and manipulation of HTTP traces, which could be considered a minor violation of the Single Responsibility Principle. However, the class does not accumulate an excessive number of unrelated functionalities and is relatively focused on its primary responsibility."
+  },
+  {
+    "id": 1409,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The provided code snippet is a simple service class with a constructor that accepts a repository dependency. It does not exhibit any characteristics of a God Class (Blob) as it is focused on a single responsibility and does not accumulate multiple unrelated functionalities."
+  },
+  {
+    "id": 1413,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet provided is a minimal example of a service class in a Spring application. It does not contain any methods or attributes, and its sole purpose is to be a placeholder for dependency injection. Therefore, it does not accumulate too many responsibilities, manage multiple unrelated functionalities, or violate the Single Responsibility Principle. It is a simple and clean implementation, and thus, it does not exhibit the God Class (Blob) code smell."
+  },
+  {
+    "id": 1417,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The provided code snippet is minimal and does not exhibit any characteristics of a God Class (Blob). It is a simple service class with a single constructor that accepts a repository dependency. There is no indication of multiple responsibilities, unrelated functionalities, or poor cohesion."
+  },
+  {
+    "id": 1428,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet provided is a minimal service class with a single constructor. It does not exhibit any characteristics of a God Class (Blob) as it does not contain multiple responsibilities, manage unrelated functionalities, or violate the Single Responsibility Principle."
+  },
+  {
+    "id": 1435,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet provided is a simple service class with no methods or attributes, indicating that it does not accumulate responsibilities or manage multiple functionalities. It is a minimal class that does not violate the Single Responsibility Principle and does not exhibit the characteristics of a God Class (Blob)."
+  },
+  {
+    "id": 1439,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The provided code snippet for the Customer1953 class is minimal and focuses on a single responsibility, which is to represent a customer entity. It does not accumulate many responsibilities, manage multiple unrelated functionalities, or violate the Single Responsibility Principle. Therefore, it does not exhibit the characteristics of a God Class (Blob) code smell."
+  },
+  {
+    "id": 1441,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class BindableSolrParameter has a minimal number of responsibilities and attributes. It primarily serves to encapsulate a solr parameter with an index, value, and boost. There is no indication of multiple, unrelated functionalities or poor cohesion."
+  },
+  {
+    "id": 1443,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet defines a class `ConstShuffleBytesOp` with a single method `emitCode` and a constructor. It manages a specific functionality related to shuffling bytes, which aligns with the Single Responsibility Principle. The class is not overly complex and does not exhibit characteristics of a God Class."
+  },
+  {
+    "id": 1460,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `PushCommand` manages multiple functionalities related to pushing values to a data structure, such as setting the direction (left or right), handling upsert operations, and managing key and value attributes. While it does not violate the Single Responsibility Principle, it could be refactored to separate concerns into smaller, more focused classes."
+  },
+  {
+    "id": 1462,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The provided code snippet is a simple abstract class with a minimal number of responsibilities and attributes. It does not exhibit the characteristics of a God Class (Blob) as it focuses on a single responsibility (representing an object with a type)."
+  },
+  {
+    "id": 1463,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The code contains a large blob of logic within the `lower` method, which is difficult to understand and maintain. It handles various operations such as exception handling, bytecode exception lowering, and memory operations, making it a single, complex function rather than several smaller, more focused ones."
+  },
+  {
+    "id": 1469,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The class Z has only a few methods and does not appear to be managing multiple, unrelated functionalities. It does not violate the Single Responsibility Principle and does not seem to be a God Class."
+  },
+  {
+    "id": 1474,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Could not parse JSON from model output."
+  },
+  {
+    "id": 1475,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `RewriteResult` has a single responsibility, which is to encapsulate the result of a code rewrite operation. It has a constructor and a method that summarizes the operations performed based on bit flags. While it could be argued that the method `summarize` could be broken down into smaller methods, the current implementation is not overly complex and does not significantly violate the Single Responsibility Principle."
+  },
+  {
+    "id": 1484,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "none",
+    "reasoning": "The code snippet is a simple interface with a single method, which is a clear indication of a Single Responsibility Principle (SRP) being followed. It does not accumulate multiple responsibilities or manage unrelated functionalities, making it a clean and focused class."
+  },
+  {
+    "id": 1488,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "minor",
+    "reasoning": "The class `RequestHandlerRetryAdvice` manages multiple functionalities including retry logic, message handling, and recovery callbacks. While it does not accumulate an extremely large number of methods or attributes, it does handle multiple responsibilities which could be split into smaller classes for better cohesion and maintainability."
+  }
+]

@@ -1,0 +1,5 @@
+file,smell,model,strategy,total_evaluated,accuracy,macro_precision,macro_recall,macro_f1,weighted_precision,weighted_recall,weighted_f1
+ollama_results_blob_qwen2_5-coder-7b_Adversarial-Refutation.json,blob,qwen2_5-coder-7b,Adversarial-Refutation,175,0.2971,0.2593,0.3287,0.1468,0.8017,0.2971,0.3936
+ollama_results_data_class_qwen2_5-coder-7b_Adversarial-Refutation.json,data class,qwen2_5-coder-7b,Adversarial-Refutation,175,0.2343,0.2655,0.2616,0.1639,0.6453,0.2343,0.2732
+ollama_results_feature_envy_qwen2_5-coder-7b_Adversarial-Refutation.json,feature envy,qwen2_5-coder-7b,Adversarial-Refutation,175,0.7086,0.2952,0.2822,0.283,0.6968,0.7086,0.7011
+ollama_results_long_method_qwen2_5-coder-7b_Adversarial-Refutation.json,long method,qwen2_5-coder-7b,Adversarial-Refutation,175,0.76,0.4199,0.5296,0.4498,0.8533,0.76,0.7947

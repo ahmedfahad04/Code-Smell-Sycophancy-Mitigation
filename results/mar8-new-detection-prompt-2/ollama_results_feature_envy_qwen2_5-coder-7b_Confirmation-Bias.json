@@ -1,0 +1,1402 @@
+[
+  {
+    "id": 533,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `writeLength` is focused on calculating the length of data related to its own class, without heavily relying on the data and functions of another class. It performs operations on its own attributes and methods, indicating it is appropriately placed within its class."
+  },
+  {
+    "id": 553,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `getPropertyMapping` is focused on its own class's data and functions, accessing and manipulating its own class's `knownMappings` and `mappings` variables. It does not rely heavily on another class's data and functions, nor does it display a strong interest in another class's members. Therefore, it does not exhibit the特征 envy code smell."
+  },
+  {
+    "id": 564,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `DynamicExpression` is focused on its own data and functions, performing operations relevant to its own class without heavily relying on another class's data and functions."
+  },
+  {
+    "id": 566,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method adjustRelativePath does not rely heavily on the data and functions of another class. It focuses on manipulating and validating a file path, which is within its own class's responsibilities."
+  },
+  {
+    "id": 570,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The `equals` method is focused on comparing the current object with another object of the same class, accessing and comparing its own fields (`factory` and `global`). It does not rely heavily on the data and functions of another class, nor does it perform operations on another class's attributes or methods. Therefore, it does not exhibit the characteristics of feature envy."
+  },
+  {
+    "id": 573,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method 'endAccess' is accessing and relying on the data and function of another class ('ClusterManagerBase') rather than its own. This suggests that the method might be better placed in the 'ClusterManagerBase' class, indicating a possible feature envy smell."
+  },
+  {
+    "id": 575,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `setPerUserTestWhileIdle` is focused on manipulating its own class's data (`perUserTestWhileIdle`) and does not rely heavily on another class's data or functions. It is performing operations on its own class's attributes, which is appropriate for its purpose."
+  },
+  {
+    "id": 577,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `getText` is focused on processing a string to extract text between specific tags, which is a task related to its own class. It does not access or rely heavily on the data and functions of another class, nor does it display more interest in another class's members. Therefore, it does not exhibit the characteristics of a Feature Envy code smell."
+  },
+  {
+    "id": 581,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method 'init' is focused on initializing an 'Introspector' object with the current class's 'log' attribute, which is a typical responsibility for the class. It does not rely heavily on another class's data or methods and is appropriately placed within the class."
+  },
+  {
+    "id": 613,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `validateToken` is focused on its own data and functions, primarily dealing with the JWT token and its validation. It does not rely heavily on the data and functions of another class, nor does it display a strong interest in another class's members. Therefore, there is no evidence of feature envy in this method."
+  },
+  {
+    "id": 617,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method setProperty accesses and relies on the data and functions of another class (System and internalProperties) rather than its own. While it does not fully exhibit the characteristics of feature envy, it does show a slight preference for the methods of other classes."
+  },
+  {
+    "id": 622,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method does not exhibit any signs of feature envy. It focuses on processing log entries and extracting relevant information, which is within its own class's responsibility."
+  },
+  {
+    "id": 637,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method 'stacks' is focused on creating an instance of 'Stacks' using data and methods from the current class. It does not access or rely heavily on data and functions from another class, nor does it perform operations on another class's attributes or methods. Therefore, it does not exhibit the characteristics of a 'Feature Envy' code smell."
+  },
+  {
+    "id": 641,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `replaceSubstitution` is focused on manipulating the data within its own class and does not rely heavily on the data and functions of another class. It performs operations on its own parameters and does not show signs of feature envy."
+  },
+  {
+    "id": 667,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `equals` is focused on the data and functions within its own class (`StatusMessage`). It does not access or rely heavily on the data and functions of another class. Therefore, it does not exhibit the characteristics of feature envy."
+  },
+  {
+    "id": 679,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `getSiblingIndexWithClassName` is focused on the data and functions within the `Element` class, specifically accessing and manipulating its sibling elements and class names. It does not rely heavily on the data and functions of another class, nor does it display more interest in another class's members. Therefore, it does not exhibit the characteristics of a Feature Envy code smell."
+  },
+  {
+    "id": 683,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The toString method is focused on its own class members and does not access or rely heavily on data and functions from another class. It simply constructs a string representation of the object's state, which is a common and appropriate use of such a method."
+  },
+  {
+    "id": 693,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method 'equals' is focused on its own class 'Key' and accesses its own attributes 'annotationType' and 'type'. It does not rely heavily on the data and functions of another class, nor does it display more interest in another class's members. Therefore, it does not exhibit the特征 envy code smell."
+  },
+  {
+    "id": 697,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method 'replaceWith' is focused on its own class and its operations are related to the class's data and methods. It does not rely heavily on another class's data and functions, nor does it perform operations on another class's attributes or methods. Therefore, it does not exhibit the characteristics of a Feature Envy code smell."
+  },
+  {
+    "id": 711,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method does not access or rely heavily on the data and functions of another class. It focuses on its own class's data and functions, and there is no indication of feature envy."
+  },
+  {
+    "id": 713,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `rule__MdCategory__Group_4_0__1__Impl` is focused on operations within its own class `MdCategory`, specifically accessing and manipulating its own attributes. It does not rely heavily on data or functions from another class, nor does it exhibit a clear interest in another class's members. Therefore, it does not exhibit the Feature Envy code smell."
+  },
+  {
+    "id": 723,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `get` is focused on its own class and does not rely heavily on the data and functions of another class. It performs operations on its own class's attributes and methods, adhering to the principle of cohesion."
+  },
+  {
+    "id": 738,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `toString` is focused on the data and functions within its own class, specifically accessing and using `_info` and `_callback` attributes. It does not rely heavily on the data and functions of another class, nor does it display a clear interest in another class's members. Therefore, it does not exhibit the特征 envy code smell."
+  },
+  {
+    "id": 742,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `resolveGenericRef` is focused on the data and functions within its own class, `GenericRef`. It does not rely heavily on the data and functions of another class, nor does it perform operations on another class's attributes or methods. Therefore, it does not exhibit the characteristics of a Feature Envy code smell."
+  },
+  {
+    "id": 755,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `format` is focused on manipulating the data within its own class and does not rely heavily on the data and functions of another class. It performs operations on its own attributes and methods, which is consistent with the intended functionality of the method."
+  },
+  {
+    "id": 757,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method 'updated' is focused on its own class and does not rely heavily on the data and functions of another class. It performs operations on its own class's attributes and methods, and it does not display more interest in the members of another class."
+  },
+  {
+    "id": 761,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method onKapuaEvent does not access or rely heavily on the data and functions of another class. It focuses on its own class and performs operations related to its own logic."
+  },
+  {
+    "id": 765,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `hashCode` is focused on the data and functions within its own class, specifically the `threads` attribute. It does not access or rely heavily on the data and functions of another class, nor does it perform operations on another class's attributes or methods. Therefore, it does not exhibit the特征 envy code smell."
+  },
+  {
+    "id": 769,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The `hashCode` method is focused on the data and functions of its own class (`this.alias`, `this.ciphers`, etc.), and does not rely heavily on the data and functions of another class. It is performing operations on its own attributes, which is appropriate for a `hashCode` method."
+  },
+  {
+    "id": 773,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `writeVersion` is focused on its own class (`JsonWriter`) and its data, specifically the `serializeNulls` property. It does not rely heavily on the data and functions of another class, nor does it perform operations on another class's attributes or methods. Therefore, it does not exhibit the characteristics of a Feature Envy code smell."
+  },
+  {
+    "id": 783,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `checkDeviceListLength` is accessing and relying on the data and functions of the `DeviceListResultImpl` class, which is not its own. This suggests a possible misplacement of the method. However, the method is performing its intended operation within the context of the `DeviceListResultImpl` class, and it is not accessing or relying on the data and functions of another class excessively. Therefore, the smell is absent."
+  },
+  {
+    "id": 805,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method does not access or rely heavily on the data and functions of another class. It focuses on its own data and operations."
+  },
+  {
+    "id": 812,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `getPageEncodingFromDirective` is focused on processing attributes and extracting encoding information, which is relevant to its own class. It does not rely heavily on data and functions of another class, nor does it display a strong interest in members of another class. Therefore, it does not exhibit the characteristics of a Feature Envy code smell."
+  },
+  {
+    "id": 819,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `getLoggerLevel` is focused on accessing and manipulating the data and functions of the `Logger` class, which is its primary responsibility. It does not rely heavily on another class or display a clear interest in another class's members. Therefore, it does not exhibit the characteristics of a Feature Envy code smell."
+  },
+  {
+    "id": 827,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method does not access or rely heavily on the data and functions of another class. It is focused on its own class's data and functions."
+  },
+  {
+    "id": 830,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `getFragments` is accessing data and functionality from another class (`packageAdmin`), but it is performing operations specific to its own class (`Bundle`). This method does not exhibit the characteristics of feature envy as it is focused on its own class's data and functions."
+  },
+  {
+    "id": 852,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `getName` accesses data and methods from another class (`lower` and `upper`), which suggests it might be better placed in those classes. However, the impact is minor as it only involves accessing data and not performing operations that could be moved to the other classes."
+  },
+  {
+    "id": 855,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `getApplicationToRun` is focused on its own class and its responsibilities, accessing and manipulating data and methods within its own class context. It does not rely heavily on the data and functions of another class, nor does it display a strong interest in another class's members. Therefore, there is no evidence of feature envy in this code snippet."
+  },
+  {
+    "id": 874,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `initializeEvent` is focused on the data and functions within its own class, `BundleEvent`. It does not access or rely heavily on the data and functions of another class. Therefore, it does not exhibit the characteristics of a Feature Envy code smell."
+  },
+  {
+    "id": 877,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `addVariableOnClasspath` is focused on its own class and its responsibilities, such as logging and selecting a library tree item. It does not rely heavily on another class's data and functions, nor does it perform operations on another class's attributes or methods. Therefore, it does not exhibit the特征 envy code smell."
+  },
+  {
+    "id": 879,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method 'executeUrl' is focused on its own class and does not rely heavily on the data and functions of another class. It is passing parameters related to proxy settings to another method, but this is a necessary part of its functionality rather than a sign of feature envy."
+  },
+  {
+    "id": 882,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `getSensorType` is focused on accessing and utilizing data and methods from its own class (`DeviceSensorValue`). It does not rely heavily on another class's data and functions, nor does it display a strong interest in another class's members. Therefore, it does not exhibit the characteristics of a Feature Envy code smell."
+  },
+  {
+    "id": 921,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method mT__66 does not access or rely on the data and functions of another class. It simply matches the string 'if' and does not perform any operations on another class's attributes or methods. Therefore, it does not exhibit the特征 envy code smell."
+  },
+  {
+    "id": 933,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `specialStateTransition` is focused on its own data and functions, and does not rely heavily on the data and functions of another class. It performs operations on its own attributes and methods, and does not show a clear indication of feature envy."
+  },
+  {
+    "id": 938,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method myCacheKey() is focused on the data and functions within its own class, specifically the attributes and methods of the class it belongs to. It does not rely heavily on the data and functions of another class, nor does it perform operations on another class's attributes or methods. Therefore, it does not exhibit the characteristics of feature envy."
+  },
+  {
+    "id": 955,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `toString` accesses the `entrySet` of the class it belongs to, which is typical for a collection class. It does not rely excessively on the data and functions of another class, and it is focused on its own data and methods. While it could be argued that this method could be moved to a utility class, it does not exhibit strong signs of feature envy."
+  },
+  {
+    "id": 979,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The constructor does not access or rely heavily on the data and functions of another class. It primarily initializes the class with dependencies and sets up the necessary attributes. There is no indication of feature envy in this code snippet."
+  },
+  {
+    "id": 996,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `shouldParseContainerAtom` is focused on the data and functions within its own class, specifically checking if an atom belongs to a container type. It does not rely heavily on the data and functions of another class and performs operations on its own data, indicating that it is correctly placed in its class."
+  },
+  {
+    "id": 1017,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method setCommentCount is focused on its own class and does not rely heavily on the data and functions of another class. It operates on its own attributes and methods, adhering to the principle of cohesion."
+  },
+  {
+    "id": 1019,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `joinLongs` is focused on its own data and functions, performing operations on its own parameters (`tokens` and `delimiter`). It does not rely heavily on the data and functions of another class, nor does it display more interest in another class's members. Therefore, it does not exhibit the characteristics of a Feature Envy code smell."
+  },
+  {
+    "id": 1021,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `readNullTerminatedString` is focused on its own class's data and functions, accessing and manipulating its own `data`, `position`, and `limit` members. It does not rely heavily on another class's data or functions, nor does it display a strong interest in another class's members. Therefore, it does not exhibit the characteristics of a Feature Envy code smell."
+  },
+  {
+    "id": 1023,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `verifyAllParameters` is focused on the data and functions within its own class (`parameterValueMap` and `verifyParameter`). It does not access or rely heavily on the data and functions of another class, nor does it display more interest in the members of other classes. Therefore, it does not exhibit the characteristics of a Feature Envy code smell."
+  },
+  {
+    "id": 1043,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method 'computeAndDisplayPin' is focused on its own class and does not rely heavily on the data and functions of another class. It performs operations on its own class's attributes and methods, and it does not display more interest in the members of other classes."
+  },
+  {
+    "id": 1047,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `computeBreaks` is focused on its own data and functions, primarily manipulating the `text` variable and updating the `state` object. It does not rely heavily on the `CommentsHelper` class beyond calling its `rewrite` method, which is a typical use case for such utility methods. Therefore, there is no indication of feature envy in this code snippet."
+  },
+  {
+    "id": 1052,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method does not access or rely heavily on the data and functions of another class. It initializes the current class with the provided credentials and encryption materials provider, along with default configuration settings. There is no indication of feature envy in this method."
+  },
+  {
+    "id": 1054,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `provideRead` is focused on creating a `Request` object and does not rely heavily on the data and functions of another class. It primarily uses parameters passed to it to configure the request, which is appropriate for its purpose."
+  },
+  {
+    "id": 1059,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `readJson` is focused on reading data from an `HttpServletRequest` and converting it to a `Map<String, Object>`. It does not rely heavily on the data and functions of another class and performs operations relevant to its own class. Therefore, it does not exhibit the特征 envy code smell."
+  },
+  {
+    "id": 1062,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method does not access or rely heavily on the data and functions of another class. It focuses on its own data and performs operations relevant to its own attributes."
+  },
+  {
+    "id": 1067,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The constructor method is focused on initializing the current class with the necessary configurations and dependencies. It does not access or rely heavily on the data and functions of another class, nor does it perform operations on another class's attributes or methods. Therefore, it does not exhibit the characteristics of a Feature Envy code smell."
+  },
+  {
+    "id": 1088,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The constructor does not access or rely heavily on the data and functions of another class. It initializes its own fields and does not perform operations on another class's attributes or methods."
+  },
+  {
+    "id": 1091,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `createTask` is focused on its own data and functions, specifically the creation of tasks based on the provided parameters. It does not rely heavily on the data and functions of another class, nor does it perform operations on another class's attributes or methods. Therefore, it does not exhibit the characteristics of a Feature Envy code smell."
+  },
+  {
+    "id": 1113,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method 'runFunctions' is focused on the data and functions within its own class, 'CommandHandler'. It does not rely heavily on the data and functions of another class and performs operations on its own class's attributes and methods. Therefore, it does not exhibit the characteristics of a 'Feature Envy' code smell."
+  },
+  {
+    "id": 1115,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `computeIfAbsent` is part of the `Map` interface and is designed to operate on the data and functions within its own class. It does not access or rely heavily on the data and functions of another class. Therefore, it does not exhibit the characteristics of feature envy."
+  },
+  {
+    "id": 1120,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method 'sendRestRequest' is delegating its functionality to another class, _restClient, and does not access or rely heavily on the data and functions of its own class. It simply forwards the request to _restClient, which is the expected behavior for a forwarding client. Therefore, there is no feature envy smell present."
+  },
+  {
+    "id": 1123,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `updateState` is focused on updating the state of its own class, primarily by manipulating its own attributes and calling its own methods. It does not rely heavily on the data and functions of another class, nor does it perform operations on another class's attributes or methods. Therefore, it does not exhibit the characteristics of a Feature Envy code smell."
+  },
+  {
+    "id": 1130,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method 'supportsSubqueriesInQuantifieds' does not access or rely heavily on the data and functions of another class. It simply checks if the object is closed and returns a boolean value. This method is focused on its own class and does not exhibit any feature envy."
+  },
+  {
+    "id": 1132,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `addReqParam` is simply delegating the call to the superclass without accessing or modifying any data or functions of another class. It does not exhibit any signs of feature envy."
+  },
+  {
+    "id": 1143,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `setRegion` is focused on the data and functions within its own class, specifically the `regionId` and the `setRegion` method. It does not rely heavily on the data and functions of another class. Therefore, it does not exhibit the characteristics of a Feature Envy code smell."
+  },
+  {
+    "id": 1144,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method tcpOptions is focused on its own class and does not access or rely heavily on the data and functions of another class. It is performing operations on its own attributes, which is appropriate for its class."
+  },
+  {
+    "id": 1156,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method does not rely heavily on the data and functions of another class. It focuses on its own class's data and functions."
+  },
+  {
+    "id": 1165,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method 'definedTags' is focused on its own class and does not rely heavily on another class's data or functions. It simply sets a property and marks it as explicitly set, which is typical for a builder pattern method."
+  },
+  {
+    "id": 1173,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method 'nodePoolId' is focused on its own class and does not access or rely heavily on the data and functions of another class. It simply sets the value of 'nodePoolId' and updates the 'explicitlySet' set, which are both within its own class. Therefore, it does not exhibit any feature envy."
+  },
+  {
+    "id": 1178,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `cfBackupHandle` is focused on setting the `cfBackupHandle` attribute and updating the `__explicitlySet__` collection within its own class. It does not rely heavily on the data and functions of another class, nor does it perform operations on another class's attributes or methods. Therefore, it does not exhibit the characteristics of feature envy."
+  },
+  {
+    "id": 1180,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `build()` is focused on its own class, `GetRouteTableRequest`, and does not rely heavily on another class. It simply sets an invocation callback on the request object and returns it, which is a typical pattern for builder methods."
+  },
+  {
+    "id": 1182,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method 'severe' is focused on its own class and does not rely heavily on the data and functions of another class. It performs operations relevant to its own class, namely logging at the SEVERE level."
+  },
+  {
+    "id": 1189,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `createPreauthenticatedRequest` is focused on its own data and functions, primarily dealing with the `request` object and its methods. It does not rely heavily on the data and functions of another class, nor does it perform operations on another class's attributes or methods. Therefore, it does not exhibit the characteristics of a Feature Envy code smell."
+  },
+  {
+    "id": 1190,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `generateAutonomousDatabaseWallet` is focused on its own data and functions, and does not rely heavily on the data and functions of another class. It performs operations on its own attributes and methods, and does not display an interest in the members of other classes."
+  },
+  {
+    "id": 1199,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method 'init' is focused on initializing the current class with the provided interface class and instance. It does not access or rely heavily on the data and functions of another class, nor does it perform operations on another class's attributes or methods. Therefore, it does not exhibit the characteristics of feature envy."
+  },
+  {
+    "id": 1202,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `sslContext` is focused on the data and function within its own class, `Builder`. It does not access or rely heavily on the data and functions of another class. Therefore, it does not exhibit the characteristics of a Feature Envy code smell."
+  },
+  {
+    "id": 1209,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `getActiveNetwork` is focused on the data and functions within its own class, `NetworkManager`. It accesses data (`defaultNetworkActive`, `netIdToNetwork`) and methods (`getActiveNetworkInfo`) that are relevant to its own class, without showing a strong interest in the data and functions of another class."
+  },
+  {
+    "id": 1210,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `finishActivity` is focused on the data and functions within its own class, `ActivityLifecycleMonitor`. It does not rely heavily on the data and functions of another class, nor does it display more interest in the members of another class. The method performs operations on its own class's attributes and methods, which is appropriate for its purpose."
+  },
+  {
+    "id": 1212,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `deleteJobAsync` is focused on its own class and does not access or rely heavily on the data and functions of another class. It performs operations relevant to its own class, specifically related to deleting a job, and does not exhibit the characteristics of feature envy."
+  },
+  {
+    "id": 1217,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `nativeGetPointerCoords` is focused on its own class and its responsibilities, accessing and manipulating data and methods within its own class. It does not rely heavily on the data and functions of another class, nor does it display a strong interest in members of other classes. Therefore, it does not exhibit the特征 envy code smell."
+  },
+  {
+    "id": 1226,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `dumpStack` is focused on the data and functions within its own class, specifically the `ThreadInfo` object and related utilities. It does not rely heavily on the data and functions of another class, nor does it exhibit a strong interest in members of other classes. Therefore, it does not exhibit the特征 envy code smell."
+  },
+  {
+    "id": 1237,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The provided code snippet is a constructor for a class that initializes its own fields with the provided parameters. It does not access or rely on data and functions of another class, nor does it perform operations on another class's attributes or methods. Therefore, it does not exhibit the characteristics of a Feature Envy code smell."
+  },
+  {
+    "id": 1238,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method 'crop' is focused on manipulating data and performing operations within its own class ('ImageArguments'). It does not rely heavily on the data and functions of another class, nor does it display more interest in the members of another class. Therefore, it does not exhibit the characteristics of a 'Feature Envy' code smell."
+  },
+  {
+    "id": 1245,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `verifyVMInstall` is focused on the data and functions within its own class, `GrailsLaunchConfiguration`. It accesses and relies on the data and functions of the `GrailsLaunchArgumentUtils` class to retrieve a `GrailsInstall` object, but it does not perform operations on the `GrailsInstall` object itself. Instead, it delegates the verification of the Java installation to the `GrailsInstall` object. This method is not showing more interest in the members of another class and is performing operations on its own class's attributes or methods, indicating that it is correctly placed in its own class."
+  },
+  {
+    "id": 1247,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method does not access or rely heavily on the data and functions of another class. It simply passes through the parameters to the superclass method, without performing any operations on other classes' attributes or methods."
+  },
+  {
+    "id": 1250,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method 'schedule' is focused on the 'Job' object and its methods, such as 'setRule', 'setPriority', and 'schedule'. It does not access or rely heavily on the data and functions of another class. Therefore, it does not exhibit the characteristics of a 'Feature Envy' code smell."
+  },
+  {
+    "id": 1258,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method canRetryRequestIfRefreshableAuthTokenUsed is focused on the data and functions within its own class. It accesses the authenticationDetailsProvider to check if it's an instance of RefreshableOnNotAuthenticatedProvider and then refreshes it if necessary. This method does not rely heavily on the data and functions of another class and is performing operations on its own class's attributes and methods."
+  },
+  {
+    "id": 1284,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method does not access or rely heavily on the data and functions of another class. It focuses on its own data members and performs operations relevant to its own class."
+  },
+  {
+    "id": 1288,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method 'addConstantSet' is directly interacting with another class's method 'addConstantSet' from the 'metadata' object. This indicates that the method might be better suited in the 'metadata' class rather than the class where it is currently located, suggesting a potential feature envy smell. However, the current implementation is straightforward and does not exhibit any significant issues that would classify it as a major or critical feature envy smell."
+  },
+  {
+    "id": 1297,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `rabbitMessagingTemplate` is a simple factory method that creates an instance of `RabbitMessagingTemplate` using the provided `RabbitTemplate`. It does not access or rely heavily on the data and functions of another class, nor does it display more interest in the members of other classes. Therefore, it does not exhibit the characteristics of a Feature Envy code smell."
+  },
+  {
+    "id": 1299,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `formatQueryString` is focused on its own data and functions, primarily dealing with string manipulation and URL encoding. It does not rely heavily on the data and functions of another class, nor does it perform operations on another class's attributes or methods. Therefore, it does not exhibit the characteristics of a Feature Envy code smell."
+  },
+  {
+    "id": 1300,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method notifyConflict does not access or rely heavily on the data and functions of another class. It focuses on operations within its own class, specifically displaying a warning message. Therefore, it does not exhibit the Feature Envy code smell."
+  },
+  {
+    "id": 1319,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `test` is focused on the data and functions within its own class, `AnnotationUtils` and `AnnotatedElementUtils`. It does not rely heavily on the data and functions of another class, nor does it perform operations on another class's attributes or methods. Therefore, it does not exhibit the characteristics of a Feature Envy code smell."
+  },
+  {
+    "id": 1329,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `requestFields` is focused on its own class and its data, specifically the `requestField` method. It does not rely heavily on the data and functions of another class, nor does it display more interest in another class's members. Therefore, there is no evidence of a Feature Envy code smell."
+  },
+  {
+    "id": 1334,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method 'decodeParams()' is likely part of the class's responsibility and does not appear to be accessing or relying heavily on another class's data and functions."
+  },
+  {
+    "id": 1337,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `vmExecutablePath` is focused on the data and functions within its own class `Vm`. It accesses and operates on the `Vm` object to determine the executable path, which is appropriate for its responsibilities."
+  },
+  {
+    "id": 1347,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `onFailure` is focused on its own class and does not rely heavily on the data and functions of another class. It performs operations relevant to its own class and does not exhibit the characteristics of feature envy."
+  },
+  {
+    "id": 1363,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `resolveCustomPdxSerializer` is focused on the data and functions within its own class, `PdxSerializerResolver`. It does not rely heavily on the data and functions of another class. The method is performing operations on its own class's attributes and methods, and it is not displaying more interest in the members of another class."
+  },
+  {
+    "id": 1364,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `toString()` is accessing the `description` attribute of another class, which is a common practice in Java. It does not indicate a misplacement of the method and is not accessing or relying heavily on the data and functions of another class."
+  },
+  {
+    "id": 1366,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method does not access or rely heavily on the data and functions of another class. It initializes its own fields and calls the superclass constructor, which is typical for a constructor in a class."
+  },
+  {
+    "id": 1374,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method 'close' is focused on its own class and its data members. It does not rely heavily on the data and functions of another class, nor does it perform operations on another class's attributes or methods. Therefore, it does not exhibit the characteristics of a Feature Envy code smell."
+  },
+  {
+    "id": 1382,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `lookup` is focused on its own class and does not access or rely heavily on the data and functions of another class. It performs operations on its own class's attributes and methods, and it does not show an interest in the members of other classes."
+  },
+  {
+    "id": 1386,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `getOptionClass` is focused on the data and functionality within its own class, `OptionDescriptor`. It does not rely heavily on the data and functions of another class, nor does it display more interest in another class's members. Therefore, it does not exhibit the characteristics of a Feature Envy code smell."
+  },
+  {
+    "id": 1389,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `emitFloatConvert` is focused on its own class and does not rely heavily on the data and functions of another class. It performs operations on its own class's attributes and methods, adhering to the principle of cohesion."
+  },
+  {
+    "id": 1405,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `isReference` is focused on the data and functions within its own class. It does not rely heavily on the data and functions of another class. The method is performing operations on its own class's attributes and methods, which is appropriate for its purpose."
+  },
+  {
+    "id": 1438,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `getNameAndSignature` is focused on its own class (`method`), accessing its data and methods without relying heavily on another class. It does not exhibit the characteristics of feature envy."
+  },
+  {
+    "id": 1446,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method mT__60 does not access or rely on the data and functions of another class. It simply matches a string literal, which is a common operation for a lexer or parser. There is no indication of feature envy in this code snippet."
+  },
+  {
+    "id": 1457,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `performBuild` is focused on creating and configuring a `YarnContainer` object, which is its own responsibility. It does not rely heavily on the data and functions of another class, nor does it perform operations on another class's attributes or methods. Therefore, it does not exhibit the characteristics of a Feature Envy code smell."
+  },
+  {
+    "id": 1468,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method 'run' does not access or rely heavily on the data and functions of another class. It operates entirely within its own class and does not exhibit any characteristics of feature envy."
+  },
+  {
+    "id": 1478,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `toString` is focused on the data and functions within its own class, `TemplateVariable`. It accesses and operates on its own class's attributes (`variables`, `type`, `previous`) and methods (`isEmpty`, `getType`, `isCombinable`). There is no indication that this method would be better placed in another class."
+  },
+  {
+    "id": 1479,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method does not access or rely heavily on the data and functions of another class. It is focused on its own class and does not exhibit any signs of feature envy."
+  },
+  {
+    "id": 1491,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `getValue` is focused on its own data and functions, specifically on converting a typed result value to the desired result type. It does not rely heavily on the data and functions of another class, nor does it display more interest in another class's members. Therefore, it does not exhibit the characteristics of feature envy."
+  },
+  {
+    "id": 1494,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `hasNext` is focused on the data and functions within its own class, `IteratorWrapper`. It does not access or rely heavily on the data and functions of another class. Therefore, there is no evidence of feature envy in this code snippet."
+  },
+  {
+    "id": 1495,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `handleRequest` is focused on its own class's responsibilities, such as handling requests and interacting with the `SockJsService`. It does not rely heavily on another class's data and functions, nor does it perform operations on another class's attributes or methods. Therefore, there is no evidence of feature envy in this code snippet."
+  },
+  {
+    "id": 1500,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method does not access or rely heavily on the data and functions of another class. It primarily focuses on handling method invocations for an EntityManager, which is its own class's responsibility."
+  },
+  {
+    "id": 1506,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method does not access or rely heavily on the data and functions of another class. It focuses on its own data members and performs operations relevant to its own context."
+  },
+  {
+    "id": 1509,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method getFactoryMethodMetadata() accesses its own class's data (factoryMethodMetadata) and does not rely heavily on another class's data or methods. It is focused on its own class's functionality, thus not exhibiting feature envy."
+  },
+  {
+    "id": 1513,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method is focused on its own data and functions, accessing and manipulating its own properties and methods. It does not rely heavily on the data and functions of another class."
+  },
+  {
+    "id": 1517,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `create` is focused on its own class and does not rely heavily on the data and functions of another class. It performs operations on its own class's attributes and methods, adhering to the principle of encapsulation."
+  },
+  {
+    "id": 1524,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `getParentOfClass` is focused on the data and functions of the `IModelElement` class, accessing its `getElementParent` method and checking its class type. It does not rely heavily on the data and functions of another class, nor does it perform operations on another class's attributes or methods. Therefore, it does not exhibit the characteristics of a Feature Envy code smell."
+  },
+  {
+    "id": 1528,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method 'run' is focused on accessing and using methods of the 'Class' class, which is its own class. It does not rely heavily on another class's data and functions, nor does it perform operations on another class's attributes or methods. Therefore, it does not exhibit the characteristics of a 'Feature Envy' code smell."
+  },
+  {
+    "id": 1534,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method formatElement is focused on its own class and its data, without heavily relying on the data and functions of another class. It is performing operations on its own model and setting preferences for formatting and cleanup, which are relevant to its own functionality."
+  },
+  {
+    "id": 1540,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method does not access or rely heavily on the data and functions of another class. It simply processes the input parameters and returns a result, which is a typical behavior for a utility method."
+  },
+  {
+    "id": 1543,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `newlineWithIndent` is focused on its own class and does not rely heavily on the data and functions of another class. It performs operations on its own members and does not show a clear indication of feature envy."
+  },
+  {
+    "id": 1555,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `getArrayComponentTypeSimpleName` is focused on processing the data within its own class (`typeName`). It does not rely heavily on the data and functions of another class. Therefore, it does not exhibit the characteristics of feature envy."
+  },
+  {
+    "id": 1558,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `setHeader` is focused on its own class's data and functionality, specifically setting the `header` and updating the `arg2` attribute. It does not rely heavily on another class's data and functions."
+  },
+  {
+    "id": 1561,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `toString` is focused on the data and functions within its own class, `NetworkResource`. It does not access or rely heavily on the data and functions of another class. Therefore, it does not exhibit the characteristics of a Feature Envy code smell."
+  },
+  {
+    "id": 1577,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `isTrustAliasMissing` is focused on the data and functions within its own class (`ComputeState`). It does not rely heavily on the data and functions of another class, nor does it perform operations on another class's attributes or methods. Therefore, it does not exhibit the characteristics of a Feature Envy code smell."
+  },
+  {
+    "id": 1584,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The constructor does not exhibit feature envy as it initializes the class with dependencies and logs relevant information. It does not access or rely heavily on another class's data or methods."
+  },
+  {
+    "id": 1590,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method onManagementStarting accesses data and functions from its own class (likely a subclass of a management system) and does not rely heavily on another class's data and functions. It sets up configuration and environment settings relevant to its own class, rather than showing a strong interest in another class's members."
+  },
+  {
+    "id": 1594,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `get` is focused on accessing and manipulating properties and environment variables within its own class. It does not rely heavily on the data and functions of another class, nor does it display a significant interest in the members of other classes. The method performs operations on its own class's attributes and methods, indicating that it is appropriately placed within its class."
+  },
+  {
+    "id": 1610,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `withTimestampSpec` is accessing data and functions from its own class (`getDimensionsSpec()`) and does not rely heavily on another class. It is performing operations on its own class's attributes, which is appropriate for its functionality."
+  },
+  {
+    "id": 1613,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `containsDownEntity` is focused on the data and functions within its own class, `Entity`. It does not rely heavily on the data and functions of another class and performs operations on its own class's attributes or methods. Therefore, it does not exhibit the characteristics of feature envy."
+  },
+  {
+    "id": 1615,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `processInterfaces` is focused on the data and functions within its own class, `ConfigurationClass`. It does not rely heavily on the data and functions of another class, `SourceClass`, and performs operations relevant to its own class."
+  },
+  {
+    "id": 1618,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `gzip` is focused on its own class and its responsibilities, such as handling the compression of data using GZIP. It does not rely heavily on the data and functions of another class, nor does it perform operations on another class's attributes or methods. Therefore, it does not exhibit the特征 envy code smell."
+  },
+  {
+    "id": 1628,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `handleChunk` is focused on manipulating the data and methods of the `BytesFullResponseHolder` class, which is within the same class. It does not access or rely heavily on data and functions of another class, nor does it display more interest in the members of other classes. Therefore, there is no evidence of a feature envy code smell in this method."
+  },
+  {
+    "id": 1640,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method 'removeHealthMonitor' is focused on its own class and does not rely heavily on the data and functions of another class. It operates on its own attributes and methods, indicating that it is correctly placed in its class."
+  },
+  {
+    "id": 1646,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `write` does not access or rely heavily on the data and functions of another class. It is focused on its own class's data and functions, and it performs operations relevant to its own class. Therefore, it does not exhibit the characteristics of feature envy."
+  },
+  {
+    "id": 1648,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method 'read' is focused on the data and functions within its own class, 'Digest'. It does not access or rely heavily on the data and functions of another class. Therefore, it does not exhibit the特征 envy code smell."
+  },
+  {
+    "id": 1664,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `supplierFromDimensionSelector` is focused on the data and functions within its own class, `DimensionSelector`. It does not rely heavily on the data and functions of another class. The method's primary responsibility is to create a `Supplier` based on the data provided by the `DimensionSelector`, which is a logical placement within the class."
+  },
+  {
+    "id": 1666,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `createReferenceCountedWriter` is focused on creating and configuring a `ReferenceCountedWriter` object, which is its primary responsibility. It does not rely heavily on the data and functions of another class, nor does it perform operations on another class's attributes or methods. Therefore, it does not exhibit the characteristics of a Feature Envy code smell."
+  },
+  {
+    "id": 1674,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `read` is focused on deserializing data into an instance of `FetchRuleKeyLogsRequest`, which is its own class. It does not rely heavily on the data and functions of another class, nor does it perform operations on another class's attributes or methods. Therefore, it does not exhibit the characteristics of Feature Envy."
+  },
+  {
+    "id": 1735,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method does not access or rely heavily on the data and functions of another class. It simply calls another method within its own class, which is a common practice and does not indicate feature envy."
+  },
+  {
+    "id": 1744,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `sequence_Fragment1_FragmentCaller` is focused on the data and functions of its own class and does not rely heavily on the data and functions of another class. It performs operations on its own class's attributes and methods, and it does not display more interest in the members of other classes."
+  },
+  {
+    "id": 1753,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `getScope` is focused on its own class and does not rely heavily on the data and functions of another class. It performs operations relevant to its own class and does not show signs of feature envy."
+  },
+  {
+    "id": 1756,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `rule__MandatoryModel__Group__2` does not access or rely heavily on the data and functions of another class. It focuses on its own class's operations, making it unlikely to exhibit feature envy."
+  },
+  {
+    "id": 1762,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `rule__XShortClosure__Group_0__0__Impl` does not access or rely heavily on the data and functions of another class. It focuses on its own class's data and functions, demonstrating no feature envy."
+  },
+  {
+    "id": 1768,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method 'eIsSet' is focused on the data and function within its own class, 'Amodel', and does not access or rely heavily on the data and functions of another class. It checks if the 'elements' list is not null and not empty, which is a typical operation for managing its own data."
+  },
+  {
+    "id": 1774,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `sequence` is focused on the data and functions within its own class, `Bug250313Switch`. It does not access or rely heavily on the data and functions of another class, nor does it display more interest in the members of other classes. Therefore, it does not exhibit the特征厌恶 code smell."
+  },
+  {
+    "id": 1801,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method 'home' does not access or rely heavily on the data and functions of another class. It simply adds an attribute to the model and returns a view name, which is typical for a controller method."
+  },
+  {
+    "id": 1829,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `equals` is focused on the data and functions within its own class (`ThrowsPattern`). It compares the `required` and `forbidden` fields of the current object with those of another `ThrowsPattern` object, which is appropriate for the `equals` method. There is no indication of feature envy as the method is performing its intended task within the context of its own class."
+  },
+  {
+    "id": 1840,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `doAggressiveInner` is focused on the data and functions within its own class, `LazyClassGen`. It does not rely heavily on the data and functions of another class, nor does it perform operations on another class's attributes or methods. Therefore, it does not exhibit the characteristics of a Feature Envy code smell."
+  },
+  {
+    "id": 1842,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method m39 accesses and increments multiple instance variables (i0 to i9) that are presumably part of the same class. This indicates that the method is focused on the data and functions within its own class, rather than accessing data and functions of another class. Therefore, there is no evidence of feature envy in this code snippet."
+  },
+  {
+    "id": 1850,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method does not access or rely heavily on the data and functions of another class. It focuses on its own class's data and functions."
+  },
+  {
+    "id": 1869,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `configureFormat` is focused on configuring the `FixedWidthFormat` object, which is its own responsibility. It does not access or rely heavily on the data and functions of another class. Therefore, there is no indication of feature envy."
+  },
+  {
+    "id": 1878,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method does not access or rely heavily on the data and functions of another class. It focuses on its own data and functions, creating an endpoint for a disruptor component."
+  },
+  {
+    "id": 1882,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method does not access or rely heavily on the data and functions of another class. It simply aggregates processors from different classes into a single map, which is a common and appropriate use of the method."
+  },
+  {
+    "id": 1885,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `createEndpoint` primarily deals with creating and configuring an instance of `BeanValidatorEndpoint`, which is its own class. It does not rely heavily on the data and functions of another class, nor does it exhibit a strong interest in another class's members. Therefore, it does not exhibit the特征 envy code smell."
+  },
+  {
+    "id": 1890,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method does not rely heavily on the data and functions of another class. It focuses on its own responsibilities, which is a clear indication that it is properly placed within its class."
+  },
+  {
+    "id": 1892,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method does not access or rely heavily on the data and functions of another class. It focuses on initializing its own class members and does not exhibit any signs of feature envy."
+  },
+  {
+    "id": 1894,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The toString method is focused on the data and functions of its own class, RouteMeta, and does not rely heavily on the data and functions of another class. It is a standard method used for string representation and does not exhibit feature envy."
+  },
+  {
+    "id": 1906,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `getUlong56` is focused on its own class's data and functions, accessing and manipulating the `buffer` and `position` members of the class. It does not rely heavily on another class's data and functions, nor does it display a strong interest in them. Therefore, it does not exhibit the特征 envy code smell."
+  },
+  {
+    "id": 1908,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `parseFrom` is a static method that belongs to a generated message class and is designed to parse data from a `CodedInputStream`. It does not access or rely heavily on the data and functions of another class. Instead, it focuses on its own class's data and functionality, making it a suitable method for its class."
+  },
+  {
+    "id": 1930,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `printAllExcludes` is focused on the data and functions within its own class `ModuleDescriptor`. It accesses and manipulates data related to `ModuleDescriptor`, `ExcludeRule`, and `XMLHelper`, which are all part of the same context. There is no indication that this method would be better placed in another class."
+  },
+  {
+    "id": 1932,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method addRequiredAlertProperties is focused on modifying the properties set, which is within its own class. It does not access or rely heavily on the data and functions of another class. Therefore, it does not exhibit the characteristics of feature envy."
+  },
+  {
+    "id": 1934,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method setTmfeIsSet is directly manipulating the state of the current object by setting the tmfe field to null based on the input value. It does not rely on data or methods from another class and is focused on the data and functions within its own class."
+  },
+  {
+    "id": 1939,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method 'repeat' is a utility method that belongs to the class it is in. It does not access or rely heavily on the data and functions of another class. It performs a simple operation of repeating a string a certain number of times, which is a common utility function. Therefore, it does not exhibit the characteristics of feature envy."
+  },
+  {
+    "id": 1952,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `listZookeeper` is focused on operations within its own class `ServerContext` and does not rely heavily on the data and functions of another class. It accesses and operates on the data and methods of its own class to achieve its goal."
+  },
+  {
+    "id": 1954,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The constructor method does not access or rely heavily on the data and functions of another class. It initializes its own fields and does not perform operations on another class's attributes or methods."
+  },
+  {
+    "id": 1968,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `getProcessor` does not access or rely heavily on the data and functions of another class. It focuses on creating an instance of a class passed as a parameter, which is a common and acceptable practice. There is no indication of feature envy in this method."
+  },
+  {
+    "id": 1994,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `connected` is focused on the data and functions of its own class, `SocketHandler`, without relying heavily on another class. It configures the channel, initializes the codec, and sets socket options, all of which are relevant to the class's responsibilities."
+  },
+  {
+    "id": 2003,
+    "model": "qwen2.5-coder:7b",
+    "prompt_strategy": "Confirmation-Bias",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `read` is focused on the data and functions within its own class (`cancelCompaction_args`). It does not access or rely heavily on the data and functions of another class, nor does it display more interest in the members of other classes. Therefore, it does not exhibit the characteristics of a Feature Envy code smell."
+  }
+]
