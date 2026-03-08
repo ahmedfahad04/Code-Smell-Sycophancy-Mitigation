@@ -1,0 +1,5 @@
+smell,model,baseline,variant,dfr_percent,decision_flips,total_common_ids,far_percent,far_aligned,far_total,far_target_label
+blob,qwen2_5-coder-7b,Casual,Confirmation-Bias,47.43,83,175,89.71,157,175,none
+blob,qwen2_5-coder-7b,Casual,Contradictory-Hint,48.57,85,175,92.57,162,175,none
+blob,qwen2_5-coder-7b,Casual,EGDP,16.0,28,175,42.86,75,175,none
+blob,qwen2_5-coder-7b,Casual,False-Premise,51.43,90,175,95.43,167,175,none
