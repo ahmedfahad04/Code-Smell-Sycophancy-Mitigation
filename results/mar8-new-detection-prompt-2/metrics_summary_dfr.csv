@@ -1,4 +1,8 @@
 smell,model,baseline,variant,dfr_percent,decision_flips,total_samples,far_percent
-blob,qwen2_5-coder-7b,Casual,Confirmation-Bias,26.29,46,175,
-feature envy,qwen2_5-coder-7b,Casual,Confirmation-Bias,27.43,48,175,
-long method,qwen2_5-coder-7b,Casual,Confirmation-Bias,13.14,23,175,
+blob,qwen2_5-coder-7b,Casual,Confirmation-Bias,26.857142857142858,47,175,
+blob,qwen2_5-coder-7b,Casual,Contradictory-Hint,18.285714285714285,32,175,0.0
+blob,qwen2_5-coder-7b,Casual,False-Premise,17.71428571428571,31,175,
+feature envy,qwen2_5-coder-7b,Casual,Confirmation-Bias,27.42857142857143,48,175,
+feature envy,qwen2_5-coder-7b,Casual,Contradictory-Hint,18.857142857142858,33,175,0.0
+feature envy,qwen2_5-coder-7b,Casual,False-Premise,27.42857142857143,48,175,
+long method,qwen2_5-coder-7b,Casual,Confirmation-Bias,13.142857142857142,23,175,

@@ -1,9 +1,13 @@
 import streamlit as st
 import json
-import os
 from pathlib import Path
 import pandas as pd
 from typing import List, Dict, Tuple, Optional
+
+
+PROJECT_ROOT = Path(__file__).resolve().parent
+DATASET_PATH = PROJECT_ROOT / "dataset" / "mlcq_filtered.json"
+RESULTS_DIR = PROJECT_ROOT / "results"
 
 # Set page config
 st.set_page_config(
@@ -20,7 +24,7 @@ st.markdown("---")
 def load_dataset():
     """Load the reference dataset from mlcq_filtered.json."""
     try:
-        with open('/home/fahad/Documents/RESEARCH_CODEBASE/MLCQ/dataset/mlcq_filtered.json') as f:
+        with open(DATASET_PATH, 'r', encoding='utf-8') as f:
             data = json.load(f)
         return {item['id']: item for item in data}
     except Exception as e:
@@ -44,6 +48,31 @@ def get_all_json_files(base_path: str) -> List[str]:
     
     return sorted(json_files)
 
+
+def get_json_directories(base_path: Path) -> List[str]:
+    """Return relative directory paths that contain at least one JSON file."""
+    if not base_path.exists():
+        return []
+
+    directories = set()
+
+    if any(base_path.glob("*.json")):
+        directories.add(".")
+
+    for subdir in base_path.rglob("*"):
+        if subdir.is_dir() and any(subdir.glob("*.json")):
+            directories.add(str(subdir.relative_to(base_path)))
+
+    return sorted(directories)
+
+
+def get_json_files_in_directory(base_path: Path, rel_dir: str) -> List[str]:
+    """Return JSON files inside a selected relative directory."""
+    selected_dir = base_path if rel_dir == "." else base_path / rel_dir
+    if not selected_dir.exists() or not selected_dir.is_dir():
+        return []
+    return sorted(str(file) for file in selected_dir.glob("*.json"))
+
 def load_json_file(filepath: str) -> List[Dict]:
     """Load JSON file and return data."""
     try:
@@ -56,7 +85,7 @@ def load_json_file(filepath: str) -> List[Dict]:
 def get_file_display_name(filepath: str) -> str:
     """Get a clean display name for the file."""
     # Get relative path from results directory
-    base = Path("/home/fahad/Documents/RESEARCH_CODEBASE/MLCQ/results")
+    base = RESULTS_DIR
     try:
         rel_path = Path(filepath).relative_to(base)
         return str(rel_path)
@@ -131,36 +160,57 @@ if 'stats' not in st.session_state:
 # Sidebar - File Selection
 st.sidebar.header("📁 File Selection")
 
-results_dir = "/home/fahad/Documents/RESEARCH_CODEBASE/MLCQ/results"
-json_files = get_all_json_files(results_dir)
+results_dir = RESULTS_DIR
+json_files = get_all_json_files(str(results_dir))
 
 if not json_files:
     st.error("No JSON files found in results directory!")
     st.stop()
 
-# Create display names for better UX
-file_display_names = [get_file_display_name(f) for f in json_files]
-file_mapping = {name: path for name, path in zip(file_display_names, json_files)}
+json_directories = get_json_directories(results_dir)
+if not json_directories:
+    st.error("No directories with JSON files were found under results!")
+    st.stop()
 
 st.sidebar.markdown("**Select File 1:**")
+file1_dir = st.sidebar.selectbox(
+    "Choose directory for file 1",
+    json_directories,
+    key="file1_dir_select",
+    format_func=lambda x: "results/" if x == "." else f"results/{x}"
+)
+file1_options = get_json_files_in_directory(results_dir, file1_dir)
+if not file1_options:
+    st.sidebar.error("No JSON files found in selected directory for File 1")
+    st.stop()
+file1_display_names = [get_file_display_name(f) for f in file1_options]
 file1_display = st.sidebar.selectbox(
     "Choose first file",
-    file_display_names,
-    key="file1_select",
-    label_visibility="collapsed"
+    file1_display_names,
+    key="file1_select"
 )
-file1_path = file_mapping[file1_display]
+file1_path = file1_options[file1_display_names.index(file1_display)]
 
 st.sidebar.markdown("---")
 st.sidebar.markdown("**Select File 2:**")
+file2_dir = st.sidebar.selectbox(
+    "Choose directory for file 2",
+    json_directories,
+    key="file2_dir_select",
+    format_func=lambda x: "results/" if x == "." else f"results/{x}"
+)
+file2_options = get_json_files_in_directory(results_dir, file2_dir)
+if not file2_options:
+    st.sidebar.error("No JSON files found in selected directory for File 2")
+    st.stop()
+file2_display_names = [get_file_display_name(f) for f in file2_options]
 file2_display = st.sidebar.selectbox(
     "Choose second file",
-    file_display_names,
-    index=1 if len(file_display_names) > 1 else 0,
-    key="file2_select",
-    label_visibility="collapsed"
+    file2_display_names,
+    index=1 if len(file2_display_names) > 1 else 0,
+    key="file2_select"
 )
-file2_path = file_mapping[file2_display]
+file2_path = file2_options[file2_display_names.index(file2_display)]
 
 st.sidebar.markdown("---")
 

@@ -42,7 +42,7 @@ KNOWN_MODELS = [
 def normalize_severity(value: object) -> str:
     """Normalize severity labels for case-insensitive compatibility."""
     normalized = str(value).strip().lower() if value is not None else ''
-    return normalized 
+    return normalized or 'none'
 
 def load_ground_truth(filepath: str) -> Dict[int, str]:
     """
@@ -104,9 +104,13 @@ def calculate_classification_metrics(
     - Weighted-average (weighted by support)
     - Per-class metrics
     """
-    # Filter to common sample IDs
+    # Filter to ground-truth IDs where severity is not 'none'
     print(f"SIZE OF PREDICTIONS: {len(predictions)}, SIZE OF GROUND TRUTH: {len(ground_truth)}")
-    common_ids = set(predictions.keys()) & set(ground_truth.keys())
+    gt_non_none_ids = {
+        sid for sid, sev in ground_truth.items()
+        if normalize_severity(sev) != 'none'
+    }
+    common_ids = set(predictions.keys()) & gt_non_none_ids
     if not common_ids:
         return {
             'accuracy': 0.0,
@@ -116,7 +120,8 @@ def calculate_classification_metrics(
             'total_evaluated': 0,
         }
 
-    print(f"COMMON SAMPLE IDS: {len(common_ids)} (predictions and ground truth)")
+    print(f"GROUND TRUTH NON-'none' IDS: {len(gt_non_none_ids)}")
+    print(f"COMMON SAMPLE IDS USED FOR METRICS: {len(common_ids)}")
     
     # Align data
     y_true = [normalize_severity(ground_truth[sid]) for sid in sorted(common_ids)]
@@ -124,11 +129,30 @@ def calculate_classification_metrics(
 
     print(f"GROUND TRUTH: ", y_true[:10], "...")
     print(f"PREDICTIONS: ", y_pred[:10], "...")
+
+    # Micro-average (accuracy)
+    accuracy = sum(1 for t, p in zip(y_true, y_pred) if t == p) / len(y_true)
     
-    # Get all unique classes
-    classes = sorted(set(y_true) | set(y_pred))
+    # Get all unique classes, excluding 'none' from per-class reporting
+    classes = sorted(
+        cls for cls in (set(y_true) | set(y_pred))
+        if cls != 'none'
+    )
+
+    if not classes:
+        return {
+            'accuracy': accuracy,
+            'macro_precision': 0.0,
+            'macro_recall': 0.0,
+            'macro_f1': 0.0,
+            'weighted_precision': 0.0,
+            'weighted_recall': 0.0,
+            'weighted_f1': 0.0,
+            'per_class_metrics': {},
+            'total_evaluated': len(common_ids),
+        }
     
-    # Compute metrics using scikit-learn
+    # Compute metrics using scikit-learn (labels exclude 'none')
     precision_macro, recall_macro, f1_macro, _ = precision_recall_fscore_support(
         y_true, y_pred, labels=classes, average='macro', zero_division=0)
     
@@ -137,9 +161,6 @@ def calculate_classification_metrics(
     
     precision_per_class, recall_per_class, f1_per_class, support = precision_recall_fscore_support(
         y_true, y_pred, labels=classes, average=None, zero_division=0)
-    
-    # Micro-average (accuracy)
-    accuracy = sum(1 for t, p in zip(y_true, y_pred) if t == p) / len(y_true)
     
     # Per-class metrics
     per_class = {}
@@ -355,6 +376,7 @@ Examples:
             'weighted_precision':   metrics['weighted_precision'],
             'weighted_recall':      metrics['weighted_recall'],
             'weighted_f1':          metrics['weighted_f1'],
+            'per_class_metrics':    metrics['per_class_metrics'],
         })
 
     if not classification_rows:
@@ -451,8 +473,27 @@ Examples:
     # ---- Save CSV ------------------------------------------------------------
     output_csv = Path(args.output_csv)
     output_csv.parent.mkdir(parents=True, exist_ok=True)
+
+    # Flatten per-class metrics into explicit CSV columns
+    classes_in_results = sorted({
+        cls
+        for row in classification_rows
+        for cls in row.get('per_class_metrics', {}).keys()
+    })
+
+    for row in classification_rows:
+        per_class = row.get('per_class_metrics', {})
+        for cls in classes_in_results:
+            cls_metrics = per_class.get(cls, {})
+            safe_cls = cls.replace(' ', '_')
+            row[f'precision_{safe_cls}'] = cls_metrics.get('precision', 0.0)
+            row[f'recall_{safe_cls}'] = cls_metrics.get('recall', 0.0)
+            row[f'f1_{safe_cls}'] = cls_metrics.get('f1', 0.0)
+            row[f'support_{safe_cls}'] = cls_metrics.get('support', 0)
+
     save_df = (
-        df.drop(columns=['fpath'])
+        pd.DataFrame(classification_rows)
+          .drop(columns=['fpath', 'per_class_metrics'])
           .sort_values(by=['smell', 'model', 'strategy', 'file'])
           .reset_index(drop=True)
     )
