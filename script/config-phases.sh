@@ -56,7 +56,7 @@ declare -A PHASE3=(
     [smells]="feature envy|long method|data class|blob"
     # [strategies]="Casual|Positive|Contradictory-Hint|False-Premise|Confirmation-Bias|Adversarial-Refutation"
     # [strategies]="Contradictory-Hint|False-Premise"
-    [strategies]="Adversarial-RefutationContradictory-Hint|False-Premise|Confirmation-Bias"
+    [strategies]="Adversarial-Refutation|Contradictory-Hint|False-Premise|Confirmation-Bias"
     [ar_comments]="Confirmation-Bias"  # User comments to test (pipe-separated for multiple)
     [limit]="175"
 )

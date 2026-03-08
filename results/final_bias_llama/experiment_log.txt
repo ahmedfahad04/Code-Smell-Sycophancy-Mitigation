@@ -1,0 +1,45 @@
+Experiment Run: 2026-03-08 16:43:50
+Hostname: fahad-hp-g3
+User: sakib
+
+
+════════════════════════════════════════════════════════════
+  PHASE 3: SYCOPHANCY BIAS TESTING (3-4 hrs)
+════════════════════════════════════════════════════════════
+Purpose: Measure Decision Flip Rate (DFR) across bias strategies for all smells
+Metric: Decision Flip Rate (DFR) vs baseline
+
+[0;34m[INFO][0m Testing feature envy with 4 strategies...
+[0;34m[INFO][0m Test: Sycophancy: feature envy - Adversarial-Refutation
+[0;34m[INFO][0m   Smell: feature envy | Models: llama3.1:8b | Strategies: Adversarial-Refutation
+[0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
+[0;34m[INFO][0m   Running Adversarial-Refutation with 1 user comments:
+[0;34m[INFO][0m     - Confirmation-Bias
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'                 --dataset '/home/sakib/Documents/MLCQ/dataset/mlcq_filtered.json'                 --smell 'feature envy'                 --models 'llama3.1:8b'                 --strategies 'Adversarial-Refutation'                 --ar-comment 'Confirmation-Bias'                 --limit 175                 --output-dir '/home/sakib/Documents/MLCQ/results'                 --temperature 0.3                 --top-p 0.9
+[0;32m[✓][0m   ✓ AR with comment 'Confirmation-Bias' completed
+
+[0;34m[INFO][0m Test: Sycophancy: feature envy - Contradictory-Hint
+[0;34m[INFO][0m   Smell: feature envy | Models: llama3.1:8b | Strategies: Contradictory-Hint
+[0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'             --dataset '/home/sakib/Documents/MLCQ/dataset/mlcq_filtered.json'             --smell 'feature envy'             --models 'llama3.1:8b'             --strategies 'Contradictory-Hint'             --limit 175             --output-dir '/home/sakib/Documents/MLCQ/results'             --temperature 0.3             --top-p 0.9
+[0;32m[✓][0m Sycophancy: feature envy - Contradictory-Hint completed
+
+[0;34m[INFO][0m Test: Sycophancy: feature envy - False-Premise
+[0;34m[INFO][0m   Smell: feature envy | Models: llama3.1:8b | Strategies: False-Premise
+[0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'             --dataset '/home/sakib/Documents/MLCQ/dataset/mlcq_filtered.json'             --smell 'feature envy'             --models 'llama3.1:8b'             --strategies 'False-Premise'             --limit 175             --output-dir '/home/sakib/Documents/MLCQ/results'             --temperature 0.3             --top-p 0.9
+[0;32m[✓][0m Sycophancy: feature envy - False-Premise completed
+
+[0;34m[INFO][0m Test: Sycophancy: feature envy - Confirmation-Bias
+[0;34m[INFO][0m   Smell: feature envy | Models: llama3.1:8b | Strategies: Confirmation-Bias
+[0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'             --dataset '/home/sakib/Documents/MLCQ/dataset/mlcq_filtered.json'             --smell 'feature envy'             --models 'llama3.1:8b'             --strategies 'Confirmation-Bias'             --limit 175             --output-dir '/home/sakib/Documents/MLCQ/results'             --temperature 0.3             --top-p 0.9
+[0;32m[✓][0m Sycophancy: feature envy - Confirmation-Bias completed
+
+[0;34m[INFO][0m Testing long method with 4 strategies...
+[0;34m[INFO][0m Test: Sycophancy: long method - Adversarial-Refutation
+[0;34m[INFO][0m   Smell: long method | Models: llama3.1:8b | Strategies: Adversarial-Refutation
+[0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
+[0;34m[INFO][0m   Running Adversarial-Refutation with 1 user comments:
+[0;34m[INFO][0m     - Confirmation-Bias
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'                 --dataset '/home/sakib/Documents/MLCQ/dataset/mlcq_filtered.json'                 --smell 'long method'                 --models 'llama3.1:8b'                 --strategies 'Adversarial-Refutation'                 --ar-comment 'Confirmation-Bias'                 --limit 175                 --output-dir '/home/sakib/Documents/MLCQ/results'                 --temperature 0.3                 --top-p 0.9

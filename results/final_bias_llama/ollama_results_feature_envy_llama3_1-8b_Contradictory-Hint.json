@@ -1,0 +1,1402 @@
+[
+  {
+    "id": 533,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method writeLength() only accesses and relies on the data and functions of its own class, without showing interest in the members of other classes. It performs operations on its own attributes or methods, which is the expected behavior for a method within its own class."
+  },
+  {
+    "id": 553,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method accesses and relies on the data and functions of another class (knownMappings), but it also performs operations on its own attributes (property, itemType). However, the method's primary focus is on retrieving data from the knownMappings, suggesting a minor presence of Feature Envy."
+  },
+  {
+    "id": 564,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The code snippet does not exhibit a 'Feature Envy' code smell as it does not access or rely heavily on the data and functions of another class. The method is focused on its own class's data and functions, and it does not perform operations on another class's attributes or methods."
+  },
+  {
+    "id": 566,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method adjustRelativePath does not access or rely heavily on the data and functions of another class. It operates solely on its own parameters and uses built-in Java functionality to perform its operations, indicating that it is focused on its own data and functions."
+  },
+  {
+    "id": 570,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The equals method is correctly overriding the superclass method and performing necessary comparisons within its own class, without relying heavily on other classes' data and functions."
+  },
+  {
+    "id": 573,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method endAccess() accesses and relies on the data and functions of another class (ClusterManagerBase), but it's not excessive. It's performing a specific operation related to the session and replication valve, which is a reasonable interaction between classes."
+  },
+  {
+    "id": 575,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `setPerUserTestWhileIdle` is accessing and modifying the `perUserTestWhileIdle` map within its own class, which is the expected behavior. It is not relying heavily on the data and functions of another class, so the feature envy smell is absent."
+  },
+  {
+    "id": 577,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method getText() only accesses and relies on the data of the input parameter 'text', which is a string. It does not display interest in the members of other classes, and it does not perform operations on other classes' attributes or methods. Therefore, the Feature Envy code smell is absent in this code."
+  },
+  {
+    "id": 581,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method init() is accessing and relying on the data and functions of the Introspector class, but it is not performing operations on the attributes or methods of the other class. It is simply creating an instance of Introspector, which does not indicate a strong interest in the members of other classes."
+  },
+  {
+    "id": 613,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method validateToken() accesses and relies on the data and functions of other classes, such as SignedJWT and org.apache.shiro.SecurityUtils, rather than its own. However, it does not display a strong interest in these classes, and the operations performed are not extensive. Therefore, the presence of this smell is considered minor."
+  },
+  {
+    "id": 617,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method setProperty() accesses and relies on the data and functions of another class (internalProperties) rather than its own, indicating a possible misplacement of the method. However, the method is not overly dependent on the other class and still performs its primary function within its own class, thus a minor severity level is assigned."
+  },
+  {
+    "id": 622,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The constructor of the JsonGenerator class accesses and relies heavily on the data and functions of the LogIterator class, but it also performs operations on its own attributes and methods, indicating a possible misplacement of some methods. However, the operations are mostly related to the data processing and not the core functionality of the class, so it's not a critical issue."
+  },
+  {
+    "id": 637,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method 'stacks()' does not access or rely heavily on the data and functions of another class. It simply creates a new instance of 'ReactorStacks' and passes in the required parameters, indicating that it is not displaying an unhealthy interest in the members of another class."
+  },
+  {
+    "id": 641,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `replaceSubstitution` does not access or rely heavily on the data and functions of another class, and it performs operations on its own parameters. It focuses on its own input parameters and does not display interest in the members of other classes."
+  },
+  {
+    "id": 667,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The equals method is correctly implemented within its own class, StatusMessage, and does not display excessive interest in the members of other classes. It only accesses and relies on its own attributes (message, type, isAccessible) and the equals method does not suggest it might be better placed in another class."
+  },
+  {
+    "id": 679,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method getSiblingIndexWithClassName() is accessing and relying on the data and functions of the Element class, but it is not performing operations on its own class's attributes or methods. It is simply traversing the DOM to find a sibling element with a specific class name, which is a legitimate operation for this method."
+  },
+  {
+    "id": 683,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `toString()` is an override of a method from the superclass and focuses on the data and functions within its own class, `ExecInfo`, making it a standard implementation of the `toString()` method and not exhibiting a 'Feature Envy' code smell."
+  },
+  {
+    "id": 693,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The equals method is part of the Key class and is correctly accessing and comparing its own attributes (annotationType and type), rather than relying heavily on another class's data and functions. This indicates that the method is focused on its own class's data and functions, thus not displaying feature envy."
+  },
+  {
+    "id": 697,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "This method does not display a strong interest in the members of other classes. It primarily operates on its own class's attributes and methods, such as 'insertAfter', 'getNextSibling', and 'remove', indicating that it is focused on its own class's data and functions."
+  },
+  {
+    "id": 711,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `rule__XWhileExpression__Group__0__Impl()` accesses and relies on the data and functions of its own class, specifically `getXWhileExpressionAccess()` and its associated actions, indicating no feature envy smell."
+  },
+  {
+    "id": 713,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method rule__MdCategory__Group_4_0__1__Impl() accesses the MdCategory class's members, but it is a generated method by the parser and does not exhibit a strong interest in the members of other classes. It is performing operations on its own class's attributes or methods, indicating that it is correctly placed within its own class."
+  },
+  {
+    "id": 723,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method get() does not access or rely heavily on the data and functions of another class, it only uses its own class's methods like getSingleCredentials(). It does not display more interest in the members of other classes and does not perform operations on another class's attributes or methods."
+  },
+  {
+    "id": 738,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `toString()` is accessing the data of its own class, `_info` and `_callback`, and formatting it with `String.format()`. It is not relying heavily on the data and functions of another class, so it does not exhibit the characteristics of a 'Feature Envy' code smell."
+  },
+  {
+    "id": 742,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `resolveGenericRef` is focused on resolving generic references within its own class, and its operations are primarily based on its own class's attributes and methods. It does not display a significant interest in the members of other classes, and its operations are not performed on another class's attributes or methods. Therefore, the 'Feature Envy' code smell is absent in this code."
+  },
+  {
+    "id": 755,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method format() does not access or rely heavily on the data and functions of another class. It operates on its own parameters and returns a formatted string, indicating that it is focused on its own data and functions."
+  },
+  {
+    "id": 757,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method 'updated' does not access or rely heavily on the data and functions of another class, and it does not perform operations on another class's attributes or methods. It simply calls another method 'doUpdate' and logs some messages."
+  },
+  {
+    "id": 761,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method onKapuaEvent() accesses and relies on the data and functions of the ServiceEvent class, but it does not perform operations on its attributes or methods. It primarily focuses on the data within its own class, making it a minor case of feature envy."
+  },
+  {
+    "id": 765,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `hashCode()` is accessing the `threads` attribute of the current class, which is a valid operation for a method that needs to calculate the hash code of an object. It does not display more interest in the members of other classes, so it does not exhibit the characteristics of a Feature Envy code smell."
+  },
+  {
+    "id": 769,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "This method is an implementation of the hashCode() method, which is a standard Java method for calculating the hash code of an object. It accesses and relies on the data and functions of its own class, rather than those of another class, so it does not exhibit the 'Feature Envy' code smell."
+  },
+  {
+    "id": 773,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method writeVersion is focused on the data and functions within its own class, and it does not display more interest in the members of other classes. It only accesses and relies on the JsonWriter object, which is passed as a parameter, and does not perform operations on other class's attributes or methods."
+  },
+  {
+    "id": 783,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method checkDeviceListLength() is accessing and relying on the data of another class (DeviceListResultImpl), but it is not performing operations on its attributes or methods. It is mainly comparing the size of the device list, which is a legitimate concern for this class. However, it does display some interest in the members of another class, suggesting it might be better placed in the DeviceListResultImpl class."
+  },
+  {
+    "id": 805,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `mergeFrom` primarily focuses on the data and functions within its own class, `Builder`, and does not display a strong interest in the members of other classes. It performs operations on its own attributes and methods, indicating that it is correctly placed in the `Builder` class."
+  },
+  {
+    "id": 812,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method accesses and relies on the data and functions of the 'Attributes' class, but it's not excessively so. The method is still focused on its own class's responsibility, albeit with a slight dependency on another class."
+  },
+  {
+    "id": 819,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method getLoggerLevel() primarily operates on its own class's data and functions, accessing the logger and its level. It does not display a strong interest in the members of other classes, and its operations are focused on its own class's attributes or methods."
+  },
+  {
+    "id": 827,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method RangeDecoderFromBuffer does not access or rely heavily on the data and functions of the ArrayCache class. It only uses the getByteArray method to retrieve a byte array from the cache, which is a typical usage of the cache class. The method does not display more interest in the members of the ArrayCache class than its own."
+  },
+  {
+    "id": 830,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method getFragments(Bundle bundle) does not access or rely heavily on the data and functions of another class, instead it simply calls a method on another class's instance variable, suggesting it is not a case of feature envy."
+  },
+  {
+    "id": 852,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method getName() accesses and relies on the data of another class (lower and upper), but it does not perform operations on their attributes or methods. It simply calls their getName() methods, which suggests a weak presence of the feature envy smell."
+  },
+  {
+    "id": 855,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method getApplicationToRun() accesses and relies on the data and functions of other classes (e.g., Platform.getExtensionRegistry(), IConfigurationElement), but it is not excessively so. The method's primary purpose is to determine the application to run, which involves interactions with other classes, but it does not display a strong interest in their members. The code is not severely impacted by this smell, but it is present."
+  },
+  {
+    "id": 874,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `initializeEvent` only accesses and relies on its own class's data and functions, specifically the `Bundle` class and its `getState()` method. It does not display interest in the members of other classes, and it does not perform operations on other classes' attributes or methods. Therefore, the feature envy smell is absent in this code."
+  },
+  {
+    "id": 877,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method addVariableOnClasspath() primarily focuses on the data and functions within its own class, such as activating the libraries tab and selecting the Classpath item, rather than relying heavily on another class's data and functions."
+  },
+  {
+    "id": 879,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `executeUrl` is accessing and relying on data and functions of `ProxyParams` class, but it is not performing operations on its attributes or methods. It is simply passing the `proxyParams` object as a parameter, which does not indicate a misplacement of the method."
+  },
+  {
+    "id": 882,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "This method does not display a strong interest in the members of another class; it simply retrieves and returns a value from another class's attribute, indicating that it is focused on its own class's data and functions."
+  },
+  {
+    "id": 921,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method mT__66() only accesses and relies on its own class's attributes (state.type and state.channel) and does not display interest in the members of other classes, thus not exhibiting the characteristics of a Feature Envy code smell."
+  },
+  {
+    "id": 933,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method specialStateTransition() accesses and relies on the data and functions of the input parameter _input, which is an instance of TokenStream, but it does not display more interest in the members of other classes. The operations performed on the input parameter's attributes or methods are necessary for the method's functionality, indicating that the method is not misplaced. Therefore, the 'Feature Envy' code smell is absent in this code."
+  },
+  {
+    "id": 938,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method myCacheKey() accesses and relies on the data of other classes (e.g., getChromosome().getId(), getStartIndex(), getEndIndex()) rather than its own. However, it does not display a strong interest in the members of other classes, and the operations performed are relatively simple, indicating a minor presence of the feature envy smell."
+  },
+  {
+    "id": 955,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method is accessing and relying on its own class's data (entrySet()) and performing operations on its own attributes, indicating that it is focused on its own class's data and functions. Therefore, it does not display 'feature envy' behavior."
+  },
+  {
+    "id": 979,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The constructor UsagesNode is initializing its own class fields with the provided dependencies, which are typical for a dependency injection pattern. It does not display a strong interest in the members of other classes, and its operations are focused on its own attributes. Therefore, the Feature Envy smell is absent in this code."
+  },
+  {
+    "id": 996,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "This method is a simple boolean function that only accesses its own class's static data, Atom.TYPE_*, and does not rely on or perform operations on the data or functions of other classes. It is focused on its own class's data and does not display interest in other classes' members, so it does not exhibit the characteristics of a 'Feature Envy' code smell."
+  },
+  {
+    "id": 1017,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method setCommentCount() does not access or rely heavily on the data and functions of another class. It only interacts with its own class's extension and removal logic, thus not displaying feature envy behavior."
+  },
+  {
+    "id": 1019,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method joinLongs() does not access or rely heavily on the data and functions of another class, it only uses its own parameters and a StringBuilder, making it a good candidate for its own class."
+  },
+  {
+    "id": 1021,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "This method does not display more interest in the members of other classes, and it does not perform operations on another class's attributes or methods. It only relies on its own class's data and functions, such as 'data', 'position', 'limit', and 'Util.fromUtf8Bytes'."
+  },
+  {
+    "id": 1023,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `verifyAllParameters()` is accessing and relying on the data of its own class (`parameterValueMap`), rather than another class. It's not displaying more interest in the members of other classes, and it's not performing operations on another class's attributes or methods. Therefore, the Feature Envy smell is absent in this code."
+  },
+  {
+    "id": 1043,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method computeAndDisplayPin() accesses and relies on the data and functions of other classes (AccountDb, getSecret()) rather than its own. However, it does not display a strong interest in the members of other classes, and the operations performed are mostly related to its own class's attributes (mUsers)."
+  },
+  {
+    "id": 1047,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method computeBreaks() primarily focuses on the data and functions within its own class, State. It accesses and relies on the data and functions of CommentsHelper, but this is necessary for the computation of breaks and does not indicate a misplacement of the method."
+  },
+  {
+    "id": 1052,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "This method simply delegates to another method, it does not access or rely on the data and functions of another class, so it does not exhibit feature envy behavior."
+  },
+  {
+    "id": 1054,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `provideRead` does not display a strong interest in the members of other classes, and its operations are primarily focused on its own class's attributes and methods. It does not rely heavily on the data and functions of other classes, so it does not exhibit the characteristics of a 'Feature Envy' code smell."
+  },
+  {
+    "id": 1059,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method readJson does not access or rely heavily on the data and functions of another class. It only uses the HttpServletRequest object to read JSON data, which is its primary responsibility. Therefore, it does not display feature envy behavior."
+  },
+  {
+    "id": 1062,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method is initializing its own class fields and performing operations on them, indicating it is focused on its own data and functions, rather than relying heavily on another class's data and functions."
+  },
+  {
+    "id": 1067,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The constructor of the SocketServer class is initializing its own properties and creating its own objects, showing no interest in the members of other classes, thus not displaying the Feature Envy code smell."
+  },
+  {
+    "id": 1088,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "This constructor does not access or rely heavily on the data and functions of another class, it only initializes its own class attributes."
+  },
+  {
+    "id": 1091,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "This method does not display interest in the members of other classes, it is focused on its own class's data and functions. It is not performing operations on another class's attributes or methods. Therefore, the 'Feature Envy' smell is absent in this code."
+  },
+  {
+    "id": 1113,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method runFunctions() is accessing and relying on the data and functions of the CommandHandler class, but it is not displaying more interest in the members of other classes. It is performing operations on the CommandHandler class's attributes or methods, but it is not a clear indication of misplacement of the method. The method is focused on the data and functions within its own class, which is the expected behavior."
+  },
+  {
+    "id": 1115,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "This method is an override of a computeIfAbsent method, which is a standard method in the Map interface. It does not access or rely heavily on the data and functions of another class, but rather is a standard implementation of a method that is part of its own class's interface."
+  },
+  {
+    "id": 1120,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method sendRestRequest only accesses and relies on the data and functions of the _restClient object, which is a member of the same class. It does not display interest in the members of other classes, and it does not perform operations on other classes' attributes or methods. Therefore, the Feature Envy code smell is absent in this code."
+  },
+  {
+    "id": 1123,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method updateState() accesses and relies on the data and functions of other classes (e.g., X509CertImpl, PKIX, BasicChecker, RevocationChecker, PolicyChecker, ConstraintsChecker) rather than its own class, indicating a minor presence of the Feature Envy code smell."
+  },
+  {
+    "id": 1130,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "This method only accesses its own class's methods (checkClosed) and does not rely heavily on data and functions of another class, thus it does not exhibit the characteristics of a Feature Envy code smell."
+  },
+  {
+    "id": 1132,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "This method is simply calling the parent class's method with the same parameters, without accessing or relying on the data and functions of another class. It's not displaying more interest in the members of other classes, and it's not performing operations on another class's attributes or methods."
+  },
+  {
+    "id": 1143,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method setRegion() is accessing and relying on the data and functions of another class (com.oracle.bmc.Region), but it is not doing so in an excessive or intrusive manner. The method is primarily focused on its own class's data and functions, and its reliance on the other class is necessary for its purpose. Therefore, the feature envy smell is absent in this code."
+  },
+  {
+    "id": 1144,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "This method is part of a Builder class and is accessing and modifying its own attribute 'tcpOptions', which is a characteristic of its own class. It is not relying heavily on the data and functions of another class, so the Feature Envy smell is absent in this code."
+  },
+  {
+    "id": 1156,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method doPaginateWithRecordPaginator() is focused on the data and functions within its own class, and does not rely heavily on the data and functions of another class, so the feature envy smell is absent."
+  },
+  {
+    "id": 1165,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method definedTags only accesses and relies on the data of its own class, Builder, and does not display interest in the members of other classes."
+  },
+  {
+    "id": 1173,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "This method is accessing and modifying its own class's attributes (nodePoolId and __explicitlySet__), and does not display significant interest in the members of other classes."
+  },
+  {
+    "id": 1178,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method cfBackupHandle() only accesses and relies on the data of its own class, without displaying interest in the members of other classes or performing operations on their attributes or methods."
+  },
+  {
+    "id": 1180,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method build() is accessing and relying on the data and functions of its own class, as it is building a GetRouteTableRequest object and setting its properties. It does not display more interest in the members of other classes, and it is performing operations on its own attributes or methods."
+  },
+  {
+    "id": 1182,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method 'severe' only accesses and relies on the 'logger' and 'CallerDetails' classes, which are likely part of the same class or package, and does not display excessive interest in the members of other classes."
+  },
+  {
+    "id": 1189,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method does not display a strong interest in the members of other classes. It primarily focuses on its own class's data and functions, performing operations on its own attributes or methods. The only external dependency is the client, which is a standard object in this context, and the method does not rely heavily on it."
+  },
+  {
+    "id": 1190,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `generateAutonomousDatabaseWallet` primarily focuses on its own class's data and functions, performing operations on its own attributes and methods. It does not display a strong interest in the members of other classes, and its operations are not significantly affected by the data and functions of other classes. Therefore, the 'Feature Envy' code smell is absent in this code."
+  },
+  {
+    "id": 1199,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method init() is accessing and relying on the data of its own class, specifically this.interfaceInstance and this.serviceDescription. It is not displaying more interest in the members of other classes, and it is not performing operations on another class's attributes or methods. Therefore, the Feature Envy code smell is absent in this code."
+  },
+  {
+    "id": 1202,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method sslContext() is accessing and relying on the data of its own class, not another class, so it does not display feature envy."
+  },
+  {
+    "id": 1209,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method getActiveNetwork() only accesses and relies on the data and functions within its own class, specifically the netIdToNetwork map and getActiveNetworkInfo(). It does not display interest in the members of other classes or perform operations on their attributes or methods, indicating that it does not exhibit the characteristics of a Feature Envy code smell."
+  },
+  {
+    "id": 1210,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method finishActivity() primarily operates on its own class's data and functions, such as controller and activity. It does access and rely on external classes like ActivityLifecycleMonitorRegistry, but this is necessary for its functionality and does not indicate a strong interest in the members of other classes."
+  },
+  {
+    "id": 1212,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method deleteJobAsync does not access or rely heavily on the data and functions of another class. It simply calls another method createRequestAsync, passing in necessary parameters, without displaying interest in other classes' members."
+  },
+  {
+    "id": 1217,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method nativeGetPointerCoords() primarily operates on its own class's data and functions, such as NativeInput.MotionEvent and pointerCoordsFromNative(). It does access other classes, but it does so in a way that is necessary for its functionality, and it does not display a strong interest in the members of other classes."
+  },
+  {
+    "id": 1226,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method dumpStack() does not rely heavily on the data and functions of another class. It creates a StringBuilder, iterates over the stack frames of the ThreadInfo object, and appends information to the StringBuilder. It does not display more interest in the members of other classes, suggesting it is not misplaced."
+  },
+  {
+    "id": 1237,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The constructor does not access or rely heavily on the data and functions of another class, it simply assigns the provided parameters to instance variables. There is no indication that it is more interested in the members of other classes or performing operations on their attributes or methods."
+  },
+  {
+    "id": 1238,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method 'crop' only accesses and relies on the data of another class ('CropRegion'), but it does not perform operations on its attributes or methods. It simply appends the string representation of 'CropRegion' to the query builder, which is a legitimate operation within its own class."
+  },
+  {
+    "id": 1245,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `verifyVMInstall` primarily focuses on its own class's data and functions, and only accesses and relies on the `IGrailsInstall` class's data and functions to perform a verification. This suggests that the method is not overly concerned with the members of other classes, and its operations are not indicative of a misplacement."
+  },
+  {
+    "id": 1247,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "This method is accessing and relying on the data and functions of another class, but it is not performing operations on the other class's attributes or methods. It is simply passing the classNode to the superclass method, which suggests that it is not misplacing itself in another class."
+  },
+  {
+    "id": 1250,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method 'schedule' is accessing and modifying the 'job' object's attributes, but it is not relying heavily on the data and functions of another class. It is performing operations on the 'job' object's attributes, but this is expected behavior for a scheduling method."
+  },
+  {
+    "id": 1258,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method canRetryRequestIfRefreshableAuthTokenUsed() does not display more interest in the members of other classes, but rather uses its own instance variables (this.authenticationDetailsProvider) to make a decision. It does not perform operations on other classes' attributes or methods, so it does not exhibit the characteristics of a Feature Envy code smell."
+  },
+  {
+    "id": 1284,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "This constructor only accesses and relies on its own class's attributes (username and password), it does not display interest in other classes' members and does not perform operations on other classes' attributes or methods."
+  },
+  {
+    "id": 1288,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method addConstantSet does not access or rely heavily on the data and functions of another class. It simply delegates the operation to another class's method, indicating no feature envy smell."
+  },
+  {
+    "id": 1297,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method is not accessing or relying heavily on the data and functions of another class, and it is not performing operations on another class's attributes or methods. It is simply a constructor for a RabbitMessagingTemplate instance, which is a valid and expected behavior in this context."
+  },
+  {
+    "id": 1299,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method formatQueryString() is accessing and relying on the data and functions of its own class, such as projectUri, isCompatibleMode, and collectionId. It is not displaying more interest in the members of other classes, and its operations are focused on its own class's attributes or methods. Therefore, the feature envy smell is absent in this code."
+  },
+  {
+    "id": 1300,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `notifyConflict()` does not display significant interest in the members of other classes. It primarily uses its own class's methods (`ShellUtils.getWorkbenchShell()` and `UIHelpers.runOnUIThread()`) to perform its operation, indicating that it is focused on its own class's data and functions."
+  },
+  {
+    "id": 1319,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method test() accesses and relies on the data and functions of other classes (AnnotationUtils, AnnotatedElementUtils), but it is not excessive. It is mainly focused on its own class's data and functions, but still displays some interest in other classes' members."
+  },
+  {
+    "id": 1329,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method requestFields() is accessing and relying on the requestField() method of the same class, rather than another class. It is performing an operation on its own attributes or methods, which is the expected behavior of a method within its own class."
+  },
+  {
+    "id": 1334,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The constructor of TestHttpServletRequest does not access or rely heavily on the data and functions of another class, and it does not perform operations on another class's attributes or methods. It only initializes its own properties and calls a method (decodeParams()) that is likely a part of the class itself."
+  },
+  {
+    "id": 1337,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `vmExecutablePath` primarily operates on the data and functions within its own class, specifically the `Vm` object, and does not excessively rely on or manipulate the data of other classes. It simply uses the data provided by the `Vm` object to construct a file path, which is a legitimate and focused operation within its own class."
+  },
+  {
+    "id": 1347,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method onFailure() does not access or rely heavily on the data and functions of another class, but rather uses its own class's methods (e.g., getHandle(), createHSString()) and calls another method (callOnFailure()) that is likely defined within the same class or its superclass."
+  },
+  {
+    "id": 1363,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method resolveCustomPdxSerializer() does not access or rely heavily on the data and functions of another class. It operates on the class's own data (pdxSerializerResolvers) and uses a stream to process it, indicating that it is focused on its own class's data and functions."
+  },
+  {
+    "id": 1364,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method `toString()` is accessing the `description` attribute of another class, which suggests it might be better placed in the other class. However, since it's a common method for returning a string representation of an object, it's not a severe case of feature envy."
+  },
+  {
+    "id": 1366,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The constructor of ZeroNullConversionOp class only initializes its own properties (result and input) and does not access or rely on data and functions of another class, thus it does not display feature envy."
+  },
+  {
+    "id": 1374,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The close() method does not access or rely heavily on the data and functions of another class, instead it focuses on the data and functions within its own class, specifically the HSObject and HotSpotToSVMEntryPoints classes. It performs operations on its own attributes or methods, indicating that it is correctly placed in its own class."
+  },
+  {
+    "id": 1382,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method 'lookup' does not access or rely heavily on the data and functions of another class, it primarily operates within its own class and its own scope, thus not exhibiting the characteristics of a Feature Envy code smell."
+  },
+  {
+    "id": 1386,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "This method does not access or rely heavily on data and functions of another class, and it does not perform operations on another class's attributes or methods. It simply makes a decision based on the input descriptor and returns an OptionClass enum value."
+  },
+  {
+    "id": 1389,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method emitFloatConvert() primarily operates on its own class's attributes and methods, such as getFloatConvertResultKind(), getLIRGen(), and asAllocatable(). It does not display a strong interest in the members of other classes, and its operations are focused within its own class."
+  },
+  {
+    "id": 1405,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method is accessing and relying on the data and functions of its own class, such as 'isCachedLanguage()', 'getLanguageType()', 'getReferenceType()', and 'getParameter().getType()', indicating that it is not displaying more interest in the members of other classes."
+  },
+  {
+    "id": 1438,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method getNameAndSignature() does not access or rely heavily on the data and functions of another class. It only uses the method and class objects that are passed to it, and performs operations on their attributes and methods. This suggests that the method is focused on its own data and functions, rather than those of other classes."
+  },
+  {
+    "id": 1446,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method mT__60() only accesses and relies on its own class's data and functions, and does not display interest in the members of other classes. It performs operations on its own attributes or methods, indicating that it is properly placed in its own class."
+  },
+  {
+    "id": 1457,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method performBuild() accesses and relies on the data and functions of YarnContainerFactoryBean, but it is not excessively so. It is primarily focused on its own class's data and functions, but does display some interest in the members of YarnContainerFactoryBean."
+  },
+  {
+    "id": 1468,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method run() does not access or rely heavily on the data and functions of another class, and it performs operations on its own attributes or methods (in this case, the stream and collect operations). It focuses on its own class's data and functions, so it does not display feature envy."
+  },
+  {
+    "id": 1478,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `toString` does not access or rely heavily on the data and functions of another class. It only uses its own class's attributes and methods, such as `variables`, `VariableType`, and `TemplateVariable`. Therefore, it does not display feature envy behavior."
+  },
+  {
+    "id": 1479,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method run() does not access or rely on the data and functions of another class, it is a standalone function that creates an instance of a lambda function and calls its method. It does not display interest in the members of other classes, and it does not perform operations on another class's attributes or methods."
+  },
+  {
+    "id": 1491,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `getValue` only accesses the `this.typedResultValue` attribute of its own class, and does not rely heavily on the data and functions of another class. It is focused on its own class's data."
+  },
+  {
+    "id": 1494,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `hasNext()` primarily focuses on the data and functions within its own class, checking for the presence of `nextValue` and iterating over the `it` object. It does not display a significant interest in the members of other classes, and its operations are confined to its own attributes or methods."
+  },
+  {
+    "id": 1495,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method handleRequest() accesses and relies on the data and functions of ServerHttpRequest, ServerHttpResponse, and SockJsService, but it does not display a strong interest in the members of its own class. However, it does perform operations on other class's attributes or methods, indicating a possible misplacement of the method, thus a minor presence of the feature envy smell."
+  },
+  {
+    "id": 1500,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The code snippet does not exhibit a strong 'Feature Envy' smell as it primarily focuses on the operations of the 'EntityManager' class and its related methods, rather than relying heavily on the data and functions of another class. The code is well-structured and performs necessary operations on the 'EntityManager' class, indicating a proper placement of the method within its own class."
+  },
+  {
+    "id": 1506,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The constructor of the TypeMismatchException class is accessing and relying on the data and functions of the ClassUtils class, but this is a common pattern in Java for utility methods. The constructor is not displaying more interest in the members of other classes, and it is not performing operations on another class's attributes or methods. Therefore, the 'Feature Envy' code smell is absent in this code."
+  },
+  {
+    "id": 1509,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method getFactoryMethodMetadata() is accessing its own class's attribute factoryMethodMetadata, which is the expected behavior. It does not display interest in other classes' members or perform operations on them, so it does not exhibit the characteristics of a Feature Envy code smell."
+  },
+  {
+    "id": 1513,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method accesses and relies on the data and functions of the RequestContext class, but it is not excessive. It is still focused on its own class's data and functions, but it does show some interest in the members of the RequestContext class."
+  },
+  {
+    "id": 1517,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method create() does not access and rely heavily on the data and functions of another class. It creates a new Map, adds a key-value pair, and instantiates new objects, all within its own class. Therefore, it does not display 'feature envy' behavior."
+  },
+  {
+    "id": 1524,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method getParentOfClass() does not access or rely heavily on the data and functions of another class, instead it uses the provided IModelElement and Class<T> parameters to perform its operation, thus it does not display feature envy behavior."
+  },
+  {
+    "id": 1528,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The run() method accesses and relies on the data and functions of the Class and JLCGetDecMethods classes, indicating a focus on external data rather than its own. However, the impact on code quality and maintainability is relatively weak, thus classified as minor."
+  },
+  {
+    "id": 1534,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method formatElement() relies heavily on the data and functions of other classes (FormatProcessorXML and CleanupProcessorXML), suggesting it might be better placed in these classes. However, the impact on readability and maintainability is not severe, making it a minor presence of the Feature Envy smell."
+  },
+  {
+    "id": 1540,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `toCiphertext` only accesses and relies on the data of its own class, `Ciphertext`, and does not display interest in other classes' members. It performs operations on its own attributes or methods, indicating it is properly placed in its own class."
+  },
+  {
+    "id": 1543,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method newlineWithIndent only accesses its own class's StringBuilder and does not rely heavily on the data and functions of another class, thus not displaying feature envy."
+  },
+  {
+    "id": 1555,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "This method does not access or rely heavily on the data and functions of another class, and it does not display more interest in the members of other classes. It only operates on the input parameter 'typeName' within its own class."
+  },
+  {
+    "id": 1558,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method setHeader() is accessing and modifying the internal state of its own class, rather than relying on another class's data and functions. It is performing operations on its own attributes (this.setArg2() and this.header = header), indicating that it is focused on its own class's data and functions."
+  },
+  {
+    "id": 1561,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method is within its own class and focuses on its own attributes, not relying heavily on other classes' data and functions."
+  },
+  {
+    "id": 1577,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `isTrustAliasMissing` does not exhibit a strong interest in the members of another class. It only accesses the `computeState` object to retrieve a URI and a trust alias, which are then used to determine if a trust alias is missing. The method's focus is on its own class's data and functions, making it not a good candidate for the Feature Envy code smell."
+  },
+  {
+    "id": 1584,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "This constructor does not access or rely heavily on the data and functions of other classes. It only initializes its own properties and performs a simple conditional log statement, indicating no feature envy smell."
+  },
+  {
+    "id": 1590,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method onManagementStarting() accesses and relies on data and functions from other classes, such as getParent().getLocations() and getParent().getShellEnvironment(), indicating a feature envy smell. However, the method is not overly dependent on these external classes and still maintains some focus on its own class's data and functions, thus a minor severity level is assigned."
+  },
+  {
+    "id": 1594,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method get() does not display a strong interest in the members of other classes, such as Utils. It primarily focuses on its own class's data and functions, and only accesses external classes for specific operations."
+  },
+  {
+    "id": 1610,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method withTimestampSpec does not access or rely heavily on the data and functions of another class, it simply returns a new object with the provided spec and the dimensions spec from the current class."
+  },
+  {
+    "id": 1613,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method containsDownEntity() only accesses and relies on the data within its own class (Set<Entity> seeds), and does not display interest in the members of other classes. It performs operations on the seeds set, which is within its own class, indicating that it is correctly placed."
+  },
+  {
+    "id": 1615,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method processInterfaces() accesses and relies on the data and functions of another class (SourceClass), but it is not overly dependent on it. It performs operations on SourceClass's attributes (interfaces) and adds data to ConfigurationClass, indicating a possible misplacement of the method, but the impact on code quality and maintainability is relatively weak."
+  },
+  {
+    "id": 1618,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method gzip() does not access or rely heavily on the data and functions of another class, but rather uses its own parameters (in, out, shouldRetry) to perform the operation. It does not display more interest in the members of other classes, and its operations are focused on its own parameters."
+  },
+  {
+    "id": 1628,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method handleChunk() accesses and relies on the data and functions of another class (BytesFullResponseHolder), but it is not excessively doing so. It is performing operations on the holder's attributes, but this is a natural behavior given the method's purpose, which is to handle chunks of data for a response. Therefore, the smell is absent in this code."
+  },
+  {
+    "id": 1640,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method removeHealthMonitor() primarily operates on its own class's data and functions, accessing the hmMap and performing operations on the HealthMonitor object. It does not display excessive interest in the members of other classes, and its operations are focused on its own class's attributes and methods."
+  },
+  {
+    "id": 1646,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method write() is accessing and relying on the data and functions of the AppendBuildSlaveEventsResponse struct, but it is doing so in a way that is expected and necessary for the method's purpose. The method is not displaying more interest in the members of other classes than its own, and it is not performing operations on another class's attributes or methods in an unusual way."
+  },
+  {
+    "id": 1648,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method read() is accessing and relying on the data and functions of the Digest class, but it is not displaying more interest in the members of other classes. It is performing operations on the attributes or methods of the Digest class, but this is expected behavior for a method that is part of the Digest class and is responsible for reading data from a protocol. Therefore, the Feature Envy smell is absent in this code."
+  },
+  {
+    "id": 1664,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method supplierFromDimensionSelector() only accesses and relies on the data and functions of the DimensionSelector class, which is its own class. It does not display more interest in the members of other classes, and it does not perform operations on other classes' attributes or methods. Therefore, the Feature Envy code smell is absent in this code."
+  },
+  {
+    "id": 1666,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method createReferenceCountedWriter() is focused on creating a ReferenceCountedWriter instance for a specific log file path, and it does not display more interest in the members of other classes. It performs operations on its own class's attributes or methods, indicating that it is correctly placed within its own class."
+  },
+  {
+    "id": 1674,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method read() accesses and relies heavily on the data and functions of the FetchRuleKeyLogsRequest struct, which is not its own class. However, it does not display a strong interest in the members of other classes, and its operations are mostly focused on the struct's attributes. Therefore, the presence of feature envy is weak and borderline."
+  },
+  {
+    "id": 1735,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method rule__XCastedExpression__Group__1() does not access or rely heavily on the data and functions of another class. It only calls another method rule__XCastedExpression__Group__1__Impl() within the same class, indicating a lack of 'feature envy'."
+  },
+  {
+    "id": 1744,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "This method accesses and relies on the data and functions of other classes (e.g., `transientValues`, `errorAcceptor`, `diagnosticProvider`, `getFragmentCallerAccess`, `getFragment1Access`, `createSequencerFeeder`), but it is not as severe as a major or critical case since it is still contained within its own class and does not display a strong interest in the members of other classes."
+  },
+  {
+    "id": 1753,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method getScope() does not heavily rely on the data and functions of another class. It primarily uses the provided parameters and the class's own methods, indicating that it is focused on its own data and functions."
+  },
+  {
+    "id": 1756,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method rule__MandatoryModel__Group__2() does not display significant interest in the members of other classes. It primarily focuses on its own class's data and functions, calling other methods within the same class. Therefore, the feature envy code smell is absent in this code."
+  },
+  {
+    "id": 1762,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method rule__XShortClosure__Group_0__0__Impl() primarily focuses on the data and functions within its own class, accessing and relying on the data and functions of the getXShortClosureAccess() class only for a specific operation. The method does not display excessive interest in the members of other classes, and its operations are confined to its own class's attributes or methods. Therefore, the feature envy code smell is absent in this code."
+  },
+  {
+    "id": 1768,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method eIsSet(int featureID) only accesses its own class's attributes (elements) and does not rely heavily on another class's data and functions, indicating that it does not exhibit the characteristics of a Feature Envy code smell."
+  },
+  {
+    "id": 1774,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method sequence() accesses and relies on the data and functions of other classes (e.g., EPackage, ParserRule, Action), but it is not overly dependent on them. It still focuses on its own class's data and functions, but with some interest in other classes, making it a minor case of feature envy."
+  },
+  {
+    "id": 1801,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method 'home' does not access or rely heavily on the data and functions of another class. It only uses the 'Model' object to add an attribute and return a view, which is a typical behavior for a controller method in Spring MVC."
+  },
+  {
+    "id": 1829,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method equals() is comparing the attributes of the current object with those of another object of the same class, which is a normal behavior for an equals() method. It does not display more interest in the members of other classes, so it does not exhibit the characteristics of a Feature Envy code smell."
+  },
+  {
+    "id": 1840,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method doAggressiveInner(LazyClassGen gen) does not display a strong interest in the members of other classes, and its operations are focused on the data and functions within its own class. It is accessing and relying on the data and functions of LazyClassGen, but this is a necessary interaction for its purpose. The method's focus is on its own class's data and functions, and it does not perform operations on other class's attributes or methods."
+  },
+  {
+    "id": 1842,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method m39 does not access or rely on the data and functions of another class, it only increments the values of its own class's attributes. It does not display more interest in the members of other classes, and it does not perform operations on another class's attributes or methods."
+  },
+  {
+    "id": 1850,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method getWorkflowDefinitionFactory() accesses and relies on the data and functions of the configuration class, but it is still within the same class and does not significantly impact readability or maintainability."
+  },
+  {
+    "id": 1869,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method configureFormat() is accessing and relying on the data of its own class, specifically the padding attribute. It is not displaying more interest in the members of other classes, and it is performing operations on its own attributes, indicating that it is properly placed in its own class."
+  },
+  {
+    "id": 1878,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "This method is accessing and relying heavily on the data and functions of another class (DisruptorReference and DisruptorEndpoint), but it is not a clear case of feature envy as it is not performing operations on these classes' attributes or methods. However, it does display interest in the members of other classes, suggesting it might be better placed in the other class. The method is not misplacing itself, but rather, it is a borderline case of feature envy."
+  },
+  {
+    "id": 1882,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "minor",
+    "reasoning": "The method in question is accessing and relying on the data and functions of multiple other classes (e.g., ConnectionRedisProcessorsCreator, HashesRedisProcessorsCreator, etc.) to populate its own collection. While it's not an extreme case, it does display a moderate interest in the members of other classes, suggesting that it might be better placed in one of those classes or refactored to reduce its reliance on them."
+  },
+  {
+    "id": 1885,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method createEndpoint() is accessing and relying on the data and functions of the BeanValidatorEndpoint class, but it is doing so in a way that is expected and necessary for its purpose. It is not displaying more interest in the members of other classes, and it is not performing operations on another class's attributes or methods in an unusual way."
+  },
+  {
+    "id": 1890,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The constructor of MethodNotFoundException only accesses and relies on its own class's members (super, this.methodName, this.bean) and does not display interest in other classes' members, thus it does not exhibit the characteristics of a Feature Envy code smell."
+  },
+  {
+    "id": 1892,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method does not access or rely heavily on the data and functions of another class. It initializes its own properties and uses built-in methods of the System class."
+  },
+  {
+    "id": 1894,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method toString() is an overridden method from the Object class and is not accessing or relying heavily on the data and functions of another class. It is focusing on its own class's attributes, so it does not display feature envy."
+  },
+  {
+    "id": 1906,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method getUlong56() is accessing and relying on the data of its own class (buffer and position), and performing operations on its own attributes. It does not display more interest in the members of other classes, and does not perform operations on other classes' attributes or methods. Therefore, the feature envy smell is absent in this code."
+  },
+  {
+    "id": 1908,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method parseFrom() does not access or rely heavily on the data and functions of another class. It simply delegates the parsing operation to the GeneratedMessageLite class, which is a standard behavior in the Google Protocol Buffers library."
+  },
+  {
+    "id": 1930,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method `printAllExcludes` accesses and relies on the data and functions of `ModuleDescriptor` class, but it does not display more interest in the members of other classes. The operations performed on `ModuleDescriptor` attributes or methods are necessary for the method's purpose, indicating that the method is not misplaced."
+  },
+  {
+    "id": 1932,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "This method only accesses and relies on the data of another class (AlertResourceProvider), but it does not display more interest in the members of other classes or perform operations on other class's attributes or methods. It simply adds properties to a set, which is a common and acceptable behavior in this context."
+  },
+  {
+    "id": 1934,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method setTmfeIsSet only accesses and relies on the tmfe attribute of its own class, showing no interest in other classes' data or functions."
+  },
+  {
+    "id": 1939,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method 'repeat' only accesses and relies on its own class's data and functions, and does not display interest in other classes' members. It performs operations on its own StringBuilder, indicating that it is properly placed within its own class."
+  },
+  {
+    "id": 1952,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method listZookeeper() primarily operates on its own class's data and functions, such as accessing context and utilizing MetadataTableUtil methods. It does not display a strong interest in other classes' members, and its operations are focused on its own attributes or methods. Therefore, the feature envy smell is absent in this code."
+  },
+  {
+    "id": 1954,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The constructor is only accessing and setting its own class attributes, showing no interest in other classes' data or functions, thus no feature envy smell is present."
+  },
+  {
+    "id": 1968,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The getProcessor method does not access or rely heavily on the data and functions of another class, instead it focuses on its own class's functionality, specifically instantiating an ArgumentProcessor instance based on the provided class."
+  },
+  {
+    "id": 1994,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method connected() does not display a strong interest in the members of other classes. It primarily focuses on setting up the channel and its properties, which are within its own class's responsibility."
+  },
+  {
+    "id": 2003,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "feature envy",
+    "severity": "none",
+    "reasoning": "The method read() is accessing and relying on the data and functions of the cancelCompaction_args struct, but it is doing so in a way that is expected and necessary for the purpose of reading data from a protocol. The method is not displaying more interest in the members of other classes, and it is not performing operations on another class's attributes or methods in a way that suggests misplacement."
+  }
+]
