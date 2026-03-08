@@ -594,6 +594,8 @@ def main():
         print(f"No new samples found to process for smell '{args.smell}' with the selected model(s).")
         return
 
+    printed_prompt_once = False
+
     for row in filtered_sorted:
         sample_id = int(row.get('id')) if row.get('id') is not None else None
         code = row.get('code_snippet', '')
@@ -607,6 +609,11 @@ def main():
 
                 print(f"Calling {model} on sample {sample_id} with {strategy} bias. Input: code snippet and prompt.")
                 prompt = make_prompt(strategy, code, args.smell, blind_mode=blind_mode, mixed_mode=mixed_dataset_mode, ar_comment=args.ar_comment)
+                if not printed_prompt_once:
+                    print("\n=== FIRST GENERATED PROMPT ===\n")
+                    print(prompt)
+                    print("\n=== END PROMPT ===\n")
+                    printed_prompt_once = True
                 out, err = call_ollama(model, prompt, temperature=args.temperature, top_p=args.top_p,
                                       frequency_penalty=args.frequency_penalty, presence_penalty=args.presence_penalty)
                 
