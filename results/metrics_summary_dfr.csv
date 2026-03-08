@@ -1,0 +1,2 @@
+smell,model,baseline,variant,dfr_percent,decision_flips,total_samples,far_percent
+blob,qwen2_5-coder-7b,Casual,Confirmation-Bias,47.42857142857143,83,175,
