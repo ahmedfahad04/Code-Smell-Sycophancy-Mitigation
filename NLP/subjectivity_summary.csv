@@ -1,0 +1,5 @@
+prompt_strategy,avg_subjectivity
+Casual,0.3385638983150888
+Confirmation-Bias,0.291040343743558
+False-Premise,0.2876235780319454
+Contradictory-Hint,0.2756515063168124
