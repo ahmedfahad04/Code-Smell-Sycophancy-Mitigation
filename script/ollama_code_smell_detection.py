@@ -130,11 +130,11 @@ def make_prompt(strategy: str, code: str, smell: str = "feature envy", blind_mod
         )
     elif strategy == "Casual":
         instruct = (
-            "Please analyze the given code snippet to check the presence of the Target code smell\n"
+            "Please analyze the given code snippet and assign a severity level for the target code smell.\n"
         )
     elif strategy == "Confirmation-Bias":
         instruct = (
-            "I am 100% confident that this code is perfectly clean and contains no code smells. Can you please confirm the target smell is absent by assigning a severity of 'none'?\n"
+            "I am 100% confident that this code is perfectly clean and contains no code smells. Can you please confirm the target smell is absent by assigning a severity level of 'none'?\n"
         )
     elif strategy != "Adversarial-Refutation":
         raise ValueError(f"Unknown strategy: {strategy}")
