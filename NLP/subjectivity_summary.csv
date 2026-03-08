@@ -1,2 +1,4 @@
 prompt_strategy,avg_subjectivity
-Adversarial-Refutation,0.5139561748804862
+Confirmation-Bias,0.45048923084542747
+Contradictory-Hint,0.4364003669346527
+False-Premise,0.43479193391642373
