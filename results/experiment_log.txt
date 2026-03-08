@@ -1,6 +1,6 @@
-Experiment Run: 2026-03-08 14:24:43
-Hostname: ahmedfahad
-User: fahad
+Experiment Run: 2026-03-08 16:03:44
+Hostname: fahad-hp-g3
+User: sakib
 
 
 ════════════════════════════════════════════════════════════
@@ -9,13 +9,22 @@ User: fahad
 Purpose: Measure Decision Flip Rate (DFR) across bias strategies for all smells
 Metric: Decision Flip Rate (DFR) vs baseline
 
-[0;34m[INFO][0m Testing blob with 1 strategies...
-[0;34m[INFO][0m Test: Sycophancy: blob - Adversarial-Refutation
-[0;34m[INFO][0m   Smell: blob | Models: qwen2.5-coder:7b | Strategies: Adversarial-Refutation
+[0;34m[INFO][0m Testing eature envy with 1 strategies...
+[0;34m[INFO][0m Test: Sycophancy: eature envy - Adversarial-Refutation
+[0;34m[INFO][0m   Smell: eature envy | Models: qwen2.5-coder:7b | Strategies: Adversarial-Refutation
 [0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
 [0;34m[INFO][0m   Running Adversarial-Refutation with 1 user comments:
 [0;34m[INFO][0m     - Confirmation-Bias
-  Command: python3 '/home/fahad/Documents/RESEARCH_CODEBASE/MLCQ/script/ollama_code_smell_detection.py'                 --dataset '/home/fahad/Documents/RESEARCH_CODEBASE/MLCQ/dataset/mlcq_filtered.json'                 --smell 'blob'                 --models 'qwen2.5-coder:7b'                 --strategies 'Adversarial-Refutation'                 --ar-comment 'Confirmation-Bias'                 --limit 175                 --output-dir '/home/fahad/Documents/RESEARCH_CODEBASE/MLCQ/results'                 --temperature 0.3                 --top-p 0.9
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'                 --dataset '/home/sakib/Documents/MLCQ/dataset/mlcq_filtered.json'                 --smell 'eature envy'                 --models 'qwen2.5-coder:7b'                 --strategies 'Adversarial-Refutation'                 --ar-comment 'Confirmation-Bias'                 --limit 175                 --output-dir '/home/sakib/Documents/MLCQ/results'                 --temperature 0.3                 --top-p 0.9
+[0;32m[✓][0m   ✓ AR with comment 'Confirmation-Bias' completed
+
+[0;34m[INFO][0m Testing long method with 1 strategies...
+[0;34m[INFO][0m Test: Sycophancy: long method - Adversarial-Refutation
+[0;34m[INFO][0m   Smell: long method | Models: qwen2.5-coder:7b | Strategies: Adversarial-Refutation
+[0;34m[INFO][0m   Samples: 175 | Temp: 0.3 | Top-p: 0.9
+[0;34m[INFO][0m   Running Adversarial-Refutation with 1 user comments:
+[0;34m[INFO][0m     - Confirmation-Bias
+  Command: python3 '/home/sakib/Documents/MLCQ/script/ollama_code_smell_detection.py'                 --dataset '/home/sakib/Documents/MLCQ/dataset/mlcq_filtered.json'                 --smell 'long method'                 --models 'qwen2.5-coder:7b'                 --strategies 'Adversarial-Refutation'                 --ar-comment 'Confirmation-Bias'                 --limit 175                 --output-dir '/home/sakib/Documents/MLCQ/results'                 --temperature 0.3                 --top-p 0.9
 [0;32m[✓][0m   ✓ AR with comment 'Confirmation-Bias' completed
 
 [0;32m[✓][0m Phase 3 complete!
@@ -24,7 +33,7 @@ Metric: Decision Flip Rate (DFR) vs baseline
 ════════════════════════════════════════════════════════════
   EXPERIMENT RUN COMPLETE
 ════════════════════════════════════════════════════════════
-Results saved to: /home/fahad/Documents/RESEARCH_CODEBASE/MLCQ/results
-Log file: /home/fahad/Documents/RESEARCH_CODEBASE/MLCQ/results/experiment_log.txt
-Timestamp: 2026-03-08 14:24:43
+Results saved to: /home/sakib/Documents/MLCQ/results
+Log file: /home/sakib/Documents/MLCQ/results/experiment_log.txt
+Timestamp: 2026-03-08 16:13:59
 
