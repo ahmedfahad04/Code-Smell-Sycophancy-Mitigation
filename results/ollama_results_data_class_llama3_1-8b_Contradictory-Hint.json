@@ -1,0 +1,1402 @@
+[
+  {
+    "id": 529,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class UnorderedPartitionedKVWriter contains a large number of fields and methods, which is a characteristic of a data class. This class is responsible for handling the shuffle process in Tez, and its complexity suggests that it may be better encapsulated as a data class for clarity and maintainability."
+  },
+  {
+    "id": 534,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains both data members (allowedPolicies) and behavioral methods (parserCompleted), but the data members are static and the class primarily serves as a data container with some logic. However, the presence of behavioral methods like parserCompleted suggests that the class is not purely a data class, but it does lack significant business logic, making it a minor case of the data class smell."
+  },
+  {
+    "id": 537,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains both data members and significant business logic, including methods like checkForInsecureComponentEventRequest and checkForInsecurePageRenderRequest, which operate on that data. It also contains methods like needsRedirect and isSecure, which indicate that the class is not just a data container but also contains meaningful operations."
+  },
+  {
+    "id": 539,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains both data members (e.g., resources, elseBlock) and significant business logic (e.g., test(), beginRender(), beforeRenderBody(), afterRender()). It also has methods that operate on the data, indicating it is not a simple data container."
+  },
+  {
+    "id": 547,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains an abstract method and extends another class, indicating it's not just a simple data container but has some level of abstraction and inheritance, thus not fitting the 'data class' smell definition."
+  },
+  {
+    "id": 550,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains both data members and significant business logic, such as the execute method and its helper methods. However, it does contain a mix of data and logic, which is a characteristic of a 'data class' smell. The presence of the execute method and its complexity indicates that the class is not purely a data container, but it still has a relatively simple data structure and limited logic, making the smell minor."
+  },
+  {
+    "id": 555,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class MailChimpServiceImpl contains both data members and significant business logic, including methods for interacting with the MailChimp API, making it not a simple data container."
+  },
+  {
+    "id": 557,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains a method (addElement) that performs a significant operation on the data, indicating that it is not just a simple data container. The method retrieves a session attribute, handles different types of values, and appends the result to a buffer. This suggests that the class has meaningful operations and is not just a data class."
+  },
+  {
+    "id": 559,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains only a constructor and extends another class, indicating it is primarily a data container with no significant business logic or behavioral methods."
+  },
+  {
+    "id": 560,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "This class contains both data (e.g., images, DocumentData objects) and some business logic (e.g., image selection based on thresholds), but the majority of its methods are getter and setter-like (e.g., getColumnImage, getColumnText), and it lacks complex operations. However, it's not purely a data container, so it's a borderline case."
+  },
+  {
+    "id": 569,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This interface contains only method declarations and does not contain any data members or significant business logic, thus it does not exhibit the characteristics of a Data Class code smell."
+  },
+  {
+    "id": 579,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains both data (the MainFrame reference) and behavioral methods (actionPerformed), indicating it is not a pure data container and thus does not exhibit the 'Data Class' code smell."
+  },
+  {
+    "id": 583,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members and getter/setter methods, but it also has some business logic in the form of the updateSelection method and the run method. However, the business logic is relatively simple and does not significantly impact the class's primary function as a data container."
+  },
+  {
+    "id": 586,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains a constructor and a method call to fadd, indicating that it has some logic, thus not fitting the definition of a Data Class."
+  },
+  {
+    "id": 589,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This interface contains only data members (fields) and methods, but it also defines an enum and has methods that are more like queries or getters, indicating it's not just a simple data container. It's more of a data structure definition with some constraints, which is a good design for an interface."
+  },
+  {
+    "id": 593,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains both data members and significant business logic, specifically the runOneIteration and submitWork methods, which indicate a mix of data storage and operational logic. However, the presence of getter and setter methods for data members suggests a data class smell, but it is not the primary characteristic of the class."
+  },
+  {
+    "id": 599,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains abstract methods that must be implemented by subclasses, indicating that it is not a simple data container but rather a blueprint for other classes to follow, thus lacking the characteristics of a 'Data Class' smell."
+  },
+  {
+    "id": 601,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "This class contains getter and setter methods, but it also has several methods that perform operations on the data, such as copyFromArray and copyToArray, which indicate that it's not purely a data container."
+  },
+  {
+    "id": 603,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains getter and setter methods, but it also has significant business logic and behavioral methods, such as error message handling and XML parsing. The presence of these methods indicates that the class is not just a simple data container, but rather a more complex class with both data and behavior. Therefore, the 'data class' smell is absent in this code."
+  },
+  {
+    "id": 607,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "This class contains data members (Node) and methods to operate on that data (toString and toNumber), but it is an abstract class and its primary purpose seems to be providing utility methods for subclasses, which indicates a mix of data and behavior. However, the methods are static and do not modify the class's state, which is a characteristic of a data class. Therefore, it is a minor case of a data class smell."
+  },
+  {
+    "id": 611,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "This class contains only data members and getter/setter methods, and lacks significant business logic or behavioral methods. However, it does contain some validation logic in the read and write methods, which suggests it's not purely a data container. Nevertheless, its primary purpose is to handle data serialization and deserialization, which is a borderline case for a 'data class' smell."
+  },
+  {
+    "id": 615,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains both data and significant business logic, including methods for connecting and disconnecting from a zookeeper instance, managing node viewers, and handling user interactions. It also has methods that operate on the data, such as refreshing the view and clearing the tree viewer. Therefore, it does not exhibit the characteristics of a data class."
+  },
+  {
+    "id": 619,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains both data and some business logic, such as version parsing and comparison methods. However, the primary purpose of the class is to store and compare version numbers, which is a characteristic of a data class. The presence of some behavioral methods, like isUnsupportedVersion and isSpark2, suggests a minor presence of the data class smell."
+  },
+  {
+    "id": 624,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class extends ServerCommandException and has a constructor, but it does not contain any data members or methods other than the constructor, which suggests it is primarily a data container without significant business logic."
+  },
+  {
+    "id": 642,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class extends Exception and contains getter and setter methods for its fields, but it also has multiple constructors that allow for the creation of instances with different parameters, indicating that it has some level of logic and is not just a simple data container. However, its primary purpose is to hold data related to an exception, which aligns with the characteristics of a data class. Therefore, the presence of this class is not considered a major issue, but rather a neutral aspect of the codebase."
+  },
+  {
+    "id": 645,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains an abstract method with a business logic operation (deserialization) and a significant business logic operation (parsing the JSON value), indicating that it is not purely a data container."
+  },
+  {
+    "id": 650,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains a method with significant business logic, indicating it's not purely a data container, thus not exhibiting the 'Data Class' smell."
+  },
+  {
+    "id": 653,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class contains both data and significant business logic, including methods for processing and manipulating the data. It also has methods for adding, removing, and iterating over the data, indicating that it is not just a simple data container."
+  },
+  {
+    "id": 657,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains a method (applyEvent) that performs an operation on the data, indicating it is not solely a data container."
+  },
+  {
+    "id": 661,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains significant business logic and behavioral methods, such as enforce, publishMessageCommand, and publishToMediator, indicating that it is not a simple data container."
+  },
+  {
+    "id": 663,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains a single method, valueOf, which performs a specific operation on the data, indicating it's not just a simple data container."
+  },
+  {
+    "id": 677,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "This interface contains only data members with getter and setter methods, but it does not lack significant business logic or behavioral methods. However, it primarily serves as a data container without meaningful operations, which is a characteristic of a Data Class smell."
+  },
+  {
+    "id": 681,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains a mix of data and behavioral methods (e.g., dispatch, getAssociatedType), indicating it's not solely a data container, thus not exhibiting the 'Data Class' smell."
+  },
+  {
+    "id": 689,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "This class contains both data members (fields) and significant business logic or behavioral methods, such as updateProjectAction and actionPerformed. However, it is primarily serving as a data container with getter and setter methods, and the logic is mostly encapsulated within it, indicating a weak presence of the 'data class' smell."
+  },
+  {
+    "id": 691,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains not only data members but also significant business logic, such as the equals, hashCode, and toString methods, indicating that it is not a pure data container."
+  },
+  {
+    "id": 695,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains both data members and significant business logic (e.g., onDocumentChanged, initialize, computePartitioning), indicating it is not a pure data container and thus does not exhibit the 'Data Class' smell."
+  },
+  {
+    "id": 703,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains data members and getter methods, but it also has meaningful operations like 'isProblem' and 'getDescription', indicating it's not purely a data container."
+  },
+  {
+    "id": 705,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains both data members (e.g., MdModel, MdBundle) and significant business logic (e.g., createMdModel(), createMdBundle()). It also has methods that operate on that data, such as createFromString() and convertToString(). Therefore, it does not exhibit the characteristics of a 'Data Class' code smell."
+  },
+  {
+    "id": 707,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains methods with significant business logic (eClassIsSuperTypeOf and classEquals) that operate on data, indicating it is not a pure data container."
+  },
+  {
+    "id": 709,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class DimensionPart contains only data members and getter/setter methods, but it also has some behavioral methods like doCreateVisual, doRefreshVisual, and others. Although it's not a pure data container, it's close to being one, which is why I've assigned a severity level of 'minor'."
+  },
+  {
+    "id": 715,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "This class contains both data and significant business logic, but it primarily serves as a data container with getter and setter methods. The presence of methods like `orderLevel` and `process` indicates that the class is not just a simple data container, but it also performs meaningful operations on the data. However, the class could be improved by separating the data and the logic into different classes, following the Single Responsibility Principle."
+  },
+  {
+    "id": 719,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains both data members and meaningful operations (e.g., validation, expiration checks), indicating it's not just a simple data container."
+  },
+  {
+    "id": 730,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "This class contains only data members with getter and setter methods, lacking significant business logic. However, it does not contain any meaningful operations, indicating a possible misplacement of logic, but the presence is weak and borderline."
+  },
+  {
+    "id": 732,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains both data and logic, as evidenced by the presence of methods like setNumRods, setRodDiameter, and setPitch, which validate and modify the data. Additionally, the class has methods like equals, clone, and hashCode, which indicate that it is not just a simple data container."
+  },
+  {
+    "id": 747,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "This class contains only data members with getter and setter methods, indicating a 'Data Class' smell. However, it does not lack significant business logic or behavioral methods entirely, as it is likely intended to hold data for a test topic, suggesting a minor presence of this smell."
+  },
+  {
+    "id": 759,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains both data and significant business logic, such as the creation of LWM2M observations and validation of Californium observations. The presence of methods like `createLwM2mObservation` and `validateCoapObservation` indicates that this class is not just a simple data container, but rather a utility class with meaningful operations."
+  },
+  {
+    "id": 766,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains both data and significant business logic, such as authentication and authorization checks, data validation, and database operations. However, the majority of the methods are getters and setters, and the class is primarily responsible for storing and managing data. Therefore, it exhibits characteristics of a data class, but with a mix of data and behavior, making it a minor case of the smell."
+  },
+  {
+    "id": 777,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains factory methods that create various objects, indicating it has behavioral methods beyond just data storage, thus not fitting the 'Data Class' smell."
+  },
+  {
+    "id": 779,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains a single method that implements a factory interface, indicating it is not purely a data container but has behavioral logic. The presence of a factory method suggests it is not just a simple data class."
+  },
+  {
+    "id": 809,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class CachedReader contains data members and getter/setter methods, but it also has some behavioral methods like getReader and returnReader, which indicate it's not purely a data container. However, the methods are relatively simple and don't significantly impact the class's purpose, making it a minor case of the 'data class' smell."
+  },
+  {
+    "id": 811,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains both data (DateTimeFormatter) and behavioral methods (deserialize and serialize) that operate on that data, indicating it's not just a simple data container."
+  },
+  {
+    "id": 815,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class has two constructors and extends another class, indicating it has more functionality than just storing data. It also implements an interface, which suggests it has some behavioral methods."
+  },
+  {
+    "id": 820,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains business logic and methods for validation, indicating it is not purely a data container, thus not exhibiting the 'Data Class' smell."
+  },
+  {
+    "id": 823,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains significant business logic and behavioral methods beyond just getter and setter methods, indicating it is not a simple data container."
+  },
+  {
+    "id": 833,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members and getter methods, but it also has a method to add data and a method to check if a certain type is contained. Although it lacks significant business logic, it's not entirely a data container without operations, so it's a borderline case."
+  },
+  {
+    "id": 841,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains both data and significant business logic, but it also has a mix of data and operations. The presence of methods like 'visit' and 'resolve' indicates that it's not purely a data container, but it's not entirely free of the smell either."
+  },
+  {
+    "id": 842,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains only a constructor and a call to the superclass, indicating it is primarily a data container with no significant business logic or behavioral methods, fitting the definition of a 'Data Class' smell."
+  },
+  {
+    "id": 848,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains methods with significant business logic and behavioral operations, such as appliesToPartially, appliesTo, getActions, and getImports, indicating that it is not just a simple data container."
+  },
+  {
+    "id": 857,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains both data and significant business logic, including getter and setter methods, but also complex methods like link(), add(), buildDefaultShape(), and buildExternallyDefinedShape(). However, the class is not purely a data container, and the presence of these methods indicates that it is not a straightforward data class. Therefore, the severity is minor."
+  },
+  {
+    "id": 863,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains both data members (e.g., referenceClass, name, kind, modifiers) and significant business logic (e.g., bindTo, compareWithIndirect, indirectMethodType). It also has methods that operate on the data, such as vtableOffset and jittedMethodAddress, which indicates that it is not just a simple data container."
+  },
+  {
+    "id": 866,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains factory methods for creating instances of various LWM2M objects, but it lacks significant business logic or behavioral methods, and its primary purpose is to serve as a data container for creating these objects."
+  },
+  {
+    "id": 871,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains both data members and significant business logic (e.g., the read() method, which operates on the data), indicating it's not purely a data container."
+  },
+  {
+    "id": 873,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains both data and significant business logic, including parsing commands, executing commands, and handling exceptions. It also has methods that operate on the data, such as substituteArgs. Therefore, it does not exhibit the characteristics of a 'data class' code smell."
+  },
+  {
+    "id": 891,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains a method with significant business logic, checkVitality, which operates on the data members (host, port, and timeout). The presence of this method indicates that the class is not just a data container, but also contains meaningful operations, thus not exhibiting the 'Data Class' smell."
+  },
+  {
+    "id": 895,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains significant business logic and behavioral methods, such as the generate method, which performs operations on the data. It also contains helper methods like getTypes and addTypeAndReferences that operate on the data. Therefore, it does not fit the definition of a 'Data Class' code smell."
+  },
+  {
+    "id": 897,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains both data members (e.g., `containerTypesHelper`) and significant business logic (e.g., `checkTopLevelLambda`, `rejectUsagesOfThisInTopLevelLambda`), indicating it is not a simple data container and thus does not exhibit the 'data class' smell."
+  },
+  {
+    "id": 940,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains data members (fields) with getter and setter methods, but it also has significant business logic and behavioral methods, such as parsing JSON objects and creating domain models. However, the class is primarily used as a data container, and the logic is scattered throughout the methods, which is a characteristic of a data class. Therefore, it is a minor instance of a data class smell."
+  },
+  {
+    "id": 945,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class contains both data and significant business logic, including parsing, formatting, and manipulation of the data. It also has methods that operate on the data, such as setAttribute and getAttribute, indicating that it is not just a simple data container."
+  },
+  {
+    "id": 947,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class has a constructor that sets a format, indicating some level of behavior, but it is very minimal and primarily serves as a data container with a single field. It does not contain significant business logic or meaningful operations, but it does have a slight deviation from the 'data class' smell due to the presence of a constructor. However, the overall impact on code quality and maintainability is minimal."
+  },
+  {
+    "id": 953,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods, but it does not lack significant business logic or behavioral methods entirely. It has a constructor and getter methods, which implies some level of structure and organization, but it is still primarily a data container."
+  },
+  {
+    "id": 958,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains both data and significant business logic, such as parsing responses and executing asynchronous requests. It also has setter methods for various parameters, indicating that it's not just a simple data container. Therefore, it does not exhibit the characteristics of a 'Data Class' code smell."
+  },
+  {
+    "id": 975,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This interface contains only constants and does not have any data members or getter/setter methods, so it does not exhibit the characteristics of a Data Class smell."
+  },
+  {
+    "id": 977,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class contains both data and significant business logic or behavioral methods, such as showRelatedRequests(), which indicates that it is not purely a data container. It also contains methods that operate on the data, such as mapView and graphicsOverlay, which further supports the conclusion that it is not a data class."
+  },
+  {
+    "id": 988,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains both data members (expression and allowed) and behavioral methods (inline, accept, getKind, defaultAction), indicating it is not a simple data container but rather a class with meaningful operations."
+  },
+  {
+    "id": 992,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains an abstract method getMediaClock() and extends an abstract class, indicating it's not just a simple data container, but has some business logic and is meant to be extended."
+  },
+  {
+    "id": 998,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains both data members and significant business logic or behavioral methods, such as getPackageFileKinds and extraFileActions, which operate on that data. It also has methods like preRegister and instance that manage the class's lifecycle. Therefore, it does not fit the characteristics of a 'Data Class' code smell."
+  },
+  {
+    "id": 1001,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains both data members and significant business logic, such as the parseResponse and execute methods, indicating it is not a simple data container."
+  },
+  {
+    "id": 1004,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains only data members with a constructor to initialize them, but lacks any significant business logic or behavioral methods, fitting the definition of a Data Class. However, it's not entirely devoid of purpose as it's used to store system information, making it a valid data container."
+  },
+  {
+    "id": 1006,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class contains both data members and significant business logic, including methods that operate on that data, such as `build()`, `addmods()`, and `addClassPath()`. The presence of these methods indicates that the class is not just a data container, but also performs meaningful operations, thus not exhibiting the characteristics of a 'Data Class' code smell."
+  },
+  {
+    "id": 1013,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains both data and significant business logic or behavioral methods, such as declareExtensions, getProperties, addProperty, and getProperty. It is not just a simple data container, but also has meaningful operations that operate on that data, indicating that it is not a 'Data Class' code smell."
+  },
+  {
+    "id": 1030,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains a method with business logic (get), indicating it is not purely a data container, thus not exhibiting the 'Data Class' smell."
+  },
+  {
+    "id": 1033,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains a method that performs a meaningful operation (getAuthorizationHeader), indicating that it is not just a simple data container, but also has some business logic."
+  },
+  {
+    "id": 1035,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains a large number of test cases, but it does not contain any data members or getter and setter methods. It is primarily used for testing and does not serve as a data container, so it does not exhibit the characteristics of a 'Data Class' code smell."
+  },
+  {
+    "id": 1037,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains data members with getter and setter methods, but it also has some behavioral methods like setName and getAttributes, which indicate that it is not purely a data container. However, the business logic is still somewhat limited, and the class could benefit from more meaningful operations."
+  },
+  {
+    "id": 1039,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains only a constructor and a call to the superclass, indicating it serves primarily as an exception class with minimal data and no significant business logic, thus fitting the 'Data Class' code smell description."
+  },
+  {
+    "id": 1048,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "This class contains only data members and getter/setter methods, but it also has some business logic in the build() method, indicating a mix of data and behavior. However, the primary purpose of this class seems to be as a data container, and the business logic is relatively simple, so it's classified as minor."
+  },
+  {
+    "id": 1051,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains only static final fields and does not have any getter or setter methods, nor does it contain any significant business logic or behavioral methods. It serves primarily as a data container without meaningful operations, which aligns with the characteristics of a data class. However, its primary purpose is to hold constants, which is a common and acceptable use case for a data class."
+  },
+  {
+    "id": 1068,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class contains both data members (fields) and significant business logic or behavioral methods, such as the withKeys and withTruncated methods, which modify the state of the object. This indicates that the class is not just a simple data container, but also contains meaningful operations, thus not exhibiting the characteristics of a 'Data Class' code smell."
+  },
+  {
+    "id": 1070,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This interface contains only data members (fields) with getter and setter methods, but it also defines a static factory method for creating instances, which suggests it has some level of logic. However, the primary purpose of this interface appears to be as a data container, and it lacks significant business logic or behavioral methods. Therefore, it does not exhibit the characteristics of a typical 'data class' smell."
+  },
+  {
+    "id": 1072,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class has a large number of methods for reading different types of data, which is a characteristic of a data class. This suggests that the class is primarily used for data parsing and manipulation, rather than for complex business logic."
+  },
+  {
+    "id": 1074,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains methods with significant business logic, such as getFamilyName, getOsPrefix, and getArch, indicating it is not a simple data container."
+  },
+  {
+    "id": 1076,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "This class contains data members and methods to operate on that data, but it primarily serves as a data container without significant business logic. The presence of methods like `startElement`, `characters`, and `endElement` suggests that it's not purely a data class, but it's still leaning towards being a data container with some behavioral methods."
+  },
+  {
+    "id": 1079,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains both data and significant business logic (the execute method), which operates on that data, thus not exhibiting the characteristics of a 'Data Class' code smell."
+  },
+  {
+    "id": 1081,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class SegmentFileData appears to be a simple data container with only three fields (file, state, and num), which is a common characteristic of a data class. This class does not seem to have any behavior or methods, which further supports the classification as a data class."
+  },
+  {
+    "id": 1084,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The provided interface ParSeqRestliClient contains methods with significant business logic and behavioral operations, indicating that it is not a simple data container. It has methods for sending requests, creating tasks, and retrieving metrics, which suggests that it is a class with meaningful operations, not just a data class."
+  },
+  {
+    "id": 1092,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains both data members (fields) and significant business logic or behavioral methods, such as nextStream(), available(), read(), and close(). It is not just a simple data container, but also performs meaningful operations on the data, indicating that it does not exhibit the 'Data Class' code smell."
+  },
+  {
+    "id": 1094,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains significant business logic and behavioral methods, such as tryRelease, tryAcquire, tryReleaseShared, and tryAcquireShared, which operate on the data members. It also has methods like readerShouldBlock and writerShouldBlock that indicate the presence of meaningful operations. Therefore, it does not fit the definition of a 'Data Class' code smell."
+  },
+  {
+    "id": 1097,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The code contains a large number of methods with similar functionality, such as `updateExternalSubs` and `parseSubtitleFile`, which suggests that it could be refactored into a data class to improve maintainability and reduce code duplication."
+  },
+  {
+    "id": 1103,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains only static final fields and does not have any significant business logic or behavioral methods, indicating it is primarily a data container without meaningful operations."
+  },
+  {
+    "id": 1106,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains both data and meaningful operations such as encoding and decoding, indicating that it is not purely a data container but rather a class with a clear purpose and behavior."
+  },
+  {
+    "id": 1109,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains both data and significant business logic or behavioral methods, such as authentication, telemetry tracking, and exception handling. It also has methods that operate on that data, indicating that it is not just a simple data container. Therefore, it does not exhibit the characteristics of a 'Data Class' code smell."
+  },
+  {
+    "id": 1117,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class AttList contains data members (fields) with getter and setter methods, but it also has several methods that operate on that data, such as getURI, getLocalName, and getValue. While it is primarily a data container, it does contain some meaningful operations, which suggests that the 'data class' smell is present but not severe."
+  },
+  {
+    "id": 1127,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains a single method (onClick) that performs a specific action, indicating it is not purely a data container and has some business logic. It also has a constructor and a field, which suggests it is not just a simple data class."
+  },
+  {
+    "id": 1135,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods, but it does not lack significant business logic entirely. It's a borderline case, but it could be argued that a class with only data and no meaningful operations is a 'Data Class'."
+  },
+  {
+    "id": 1137,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "Although the class contains only data members and getter/setter methods, it does have a method that performs a calculation and modifies the launchArguments object. However, the method is relatively simple and doesn't encapsulate complex business logic, indicating a minor presence of the 'data class' smell."
+  },
+  {
+    "id": 1139,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains some data members and getter methods, but it also has significant business logic and behavioral methods, such as the start and stop methods, which indicates that it is not purely a data container. However, it does lack meaningful operations on the data, which is a characteristic of a data class. Therefore, the presence of this smell is weak and borderline."
+  },
+  {
+    "id": 1140,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains both data (originalBorder) and significant business logic (verify and shouldYieldFocus methods), indicating it's not just a data container."
+  },
+  {
+    "id": 1149,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains both data members and significant business logic (e.g., the fireNodeActionEvent method), indicating it is not purely a data container."
+  },
+  {
+    "id": 1152,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains methods like invocationCallback, copy, and build, which indicate the presence of business logic or behavioral methods, thus not being a pure data container."
+  },
+  {
+    "id": 1158,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The Builder class contains methods that perform operations on the data, such as opcNextPage, opcRequestId, and items. This indicates that the class contains both data and logic, making it not a 'Data Class' code smell."
+  },
+  {
+    "id": 1160,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains only a single data member and its corresponding getter method, lacking significant business logic or behavioral methods, thus it does not exhibit the characteristics of a 'Data Class' smell."
+  },
+  {
+    "id": 1162,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains both data and behavioral methods (e.g., build(), copy()), indicating that it is not solely a data container but also encapsulates meaningful operations."
+  },
+  {
+    "id": 1167,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "This class contains only data members and getter/setter methods, but it also has some business logic in the form of the 'fromResponse' method, which transforms the response from the API call. However, the business logic is limited and primarily serves as a data container, indicating a minor presence of the 'data class' smell."
+  },
+  {
+    "id": 1169,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains both data (progress tracker) and behavioral methods (duplicate), indicating it's not just a data container but a class with meaningful operations."
+  },
+  {
+    "id": 1175,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class contains both data and logic, as it has a Builder class with methods that operate on the data, and it also has a deprecated constructor that takes in data and uses it to initialize the object. This indicates that the class is not just a simple data container, but also contains meaningful operations."
+  },
+  {
+    "id": 1185,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains an abstract method (buildRequestParams) which indicates the presence of business logic or behavioral methods, thus not fitting the definition of a 'Data Class' smell."
+  },
+  {
+    "id": 1186,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The provided code snippet appears to be a Java interface for a network management API, and the methods are all related to updating various network components. The presence of multiple methods with similar names and parameters suggests a data class smell, where the interface is attempting to encapsulate data and behavior within a single class. This can lead to tight coupling and make the code harder to maintain and extend."
+  },
+  {
+    "id": 1197,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This interface contains only data members (enums) and getter-like methods (toString), but it does not lack significant business logic or behavioral methods. It actually contains methods that operate on the data, making it not a 'Data Class' smell."
+  },
+  {
+    "id": 1200,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class MonoWhen contains both data members (fields) and significant business logic or behavioral methods, such as subscribe and signalError. It also contains methods that operate on the data, like whenAdditionalSource and signal. Therefore, it does not fit the characteristics of a 'Data Class' code smell."
+  },
+  {
+    "id": 1205,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This interface contains a mix of getter methods for connection properties, channel creation methods, and close/abort methods. While it primarily serves as a data container, it also contains significant business logic and behavioral methods, making it not a pure 'data class'."
+  },
+  {
+    "id": 1215,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains both data members and behavioral methods, such as getAndroidSdkDependency() and getJarPath(), indicating it's not purely a data container. However, the presence of getter and setter methods for data members, like getAndroidVersion() and setAndroidVersion(), suggests a minor presence of the data class smell."
+  },
+  {
+    "id": 1220,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains both data members and a method that operates on that data, indicating it's not a pure data container, thus the 'data class' smell is absent."
+  },
+  {
+    "id": 1229,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains only data members and constructor, lacking significant business logic or behavioral methods, which aligns with the characteristics of a 'Data Class' code smell. However, its primary purpose is to encapsulate data and provide a constructor, indicating a deliberate design choice rather than a misplaced logic."
+  },
+  {
+    "id": 1230,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This interface contains only a method to retrieve the name of the type, which is a data member, but it lacks any significant business logic or behavioral methods, and it's not serving as a data container with meaningful operations, thus it does not exhibit the characteristics of a 'Data Class' code smell."
+  },
+  {
+    "id": 1240,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains data members and getter/setter methods, but it also has significant business logic and behavioral methods such as createSuite(), add(), done(), and the nested Activation class, indicating a mix of data and operations."
+  },
+  {
+    "id": 1243,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains business logic and behavioral methods, such as processing a signup form submission and handling API requests, indicating it is not a simple data container."
+  },
+  {
+    "id": 1249,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains both data and behavioral methods, but the data members are mostly used as a data container without significant business logic. However, the presence of methods like `refreshData()` and `resetData()` suggests that the class is not purely a data container, but it still lacks meaningful operations that would make it a more robust class."
+  },
+  {
+    "id": 1252,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "This class contains only data members with getter and setter methods, but it does not lack significant business logic entirely. It has a single method setServletPath() that is not a typical getter/setter pair, indicating some level of operation on the data. However, the class is still primarily a data container without meaningful operations, thus classified as a minor data class smell."
+  },
+  {
+    "id": 1254,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains methods that operate on the data, such as serialize, determineProperty, and getProperty, which indicates that it is not purely a data container but rather a class with both data and behavior."
+  },
+  {
+    "id": 1256,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class GrailsProcessStackTracer contains both data and business logic, but the presence of the OutputFetcher inner class, which only contains data and getter/setter methods, suggests a minor presence of the data class smell. However, the business logic in the class is more significant than the data-only class, so the severity is minor."
+  },
+  {
+    "id": 1260,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains only data members (fields) with getter and setter methods, but it also has a constructor and a static map for deserialization, which suggests it has some additional functionality beyond just data storage. However, the methods are mostly static and related to deserialization, which is more of a utility function than a behavioral method. Overall, it's a borderline case, but I would classify it as 'none' because it doesn't significantly impact readability or maintainability."
+  },
+  {
+    "id": 1261,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains only constants and does not have any data members or methods that operate on that data, indicating it is a data container without meaningful operations."
+  },
+  {
+    "id": 1269,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains both data members and significant business logic or behavioral methods, such as the creation of the UI, handling of events, and management of listeners. It also contains methods that operate on the data, such as sorting the active project names and setting the initial selection. Therefore, it does not exhibit the characteristics of a 'Data Class' code smell."
+  },
+  {
+    "id": 1273,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains both data members (fields) and getter methods, but it also has significant business logic and behavioral methods, such as the `perform` and `scanWeakHashmap` methods. However, the class is primarily used as a data container and lacks meaningful operations, which is a characteristic of a Data Class. Therefore, it is classified as a minor Data Class smell."
+  },
+  {
+    "id": 1274,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains both data and significant business logic, as evidenced by its numerous methods that interact with the data. The class is not simply a data container, but rather a service that encapsulates the logic for interacting with the data. Therefore, it does not exhibit the characteristics of a 'Data Class' code smell."
+  },
+  {
+    "id": 1279,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class contains both data members and significant business logic (e.g., setter methods for configuration properties), indicating that it is not solely a data container and thus does not exhibit the 'data class' smell."
+  },
+  {
+    "id": 1293,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains both data (updates) and meaningful operations (writeAsElement), indicating that it is not solely a data container but also performs operations on that data."
+  },
+  {
+    "id": 1295,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This interface contains a single method with a clear purpose, indicating it's not a data container but a behavioral interface, thus not exhibiting the 'Data Class' smell."
+  },
+  {
+    "id": 1303,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This interface contains only a single method signature and does not have any data members or setter/getter methods, indicating it is not a Data Class."
+  },
+  {
+    "id": 1304,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains both data members and significant business logic (the extractHeaders method), indicating it's not just a data container. The presence of the extractHeaders method, which performs meaningful operations on the data, suggests that the logic is not misplaced."
+  },
+  {
+    "id": 1307,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members and getter/setter methods, but it also delegates operations to a delegate object, indicating some level of behavior. However, the primary purpose of this class seems to be data container, and it lacks significant business logic."
+  },
+  {
+    "id": 1310,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains both data members (fields) and significant business logic or behavioral methods, such as isEndpointExposed() and createEndpoint(). It also has methods that operate on the data, making it not a pure data container."
+  },
+  {
+    "id": 1315,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class has a large number of methods that are similar, suggesting that it could be simplified by using a data class."
+  },
+  {
+    "id": 1317,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This interface contains only a method signature and does not contain any data members or getter/setter methods, thus it does not exhibit the characteristics of a Data Class code smell."
+  },
+  {
+    "id": 1320,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains abstract methods that are not just getters and setters, but also methods that seem to be part of the class's purpose, such as determining the loop index, end, and step. It also has a method for initStatements(), which suggests that it's not just a simple data container."
+  },
+  {
+    "id": 1325,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This interface contains only a single method and no data members, indicating it is not a data class. It appears to be an extension of another interface with a specific method override, which is a typical use case for an interface in object-oriented programming."
+  },
+  {
+    "id": 1331,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains both data and significant business logic, including methods for validating Gerrit Change-ids, creating Gerrit APIs, and handling repository and transport operations. It also has methods for validating and creating Gerrit APIs, which indicates that it is not just a simple data container."
+  },
+  {
+    "id": 1338,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains a method with significant business logic (translate) and is not solely a data container, thus it does not exhibit the characteristics of a 'Data Class' code smell."
+  },
+  {
+    "id": 1348,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains a ClassLoader implementation with a custom loadClass method, indicating the presence of significant business logic and behavioral methods, thus not fitting the 'Data Class' smell definition."
+  },
+  {
+    "id": 1355,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains injected dependencies and a method for creating an UnknownTypeRef, indicating it has some business logic and is not just a simple data container."
+  },
+  {
+    "id": 1357,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains both data members and a constructor, but it also has an enum within it, which suggests it's not just a simple data container. The presence of the enum and the fact that it has constructors that set different fields to null or non-null, indicating some level of control over the data, suggests it's not a pure data class."
+  },
+  {
+    "id": 1358,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains both data members (fields) and significant business logic or behavioral methods, such as isSubtype(), hasEqualParameters(), and checkArrowEquivalenceHelper(). It also has methods that operate on the data, like resolveInternal() and hasUnknownParamsOrReturn(). Therefore, it does not exhibit the characteristics of a 'data class' code smell."
+  },
+  {
+    "id": 1361,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains both data (e.g., CssRulesetNode, CssSelectorListNode, CssDeclarationBlockNode) and significant business logic (e.g., enterRuleset method, visitController.replaceCurrentBlockChildWith method), indicating it is not a simple data container but rather a class with meaningful operations."
+  },
+  {
+    "id": 1371,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "This class contains data members (m_actionProvider and m_rows) with getter and setter methods (none explicitly shown, but implied), but it also has a significant business logic method (actionPerformed) that operates on that data, indicating a mix of data and behavior."
+  },
+  {
+    "id": 1373,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains a mix of data members and a meaningful method (emitCode) that operates on that data, indicating it is not a simple data container but rather a class with a specific purpose."
+  },
+  {
+    "id": 1379,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains a method (emitCode) that performs a specific operation, which indicates the presence of behavioral logic. It is not merely a data container, but rather a class that encapsulates both data and meaningful operations."
+  },
+  {
+    "id": 1384,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "Although this class contains only data members and lacks significant business logic, it does have a constructor and a toString method, indicating some level of customization. However, the class primarily serves as a data container, and the presence of a constructor and toString method is not enough to justify the absence of data class smell. Therefore, the severity is minor."
+  },
+  {
+    "id": 1396,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains both data members (e.g., `metaspaceMethod`, `config`) and significant business logic or behavioral methods (e.g., `emitCode`, `verify`), indicating that it is not solely a data container."
+  },
+  {
+    "id": 1400,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains substitute methods for various Java Object methods, indicating it's not just a simple data container but rather a class with significant business logic, thus not exhibiting the 'data class' smell."
+  },
+  {
+    "id": 1404,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class contains both data and significant business logic, including various factory methods and setter creation logic, indicating that it is not purely a data container."
+  },
+  {
+    "id": 1408,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class contains both data and significant business logic, such as the `sendingResponse` method, which indicates that it is not purely a data container. It also has methods like `receivedRequest` and `postProcessRequestHeaders` that operate on the data, further supporting the conclusion that it is not a data class."
+  },
+  {
+    "id": 1410,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains a constructor and a dependency injection, but no data members or getter/setter methods, indicating it's more of a service class than a data class."
+  },
+  {
+    "id": 1414,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "This class contains only a constructor and no data members or business logic, indicating it serves primarily as a data container without meaningful operations."
+  },
+  {
+    "id": 1418,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class has a constructor that takes a repository as a parameter, indicating it may be involved in business logic or operations, thus not purely a data container."
+  },
+  {
+    "id": 1427,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains a constructor and a dependency injection, indicating it's not just a simple data container but has some form of logic or setup, thus not fitting the 'data class' smell."
+  },
+  {
+    "id": 1436,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains a constructor with a dependency, which suggests it's not just a simple data container, but rather a service class with some form of logic or operation, thus not exhibiting the characteristics of a 'Data Class' code smell."
+  },
+  {
+    "id": 1440,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains a constructor, an override of the toString method, and is annotated with @Entity, indicating it's likely part of a larger framework or ORM system, thus it's not just a simple data container."
+  },
+  {
+    "id": 1442,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "This class contains only data members with getter and setter methods, but it does have a constructor that initializes its fields, indicating some level of control over its state. However, it lacks significant business logic or behavioral methods, suggesting a minor presence of the 'data class' smell."
+  },
+  {
+    "id": 1444,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains both data members (selector, result, source) and behavioral methods (emitCode), indicating it serves as both a data container and a class with meaningful operations, thus not exhibiting the 'Data Class' smell."
+  },
+  {
+    "id": 1459,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains both data and significant business logic, such as the various 'apply' methods that modify the command instance. It also has meaningful operations, like disabling upsert, which indicates that the logic is not misplaced. Therefore, it does not exhibit the characteristics of a 'Data Class' code smell."
+  },
+  {
+    "id": 1461,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains data members with getter and setter methods, but it also has a constructor that sets the type based on the class name, indicating some level of business logic. However, the logic is very basic and doesn't significantly impact the class's purpose as a data container."
+  },
+  {
+    "id": 1464,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The provided code snippet contains a long method with multiple responsibilities, including exception handling, bytecode execution, and memory management. This can make the code harder to understand and maintain. A method with this many responsibilities should be refactored into smaller, more focused methods to improve code readability and maintainability."
+  },
+  {
+    "id": 1470,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class Z contains methods with different access modifiers (public, private, default, protected) and return types, indicating that it is not solely a data container but also contains some logic, thus not exhibiting the 'Data Class' smell."
+  },
+  {
+    "id": 1473,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class CollectionJson contains both data members and meaningful operations such as withItems, withLinks, and withOwnSelfLink, indicating that it is not a pure data container but rather a data container with associated logic."
+  },
+  {
+    "id": 1476,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class contains a method `summarize()` which performs a meaningful operation on the data, indicating that it is not purely a data container."
+  }
+]
