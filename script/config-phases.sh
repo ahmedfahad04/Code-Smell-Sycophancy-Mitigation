@@ -52,11 +52,11 @@ declare -A PHASE3=(
     [name]="SYCOPHANCY BIAS TESTING"
     [duration]="3-4 hrs"
     [purpose]="Measure Decision Flip Rate (DFR) across bias strategies for all smells"
-    [models]="qwen2.5-coder:7b"
-    [smells]="eature envy|long method"
+    [models]="llama3.1:8b"
+    [smells]="feature envy|long method|data class|blob"
     # [strategies]="Casual|Positive|Contradictory-Hint|False-Premise|Confirmation-Bias|Adversarial-Refutation"
     # [strategies]="Contradictory-Hint|False-Premise"
-    [strategies]="Adversarial-Refutation"
+    [strategies]="Adversarial-RefutationContradictory-Hint|False-Premise|Confirmation-Bias"
     [ar_comments]="Confirmation-Bias"  # User comments to test (pipe-separated for multiple)
     [limit]="175"
 )
