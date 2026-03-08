@@ -1,0 +1,1402 @@
+[
+  {
+    "id": 532,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has multiple responsibilities, calculating lengths for different variables, but it is still relatively short and easy to understand, thus classified as minor."
+  },
+  {
+    "id": 552,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has a moderate number of lines and performs multiple tasks, such as retrieving a mapping from known mappings and falling back to getting properties mapping, but it's not excessively long or complex."
+  },
+  {
+    "id": 565,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method DynamicExpression() is not excessively long, and it appears to be focused on a single responsibility, which is to parse a dynamic expression. The code is also relatively straightforward and easy to understand, with a clear structure and minimal complexity."
+  },
+  {
+    "id": 567,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise and focused on a single responsibility, adjusting a relative path. It has a clear and simple logic flow without excessive nesting or complexity, making it easy to understand and maintain."
+  },
+  {
+    "id": 571,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is not excessively long with too many lines of code, and it focuses on a single responsibility of comparing two objects for equality. It also does not have high complexity due to nested structures."
+  },
+  {
+    "id": 572,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method endAccess() is short and concise, performing a single task, and does not exhibit excessive length or complexity."
+  },
+  {
+    "id": 574,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is not excessively long, but it performs multiple tasks such as initialization, clearing, and updating the map, which could be considered a minor case of the long method smell."
+  },
+  {
+    "id": 576,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise, focusing on a single responsibility, and does not exhibit excessive length or complexity, making it easy to understand and maintain."
+  },
+  {
+    "id": 580,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "This method is short and concise, with only a few lines of code, and it appears to be focused on a single responsibility, which is initializing the introspector."
+  },
+  {
+    "id": 608,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method has only 4 lines of code and does not perform multiple tasks, making it concise and easy to understand."
+  },
+  {
+    "id": 612,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing multiple tasks such as signature validation, expiration time validation, and user authentication, but it is not excessively long with too many lines of code. However, it has some nested structures (if-else statements) which could make it slightly harder to understand and maintain. Nevertheless, it is still manageable and its complexity is not severe enough to be considered 'major' or 'critical'."
+  },
+  {
+    "id": 616,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and focused on a single responsibility, setting a property. It does not perform multiple tasks or have high complexity."
+  },
+  {
+    "id": 623,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "This method is excessively long with 84 lines of code, performing multiple tasks such as parsing log entries, handling different types of events, and maintaining state. It also has high complexity due to nested structures like loops and conditionals, making it hard to understand and maintain. The method's single responsibility is not clear, and it would be beneficial to break it down into smaller, more focused methods."
+  },
+  {
+    "id": 636,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "This method is short and concise, focusing on a single responsibility and not performing multiple tasks or having high complexity."
+  },
+  {
+    "id": 640,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise and focuses on a single responsibility, replacing a substring in a string based on a pattern. It has a clear and simple structure, with only a few lines of code and no nested structures."
+  },
+  {
+    "id": 666,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and concise, performing a single task of comparing two objects for equality, and does not exhibit excessive length, complexity, or multiple responsibilities."
+  },
+  {
+    "id": 678,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise and focused on a single responsibility, making it easy to understand and maintain. It does not perform multiple tasks or have high complexity, and its length is manageable."
+  },
+  {
+    "id": 682,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and focused on a single responsibility, it does not perform multiple tasks or have high complexity."
+  },
+  {
+    "id": 692,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and focused on a single responsibility, checking equality of two Key objects, and does not exhibit excessive length or complexity."
+  },
+  {
+    "id": 696,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has multiple responsibilities (checking, inserting, removing) but is not excessively long, with only 6 lines of code. However, it does perform multiple tasks, which is a characteristic of the 'Long Method' code smell."
+  },
+  {
+    "id": 710,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method rule__XWhileExpression__Group__0__Impl() has a relatively small number of lines of code and does not perform multiple tasks or have high complexity, making it concise and easy to understand."
+  },
+  {
+    "id": 712,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is long with 14 lines of code, but it appears to focus on a single responsibility (processing a specific assignment) and does not have excessively complex nested structures. However, its length could make it harder to understand and maintain for some developers, thus it is classified as a minor smell."
+  },
+  {
+    "id": 722,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is not excessively long with too many lines of code. It has a single responsibility and is focused on a specific task. The code is also well-structured and easy to understand."
+  },
+  {
+    "id": 739,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "This method is short and concise, focusing on a single responsibility of providing a string representation of the object. It does not have multiple tasks or responsibilities, and its complexity is low due to its simplicity."
+  },
+  {
+    "id": 743,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has multiple conditional statements and recursive calls, but its length is not excessively high. It appears to be focused on a single responsibility, which is resolving generic references, and its complexity is manageable."
+  },
+  {
+    "id": 754,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is not excessively long, but it does perform multiple tasks, such as checking for null arguments and replacing placeholders with values, which could be refactored into separate methods for better clarity and maintainability."
+  },
+  {
+    "id": 756,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and only contains a few lines of code, performing a single task of updating a Cloud Publisher. It does not exhibit any signs of excessive length, multiple responsibilities, or high complexity."
+  },
+  {
+    "id": 760,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has a single conditional block and two method calls, which is not excessively long or complex, but still performs multiple tasks, making it a minor case of the 'long method' smell."
+  },
+  {
+    "id": 764,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "This method is short and focused on a single responsibility, calculating the hash code of the object. It does not perform multiple tasks, have high complexity, or have nested structures, so it does not exhibit the characteristics of a 'Long Method' code smell."
+  },
+  {
+    "id": 768,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is long with multiple lines of code, but it only performs a single task (calculating the hash code) and does not have excessively complex nested structures. However, it does have multiple responsibilities, such as handling different fields of the object, which makes it slightly harder to understand and maintain."
+  },
+  {
+    "id": 772,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "This method is concise and focused on a single responsibility, making it easy to understand and maintain. It checks for a null value and handles it accordingly, then writes the version value if it's not null. The logic is straightforward and doesn't exhibit excessive length or complexity."
+  },
+  {
+    "id": 782,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "This method is short and focused on a single responsibility, checking the length of a device list, with only a few lines of code and no complex structures."
+  },
+  {
+    "id": 804,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is long with multiple responsibilities, but it is not excessively long and its complexity is manageable. It has a clear structure and performs a specific task, which is to merge data from a CodedInputStream. While it could be broken down into smaller methods for better readability, it does not significantly impact maintainability."
+  },
+  {
+    "id": 813,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has multiple responsibilities, such as extracting the page encoding from the attribute value and handling the contentType. However, it does not have extremely high complexity or perform multiple unrelated tasks, so it is considered minor."
+  },
+  {
+    "id": 818,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has multiple tasks and conditional structures, but its complexity is manageable and it can be understood at a glance. It does not significantly impact readability or maintainability, but could benefit from some refactoring to improve its single responsibility and conciseness."
+  },
+  {
+    "id": 826,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "This method is short and focused on a single responsibility, allocating a byte array from the cache. It does not exhibit the characteristics of a long method, such as excessive length, multiple tasks, or high complexity."
+  },
+  {
+    "id": 831,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and focused on a single responsibility, making it easy to understand and maintain."
+  },
+  {
+    "id": 853,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is not excessively long, performs a single task, and does not have high complexity due to nested structures. It is concise and easy to understand, making it free from the 'Long Method' code smell."
+  },
+  {
+    "id": 854,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is long with 17 lines of code, but it performs a specific task of finding an application to run and handles different scenarios. Although it has some nested structures, the logic is relatively straightforward and easy to follow. However, it could be refactored to make it even more concise and maintainable."
+  },
+  {
+    "id": 875,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and concise, performing a single task of initializing an event based on the bundle's state, and does not exhibit high complexity or multiple responsibilities."
+  },
+  {
+    "id": 876,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and concise, focusing on a single responsibility, and does not exhibit excessive length, complexity, or multiple responsibilities."
+  },
+  {
+    "id": 878,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is not excessively long, and it does not perform multiple tasks or have multiple responsibilities. It has a single responsibility and is concise enough to understand at a glance."
+  },
+  {
+    "id": 883,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and focused on a single responsibility, making it easy to understand and maintain."
+  },
+  {
+    "id": 920,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and focused on a single responsibility, making it easy to understand and maintain. It does not perform multiple tasks or have high complexity, so it does not exhibit the characteristics of a 'long method' code smell."
+  },
+  {
+    "id": 932,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is long with multiple tasks, but it is still relatively easy to understand and maintain due to its structured approach and clear responsibilities. However, it could be improved by breaking it down into smaller methods to enhance readability and maintainability."
+  },
+  {
+    "id": 939,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "This method is performing multiple tasks, such as checking for null values and constructing a cache key, but it is not excessively long or complex. However, it could be improved by breaking it down into smaller, more focused methods."
+  },
+  {
+    "id": 954,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and concise, performing a single task of converting the object's entries to a string. It does not have multiple responsibilities, high complexity, or nested structures, making it easy to understand and maintain."
+  },
+  {
+    "id": 978,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The constructor of the UsagesNode class is short and concise, only initializing instance variables. It does not perform multiple tasks or have high complexity, making it free from the 'Long Method' smell."
+  },
+  {
+    "id": 997,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "This method is concise and focused on a single responsibility, checking if a given atom type should be parsed. It does not exhibit excessive length, complexity, or multiple responsibilities, making it unlikely to be considered a long method."
+  },
+  {
+    "id": 1016,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "This method is short and focused on a single responsibility, it does not perform multiple tasks, and its complexity is low."
+  },
+  {
+    "id": 1018,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise and focused on a single responsibility, joining an array of longs with a delimiter. It does not have excessive lines of code, multiple tasks, or high complexity. It is easy to understand and maintain."
+  },
+  {
+    "id": 1020,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise and focused on a single responsibility, reading a null-terminated string from a byte array. It has a clear and simple structure, with only a few conditional checks and no nested loops or complex logic."
+  },
+  {
+    "id": 1022,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method 'verifyAllParameters' is short and focused on a single responsibility, making it easy to understand and maintain. It does not perform multiple tasks or have high complexity, thus it does not exhibit the characteristics of a 'Long Method' code smell."
+  },
+  {
+    "id": 1042,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing multiple tasks such as computing and displaying the pin, handling different OTP types, and updating the user's data. Although it is not extremely long, it has multiple responsibilities and some complexity due to conditionals, which makes it a minor case of the 'long method' smell."
+  },
+  {
+    "id": 1046,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "This method is concise and focused on a single responsibility, rewriting text and updating the state. It does not appear to be excessively long or complex, and its purpose is clear at a glance."
+  },
+  {
+    "id": 1053,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "This method is short and does not perform multiple tasks or have multiple responsibilities, so it does not exhibit the characteristics of a 'Long Method' code smell."
+  },
+  {
+    "id": 1055,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is excessively long with multiple tasks and responsibilities, having a high complexity due to nested structures and conditional statements. It is hard to understand and maintain, and its single responsibility is unclear. It is a clear presence of the 'long method' code smell."
+  },
+  {
+    "id": 1058,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise and performs a single task, converting an HTTP request to a JSON map. It does not have excessive lines of code, nested structures, or multiple responsibilities, making it easy to understand and maintain."
+  },
+  {
+    "id": 1063,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "This method is focused on a single responsibility (calculating operation statistics) and is relatively concise, with a manageable number of lines and complexity."
+  },
+  {
+    "id": 1066,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is long with several assignments and method calls, but it still focuses on a single responsibility (initializing the server). The complexity is moderate, but it's not excessively nested or hard to understand."
+  },
+  {
+    "id": 1089,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "This method is short and concise, focusing on a single responsibility of initializing the object's properties. It does not perform multiple tasks, have high complexity, or exhibit any characteristics of a long method."
+  },
+  {
+    "id": 1090,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "This method is concise and only performs a single task, which is to determine the type of task to create based on the d2RequestTimeoutEnabled flag. It does not have excessive lines of code, nested structures, or multiple responsibilities, making it easy to understand and maintain."
+  },
+  {
+    "id": 1112,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and concise, performing a single task of running a command handler. It does not exhibit excessive length, multiple responsibilities, or high complexity, making it easy to understand and maintain."
+  },
+  {
+    "id": 1114,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "This method is very short and does not perform multiple tasks, so it does not exhibit the characteristics of a 'Long Method' code smell."
+  },
+  {
+    "id": 1121,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and focused on a single responsibility, making it easy to understand and maintain. It does not perform multiple tasks or have high complexity, thus it does not exhibit the characteristics of a 'Long Method' code smell."
+  },
+  {
+    "id": 1122,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is excessively long with 24 lines of code, performing multiple tasks such as updating subject DN, key, and policy state variables, and checking for various conditions. It also has nested structures like loops and conditionals, making it hard to understand and maintain. While it focuses on a single responsibility, its length and complexity make it a candidate for refactoring."
+  },
+  {
+    "id": 1131,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is very short and only performs a single task, checking if the connection is closed, and then returns a boolean value. It does not have multiple responsibilities, high complexity, or nested structures, making it easy to understand and maintain."
+  },
+  {
+    "id": 1133,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is very short and only contains a single line of code, making it easy to understand and maintain. It does not perform multiple tasks or have high complexity, so it does not meet the criteria for the 'Long Method' code smell."
+  },
+  {
+    "id": 1142,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "This method is not excessively long, nor does it perform multiple tasks. It has a clear and focused responsibility, making it concise and easy to understand."
+  },
+  {
+    "id": 1145,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "This method is short and focused on a single responsibility, assigning a TCP options object to the builder. It does not perform multiple tasks, have high complexity, or make it hard to understand or maintain."
+  },
+  {
+    "id": 1157,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is not excessively long, but it performs a single task of paginating users with a record paginator. However, it could be considered minor because it has a few lines of code and performs a specific task, but it's not extremely complex or hard to understand."
+  },
+  {
+    "id": 1164,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "This method is short and focused on a single responsibility, assigning a map of defined tags to the builder object. It does not perform multiple tasks, have high complexity, or exhibit any characteristics of a long method."
+  },
+  {
+    "id": 1172,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "This method is short and focused on a single responsibility, assigning a value to the 'nodePoolId' property and adding it to the '__explicitlySet__' list. It does not perform multiple tasks, have high complexity, or make it hard to understand or maintain."
+  },
+  {
+    "id": 1179,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and focused on a single responsibility, setting a single property and adding it to an explicitly set collection. It does not exhibit excessive length, multiple responsibilities, or high complexity, so it does not meet the criteria for a 'Long Method' code smell."
+  },
+  {
+    "id": 1181,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and concise, performing a single task of building a GetRouteTableRequest object. It does not exhibit excessive length, multiple responsibilities, or high complexity, making it easy to understand and maintain."
+  },
+  {
+    "id": 1183,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and focused on a single responsibility, making it easy to understand and maintain."
+  },
+  {
+    "id": 1188,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is long with 13 lines of code, but it focuses on a single responsibility (creating a preauthenticated request) and does not have excessively complex nested structures. However, it does perform multiple tasks, such as converting the request, making the HTTP call, and handling retries, which contributes to its length and complexity."
+  },
+  {
+    "id": 1191,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is long with 44 lines of code, but it appears to be focused on a single responsibility and follows a clear structure. The presence of multiple conditionals and nested structures contributes to its complexity, but it is still manageable. Overall, while it could benefit from some refactoring, it does not significantly impact readability or maintainability."
+  },
+  {
+    "id": 1198,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and focused on a single responsibility, making it easy to understand and maintain. It does not perform multiple tasks or have high complexity, thus it does not exhibit the characteristics of a 'Long Method' code smell."
+  },
+  {
+    "id": 1203,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and focused on a single responsibility, requiring no parameters and performing a simple assignment."
+  },
+  {
+    "id": 1208,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "This method is short and focused on a single responsibility, returning the active network based on the default network status. It does not have multiple tasks or responsibilities, and its complexity is low due to a simple conditional statement."
+  },
+  {
+    "id": 1211,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing multiple tasks, such as checking the controller, finishing the activity, and handling different lifecycle stages, but it is still relatively concise and easy to understand. The use of a switch statement to handle different stages is a good design choice, and the method is not excessively long or complex."
+  },
+  {
+    "id": 1213,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and concise, with only a few lines of code. It performs a single task and does not have high complexity or nested structures. Therefore, it does not exhibit the characteristics of a 'Long Method' code smell."
+  },
+  {
+    "id": 1216,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is long with 10 lines of code, but it focuses on a single responsibility (extracting pointer coordinates) and does not have excessive nesting or complexity. However, it performs multiple tasks such as getting the native motion event, validating indices and history positions, and converting native pointer coordinates, which makes it slightly harder to understand and maintain."
+  },
+  {
+    "id": 1227,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method dumpStack is relatively short and focused on a single responsibility, making it easy to understand and maintain. It does not perform multiple tasks or have high complexity, so it does not exhibit the characteristics of a long method smell."
+  },
+  {
+    "id": 1236,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "This method is very short and only initializes two fields, it does not perform multiple tasks or have high complexity."
+  },
+  {
+    "id": 1239,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and focused on a single responsibility, making it easy to understand and maintain. It does not perform multiple tasks or have high complexity, so it does not exhibit the characteristics of a 'Long Method' code smell."
+  },
+  {
+    "id": 1244,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and concise, focusing on a single responsibility, and does not exhibit excessive length, complexity, or multiple tasks."
+  },
+  {
+    "id": 1246,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and focused on a single responsibility, returning a Class after creating it, without any complex operations or multiple tasks."
+  },
+  {
+    "id": 1251,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and focused on a single responsibility, making it easy to understand and maintain."
+  },
+  {
+    "id": 1257,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and focused on a single responsibility, checking if a refreshable auth token can be used to retry a request, and if so, refreshing the token. It does not perform multiple tasks or have high complexity, making it easy to understand and maintain."
+  },
+  {
+    "id": 1263,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is excessively long with 46 lines of code, performing multiple tasks, and having high complexity due to nested structures. It also has multiple responsibilities, making it hard to understand, maintain, or extend."
+  },
+  {
+    "id": 1285,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and focused on a single responsibility, making it easy to understand and maintain."
+  },
+  {
+    "id": 1289,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and concise, focusing on a single responsibility of adding a constant set to the metadata. It does not perform multiple tasks, have high complexity, or have nested structures, making it easy to understand and maintain."
+  },
+  {
+    "id": 1296,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "This code snippet is short and concise, focusing on a single responsibility, and does not exhibit the characteristics of a 'Long Method' code smell."
+  },
+  {
+    "id": 1298,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has multiple responsibilities, including handling project URI, artifact ID, and query string arguments, but it is not excessively long or complex. It performs a specific task and is relatively easy to understand. However, it could be improved by breaking it down into smaller methods for better maintainability and readability."
+  },
+  {
+    "id": 1301,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method `notifyConflict()` is relatively short and focused on a single responsibility, displaying a warning message to the user. It does not perform multiple tasks or have high complexity, making it easy to understand and maintain."
+  },
+  {
+    "id": 1318,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is long with multiple tasks, but it is still relatively easy to understand and maintain due to its clear structure and single responsibility."
+  },
+  {
+    "id": 1328,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "This method is short and focused on a single responsibility, making it easy to understand and maintain. It iterates over a list of fields and calls another method for each one, but the logic is straightforward and concise."
+  },
+  {
+    "id": 1335,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and focused on a single responsibility, it doesn't perform multiple tasks or have high complexity."
+  },
+  {
+    "id": 1336,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing multiple tasks, such as searching for executable files in different directories, but it is not excessively long or complex. It has a clear and single responsibility, which is to find the VM executable path."
+  },
+  {
+    "id": 1346,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and focused on a single responsibility, making it easy to understand and maintain. It does not perform multiple tasks or have high complexity, so it does not exhibit the characteristics of a 'Long Method' code smell."
+  },
+  {
+    "id": 1362,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is not excessively long, but it does perform multiple tasks such as mapping, filtering, and finding the first non-null result, which could be refactored into separate methods for better readability and maintainability."
+  },
+  {
+    "id": 1365,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and only contains a single line of code, performing a simple task of returning the description's string representation."
+  },
+  {
+    "id": 1367,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "This method is concise and focuses on a single responsibility, assigning properties to the object. It does not perform multiple tasks or have high complexity, making it easy to understand and maintain."
+  },
+  {
+    "id": 1375,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing multiple tasks, such as invalidating objects, checking and updating the top scope, and tracing exit events, which makes it slightly complex and hard to understand. However, it does not seem excessively long or overly nested, so it's considered a minor presence of the 'long method' smell."
+  },
+  {
+    "id": 1381,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is not excessively long, and it performs a single task, which is to look up a service class. It has a clear and concise structure, and the complexity is manageable."
+  },
+  {
+    "id": 1385,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "This method is short and focused on a single responsibility, making it easy to understand and maintain. It does not perform multiple tasks or have high complexity, so it does not exhibit the characteristics of a 'Long Method' code smell."
+  },
+  {
+    "id": 1390,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing multiple tasks, such as determining the result kind, creating a new variable, and appending an operation to the LIRGen. However, it is not excessively long or complex, and its single responsibility is still somewhat clear. Therefore, the presence of this smell is considered minor."
+  },
+  {
+    "id": 1406,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and focused on a single responsibility, checking if a reference is equal to its parameter type, and does not exhibit any characteristics of a long method such as excessive lines, multiple tasks, or high complexity."
+  },
+  {
+    "id": 1437,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "This method is short and focused on a single responsibility, returning a string with the class name, method name, and signature. It does not exhibit characteristics of a long method, such as excessive length, multiple tasks, or high complexity."
+  },
+  {
+    "id": 1445,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method mT__60 is relatively short and focused on a single responsibility, making it easy to understand and maintain. It does not perform multiple tasks or have high complexity, so it does not exhibit the characteristics of a 'Long Method' code smell."
+  },
+  {
+    "id": 1458,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing multiple tasks, such as creating a factory bean, setting properties, and returning a container, but it is not excessively long or complex, making it a minor case of the long method smell."
+  },
+  {
+    "id": 1467,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and concise, focusing on a single responsibility of mapping integers and returning the size of the resulting list. It does not exhibit excessive length, multiple tasks, or high complexity."
+  },
+  {
+    "id": 1477,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing multiple tasks such as handling different types of variables, appending commas, and handling the last variable, but it is still relatively concise and easy to understand."
+  },
+  {
+    "id": 1480,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is very short and only contains a few lines of code, focusing on a single responsibility and being concise enough to understand at a glance."
+  },
+  {
+    "id": 1492,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and focused on a single responsibility, converting a typed value to a desired type, without any nested structures or excessive complexity."
+  },
+  {
+    "id": 1493,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing multiple tasks, such as checking for next value, iterating over an iterator, and removing entries, which makes it slightly complex and hard to understand. However, it is not excessively long or hard to maintain, thus the severity is minor."
+  },
+  {
+    "id": 1496,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "This method is concise and focused on a single responsibility, handling a request. It has a clear structure and does not perform multiple tasks, making it easy to understand and maintain."
+  },
+  {
+    "id": 1499,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is excessively long with 67 lines of code, performing multiple tasks such as handling different method invocations, transaction management, and EntityManager operations. It also has high complexity due to nested structures and conditionals, making it hard to understand and maintain."
+  },
+  {
+    "id": 1505,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "This method is concise and focused on a single responsibility, making it easy to understand and maintain. It does not exhibit the characteristics of a long method, such as excessive lines of code, multiple responsibilities, or high complexity."
+  },
+  {
+    "id": 1510,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "This method is extremely short and only contains a single line of code, making it concise and easy to understand. It does not perform multiple tasks or have multiple responsibilities, so it does not meet the criteria for a 'long method' code smell."
+  },
+  {
+    "id": 1514,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "This method has multiple responsibilities, including determining the object and property, handling errors, and performing custom logic for different scenarios. It also has a high complexity due to nested conditionals and loops, making it hard to understand and maintain. The method is also excessively long with over 50 lines of code, which is a clear indication of a long method smell."
+  },
+  {
+    "id": 1518,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and concise, focusing on a single responsibility of creating a JwtHeader. It does not perform multiple tasks, have high complexity, or make it hard to understand or maintain."
+  },
+  {
+    "id": 1523,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise and focused on a single responsibility, making it easy to understand and maintain. It does not contain excessive lines of code, nested structures, or multiple tasks, so it does not exhibit the characteristics of a 'Long Method' code smell."
+  },
+  {
+    "id": 1527,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and concise, with only 5 lines of code, and it focuses on a single responsibility, which is to retrieve and format method information."
+  },
+  {
+    "id": 1533,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method performs two distinct tasks: formatting the model and cleaning up the model. Although it is not excessively long, it has multiple responsibilities, which may make it harder to understand and maintain."
+  },
+  {
+    "id": 1539,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and concise, focusing on a single responsibility, and does not exhibit excessive length or complexity."
+  },
+  {
+    "id": 1544,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and focused on a single responsibility, with only a few lines of code. It does not perform multiple tasks or have high complexity, making it easy to understand and maintain."
+  },
+  {
+    "id": 1556,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "This method is concise and focused on a single responsibility, making it easy to understand and maintain. It does not perform multiple tasks or have high complexity, thus it does not exhibit the characteristics of a 'Long Method' code smell."
+  },
+  {
+    "id": 1557,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and focused on a single responsibility, making it easy to understand and maintain."
+  },
+  {
+    "id": 1562,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "This method is relatively short and focused on a single responsibility, which is to construct a string representation of the object. It does not perform multiple tasks or have high complexity, making it easy to understand and maintain."
+  },
+  {
+    "id": 1578,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and focused on a single responsibility, checking if a trust alias is missing for a given compute state. It does not perform multiple tasks or have high complexity, making it easy to understand and maintain."
+  },
+  {
+    "id": 1583,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is not excessively long, and it does not perform multiple tasks or have high complexity. It has a single responsibility and is concise enough to understand at a glance."
+  },
+  {
+    "id": 1589,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has 9 lines of code, which is not excessively long, but it does perform multiple tasks such as setting exchange and virtual host, and retrieving machine and shell environment. However, it does not have high complexity due to nested structures, making it still relatively easy to understand and maintain."
+  },
+  {
+    "id": 1593,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing multiple tasks, such as building a key, retrieving a property, and handling environment variables, but it is still relatively concise and easy to understand."
+  },
+  {
+    "id": 1609,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "This method is short and focused on a single responsibility, making it easy to understand and maintain."
+  },
+  {
+    "id": 1614,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method containsDownEntity is relatively short and focused on a single responsibility, checking if a set of seeds contains a non-viable seed. It does not perform multiple tasks, have high complexity, or exhibit other characteristics of a long method."
+  },
+  {
+    "id": 1616,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is performing multiple tasks, including retrieving method metadata, checking if a method is abstract, and adding bean methods to a configuration class. Additionally, it has a recursive call to itself, which increases its complexity and makes it harder to understand and maintain."
+  },
+  {
+    "id": 1617,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise and focuses on a single responsibility, making it easy to understand and maintain. It does not exhibit the characteristics of a long method, such as excessive length, multiple tasks, or high complexity."
+  },
+  {
+    "id": 1627,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "This method is concise and focuses on a single responsibility, making it easy to understand and maintain. It does not perform multiple tasks or have high complexity, so it does not exhibit the characteristics of a 'Long Method' code smell."
+  },
+  {
+    "id": 1639,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and focused on a single responsibility, removing a health monitor. It does not perform multiple tasks, have high complexity, or have nested structures."
+  },
+  {
+    "id": 1645,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "This method is short and focused on a single responsibility, making it easy to understand and maintain. It does not perform multiple tasks or have high complexity, so it does not exhibit the characteristics of a 'Long Method' code smell."
+  },
+  {
+    "id": 1647,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is relatively concise and performs a single task, reading data from a protocol into a Digest object. It has a clear and simple structure, with only a few conditional statements and no nested loops or complex logic. Therefore, it does not exhibit the characteristics of a long method."
+  },
+  {
+    "id": 1663,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is not excessively long, has a single responsibility, and is easy to understand. It performs a simple task of creating a supplier based on a dimension selector, and the logic is straightforward."
+  },
+  {
+    "id": 1665,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has 7 lines of code, which is not excessively long, but it does perform multiple tasks such as creating directories and handling exceptions, making it slightly complex and harder to understand."
+  },
+  {
+    "id": 1673,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is long with multiple responsibilities, such as reading fields from a protocol and performing additional validation. However, it does not have extremely high complexity or deeply nested structures, so it is considered minor."
+  },
+  {
+    "id": 1736,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method rule__XCastedExpression__Group__1() is relatively short and focused on a single responsibility, making it easy to understand and maintain. It does not appear to perform multiple tasks or have high complexity due to nested structures, so it does not exhibit the characteristics of a 'Long Method' code smell."
+  },
+  {
+    "id": 1743,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "This method has multiple tasks, including checking for transient values, creating a SequenceFeeder, and accepting various terminal rule calls, which makes it hard to understand and maintain. The method is also excessively long with many lines of code, contributing to its high complexity."
+  },
+  {
+    "id": 1754,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is not excessively long, but it does perform multiple tasks and has some complexity due to the nested structures. However, it is still relatively concise and easy to understand, making it a minor instance of the 'long method' smell."
+  },
+  {
+    "id": 1755,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is long with multiple tasks, but it is still relatively easy to understand and maintain due to its structured approach and clear separation of concerns."
+  },
+  {
+    "id": 1761,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is long with multiple lines of code, but it only performs a single task, which is to parse a specific rule. The complexity is moderate due to the use of try-catch blocks and method calls, but it is still manageable. Overall, the method is not excessively long or complex, but it could be improved with some refactoring to make it more concise and easier to understand."
+  },
+  {
+    "id": 1767,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "This method is short and concise, focusing on a single responsibility, and does not exhibit any of the characteristics of a long method, such as excessive length, multiple tasks, or high complexity."
+  },
+  {
+    "id": 1773,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has multiple conditional statements and function calls, but it is not excessively long and the logic is somewhat straightforward. However, it could be improved by breaking it down into smaller, more focused methods to enhance maintainability and readability."
+  },
+  {
+    "id": 1802,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "This method is short and focused on a single responsibility, adding a single attribute to the model and returning a view. It does not perform multiple tasks, have high complexity, or have nested structures, making it easy to understand and maintain."
+  },
+  {
+    "id": 1830,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise and focused on a single responsibility, comparing two objects' attributes, without excessive complexity or nested structures."
+  },
+  {
+    "id": 1839,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method `doAggressiveInner` is not excessively long, has a single responsibility, and its complexity is manageable. It performs a specific task and is not hard to understand or maintain."
+  },
+  {
+    "id": 1841,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is long with multiple lines of code, but it only performs a single task, which is incrementing multiple variables. The complexity is relatively low, and the method is not hard to understand or maintain. However, it could be improved by breaking it down into smaller, more focused methods."
+  },
+  {
+    "id": 1849,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "This method is concise and performs a single task, retrieving a WorkflowDefinitionFactory instance based on the provided workflow type. It does not exhibit excessive length, multiple responsibilities, or high complexity, making it free from the 'Long Method' code smell."
+  },
+  {
+    "id": 1870,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and focused on a single responsibility, configuring the format with padding if necessary. It does not exhibit excessive length, complexity, or multiple responsibilities, making it free from the 'Long Method' code smell."
+  },
+  {
+    "id": 1877,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is long, with multiple conditional checks and parameter extractions, but it still focuses on a single responsibility of creating a Disruptor endpoint. However, its complexity and length may make it hard to understand and maintain, thus it's considered minor."
+  },
+  {
+    "id": 1881,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is long with multiple lines of code, but it only performs a single task of populating the processors map with different types of Redis processors. The complexity is not extremely high due to nested structures, and the code is still understandable at a glance."
+  },
+  {
+    "id": 1886,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and focused on a single responsibility, setting properties on an endpoint. It does not perform multiple tasks, have high complexity, or exhibit any characteristics of a long method."
+  },
+  {
+    "id": 1889,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and concise, focusing on a single responsibility, and does not exhibit excessive length, complexity, or multiple tasks."
+  },
+  {
+    "id": 1891,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and concise, focusing on a single responsibility of initializing the NamedThreadFactory object. It does not perform multiple tasks, have high complexity, or exhibit any other characteristics of a long method."
+  },
+  {
+    "id": 1893,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise and focused on a single responsibility, returning a string representation of the object. It does not perform multiple tasks or have high complexity, making it easy to understand and maintain."
+  },
+  {
+    "id": 1905,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing a single task, which is extracting a 64-bit unsigned integer from a buffer, but it is doing so in a complex manner with multiple bitwise operations and shifts. While it is not excessively long, it does have a high complexity due to the nested structures, making it hard to understand at a glance."
+  },
+  {
+    "id": 1907,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short and only contains a single line of code, performing a simple task. It does not exhibit any of the characteristics of a long method, such as excessive length, multiple responsibilities, or high complexity."
+  },
+  {
+    "id": 1929,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is performing multiple tasks, such as iterating over exclude rules, formatting strings, and printing to the output stream, but it is not excessively long and its complexity is manageable."
+  },
+  {
+    "id": 1931,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "This method is short and focused on a single responsibility, adding required alert properties to a set. It does not perform multiple tasks, have high complexity, or make it hard to understand, maintain, or extend."
+  },
+  {
+    "id": 1933,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "This method is short and focused on a single responsibility, making it easy to understand and maintain."
+  },
+  {
+    "id": 1940,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is concise and focused on a single responsibility, appending a string to a StringBuilder a specified number of times. It does not have excessive lines of code, multiple tasks, or high complexity."
+  },
+  {
+    "id": 1951,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has multiple responsibilities, including populating a set of volumes and printing them, but it does not have an excessively high number of lines of code or nested structures. However, it could be refactored for better readability and maintainability."
+  },
+  {
+    "id": 1953,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is very short and only initializes three instance variables, so it does not meet the criteria for a 'Long Method' code smell."
+  },
+  {
+    "id": 1967,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Contradictory-Hint",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "This method is concise and focused on a single responsibility, making it easy to understand and maintain. It does not perform multiple tasks or have high complexity, so it does not exhibit the characteristics of a 'Long Method' code smell."
+  }
+]
