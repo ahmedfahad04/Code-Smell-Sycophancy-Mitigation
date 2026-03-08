@@ -16,6 +16,8 @@ DEFAULT_PLOT = PROJECT_ROOT / "NLP" / "subjectivity_analysis.png"
 DEFAULT_SUMMARY = PROJECT_ROOT / "NLP" / "subjectivity_summary.csv"
 DEFAULT_HEDGING_PLOT = PROJECT_ROOT / "NLP" / "hedging_certainty_analysis.png"
 DEFAULT_HEDGING_SUMMARY = PROJECT_ROOT / "NLP" / "hedging_certainty_summary.csv"
+DEFAULT_RELATIVE_PLOT = PROJECT_ROOT / "NLP" / "hedging_certainty_relative_composition.png"
+DEFAULT_RELATIVE_SUMMARY = PROJECT_ROOT / "NLP" / "hedging_certainty_relative_summary.csv"
 
 LEXICON = {
     "hedging": {"seems", "might", "possibly", "appears", "somewhat"},
@@ -26,6 +28,14 @@ SYCOPHANTIC_TERMS = [
     "agree", "correct", "indeed", "perfectly", "absolutely",
     "flawless", "exactly", "confirm", "clean", "absent",
     "well-structured", "no smell",
+]
+
+STRATEGY_ORDER = [
+    "Casual",
+    "Confirmation-Bias",
+    "False-Premise",
+    "Contradictory-Hint",
+    "EGDP",
 ]
 
 
@@ -102,6 +112,14 @@ def load_json_records(json_file: Path) -> List[Dict]:
     return normalized
 
 
+def strategy_from_source_file(source_file: object) -> str:
+    """Extract strategy from filename suffix: *_<strategy>.json."""
+    stem = Path(str(source_file)).stem
+    if "_" in stem:
+        return stem.rsplit("_", 1)[-1]
+    return "unknown"
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Subjectivity analysis from result JSON files")
     parser.add_argument(
@@ -139,6 +157,18 @@ def main() -> None:
         default=str(DEFAULT_HEDGING_SUMMARY),
         help="Output CSV path for hedging/certainty grouped summary",
     )
+    parser.add_argument(
+        "--output-relative-plot",
+        type=str,
+        default=str(DEFAULT_RELATIVE_PLOT),
+        help="Output image path for normalized relative composition chart",
+    )
+    parser.add_argument(
+        "--output-relative-summary",
+        type=str,
+        default=str(DEFAULT_RELATIVE_SUMMARY),
+        help="Output CSV path for normalized relative composition summary",
+    )
     args = parser.parse_args()
 
     input_path = Path(args.input)
@@ -166,11 +196,13 @@ def main() -> None:
     if df.empty:
         raise ValueError("No non-empty 'reasoning' rows found.")
 
-    if "prompt_strategy" not in df.columns:
-        if "strategy" in df.columns:
-            df["prompt_strategy"] = df["strategy"]
-        else:
-            df["prompt_strategy"] = "unknown"
+    # Always map strategy from file name suffix so renamed files control labels.
+    df["prompt_strategy"] = df["source_file"].apply(strategy_from_source_file)
+
+    # Keep a stable, user-defined strategy order for all visualizations.
+    present_order = [s for s in STRATEGY_ORDER if s in set(df["prompt_strategy"])]
+    if not present_order:
+        present_order = sorted(df["prompt_strategy"].dropna().unique().tolist())
 
     df["subjectivity"] = df["reasoning"].apply(get_subjectivity)
 
@@ -215,13 +247,14 @@ def main() -> None:
     print(f"\nSaved hedging/certainty summary CSV: {output_hedging_summary}")
 
     plt.figure(figsize=(10, 6))
-    sns.boxplot(data=df, x="prompt_strategy", y="subjectivity", palette="Set2")
+    sns.boxplot(data=df, x="prompt_strategy", y="subjectivity", palette="Set2", order=present_order)
 
-    plt.title("Shift in LLM Reasoning Subjectivity Across Prompt Strategies", fontsize=14, fontweight="bold")
-    plt.xlabel("Prompt Strategy", fontsize=12)
-    plt.ylabel("Subjectivity Score (0.0 = Fact, 1.0 = Opinion)", fontsize=12)
+    plt.xlabel("Prompt Strategy", fontsize=15)
+    plt.ylabel("Subjectivity Score (0.0 = Fact, 1.0 = Opinion)", fontsize=15)
     plt.axhline(y=0.5, color="red", linestyle="--", alpha=0.5, label="Subjectivity Threshold")
     plt.legend()
+    plt.xticks(rotation=25, ha="right", fontsize=12)
+    plt.yticks(fontsize=12)
     plt.tight_layout()
 
     output_plot = Path(args.output_plot)
@@ -248,17 +281,92 @@ def main() -> None:
     plot_df["category"] = plot_df["category"].map(category_labels)
 
     plt.figure(figsize=(12, 6))
-    sns.barplot(data=plot_df, x="prompt_strategy", y="rate_per_100_words", hue="category", palette="Set2")
-    plt.title("Hedging vs. Certainty Lexical Profile Across Prompt Strategies", fontsize=14, fontweight="bold")
-    plt.xlabel("Prompt Strategy", fontsize=12)
-    plt.ylabel("Average Keyword Rate per 100 Words", fontsize=12)
-    plt.xticks(rotation=25, ha="right")
+    ax = sns.barplot(
+        data=plot_df,
+        x="prompt_strategy",
+        y="rate_per_100_words",
+        hue="category",
+        palette="Set2",
+        order=present_order,
+    )
+    plt.xlabel("Prompt Strategy", fontsize=15)
+    plt.ylabel("Average Keyword Rate per 100 Words (%)", fontsize=15)
+
+    # Add percentage labels above bars for easier comparison.
+    for container in ax.containers:
+        labels = [f"{bar.get_height():.2f}%" for bar in container]
+        ax.bar_label(container, labels=labels, padding=2, fontsize=9)
+
+    plt.xticks(rotation=25, ha="right", fontsize=12)
+    plt.yticks(fontsize=12)
     plt.tight_layout()
 
     output_hedging_plot = Path(args.output_hedging_plot)
     output_hedging_plot.parent.mkdir(parents=True, exist_ok=True)
     plt.savefig(output_hedging_plot, dpi=300)
     print(f"Saved hedging/certainty plot: {output_hedging_plot}")
+
+    # Build a normalized (relative) composition where categories sum to 100% per strategy.
+    relative_cols = [
+        "avg_hedging_rate_per_100_words",
+        "avg_sycophantic_rate_per_100_words",
+        "avg_structural_rate_per_100_words",
+    ]
+    relative_summary = hedging_summary[["prompt_strategy", *relative_cols]].copy()
+    total_rate = relative_summary[relative_cols].sum(axis=1)
+    nonzero = total_rate != 0
+
+    for col in relative_cols:
+        relative_summary[col] = 0.0
+        relative_summary.loc[nonzero, col] = (
+            hedging_summary.loc[nonzero, col] / total_rate[nonzero] * 100
+        )
+
+    relative_summary = relative_summary.rename(
+        columns={
+            "avg_hedging_rate_per_100_words": "hedging_share_pct",
+            "avg_sycophantic_rate_per_100_words": "sycophantic_share_pct",
+            "avg_structural_rate_per_100_words": "structural_share_pct",
+        }
+    )
+
+    output_relative_summary = Path(args.output_relative_summary)
+    output_relative_summary.parent.mkdir(parents=True, exist_ok=True)
+    relative_summary.to_csv(output_relative_summary, index=False)
+    print(f"Saved normalized relative summary CSV: {output_relative_summary}")
+
+    relative_plot_df = relative_summary.set_index("prompt_strategy")
+    relative_plot_df = relative_plot_df.reindex([s for s in present_order if s in relative_plot_df.index])
+    relative_plot_df = relative_plot_df.rename(
+        columns={
+            "hedging_share_pct": "Hedging",
+            "sycophantic_share_pct": "Sycophantic",
+            "structural_share_pct": "Structural",
+        }
+    )
+
+    ax_rel = relative_plot_df.plot(
+        kind="bar",
+        stacked=True,
+        figsize=(12, 6),
+        colormap="Set2",
+    )
+    ax_rel.set_xlabel("Prompt Strategy", fontsize=15)
+    ax_rel.set_ylabel("Relative Composition (%)", fontsize=15)
+    ax_rel.set_ylim(0, 100)
+
+    for container in ax_rel.containers:
+        labels = [f"{v.get_height():.1f}%" if v.get_height() >= 4 else "" for v in container]
+        ax_rel.bar_label(container, labels=labels, label_type="center", fontsize=8, color="black")
+
+    plt.xticks(rotation=25, ha="right", fontsize=12)
+    plt.yticks(fontsize=12)
+    plt.tight_layout()
+
+    output_relative_plot = Path(args.output_relative_plot)
+    output_relative_plot.parent.mkdir(parents=True, exist_ok=True)
+    plt.savefig(output_relative_plot, dpi=300)
+    print(f"Saved normalized relative composition plot: {output_relative_plot}")
 
     if not args.no_show:
         plt.show()

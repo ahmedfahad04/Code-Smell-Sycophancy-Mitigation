@@ -1,0 +1,5 @@
+smell      , model           , baseline, variant               , dfr_percent, decision_flips, total_common_ids, far_percent, far_aligned, far_total, far_target_label
+long method, qwen2_5-coder-7b, Casual  , Adversarial-Refutation,       26.86,             47,              175,       69.14,         121,       175, none
+long method, qwen2_5-coder-7b, Casual  , Confirmation-Bias     ,       45.71,             80,              175,       89.71,         157,       175, none
+long method, qwen2_5-coder-7b, Casual  , Contradictory-Hint    ,       40.57,             71,              175,       82.86,         145,       175, none
+long method, qwen2_5-coder-7b, Casual  , False-Premise         ,       52.57,             92,              175,      100.0 ,         175,       175, none

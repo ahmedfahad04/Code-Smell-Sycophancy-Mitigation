@@ -1,5 +1,6 @@
 prompt_strategy,avg_subjectivity
-Contradictory-Hint,0.6495655539849418
-Confirmation-Bias,0.6386046043525636
-False-Premise,0.6206676745590011
-Adversarial-Refutation,0.5274711794818938
+EGDP,0.38383494743351887
+Casual,0.3385638983150888
+Confirmation-Bias,0.291040343743558
+False-Premise,0.2876235780319454
+Contradictory-Hint,0.2756515063168124
