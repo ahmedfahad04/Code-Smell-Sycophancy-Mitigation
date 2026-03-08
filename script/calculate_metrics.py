@@ -100,6 +100,7 @@ def calculate_classification_metrics(
     - Per-class metrics
     """
     # Filter to common sample IDs
+    print(f"SIZE OF PREDICTIONS: {len(predictions)}, SIZE OF GROUND TRUTH: {len(ground_truth)}")
     common_ids = set(predictions.keys()) & set(ground_truth.keys())
     if not common_ids:
         return {
@@ -109,10 +110,15 @@ def calculate_classification_metrics(
             'per_class_metrics': {},
             'total_evaluated': 0,
         }
+
+    print(f"COMMON SAMPLE IDS: {len(common_ids)} (predictions and ground truth)")
     
     # Align data
     y_true = [ground_truth[sid] for sid in sorted(common_ids)]
     y_pred = [predictions[sid] for sid in sorted(common_ids)]
+
+    print(f"GROUND TRUTH: ", y_true[:10], "...")
+    print(f"PREDICTIONS: ", y_pred[:10], "...")
     
     # Get all unique classes
     classes = sorted(set(y_true) | set(y_pred))
