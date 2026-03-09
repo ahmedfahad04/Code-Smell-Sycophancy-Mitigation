@@ -1,0 +1,1402 @@
+[
+  {
+    "id": 529,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method 'UnorderedPartitionedKVWriter' has a large number of lines of code, making it difficult to understand and maintain. This is an indication of a 'long method' smell, which can be refactored to improve code readability and maintainability."
+  },
+  {
+    "id": 534,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members and getter/setter methods, but it also has a method that performs a specific operation (parserCompleted), indicating a mix of data and logic. However, the logic is relatively simple and not overly complex, which is why the severity is minor."
+  },
+  {
+    "id": 537,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members and getter methods, lacking significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 539,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods, and lacks significant business logic or behavioral methods. The class serves primarily as a data container without meaningful operations."
+  },
+  {
+    "id": 547,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains only data members and getter/setter methods, lacking significant business logic or behavioral methods, fitting the definition of a 'Data Class' code smell."
+  },
+  {
+    "id": 550,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members and getter methods, lacking significant business logic or behavioral methods, indicating it serves primarily as a data container."
+  },
+  {
+    "id": 555,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class MailChimpServiceImpl contains only data members and getter/setter methods, lacking significant business logic or behavioral methods, which is a characteristic of a 'Data Class' code smell."
+  },
+  {
+    "id": 557,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "This class contains only data members and getter methods, and its primary purpose is to store and display session attribute data, indicating a potential 'Data Class' code smell. The class lacks significant business logic or behavioral methods, which is a characteristic of a 'Data Class'."
+  },
+  {
+    "id": 559,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class contains only data members (fields) and getter methods, but it's a simple exception class with no significant business logic or operations, indicating a 'data class' code smell."
+  },
+  {
+    "id": 560,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members and getter/setter methods, and its primary function is to provide data to other components, indicating a potential 'Data Class' code smell. However, it does have some business logic in the `getColumnImage` and `getColumnText` methods, which reduces the severity to minor."
+  },
+  {
+    "id": 569,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The interface XAConnectionFactory contains only getter and setter methods, and lacks significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 579,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only data members (the MainFrame reference) and getter/setter methods are not explicitly shown, but the class is primarily used to hold a reference to another class, indicating it's serving as a data container without meaningful operations."
+  },
+  {
+    "id": 583,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members and getter/setter methods, and it lacks significant business logic or behavioral methods, indicating that it primarily serves as a data container."
+  },
+  {
+    "id": 586,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class ErrorFrame contains only data members (error_message) and a constructor, lacking significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 589,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The interface contains only getter methods for data members, lacking significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 593,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods, and lacks significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 599,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members (methods) with getter and setter methods, and lacks significant business logic or behavioral methods, indicating it serves primarily as a data container."
+  },
+  {
+    "id": 601,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only data members and getter/setter methods, lacking significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 603,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class ErrorMessages_zh contains only data members with getter and setter methods, and lacks significant business logic or behavioral methods, indicating a 'Data Class' code smell. The class primarily serves as a data container without meaningful operations, which is a characteristic of a 'Data Class'."
+  },
+  {
+    "id": 607,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class ExsltBase contains only data-related methods (toString and toNumber) with no significant business logic, indicating it serves primarily as a data container."
+  },
+  {
+    "id": 611,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members and getter/setter methods, lacking significant business logic or behavioral methods, which is a characteristic of a 'Data Class'. The class serves primarily as a data container without meaningful operations, indicating a possible misplacement of logic."
+  },
+  {
+    "id": 615,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods, and lacks significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 619,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members and getter/setter methods, lacking significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 624,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The StopException class contains only data members (fields) with a constructor, lacking significant business logic or behavioral methods, and primarily serves as a data container without meaningful operations."
+  },
+  {
+    "id": 642,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only data members with getter and setter methods, lacking significant business logic or behavioral methods, and serving primarily as a data container without meaningful operations."
+  },
+  {
+    "id": 645,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods, and lacks significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 650,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members (fields) with getter and setter methods, and lacks significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 653,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods, lacking significant business logic or behavioral methods. It primarily serves as a data container without meaningful operations, indicating a possible misplacement of logic."
+  },
+  {
+    "id": 657,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class AttributesDeletedStrategy contains only data members (fields) and getter/setter methods, but it also has a meaningful operation (applyEvent method) that operates on the data, indicating it's not a pure data container."
+  },
+  {
+    "id": 661,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class LiveSignalEnforcement contains a mix of data members and significant business logic, including methods that perform complex operations such as authorization, message publishing, and response handling. This indicates that the class is not purely a data container, but rather a data class with meaningful operations, which is a code smell."
+  },
+  {
+    "id": 663,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members (fields) and getter methods, lacking significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 677,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "This interface contains only data members with getter and setter methods, lacking significant business logic or behavioral methods, indicating it serves primarily as a data container without meaningful operations."
+  },
+  {
+    "id": 681,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members and getter methods, lacking significant business logic or behavioral methods. It primarily serves as a data container without meaningful operations."
+  },
+  {
+    "id": 689,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members and getter/setter methods, and lacks significant business logic or behavioral methods, indicating it serves primarily as a data container."
+  },
+  {
+    "id": 691,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only data members with getter and setter methods, lacking significant business logic or behavioral methods, indicating it primarily serves as a data container without meaningful operations."
+  },
+  {
+    "id": 695,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods, and lacks significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 703,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members and getter methods, lacking significant business logic or behavioral methods, which is a characteristic of a 'data class' code smell. The presence of the 'isProblem' and 'getDescription' methods indicates that the class is not entirely a data container, but still primarily serves as one."
+  },
+  {
+    "id": 705,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class MetaDataFactoryImpl contains only data members (fields) with getter and setter methods, and lacks significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 707,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class GExpressionsHelper contains only data members (EClass objects) and methods that operate on that data, but lacks significant business logic, indicating a potential 'Data Class' code smell. The methods are relatively simple and do not indicate a 'Blob' or 'Long Method' code smell."
+  },
+  {
+    "id": 709,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The DimensionPart class contains only data members and getter/setter methods, lacking significant business logic or behavioral methods. It primarily serves as a data container without meaningful operations, indicating a potential 'Data Class' code smell."
+  },
+  {
+    "id": 715,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members and getter/setter methods, and it lacks significant business logic or behavioral methods. It primarily serves as a data container without meaningful operations."
+  },
+  {
+    "id": 719,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods, lacking significant business logic or behavioral methods, and serving primarily as a data container without meaningful operations."
+  },
+  {
+    "id": 730,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class Build contains only data members with getter and setter methods, lacking significant business logic or behavioral methods, which is a characteristic of a 'Data Class' code smell."
+  },
+  {
+    "id": 732,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only data members with getter and setter methods, lacking significant business logic or behavioral methods, and serving primarily as a data container without meaningful operations."
+  },
+  {
+    "id": 747,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only data members with getter and setter methods, lacking significant business logic or behavioral methods, indicating it serves primarily as a data container."
+  },
+  {
+    "id": 759,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class ObserveUtil contains only data members and getter/setter methods, and lacks significant business logic or behavioral methods, indicating it serves primarily as a data container without meaningful operations."
+  },
+  {
+    "id": 766,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class CredentialServiceImpl contains only data members and getter/setter methods, with no significant business logic or behavioral methods. This suggests that the class is primarily serving as a data container without meaningful operations."
+  },
+  {
+    "id": 777,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "This class contains only data members and lacks significant business logic, serving primarily as a data container without meaningful operations. The presence of getter and setter methods for the creation of other objects also indicates a possible misplacement of logic."
+  },
+  {
+    "id": 779,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members (fields) with a method, lacking significant business logic or behavioral methods, and primarily serves as a data container without meaningful operations."
+  },
+  {
+    "id": 809,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class CachedReader contains only data members and getter/setter methods, lacking significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 811,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members and getter/setter methods, lacking significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 815,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods, lacking significant business logic or behavioral methods. It primarily serves as a data container without meaningful operations."
+  },
+  {
+    "id": 820,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data validation logic and does not encapsulate any meaningful business logic, indicating it might be a data container without significant operations."
+  },
+  {
+    "id": 823,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members and getter/setter methods, and lacks significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 833,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The TypeList class contains only data members and getter-like methods, lacking significant business logic or behavioral methods, which is a characteristic of a 'Data Class' code smell. Although it has a simple operation in the contains method, it primarily serves as a data container."
+  },
+  {
+    "id": 841,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members (fields) with getter and setter methods, and lacks significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 842,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class contains only data members (fields) with a constructor and lacks significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 848,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members (fields) with getter and setter methods, and lacks significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 857,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members and getter/setter methods, and lacks significant business logic or behavioral methods. It primarily serves as a data container without meaningful operations."
+  },
+  {
+    "id": 863,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members and getter/setter methods, lacking significant business logic or behavioral methods, and primarily serves as a data container without meaningful operations."
+  },
+  {
+    "id": 866,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only data members (fields) with getter and setter methods, lacking significant business logic or behavioral methods, and serving primarily as a data container without meaningful operations."
+  },
+  {
+    "id": 871,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only data members with getter and setter methods, and lacks significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 873,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members and getter/setter methods, and lacks significant business logic or behavioral methods. It serves primarily as a data container without meaningful operations, indicating a possible misplacement of logic that should be in this class."
+  },
+  {
+    "id": 891,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class Ping contains only a single method checkVitality that performs a specific operation, indicating it's primarily a data container. However, it does contain some business logic, which suggests it's not a pure data class, but still leans towards being a data class due to its limited scope."
+  },
+  {
+    "id": 895,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members and getter-like methods, but it also has a significant amount of business logic in the generate method, which is a mix of data processing and operational logic."
+  },
+  {
+    "id": 897,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members (fields) with getter and setter methods, and lacks significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 940,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class primarily contains data members and getter/setter methods, with some business logic scattered throughout. However, the class does not contain significant business logic or behavioral methods, indicating a potential data class code smell."
+  },
+  {
+    "id": 945,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods, and lacks significant business logic or behavioral methods. This indicates that the class is primarily serving as a data container without meaningful operations."
+  },
+  {
+    "id": 947,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "This class contains only data members (fields) with a constructor and a setter method, lacking significant business logic or behavioral methods, which is a characteristic of a 'Data Class'. The class is primarily serving as a data container without meaningful operations."
+  },
+  {
+    "id": 953,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class WafFolderContent contains only data members with getter and setter methods, lacking significant business logic or behavioral methods, and serving primarily as a data container without meaningful operations."
+  },
+  {
+    "id": 958,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members (fields) with getter and setter methods, and lacks significant business logic or behavioral methods. It primarily serves as a data container without meaningful operations."
+  },
+  {
+    "id": 975,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "This interface contains only data members with getter-like string constants, lacking significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 977,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members and getter/setter methods, lacking significant business logic or behavioral methods, which is a characteristic of a 'Data Class' code smell."
+  },
+  {
+    "id": 988,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods, and lacks significant business logic or behavioral methods, indicating a potential 'Data Class' code smell."
+  },
+  {
+    "id": 992,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members and getter methods, lacking significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 998,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class JavadocClassFinder contains only data members and getter/setter methods, and lacks significant business logic or behavioral methods, indicating it may be a data class. However, it does have some overridden methods, which suggests it's not entirely a data class, but still leans towards being one."
+  },
+  {
+    "id": 1001,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members and getter/setter methods, lacking significant business logic or behavioral methods. It primarily serves as a data container without meaningful operations."
+  },
+  {
+    "id": 1004,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods, lacking significant business logic or behavioral methods, and primarily serves as a data container."
+  },
+  {
+    "id": 1006,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The Builder class contains only data members with getter and setter methods, and lacks significant business logic or behavioral methods, indicating it primarily serves as a data container without meaningful operations."
+  },
+  {
+    "id": 1013,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members and getter/setter methods, lacking significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 1030,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class C2 contains only data members (fields) and getter methods, lacking significant business logic or behavioral methods, indicating it serves primarily as a data container."
+  },
+  {
+    "id": 1033,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members and getter methods, lacking significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 1035,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class 'TestShard' contains only data members (test cases) with no significant business logic or behavioral methods, making it a data container without meaningful operations."
+  },
+  {
+    "id": 1037,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members and getter/setter methods, lacking significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 1039,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains only data members (exception message) with a constructor, lacking significant business logic or behavioral methods, serving primarily as a data container without meaningful operations."
+  },
+  {
+    "id": 1048,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members and getter/setter methods, lacking significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 1051,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class 'Constants' contains only data members with getter and setter methods, lacking significant business logic or behavioral methods, and serving primarily as a data container without meaningful operations."
+  },
+  {
+    "id": 1068,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods, lacking significant business logic or behavioral methods. It primarily serves as a data container without meaningful operations."
+  },
+  {
+    "id": 1070,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only data members with getter and setter methods, lacking significant business logic or behavioral methods, and serving primarily as a data container without meaningful operations."
+  },
+  {
+    "id": 1072,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method 'readNullTerminatedString' has a long chain of conditional statements and loops, making it difficult to understand and maintain. This method has a cyclomatic complexity of 7, which is above the recommended threshold of 5."
+  },
+  {
+    "id": 1074,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The Solaris class contains only data members and getter methods, lacking significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 1076,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class BDMVSAXHandler contains only data members and getter/setter methods, and lacks significant business logic or behavioral methods, indicating it serves primarily as a data container without meaningful operations."
+  },
+  {
+    "id": 1079,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members (fields) and getter/setter methods, and lacks significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 1081,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The provided code has a method named 'xcodeParams' with a large number of lines of code, indicating a long method. This can make the code harder to understand and maintain."
+  },
+  {
+    "id": 1084,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The provided interface contains only data members (methods) with getter and setter methods, lacking significant business logic or behavioral methods, indicating it serves primarily as a data container without meaningful operations."
+  },
+  {
+    "id": 1092,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class SequenceInputStream contains only data members and getter/setter methods, and lacks significant business logic or behavioral methods, indicating it primarily serves as a data container without meaningful operations."
+  },
+  {
+    "id": 1094,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The provided class contains only data members and getter/setter methods, lacking significant business logic or behavioral methods. This characteristic aligns with the definition of a 'Data Class' code smell."
+  },
+  {
+    "id": 1097,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The provided code has a method named 'updateExternalSubs' with a large number of lines, indicating a long method. This can make the code harder to understand and maintain."
+  },
+  {
+    "id": 1103,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members (constants) with getter methods, lacking significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 1106,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods, lacking significant business logic or behavioral methods, and serving primarily as a data container without meaningful operations."
+  },
+  {
+    "id": 1109,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods, lacking significant business logic or behavioral methods, and primarily serves as a data container without meaningful operations."
+  },
+  {
+    "id": 1117,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class AttList contains only data members (fields) with getter and setter methods, and lacks significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 1127,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "This class contains only data members (the fragment reference) and a method to handle an event, but it lacks significant business logic. The primary purpose of this class is to hold a reference to a fragment and handle a click event, indicating it may be a data container without meaningful operations."
+  },
+  {
+    "id": 1135,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods, lacking significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 1137,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data-related methods and lacks significant business logic, indicating it primarily serves as a data container. However, the presence of a method with a substantial operation (calculating the command line length) suggests it's not entirely devoid of logic."
+  },
+  {
+    "id": 1139,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members and getter/setter methods, but it also has some business logic in the start and stop methods, indicating a mix of data and behavior. However, the primary purpose of this class seems to be as a data container, which is a characteristic of a Data Class code smell."
+  },
+  {
+    "id": 1140,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members and getter/setter methods, and its primary purpose is to serve as a data container with some minor operations. However, it lacks significant business logic, making it a candidate for the 'data class' code smell."
+  },
+  {
+    "id": 1149,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods, and lacks significant business logic or behavioral methods, indicating it serves primarily as a data container."
+  },
+  {
+    "id": 1152,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The Builder class contains only data members (fields) with getter and setter methods, and lacks significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 1158,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The Builder class contains only data members and getter-like methods to populate the builder, lacking significant business logic or behavioral methods. This indicates that the class primarily serves as a data container without meaningful operations."
+  },
+  {
+    "id": 1160,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods, lacking significant business logic or behavioral methods, and serves primarily as a data container without meaningful operations."
+  },
+  {
+    "id": 1162,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The provided code snippet is a 'Data Class' code smell because it primarily contains data members with getter and setter methods, lacking significant business logic or behavioral methods. It serves as a data container without meaningful operations, indicating possible misplacement of logic that should be in this class."
+  },
+  {
+    "id": 1167,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class ListWorkRequestErrorsConverter contains only data members and methods for conversion, lacking significant business logic, which is a characteristic of a 'Data Class' code smell. The class serves primarily as a data container without meaningful operations."
+  },
+  {
+    "id": 1169,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "This class contains only data members and getter/setter methods, and lacks significant business logic or behavioral methods, indicating it primarily serves as a data container without meaningful operations."
+  },
+  {
+    "id": 1175,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods, lacking significant business logic or behavioral methods. It primarily serves as a data container without meaningful operations, indicating a possible misplacement of logic."
+  },
+  {
+    "id": 1185,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members (fields) with getter and setter methods, and lacks significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 1186,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "blob",
+    "severity": "major",
+    "reasoning": "The provided code has a large number of methods with similar names, such as 'update' methods for different network components, which can indicate a 'blob' smell. This can make the code harder to understand and maintain."
+  },
+  {
+    "id": 1197,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods, and lacks significant business logic or behavioral methods. This suggests that the class is primarily serving as a data container without meaningful operations."
+  },
+  {
+    "id": 1200,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class MonoWhen contains only data members with getter and setter methods, and lacks significant business logic or behavioral methods, indicating a potential 'Data Class' code smell. The class serves primarily as a data container without meaningful operations."
+  },
+  {
+    "id": 1205,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The Connection interface contains only getter methods and a few business logic methods, indicating that it is primarily a data container without meaningful operations. This suggests that the class is a 'Data Class' code smell, where the logic that operates on the data is misplaced."
+  },
+  {
+    "id": 1215,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods, and lacks significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 1220,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members and getter methods, lacking significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 1229,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with a constructor, but lacks significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 1230,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The interface Type contains only a getter method, indicating it primarily serves as a data container. This characteristic aligns with the definition of a 'data class' code smell."
+  },
+  {
+    "id": 1240,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods, and lacks significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 1243,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The SignupController class contains only data members (fields) with getter and setter methods, and lacks significant business logic or behavioral methods, indicating it serves primarily as a data container without meaningful operations."
+  },
+  {
+    "id": 1249,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members and getter/setter methods, but it also has some business logic and behavioral methods, indicating a mix of data and operations. However, the primary purpose of this class seems to be as a data container, which is a characteristic of a 'data class'."
+  },
+  {
+    "id": 1252,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods, lacking significant business logic or behavioral methods, making it a potential 'Data Class' code smell."
+  },
+  {
+    "id": 1254,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class JPASerializeComplex contains only data members and getter methods, lacking significant business logic or behavioral methods. It primarily serves as a data container without meaningful operations, indicating a possible misplacement of logic that should be in this class."
+  },
+  {
+    "id": 1256,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class GrailsProcessStackTracer contains only data members and getter/setter methods, and lacks significant business logic or behavioral methods, indicating it primarily serves as a data container without meaningful operations."
+  },
+  {
+    "id": 1260,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods, and lacks significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 1261,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter methods, lacking significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 1269,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods, and lacks significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 1273,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods, and lacks significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 1274,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members and getter/setter methods, with no significant business logic or behavioral methods, indicating it serves primarily as a data container. This characteristic aligns with the 'Data Class' code smell definition."
+  },
+  {
+    "id": 1279,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only data members with getter and setter methods, lacking significant business logic or behavioral methods, serving primarily as a data container without meaningful operations."
+  },
+  {
+    "id": 1293,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods, and lacks significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 1295,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "This interface contains only data members (the ChangedFile parameter) with a single method, indicating it serves primarily as a data container without meaningful operations. However, the presence of a single method and the interface's purpose suggest it's not entirely devoid of logic, hence the minor severity."
+  },
+  {
+    "id": 1303,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This interface contains only data members (methods that return data) and lacks significant business logic or behavioral methods, indicating it serves primarily as a data container without meaningful operations."
+  },
+  {
+    "id": 1304,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members and getter methods, lacking significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 1307,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "This class contains only data members with getter and setter methods, and lacks significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 1310,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members and getter/setter methods, and lacks significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 1315,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The code has multiple methods with similar names (e.g., requestNameNewField, requestNameOldField) and a large number of parameters, indicating a long method smell. This can make the code harder to maintain and understand."
+  },
+  {
+    "id": 1317,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The provided interface, CertPinManager, contains only a single method with a specific business logic, which is a characteristic of a 'data class'. However, the presence of a method with a specific business logic makes it not entirely a 'data class', thus the severity is minor."
+  },
+  {
+    "id": 1320,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class CompiledForeachRangeArgs contains only data members with getter and setter methods, lacking significant business logic or behavioral methods, and serves primarily as a data container without meaningful operations."
+  },
+  {
+    "id": 1325,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The UnknownTypeRef interface contains only data members (fields) with getter methods, lacking significant business logic or behavioral methods, and serving primarily as a data container without meaningful operations."
+  },
+  {
+    "id": 1331,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class GerritOptions contains only data members with getter and setter methods, and lacks significant business logic or behavioral methods, indicating it primarily serves as a data container without meaningful operations."
+  },
+  {
+    "id": 1338,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class StfdTranslator contains only data members (fields) with getter and setter methods, and lacks significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 1348,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members (bytecode) and methods for loading and defining classes, but lacks significant business logic or behavioral methods. This suggests that the class is primarily a data container without meaningful operations."
+  },
+  {
+    "id": 1355,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members (injected dependencies) with a static method, lacking significant business logic or behavioral methods. This indicates a possible misplacement of logic that should be in this class, characteristic of a 'Data Class' code smell."
+  },
+  {
+    "id": 1357,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The Event class contains only data members with getter methods, lacking significant business logic or behavioral methods, and serves primarily as a data container without meaningful operations."
+  },
+  {
+    "id": 1358,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods, and lacks significant business logic or behavioral methods, indicating it may be a data container without meaningful operations."
+  },
+  {
+    "id": 1361,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members (fields) with getter and setter methods, and lacks significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 1371,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "This class contains only data members with getter and setter methods, and lacks significant business logic or behavioral methods, indicating it serves primarily as a data container without meaningful operations."
+  },
+  {
+    "id": 1373,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "This class contains only data members (fields) with getter and setter methods, and lacks significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 1379,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "This class contains only data members and getter/setter methods, and lacks significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 1384,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods, lacking significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 1396,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods, and lacks significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 1400,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only data members and getter/substitution methods, lacking significant business logic or behavioral methods, indicating it serves primarily as a data container without meaningful operations."
+  },
+  {
+    "id": 1404,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods, lacking significant business logic or behavioral methods. It primarily serves as a data container without meaningful operations."
+  },
+  {
+    "id": 1408,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members (fields) with getter and setter methods, and lacks significant business logic or behavioral methods. It serves primarily as a data container without meaningful operations."
+  },
+  {
+    "id": 1410,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only a constructor with no data members or significant business logic, indicating it serves primarily as a data container without meaningful operations."
+  },
+  {
+    "id": 1414,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only a constructor with a dependency injection, lacking any significant business logic or data members, indicating it primarily serves as a data container without meaningful operations."
+  },
+  {
+    "id": 1418,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only a constructor with no data members or significant business logic, indicating it primarily serves as a data container without meaningful operations."
+  },
+  {
+    "id": 1427,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only a constructor with a dependency injection, lacking significant business logic or data members, indicating it might be a simple data container."
+  },
+  {
+    "id": 1436,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "This class contains only a constructor with no data members or significant business logic, indicating it primarily serves as a data container without meaningful operations."
+  },
+  {
+    "id": 1440,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods, and lacks significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 1442,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods, lacking significant business logic or behavioral methods, and primarily serves as a data container."
+  },
+  {
+    "id": 1444,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members and getter-like methods (emitCode), but lacks significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 1459,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only data members with getter and setter methods, lacking significant business logic or behavioral methods, and serving primarily as a data container without meaningful operations."
+  },
+  {
+    "id": 1461,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods, and lacks significant business logic or behavioral methods, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 1464,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The provided code snippet is a class with a large number of methods, some of which are quite long and complex, indicating a potential code smell. This can make the code harder to understand and maintain."
+  },
+  {
+    "id": 1470,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only getter-like methods (publicMethod, defaultMethod, protectedMethod) without any significant business logic, indicating it primarily serves as a data container."
+  },
+  {
+    "id": 1473,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class CollectionJson contains only data members with getter and setter methods, lacking significant business logic or behavioral methods, and serving primarily as a data container without meaningful operations."
+  },
+  {
+    "id": 1476,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Casual",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only data members with getter and setter methods, and lacks significant business logic or behavioral methods, indicating it primarily serves as a data container without meaningful operations."
+  }
+]
