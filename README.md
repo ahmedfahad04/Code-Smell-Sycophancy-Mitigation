@@ -1,161 +1,238 @@
-# Sycophancy Detection, Analysis and Mitigation Research
+# Code Smell Sycophancy Mitigation
 
-**Repository:** KamruzzamanAsif/MLCQ
+Evaluates sycophancy bias in Large Language Models for code smell detection and proposes Evidence-Guided Debiasing Prompting (EGDP) as mitigation.
 
-A research codebase and toolkit for analyzing code-smell detection outputs from large language models. This repository hosts datasets, evaluation scripts, result artifacts, and a Streamlit app to compare and inspect model reasoning and severity judgments side-by-side.
+## Setup
 
----
+### Requirements
+- Python 3.10+
+- Ollama with model inference
+- 20GB disk space for models
 
-**Contents**
-
-- **dataset/** — Reference datasets and filtered samples (primary: `mlcq_filtered.json`).
-- **results/** — JSON outputs from different models and prompt strategies (many subfolders per-experiment).
-- **script/** — Utilities and evaluation scripts (metrics, experiment runners).
-- **docs/** — Project documentation and experiment notes.
-- **app.py** — Streamlit web app for interactive, side-by-side analysis of results.
-- **requirements.txt** — Python dependencies used by the project.
-- **APP_README.md** — Quick start guide for the Streamlit app (shorter companion doc).
-
----
-
-**Project Overview**
-
-This repo is focused on evaluating how different LLMs (and prompt strategies) identify code smells in code snippets and the reasoning they provide. Typical tasks supported by this repo:
-
-- Compare model outputs (severity, reasoning) across models and prompt strategies.
-- Aggregate evaluation metrics (precision, recall, F1, confusion matrices) per smell.
-- Inspect per-ID code snippets and detailed reasoning side-by-side for analysis and error diagnosis.
-
----
-
-**Quick Start**
-
-Prerequisites:
-
-- Python 3.9+ (tested with 3.10/3.12)
-- Conda or virtualenv recommended
-
-Install dependencies:
+### Installation
 
 ```bash
-cd /home/fahad/Documents/RESEARCH_CODEBASE/MLCQ
 pip install -r requirements.txt
 ```
 
-Run the Streamlit app locally:
+### Model Setup
+
+```bash
+# Download models
+ollama pull llama3.1:8b
+ollama pull qwen2.5-coder:7b
+
+# Start server
+ollama serve
+```
+
+For remote servers, set in scripts:
+```python
+OLLAMA_API_URL = "http://<your-server>:11434"
+```
+
+---
+
+## Quick Start
+
+Run pre-configured experiment phases:
+
+```bash
+cd script/experiments
+bash run_phases.sh validate        # 5-10 min  
+bash run_phases.sh baseline        # 45 min    
+bash run_phases.sh sycophancy      # 1-2 hrs   
+bash run_phases.sh crossmodel      # 1-2 hrs   
+bash run_phases.sh comprehensive   # 2-3 hrs   
+bash run_phases.sh all             # 5-8 hrs   
+```
+
+---
+
+## Usage
+
+### Configuration
+
+Edit `script/config-phases.sh`:
+
+```bash
+DATASET_PATH="$PROJECT_ROOT/dataset/mlcq_filtered.json"
+RESULTS_DIR="$PROJECT_ROOT/results"
+TEMPERATURE_GLOBAL="0.3"
+TOP_P_GLOBAL="0.9"
+```
+
+### Phases
+
+- **Phase 1:** Validation (1 model, 1 smell, 1 strategy, 10 samples)
+- **Phase 2:** Baseline (all smells, Casual strategy)
+- **Phase 3:** Sycophancy (8 bias strategies, Feature Envy)
+- **Phase 4:** Cross-model (3 models, all strategies)
+- **Phase 5:** Comprehensive (all smells, models, strategies)
+
+### Running Experiments
+
+#### Via Phase Runner
+
+```bash
+cd script/experiments
+bash run_phases.sh baseline
+```
+
+#### Direct Script
+
+```bash
+python script/ollama_code_smell_detection.py \
+  --smell "feature envy" \
+  --models "llama3.1:8b,qwen2.5-coder:7b" \
+  --strategies "Casual,Positive,Negative,Contradictory-Hint,False-Premise" \
+  --limit 175 \
+  --temperature 0.3 \
+  --top-p 0.9 \
+  --output-dir results/
+```
+
+**Options:**
+- `--smell`: blob, data-class, feature-envy, long-method, or all
+- `--models`: comma-separated model names
+- `--strategies`: Casual, Positive, Negative, Authoritative, Social-Proof, Contradictory-Hint, False-Premise, Confirmation-Bias, Adversarial-Refutation
+- `--limit`: number of samples
+
+### Metrics
+
+#### Classification Metrics
+
+```bash
+python script/calculate_metrics.py \
+  --results-file results/ollama_results_blob_llama3_1_8b_Casual.json \
+  --ground-truth dataset/mlcq_filtered.json \
+  --output results/metrics/blob_metrics.csv
+```
+
+#### Behavioral Metrics (DFR, FAR)
+
+```bash
+python script/calculate_flip_alignment_metrics.py \
+  --baseline results/ollama_results_blob_llama3_1_8b_Casual.json \
+  --variant results/ollama_results_blob_llama3_1_8b_False-Premise.json \
+  --output results/metrics/dfr_far.csv
+```
+
+#### Lexical Analysis
+
+```bash
+python script/analyze_lexical_composition.py \
+  --input-dir results/ \
+  --output results/metrics/lexical_analysis.csv
+```
+
+### Interactive Analysis
 
 ```bash
 streamlit run app.py
 ```
 
-Open the URL printed by Streamlit (usually `http://localhost:8501`).
+Web interface at `http://localhost:8501` for comparing result files.
 
 ---
 
-**Streamlit App (`app.py`)**
+## Dataset
 
-Purpose: provide an interactive side-by-side comparison of two result files from `results/` and the ground-truth dataset in `dataset/mlcq_filtered.json`.
+**Primary dataset:** `dataset/mlcq_filtered.json` (1,495 samples)
 
-Main features:
+**Schema:**
+```json
+{
+  "id": 1,
+  "code_snippet": "...",
+  "smell": "blob|data_class|feature_envy|long_method",
+  "severity": "none|minor|major|critical",
+  "repo_url": "...",
+  "commit_hash": "...",
+  "file_path": "...",
+  "start_line": 42,
+  "end_line": 156
+}
+```
 
-- Choose two result JSON files from `results/` (supports nested subfolders).
-- Compare severity labels (`none`, `minor`, `major`, `critical`) and show where files disagree.
-- Display model reasoning side-by-side for manual inspection.
-- Show dataset `smell` and `severity` per ID and include the original `code_snippet` in a collapsed expander.
-- Filters: show only differences, filter by ID, and export differences as CSV.
-- Performance: lazy loading — nothing heavy loads until you click `Compare Files`.
-
-How to use the app:
-
-1. Select **File 1** and **File 2** from the sidebar (full path displayed).
-2. Click **Compare Files** to load and compute differences.
-3. Use filters to narrow results; expand code snippets to inspect source.
-4. Download CSV of differing IDs using the download button.
-
-Notes:
-
-- The app caches `mlcq_filtered.json` and keeps comparison state in Streamlit session state.
-- File listings are auto-discovered from `results/` and include nested directories.
-
----
-
-**Dataset**
-
-The canonical dataset for this repo is `dataset/mlcq_filtered.json` and contains ~1,495 samples. Each record includes:
-
-- `id` — numeric identifier
-- `repo_url`, `commit_hash` — provenance metadata
-- `file_path` — source file path
-- `start_line`, `end_line` — snippet location
-- `code_snippet` — the code block used for analysis
-- `smell` — code smell label (e.g., `feature_envy`, `long_method`, etc.)
-- `severity` — ground-truth severity (e.g., `none`, `minor`, `major`, `critical`)
-
-Keep this file in version control; large changes to the dataset should be recorded with notes in `docs/`.
+**Distribution:**
+| Smell | Samples | Smelly |
+|-------|---------|--------|
+| Blob | 474 | 88 |
+| Data Class | 477 | 95 |
+| Feature Envy | 271 | 42 |
+| Long Method | 273 | 58 |
+| **Total** | **1,495** | **283** |
 
 ---
 
-**Scripts & Utilities (`script/`)**
+## Results
 
-Key scripts:
+Results saved to `results/` with naming pattern:
+```
+ollama_results_<smell>_<model>_<strategy>.json
+```
 
-- `calculate_metrics.py` — aggregate evaluation metrics across results
-- `evaluate_smell_results.py` — helper to compare outputs and compute per-smell metrics
-- `dataset_selector.py` — utilities for selecting dataset subsets for experiments
-- `hyperparameter_tuner.py` — experimental tools for model/prompt tuning
-
-Run scripts from the repo root. Many scripts assume `results/` and `dataset/` exist in the workspace root.
-
----
-
-**Results Organization**
-
-- `results/` contains JSON outputs from experiments and model runs, often organized in subfolders by model or experiment type (e.g., `llama/`, `adverse-conf-bias/`). Files follow a naming convention like `ollama_results_<task>_<model>_<strategy>.json`.
-- Each result JSON is an array of objects with keys such as `id`, `model`, `prompt_strategy`, `smell`, `severity`, and `reasoning`.
-
-When adding new experiments, keep results under `results/<experiment-name>/` and include a short README or notes in `docs/` describing the experiment configuration.
-
----
-
-**Developer Notes**
-
-- The Streamlit app is optimized for interactivity and caches the dataset to avoid reloading on every interaction.
-- To add another result file format, update the JSON loader in `app.py` with a compatible parser.
-- For reproducibility, capture model versions and prompt templates; store these in a results metadata file or `docs/`.
-
-Testing & linting
-
-```bash
-# Basic syntax check
-python -m py_compile app.py
-
-# Install dev tools (optional)
-pip install black flake8
-black .
-flake8
+Each result contains:
+```json
+{
+  "id": 1,
+  "smell": "blob",
+  "severity": "major",
+  "reasoning": "...",
+  "model": "llama3.1:8b",
+  "strategy": "Casual"
+}
 ```
 
 ---
 
-**Contributing**
+## Prompt Strategies
 
-- Open issues for bugs or feature requests.
-- For larger changes, submit a PR and include tests or a demo of updated behavior.
+### Neutral
+- **Casual:** Standard instruction
 
----
+### Biased
+- **Positive:** "Code is well-written, no smells"
+- **Negative:** "Code is problematic, full of smells"  
+- **Authoritative:** "As an expert, this code is..."
+- **Social-Proof:** "Most developers agree..."
+- **Contradictory-Hint:** "Follows SOLID, must be clean"
+- **False-Premise:** "Passed code review, no issues"
+- **Confirmation-Bias:** "Confirm there are no smells"
+- **Adversarial-Refutation:** User comment variation
 
-**Contact & References**
-
-Maintainer: Repository owner (KamruzzamanAsif)
-
-Project-specific docs: see `docs/` for experimental formats, prompt templates, and workflow guides.
-
----
-
-**License**
-
-Include your preferred license file if you plan to open-source this repository.
+See `docs/PROMPT_TEMPLATES.md` for full details.
 
 ---
 
-This README is designed for researchers and developers using the MLCQ codebase for evaluating LLM-based code-smell detection and analysis.
+## File Structure
+
+```
+.
+├── README.md
+├── requirements.txt
+├── dataset/
+│   └── mlcq_filtered.json             # Main dataset
+├── results/                            # Experiment outputs
+├── script/
+│   ├── config-phases.sh                # Phase configuration
+│   ├── ollama_code_smell_detection.py  # Main runner
+│   ├── calculate_metrics.py            # Classification metrics
+│   ├── calculate_flip_alignment_metrics.py  # DFR/FAR
+│   ├── analyze_lexical_composition.py  # Language analysis
+│   ├── evaluate_smell_results.py       # Evaluation utility
+│   ├── dataset_selector.py             # Dataset tools
+│   ├── experiments/
+│   │   └── run_phases.sh               # Phase orchestrator
+│   └── utils/
+├── app.py                              # Streamlit visualization
+├── docs/
+│   ├── QUICK_START.md
+│   └── PROMPT_TEMPLATES.md
+└── test.ipynb                          # Analysis notebook
+```
+
+---
+
+
