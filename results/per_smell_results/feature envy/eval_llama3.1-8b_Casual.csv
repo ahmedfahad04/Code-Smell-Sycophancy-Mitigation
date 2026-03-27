@@ -1,2 +1,0 @@
-Model,Strategy,N,Accuracy,Precision,Recall,F1
-llama3.1:8b,Casual,260,0.9923,0.1904,0.9923,0.3195

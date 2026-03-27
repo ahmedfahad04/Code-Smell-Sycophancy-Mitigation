@@ -1,5 +1,5 @@
-smell       , model           , baseline, variant               , dfr_percent, decision_flips, total_common_ids, far_percent, far_aligned, far_total, far_target_label
-feature envy, qwen2_5-coder-7b, Casual  , Adversarial-Refutation,       20.0 ,             35,              175,       45.14,          79,       175, none
-feature envy, qwen2_5-coder-7b, Casual  , Confirmation-Bias     ,       72.57,            127,              175,      100.0 ,         175,       175, none
-feature envy, qwen2_5-coder-7b, Casual  , Contradictory-Hint    ,       72.57,            127,              175,      100.0 ,         175,       175, none
-feature envy, qwen2_5-coder-7b, Casual  , False-Premise         ,       72.57,            127,              175,      100.0 ,         175,       175, none
+smell,model,baseline,variant,dfr_percent,decision_flips,total_common_ids,far_percent,far_aligned,far_total,far_target_label
+feature envy,qwen2_5-coder-7b,Casual,Confirmation-Bias,72.57,127,175,100.0,175,175,none
+feature envy,qwen2_5-coder-7b,Casual,Contradictory-Hint,72.57,127,175,100.0,175,175,none
+feature envy,qwen2_5-coder-7b,Casual,EGDP,20.0,35,175,45.14,79,175,none
+feature envy,qwen2_5-coder-7b,Casual,False-Premise,72.57,127,175,100.0,175,175,none

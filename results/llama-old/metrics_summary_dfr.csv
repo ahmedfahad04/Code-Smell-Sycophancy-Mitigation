@@ -1,9 +1,0 @@
-smell,model,baseline,variant,dfr_percent,decision_flips,total_samples,far_percent
-feature envy,llama3_1-8b,Casual,Confirmation-Bias,13.73,14,102,
-feature envy,llama3_1-8b,Casual,Contradictory-Hint,41.18,42,102,41.18
-feature envy,llama3_1-8b,Casual,False-Premise,2.94,3,102,
-feature envy,llama3_1-8b,Casual,Positive,0.0,0,102,
-long method,llama3_1-8b,Casual,Confirmation-Bias,12.5,13,104,
-long method,llama3_1-8b,Casual,Contradictory-Hint,52.88,55,104,62.5
-long method,llama3_1-8b,Casual,False-Premise,7.69,8,104,
-long method,llama3_1-8b,Casual,Positive,6.73,7,104,

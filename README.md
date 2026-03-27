@@ -2,31 +2,7 @@
 
 *Abstract*
 ```
-Large Language Models (LLMs) are increasingly used for code smell
-detection tasks due to their ability to interpret program semantics.
-However, their reliability in this context remains poorly explored,
-particularly under varying prompt conditions where model predic-
-tions may be influenced by external cues rather than code char-
-acteristics. One such limitation is sycophancy bias, where models
-tend to align their outputs with user-provided assumptions instead
-of performing objective analysis. In this paper, we present the first
-systematic empirical study of sycophancy bias in LLM-based code
-smell detection. Using the MLCQ dataset, we evaluate how differ-
-ent prompt framings like confirmation bias, contradictory hints,
-and false premises, affect model predictions. Our results show that
-LLMs are highly sensitive to prompt variations, with Decision Flip
-Rates reaching up to 72% and False Alignment Rates exceeding 90%,
-indicating substantial instability and agreement with misleading
-prompts. To address this issue, we propose Evidence-Guided De-
-biasing Prompting (EGDP), a structured prompting strategy that
-enforces evidence-first reasoning. EGDP reduces decision insta-
-bility and improves robustness, lowering Decision Flip Rates to
-as low as 12% and False Alignment Rates to as low as 21%, while
-increasing reliance on structurally grounded evidence. Our find-
-ings demonstrate that sycophancy bias poses a critical threat to the
-reliability of LLM-based code smell detection, and that evidence-
-guided reasoning provides an effective and generalizable mitigation
-approach.
+Large Language Models (LLMs) are increasingly used for code smell detection tasks due to their ability to interpret program semantics. However, their reliability in this context remains poorly explored, particularly under varying prompt conditions where model predictions may be influenced by external cues rather than code characteristics. One such limitation is sycophancy bias, where models tend to align their outputs with user-provided assumptions instead of performing objective analysis. In this paper, we present the first systematic empirical study of sycophancy bias in LLM-based code smell detection. Using the MLCQ dataset, we evaluate how different prompt framings like confirmation bias, contradictory hints, and false premises, affect model predictions. Our results show that LLMs are highly sensitive to prompt variations, with Decision Flip Rates reaching up to 72% and False Alignment Rates exceeding 90%, indicating substantial instability and agreement with misleading prompts. To address this issue, we propose Evidence-Guided Debiasing Prompting (EGDP), a structured prompting strategy that enforces evidence-first reasoning. EGDP reduces decision instability and improves robustness, lowering Decision Flip Rates to as low as 12% and False Alignment Rates to as low as 21%, while increasing reliance on structurally grounded evidence. Our findings demonstrate that sycophancy bias poses a critical threat to the reliability of LLM-based code smell detection, and that evidence-guided reasoning provides an effective and generalizable mitigation approach.
 ```
 
 ## Setup
@@ -122,7 +98,7 @@ python script/ollama_code_smell_detection.py \
 **Options:**
 - `--smell`: blob, data-class, feature-envy, long-method, or all
 - `--models`: comma-separated model names
-- `--strategies`: Casual, Positive, Negative, Authoritative, Social-Proof, Contradictory-Hint, False-Premise, Confirmation-Bias, Adversarial-Refutation
+- `--strategies`: Casual, Positive, Negative, Authoritative, Social-Proof, Contradictory-Hint, False-Premise, Confirmation-Bias, EGDP
 - `--limit`: number of samples
 
 ### Metrics
@@ -227,7 +203,7 @@ Each result contains:
 - **Contradictory-Hint:** "Follows SOLID, must be clean"
 - **False-Premise:** "Passed code review, no issues"
 - **Confirmation-Bias:** "Confirm there are no smells"
-- **Adversarial-Refutation:** User comment variation
+- **EGDP:** User comment variation
 
 See `docs/PROMPT_TEMPLATES.md` for full details.
 

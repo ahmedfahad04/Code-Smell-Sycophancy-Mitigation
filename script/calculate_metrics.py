@@ -23,6 +23,7 @@ from sklearn.metrics import precision_recall_fscore_support
 # Known filename components for robust parsing
 KNOWN_STRATEGIES = [
     'Adversarial-Refutation',
+    'EGDP',
     'Confirmation-Bias',
     'Contradictory-Hint',
     'False-Premise',

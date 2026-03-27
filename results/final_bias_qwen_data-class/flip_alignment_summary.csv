@@ -1,5 +1,5 @@
 smell     , model           , baseline, variant               , dfr_percent, decision_flips, total_common_ids, far_percent, far_aligned, far_total, far_target_label
-data class, qwen2_5-coder-7b, Casual  , Adversarial-Refutation,       46.29,             81,              175,       23.43,          41,       175, none
+data class, qwen2_5-coder-7b, Casual  , EGDP,       46.29,             81,              175,       23.43,          41,       175, none
 data class, qwen2_5-coder-7b, Casual  , Confirmation-Bias     ,       62.86,            110,              175,       89.14,         156,       175, none
 data class, qwen2_5-coder-7b, Casual  , Contradictory-Hint    ,       61.71,            108,              175,       92.57,         162,       175, none
 data class, qwen2_5-coder-7b, Casual  , False-Premise         ,       64.0 ,            112,              175,       94.86,         166,       175, none
