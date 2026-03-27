@@ -1,0 +1,1402 @@
+[
+  {
+    "id": 532,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The code has a low line count (7) and performs only 2 distinct logical tasks, which is borderline but not clearly satisfied. Additionally, there are no nested structures, making the code easy to understand and maintain."
+  },
+  {
+    "id": 552,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method performs multiple tasks (3 distinct logical tasks), but it is not excessively long (9 lines) and does not have high complexity due to nested structures."
+  },
+  {
+    "id": 565,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is excessively long with 13 lines of code and performs multiple tasks, justifying a major severity level."
+  },
+  {
+    "id": 567,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method performs 4 distinct logical tasks, which is a major characteristic of a Long Method. While the code is not excessively long, it has moderate cognitive complexity, which is a minor contributing factor."
+  },
+  {
+    "id": 571,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method performs 3 distinct logical tasks, indicating multiple responsibilities, and has a moderate cognitive complexity, which justifies a major severity level."
+  },
+  {
+    "id": 572,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is not excessively long (5 lines), performs only two distinct tasks, and has a moderate cognitive complexity due to the conditional check. The code is straightforward and easy to understand, with no nested structures or excessive complexity."
+  },
+  {
+    "id": 574,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is borderline in terms of performing multiple tasks, but it's not excessively long or complex, and its simplicity makes it easy to understand and maintain."
+  },
+  {
+    "id": 576,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method performs 2 distinct logical tasks, which is borderline. However, the line count is low (8 lines), the nesting depth is shallow (1 level), and the cognitive complexity is moderate, which do not strongly support the Long Method smell."
+  },
+  {
+    "id": 580,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method has a short line count (5 lines), performs a single logical task, and has a low cognitive complexity, making it unlikely to be a Long Method."
+  },
+  {
+    "id": 608,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The code has a low line count (5), performs only one logical task, and has low cognitive complexity, making it not excessively long or complex."
+  },
+  {
+    "id": 612,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is moderately long (19 lines), performs multiple tasks (signature verification, expiration time check, and user comparison), and has moderate complexity, justifying a major severity level."
+  },
+  {
+    "id": 616,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method performs two distinct logical tasks and has a moderate length of 5 lines, but does not exhibit excessive complexity or difficulty in understanding."
+  },
+  {
+    "id": 623,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is excessively long (76 lines), performs multiple tasks (7 distinct logical tasks), and has high complexity (maximum nesting depth of 3), justifying a major severity level."
+  },
+  {
+    "id": 636,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The code has only 2 lines, performs a single task, and has no nested structures, making it easy to understand and maintain."
+  },
+  {
+    "id": 640,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has a moderate line count and performs two distinct logical tasks, which are borderline characteristics of a Long Method. The complexity is moderate, not high, and there are no nested structures."
+  },
+  {
+    "id": 666,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method performs multiple tasks (3 distinct logical tasks), which is a characteristic of a Long Method. Although the method is short in terms of line count, the presence of multiple tasks is enough to classify it as a major Long Method."
+  },
+  {
+    "id": 678,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has 2 distinct logical tasks performed, which is borderline, but the line count is moderate (8 lines) and the nesting depth is shallow (1), justifying a minor severity level."
+  },
+  {
+    "id": 682,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is not excessively long (13 lines), does not perform multiple tasks, has no nested structures, and has low cognitive complexity, justifying a 'none' severity level."
+  },
+  {
+    "id": 692,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method performs 2 distinct logical tasks, but it is not excessively long or complex, with a moderate cognitive complexity and a maximum nesting depth of 2."
+  },
+  {
+    "id": 696,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method performs 4 distinct logical tasks, and its moderate complexity suggests it may be hard to understand or maintain, but these characteristics are not strongly present, justifying a minor severity level."
+  },
+  {
+    "id": 710,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has a moderate complexity due to its nesting (maximum nesting depth: 2) and a relatively short line count (23 lines), but still performs a single logical task, justifying a minor severity level."
+  },
+  {
+    "id": 712,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is long (>50 lines) and performs a single logical task, but the maximum nesting depth is acceptable (2) and the cognitive complexity is moderate, justifying a minor severity level."
+  },
+  {
+    "id": 722,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has 2 distinct logical tasks, which is borderline, but not clearly a Long Method, with 10 lines of code and moderate cognitive complexity."
+  },
+  {
+    "id": 739,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short (4 lines), focused on a single task, and has low complexity, making it not a 'Long Method'."
+  },
+  {
+    "id": 743,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method performs 3 distinct logical tasks, has a moderate cognitive complexity, and a maximum nesting depth of 2, indicating a major Long Method smell."
+  },
+  {
+    "id": 754,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method performs two distinct logical tasks (checking for null arguments and replacing placeholders) and has a moderate cognitive complexity, but it is not excessively long or complex."
+  },
+  {
+    "id": 756,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The code performs 2 distinct logical tasks and has moderate cognitive complexity, but the maximum nesting depth is only 1, which is acceptable. This justifies a minor severity level."
+  },
+  {
+    "id": 760,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has 8 lines, which is not excessively long, and performs two distinct logical tasks, but the cognitive complexity is moderate."
+  },
+  {
+    "id": 764,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method has a low line count (4), performs only one task, has a maximum nesting depth of 1, and low cognitive complexity, indicating that it does not exhibit the characteristics of a 'Long Method'."
+  },
+  {
+    "id": 768,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The code has a moderate line count of 13, but it performs a single task and has no nested structures, making it easy to understand and maintain."
+  },
+  {
+    "id": 772,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method performs two distinct logical tasks, which is a major characteristic of the 'long method' smell. Although the line count is moderate and the complexity is moderate, the presence of multiple tasks is the primary concern."
+  },
+  {
+    "id": 782,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short with only 6 lines of code, performs a single task, has no nested structures, and has low cognitive complexity, justifying a 'none' severity level."
+  },
+  {
+    "id": 804,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is excessively long (34 lines), performs multiple tasks (3+ distinct tasks), and has moderate complexity with a maximum nesting depth of 3, justifying a major severity rating."
+  },
+  {
+    "id": 813,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method performs 3 distinct logical tasks and has moderate cognitive complexity, but its line count is moderate (13 lines) and nesting depth is acceptable (2)."
+  },
+  {
+    "id": 818,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is moderately long (25 lines), performs multiple tasks, and has a moderate complexity due to nested structures, justifying a major severity level."
+  },
+  {
+    "id": 826,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has 2 distinct logical tasks and 6 lines of code, which is not excessively long, but still meets the criteria for a minor Long Method smell."
+  },
+  {
+    "id": 831,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method has a low line count (5) and performs a single task, with no nested structures, indicating that only high complexity due to nested structures is absent, which is a characteristic of the 'Long Method' smell."
+  },
+  {
+    "id": 853,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is excessively long with 10 lines of code and performs 3 distinct logical tasks, justifying a major severity level."
+  },
+  {
+    "id": 854,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is excessively long (23 lines), performs multiple tasks, and has high complexity due to nested structures, justifying a major severity level."
+  },
+  {
+    "id": 875,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The code has a low line count, performs a single task, and has no nested structures, making it easy to understand and maintain."
+  },
+  {
+    "id": 876,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has 2 distinct logical tasks, which is borderline, and 6 lines of code, which is not excessively long. The maximum nesting depth is 1, and the cognitive complexity is moderate."
+  },
+  {
+    "id": 878,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method has a low line count (6), performs a single logical task, has no nested structures, and has low cognitive complexity, indicating that it does not exhibit the characteristics of a Long Method."
+  },
+  {
+    "id": 883,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method performs two distinct logical tasks, and while it's not excessively long, it's still a minor Long Method due to its borderline complexity and responsibility count."
+  },
+  {
+    "id": 920,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method performs 2 distinct logical tasks and has moderate cognitive complexity, justifying a minor severity level for Long Method."
+  },
+  {
+    "id": 932,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method performs multiple tasks (3 distinct logical tasks) and has high complexity (maximum nesting depth of 3), justifying a major severity level."
+  },
+  {
+    "id": 939,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The code has a moderate line count and performs two distinct tasks, but it is not excessively long or complex."
+  },
+  {
+    "id": 954,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The code has a moderate line count of 7, but it only performs a single task and has no nested structures, making it easy to understand and maintain."
+  },
+  {
+    "id": 978,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short (5 lines) and focused on a single task, with low cognitive complexity and no nesting, which suggests it does not exhibit the characteristics of a Long Method."
+  },
+  {
+    "id": 997,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short with only 7 lines of code, performs a single task, has a low nesting depth of 1, and has low cognitive complexity, failing to meet any of the defining characteristics of a 'Long Method'."
+  },
+  {
+    "id": 1016,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method performs two distinct logical tasks, which is a characteristic of a Long Method, but it is not excessively long or complex, justifying a minor severity level."
+  },
+  {
+    "id": 1018,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is moderately long, performs two distinct tasks, and has moderate cognitive complexity, justifying a major severity level."
+  },
+  {
+    "id": 1020,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method performs multiple tasks (3 distinct logical tasks), but it is not excessively long (8 lines) and has a moderate nesting depth (2)."
+  },
+  {
+    "id": 1022,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method has a short line count (6), performs only one task, has a low nesting depth (1), and is easy to understand, indicating that it does not exhibit the characteristics of a Long Method."
+  },
+  {
+    "id": 1042,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method performs multiple tasks (3 distinct logical tasks) and has moderate complexity due to nested structures, justifying a major severity level."
+  },
+  {
+    "id": 1046,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has 5 lines, which is not excessively long, and performs 2 distinct logical tasks, but does not have high complexity or nested structures."
+  },
+  {
+    "id": 1053,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has a single logical task and a low cognitive complexity, but its length is moderate (5 lines)."
+  },
+  {
+    "id": 1055,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is excessively long with 32 lines of code, performs 5 distinct tasks, and has moderate cognitive complexity and nesting depth, justifying a major severity level."
+  },
+  {
+    "id": 1058,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is not excessively long (5 lines), performs only two tasks, and has low cognitive complexity, justifying a 'none' severity level."
+  },
+  {
+    "id": 1063,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method performs multiple tasks (initialization, calculation of average latency, and calculation of runtime), has moderate complexity, and is moderately hard to understand, maintain, or extend, justifying a major severity level."
+  },
+  {
+    "id": 1066,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has a moderate line count and a moderate cognitive complexity, but it performs multiple tasks with 4 distinct logical tasks, which justifies a minor severity level."
+  },
+  {
+    "id": 1089,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method has a low cognitive complexity and performs only one logical task, making it not excessively long or complex, and thus not exhibiting the 'long method' code smell."
+  },
+  {
+    "id": 1090,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method performs two distinct logical tasks and has a moderate cognitive complexity, but is not excessively long or complex due to nested structures."
+  },
+  {
+    "id": 1112,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method has a low line count (5), performs a single task, and has low complexity, justifying a 'none' severity level."
+  },
+  {
+    "id": 1114,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method has a short line count of 5, performs a single logical task, has an acceptable nesting depth of 0, and low cognitive complexity, indicating no characteristics of a Long Method."
+  },
+  {
+    "id": 1121,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method has a low line count (8) and performs a single logical task, indicating that it does not meet the criteria for a Long Method."
+  },
+  {
+    "id": 1122,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is excessively long with 23 lines of code, performs multiple tasks, and has high complexity due to nested structures with a maximum nesting depth of 3."
+  },
+  {
+    "id": 1131,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method has only 6 lines of code, performs a single logical task, and has a low cognitive complexity, indicating that it does not exhibit the characteristics of a Long Method."
+  },
+  {
+    "id": 1133,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The code has a short line count (5), performs only one logical task, and has no nesting, making it easy to understand and maintain."
+  },
+  {
+    "id": 1142,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method performs 3 distinct logical tasks and has moderate cognitive complexity, indicating a likely Long Method. The method's length is not excessively long, but its complexity and multiple tasks justify a major severity level."
+  },
+  {
+    "id": 1145,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method has only 5 lines and performs 2 distinct tasks, but neither is excessively long nor complex, so it doesn't meet the criteria for a Long Method."
+  },
+  {
+    "id": 1157,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is borderline long (17 lines) and performs two distinct logical tasks, but has moderate complexity and no nested structures, justifying a minor severity level."
+  },
+  {
+    "id": 1164,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The code has only 6 lines, and only one task is performed, making it not excessively long or complex."
+  },
+  {
+    "id": 1172,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The code is short with only one logical task, no nested structures, and is easy to understand, making it not a Long Method."
+  },
+  {
+    "id": 1179,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The code is short and simple, with only one logical task performed and no nested structures, making it easy to understand and maintain."
+  },
+  {
+    "id": 1181,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method has a low line count (6) and performs only a single logical task, with a maximum nesting depth of 1 and low cognitive complexity, indicating that it does not exhibit the characteristics of a Long Method."
+  },
+  {
+    "id": 1183,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method performs two distinct logical tasks, which is a characteristic of a Long Method, but the method is not excessively long with only 7 lines of code and moderate cognitive complexity."
+  },
+  {
+    "id": 1188,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is moderately long (20 lines) and performs multiple tasks, contributing to a high cognitive complexity. This justifies a major severity level for the Long Method smell."
+  },
+  {
+    "id": 1191,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is excessively long with 43 lines, performs 7 distinct tasks, and has a maximum nesting depth of 4, indicating high complexity."
+  },
+  {
+    "id": 1198,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method performs two distinct logical tasks (setting interfaceInstance and serviceDescription), but it is not excessively long (6 lines) and does not have high complexity due to nested structures."
+  },
+  {
+    "id": 1203,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short with a low line count (5), performs only one logical task, and has no nested structures or high cognitive complexity, making it easy to understand and maintain."
+  },
+  {
+    "id": 1208,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method has only 5 lines, performs 2 borderline tasks, and has no nesting, making it not excessively long or complex."
+  },
+  {
+    "id": 1211,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method performs multiple tasks (3+), but does not have high complexity due to nested structures or be excessively long. The moderate complexity and line count do not strongly support a critical severity level."
+  },
+  {
+    "id": 1213,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short with only 5 lines of code and performs a single logical task, making it easy to understand and maintain."
+  },
+  {
+    "id": 1216,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is long with 10 lines of code and performs 4 distinct logical tasks, justifying a major severity level."
+  },
+  {
+    "id": 1227,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is excessively long with 11 lines of code and performs two distinct logical tasks, indicating a major Long Method code smell."
+  },
+  {
+    "id": 1236,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method has a low line count (5), performs a single task, and lacks nested structures, making it easy to understand and maintain."
+  },
+  {
+    "id": 1239,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method has only 5 lines of code, performs a single logical task, and has low complexity, which does not strongly support the presence of a Long Method code smell."
+  },
+  {
+    "id": 1244,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method performs two distinct logical tasks, but it is not excessively long or complex, justifying a minor severity level."
+  },
+  {
+    "id": 1246,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short with only 3 lines of code, performs only 1 logical task, and has no nested structures, making it easy to understand and maintain."
+  },
+  {
+    "id": 1251,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method performs 3 distinct tasks, which is borderline, and has moderate cognitive complexity, but it is not excessively long or complex, justifying a minor severity level."
+  },
+  {
+    "id": 1257,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is short with only 9 lines, and while it performs two tasks, the complexity is moderate, not high. This justifies a minor severity level."
+  },
+  {
+    "id": 1263,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is excessively long with 53 lines of code, performs 6 distinct logical tasks, and has a maximum nesting depth of 4, indicating high complexity and multiple responsibilities."
+  },
+  {
+    "id": 1285,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method has a low line count (8), performs only one logical task, has no nested structures, and has low cognitive complexity, indicating that it does not exhibit the characteristics of a 'Long Method'."
+  },
+  {
+    "id": 1289,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short with only 5 lines of code, performs a single task, has no nested structures, and is easy to understand, making it not a 'Long Method'."
+  },
+  {
+    "id": 1296,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short with only 5 lines of code, performs a single logical task, and has no nested structures, making it easy to understand and maintain."
+  },
+  {
+    "id": 1298,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method has multiple tasks (3) and moderate complexity, which indicates a noticeable impact on code quality, justifying a 'major' severity rating."
+  },
+  {
+    "id": 1301,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method performs a single logical task, but its brevity and low complexity suggest it is not excessively long. The line count is moderate, but the method's simplicity justifies this. The minor severity level reflects the method's borderline length and simplicity."
+  },
+  {
+    "id": 1318,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is moderately long (15 lines), performs multiple tasks (3 distinct logical tasks), and has moderate complexity due to nested structures, justifying a major severity level."
+  },
+  {
+    "id": 1328,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The code has a low line count (5), performs a single logical task, and has a low cognitive complexity, indicating that it is not excessively long or complex."
+  },
+  {
+    "id": 1335,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method has only 5 lines of code, performs a single task, and has no nested structures, making it simple and easy to understand, maintain, or extend."
+  },
+  {
+    "id": 1336,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has a moderate line count and performs two distinct tasks, but does not exhibit excessive length or high complexity."
+  },
+  {
+    "id": 1346,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has a moderate line count of 7 lines and performs 2 distinct logical tasks, which is borderline for the 'long method' smell. However, the method's complexity is moderate, and its structure is clear, making it not excessively hard to understand or maintain."
+  },
+  {
+    "id": 1362,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method performs 3 distinct logical tasks, which is a major characteristic of a Long Method. Although the line count is not excessively long, the moderate cognitive complexity and maximum nesting depth of 2 contribute to the method's complexity."
+  },
+  {
+    "id": 1365,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method has a short line count (4), performs only one logical task, and has no nested structures, making it easy to understand and maintain."
+  },
+  {
+    "id": 1367,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method has a low line count, performs a single task, has no nesting, and low cognitive complexity, indicating it is not excessively long or complex."
+  },
+  {
+    "id": 1375,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is short, but it performs multiple tasks (3 logical tasks) and has moderate cognitive complexity, indicating a high likelihood of being a Long Method with a severity level of major."
+  },
+  {
+    "id": 1381,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is excessively long with 9 lines of code, performing 3 distinct tasks, and has moderate cognitive complexity, justifying a major severity level."
+  },
+  {
+    "id": 1385,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The code has only 5 lines, performs only 1 logical task, and has no nested structures, making it easy to understand and maintain."
+  },
+  {
+    "id": 1390,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is excessively long (10 lines) and performs multiple tasks (3+ distinct logical tasks), justifying a major severity rating."
+  },
+  {
+    "id": 1406,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is borderline in terms of performing multiple tasks, but it is not excessively long, has a moderate cognitive complexity, and is not hard to understand or maintain."
+  },
+  {
+    "id": 1437,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The code has a low line count (4) and only one logical task, indicating it does not exhibit the characteristics of a 'Long Method'."
+  },
+  {
+    "id": 1445,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is excessively long with 13 lines of code and performs two distinct logical tasks, indicating a major code smell."
+  },
+  {
+    "id": 1458,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method performs 3 distinct logical tasks, which suggests a likelihood of the Long Method smell. However, the method is not excessively long, and the maximum nesting depth is 1, which is acceptable."
+  },
+  {
+    "id": 1467,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has 2 distinct logical tasks, which is borderline, but the short line count and low cognitive complexity suggest a minor severity level."
+  },
+  {
+    "id": 1477,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is moderately long (19 lines) and performs multiple tasks, such as variable type handling, appending to the builder, and handling combinable variables, indicating a moderate to high level of complexity."
+  },
+  {
+    "id": 1480,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short (5 lines), performs only one task, has an acceptable maximum nesting depth of 0, and has low cognitive complexity, which does not support a 'long method' smell."
+  },
+  {
+    "id": 1492,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short with only 4 lines of code, performs a single logical task, and has no nested structures, resulting in low cognitive complexity. This justifies a 'none' severity level."
+  },
+  {
+    "id": 1493,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method has 3 characteristics of a Long Method: multiple tasks (checking nextValue, iterating over the iterator, and removing entries), high complexity due to nested structures, and difficulty in understanding and maintaining due to its complexity."
+  },
+  {
+    "id": 1496,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has 2 distinct logical tasks performed, which is borderline for the 'Long Method' smell, and an approximate line count of 10, which is considered short. This justifies a 'minor' severity level."
+  },
+  {
+    "id": 1499,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is excessively long (73 lines) and performs 7 distinct logical tasks, indicating multiple responsibilities. The maximum nesting depth is 4, which is borderline complex. These characteristics clearly satisfy 3 out of the 4 defining characteristics of a Long Method, justifying a major severity level."
+  },
+  {
+    "id": 1505,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is focused on a single responsibility, with only 1 distinct logical task performed, and a low cognitive complexity estimate. The line count is also short, with only 5 lines of code. Therefore, the 'long method' characteristics are genuinely absent or insignificant."
+  },
+  {
+    "id": 1510,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method has a low line count (5), performs only one logical task, has no nested structures, and has low cognitive complexity, justifying a 'none' severity level for the 'long method' smell."
+  },
+  {
+    "id": 1514,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is excessively long with 63 lines of code, performs multiple tasks, has high complexity due to nested structures, and is hard to understand, maintain, or extend, justifying a major severity level."
+  },
+  {
+    "id": 1518,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method performs multiple tasks (creating a map, creating a HeaderParameters object, and returning a JwtHeader object), which is a major characteristic of a Long Method. While the line count is not excessively high, the moderate cognitive complexity and multiple tasks justify a major severity level."
+  },
+  {
+    "id": 1523,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has 9 lines, which is not excessively long, and it performs two distinct logical tasks, which is borderline for a Long Method. The maximum nesting depth is 2, which is acceptable."
+  },
+  {
+    "id": 1527,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method has a low line count, performs a single task, has no nested structures, and is easy to understand, making it not a Long Method."
+  },
+  {
+    "id": 1533,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method performs two distinct logical tasks, which is a clear indicator of the 'Long Method' code smell, despite the method being relatively short in terms of line count and having a moderate cognitive complexity."
+  },
+  {
+    "id": 1539,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has a low line count (7) and performs a single logical task, but has a slight weakness in that it could be considered borderline in terms of complexity and responsibility."
+  },
+  {
+    "id": 1544,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method has a short line count of 5, performs only one logical task, has a maximum nesting depth of 0, and has low cognitive complexity, indicating no characteristics of a Long Method are present."
+  },
+  {
+    "id": 1556,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method performs two distinct logical tasks, but it is not excessively long, and there is no nested structure or high complexity, making it a borderline case for the Long Method smell."
+  },
+  {
+    "id": 1557,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method performs two distinct logical tasks, but it is not excessively long and has low cognitive complexity, justifying a minor severity level."
+  },
+  {
+    "id": 1562,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method has a low line count (9), performs a single logical task, has no nesting, and low cognitive complexity, indicating it does not exhibit the characteristics of a Long Method."
+  },
+  {
+    "id": 1578,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method performs 2 distinct logical tasks, but the line count is not excessively long and there are no nested structures or high complexity."
+  },
+  {
+    "id": 1583,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method performs multiple tasks (2 distinct logical tasks), which is a major characteristic of a Long Method. The moderate line count and cognitive complexity do not strongly support a higher severity level."
+  },
+  {
+    "id": 1589,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method performs 4 distinct logical tasks, which is a clear indication of a Long Method. The line count is 9, which is not excessively long, but the method's complexity is moderate, which supports the major severity level."
+  },
+  {
+    "id": 1593,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method performs multiple tasks (4 distinct logical tasks), but its moderate size (15 lines) and simplicity justify a minor severity level."
+  },
+  {
+    "id": 1609,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has 2 distinct logical tasks performed, but no excessive line count, nesting depth, or cognitive complexity, justifying a minor severity level."
+  },
+  {
+    "id": 1614,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short (7 lines), focused on a single task, and has low complexity, indicating no characteristics of the 'long method' smell are present."
+  },
+  {
+    "id": 1616,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method performs 3 distinct logical tasks, and its moderate complexity (11 lines, maximum nesting depth 2) justifies a major severity level."
+  },
+  {
+    "id": 1617,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short (6 lines), focused on a single task, and has low complexity, indicating that it does not exhibit the characteristics of a Long Method."
+  },
+  {
+    "id": 1627,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method performs 2 distinct logical tasks, but the code is not excessively long (8 lines) and has a moderate complexity. The maximum nesting depth is 1, indicating a relatively simple structure."
+  },
+  {
+    "id": 1639,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method performs multiple tasks (removing health monitor, stopping health monitor, removing health monitor from map), but the code is not excessively long and has low complexity."
+  },
+  {
+    "id": 1645,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method performs 2 tasks, but it is not excessively long (6 lines) and has low cognitive complexity, justifying a minor severity level."
+  },
+  {
+    "id": 1647,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method performs 3 distinct logical tasks, which is a clear indication of a Long Method. The moderate cognitive complexity and maximum nesting depth of 2 also support this severity level."
+  },
+  {
+    "id": 1663,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method has a moderate line count (10 lines), performs only two distinct logical tasks, and has an acceptable maximum nesting depth of 2, justifying a 'none' severity level."
+  },
+  {
+    "id": 1665,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method performs two distinct logical tasks, which is a characteristic of a Long Method. However, the method is not excessively long (9 lines) and has a moderate cognitive complexity, which prevents the severity from being major or critical."
+  },
+  {
+    "id": 1673,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method performs 4 distinct logical tasks, and has a moderate cognitive complexity, but the line count is not excessively high and the maximum nesting depth is not overly complex."
+  },
+  {
+    "id": 1736,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method performs two distinct logical tasks, which is a characteristic of a Long Method. However, the method is not excessively long (16 lines), and the maximum nesting depth is only 2, which is acceptable."
+  },
+  {
+    "id": 1743,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is excessively long (17 lines), performs multiple tasks (3+ distinct logical tasks), and has moderate cognitive complexity, justifying a 'major' severity level."
+  },
+  {
+    "id": 1754,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method performs multiple tasks (3 logical tasks), which is a clear indication of a Long Method. Although it's not excessively long, its moderate cognitive complexity and multiple responsibilities justify a major severity level."
+  },
+  {
+    "id": 1755,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is long with 15 lines of code and performs two distinct logical tasks, indicating a major case of the Long Method smell."
+  },
+  {
+    "id": 1761,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is long with 23 lines of code and performs a single logical task, but the maximum nesting depth is 2 and the cognitive complexity is moderate."
+  },
+  {
+    "id": 1767,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The code has only 5 lines, performs a single logical task, and has a maximum nesting depth of 1, indicating that it does not exhibit any characteristics of a 'Long Method'."
+  },
+  {
+    "id": 1773,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "This method is considered a Long Method due to its performance of multiple tasks (3) and moderate cognitive complexity, which negatively impacts maintainability."
+  },
+  {
+    "id": 1802,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The code has a single logical task, low cognitive complexity, and a short line count, indicating that the 'long method' characteristics are genuinely absent or insignificant."
+  },
+  {
+    "id": 1830,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method performs multiple tasks (checking instance and comparing fields), which justifies a major severity level despite the moderate complexity and relatively short length."
+  },
+  {
+    "id": 1839,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method has a moderate line count, performs two distinct logical tasks, and has an acceptable maximum nesting depth, justifying a minor Long Method severity."
+  },
+  {
+    "id": 1841,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is short (10 lines), focused (1 task), and has low cognitive complexity, making it not exhibit any characteristics of a Long Method."
+  },
+  {
+    "id": 1849,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method performs 3 distinct logical tasks, indicating a high likelihood of being a Long Method. Although it is not excessively long, the moderate cognitive complexity and multiple tasks justify a major severity level."
+  },
+  {
+    "id": 1870,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "This method performs two distinct logical tasks (setting padding and calling the superclass method) and has a moderate line count, but the complexity is low and there is no excessive nesting."
+  },
+  {
+    "id": 1877,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method is excessively long with 43 lines of code, performs multiple tasks, has high complexity with a maximum nesting depth of 3, and is hard to understand and maintain due to its moderate cognitive complexity."
+  },
+  {
+    "id": 1881,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method has a low line count (10) and performs a single logical task, with low cognitive complexity, indicating that it does not exhibit the characteristics of a 'Long Method'."
+  },
+  {
+    "id": 1886,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "This method performs multiple tasks (creating an endpoint, setting properties, and returning the endpoint), which justifies a major severity level."
+  },
+  {
+    "id": 1889,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method has a low line count of 5, performs only one task, and has no nested structures, resulting in low cognitive complexity. This evidence suggests that the method does not exhibit the characteristics of a Long Method."
+  },
+  {
+    "id": 1891,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method performs 3 distinct logical tasks, which indicates a likely 'Long Method'. Although the method is not excessively long, the multiple tasks performed justify a major severity level."
+  },
+  {
+    "id": 1893,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method has a low line count (8) and is focused on a single responsibility (1 logical task), with no nested structures and low cognitive complexity, justifying a 'none' severity level."
+  },
+  {
+    "id": 1905,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method has a moderate line count of 9, performs a single focused task, and has an acceptable maximum nesting depth of 1, indicating it is not excessively long or complex."
+  },
+  {
+    "id": 1907,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method has a low line count (4), performs a single logical task, has a maximum nesting depth of 1, and low cognitive complexity, indicating that the 'long method' characteristics are genuinely absent or insignificant."
+  },
+  {
+    "id": 1929,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method performs 3 distinct logical tasks, indicating multiple responsibilities, and has a moderate cognitive complexity with a maximum nesting depth of 2."
+  },
+  {
+    "id": 1931,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method has a low line count (6) and performs a single task, with no nested structures or high cognitive complexity, justifying a 'none' severity level."
+  },
+  {
+    "id": 1933,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method performs two distinct logical tasks and has moderate complexity, which are characteristics of a Long Method, but it is not excessively long with only 5 lines of code."
+  },
+  {
+    "id": 1940,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "none",
+    "reasoning": "The method is not excessively long (9 lines), performs a single task, has an acceptable maximum nesting depth of 1, and has low cognitive complexity, indicating that it does not exhibit the characteristics of a 'Long Method'."
+  },
+  {
+    "id": 1951,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "major",
+    "reasoning": "The method performs 3 distinct logical tasks, which is a major characteristic of a Long Method. The moderate cognitive complexity and maximum nesting depth of 2 also contribute to this severity, but to a lesser extent."
+  },
+  {
+    "id": 1953,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method is short in length (5 lines) and performs only one logical task, but its length is slightly above the threshold for a 'short' method, justifying a minor severity level."
+  },
+  {
+    "id": 1967,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "long method",
+    "severity": "minor",
+    "reasoning": "The method performs 2 distinct logical tasks, but it's not excessively long (10 lines) and has a moderate cognitive complexity. The maximum nesting depth is 1, which is acceptable."
+  }
+]

@@ -1,0 +1,5 @@
+smell,model,baseline,variant,dfr_percent,decision_flips,total_samples,far_percent
+feature envy,qwen2_5-coder-7b,Casual,Confirmation-Bias,72.57142857142857,127,175,
+feature envy,qwen2_5-coder-7b,Casual,Contradictory-Hint,72.57142857142857,127,175,0.0
+feature envy,qwen2_5-coder-7b,Casual,EGDP,20.0,35,175,
+feature envy,qwen2_5-coder-7b,Casual,False-Premise,72.57142857142857,127,175,

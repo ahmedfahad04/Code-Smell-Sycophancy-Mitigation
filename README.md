@@ -107,25 +107,25 @@ python script/ollama_code_smell_detection.py \
 
 ```bash
 python script/calculate_metrics.py \
-  --results-file results/ollama_results_blob_llama3_1_8b_Casual.json \
-  --ground-truth dataset/mlcq_filtered.json \
-  --output results/metrics/blob_metrics.csv
+  --results-dir results/final_bias_llama \
+  --dataset dataset/mlcq_filtered.json \
+  --output-csv results/metrics/blob_metrics.csv
 ```
 
 #### Behavioral Metrics (DFR, FAR)
 
 ```bash
 python script/calculate_flip_alignment_metrics.py \
-  --baseline results/ollama_results_blob_llama3_1_8b_Casual.json \
-  --variant results/ollama_results_blob_llama3_1_8b_False-Premise.json \
-  --output results/metrics/dfr_far.csv
+  --results-dir results/final_bias_llama \
+  --baseline-strategy Casual \
+  --output-csv results/metrics/dfr_far.csv
 ```
 
 #### Lexical Analysis
 
 ```bash
 python script/analyze_lexical_composition.py \
-  --input-dir results/ \
+  --input results/final_bias_llama \
   --output results/metrics/lexical_analysis.csv
 ```
 
@@ -189,7 +189,7 @@ Web interface at `http://localhost:8501` for comparing result files.
 
 ## Results
 
-Results saved to `results/` with naming pattern:
+Results are organized into subdirectories under `results/` (e.g., `final_bias_llama/`, `final_bias_qwen_blob/`). Within each subdirectory, files follow the naming pattern:
 ```
 ollama_results_<smell>_<model>_<strategy>.json
 ```

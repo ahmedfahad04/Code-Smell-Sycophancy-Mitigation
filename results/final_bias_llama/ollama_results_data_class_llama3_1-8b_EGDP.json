@@ -1,0 +1,1402 @@
+[
+  {
+    "id": 529,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has a significant number of getter/setter methods (13) and a high logic-to-accessor ratio (153.85%), indicating that it is primarily used for storing and exposing data rather than performing complex operations."
+  },
+  {
+    "id": 534,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class has methods with meaningful business logic, and the logic-to-accessor ratio is not strongly indicative of a Data Class. The constructor with the allowedPolicies check and the parserCompleted method demonstrate that the class operates on data."
+  },
+  {
+    "id": 537,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "This class contains 5 methods with meaningful business logic and does not have any getter and setter methods, indicating it is not a Data Class. The logic-to-accessor ratio is 100%, further supporting this conclusion."
+  },
+  {
+    "id": 539,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has 4 out of 5 defining characteristics of a Data Class, including methods with meaningful business logic and a lack of traditional getter/setter methods. The logic-to-accessor ratio is also high, indicating that the class operates on its data rather than simply storing it."
+  },
+  {
+    "id": 547,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has a constructor that does not perform any meaningful operations, and it primarily stores/exposes data rather than operating on it, which are two defining characteristics of a Data Class. The lack of getter and setter methods is not a characteristic of a Data Class, but the presence of the other two characteristics justifies a 'major' severity level."
+  },
+  {
+    "id": 550,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class has methods with meaningful business logic (5/7 methods), and the logic-to-accessor ratio is 71.43%, indicating that the class operates on data rather than just storing/exposing it."
+  },
+  {
+    "id": 555,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has a significant number of methods with meaningful business logic (12) and a logic-to-accessor ratio of 50%, indicating it operates on data rather than just storing/exposing it, which justifies a major severity level."
+  },
+  {
+    "id": 557,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Invalid output: severity=critical, smell=data class"
+  },
+  {
+    "id": 559,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Invalid output: severity=critical, smell=data class"
+  },
+  {
+    "id": 560,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains data members with methods that access and modify them, and it serves primarily as a data container, but it also has some methods with meaningful business logic, justifying a minor severity level."
+  },
+  {
+    "id": 569,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The presence of a single accessor method and a method with meaningful business logic (createConnection) indicates a mix of data exposure and operation, justifying a minor severity level for the Data Class smell."
+  },
+  {
+    "id": 579,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class has a method with meaningful business logic, and it does not primarily store/expose data. The logic-to-accessor ratio is above 20%, indicating that this is not a strong Data Class indicator."
+  },
+  {
+    "id": 583,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has 3 methods with meaningful business logic and partially satisfies the characteristic of containing only data members with getter and setter methods, but it does not primarily serve as a data container without meaningful operations."
+  },
+  {
+    "id": 586,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class has only one method, which is the constructor, and it primarily stores/exposes data rather than operating on it, satisfying one characteristic of the 'data class' smell."
+  },
+  {
+    "id": 589,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only getter and setter methods, lacks business logic, and serves primarily as a data container, indicating possible misplacement of logic. With 4 out of 4 defining characteristics clearly satisfied, the severity level is 'major'."
+  },
+  {
+    "id": 593,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class has a significant number of methods with meaningful business logic (17 out of 23), indicating that it is not primarily a data container. The logic-to-accessor ratio is 74.4%, further supporting this conclusion."
+  },
+  {
+    "id": 599,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class has a minor 'data class' smell due to lacking significant business logic and serving primarily as a data container, despite not having getter/setter methods. This is justified by the evidence of 0 getter/setter methods, 0 methods with meaningful business logic, and a logic-to-accessor ratio of 0%."
+  },
+  {
+    "id": 601,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has 4 getter/setter methods and 5 methods with meaningful business logic, indicating a mix of data storage and operations. However, the logic-to-accessor ratio is 55.56%, which is above the strong Data Class indicator threshold of 20%. The class primarily serves as a data container, but the presence of meaningful operations suggests a major Data Class smell."
+  },
+  {
+    "id": 603,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Model error: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=120)"
+  },
+  {
+    "id": 607,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Invalid output: severity=critical, smell=data class"
+  },
+  {
+    "id": 611,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains some logic, but it primarily serves as a data container without meaningful operations, and the logic-to-accessor ratio is moderate."
+  },
+  {
+    "id": 615,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class contains meaningful business logic (9 methods) and does not primarily store/expose data, indicating that it is not a Data Class. The logic-to-accessor ratio is 60%, which is not a strong indicator of a Data Class."
+  },
+  {
+    "id": 619,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has 7 getter/setter methods, 9 methods with meaningful business logic, and primarily stores/exposes data rather than operating on it, indicating a major Data Class smell."
+  },
+  {
+    "id": 624,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only a constructor and no business logic, and it serves primarily as a data container, which aligns with the characteristics of a Data Class. With 3 out of the 4 defining characteristics clearly satisfied, the severity is classified as major."
+  },
+  {
+    "id": 642,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has 4 getter/setter methods and 2 methods with meaningful business logic, indicating a logic-to-accessor ratio of 20%. It primarily stores/exposes data rather than operating on it, which aligns with the characteristics of a Data Class."
+  },
+  {
+    "id": 645,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only one getter method, lacks significant business logic, and serves primarily as a data container. The logic-to-accessor ratio is 33.33%, which is slightly above the threshold for a strong Data Class indicator."
+  },
+  {
+    "id": 650,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only data members with a single method, lacks significant business logic, and serves primarily as a data container. The logic-to-accessor ratio is 100%, indicating a strong Data Class indicator."
+  },
+  {
+    "id": 653,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has a high logic-to-accessor ratio (121.43%) and primarily stores/exposes data, indicating a strong Data Class indicator."
+  },
+  {
+    "id": 657,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class has some characteristics of a Data Class, such as primarily storing/exposing data, but it also contains business logic, which is not typical of a Data Class. This justifies a minor severity level."
+  },
+  {
+    "id": 661,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class contains 23 methods, none of which are getter or setter methods, and 16 of which contain complex logic. The logic-to-accessor ratio is 100%, and the class does not primarily store or expose data."
+  },
+  {
+    "id": 663,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has only one method, which is a getter, and it lacks significant business logic or behavioral methods, serving primarily as a data container without meaningful operations."
+  },
+  {
+    "id": 677,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only getter and setter methods, lacks business logic, serves primarily as a data container, and indicates possible misplacement of logic. This is justified by the 6 getter/setter methods, 0 methods with meaningful business logic, and the class's primary function as a data container."
+  },
+  {
+    "id": 681,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has a logic-to-accessor ratio of 40%, indicating a mix of data storage and operations. However, it primarily serves as a data container, lacking significant business logic, which justifies a major severity level."
+  },
+  {
+    "id": 689,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class has some methods with meaningful business logic, but it does not strictly contain only data members with getter and setter methods."
+  },
+  {
+    "id": 691,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only data members with getter and setter methods, lacks significant business logic, serves primarily as a data container, and does not contain any complex logic, which justifies a major severity level."
+  },
+  {
+    "id": 695,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class has some methods with business logic (4 out of 12 methods), but also has a significant number of accessor methods (6 out of 12 methods). The logic-to-accessor ratio is 33.33%, indicating that the class is not purely a data container, but also has some operational logic."
+  },
+  {
+    "id": 703,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class has two methods with meaningful business logic and no getter/setter methods, indicating it is not a data class. The logic-to-accessor ratio is 66.67%, which is not a strong indicator of a data class."
+  },
+  {
+    "id": 705,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class has a total of 23 methods, none of which are getter or setter methods. All methods perform meaningful operations, and the class operates on data rather than storing it. Therefore, the 'data class' smell is not present in this class."
+  },
+  {
+    "id": 707,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class contains methods with meaningful business logic and does not primarily serve as a data container, indicating that the 'data class' characteristics are genuinely absent or insignificant."
+  },
+  {
+    "id": 709,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has a mix of getter and setter methods, but also has methods with meaningful business logic, indicating a Data Class smell. The logic-to-accessor ratio is 47%, which is not a strong indicator of a Data Class. However, the class primarily serves as a data container without meaningful operations, and has methods that indicate possible misplacement of logic."
+  },
+  {
+    "id": 715,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains some data members with property accessors, but it also has some methods with meaningful business logic, indicating that it's not purely a data container. The logic-to-accessor ratio is 60%, which is not a strong indicator of a Data Class. Therefore, the severity is minor."
+  },
+  {
+    "id": 719,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Invalid output: severity=critical, smell=data class"
+  },
+  {
+    "id": 730,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Invalid output: severity=critical, smell=data class"
+  },
+  {
+    "id": 732,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has 8 getter/setter methods, primarily stores/exposes data, and lacks significant business logic, indicating a major Data Class smell."
+  },
+  {
+    "id": 747,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Invalid output: severity=critical, smell=data class"
+  },
+  {
+    "id": 759,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has a logic-to-accessor ratio of 50%, indicating a balance between data storage and operations. However, the class primarily serves as a data container without meaningful operations, and lacks significant business logic or behavioral methods, justifying a major severity level."
+  },
+  {
+    "id": 766,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains some getter/setter methods, but most methods have meaningful business logic, and the class operates on credentials rather than serving as a data container."
+  },
+  {
+    "id": 777,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Invalid output: severity=critical, smell=data class"
+  },
+  {
+    "id": 779,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class has one method, which is not an accessor, and it serves primarily as a data container without meaningful operations, but these points are weakly present, justifying a minor severity level."
+  },
+  {
+    "id": 809,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has 7 methods, with 2 being getters/setters. It has 4 methods with meaningful business logic. The logic-to-accessor ratio is 57.14%, indicating a strong Data Class indicator. The class primarily serves as a data container without meaningful operations, and it indicates possible misplacement of logic."
+  },
+  {
+    "id": 811,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class primarily stores/exposes data (yes) and contains only 2 methods with meaningful business logic, but lacks getter/setter methods and has a logic-to-accessor ratio of 50%, indicating a mix of data storage and operations."
+  },
+  {
+    "id": 815,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only data members with getter and setter methods (2 constructors), lacks significant business logic, and primarily serves as a data container without meaningful operations, justifying a major severity level."
+  },
+  {
+    "id": 820,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class contains methods with meaningful business logic and operates on data, indicating it does not fit the Data Class smell characteristics. The total method count is 2, with no getter/setter methods and a logic-to-accessor ratio of 100%."
+  },
+  {
+    "id": 823,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class has only 1 method, which is a non-trivial operation, and it primarily stores/exposes data. This is a weak indication of a 'data class', hence a minor severity level."
+  },
+  {
+    "id": 833,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class primarily serves as a data container without meaningful operations, and it lacks significant business logic or behavioral methods, despite having a constructor that populates the Hashtable."
+  },
+  {
+    "id": 841,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class has a total of 4 methods, none of which are getter/setter methods. There are 2 methods with meaningful business logic, and the logic-to-accessor ratio is 50%. The class operates on data rather than storing/exposing it."
+  },
+  {
+    "id": 842,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has 2 methods, neither of which performs meaningful business logic, and it primarily serves as a data container without operations. This aligns with 3 out of the 4 defining characteristics of a 'data class'."
+  },
+  {
+    "id": 848,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class has 4 getter/setter methods, but 2 methods (appliesToPartially and appliesTo) contain meaningful business logic, which weakens the 'data class' smell. Additionally, the logic-to-accessor ratio is 50%, which is not a strong indicator of a 'data class'."
+  },
+  {
+    "id": 857,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class contains both data members and methods with meaningful business logic, and the logic-to-accessor ratio is not a strong indicator of a Data Class, justifying a 'none' severity level."
+  },
+  {
+    "id": 863,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains methods with meaningful business logic and a logic-to-accessor ratio greater than 20%, but does not primarily store/expose data. This justifies a minor severity level."
+  },
+  {
+    "id": 866,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has 4 characteristics of a Data Class: it contains only data members, lacks business logic, serves primarily as a data container, and indicates possible misplacement of logic."
+  },
+  {
+    "id": 871,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has 4 getter/setter methods, 2 methods with meaningful business logic, and primarily serves as a data container, indicating a major data class smell."
+  },
+  {
+    "id": 873,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class primarily serves as a data container without meaningful operations, but it also contains some business logic, which is not a strong indicator of a Data Class. The logic-to-accessor ratio is above 20%, but not overwhelmingly so."
+  },
+  {
+    "id": 891,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only one method with meaningful business logic, checkVitality, which is a strong indicator of a data class. However, the class does not contain only data members with getter and setter methods, which is another defining characteristic of a data class. Therefore, the severity is minor."
+  },
+  {
+    "id": 895,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has 3 out of 4 defining characteristics of a Data Class, with a logic-to-accessor ratio of 80% and a primary focus on data storage and exposure rather than operation."
+  },
+  {
+    "id": 897,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class contains methods with meaningful business logic and does not primarily store/expose data, indicating it is not a Data Class. The logic-to-accessor ratio is also not indicative of a Data Class."
+  },
+  {
+    "id": 940,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has 4 methods with meaningful business logic, but it primarily stores/exposes data rather than operating on it, and lacks significant business logic or behavioral methods."
+  },
+  {
+    "id": 945,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has 11 methods with meaningful business logic, and it serves as a data container with operations, indicating that it is not a pure data class. The logic-to-accessor ratio is 46%, which is not a strong indicator of a Data Class. However, the presence of methods with business logic and the class's primary role as a data container with operations justify a severity level of 'major'."
+  },
+  {
+    "id": 947,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only one method, which is a setter, and lacks significant business logic or behavioral methods. It primarily serves as a data container without meaningful operations, indicating a 'major' severity of the 'data class' smell."
+  },
+  {
+    "id": 953,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only data members with getter and setter methods, lacks significant business logic, primarily serves as a data container, and indicates possible misplacement of logic. This meets 4 out of 4 defining characteristics, indicating a major impact on code quality."
+  },
+  {
+    "id": 958,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class has some characteristics of a Data Class, such as getter and setter methods, but also has methods with business logic, indicating a mix of data storage and operation. The logic-to-accessor ratio is not strongly indicative of a Data Class, and the class does not primarily serve as a data container without meaningful operations."
+  },
+  {
+    "id": 975,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The interface contains only data members, lacks business logic, and serves primarily as a data container, with 3 out of 4 defining characteristics of a Data Class clearly satisfied."
+  },
+  {
+    "id": 977,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class has a mix of characteristics that are weakly or clearly present, with 2 characteristics clearly present (serving primarily as a data container and indicating possible misplacement of logic), but it does not meet the criteria for a major or critical severity level due to the presence of meaningful business logic methods and a logic-to-accessor ratio of 57.14%."
+  },
+  {
+    "id": 988,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has a mix of data storage and meaningful business logic, but primarily serves as a data container, indicating a possible misplacement of logic. The logic-to-accessor ratio is 50%, and there are 3 meaningful business logic methods."
+  },
+  {
+    "id": 992,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class has only 1 method with getter functionality, lacks significant business logic, and primarily serves as a data container, justifying a minor severity level."
+  },
+  {
+    "id": 998,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has 7 methods, with 4 having meaningful business logic, and it primarily stores/exposes data rather than operating on it. The logic-to-accessor ratio is 57.14%, indicating a significant presence of data-accessing methods."
+  },
+  {
+    "id": 1001,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class has 9 methods with meaningful business logic, and the logic-to-accessor ratio is 64.29%, indicating a strong Data Class indicator."
+  },
+  {
+    "id": 1004,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has 2 getter/setter methods, lacks significant business logic, and primarily serves as a data container, indicating a major data class smell. The constructor, while a method, does not represent complex business logic."
+  },
+  {
+    "id": 1006,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Invalid output: severity=critical, smell=data class"
+  },
+  {
+    "id": 1013,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has 8 getter/setter methods, 5 methods with meaningful business logic, and a logic-to-accessor ratio of 38.46%, indicating that it primarily serves as a data container and may have misplaced logic."
+  },
+  {
+    "id": 1030,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has a getter method, lacks significant business logic, and primarily serves as a data container, justifying a major severity level."
+  },
+  {
+    "id": 1033,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has 2 getter methods, lacks significant business logic, and primarily serves as a data container, indicating a major data class smell. The logic-to-accessor ratio is 33.33%, which is not a strong indicator, but the other characteristics are more significant."
+  },
+  {
+    "id": 1035,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has only one method with no meaningful business logic, lacks getter and setter methods, and serves primarily as a data container, indicating a major data class smell."
+  },
+  {
+    "id": 1037,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class has a mix of accessor methods and methods with business logic, but it primarily serves as a data container. The logic-to-accessor ratio is moderate, and the class does not contain only data members with getter and setter methods."
+  },
+  {
+    "id": 1039,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only data members with a constructor and lacks significant business logic, serving primarily as a data container without meaningful operations, with a total method count of 2 and no getter/setter methods."
+  },
+  {
+    "id": 1048,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has 17 methods, 16 of which are getter/setter methods, and only 1 method with meaningful business logic. The logic-to-accessor ratio is 5.88%, indicating a strong Data Class indicator. Furthermore, the class primarily stores/exposes data rather than operating on it."
+  },
+  {
+    "id": 1051,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only data members with no getter and setter methods, and lacks significant business logic or behavioral methods, indicating a major Data Class smell."
+  },
+  {
+    "id": 1068,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only data members with getter and setter methods, lacks significant business logic, serves primarily as a data container, and indicates possible misplacement of logic. This corresponds to a 'major' severity level due to 4 clearly satisfied characteristics."
+  },
+  {
+    "id": 1070,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only getter and setter methods, lacks significant business logic, and serves primarily as a data container, indicating a major data class smell with a logic-to-accessor ratio of 33.33%."
+  },
+  {
+    "id": 1072,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has a high number of methods with meaningful business logic (25) compared to getter/setter methods (10), and a logic-to-accessor ratio of 71.43%, indicating a strong presence of non-trivial operations. The class primarily stores/exposes data rather than operating on it, aligning with the Data Class smell."
+  },
+  {
+    "id": 1074,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only getter and setter methods, lacks significant business logic, and primarily serves as a data container, justifying a major severity level."
+  },
+  {
+    "id": 1076,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class has some business logic in startElement and endElement, but it primarily serves as a data container, which is a characteristic of a Data Class. The logic-to-accessor ratio is 66.67%, which is above the threshold for a strong Data Class indicator."
+  },
+  {
+    "id": 1079,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class has only one method, which contains meaningful business logic, indicating that it is not a 'Data Class' in the classical sense. The logic-to-accessor ratio is 100%, further supporting this conclusion."
+  },
+  {
+    "id": 1081,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has a large number of methods (37) and a significant number of getter/setter methods (14), which are characteristics of a Data Class."
+  },
+  {
+    "id": 1084,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class does not contain only data members with getter and setter methods, lacks significant business logic, serves primarily as an operation container, and does not indicate misplacement of logic."
+  },
+  {
+    "id": 1092,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class has 5 methods with meaningful business logic and 0 getter/setter methods, but it primarily stores and exposes data rather than operating on it, justifying a minor severity level."
+  },
+  {
+    "id": 1094,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has a large number of methods with meaningful business logic (24), a high logic-to-accessor ratio (77.42%), and does not primarily store/expose data, indicating a strong presence of the Data Class smell."
+  },
+  {
+    "id": 1097,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has a significant number of methods with meaningful business logic (10) and primarily stores/exposes data rather than operates on it, justifying a major severity level."
+  },
+  {
+    "id": 1103,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only data members with getter methods, lacks significant business logic, and serves primarily as a data container, indicating a major code smell."
+  },
+  {
+    "id": 1106,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class has 2 getter/setter methods, primarily stores/exposes data, and has 3 methods with meaningful business logic, indicating a minor Data Class smell."
+  },
+  {
+    "id": 1109,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class has 24 getter/setter methods and 30 methods with meaningful business logic, indicating a mix of data storage and operational logic. The logic-to-accessor ratio is 46.88%, which is above the threshold for a strong Data Class indicator but not extremely high."
+  },
+  {
+    "id": 1117,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has 11 getter/setter methods, primarily stores/exposes data, and contains 3 methods with meaningful business logic, indicating a major data class smell."
+  },
+  {
+    "id": 1127,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class contains a method with business logic, and there are no getter/setter methods, indicating that it is not a 'data class' code smell. The logic-to-accessor ratio is also not indicative of a 'data class'."
+  },
+  {
+    "id": 1135,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only data members with getter and setter methods, lacks significant business logic, and primarily serves as a data container, indicating a strong presence of the Data Class smell."
+  },
+  {
+    "id": 1137,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class has a single method with meaningful business logic, but it primarily serves as a data container without meaningful operations, indicating possible misplacement of logic."
+  },
+  {
+    "id": 1139,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has 3 getter/setter methods, 3 methods with meaningful business logic, and primarily serves as a data container. The logic-to-accessor ratio is 43%, indicating a moderate presence of accessor methods."
+  },
+  {
+    "id": 1140,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class has two methods with meaningful business logic, but it's not primarily serving as a data container without operations, and there are no traditional getter/setter methods."
+  },
+  {
+    "id": 1149,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class has a mix of data storage and some business logic, but it does not strongly exhibit the characteristics of a Data Class, with a logic-to-accessor ratio of 33.33% and 3 methods with meaningful business logic."
+  },
+  {
+    "id": 1152,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has 3 defining characteristics of a Data Class: it contains only data members with getter and setter methods, lacks significant business logic, and primarily serves as a data container. This is justified by the 2 getter/setter methods, 2 non-trivial operations, and yes to the class primarily storing/exposing data."
+  },
+  {
+    "id": 1158,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only getter and setter methods, lacks significant business logic, serves primarily as a data container, and its design suggests possible misplacement of logic. This justifies a major severity level."
+  },
+  {
+    "id": 1160,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only data members with getter and setter methods, lacks business logic, serves primarily as a data container, and indicates possible misplacement of logic, which are all characteristics of a 'data class' smell. With 4 out of 4 characteristics clearly satisfied, this indicates a major presence of the 'data class' smell."
+  },
+  {
+    "id": 1162,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 11 getter/setter methods and 2 methods with meaningful business logic, indicating a strong presence of the 'data class' smell. The logic-to-accessor ratio is 15.38%, further supporting this conclusion."
+  },
+  {
+    "id": 1167,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has 2 methods with meaningful business logic and primarily stores/exposes data, which are key characteristics of a Data Class. However, it does not contain only data members with getter and setter methods, which is a key characteristic of a Data Class. Therefore, the severity is major."
+  },
+  {
+    "id": 1169,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains 2 clearly satisfied characteristics of a Data Class (serving primarily as a data container and indicating possible misplacement of logic), but it also contains meaningful business logic, which suggests it's not a pure Data Class. The logic-to-accessor ratio is 66.67%, indicating a weak Data Class indicator."
+  },
+  {
+    "id": 1175,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Invalid output: severity=critical, smell=data class"
+  },
+  {
+    "id": 1185,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has 2 out of 3 methods that are getters/setters, lacks significant business logic, and primarily serves as a data container, justifying a major severity level."
+  },
+  {
+    "id": 1186,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has 24 methods, but none of them have meaningful business logic. All methods are either getter or setter methods, which means the class primarily stores and exposes data rather than operating on it."
+  },
+  {
+    "id": 1197,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The interface contains only 2 getter methods, lacks significant business logic, and primarily serves as a data container, indicating a major data class smell."
+  },
+  {
+    "id": 1200,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class has 23 methods, but none of them are getter or setter methods. There are 9 methods with meaningful business logic, indicating that the class operates on data rather than serving as a simple data container."
+  },
+  {
+    "id": 1205,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class has a mix of getter methods and methods with meaningful business logic, indicating a partial presence of the 'data class' characteristics. The logic-to-accessor ratio is 52.38%, which is above the threshold for a strong 'data class' indicator, but not high enough to justify a higher severity level."
+  },
+  {
+    "id": 1215,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only data members with getter and setter methods, lacks significant business logic, and serves primarily as a data container, indicating a moderate impact on code quality."
+  },
+  {
+    "id": 1220,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has only 2 methods, with 1 being a getter and the other performing a calculation. The class serves primarily as a data container without meaningful operations, and lacks significant business logic or behavioral methods."
+  },
+  {
+    "id": 1229,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Invalid output: severity=critical, smell=data class"
+  },
+  {
+    "id": 1230,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only one method, which is a getter, and lacks significant business logic or behavioral methods, indicating a minor 'data class' smell."
+  },
+  {
+    "id": 1240,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Invalid output: severity=critical, smell=data class"
+  },
+  {
+    "id": 1243,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class has 4 methods with meaningful business logic, but it also has methods that primarily expose data, indicating a partial satisfaction of the Data Class characteristics."
+  },
+  {
+    "id": 1249,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains 4 getter/setter methods and 10 methods with meaningful business logic, indicating a mix of data storage and operations. The logic-to-accessor ratio is 43.48%, which is above the strong Data Class indicator threshold. The class primarily serves as a data container, but it also contains significant business logic."
+  },
+  {
+    "id": 1252,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only getter and setter methods, lacks significant business logic, and primarily serves as a data container, justifying a 'major' severity level due to two out of three defining characteristics being clearly satisfied."
+  },
+  {
+    "id": 1254,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class has 9 methods with business logic, a 100% logic-to-accessor ratio, and does not primarily store/expose data. None of the defining characteristics of a Data Class are satisfied."
+  },
+  {
+    "id": 1256,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class has a total of 9 methods, with 7 having meaningful business logic, and a logic-to-accessor ratio of 77.78%. The class also has several methods with operations, indicating that it is not serving primarily as a data container."
+  },
+  {
+    "id": 1260,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class has a minor 'data class' smell because it lacks significant business logic or behavioral methods and serves primarily as a data container without meaningful operations, but it does not have traditional getter and setter methods."
+  },
+  {
+    "id": 1261,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class has no getter or setter methods, lacks business logic, and primarily stores/exposes data, indicating no evidence of a 'data class' code smell."
+  },
+  {
+    "id": 1269,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class has 6 getter/setter methods, but 10 methods with meaningful business logic, indicating it is not a pure Data Class. The logic-to-accessor ratio is 43.48%, and the class primarily stores and exposes data, but also performs operations."
+  },
+  {
+    "id": 1273,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class has a logic-to-accessor ratio of 55.56%, indicating some business logic, but it primarily stores/exposes data without meaningful operations, which is a characteristic of a Data Class. The presence of 5 methods with meaningful business logic weakly counters this, but the overall evidence suggests a minor Data Class smell."
+  },
+  {
+    "id": 1274,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has 8 getter/setter methods, 5 methods with meaningful business logic, and primarily serves as a data container without meaningful operations, indicating a strong presence of the Data Class smell."
+  },
+  {
+    "id": 1279,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Invalid output: severity=critical, smell=data class"
+  },
+  {
+    "id": 1293,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "This class has 2 getter/setter methods, primarily serves as a data container, and lacks significant business logic, indicating a major data class smell. The logic-to-accessor ratio is 40%, which is not strong enough to classify it as critical."
+  },
+  {
+    "id": 1295,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains only a single method, which is a non-trivial operation, and it lacks significant business logic or behavioral methods, fitting 1-2 of the defining characteristics of a Data Class, thus classified as minor."
+  },
+  {
+    "id": 1303,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The interface contains only one method, which is an interface method and does not contain business logic. It primarily serves as a data container without meaningful operations, lacking significant business logic or behavioral methods."
+  },
+  {
+    "id": 1304,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class has 3 getter methods and 1 method with meaningful business logic, indicating a mix of data storage and operation. The logic-to-accessor ratio is 25%, which is not a strong indicator of a Data Class. The class primarily stores/exposes data rather than operating on it, but this is partially offset by the presence of meaningful business logic."
+  },
+  {
+    "id": 1307,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "This class has a major 'data class' smell because it primarily serves as a data container (yes in Step 1), lacking significant business logic or behavioral methods (partially satisfied in Step 2a), and has a logic-to-accessor ratio of 33% (Step 1)."
+  },
+  {
+    "id": 1310,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains data members with methods that operate on them, and lacks significant business logic or behavioral methods, but it does have some methods that perform meaningful operations, indicating a minor data class smell."
+  },
+  {
+    "id": 1315,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Invalid output: severity=critical, smell=data class"
+  },
+  {
+    "id": 1317,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class serves primarily as a data container without meaningful operations, which is one defining characteristic of a 'Data Class'. The presence of a single method with non-trivial operations does not outweigh this characteristic, justifying a minor severity level."
+  },
+  {
+    "id": 1320,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": null,
+    "severity": null,
+    "reasoning": "Invalid output: severity=critical, smell=data class"
+  },
+  {
+    "id": 1325,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class has a single method that is a getter, and it lacks meaningful business logic, primarily serving as a data container."
+  },
+  {
+    "id": 1331,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class has 4 getter/setter methods, but also contains 7 methods with meaningful business logic, indicating a mix of data storage and operations. The logic-to-accessor ratio is 54%, which is not a strong indicator of a Data Class. Therefore, the severity is minor."
+  },
+  {
+    "id": 1338,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class has no fields, only one method (which is not an accessor), and it primarily serves as a container without meaningful operations, indicating that the 'data class' characteristics are genuinely absent or insignificant."
+  },
+  {
+    "id": 1348,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class contains methods with meaningful business logic and does not primarily store/expose data, indicating a minor absence of Data Class characteristics."
+  },
+  {
+    "id": 1355,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class has a single non-trivial method, and no getter/setter methods, indicating that it is not a data class. The logic-to-accessor ratio is 100%, but this is not a strong indicator of a data class given the presence of a non-trivial method."
+  },
+  {
+    "id": 1357,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class has a minor 'data class' smell due to its lack of significant business logic or behavioral methods and its primary function as a data container, with only partial satisfaction of the characteristic of containing only data members with getter and setter methods."
+  },
+  {
+    "id": 1358,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has 4 getter/setter methods, 9 methods with meaningful business logic, and primarily serves as a data container, indicating a major severity level."
+  },
+  {
+    "id": 1361,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class contains methods with meaningful business logic (enterRuleset, runPass), and it is not primarily a data container, which contradicts the defining characteristics of a Data Class."
+  },
+  {
+    "id": 1371,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class primarily stores data (yes in Step 1), has a logic-to-accessor ratio of 25% (Step 1), and lacks significant business logic (partially satisfied in Step 2)."
+  },
+  {
+    "id": 1373,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has 1 getter/setter method and 1 meaningful business logic method, and it primarily stores/exposes data rather than operating on it, indicating a major data class smell."
+  },
+  {
+    "id": 1379,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class contains a single method with meaningful business logic, and the logic-to-accessor ratio is 100%, indicating that the class is not a data class. Additionally, the class is not primarily storing or exposing data, but rather operating on it."
+  },
+  {
+    "id": 1384,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only data members with getter/setter methods, lacks significant business logic, and primarily serves as a data container. The logic-to-accessor ratio is 25%, indicating a weak presence of meaningful business logic."
+  },
+  {
+    "id": 1396,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has 2+ characteristics of a Data Class, including containing only data members with getter and setter methods, lacking significant business logic, and serving primarily as a data container."
+  },
+  {
+    "id": 1400,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class lacks significant business logic or behavioral methods, and it does not primarily store/expose data. However, it does contain substitutes for built-in methods, which indicates a minor Data Class smell."
+  },
+  {
+    "id": 1404,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class has 8 methods with meaningful business logic and 0 getter/setter methods. However, the class primarily stores/exposes data rather than operating on it, indicating a mix of Data Class and business logic characteristics."
+  },
+  {
+    "id": 1408,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class has getter and setter methods, but lacks significant business logic or behavioral methods, and does not primarily serve as a data container without meaningful operations."
+  },
+  {
+    "id": 1410,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has 1 method, lacks getter and setter methods, and primarily serves as a data container without meaningful operations, indicating a strong presence of the 'data class' smell."
+  },
+  {
+    "id": 1414,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only a constructor, lacks getter/setter methods, and primarily serves as a data container without meaningful operations, satisfying 4 out of 4 defining characteristics of the 'Data Class' smell."
+  },
+  {
+    "id": 1418,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only data members, lacks significant business logic, serves primarily as a data container, and indicates possible misplacement of logic, with a total method count of 1 and no getter/setter methods."
+  },
+  {
+    "id": 1427,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "none",
+    "reasoning": "The class has only one method, a constructor, and no getter or setter methods, indicating a lack of significant business logic or behavioral methods, which justifies a 'none' severity level for the 'data class' smell."
+  },
+  {
+    "id": 1436,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only data members with no getter or setter methods, lacks significant business logic, and serves primarily as a data container, justifying a major severity level."
+  },
+  {
+    "id": 1440,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has 2 getter/setter methods, lacks significant business logic, serves primarily as a data container, and has a logic-to-accessor ratio of 25%, indicating a major data class smell."
+  },
+  {
+    "id": 1442,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only data members with getter and setter methods, lacks significant business logic, and primarily serves as a data container, indicating a strong presence of the 'data class' smell."
+  },
+  {
+    "id": 1444,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has a high logic-to-accessor ratio, primarily serves as a data container, and has one method with meaningful business logic, indicating possible misplacement of logic."
+  },
+  {
+    "id": 1459,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class has a mix of data storage and meaningful business logic, but it primarily serves as a data container, justifying a minor severity level."
+  },
+  {
+    "id": 1461,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class has a single getter method, lacks meaningful business logic, and primarily serves as a data container, justifying a minor severity level."
+  },
+  {
+    "id": 1464,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has a relatively low logic-to-accessor ratio (25%) and primarily stores/exposes data rather than operating on it, suggesting a moderate level of evidence for the 'Data Class' smell."
+  },
+  {
+    "id": 1470,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class contains only default methods and lacks business logic, serving primarily as a data container. This aligns with 2+ characteristics of the 'data class' smell, indicating a major severity level."
+  },
+  {
+    "id": 1473,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "minor",
+    "reasoning": "The class has a mix of accessor methods and methods with meaningful business logic, and it primarily stores/exposes data. However, the presence of some business logic methods indicates that the class is not a pure data container, but rather a data container with some operations. Therefore, the severity is minor."
+  },
+  {
+    "id": 1476,
+    "model": "llama3.1:8b",
+    "prompt_strategy": "Adversarial-Refutation",
+    "smell": "data class",
+    "severity": "major",
+    "reasoning": "The class has a constructor and a method with meaningful business logic, indicating that it contains only data members with a method that operates on that data. The class lacks significant business logic or behavioral methods, except for the summarize() method, and serves primarily as a data container without meaningful operations, except for the summarize() method."
+  }
+]

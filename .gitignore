@@ -19,7 +19,8 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-results/
+
+docs/sycophancy.tex
 
 # Logs
 *.log
