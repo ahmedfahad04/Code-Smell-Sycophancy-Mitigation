@@ -126,7 +126,8 @@ python script/calculate_flip_alignment_metrics.py \
 ```bash
 python script/analyze_lexical_composition.py \
   --input results/final_bias_llama \
-  --output results/metrics/lexical_analysis.csv
+  --output-relative-summary results/metrics/lexical_analysis.csv \
+  --no-show
 ```
 
 ### Reproducing Paper Tables
