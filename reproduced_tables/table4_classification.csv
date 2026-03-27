@@ -1,0 +1,11 @@
+,,Precision,Precision,Precision,Precision,Recall,Recall,Recall,Recall,F1,F1,F1,F1
+Strategy,,Confirmation-Bias,False-Premise,Contradictory-Hint,EGDP,Confirmation-Bias,False-Premise,Contradictory-Hint,EGDP,Confirmation-Bias,False-Premise,Contradictory-Hint,EGDP
+Target Smell,Model,,,,,,,,,,,,
+Blob,llama3.1-8b,0.39,0.48,0.32,0.34,0.38,0.19,0.38,0.19,0.37,0.27,0.35,0.13
+Blob,qwen2.5-coder-7b,0.17,0.15,0.2,0.47,0.06,0.03,0.06,0.56,0.09,0.05,0.1,0.51
+Data Class,llama3.1-8b,0.56,0.38,0.08,0.48,0.18,0.02,0.07,0.49,0.2,0.04,0.07,0.46
+Data Class,qwen2.5-coder-7b,0.25,0.19,0.19,0.16,0.04,0.02,0.04,0.31,0.08,0.04,0.07,0.21
+Feature Envy,llama3.1-8b,0.73,0.0,0.36,0.73,0.36,0.0,0.09,0.33,0.42,0.0,0.15,0.23
+Feature Envy,qwen2.5-coder-7b,0.0,0.0,0.0,0.32,0.0,0.0,0.0,0.33,0.0,0.0,0.0,0.33
+Long Method,llama3.1-8b,0.61,0.31,0.71,0.4,0.5,0.04,0.58,0.33,0.55,0.07,0.64,0.31
+Long Method,qwen2.5-coder-7b,0.28,0.0,0.42,0.43,0.17,0.0,0.33,0.54,0.21,0.0,0.37,0.48

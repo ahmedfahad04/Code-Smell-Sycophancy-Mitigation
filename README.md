@@ -129,6 +129,24 @@ python script/analyze_lexical_composition.py \
   --output results/metrics/lexical_analysis.csv
 ```
 
+### Reproducing Paper Tables
+
+To reproduce Tables 3, 4, and 5 from the paper using existing result JSON files (no Ollama required):
+
+```bash
+python script/reproduce_tables.py \
+  --dataset dataset/mlcq_filtered.json \
+  --results-dir results \
+  --output-dir reproduced_tables
+```
+
+This will generate three CSV files:
+- `reproduced_tables/table3_dfr_far.csv` – Decision Flip Rate (DFR) and False Alignment Rate (FAR)
+- `reproduced_tables/table4_classification.csv` – Weighted Precision, Recall, F1
+- `reproduced_tables/table5_lexical.csv` – Lexical composition (Hedging, Sycophantic, Structural percentages)
+
+The script automatically discovers all `ollama_results_*.json` files under the results directory and computes metrics matching the paper.
+
 ### Interactive Analysis
 
 ```bash

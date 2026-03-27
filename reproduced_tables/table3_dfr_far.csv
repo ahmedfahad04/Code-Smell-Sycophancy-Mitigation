@@ -1,0 +1,11 @@
+,,DFR,DFR,DFR,DFR,FAR,FAR,FAR,FAR
+Strategy,,Confirmation-Bias,False-Premise,Contradictory-Hint,EGDP,Confirmation-Bias,False-Premise,Contradictory-Hint,EGDP
+Target Smell,Model,,,,,,,,
+Blob,llama3.1-8b,84.57,92.0,90.86,55.43,60.57,92.0,70.29,53.71
+Blob,qwen2.5-coder-7b,47.43,51.43,48.57,16.0,89.71,95.43,92.57,42.86
+Data Class,llama3.1-8b,62.86,94.86,73.14,62.29,61.71,95.43,71.43,23.43
+Data Class,qwen2.5-coder-7b,62.86,64.0,61.71,46.29,89.14,94.86,92.57,23.43
+Feature Envy,llama3.1-8b,72.0,97.71,92.57,78.86,62.86,97.14,84.0,12.57
+Feature Envy,qwen2.5-coder-7b,72.57,72.57,72.57,20.0,100.0,100.0,100.0,45.14
+Long Method,llama3.1-8b,70.29,91.43,74.86,54.29,66.29,97.14,68.57,36.57
+Long Method,qwen2.5-coder-7b,45.71,52.57,40.57,26.86,89.71,100.0,82.86,69.14
