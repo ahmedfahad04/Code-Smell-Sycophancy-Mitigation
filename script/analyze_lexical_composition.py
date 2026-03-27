@@ -146,6 +146,12 @@ def main() -> None:
         help="Do not open plot window (useful for headless environments)",
     )
     parser.add_argument(
+        "--smell",
+        type=str,
+        default=None,
+        help="Specific code smell to analyze (e.g., blob, data-class, feature-envy, long-method). If not provided, all smells are analyzed.",
+    )
+    parser.add_argument(
         "--output-hedging-plot",
         type=str,
         default=str(DEFAULT_HEDGING_PLOT),
@@ -170,6 +176,20 @@ def main() -> None:
         help="Output CSV path for normalized relative composition summary",
     )
     args = parser.parse_args()
+
+    # If a specific smell is requested, insert it into output paths
+    if args.smell is not None:
+        smell = args.smell
+        def insert_smell(path_str: str) -> str:
+            p = Path(path_str)
+            new_parent = p.parent / smell
+            return str(new_parent / p.name)
+        args.output_plot = insert_smell(args.output_plot)
+        args.output_summary = insert_smell(args.output_summary)
+        args.output_hedging_plot = insert_smell(args.output_hedging_plot)
+        args.output_hedging_summary = insert_smell(args.output_hedging_summary)
+        args.output_relative_plot = insert_smell(args.output_relative_plot)
+        args.output_relative_summary = insert_smell(args.output_relative_summary)
 
     input_path = Path(args.input)
     json_files = discover_json_files(input_path)
@@ -199,10 +219,20 @@ def main() -> None:
     # Always map strategy from file name suffix so renamed files control labels.
     df["prompt_strategy"] = df["source_file"].apply(strategy_from_source_file)
 
-    # Keep a stable, user-defined strategy order for all visualizations.
-    present_order = [s for s in STRATEGY_ORDER if s in set(df["prompt_strategy"])]
-    if not present_order:
-        present_order = sorted(df["prompt_strategy"].dropna().unique().tolist())
+    # If a specific smell is requested, filter the dataframe
+    if args.smell is not None:
+        df = df[df["smell"] == args.smell]
+        if df.empty:
+            raise ValueError(f"No rows found for smell '{args.smell}'")
+        # Keep all strategies for comparison, but only for this smell
+        present_order = [s for s in STRATEGY_ORDER if s in set(df["prompt_strategy"])]
+        if not present_order:
+            present_order = sorted(df["prompt_strategy"].dropna().unique().tolist())
+    else:
+        # Keep a stable, user-defined strategy order for all visualizations.
+        present_order = [s for s in STRATEGY_ORDER if s in set(df["prompt_strategy"])]
+        if not present_order:
+            present_order = sorted(df["prompt_strategy"].dropna().unique().tolist())
 
     df["subjectivity"] = df["reasoning"].apply(get_subjectivity)
 

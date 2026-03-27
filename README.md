@@ -126,9 +126,21 @@ python script/calculate_flip_alignment_metrics.py \
 ```bash
 python script/analyze_lexical_composition.py \
   --input results/final_bias_llama \
-  --output-relative-summary results/metrics/lexical_analysis.csv \
   --no-show
 ```
+
+To analyze a specific code smell (e.g., blob, data class, feature envy, long method) and compare all strategies:
+
+```bash
+python script/analyze_lexical_composition.py \
+  --input results/final_bias_llama \
+  --smell blob \
+  --no-show
+```
+
+This saves outputs in subdirectories named after the smell:
+- CSVs → `results/metrics/<smell>/`
+- Plots → `results/lexical_analysis_figures/<smell>/`
 
 ### Reproducing Paper Tables
 
