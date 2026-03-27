@@ -109,7 +109,7 @@ python script/ollama_code_smell_detection.py \
 python script/calculate_metrics.py \
   --results-dir results/final_bias_llama \
   --dataset dataset/mlcq_filtered.json \
-  --output-csv results/metrics/blob_metrics.csv
+  --output-csv results/metrics/classification_metrics.csv
 ```
 
 #### Behavioral Metrics (DFR, FAR)
@@ -118,7 +118,7 @@ python script/calculate_metrics.py \
 python script/calculate_flip_alignment_metrics.py \
   --results-dir results/final_bias_llama \
   --baseline-strategy Casual \
-  --output-csv results/metrics/dfr_far.csv
+  --output-csv results/metrics/dfr_far_metrics.csv
 ```
 
 #### Lexical Analysis
@@ -190,7 +190,7 @@ Web interface at `http://localhost:8501` for comparing result files.
 
 ## Results
 
-Results are organized into subdirectories under `results/` (e.g., `final_bias_llama/`, `final_bias_qwen_blob/`). Within each subdirectory, files follow the naming pattern:
+Results are organized into subdirectories under `results/` (e.g., `final_bias_llama/`, `final_bias_qwen/`). Within each subdirectory, files follow the naming pattern:
 ```
 ollama_results_<smell>_<model>_<strategy>.json
 ```

@@ -1,4 +1,0 @@
-smell,model,baseline,variant,dfr_percent,decision_flips,total_samples,far_percent
-blob,qwen2_5-coder-7b,Casual,Confirmation-Bias,47.42857142857143,83,175,
-blob,qwen2_5-coder-7b,Casual,Contradictory-Hint,48.57142857142857,85,175,0.0
-blob,qwen2_5-coder-7b,Casual,False-Premise,51.42857142857142,90,175,

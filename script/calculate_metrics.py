@@ -20,6 +20,8 @@ from typing import Dict, List, Optional, Tuple
 from collections import defaultdict
 from sklearn.metrics import precision_recall_fscore_support
 
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+
 # Known filename components for robust parsing
 KNOWN_STRATEGIES = [
     'Adversarial-Refutation',
@@ -294,8 +296,8 @@ Examples:
     )
     parser.add_argument(
         '--output-csv', type=str,
-        default='results/metrics_summary.csv',
-        help='Where to write the per-experiment CSV',
+        default='results/metrics/classification_metrics.csv',
+        help='Where to write the trimmed classification metrics CSV',
     )
     parser.add_argument('--baseline', type=str, help='Baseline result JSON (single-pair mode)')
     parser.add_argument('--variant',  type=str, help='Variant result JSON (single-pair mode)')
@@ -492,20 +494,33 @@ Examples:
             row[f'f1_{safe_cls}'] = cls_metrics.get('f1', 0.0)
             row[f'support_{safe_cls}'] = cls_metrics.get('support', 0)
 
+    # Full dataframe for printing
     save_df = (
         pd.DataFrame(classification_rows)
           .drop(columns=['fpath', 'per_class_metrics'])
           .sort_values(by=['smell', 'model', 'strategy', 'file'])
           .reset_index(drop=True)
     )
-    save_df.to_csv(output_csv, index=False)
-    print(f"\nClassification metrics saved to: {output_csv}")
+    # Trimmed classification dataframe for saving (only columns needed for paper)
+    trimmed_cls = save_df[['smell', 'model', 'strategy', 'weighted_precision', 'weighted_recall', 'weighted_f1']].copy()
+    # Ensure output directory exists
+    output_path = Path(output_csv)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    trimmed_cls.to_csv(output_path, index=False)
+    print(f"\nTrimmed classification metrics saved to: {output_path}")
 
     if dfr_rows:
-        dfr_out = output_csv.with_name(output_csv.stem + '_dfr.csv')
+        # Full DFR/FAR dataframe
         dfr_save_df = dfr_df.sort_values(by=['smell', 'model', 'variant']).reset_index(drop=True)
-        dfr_save_df.to_csv(dfr_out, index=False)
-        print(f"DFR/FAR metrics saved to: {dfr_out}")
+        # Trimmed DFR/FAR dataframe (baseline is always 'Casual')
+        trimmed_dfr = dfr_save_df[dfr_save_df['baseline'] == 'Casual'][['smell', 'model', 'variant', 'dfr_percent', 'far_percent']].copy()
+        trimmed_dfr = trimmed_dfr.rename(columns={'variant': 'strategy'})
+        # Save trimmed DFR/FAR to metrics directory
+        metrics_dir = PROJECT_ROOT / "metrics"
+        metrics_dir.mkdir(parents=True, exist_ok=True)
+        dfr_out = metrics_dir / "dfr_far_metrics.csv"
+        trimmed_dfr.to_csv(dfr_out, index=False)
+        print(f"Trimmed DFR/FAR metrics saved to: {dfr_out}")
 
 
 if __name__ == '__main__':

@@ -11,7 +11,7 @@ Usage examples (from repo root):
   python script/calculate_flip_alignment_metrics.py
   python script/calculate_flip_alignment_metrics.py --results-dir results/final_bias_qwen
   python script/calculate_flip_alignment_metrics.py \
-      --results-dir results/final_bias_qwen_blob \
+      --results-dir results/final_bias_qwen \
       --baseline-strategy Casual \
       --output-csv results/flip_alignment_summary.csv
 
@@ -28,6 +28,8 @@ import json
 from collections import defaultdict
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
+
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
 
 KNOWN_STRATEGIES = [
@@ -243,14 +245,19 @@ def run_batch(results_dir: Path, baseline_strategy: str, injected_premise: str, 
 
     import pandas as pd  # Imported lazily to keep startup simple.
 
+    # Full dataframe for printing
     out_df = pd.DataFrame(summary_rows).sort_values(by=["smell", "model", "variant"]).reset_index(drop=True)
-    out_df.to_csv(output_csv, index=False)
+    # Trimmed dataframe (baseline is always 'Casual')
+    trimmed = out_df[out_df['baseline'] == 'Casual'][['smell', 'model', 'variant', 'dfr_percent', 'far_percent']].copy()
+    trimmed = trimmed.rename(columns={'variant': 'strategy'})
+    # Save trimmed version to output_csv
+    trimmed.to_csv(output_csv, index=False)
 
     print("=" * 100)
     print("DFR / FAR SUMMARY")
     print("=" * 100)
     print(out_df.to_string(index=False))
-    print(f"\nSaved: {output_csv}")
+    print(f"\nTrimmed DFR/FAR metrics saved to: {output_csv}")
 
 
 def main() -> None:
@@ -266,8 +273,8 @@ def main() -> None:
     parser.add_argument(
         "--output-csv",
         type=str,
-        default="results/flip_alignment_summary.csv",
-        help="Output CSV path for batch DFR/FAR summary.",
+        default=str(PROJECT_ROOT / "results" / "metrics" / "dfr_far_metrics.csv"),
+        help="Output CSV path for trimmed DFR/FAR summary.",
     )
     parser.add_argument(
         "--baseline-strategy",

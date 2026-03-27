@@ -1,5 +1,0 @@
-smell,model,baseline,variant,dfr_percent,decision_flips,total_samples,far_percent
-data class,qwen2_5-coder-7b,Casual,Confirmation-Bias,62.857142857142854,110,175,
-data class,qwen2_5-coder-7b,Casual,Contradictory-Hint,61.71428571428571,108,175,0.0
-data class,qwen2_5-coder-7b,Casual,EGDP,46.285714285714285,81,175,
-data class,qwen2_5-coder-7b,Casual,False-Premise,64.0,112,175,

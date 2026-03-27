@@ -1,0 +1,17 @@
+smell,model,strategy,dfr_percent,far_percent
+blob,qwen2_5-coder-7b,Confirmation-Bias,47.43,89.71
+blob,qwen2_5-coder-7b,Contradictory-Hint,48.57,92.57
+blob,qwen2_5-coder-7b,EGDP,16.0,42.86
+blob,qwen2_5-coder-7b,False-Premise,51.43,95.43
+data class,qwen2_5-coder-7b,Confirmation-Bias,62.86,89.14
+data class,qwen2_5-coder-7b,Contradictory-Hint,61.71,92.57
+data class,qwen2_5-coder-7b,EGDP,46.29,23.43
+data class,qwen2_5-coder-7b,False-Premise,64.0,94.86
+feature envy,qwen2_5-coder-7b,Confirmation-Bias,72.57,100.0
+feature envy,qwen2_5-coder-7b,Contradictory-Hint,72.57,100.0
+feature envy,qwen2_5-coder-7b,EGDP,20.0,45.14
+feature envy,qwen2_5-coder-7b,False-Premise,72.57,100.0
+long method,qwen2_5-coder-7b,Confirmation-Bias,45.71,89.71
+long method,qwen2_5-coder-7b,Contradictory-Hint,40.57,82.86
+long method,qwen2_5-coder-7b,EGDP,26.86,69.14
+long method,qwen2_5-coder-7b,False-Premise,52.57,100.0
