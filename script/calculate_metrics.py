@@ -24,7 +24,7 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
 # Known filename components for robust parsing
 KNOWN_STRATEGIES = [
-    'Adversarial-Refutation',
+    'EGDP',
     'EGDP',
     'Confirmation-Bias',
     'Contradictory-Hint',
@@ -296,7 +296,7 @@ Examples:
     )
     parser.add_argument(
         '--output-csv', type=str,
-        default='results/metrics/classification_metrics.csv',
+        default=str(PROJECT_ROOT / "results" / "metrics" / "classification_metrics.csv"),
         help='Where to write the trimmed classification metrics CSV',
     )
     parser.add_argument('--baseline', type=str, help='Baseline result JSON (single-pair mode)')
@@ -501,7 +501,7 @@ Examples:
           .sort_values(by=['smell', 'model', 'strategy', 'file'])
           .reset_index(drop=True)
     )
-    # Trimmed classification dataframe for saving (only columns needed for paper)
+    #  classification dataframe for saving (only columns needed for paper)
     trimmed_cls = save_df[['smell', 'model', 'strategy', 'weighted_precision', 'weighted_recall', 'weighted_f1']].copy()
     # Ensure output directory exists
     output_path = Path(output_csv)
@@ -512,15 +512,15 @@ Examples:
     if dfr_rows:
         # Full DFR/FAR dataframe
         dfr_save_df = dfr_df.sort_values(by=['smell', 'model', 'variant']).reset_index(drop=True)
-        # Trimmed DFR/FAR dataframe (baseline is always 'Casual')
+        #  DFR/FAR dataframe (baseline is always 'Casual')
         trimmed_dfr = dfr_save_df[dfr_save_df['baseline'] == 'Casual'][['smell', 'model', 'variant', 'dfr_percent', 'far_percent']].copy()
         trimmed_dfr = trimmed_dfr.rename(columns={'variant': 'strategy'})
         # Save trimmed DFR/FAR to metrics directory
-        metrics_dir = PROJECT_ROOT / "metrics"
+        metrics_dir = PROJECT_ROOT / "results" / "metrics"
         metrics_dir.mkdir(parents=True, exist_ok=True)
         dfr_out = metrics_dir / "dfr_far_metrics.csv"
         trimmed_dfr.to_csv(dfr_out, index=False)
-        print(f"Trimmed DFR/FAR metrics saved to: {dfr_out}")
+        print(f" DFR/FAR metrics saved to: {dfr_out}")
 
 
 if __name__ == '__main__':

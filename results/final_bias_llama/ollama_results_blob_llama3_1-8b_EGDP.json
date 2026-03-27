@@ -2,7 +2,7 @@
   {
     "id": 528,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has a high method count (34), a high instance field/attribute count (27), and manages multiple unrelated functionalities, which are all characteristics of a Blob. The low cohesion estimate further supports this finding."
@@ -10,7 +10,7 @@
   {
     "id": 535,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single responsibility domain, high cohesion, and does not manage multiple unrelated functionalities, indicating that it does not exhibit the characteristics of a 'blob' class."
@@ -18,7 +18,7 @@
   {
     "id": 536,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has 5 methods, manages two distinct responsibility domains, and has a moderate attribute count, justifying a major severity level."
@@ -26,7 +26,7 @@
   {
     "id": 538,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has 5 methods and 5 attributes, managing multiple unrelated functionalities, and violating the Single Responsibility Principle with 2 distinct responsibility domains. Moderate cohesion is also present, but it is not enough to mitigate the other characteristics."
@@ -34,7 +34,7 @@
   {
     "id": 546,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "minor",
     "reasoning": "The class has a single responsibility (1 domain) and high cohesion, but it does not manage multiple unrelated functionalities, which justifies a minor severity level."
@@ -42,7 +42,7 @@
   {
     "id": 551,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has a large number of methods (7), manages multiple unrelated functionalities, and has a moderate cohesion estimate, which suggests that it is a God Class (Blob) with a major severity level."
@@ -50,7 +50,7 @@
   {
     "id": 554,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has a high method count (23), multiple unrelated functionalities (3+), and a low cohesion estimate, which are all characteristics of a Blob smell."
@@ -58,7 +58,7 @@
   {
     "id": 556,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single method and attribute, and its responsibility domain is cohesive, with no evidence of managing multiple functionalities or violating the Single Responsibility Principle."
@@ -66,7 +66,7 @@
   {
     "id": 558,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single responsibility, handling exceptions related to channel configuration, and only has one method. It does not manage multiple unrelated functionalities, and its cohesion is high."
@@ -74,7 +74,7 @@
   {
     "id": 561,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has multiple responsibilities (image and text management), a moderate number of methods (7) and instance fields (3), and manages multiple unrelated functionalities, justifying a major severity level."
@@ -82,7 +82,7 @@
   {
     "id": 568,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single responsibility domain, a low method count, and high cohesion, indicating it does not accumulate too many responsibilities or manage multiple, unrelated functionalities, thus justifying a 'none' severity level."
@@ -90,7 +90,7 @@
   {
     "id": 578,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "minor",
     "reasoning": "The class has 2 methods and 3 attributes, indicating a moderate number of responsibilities. However, it only manages a single, well-defined responsibility, and does not exhibit a clear SRP violation."
@@ -98,7 +98,7 @@
   {
     "id": 582,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has 2 distinct responsibility domains, manages multiple unrelated functionalities, and has moderate cohesion, indicating a borderline SRP violation. These characteristics justify a major severity level."
@@ -106,7 +106,7 @@
   {
     "id": 587,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single method and attribute, and only one responsibility domain, indicating a cohesive design that adheres to the Single Responsibility Principle (SRP). The high cohesion estimate further supports this conclusion."
@@ -114,7 +114,7 @@
   {
     "id": 588,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single responsibility domain (searching and retrieving data) and does not manage multiple unrelated functionalities, indicating high cohesion. This suggests that the class does not exhibit the characteristics of a 'God Class (Blob)'."
@@ -122,7 +122,7 @@
   {
     "id": 592,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": null,
     "severity": null,
     "reasoning": "Invalid output: severity=critical, smell=blob"
@@ -130,7 +130,7 @@
   {
     "id": 598,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has only 2 methods, no instance fields, and a single responsibility domain, indicating no evidence of a 'blob' code smell."
@@ -138,7 +138,7 @@
   {
     "id": 600,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has 9 methods, indicating a high method count. It also manages multiple unrelated functionalities and has a moderate cohesion estimate, suggesting a borderline SRP violation. These characteristics justify a major severity level."
@@ -146,7 +146,7 @@
   {
     "id": 602,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single responsibility domain and does not manage multiple unrelated functionalities, with a high cohesion estimate. This suggests that the class is cohesive and focused on a single task, justifying a severity level of 'none'."
@@ -154,7 +154,7 @@
   {
     "id": 606,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has only 2 methods, no instance fields or attributes, and a single responsibility domain. It does not manage multiple unrelated functionalities and has high cohesion, indicating no clear violation of the Single Responsibility Principle."
@@ -162,7 +162,7 @@
   {
     "id": 614,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has 12 methods, 6 instance fields, and 4 distinct responsibility domains, managing multiple unrelated functionalities with moderate cohesion. This justifies a major severity level."
@@ -170,7 +170,7 @@
   {
     "id": 618,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has a high method count (16), multiple responsibility domains (3+), manages multiple unrelated functionalities, and has poor cohesion, all of which justify a major severity level for the 'blob' smell."
@@ -178,7 +178,7 @@
   {
     "id": 625,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single responsibility, does not manage multiple functionalities, and has high cohesion, justifying a 'none' severity level."
@@ -186,7 +186,7 @@
   {
     "id": 643,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a moderate number of methods (8), but it is cohesive with only one responsibility domain, and it does not manage multiple unrelated functionalities or violate the Single Responsibility Principle."
@@ -194,7 +194,7 @@
   {
     "id": 644,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single responsibility (cohesive), does not manage multiple unrelated functionalities, and has high cohesion, justifying a 'none' severity level."
@@ -202,7 +202,7 @@
   {
     "id": 651,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single responsibility, with only 1 method and 1 domain, and does not manage multiple unrelated functionalities, indicating a lack of the defining characteristics of a 'Blob' class."
@@ -210,7 +210,7 @@
   {
     "id": 652,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class exhibits characteristics of the Blob smell, including a high method count (34), multiple instance fields/attributes (6), and multiple responsibility domains (3). This indicates a lack of cohesion and a high likelihood of complexity, justifying a major severity level."
@@ -218,7 +218,7 @@
   {
     "id": 656,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single responsibility, manages a single functionality, and has high cohesion, indicating no evidence of a 'blob' code smell."
@@ -226,7 +226,7 @@
   {
     "id": 660,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has 23 methods, 4 distinct responsibility domains, manages multiple unrelated functionalities, and has low cohesion, indicating a clear violation of the Single Responsibility Principle (SRP)."
@@ -234,7 +234,7 @@
   {
     "id": 662,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a low method count (1), a single responsibility domain, and high cohesion, indicating a cohesive design with no clear signs of a 'blob' code smell."
@@ -242,7 +242,7 @@
   {
     "id": 676,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a low method count (4) and high cohesion, with only one responsibility domain. There are no instance fields and no unrelated functionalities managed, making it unlikely to be a 'blob' class."
@@ -250,7 +250,7 @@
   {
     "id": 680,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single responsibility domain, a low method count, and high cohesion, indicating that it does not accumulate too many responsibilities or violate the Single Responsibility Principle."
@@ -258,7 +258,7 @@
   {
     "id": 688,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a moderate method count (4) and a low instance field/attribute count (2), indicating a lack of strong evidence for a 'Blob' smell. Additionally, the class has a high cohesion estimate and does not manage multiple unrelated functionalities."
@@ -266,7 +266,7 @@
   {
     "id": 690,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has 3 distinct responsibility domains, manages multiple unrelated functionalities, and has low cohesion, indicating a major God Class (Blob) smell."
@@ -274,7 +274,7 @@
   {
     "id": 694,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "minor",
     "reasoning": "The class has a moderate number of methods (8) and instance fields/attributes (6), but it has a single responsibility domain and does not manage multiple unrelated functionalities, justifying a minor severity level."
@@ -282,7 +282,7 @@
   {
     "id": 702,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single responsibility domain, a low method count, and high cohesion, indicating no evidence of the 'blob' code smell."
@@ -290,7 +290,7 @@
   {
     "id": 704,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "minor",
     "reasoning": "The class has a high method count (13), but it is cohesive and does not manage multiple unrelated functionalities, justifying a minor severity level."
@@ -298,7 +298,7 @@
   {
     "id": 706,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "minor",
     "reasoning": "The class has a single responsibility domain and does not manage multiple unrelated functionalities, but its moderate method count (3) suggests a minor SRP violation."
@@ -306,7 +306,7 @@
   {
     "id": 708,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has 13 methods and manages multiple functionalities, indicating a high accumulation of responsibilities. Additionally, it has a moderate cohesion estimate and high dependency on other classes, further supporting the major severity level."
@@ -314,7 +314,7 @@
   {
     "id": 714,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a low method count (4), a single instance field (INTERMEDIATE_PROCESSING_CONFIG), and cohesive behavior, indicating no evidence of a 'blob' code smell."
@@ -322,7 +322,7 @@
   {
     "id": 718,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class accumulates too many responsibilities (3 distinct domains), manages multiple unrelated functionalities, has moderate cohesion, and violates the Single Responsibility Principle (SRP)."
@@ -330,7 +330,7 @@
   {
     "id": 731,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a low method count (2) and a single responsibility domain, indicating high cohesion. There is no evidence of managing multiple unrelated functionalities or violating the Single Responsibility Principle."
@@ -338,7 +338,7 @@
   {
     "id": 733,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has a high method count (12) and a single cohesive domain, but does not manage multiple unrelated functionalities or violate the Single Responsibility Principle. Therefore, the severity is major."
@@ -346,7 +346,7 @@
   {
     "id": 746,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "minor",
     "reasoning": "The class has a moderate number of methods (4) and fields (3), but its cohesion is high, indicating that it is not a severe case of a blob. However, it does show some signs of a blob, which is why the severity is set to minor."
@@ -354,7 +354,7 @@
   {
     "id": 758,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": null,
     "severity": null,
     "reasoning": "Invalid output: severity=critical, smell=blob"
@@ -362,7 +362,7 @@
   {
     "id": 767,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has a high method count (12), multiple instance fields/attributes (5), and manages multiple unrelated functionalities, indicating a major SRP violation."
@@ -370,7 +370,7 @@
   {
     "id": 776,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "minor",
     "reasoning": "The class has a single responsibility domain and does not manage multiple functionalities, but has a moderate number of methods (4), which suggests a minor SRP violation."
@@ -378,7 +378,7 @@
   {
     "id": 778,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has only 2 methods, no instance fields, and a single responsibility domain, indicating high cohesion. It does not manage multiple functionalities, and its SRP is not violated, justifying a 'none' severity level."
@@ -386,7 +386,7 @@
   {
     "id": 808,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has 5 methods and 5 instance fields, manages multiple unrelated functionalities, has moderate cohesion, and violates the Single Responsibility Principle with 2 distinct responsibility domains. This justifies a major severity level."
@@ -394,7 +394,7 @@
   {
     "id": 810,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single responsibility domain, high cohesion, and no unrelated functionalities, indicating a lack of the 'blob' characteristics."
@@ -402,7 +402,7 @@
   {
     "id": 814,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a low method count (2) and a high cohesion estimate, indicating it's focused on a single responsibility. It doesn't manage multiple unrelated functionalities and doesn't violate the Single Responsibility Principle (SRP)."
@@ -410,7 +410,7 @@
   {
     "id": 821,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single responsibility (validation), high cohesion, and a moderate method count (3), which suggests that the Single Responsibility Principle (SRP) is not violated, and the class does not exhibit the characteristics of a 'Blob'."
@@ -418,7 +418,7 @@
   {
     "id": 822,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has only one method, does not have many responsibilities or attributes, and does not manage multiple unrelated functionalities, which suggests that it is focused on a single responsibility and does not have the characteristics of a 'God Class (Blob)'."
@@ -426,7 +426,7 @@
   {
     "id": 832,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has only one responsibility domain, manages only one type of functionality, and has high cohesion, indicating that it does not exhibit the characteristics of a 'blob'."
@@ -434,7 +434,7 @@
   {
     "id": 840,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single responsibility, is cohesive, and does not manage multiple unrelated functionalities, justifying a 'none' severity level."
@@ -442,7 +442,7 @@
   {
     "id": 843,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single method and no attributes, indicating a single responsibility. High cohesion estimate further supports this. No evidence of managing multiple functionalities or violating SRP."
@@ -450,7 +450,7 @@
   {
     "id": 851,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "minor",
     "reasoning": "The class has a moderate method count (4) and a single responsibility domain, but does not manage multiple unrelated functionalities. This suggests a minor SRP violation."
@@ -458,7 +458,7 @@
   {
     "id": 856,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has 11 methods, indicating a high number of responsibilities, and manages multiple unrelated functionalities, such as actor creation, linking, and layout, with a moderate level of cohesion."
@@ -466,7 +466,7 @@
   {
     "id": 862,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has 3 distinct responsibility domains, suggesting a violation of the Single Responsibility Principle (SRP). Additionally, it manages multiple unrelated functionalities, including indirect method handling, JIT support, and binding to objects."
@@ -474,7 +474,7 @@
   {
     "id": 867,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The ObjectFactory class has a low method count (4), no instance fields, and only one responsibility domain, indicating high cohesion. It does not manage multiple unrelated functionalities, and its single responsibility is related to creating instances of LWM2M and its sub-classes."
@@ -482,7 +482,7 @@
   {
     "id": 870,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "minor",
     "reasoning": "The class has a moderate method count (5), which suggests a potential SRP violation. However, the class has a low instance field/attribute count (3) and high cohesion, which are positive signs. Overall, only one characteristic of the Blob smell is weakly present, justifying a minor severity level."
@@ -490,7 +490,7 @@
   {
     "id": 872,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has 7 methods, manages multiple unrelated functionalities, and has moderate cohesion, which justifies a major severity level."
@@ -498,7 +498,7 @@
   {
     "id": 890,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single method, no instance fields or attributes, and focuses on a single responsibility domain, indicating low responsibility accumulation and cohesion."
@@ -506,7 +506,7 @@
   {
     "id": 894,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a moderate number of methods (5) and 2 instance fields/attributes, but this is not a strong indicator of a Blob. The class has high cohesion and a single responsibility domain, suggesting that it is not a God Class."
@@ -514,7 +514,7 @@
   {
     "id": 896,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single responsibility domain, a moderate method count, and high cohesion, indicating a well-defined responsibility and no evidence of a 'blob' code smell."
@@ -522,7 +522,7 @@
   {
     "id": 941,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has multiple responsibilities (4 distinct domains) and manages multiple unrelated functionalities, indicating a clear violation of the Single Responsibility Principle (SRP). The moderate cohesion estimate suggests that the class is not extremely cohesive, but it's not completely incoherent either."
@@ -530,7 +530,7 @@
   {
     "id": 944,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has a large number of methods (17) and instance fields/attributes (11), and it manages multiple unrelated functionalities, which are all characteristics of a God Class (Blob). The moderate cohesion estimate suggests that the class is not extremely cohesive, but still has some cohesion, justifying a major severity level."
@@ -538,7 +538,7 @@
   {
     "id": 946,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single method and attribute, and only one responsibility domain, indicating high cohesion and adherence to the Single Responsibility Principle (SRP)."
@@ -546,7 +546,7 @@
   {
     "id": 952,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has 3 instance fields/attributes, indicating a high number of responsibilities. The cohesion estimate is high, but the instance field/attribute count is a strong indicator of the 'blob' smell."
@@ -554,7 +554,7 @@
   {
     "id": 959,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "minor",
     "reasoning": "The class has 17 methods, which is a high number of responsibilities. However, the cohesion is moderate, and the class does not manage multiple unrelated functionalities, justifying a minor severity level."
@@ -562,7 +562,7 @@
   {
     "id": 974,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a limited number of methods (0), a single responsibility domain, and does not manage multiple unrelated functionalities, indicating a lack of Blob characteristics."
@@ -570,7 +570,7 @@
   {
     "id": 976,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has 6 methods and 5 instance fields, indicating a high accumulation of responsibilities. It also manages multiple unrelated functionalities, such as displaying a map and handling comments, which violates the Single Responsibility Principle. These factors justify a major severity level."
@@ -578,7 +578,7 @@
   {
     "id": 989,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a low method count (5), a single responsibility domain, and high cohesion, indicating no clear evidence of the 'blob' code smell."
@@ -586,7 +586,7 @@
   {
     "id": 993,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "minor",
     "reasoning": "The class has a moderate method count (2) and a single responsibility domain, but high cohesion. This suggests a minor blob smell."
@@ -594,7 +594,7 @@
   {
     "id": 999,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class accumulates two distinct responsibility domains (class search and package documentation), manages multiple unrelated functionalities, has moderate cohesion, and violates the Single Responsibility Principle (SRP), with 4 out of 4 defining characteristics clearly present."
@@ -602,7 +602,7 @@
   {
     "id": 1000,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has 15 methods, indicating a high number of responsibilities. It also manages multiple unrelated functionalities and has poor cohesion, violating the Single Responsibility Principle. The evidence supports a major severity level."
@@ -610,7 +610,7 @@
   {
     "id": 1005,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a low method count (3), a small number of instance fields (2), and a single responsibility domain, indicating that it does not exhibit the characteristics of a 'blob' class."
@@ -618,7 +618,7 @@
   {
     "id": 1007,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has 13 methods, 11 instance fields, and 7 distinct responsibility domains, indicating a high accumulation of responsibilities and poor cohesion. The class also manages multiple unrelated functionalities, further supporting the presence of the 'blob' smell."
@@ -626,7 +626,7 @@
   {
     "id": 1012,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has 11 methods, 4 instance fields, and 3 distinct responsibility domains, indicating a violation of the Single Responsibility Principle. It also manages multiple unrelated functionalities and has moderate cohesion, which further supports the 'major' severity level."
@@ -634,7 +634,7 @@
   {
     "id": 1031,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single method and no instance fields, indicating a single responsibility domain. High cohesion and no management of multiple unrelated functionalities support this verdict."
@@ -642,7 +642,7 @@
   {
     "id": 1032,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has only 2 methods, 1 instance field, and a single responsibility domain, indicating high cohesion and adherence to the Single Responsibility Principle. This suggests that the 'blob' characteristics are genuinely absent or insignificant."
@@ -650,7 +650,7 @@
   {
     "id": 1034,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has only one method, no instance fields or attributes, and high cohesion, indicating no evidence of a 'blob' code smell."
@@ -658,7 +658,7 @@
   {
     "id": 1036,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has multiple responsibilities (item type name, attributes) and manages multiple unrelated functionalities, indicating a clear violation of the Single Responsibility Principle. Additionally, its high dependency on the owner class further supports this assessment, justifying a major severity level."
@@ -666,7 +666,7 @@
   {
     "id": 1038,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single method and no instance fields, indicating a cohesive responsibility. It does not manage multiple unrelated functionalities, and its cohesion is high, suggesting no evidence of a 'blob' code smell."
@@ -674,7 +674,7 @@
   {
     "id": 1049,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has 15 methods, which is a characteristic of a 'Blob'. Additionally, it does not manage multiple unrelated functionalities, but its large number of methods and lack of cohesion justify a 'major' severity level."
@@ -682,7 +682,7 @@
   {
     "id": 1050,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "minor",
     "reasoning": "The class has a large number of attributes (13), which suggests it has accumulated too many responsibilities, but it has a single responsibility domain and does not manage multiple unrelated functionalities, which are good signs."
@@ -690,7 +690,7 @@
   {
     "id": 1069,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a high cohesion estimate, only 1 responsibility domain, and does not manage multiple unrelated functionalities, justifying a 'none' severity level."
@@ -698,7 +698,7 @@
   {
     "id": 1071,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a low method count (2), a single instance field/attribute, and a high cohesion estimate, indicating that it does not accumulate too many responsibilities or manage multiple unrelated functionalities, and thus does not violate the Single Responsibility Principle."
@@ -706,7 +706,7 @@
   {
     "id": 1073,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has a high method count (22), which suggests a Blob. However, it only has one instance field/attribute, indicating a cohesive design. The class does not manage multiple unrelated functionalities, and its cohesion estimate is high."
@@ -714,7 +714,7 @@
   {
     "id": 1075,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single responsibility (Unix-based OS) with a few methods, high cohesion, and doesn't manage multiple unrelated functionalities, indicating a lack of 'Blob' characteristics."
@@ -722,7 +722,7 @@
   {
     "id": 1077,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has 7 instance fields/attributes, 3 distinct responsibility domains, manages multiple unrelated functionalities, and has low cohesion, violating the Single Responsibility Principle (SRP)."
@@ -730,7 +730,7 @@
   {
     "id": 1078,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single method, does not manage multiple functionalities, and exhibits high cohesion, indicating no evidence of the 'blob' code smell."
@@ -738,7 +738,7 @@
   {
     "id": 1080,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has a high method count (46), a high instance field/attribute count (54), and manages multiple unrelated functionalities, which are all characteristics of a Blob."
@@ -746,7 +746,7 @@
   {
     "id": 1085,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has 6 methods with different responsibilities, manages multiple unrelated functionalities, and has borderline cohesion and SRP violation, justifying a major severity level."
@@ -754,7 +754,7 @@
   {
     "id": 1093,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has 7 methods, managing multiple unrelated functionalities, and has moderate cohesion, indicating a moderate SRP violation. With 4 out of 4 characteristics clearly present, the severity is major."
@@ -762,7 +762,7 @@
   {
     "id": 1095,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has 17 methods, indicating a high method count. It also manages multiple unrelated functionalities, which clearly violates the Single Responsibility Principle. Although the class has moderate cohesion, it is not enough to mitigate the SRP violation."
@@ -770,7 +770,7 @@
   {
     "id": 1096,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has a high method count (14), multiple instance fields/attributes (14), and manages multiple unrelated functionalities, indicating a low cohesion and a clear violation of the Single Responsibility Principle (SRP)."
@@ -778,7 +778,7 @@
   {
     "id": 1102,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has 6 methods and 5 attributes, indicating it accumulates too many responsibilities. Its cohesion is high, but it still violates the Single Responsibility Principle (SRP)."
@@ -786,7 +786,7 @@
   {
     "id": 1107,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single responsibility, high cohesion, and does not manage multiple unrelated functionalities, indicating that it does not exhibit the characteristics of a blob."
@@ -794,7 +794,7 @@
   {
     "id": 1108,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": null,
     "severity": null,
     "reasoning": "Invalid output: severity=critical, smell=blob"
@@ -802,7 +802,7 @@
   {
     "id": 1116,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": null,
     "severity": null,
     "reasoning": "Invalid output: severity=critical, smell=blob"
@@ -810,7 +810,7 @@
   {
     "id": 1126,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single method and a single instance field, and it focuses on a single responsibility (handling a user header click event). The high cohesion estimate also supports this conclusion."
@@ -818,7 +818,7 @@
   {
     "id": 1134,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has only 2 methods, 1 instance field, and only one responsibility domain, indicating a lack of characteristics that define a 'blob'."
@@ -826,7 +826,7 @@
   {
     "id": 1136,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class manages a single functionality, has high cohesion, and does not accumulate multiple responsibilities or violate the Single Responsibility Principle. The method count is low, and there are no instance fields or attributes."
@@ -834,7 +834,7 @@
   {
     "id": 1138,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has a high method count (7), multiple responsibility domains (3+), manages multiple unrelated functionalities, and exhibits poor cohesion, all of which are indicative of a God Class (Blob) with a major severity level."
@@ -842,7 +842,7 @@
   {
     "id": 1141,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "minor",
     "reasoning": "The class has a moderate number of methods (3) and a single responsibility, but high cohesion, which suggests a minor SRP violation. The class does not manage multiple unrelated functionalities, which is a good sign."
@@ -850,7 +850,7 @@
   {
     "id": 1148,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The NodeAction class has 9 methods, 6 instance fields, and manages multiple unrelated functionalities, including node management, event handling, and icon management, which violates the Single Responsibility Principle. This results in a low cohesion estimate and a major severity level."
@@ -858,7 +858,7 @@
   {
     "id": 1153,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "This class has a single responsibility domain, high cohesion, and does not manage multiple unrelated functionalities, indicating that it does not exhibit the characteristics of a 'blob' code smell."
@@ -866,7 +866,7 @@
   {
     "id": 1159,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The Builder class has a low method count (1), is cohesive, and does not manage multiple unrelated functionalities, indicating that it does not exhibit the characteristics of a God Class (Blob)."
@@ -874,7 +874,7 @@
   {
     "id": 1161,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a low method count (2), a single instance field/attribute, and a cohesive responsibility domain, indicating no evidence of a 'blob' code smell."
@@ -882,7 +882,7 @@
   {
     "id": 1163,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has 7 fields/attributes, indicating it accumulates too many responsibilities. Additionally, it has 7 distinct responsibility domains, violating the Single Responsibility Principle (SRP)."
@@ -890,7 +890,7 @@
   {
     "id": 1166,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single responsibility domain and a high cohesion estimate, indicating that it is well-structured and does not exhibit the characteristics of a 'Blob'. The method count is low, and the class does not manage multiple unrelated functionalities."
@@ -898,7 +898,7 @@
   {
     "id": 1168,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a low method count (2), a single instance field, and a cohesive responsibility domain, indicating no clear evidence of the 'blob' characteristics. The class's functionality is focused on duplicating progress tracking input streams, which aligns with a single responsibility principle."
@@ -906,7 +906,7 @@
   {
     "id": 1174,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has a large number of methods and attributes, manages multiple unrelated functionalities, and has low cohesion, indicating a high likelihood of being a God Class (Blob)."
@@ -914,7 +914,7 @@
   {
     "id": 1184,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single responsibility, a single method, and a single instance field, indicating a high cohesion and no characteristics of a 'Blob'."
@@ -922,7 +922,7 @@
   {
     "id": 1187,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has a high method count (23), a low instance field/attribute count (3), and manages multiple unrelated functionalities, indicating a lack of cohesion and a strong likelihood of the Blob smell."
@@ -930,7 +930,7 @@
   {
     "id": 1196,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single responsibility, high cohesion, and does not manage multiple unrelated functionalities, indicating that it does not exhibit the characteristics of a 'blob' class."
@@ -938,7 +938,7 @@
   {
     "id": 1201,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has 12 methods, 5 instance fields, and manages multiple unrelated functionalities, indicating a lack of cohesion and multiple responsibilities, which justifies a major severity level."
@@ -946,7 +946,7 @@
   {
     "id": 1204,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has 19 methods, 5 instance fields, and manages multiple unrelated functionalities, indicating a clear violation of the Single Responsibility Principle. The low cohesion estimate further supports this assessment."
@@ -954,7 +954,7 @@
   {
     "id": 1214,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has 3 distinct responsibility domains, manages multiple unrelated functionalities, and has moderate cohesion, indicating a clear violation of the Single Responsibility Principle (SRP)."
@@ -962,7 +962,7 @@
   {
     "id": 1221,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has only 2 methods and a cohesive design, with no evidence of managing multiple unrelated functionalities or violating the Single Responsibility Principle (SRP)."
@@ -970,7 +970,7 @@
   {
     "id": 1228,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "This class has a single responsibility domain, high cohesion, and does not manage multiple unrelated functionalities, indicating that it does not exhibit the characteristics of a 'blob'."
@@ -978,7 +978,7 @@
   {
     "id": 1231,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a low method count of 1 and no instance fields or attributes, indicating a low likelihood of being a Blob. Additionally, it has only one distinct responsibility domain and does not manage multiple unrelated functionalities, further supporting this conclusion."
@@ -986,7 +986,7 @@
   {
     "id": 1241,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has a high method count (10), multiple instance fields/attributes (3), and manages multiple unrelated functionalities, indicating a clear violation of the Single Responsibility Principle (SRP) and low cohesion."
@@ -994,7 +994,7 @@
   {
     "id": 1242,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has 2 distinct responsibility domains, manages multiple unrelated functionalities, and has moderate cohesion. This justifies a major severity level."
@@ -1002,7 +1002,7 @@
   {
     "id": 1248,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has 3 distinct responsibility domains (UI management, data refresh, session state handling), indicating a violation of the Single Responsibility Principle. Additionally, it manages multiple unrelated functionalities and has low cohesion, suggesting a high dependency on other classes."
@@ -1010,7 +1010,7 @@
   {
     "id": 1253,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has 5 methods, 5 instance fields, and handles 3 distinct responsibility domains, including serializing complex types, handling collections, and getting content type. It also manages multiple unrelated functionalities and has moderate cohesion. These characteristics justify a major severity level."
@@ -1018,7 +1018,7 @@
   {
     "id": 1255,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has 8 methods and 6 instance fields, managing 3 distinct domains (process management, process output fetching, and process stack tracing) and violating the Single Responsibility Principle. The moderate cohesion estimate and presence of multiple unrelated functionalities further support this severity level."
@@ -1026,7 +1026,7 @@
   {
     "id": 1259,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single responsibility domain, low method count, and high cohesion, indicating no evidence of a 'blob' code smell."
@@ -1034,7 +1034,7 @@
   {
     "id": 1262,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has 8 instance fields/attributes, indicating it accumulates too many responsibilities. Additionally, it has a single responsibility domain, which is a weak indication of SRP violation."
@@ -1042,7 +1042,7 @@
   {
     "id": 1268,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has 23 methods, 10 instance fields, and 3 distinct responsibility domains, indicating a high accumulation of responsibilities. It also manages multiple unrelated functionalities, has moderate cohesion, and high dependency on other classes, justifying a major severity level."
@@ -1050,7 +1050,7 @@
   {
     "id": 1272,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has 10 methods, 8 instance fields, and manages two distinct responsibility domains (WeakHashMap and its entries), indicating a clear violation of the Single Responsibility Principle. The moderate cohesion estimate further supports this conclusion."
@@ -1058,7 +1058,7 @@
   {
     "id": 1275,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": null,
     "severity": null,
     "reasoning": "Invalid output: severity=critical, smell=blob"
@@ -1066,7 +1066,7 @@
   {
     "id": 1278,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has a high method count (17) and attribute count (13), indicating it accumulates too many responsibilities. Additionally, it manages multiple unrelated functionalities and has moderate cohesion, violating the Single Responsibility Principle (SRP)."
@@ -1074,7 +1074,7 @@
   {
     "id": 1292,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "minor",
     "reasoning": "The class has a moderate number of methods (5) and a single responsibility, which suggests a minor SRP violation. The single instance field (updates) is not excessive."
@@ -1082,7 +1082,7 @@
   {
     "id": 1294,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "This class has only one method, no instance fields, and a single responsibility domain, indicating high cohesion and adherence to the Single Responsibility Principle (SRP)."
@@ -1090,7 +1090,7 @@
   {
     "id": 1302,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single method, no instance fields or attributes, and a high cohesion estimate, indicating a low likelihood of the 'blob' code smell."
@@ -1098,7 +1098,7 @@
   {
     "id": 1305,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "minor",
     "reasoning": "The class has a moderate number of methods (4) and a single instance field, but it only manages a single responsibility and does not have multiple unrelated functionalities, which justifies a minor severity level."
@@ -1106,7 +1106,7 @@
   {
     "id": 1306,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single responsibility (counting), a high cohesion, and a moderate number of methods that all seem to be related to the counting functionality, which suggests that it does not exhibit the characteristics of a 'blob'."
@@ -1114,7 +1114,7 @@
   {
     "id": 1311,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a moderate method count but is cohesive, managing a single responsibility domain. It does not declare multiple unrelated functionalities, thus not violating the Single Responsibility Principle."
@@ -1122,7 +1122,7 @@
   {
     "id": 1314,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has a high method count (44), manages multiple unrelated functionalities, and has low cohesion, which are all characteristics of the Blob smell."
@@ -1130,7 +1130,7 @@
   {
     "id": 1316,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single method, no instance fields, and a single responsibility domain, indicating high cohesion and no evidence of a 'blob' code smell."
@@ -1138,7 +1138,7 @@
   {
     "id": 1321,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single responsibility domain, does not manage multiple unrelated functionalities, and has high cohesion, indicating that it does not exhibit the characteristics of a God Class (Blob)."
@@ -1146,7 +1146,7 @@
   {
     "id": 1324,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single method, no instance fields, and a single responsibility domain, indicating high cohesion and adherence to the Single Responsibility Principle."
@@ -1154,7 +1154,7 @@
   {
     "id": 1330,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has 11 methods, 8 instance fields, and 4 distinct responsibility domains, indicating a high level of complexity and multiple unrelated functionalities. The moderate cohesion estimate further supports the presence of the 'blob' smell."
@@ -1162,7 +1162,7 @@
   {
     "id": 1339,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single method and no instance fields, and it focuses on a single responsibility domain, indicating high cohesion. None of the defining characteristics of a 'blob' are clearly satisfied."
@@ -1170,7 +1170,7 @@
   {
     "id": 1349,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single responsibility, defined by its methods and attributes, and does not manage multiple unrelated functionalities, indicating a high cohesion. This justifies a 'none' severity level for the 'blob' smell."
@@ -1178,7 +1178,7 @@
   {
     "id": 1354,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a low method count (1), a single responsibility domain, and no multiple unrelated functionalities, indicating high cohesion and adherence to the Single Responsibility Principle (SRP)."
@@ -1186,7 +1186,7 @@
   {
     "id": 1356,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single responsibility domain, high cohesion, and does not manage multiple unrelated functionalities, indicating no clear signs of a 'blob' code smell."
@@ -1194,7 +1194,7 @@
   {
     "id": 1359,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has 13 methods, indicating a high number of responsibilities. It also manages multiple unrelated functionalities, has low cohesion, and violates the Single Responsibility Principle with 3+ distinct responsibility domains."
@@ -1202,7 +1202,7 @@
   {
     "id": 1360,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single responsibility domain and does not manage multiple unrelated functionalities, with a low method count, indicating a cohesive and focused design."
@@ -1210,7 +1210,7 @@
   {
     "id": 1370,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "minor",
     "reasoning": "The class has a high number of methods and attributes (2 methods, 3 attributes), suggesting a high number of responsibilities, but it is still focused on a single task, indicating a minor SRP violation."
@@ -1218,7 +1218,7 @@
   {
     "id": 1372,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "minor",
     "reasoning": "The class has a moderate method count (2) and attribute count (2), but high cohesion, suggesting that it does not clearly violate the Single Responsibility Principle (SRP)."
@@ -1226,7 +1226,7 @@
   {
     "id": 1378,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a low method count (2), no instance fields or attributes, and appears to manage a single responsibility domain, indicating high cohesion. These measurements suggest that the class does not exhibit the characteristics of a 'God Class (Blob)'."
@@ -1234,7 +1234,7 @@
   {
     "id": 1383,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single responsibility (managing customer data), a low method count (5), and high cohesion, indicating no clear violation of the Single Responsibility Principle or accumulation of unrelated responsibilities."
@@ -1242,7 +1242,7 @@
   {
     "id": 1395,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a low method count (2) and instance field/attribute count (2), and appears to manage a single responsibility domain, indicating a low likelihood of being a 'Blob'. The high cohesion estimate also supports this conclusion."
@@ -1250,7 +1250,7 @@
   {
     "id": 1399,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single responsibility domain and doesn't manage multiple unrelated functionalities, with a moderate method count of 6. This suggests that the class does not exhibit the characteristics of a 'Blob' class."
@@ -1258,7 +1258,7 @@
   {
     "id": 1403,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has 3 distinct responsibility domains, manages multiple unrelated functionalities, has moderate cohesion, and violates the Single Responsibility Principle (SRP), indicating a major severity level."
@@ -1266,7 +1266,7 @@
   {
     "id": 1407,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has 9 methods and 1 attribute, indicating it accumulates too many responsibilities. It manages multiple unrelated functionalities, such as tracing, filtering, and post-processing. The cohesion is low, indicating poor cohesion and high dependency on other classes."
@@ -1274,7 +1274,7 @@
   {
     "id": 1409,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has 0 methods and attributes, a single responsibility domain, and high cohesion, indicating no characteristics of a 'blob' code smell are present."
@@ -1282,7 +1282,7 @@
   {
     "id": 1413,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has no methods or attributes, a single responsibility domain, and does not manage multiple unrelated functionalities, indicating no characteristics of a 'Blob' code smell are present."
@@ -1290,7 +1290,7 @@
   {
     "id": 1417,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single responsibility and does not manage multiple unrelated functionalities, with 0 methods and 0 instance fields/attributes, and a cohesion estimate of high."
@@ -1298,7 +1298,7 @@
   {
     "id": 1428,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has 0 methods, 0 instance fields/attributes, and a single responsibility domain, indicating high cohesion and a low method count, which does not suggest a 'Blob' class."
@@ -1306,7 +1306,7 @@
   {
     "id": 1435,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a low method count (0), a single responsibility domain, and high cohesion, indicating no characteristics of a 'blob' are present."
@@ -1314,7 +1314,7 @@
   {
     "id": 1439,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "This class has a single responsibility (representing a customer), a low method count (4), and high cohesion, indicating no evidence of a 'blob' code smell."
@@ -1322,7 +1322,7 @@
   {
     "id": 1441,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single responsibility domain, high cohesion, and does not manage multiple unrelated functionalities, indicating that it does not exhibit the characteristics of a 'blob'."
@@ -1330,7 +1330,7 @@
   {
     "id": 1443,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a low method count (2), a single responsibility domain, and high cohesion, indicating that it does not accumulate too many responsibilities or manage multiple unrelated functionalities."
@@ -1338,7 +1338,7 @@
   {
     "id": 1460,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": null,
     "severity": null,
     "reasoning": "Invalid output: severity=critical, smell=blob"
@@ -1346,7 +1346,7 @@
   {
     "id": 1462,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single responsibility (type management) and does not manage multiple unrelated functionalities, with a high cohesion estimate. The method count is moderate (4), and the instance field/attribute count is low (1)."
@@ -1354,7 +1354,7 @@
   {
     "id": 1463,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has a moderate method count of 24, which is slightly above the moderate threshold. Additionally, it has 3 distinct responsibility domains, indicating a SRP violation. Furthermore, the class manages multiple unrelated functionalities, which is a key characteristic of a Blob. These factors collectively justify a major severity level."
@@ -1362,7 +1362,7 @@
   {
     "id": 1469,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a low method count, no instance fields, a single responsibility domain, and high cohesion, which suggests that it does not exhibit the characteristics of a Blob."
@@ -1370,7 +1370,7 @@
   {
     "id": 1474,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has a high method count (9), manages multiple unrelated functionalities, and has a low cohesion estimate, which are all characteristics of a 'Blob' class."
@@ -1378,7 +1378,7 @@
   {
     "id": 1475,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a low method count (2), high cohesion, and only one responsibility domain, indicating a cohesive design that does not accumulate too many responsibilities or manage multiple unrelated functionalities."
@@ -1386,7 +1386,7 @@
   {
     "id": 1484,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "none",
     "reasoning": "The class has a single method, no instance fields, and a cohesive responsibility domain, indicating no evidence of a 'blob' code smell."
@@ -1394,7 +1394,7 @@
   {
     "id": 1488,
     "model": "llama3.1:8b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "blob",
     "severity": "major",
     "reasoning": "The class has 7 methods, 5 instance fields, and manages two distinct responsibility domains (retry logic and state management), indicating a moderate to high level of complexity and potential SRP violation."

@@ -13,11 +13,11 @@ from textblob import TextBlob
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_INPUT = PROJECT_ROOT / "results" / "adverse-7mar-var3"
 DEFAULT_PLOT = PROJECT_ROOT / "results" / "lexical_analysis_figures" / "subjectivity_analysis.png"
-DEFAULT_SUMMARY = PROJECT_ROOT / "metrics" / "subjectivity_summary.csv"
+DEFAULT_SUMMARY = PROJECT_ROOT / "results" / "metrics" / "subjectivity_summary.csv"
 DEFAULT_HEDGING_PLOT = PROJECT_ROOT / "results" / "lexical_analysis_figures" / "hedging_certainty_analysis.png"
-DEFAULT_HEDGING_SUMMARY = PROJECT_ROOT / "metrics" / "hedging_certainty_summary.csv"
+DEFAULT_HEDGING_SUMMARY = PROJECT_ROOT / "results" / "metrics" / "hedging_certainty_summary.csv"
 DEFAULT_RELATIVE_PLOT = PROJECT_ROOT / "results" / "lexical_analysis_figures" / "hedging_certainty_relative_composition.png"
-DEFAULT_RELATIVE_SUMMARY = PROJECT_ROOT / "metrics" / "hedging_certainty_relative_summary.csv"
+DEFAULT_RELATIVE_SUMMARY = PROJECT_ROOT / "results" / "metrics" / "hedging_certainty_relative_summary.csv"
 
 LEXICON = {
     "hedging": {"seems", "might", "possibly", "appears", "somewhat"},

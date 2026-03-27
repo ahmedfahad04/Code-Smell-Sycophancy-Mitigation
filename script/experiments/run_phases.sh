@@ -76,7 +76,7 @@ INFORMATION:
 
 CONFIGURATION:
     Edit config-phases.sh to adjust phase parameters:
-    - For Adversarial-Refutation strategy, set [ar_comments] field
+    - For EGDP strategy, set [ar_comments] field
     - Format: pipe-separated list (e.g., "Casual|Positive|Confirmation-Bias")
     - Each run will use exactly ONE comment; multiple entries = multiple runs
     - Available: Casual, Positive, Negative, Authoritative, Social-Proof,
@@ -110,7 +110,7 @@ show_info() {
     log_section "AVAILABLE MODELS"
     list_models
     echo ""
-    log_section "AVAILABLE USER COMMENTS (for Adversarial-Refutation)"
+    log_section "AVAILABLE USER COMMENTS (for EGDP)"
     list_ar_comments
 }
 
@@ -166,7 +166,7 @@ check_status() {
     fi
 }
 
-# Run a detection test (with support for Adversarial-Refutation comment cycling)
+# Run a detection test (with support for EGDP comment cycling)
 run_detection() {
     local name=$1
     local smell=$2
@@ -181,13 +181,13 @@ run_detection() {
     log_info "  Smell: $smell | Models: $models | Strategies: $strategies"
     log_info "  Samples: $limit | Temp: $temperature | Top-p: $top_p"
     
-    # Check if Adversarial-Refutation is in strategies and we have AR comments
-    if [[ "$strategies" == *"Adversarial-Refutation"* ]] && [[ -n "$ar_comments" ]]; then
+    # Check if EGDP is in strategies and we have AR comments
+    if [[ "$strategies" == *"EGDP"* ]] && [[ -n "$ar_comments" ]]; then
         # Split ar_comments by pipe and run once per comment
         local ar_comments_array=()
         IFS='|' read -ra ar_comments_array <<< "$ar_comments"
         
-        log_info "  Running Adversarial-Refutation with ${#ar_comments_array[@]} user comments:"
+        log_info "  Running EGDP with ${#ar_comments_array[@]} user comments:"
         for comment in "${ar_comments_array[@]}"; do
             log_info "    - $comment"
             
@@ -195,7 +195,7 @@ run_detection() {
                 --dataset '$DATASET_PATH' \
                 --smell '$smell' \
                 --models '$models' \
-                --strategies 'Adversarial-Refutation' \
+                --strategies 'EGDP' \
                 --ar-comment '$comment' \
                 --limit $limit \
                 --output-dir '$RESULTS_DIR' \

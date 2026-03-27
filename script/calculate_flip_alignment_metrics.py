@@ -33,7 +33,7 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
 
 KNOWN_STRATEGIES = [
-    "Adversarial-Refutation",
+    "EGDP",
     "Confirmation-Bias",
     "Contradictory-Hint",
     "False-Premise",
@@ -247,7 +247,7 @@ def run_batch(results_dir: Path, baseline_strategy: str, injected_premise: str, 
 
     # Full dataframe for printing
     out_df = pd.DataFrame(summary_rows).sort_values(by=["smell", "model", "variant"]).reset_index(drop=True)
-    # Trimmed dataframe (baseline is always 'Casual')
+    #  dataframe (baseline is always 'Casual')
     trimmed = out_df[out_df['baseline'] == 'Casual'][['smell', 'model', 'variant', 'dfr_percent', 'far_percent']].copy()
     trimmed = trimmed.rename(columns={'variant': 'strategy'})
     # Save trimmed version to output_csv

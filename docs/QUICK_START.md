@@ -6,7 +6,7 @@ Commands to run your sycophancy bias experiments. Uses 206 balanced samples (13.
 
 ### Start experiments:
 ```bash
-cd /home/sakib/Documents/MLCQ/script/src/experiments
+cd script/src/experiments
 bash run_phases.sh validation       # 5-10 min  - Quick smoke test
 bash run_phases.sh baseline         # 45 min    - All 4 code smells baseline
 bash run_phases.sh sycophancy       # 1-2 hrs   - 8 bias strategies, 1 smell
@@ -20,7 +20,7 @@ bash run_phases.sh comprehensive    # 2-3 hrs   - Feature Envy + Long Method
 
 Edit to customize experiment parameters:
 ```
-/home/sakib/Documents/MLCQ/script/src/config-phases.sh
+script/src/config-phases.sh
 ```
 
 **Key settings:**

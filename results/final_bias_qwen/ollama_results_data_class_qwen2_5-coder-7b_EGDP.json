@@ -2,7 +2,7 @@
   {
     "id": 529,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class primarily stores data (e.g., WrappedBuffer, SpillInfo) rather than operating on it. It has a high number of getter/setter methods (31) and a low logic-to-accessor ratio (20%)."
@@ -10,7 +10,7 @@
   {
     "id": 534,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 2 methods with meaningful business logic (parserCompleted and a constructor with policy validation), and it has 2 getter/setter methods. The logic-to-accessor ratio is 67%, which is above the 20% threshold, indicating some business logic. However, the class primarily stores and exposes data rather than operating on it."
@@ -18,7 +18,7 @@
   {
     "id": 537,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 11 methods, with 2 of them being trivial getters/setters. It has 9 methods with meaningful business logic. The logic-to-accessor ratio is 82%, indicating a mix of data storage and business logic. While it does contain some business logic, the primary function of the class is to store and operate on data, which is characteristic of a data class."
@@ -26,7 +26,7 @@
   {
     "id": 539,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 3 getter/setter methods and 2 methods with meaningful business logic. The logic-to-accessor ratio is 40%, which is above the 20% threshold for strong Data Class indicators. The class primarily stores/exposes data rather than operating on it."
@@ -34,7 +34,7 @@
   {
     "id": 547,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "none",
     "reasoning": "The class contains only one constructor method and no getter/setter methods or methods with meaningful business logic. The logic-to-accessor ratio is 0%, and the class does not primarily store/expose data rather than operate on it."
@@ -42,7 +42,7 @@
   {
     "id": 550,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 11 methods in total, with 5 of them being getter and setter methods. It has 6 methods with meaningful business logic. The logic-to-accessor ratio is 54%, indicating a mix of data storage and business logic. While it does contain some business logic, the primary purpose of the class is still to store and operate on data, making it a minor data class."
@@ -50,7 +50,7 @@
   {
     "id": 555,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class has 15 methods in total, with 11 of them being getters and setters. Only 4 methods contain meaningful business logic. The logic-to-accessor ratio is 27%, which is below 20%, indicating a strong Data Class indicator. The class primarily stores and exposes data rather than operating on it."
@@ -58,7 +58,7 @@
   {
     "id": 557,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains only one method with meaningful business logic (addElement), and it primarily serves as a data container for the 'header' field. The logic-to-accessor ratio is 33%, which is weakly present."
@@ -66,7 +66,7 @@
   {
     "id": 559,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "none",
     "reasoning": "The class contains only one method (the constructor), which is not a getter or setter. It also does not contain any methods with meaningful business logic. The logic-to-accessor ratio is 0%, and the class does not primarily store/expose data rather than operate on it."
@@ -74,7 +74,7 @@
   {
     "id": 560,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 11 methods in total, with 4 of them being getter/setter methods. It has 2 methods with meaningful business logic. The logic-to-accessor ratio is 28%, which is above the threshold for a strong Data Class indicator. The class primarily stores and exposes data rather than operating on it."
@@ -82,7 +82,7 @@
   {
     "id": 569,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 2 methods with meaningful business logic (getTransactionRegistry and createConnection), which is 1 out of 2 defining characteristics of a data class. The logic-to-accessor ratio is 50%, which is not strongly indicative of a data class. The class primarily stores/exposes data rather than operating on it."
@@ -90,7 +90,7 @@
   {
     "id": 579,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains only one method with meaningful business logic (actionPerformed), while the rest are accessor methods (getters and setters). The logic-to-accessor ratio is 33%, which is weakly present. The class primarily operates on data rather than storing it."
@@ -98,7 +98,7 @@
   {
     "id": 583,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 3 methods, with 2 of them being trivial getter/setter methods. The third method contains meaningful business logic. The logic-to-accessor ratio is 67%, which is above the 20% threshold, indicating some business logic. The class primarily stores/exposes data rather than operating on it."
@@ -106,7 +106,7 @@
   {
     "id": 586,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "none",
     "reasoning": "The class contains only one method (the constructor), which is not a getter/setter method. It also lacks any methods with meaningful business logic. Therefore, it does not exhibit the characteristics of a data class."
@@ -114,7 +114,7 @@
   {
     "id": 589,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 6 getter/setter methods and 1 method with meaningful business logic (Order enum). The logic-to-accessor ratio is 16.7%, which is weakly present. The class primarily stores and exposes data rather than operating on it."
@@ -122,7 +122,7 @@
   {
     "id": 593,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 12 getter/setter methods and 1 method with meaningful business logic. The logic-to-accessor ratio is 8%."
@@ -130,7 +130,7 @@
   {
     "id": 599,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "none",
     "reasoning": "The class contains only one method each for creating compatible volatile images, which are trivial operations. There are no getter/setter methods or methods with meaningful business logic. The logic-to-accessor ratio is 0%, and the class does not primarily store/expose data rather than operate on it."
@@ -138,7 +138,7 @@
   {
     "id": 601,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 12 methods in total, with 10 of them being getter and setter methods. Only 2 methods (copyFromArray and copyToArray) have meaningful business logic. The logic-to-accessor ratio is 16.7%, which is below the 20% threshold indicating a strong Data Class indicator. The class primarily stores and exposes data rather than operating on it."
@@ -146,7 +146,7 @@
   {
     "id": 603,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class has a logic-to-accessor ratio of 10%, which is below 20%, indicating strong Data Class characteristics. Additionally, it primarily stores/exposes data rather than operating on it."
@@ -154,7 +154,7 @@
   {
     "id": 607,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 2 methods with meaningful business logic (toString and toNumber), which is more than the 1-2 defining characteristics that would classify it as minor. The logic-to-accessor ratio is 20%, which is not a strong indicator of a data class. The class primarily operates on data rather than storing it."
@@ -162,7 +162,7 @@
   {
     "id": 611,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains only getter and setter methods (2 methods), and no methods with meaningful business logic (0 methods). The logic-to-accessor ratio is 0%, indicating strong Data Class characteristics."
@@ -170,7 +170,7 @@
   {
     "id": 615,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains a mix of data members and methods with meaningful business logic. It has 11 methods in total, with 5 getter/setter methods and 6 methods containing meaningful business logic. The logic-to-accessor ratio is 54%, which is above the 20% threshold. The class does not primarily store/expose data rather than operate on it."
@@ -178,7 +178,7 @@
   {
     "id": 619,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 10 methods in total, with 8 of them being getter/setter methods. It has 2 methods with meaningful business logic (isUnsupportedVersion and isSecretSocketSupported). The logic-to-accessor ratio is 20%, which is weakly present. The class primarily stores and exposes data rather than operating on it."
@@ -186,7 +186,7 @@
   {
     "id": 624,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "none",
     "reasoning": "The class contains no getter/setter methods, no methods with meaningful business logic, and no logic-to-accessor ratio. It primarily stores data rather than operating on it."
@@ -194,7 +194,7 @@
   {
     "id": 642,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 10 methods in total, with 8 of them being getter and setter methods. It lacks any methods with meaningful business logic, indicating a strong Data Class indicator. The logic-to-accessor ratio is 20%, which is weakly present."
@@ -202,7 +202,7 @@
   {
     "id": 645,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains only data members (fields) with getter and setter methods (3 getter/setter methods). It lacks any methods with meaningful business logic (0 methods with meaningful business logic). The logic-to-accessor ratio is 0%, indicating strong Data Class characteristics."
@@ -210,7 +210,7 @@
   {
     "id": 650,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "none",
     "reasoning": "The class contains only one method (isEntryIncluded), which is not a getter/setter method and does not have meaningful business logic. It primarily stores/exposes data rather than operating on it."
@@ -218,7 +218,7 @@
   {
     "id": 653,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class has 27 methods in total, with 17 of them being getters and setters. This results in a logic-to-accessor ratio of 63%, which is above 20%. The class primarily stores and exposes data rather than operating on it, as evidenced by the presence of numerous getter and setter methods."
@@ -226,7 +226,7 @@
   {
     "id": 657,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains only one method with meaningful business logic (applyEvent), and it primarily stores/exposes data rather than operating on it. The logic-to-accessor ratio is 0%, indicating a strong Data Class indicator."
@@ -234,7 +234,7 @@
   {
     "id": 661,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 11 methods with meaningful business logic (non-trivial operations) and has a logic-to-accessor ratio of 54%. While it does not primarily store/expose data rather than operate on it, it is not a strong Data Class indicator."
@@ -242,7 +242,7 @@
   {
     "id": 663,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains only one method (valueOf), which is a getter. It does not contain any setter methods or methods with meaningful business logic. The logic-to-accessor ratio is 100%, indicating a strong Data Class indicator."
@@ -250,7 +250,7 @@
   {
     "id": 677,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains only data members with getter and setter methods (4 methods), and no methods with meaningful business logic (0 methods). The logic-to-accessor ratio is 0%, indicating a strong Data Class indicator. The class primarily stores/exposes data rather than operating on it."
@@ -258,7 +258,7 @@
   {
     "id": 681,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class has 4 methods in total, with 3 of them being getter/setter methods. It lacks any methods with meaningful business logic, and the logic-to-accessor ratio is 75%. The class primarily stores and exposes data rather than operating on it."
@@ -266,7 +266,7 @@
   {
     "id": 689,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 3 methods with meaningful business logic (updateProjectAction, actionPerformed, isNodeSupportGoInto) and 3 getter/setter methods. The logic-to-accessor ratio is 50%, indicating a balanced mix of data storage and operations. While it does contain some business logic, it is not primarily focused on data storage and retrieval, but rather on performing actions based on the data."
@@ -274,7 +274,7 @@
   {
     "id": 691,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 5 getter/setter methods and 1 method with meaningful business logic (equals), totaling 6 methods. The logic-to-accessor ratio is 16.7%, which is weakly indicative of a Data Class. The class primarily stores and exposes data rather than operating on it."
@@ -282,7 +282,7 @@
   {
     "id": 695,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 12 methods in total, with 10 of them being getter and setter methods. Only 2 methods, 'onDocumentChanged' and 'initialize', contain meaningful business logic. The logic-to-accessor ratio is 16.7%, which is below 20%, indicating a strong Data Class indicator. The class primarily stores and exposes data rather than operating on it."
@@ -290,7 +290,7 @@
   {
     "id": 703,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 3 methods: 1 constructor and 2 business logic methods. It has 0 getter/setter methods. The logic-to-accessor ratio is 67%, which is above 20%. The class primarily stores and exposes data rather than operating on it."
@@ -298,7 +298,7 @@
   {
     "id": 705,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 11 methods with meaningful business logic (non-trivial operations) and 21 getter/setter methods, indicating a balance rather than a strong Data Class indicator. The logic-to-accessor ratio is 48%, which is above 20%. The class primarily stores and exposes data rather than operating on it."
@@ -306,7 +306,7 @@
   {
     "id": 707,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 2 methods with meaningful business logic (eClassIsSuperTypeOf and classEquals) and 1 method that primarily serves as an accessor (classEquals). The logic-to-accessor ratio is 66%, which is above the 20% threshold for a strong Data Class indicator. While the class does not primarily store/expose data rather than operate on it, it does contain some business logic, albeit minimal."
@@ -314,7 +314,7 @@
   {
     "id": 709,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 2 getter/setter methods (getContent, setContentSize) and 1 method with meaningful business logic (doRefreshVisual). The logic-to-accessor ratio is 33%, which is weakly present. The class primarily stores and exposes data rather than operating on it."
@@ -322,7 +322,7 @@
   {
     "id": 715,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 4 methods with meaningful business logic (non-trivial operations) and has a logic-to-accessor ratio of 75%, indicating a mix of data storage and operations. However, it also has 10 getter/setter methods, which is a significant number for a data class."
@@ -330,7 +330,7 @@
   {
     "id": 719,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 11 methods in total, with 10 of them being getter and setter methods. Only 1 method, `isAppropriateForCreating()`, contains meaningful business logic. The logic-to-accessor ratio is 9.1%, which is below the 20% threshold indicating a strong Data Class indicator. The class primarily stores and exposes data rather than operating on it."
@@ -338,7 +338,7 @@
   {
     "id": 730,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 2 getter/setter methods and 0 methods with meaningful business logic. The logic-to-accessor ratio is 0%, indicating a strong Data Class indicator. The class primarily stores/exposes data rather than operating on it."
@@ -346,7 +346,7 @@
   {
     "id": 732,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 11 methods in total, with 10 of them being getter and setter methods. There is only 1 method with meaningful business logic (the `copy` method). The logic-to-accessor ratio is 9.1%, which is below 20%, indicating a strong Data Class indicator. The class primarily stores and exposes data rather than operating on it."
@@ -354,7 +354,7 @@
   {
     "id": 747,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "none",
     "reasoning": "The class contains only 3 data members with getter and setter methods, and no methods with meaningful business logic. The logic-to-accessor ratio is 0%, and the class primarily stores/exposes data rather than operating on it."
@@ -362,7 +362,7 @@
   {
     "id": 759,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains only data members and getter/setter methods (21 methods total, 16 of which are getters/setters). It lacks significant business logic or behavioral methods, with only 5 methods containing meaningful operations. The logic-to-accessor ratio is 23%, which is weakly present, indicating a minor data class smell."
@@ -370,7 +370,7 @@
   {
     "id": 766,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 10 methods with meaningful business logic, which is a strong indicator that it is not a data class. However, it also contains 13 getter/setter methods, which is a minor characteristic of a data class."
@@ -378,7 +378,7 @@
   {
     "id": 777,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "none",
     "reasoning": "The class contains only methods for creating and returning instances of other classes, with no significant business logic or data manipulation. It primarily serves as a factory for creating data objects, which is a typical use case for a data class."
@@ -386,7 +386,7 @@
   {
     "id": 779,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains only one method (create), which is a getter/setter method. It lacks any methods with meaningful business logic. The logic-to-accessor ratio is 100%. The class primarily stores/exposes data rather than operating on it."
@@ -394,7 +394,7 @@
   {
     "id": 809,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The CachedReader class contains 10 methods in total, with 6 of them being getter/setter methods. It also has 2 methods with meaningful business logic (getReader and returnReader). The logic-to-accessor ratio is 20%, which is on the lower end of the spectrum, indicating a minor Data Class smell. The class primarily stores/exposes data rather than operating on it."
@@ -402,7 +402,7 @@
   {
     "id": 811,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 2 methods with meaningful business logic (deserialize and serialize), and 2 getter/setter methods (formatter). The logic-to-accessor ratio is 50%, which is weakly indicative of a Data Class. The class primarily stores/exposes data rather than operating on it."
@@ -410,7 +410,7 @@
   {
     "id": 815,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "none",
     "reasoning": "The class contains only constructor methods and no getter/setter methods or methods with meaningful business logic. The logic-to-accessor ratio is 0%, and the class does not primarily store/expose data rather than operate on it."
@@ -418,7 +418,7 @@
   {
     "id": 820,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains only one method with meaningful business logic (the validate method), while the rest are related to data access. The logic-to-accessor ratio is 25%, which is not strong enough to classify it as a data class. However, it is not entirely free of data class characteristics."
@@ -426,7 +426,7 @@
   {
     "id": 823,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "major",
     "reasoning": "The class contains multiple methods with meaningful business logic (constructScalar, construct, etc.), and it does not primarily store/expose data rather than operate on it. The logic-to-accessor ratio is above 20%. Therefore, the class does not meet the characteristics of a data class."
@@ -434,7 +434,7 @@
   {
     "id": 833,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains only data members (Hashtable) and a few trivial methods (constructor, contains). It lacks significant business logic and primarily serves as a data container. The logic-to-accessor ratio is low, indicating a strong Data Class indicator."
@@ -442,7 +442,7 @@
   {
     "id": 841,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains getter/setter methods (1), but also has a method with meaningful business logic (process method). The logic-to-accessor ratio is 50%, indicating a mix of data storage and operations."
@@ -450,7 +450,7 @@
   {
     "id": 842,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "none",
     "reasoning": "The class contains no getter/setter methods, no methods with meaningful business logic, and no significant logic-to-accessor ratio. It primarily serves as a data container without meaningful operations."
@@ -458,7 +458,7 @@
   {
     "id": 848,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 4 methods, 2 of which are getter/setter methods. It has 2 methods with meaningful business logic. The logic-to-accessor ratio is 50%, which is not strongly indicative of a data class. The class primarily stores and exposes data rather than operating on it."
@@ -466,7 +466,7 @@
   {
     "id": 857,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 1 method with meaningful business logic (buildDefaultShape), but it also contains 11 getter/setter methods and 12 other methods. The logic-to-accessor ratio is 13%, which is below 20%, indicating a strong Data Class indicator. The class primarily stores/exposes data rather than operating on it."
@@ -474,7 +474,7 @@
   {
     "id": 863,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "major",
     "reasoning": "The class contains 11 methods, with 4 of them being getter/setter methods. There are 7 methods with meaningful business logic. The logic-to-accessor ratio is 36%, indicating a significant presence of business logic. The class primarily stores and operates on data, meeting the defining characteristics of a data class."
@@ -482,7 +482,7 @@
   {
     "id": 866,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "none",
     "reasoning": "The class contains only getter and setter methods (4 methods in total), with no methods that have meaningful business logic. The logic-to-accessor ratio is 0%, and the class primarily stores/exposes data rather than operating on it."
@@ -490,7 +490,7 @@
   {
     "id": 871,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 5 methods in total, with 4 of them being getter/setter methods (getFormat, read, close, length, getClonedStream). Only 1 method (getClonedStream) has meaningful business logic. The logic-to-accessor ratio is 20%, which is weakly present. The class primarily stores and exposes data rather than operating on it."
@@ -498,7 +498,7 @@
   {
     "id": 873,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 2 methods with meaningful business logic (run and substituteArgs), which is 1 out of 3 characteristics that are weakly present. The logic-to-accessor ratio is above 20%, indicating that the class operates on data rather than primarily storing it."
@@ -506,7 +506,7 @@
   {
     "id": 891,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 1 method with meaningful business logic (checkVitality) and 0 getter/setter methods. The logic-to-accessor ratio is 100%, indicating that the class primarily stores/exposes data rather than operating on it."
@@ -514,7 +514,7 @@
   {
     "id": 895,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 1 method with meaningful business logic (generate) and 2 methods that are primarily getters/setters (getTypes, addTypeAndReferences). The logic-to-accessor ratio is 33%, which is weakly present. The class primarily stores and exposes data rather than operating on it."
@@ -522,7 +522,7 @@
   {
     "id": 897,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 3 methods, with 1 getter/setter method and 2 methods with meaningful business logic. The logic-to-accessor ratio is 67%, which is above the 20% threshold for a strong Data Class indicator. The class primarily stores/exposes data rather than operating on it."
@@ -530,7 +530,7 @@
   {
     "id": 940,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 2 methods with meaningful business logic (parse, getStubDescriptorAttributes, getDialogDescriptors, getInterceptorDescriptors), which is more than the minimum required. However, it still primarily stores and exposes data rather than operating on it."
@@ -538,7 +538,7 @@
   {
     "id": 945,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class has 15 methods in total, with 11 of them being getter and setter methods. There are only 4 methods with meaningful business logic, resulting in a logic-to-accessor ratio of 27%. The class primarily stores and exposes data rather than operating on it."
@@ -546,7 +546,7 @@
   {
     "id": 947,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 1 getter/setter method and 0 methods with meaningful business logic. The logic-to-accessor ratio is 0%, indicating a strong Data Class indicator. The class primarily stores/exposes data rather than operating on it."
@@ -554,7 +554,7 @@
   {
     "id": 953,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "none",
     "reasoning": "The class contains only data members with getter and setter methods, and no methods with meaningful business logic. The logic-to-accessor ratio is 0%, and the class primarily stores/exposes data rather than operating on it."
@@ -562,7 +562,7 @@
   {
     "id": 958,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 23 getter/setter methods and 1 method with meaningful business logic (parseResponse). The logic-to-accessor ratio is 4.3%, indicating a strong Data Class indicator. The class primarily stores and exposes data rather than operating on it."
@@ -570,7 +570,7 @@
   {
     "id": 975,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "none",
     "reasoning": "The class contains only data members (fields) with getter and setter methods, totaling 2 methods. It lacks any methods with meaningful business logic or behavioral methods, and does not primarily store/expose data rather than operate on it."
@@ -578,7 +578,7 @@
   {
     "id": 977,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 16 methods in total, with 14 of them being getter and setter methods. It has only 2 methods with meaningful business logic. The logic-to-accessor ratio is 12.5%, indicating a strong Data Class indicator. The class primarily stores and exposes data rather than operating on it."
@@ -586,7 +586,7 @@
   {
     "id": 988,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 4 methods in total, with 2 being getter/setter methods and 2 having meaningful business logic. The logic-to-accessor ratio is 50%, which is weakly indicative of a data class. The class primarily stores and exposes data rather than operating on it."
@@ -594,7 +594,7 @@
   {
     "id": 992,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains only one method (getMediaClock) and multiple getter/setter methods, indicating a strong Data Class characteristic. It lacks meaningful business logic and primarily serves as a data container."
@@ -602,7 +602,7 @@
   {
     "id": 998,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 3 methods with meaningful business logic (getPackageFileKinds and extraFileActions), and it has a logic-to-accessor ratio of 33%. However, it primarily stores and exposes data rather than operating on it."
@@ -610,7 +610,7 @@
   {
     "id": 1001,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 12 getter/setter methods and 13 methods with meaningful business logic, totaling 25 methods. The logic-to-accessor ratio is 52%, which is above 20%. The class primarily stores and exposes data rather than operating on it."
@@ -618,7 +618,7 @@
   {
     "id": 1004,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "none",
     "reasoning": "The class contains only data members (numCores, maxMemory) and a constructor, with no getter/setter methods or methods with meaningful business logic. The logic-to-accessor ratio is 0%, and the class primarily stores/exposes data rather than operating on it."
@@ -626,7 +626,7 @@
   {
     "id": 1006,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "major",
     "reasoning": "The class contains 13 methods, 11 of which are getter/setter methods. Only 2 methods have meaningful business logic, indicating a strong Data Class indicator. The logic-to-accessor ratio is 15%, and the class primarily stores/exposes data rather than operating on it."
@@ -634,7 +634,7 @@
   {
     "id": 1013,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 10 methods in total, with 8 of them being getter and setter methods. There are only 2 methods with meaningful business logic (getProperty and validate), indicating a weak presence of business logic."
@@ -642,7 +642,7 @@
   {
     "id": 1030,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 1 getter method and 0 methods with meaningful business logic, totaling 1 method. The logic-to-accessor ratio is 0%, indicating a strong Data Class indicator. The class primarily stores/exposes data rather than operating on it."
@@ -650,7 +650,7 @@
   {
     "id": 1033,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 3 methods in total (2 getter/setter, 1 meaningful business logic). It has a logic-to-accessor ratio of 33%, which is below 20%, indicating a strong Data Class indicator. The class primarily stores and exposes data rather than operating on it."
@@ -658,7 +658,7 @@
   {
     "id": 1035,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "none",
     "reasoning": "The class contains only one method, 'testShards', which calls other test methods. It does not contain any getter/setter methods or methods with meaningful business logic. Therefore, it does not exhibit the characteristics of a data class."
@@ -666,7 +666,7 @@
   {
     "id": 1037,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 11 methods, with 9 being getter/setter methods. It lacks any significant business logic, as all non-accessor methods are trivial operations. The logic-to-accessor ratio is 82%, which is above the 20% threshold, indicating a minor data class smell."
@@ -674,7 +674,7 @@
   {
     "id": 1039,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "none",
     "reasoning": "The class contains no getter/setter methods, no methods with meaningful business logic, and has a logic-to-accessor ratio of 0%. It primarily stores/exposes data rather than operating on it."
@@ -682,7 +682,7 @@
   {
     "id": 1048,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 27 methods, all of which are getter/setter methods or support methods. There are no methods with meaningful business logic. The logic-to-accessor ratio is 0%, indicating a strong Data Class indicator. The class primarily stores and exposes data rather than operating on it."
@@ -690,7 +690,7 @@
   {
     "id": 1051,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "none",
     "reasoning": "The class contains only static final fields and no methods, indicating it primarily stores data rather than operating on it."
@@ -698,7 +698,7 @@
   {
     "id": 1068,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "none",
     "reasoning": "The class contains only data members with getter and setter methods, totaling 3 methods. It lacks any meaningful business logic or behavioral methods, and the logic-to-accessor ratio is 0%. The class primarily stores and exposes data rather than operating on it."
@@ -706,7 +706,7 @@
   {
     "id": 1070,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "none",
     "reasoning": "The class contains only one method (a getter) and lacks any meaningful business logic. The logic-to-accessor ratio is 0%, indicating that the class primarily stores/exposes data rather than operating on it."
@@ -714,7 +714,7 @@
   {
     "id": 1072,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class has 11 methods in total, with 9 of them being getters and setters, which is a strong indicator of a data class. The logic-to-accessor ratio is 18%, which is below the 20% threshold, further supporting the data class characteristic. The class primarily stores and exposes data rather than operating on it."
@@ -722,7 +722,7 @@
   {
     "id": 1074,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class has 3 methods in total, with 2 of them being getter/setter methods. There is 1 method with meaningful business logic. The logic-to-accessor ratio is 67%, which is above the 20% threshold. The class primarily stores/exposes data rather than operating on it."
@@ -730,7 +730,7 @@
   {
     "id": 1076,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 3 methods with meaningful business logic (startElement, characters, endElement) and 5 getter/setter methods (current_tag, buff, insideTitle, insideDescription, maxThumbSize). The logic-to-accessor ratio is 42%, which is above 20%. The class primarily stores/exposes data rather than operating on it."
@@ -738,7 +738,7 @@
   {
     "id": 1079,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 1 method with meaningful business logic (execute) and 2 getter/setter methods (none present). The logic-to-accessor ratio is 50%, indicating a mix of data handling and business logic, but not strongly indicating a data class."
@@ -746,7 +746,7 @@
   {
     "id": 1081,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class primarily stores and exposes data rather than operating on it. It has 15 methods, 10 of which are getters and setters, and only 5 methods with meaningful business logic. The logic-to-accessor ratio is 33%, which is below 20%, further indicating a strong Data Class indicator."
@@ -754,7 +754,7 @@
   {
     "id": 1084,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 2+ characteristics that are clearly satisfied: it primarily stores/exposes data rather than operating on it, and it has a logic-to-accessor ratio of less than 20%. Specifically, it has 12 methods in total, with only 4 methods (getters and setters) being accessor methods, and the remaining 8 methods contain meaningful business logic."
@@ -762,7 +762,7 @@
   {
     "id": 1092,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "none",
     "reasoning": "The class contains methods with meaningful business logic (e.g., `available`, `read`, `close`) and a logic-to-accessor ratio of 80%, indicating that it operates on data rather than merely storing it."
@@ -770,7 +770,7 @@
   {
     "id": 1094,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class has 17 methods in total, with 11 being getter/setter methods and only 5 with meaningful business logic. The logic-to-accessor ratio is 29%, which is below 20%, indicating a strong Data Class indicator. The class primarily stores and exposes data rather than operating on it."
@@ -778,7 +778,7 @@
   {
     "id": 1097,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class primarily stores and exposes data rather than operating on it. It has 11 methods in total, with 8 of them being getters/setters. The logic-to-accessor ratio is 27%, which is below 20%, indicating a strong Data Class indicator. The class does not contain any meaningful business logic, further supporting its classification as a Data Class."
@@ -786,7 +786,7 @@
   {
     "id": 1103,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "none",
     "reasoning": "The class contains only data members (fields) with getter and setter methods, totaling 6 fields. It lacks any methods with meaningful business logic or behavioral methods, resulting in a logic-to-accessor ratio of 0%. The class primarily stores and exposes data rather than operating on it."
@@ -794,7 +794,7 @@
   {
     "id": 1106,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 6 methods in total, with 4 of them being getter and setter methods. There is only 1 method with meaningful business logic (the constructor that decodes a DER encoded value). The logic-to-accessor ratio is 16.7%, which is below 20%, indicating a strong Data Class indicator. The class primarily stores and exposes data rather than operating on it."
@@ -802,7 +802,7 @@
   {
     "id": 1109,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "major",
     "reasoning": "The class contains 31 methods, including 27 getter and setter methods. Only 4 methods have meaningful business logic, resulting in a logic-to-accessor ratio of 13%. The class primarily stores and exposes data rather than operating on it."
@@ -810,7 +810,7 @@
   {
     "id": 1117,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 27 methods in total, with 24 of them being getter and setter methods. Only 3 methods have meaningful business logic. The logic-to-accessor ratio is 11%, indicating a strong Data Class indicator. The class primarily stores and exposes data rather than operating on it."
@@ -818,7 +818,7 @@
   {
     "id": 1127,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains only one method with meaningful business logic (onClick), and it primarily serves as a data container for the fragment and the onClick method. The logic-to-accessor ratio is 50%, which is weakly indicative of a Data Class."
@@ -826,7 +826,7 @@
   {
     "id": 1135,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains only one data member (template) and two trivial getter/setter methods. There are no methods with meaningful business logic. The logic-to-accessor ratio is 0%, indicating a strong Data Class indicator. The class primarily stores and exposes data rather than operating on it."
@@ -834,7 +834,7 @@
   {
     "id": 1137,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains only one method with meaningful business logic, and it primarily stores/exposes data rather than operating on it."
@@ -842,7 +842,7 @@
   {
     "id": 1139,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 11 methods in total, with 5 of them being getter/setter methods. There are 6 methods with meaningful business logic. The logic-to-accessor ratio is 54.5%, which indicates that the class is not primarily a data container but also contains some business logic. Therefore, it is classified as a minor data class."
@@ -850,7 +850,7 @@
   {
     "id": 1140,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 2 methods with meaningful business logic (verify and validate) and 2 getter/setter methods (originalBorder). The logic-to-accessor ratio is 50%, which is weakly satisfied. The class primarily operates on the data rather than just storing it."
@@ -858,7 +858,7 @@
   {
     "id": 1149,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 11 methods in total, with 6 of them being getter and setter methods. There are 5 methods with meaningful business logic. The logic-to-accessor ratio is 45%, which is above 20%. The class primarily stores and exposes data rather than operating on it."
@@ -866,7 +866,7 @@
   {
     "id": 1152,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 1 getter/setter method (invocationCallback) and 2 methods with meaningful business logic (copy, build). The logic-to-accessor ratio is 67%, which is above 20%. The class primarily stores and exposes data rather than operating on it."
@@ -874,7 +874,7 @@
   {
     "id": 1158,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "none",
     "reasoning": "The class contains only one method, which is a getter/setter method. It does not contain any meaningful business logic or behavioral methods, and it primarily serves as a data container without meaningful operations. Therefore, it does not exhibit the characteristics of a data class."
@@ -882,7 +882,7 @@
   {
     "id": 1160,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains only one method (a getter) and no methods with meaningful business logic. The logic-to-accessor ratio is 0%, indicating a strong Data Class indicator."
@@ -890,7 +890,7 @@
   {
     "id": 1162,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "none",
     "reasoning": "The class contains only data members and getter/setter methods, with no meaningful business logic. It primarily serves as a data container without any operations, indicating a strong Data Class smell."
@@ -898,7 +898,7 @@
   {
     "id": 1167,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 4 methods with meaningful business logic (non-trivial operations) and 4 getter/setter methods, totaling 8 methods. The logic-to-accessor ratio is 50%, which is weakly present, and the class primarily stores/exposes data rather than operating on it."
@@ -906,7 +906,7 @@
   {
     "id": 1169,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 1 method with meaningful business logic (duplicate()) and 2 methods that are likely getters/setters (getSource(), getProgressTracker()). The logic-to-accessor ratio is approximately 33%, which is weakly indicative of a Data Class. The class primarily stores/exposes data rather than operating on it."
@@ -914,7 +914,7 @@
   {
     "id": 1175,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "none",
     "reasoning": "The class contains only data members and getter/setter methods, with no methods that contain meaningful business logic. The logic-to-accessor ratio is 0%, and the class primarily stores and exposes data rather than operating on it."
@@ -922,7 +922,7 @@
   {
     "id": 1185,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 2 getter/setter methods and 1 method with meaningful business logic (buildRequestParams). The logic-to-accessor ratio is 33%, which is weakly present. The class primarily stores/exposes data rather than operating on it."
@@ -930,7 +930,7 @@
   {
     "id": 1186,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class primarily stores/exposes data rather than operating on it, as indicated by the high number of getter/setter methods (13) compared to methods with meaningful business logic (2). The logic-to-accessor ratio is 14%, which is below the 20% threshold, further supporting the Data Class indicator."
@@ -938,7 +938,7 @@
   {
     "id": 1197,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 2 methods with meaningful business logic (toString and toString(Verbosity)), which is more than the minimum required for a minor severity. However, it still primarily stores/exposes data rather than operating on it, as indicated by the lack of significant business logic beyond simple data accessors."
@@ -946,7 +946,7 @@
   {
     "id": 1200,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "major",
     "reasoning": "The class contains only data members (fields) with getter and setter methods (10 total), and lacks significant business logic or behavioral methods (0). The logic-to-accessor ratio is 0%, indicating that the class primarily stores/exposes data rather than operating on it."
@@ -954,7 +954,7 @@
   {
     "id": 1205,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "major",
     "reasoning": "The class contains 24 methods, with 22 of them being getter and setter methods. Only 2 methods (createChannel and close) contain meaningful business logic. The logic-to-accessor ratio is 8.3%, indicating a strong Data Class indicator. The class primarily stores and exposes data rather than operating on it."
@@ -962,7 +962,7 @@
   {
     "id": 1215,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 14 methods in total, with 10 of them being getter and setter methods. It has 4 methods with meaningful business logic. The logic-to-accessor ratio is 28%, which is above the 20% threshold indicating a strong Data Class indicator. The class primarily stores and exposes data rather than operating on it."
@@ -970,7 +970,7 @@
   {
     "id": 1220,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains only data members (fields) with getter and setter methods (2 getter methods), and lacks significant business logic or behavioral methods (0 methods with meaningful business logic). The logic-to-accessor ratio is 0%, indicating a strong Data Class indicator. The class primarily stores and exposes data rather than operating on it (yes)."
@@ -978,7 +978,7 @@
   {
     "id": 1229,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "none",
     "reasoning": "The class contains only data members (package_name and package_id) and lacks any getter/setter methods or methods with meaningful business logic. The logic-to-accessor ratio is 0%, and the class primarily stores data rather than operating on it."
@@ -986,7 +986,7 @@
   {
     "id": 1230,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "none",
     "reasoning": "The class contains only one method, which is a getter method. It does not contain any setter methods or methods with meaningful business logic. Therefore, it does not exhibit any characteristics of a data class."
@@ -994,7 +994,7 @@
   {
     "id": 1240,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 11 methods in total, with 8 of them being getter/setter methods. It has 3 methods with meaningful business logic (createSuite, add, done). The logic-to-accessor ratio is 27%, which is above the 20% threshold. While it does contain some business logic, it primarily serves as a data container for TestSuite and related data, indicating possible misplacement of logic."
@@ -1002,7 +1002,7 @@
   {
     "id": 1243,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 1 method with meaningful business logic (signupHelper.signup) and 2 methods that primarily store/expose data (signupForm and signupFromApi). The logic-to-accessor ratio is 33%, which is weakly present."
@@ -1010,7 +1010,7 @@
   {
     "id": 1249,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 10 methods in total, with 4 of them being getter/setter methods. It also contains 3 methods with meaningful business logic. The logic-to-accessor ratio is 30%, which is above the 20% threshold indicating a strong Data Class indicator. However, the class does not primarily store/expose data rather than operate on it."
@@ -1018,7 +1018,7 @@
   {
     "id": 1252,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains only one data member (servletPath) with getter and setter methods, and no methods with meaningful business logic. The logic-to-accessor ratio is 0%, indicating a strong Data Class indicator. The class primarily stores/exposes data rather than operating on it."
@@ -1026,7 +1026,7 @@
   {
     "id": 1254,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "major",
     "reasoning": "The class contains only data members with getter and setter methods (14 fields, 14 getter/setter methods), and lacks significant business logic or behavioral methods. The logic-to-accessor ratio is 28%, indicating a strong Data Class indicator. The class primarily stores/exposes data rather than operating on it."
@@ -1034,7 +1034,7 @@
   {
     "id": 1256,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 2 methods with meaningful business logic (getGrailsProcessId and getStackTraces), which is 1 out of 3 characteristics. The logic-to-accessor ratio is 67%, which is above 20%. The class does not primarily store/expose data rather than operate on it."
@@ -1042,7 +1042,7 @@
   {
     "id": 1260,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 11 static final instances and a constructor, but no getter/setter methods or methods with meaningful business logic. The logic-to-accessor ratio is 0%, indicating strong Data Class characteristics."
@@ -1050,7 +1050,7 @@
   {
     "id": 1261,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "none",
     "reasoning": "The class contains only data members (fields) with getter and setter methods, and lacks any methods with meaningful business logic. The logic-to-accessor ratio is 0%, and the class primarily stores/exposes data rather than operating on it."
@@ -1058,7 +1058,7 @@
   {
     "id": 1269,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 10 methods with meaningful business logic (non-trivial operations) and a logic-to-accessor ratio of 40%. While it does contain some data members and getter/setter methods, the presence of meaningful business logic indicates that it is not purely a data class."
@@ -1066,7 +1066,7 @@
   {
     "id": 1273,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains several methods with meaningful business logic (e.g., `perform`, `scanWeakHashmap`, `summary`), and the logic-to-accessor ratio is above 20%. While it does contain some data members, it also includes methods that operate on that data, indicating it is not purely a data class."
@@ -1074,7 +1074,7 @@
   {
     "id": 1274,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "major",
     "reasoning": "The class contains 22 methods, 20 of which are getter and setter methods. Only 2 methods contain meaningful business logic. The logic-to-accessor ratio is 9.1%, indicating a strong Data Class indicator. The class primarily stores/exposes data rather than operating on it."
@@ -1082,7 +1082,7 @@
   {
     "id": 1279,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "none",
     "reasoning": "The class contains only data members with getter and setter methods, and lacks any methods with meaningful business logic. The logic-to-accessor ratio is 0%, and the class primarily stores/exposes data rather than operating on it."
@@ -1090,7 +1090,7 @@
   {
     "id": 1293,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class has 3 getter/setter methods and 1 method with meaningful business logic (writeAsElement). The logic-to-accessor ratio is 33%, which is weakly present. The class primarily stores and exposes data rather than operating on it."
@@ -1098,7 +1098,7 @@
   {
     "id": 1295,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "none",
     "reasoning": "The class contains only one method with meaningful business logic (isRestartRequired), and no getter/setter methods. The logic-to-accessor ratio is 100%, indicating that the class primarily operates on data rather than storing it."
@@ -1106,7 +1106,7 @@
   {
     "id": 1303,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "none",
     "reasoning": "The class contains only one method (health()), which is not a getter/setter method. It also lacks any methods with meaningful business logic. Therefore, it does not exhibit the characteristics of a data class."
@@ -1114,7 +1114,7 @@
   {
     "id": 1304,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 3 methods: 1 getter (getStatus), 1 setter (getHeaders), and 1 method with meaningful business logic (extractHeaders). The logic-to-accessor ratio is 33%, which is weakly above the 20% threshold for a strong Data Class indicator. The class primarily stores and exposes data rather than operating on it."
@@ -1122,7 +1122,7 @@
   {
     "id": 1307,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 11 methods in total, with 10 of them being getter and setter methods. Only one method, `getSort`, contains meaningful business logic. The logic-to-accessor ratio is 9.1%, which is weakly present. The class primarily stores and exposes data rather than operating on it."
@@ -1130,7 +1130,7 @@
   {
     "id": 1310,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "none",
     "reasoning": "The class contains only data members (fields) with getter and setter methods, totaling 13 methods. It lacks any meaningful business logic or behavioral methods, with all methods being trivial operations or overrides. The logic-to-accessor ratio is 0%, indicating no significant business logic. The class primarily stores/exposes data rather than operating on it."
@@ -1138,7 +1138,7 @@
   {
     "id": 1315,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class has 14 getter/setter methods and 3 methods with meaningful business logic, resulting in a logic-to-accessor ratio of 21%. It primarily stores and exposes data rather than operating on it."
@@ -1146,7 +1146,7 @@
   {
     "id": 1317,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "none",
     "reasoning": "The class contains no getter/setter methods and only one method with meaningful business logic. The logic-to-accessor ratio is 100%, indicating that the class primarily operates on data rather than storing it."
@@ -1154,7 +1154,7 @@
   {
     "id": 1320,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains only getter and setter methods (4 methods), and no methods with meaningful business logic. The logic-to-accessor ratio is 0%, indicating a strong Data Class indicator. The class primarily stores/exposes data rather than operating on it."
@@ -1162,7 +1162,7 @@
   {
     "id": 1325,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "none",
     "reasoning": "The class has only one method, which is a getter method. It does not contain any setter methods or methods with meaningful business logic. Therefore, it does not exhibit the characteristics of a data class."
@@ -1170,7 +1170,7 @@
   {
     "id": 1331,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "major",
     "reasoning": "The class contains 15 methods, with 11 being getter/setter methods. It lacks any methods with meaningful business logic, as all operations are focused on data access and manipulation. The logic-to-accessor ratio is 73%, indicating a strong Data Class indicator."
@@ -1178,7 +1178,7 @@
   {
     "id": 1338,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "none",
     "reasoning": "The class contains no getter/setter methods and no methods with meaningful business logic. It only implements an interface method, which is not a significant operation. Therefore, it does not exhibit any characteristics of a data class."
@@ -1186,7 +1186,7 @@
   {
     "id": 1348,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "none",
     "reasoning": "The class contains only one method (loadClass) with meaningful business logic, and no getter/setter methods. It primarily operates on data rather than storing it, which does not meet the characteristics of a data class."
@@ -1194,7 +1194,7 @@
   {
     "id": 1355,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains only one method (unknown()) and primarily consists of injected dependencies, which are typical characteristics of a data class. There are no getter/setter methods or methods with meaningful business logic. The logic-to-accessor ratio is less than 20%, further indicating a strong Data Class indicator."
@@ -1202,7 +1202,7 @@
   {
     "id": 1357,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains only data members and getter/setter methods (2 out of 3 defining characteristics). It lacks any meaningful business logic or behavioral methods. The logic-to-accessor ratio is 0%, indicating a strong Data Class indicator."
@@ -1210,7 +1210,7 @@
   {
     "id": 1358,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "major",
     "reasoning": "The class contains 2+ characteristics clearly satisfied: it primarily stores data (parameters, returnType, returnTypeInferred) and lacks significant business logic or behavioral methods. The logic-to-accessor ratio is 20% or more."
@@ -1218,7 +1218,7 @@
   {
     "id": 1361,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains getter and setter methods (12), but also has methods with meaningful business logic (1). The logic-to-accessor ratio is 8% (12 methods / 14 total methods). The class does not primarily store/expose data rather than operate on it."
@@ -1226,7 +1226,7 @@
   {
     "id": 1371,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 2 getter/setter methods (m_actionProvider, m_rows) and 1 method with meaningful business logic (actionPerformed). The logic-to-accessor ratio is 33%, which is weakly present. The class primarily stores/exposes data rather than operating on it."
@@ -1234,7 +1234,7 @@
   {
     "id": 1373,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "none",
     "reasoning": "The class contains only data members (fields) with getter and setter methods (result, condition) and lacks any methods with meaningful business logic. The logic-to-accessor ratio is 100%, indicating that the class primarily stores/exposes data rather than operating on it."
@@ -1242,7 +1242,7 @@
   {
     "id": 1379,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains only one method with meaningful business logic (emitCode), while it has no getter/setter methods. The logic-to-accessor ratio is 33%, which is weakly present, indicating minor characteristics of a data class."
@@ -1250,7 +1250,7 @@
   {
     "id": 1384,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class has 2 getter/setter methods and 1 method with meaningful business logic (toString). The logic-to-accessor ratio is 33%, which is weakly present. The class primarily stores and exposes data rather than operating on it."
@@ -1258,7 +1258,7 @@
   {
     "id": 1396,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains only data members (fields) with getter and setter methods, totaling 3. It lacks any methods with meaningful business logic, totaling 0. The logic-to-accessor ratio is 0%, indicating no significant operations. The class primarily stores/exposes data rather than operating on it."
@@ -1266,7 +1266,7 @@
   {
     "id": 1400,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains only methods with meaningful business logic (non-trivial operations) and no getter/setter methods. The logic-to-accessor ratio is high, indicating that the class primarily operates on data rather than storing it."
@@ -1274,7 +1274,7 @@
   {
     "id": 1404,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 17 methods, with 14 of them being getter/setter methods and 3 methods with meaningful business logic. The logic-to-accessor ratio is 17.6%, which is above the 20% threshold, indicating that the class does not primarily store/expose data rather than operate on it."
@@ -1282,7 +1282,7 @@
   {
     "id": 1408,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 12 methods, with 6 of them being getter/setter methods and 6 having meaningful business logic. The logic-to-accessor ratio is 50%, which is neither strongly in favor of nor against the data class smell. The class primarily stores and operates on data, making it a minor candidate for the data class smell."
@@ -1290,7 +1290,7 @@
   {
     "id": 1410,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "none",
     "reasoning": "The class contains no methods with meaningful business logic (0), and it primarily stores/exposes data rather than operating on it (yes)."
@@ -1298,7 +1298,7 @@
   {
     "id": 1414,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "none",
     "reasoning": "The class contains no getter/setter methods, no methods with meaningful business logic, and has a logic-to-accessor ratio of 0%. It primarily stores/exposes data rather than operating on it."
@@ -1306,7 +1306,7 @@
   {
     "id": 1418,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "none",
     "reasoning": "The class contains no getter/setter methods, no methods with meaningful business logic, and has a logic-to-accessor ratio of 0%. It primarily serves as a data container rather than operating on it."
@@ -1314,7 +1314,7 @@
   {
     "id": 1427,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "none",
     "reasoning": "The class contains no getter/setter methods, no methods with meaningful business logic, and no significant logic-to-accessor ratio. It primarily serves as a container for data without any operational logic."
@@ -1322,7 +1322,7 @@
   {
     "id": 1436,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "none",
     "reasoning": "The class contains no getter/setter methods, no methods with meaningful business logic, and has a total method count of 1. It primarily stores/exposes data rather than operating on it."
@@ -1330,7 +1330,7 @@
   {
     "id": 1440,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains only data members (id, firstName, lastName) and accessor methods (getters and setters). It has one method with meaningful business logic (toString), which is a minor characteristic of a data class."
@@ -1338,7 +1338,7 @@
   {
     "id": 1442,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains only data members with getter and setter methods (4 methods in total). It lacks any methods with meaningful business logic (0 methods). The logic-to-accessor ratio is 0%, indicating a strong Data Class indicator. The class primarily stores/exposes data rather than operating on it."
@@ -1346,7 +1346,7 @@
   {
     "id": 1444,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains only data members (fields) with getter and setter methods (4 fields, 4 getter/setter methods), and lacks significant business logic or behavioral methods (0 methods with meaningful business logic). The logic-to-accessor ratio is 0%, indicating strong Data Class characteristics."
@@ -1354,7 +1354,7 @@
   {
     "id": 1459,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 10 methods in total, with 8 of them being getter and setter methods. Only 2 methods, 'value' and 'values', contain meaningful business logic. The logic-to-accessor ratio is 20%, which is weakly satisfied. The class primarily stores and exposes data rather than operating on it."
@@ -1362,7 +1362,7 @@
   {
     "id": 1461,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains only one data member (type) and two methods (a constructor and a getter). There are no methods with meaningful business logic. The logic-to-accessor ratio is 0%, indicating a strong Data Class indicator. The class primarily stores and exposes data rather than operating on it."
@@ -1370,7 +1370,7 @@
   {
     "id": 1464,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class has a total of 10 methods, with 6 being getters/setters and only 2 with meaningful business logic. The logic-to-accessor ratio is 20%, indicating a strong Data Class indicator."
@@ -1378,7 +1378,7 @@
   {
     "id": 1470,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 5 methods in total, with 3 of them (publicMethod, defaultMethod, protectedMethod) having meaningful business logic. The logic-to-accessor ratio is 60%, which is above the 20% threshold, indicating that the class does not primarily store/expose data rather than operate on it."
@@ -1386,7 +1386,7 @@
   {
     "id": 1473,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains 13 methods in total, with 11 of them being getter/setter methods. It has 2 methods with meaningful business logic (withItems and withOwnSelfLink). The logic-to-accessor ratio is 15.4%, which is below the 20% threshold indicating a strong Data Class indicator. The class primarily stores and exposes data rather than operating on it."
@@ -1394,7 +1394,7 @@
   {
     "id": 1476,
     "model": "qwen2.5-coder:7b",
-    "prompt_strategy": "Adversarial-Refutation",
+    "prompt_strategy": "EGDP",
     "smell": "data class",
     "severity": "minor",
     "reasoning": "The class contains only data members (fields) with getter and setter methods, totaling 2 methods. It also contains a method with meaningful business logic (summarize), totaling 1 method. The logic-to-accessor ratio is 50%, which is above the 20% threshold for a strong Data Class indicator. The class primarily stores and exposes data rather than operating on it."
